@@ -1,0 +1,1043 @@
+﻿## KREATH
+
+##Bal Dynasty (545000)
+bal_100 = {
+	name = "Lamae"
+	female = yes
+	dynasty = 525000
+	culture = kreath
+	religion = scions_faith
+	dna = bal_100_dna_entry
+
+	disallow_random_traits = yes
+
+	trait = education_learning_3
+	trait = zealous
+	trait = vengeful
+	trait = stubborn
+	trait = beauty_good_2
+	
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_clothes=female_clothes_secular_western_nobility_01_high
+			custom_hair=female_hair_fp1_02
+			custom_headgear = female_empty
+		}
+	}	
+	
+	-400.1.1 = { birth = yes }
+	253.1.1 = { 
+		trait = vampire_character
+		set_immortal_age = 24
+	}
+	4253.11.15 = { death = yes }
+}
+#Skjoralmor wife parents
+skjoralmor_1_wife_mom = {
+	name = "Mesela"
+	female = yes
+	dynasty = dynn_aelfgifu
+	culture = kreath
+	religion = nedic_cult
+	mother = lakeview_nedes_1
+	father = lakeview_nedes_1_husband
+	trait = zealous
+	trait = temperate
+	trait = generous
+	
+	241.1.1 = { birth = yes }
+	268.1.1 = { add_spouse = skjoralmor_1_wife_dad }
+	318.1.1 = { death = yes }
+}
+skjoralmor_1_wife_dad = { #Actually a Nord
+	name = "Dynrugoskr"
+	culture = eastmarcher
+	religion = totemism
+	trait = brave
+	trait = just
+	trait = diligent
+	
+	242.1.1 = { birth = yes }
+	317.1.1 = { death = yes }
+}
+skjoralmor_1_wife = {
+	name = "Tessu"
+	female = yes
+	dynasty = dynn_aelfgifu
+	culture = kreath
+	religion = nedic_cult
+	mother = skjoralmor_1_wife_mom
+	father = skjoralmor_1_wife_dad
+	trait = calm
+	trait = compassionate
+	trait = content
+	
+	278.1.1 = { birth = yes }
+	#Married off to Bjarfrud
+	359.1.1 = { death = yes }
+}
+#Lakeview
+lakeview_nedes_1 = { #Ancestors to Tundra-Eyes and Skjoralmor
+	name = "Fritheswith"
+	female = yes
+	dynasty = dynn_aelfgifu
+	culture = kreath
+	religion = nedic_cult
+
+	trait = brave
+	trait = just
+	trait = calm
+	trait = education_martial_4
+	trait = aggressive_attacker
+	
+	219.1.1 = { birth = yes }
+	231.1.1 = { add_spouse = lakeview_nedes_1_husband }
+	278.1.1 = { death = yes }
+}
+lakeview_nedes_1_husband = {
+	name = "Brychan"
+	culture = rontha
+	religion = nedic_cult
+
+	trait = brave
+	trait = sadistic #Probably the one who organized the slaughter described by Pelinal
+	trait = wrathful
+	trait = education_martial_4
+	trait = intellect_good_1 #Strong but not stupid
+	trait = aggressive_attacker
+	prowess = 18 #Brychan smash!
+	
+	217.1.1 = { birth = yes }
+	279.1.1 = { death = yes }
+}
+lakeview_nedes_2_sister = {
+	name = "Balthildis"
+	dynasty = dynn_aelfgifu
+	culture = kreath
+	religion = nedic_cult
+	female = yes
+
+	father = lakeview_nedes_1_husband
+	mother = lakeview_nedes_1
+
+	trait = compassionate
+	
+	233.1.1 = { birth = yes }
+	241.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = ayleid_bonechill_1
+		}
+	}
+}
+lakeview_nedes_2 = {
+	name = "Adelard"
+	dynasty = dynn_aelfgifu
+	culture = kreath
+	religion = nedic_cult
+
+	father = lakeview_nedes_1_husband
+	mother = lakeview_nedes_1
+
+	trait = craven
+	trait = shy
+	trait = compassionate
+	trait = education_diplomacy_4
+	
+	241.1.1 = { birth = yes } #Just before the revolt
+	262.1.1 = { add_spouse = lakeview_nedes_2_wife }
+	295.1.1 = { death = yes }
+}
+lakeview_nedes_2_wife = {
+	name = "Hohobur"
+	culture = kreath
+	religion = nedic_cult
+	female = yes
+	
+	239.1.1 = { birth = yes }
+	294.1.1 = { death = yes }
+}
+lakeview_nedes_3_brother = {
+	name = "Scirheard"
+	dynasty = dynn_aelfgifu
+	culture = kreath
+	religion = nedic_cult
+
+	father = lakeview_nedes_2
+	mother = lakeview_nedes_2_wife
+	
+	268.1.1 = { birth = yes }
+	# Married off Neaugrad
+	343.1.1 = { death = yes }
+}
+lakeview_nedes_3 = {
+	name = "Kirlar"
+	dynasty = dynn_aelfgifu
+	culture = kreath
+	religion = nedic_cult
+
+	father = lakeview_nedes_2
+	mother = lakeview_nedes_2_wife
+	
+	263.1.1 = { birth = yes }
+	287.1.1 = { add_spouse = sunderstone_nedes_3_sister }
+	318.1.1 = { death = yes }
+}
+lakeview_nedes_4_brother = {
+	name = "Aavmoc"
+	dynasty = dynn_aelfgifu
+	culture = kreath
+	religion = nedic_cult
+
+	father = lakeview_nedes_3
+	mother = sunderstone_nedes_3_sister
+
+	trait = zealous
+	trait = honest
+	trait = generous
+	trait = depressed_1
+	trait = devoted #If my wife and son died I might as well give my life to the gods
+
+	294.1.1 = { birth = yes }
+	321.1.1 = { add_spouse = lakeview_nedes_4_brother_wife }
+	356.1.1 = { death = yes }
+}
+lakeview_nedes_4_brother_wife= {
+	name = "Nallova"
+	culture = rontha
+	religion = nedic_cult
+	female = yes
+
+	trait = temperate
+	trait = generous
+	trait = just
+
+	293.1.1 = { birth = yes }
+	323.1.1 = { death = { death_reason = death_accident } }
+}
+lakeview_nedes_4_brother_son = {
+	name = "Shaluric"
+	dynasty = dynn_aelfgifu
+	culture = kreath
+	religion = nedic_cult
+
+	father = lakeview_nedes_4_brother
+	mother = lakeview_nedes_4_brother_wife
+
+	322.1.1 = { birth = yes }
+	323.1.1 = { death = { death_reason = death_accident } }
+}
+lakeview_nedes_4 = {
+	name = "Rallenav"
+	dynasty = dynn_aelfgifu
+	culture = kreath
+	religion = nedic_cult
+	female = yes
+
+	father = lakeview_nedes_3
+	mother = sunderstone_nedes_3_sister
+
+	291.1.1 = { birth = yes }
+	322.1.1 = { add_spouse = lakeview_nedes_4_husband }
+	351.1.1 = { death = yes }
+}
+lakeview_nedes_4_husband = {
+	name = "Irmisec"
+	culture = rontha
+	religion = nedic_cult
+
+	
+	293.1.1 = { birth = yes }
+	348.1.1 = { death = yes }
+}
+lakeview_nedes_5 = {
+	name = "Vaodrulor"
+	dynasty = dynn_aelfgifu
+	culture = kreath
+	religion = nedic_cult
+
+	father = lakeview_nedes_4_husband
+	mother = lakeview_nedes_4
+
+	322.1.1 = { birth = yes }
+	341.1.1 = { add_spouse = lakeview_nedes_5_wife }
+	397.1.1 = { death = yes }
+}
+lakeview_nedes_5_wife = {
+	name = "Vonodil"
+	culture = sedor
+	religion = nedic_cult
+	female = yes
+
+	
+	321.1.1 = { birth = yes }
+	399.1.1 = { death = yes }
+}
+lakeview_nedes_6 = {
+	name = "Tastivar"
+	dynasty = dynn_aelfgifu
+	culture = kreath
+	religion = nedic_cult
+
+	father = lakeview_nedes_5
+	mother = lakeview_nedes_5_wife
+
+	trait = legitimized_bastard
+
+	
+	339.1.1 = { birth = yes }
+	361.1.1 = { add_spouse = lakeview_nedes_6_wife }
+	413.1.1 = { death = yes }
+}
+lakeview_nedes_6_brother = {
+	name = "Tastivar"
+	dynasty = dynn_aelfgifu
+	culture = kreath
+	religion = nedic_cult
+
+	father = lakeview_nedes_5
+	mother = lakeview_nedes_5_wife
+
+	trait = sickly
+	
+	347.1.1 = { birth = yes }
+	349.10.1 = {
+		death = {
+			death_reason = death_sickly
+		}
+	}
+}
+lakeview_nedes_6_wife = {
+	name = "Eorcengota"
+	culture = kreath
+	religion = nedic_cult
+	female = yes
+
+	
+	341.1.1 = { birth = yes }
+	409.1.1 = { death = yes }
+}
+lakeview_nedes_7 = {
+	name = "Edild"
+	dynasty = dynn_aelfgifu
+	culture = kreath
+	religion = nedic_cult
+	female = yes
+
+	father = lakeview_nedes_6
+	mother = lakeview_nedes_6_wife
+
+	trait = disinherited # For marrying Tundra-Eye ancestor
+	
+	362.1.1 = { birth = yes }
+	#378 married to Tundra-Eye_1
+	427.1.1 = { death = yes }
+}
+lakeview_nedes_7_sister = {
+	name = "Aelfrun"
+	dynasty = dynn_aelfgifu
+	culture = kreath
+	religion = nedic_cult
+	female = yes
+
+	father = lakeview_nedes_6
+	mother = lakeview_nedes_6_wife
+
+	trait = brave
+	trait = wrathful
+	trait = ambitious
+	prowess = 9
+	
+	366.1.1 = { birth = yes }
+	380.1.1 = { add_spouse = lakeview_nedes_7_sister_husband }
+	397.1.1 = { #Tried to resist Nordic invasion
+		death = { 
+			death_reason = death_battle
+			}
+		}
+	}
+lakeview_nedes_7_sister_husband = {
+	name = "Deowuc"
+	culture = kreath
+	religion = nedic_cult
+
+	prowess = 12
+	
+	367.1.1 = { birth = yes }
+	397.1.1 = { #Tried to resist Nordic invasion with his wife
+		death = { 
+			death_reason = death_battle
+			}
+		}
+	}
+
+lakeview_nedes_7_sister_son = {
+	name = "Cenfirth"
+	dynasty = dynn_aelfgifu
+	culture = kreath
+	religion = nedic_cult
+
+	father = lakeview_nedes_7_sister_husband
+	mother = lakeview_nedes_7_sister
+
+	trait = brave
+	trait = calm
+	trait = callous
+	trait = education_martial_2
+	prowess = 14
+	
+	381.1.1 = { birth = yes }
+	402.6.25 = { add_spouse = lakeview_nedes_7_sister_son_wife }
+	435.1.1 = { death = yes }
+}
+
+lakeview_nedes_7_sister_son_wife = {
+	name = "Lisrek"
+	culture = reachfolk
+	religion = nedic_cult
+	female = yes
+	
+	374.6.16 = { birth = yes }
+	437.12.11 = { death = yes }
+}
+
+lakeview_nedes_line = {
+	name = "Cenfirth"
+	dynasty = dynn_aelfgifu
+	culture = reachfolk
+	religion = nedic_cult
+
+	father = lakeview_nedes_7_sister_son
+	mother = lakeview_nedes_7_sister_son_wife
+
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+
+	435.1.1 = { birth = yes }
+	500.1.1 = { give_nickname = nick_line_of }
+	779.6.17 = { death = yes }
+}
+
+lakeview_nedes_reachfolk_1 = { #Just to make reachwife_1000_mom look like a Reachwoman and not a Nede
+	name = "Waernoth"
+	dynasty_house = aoife_aelfgifu #First of the family to identify as a Reachman after Virmaril's betrayal
+	culture = reachfolk
+	religion = old_gods #Abandoned Nedic gods after the betrayal
+
+	father = lakeview_nedes_line
+
+	779.6.17 = { birth = yes }
+	809.12.28 = { add_spouse = lakeview_nedes_reachfolk_2 }
+	824.2.6 = { death = yes }
+}
+
+lakeview_nedes_reachfolk_2 = { #Just to make reachwife_1000_mom look like a Reachwoman and not a Nede
+	name = "Maerwynn"
+	culture = reachfolk
+	religion = old_gods
+	female = yes
+
+	779.2.8 = { birth = yes }
+	827.8.24 = { death = yes }
+}
+
+lakeview_nedes_line_2 = {
+	name = "Waernoth"
+	dynasty_house = aoife_aelfgifu
+	culture = reachfolk
+	religion = old_gods
+
+	father = lakeview_nedes_reachfolk_1
+	mother = lakeview_nedes_reachfolk_2
+
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+
+	811.9.28 = { birth = yes }
+	2544.1.1 = { give_nickname = nick_line_of }
+	3277.3.19 = { death = yes }
+}
+
+reachwife_1000_mom = {
+	name = "Eanswitha"
+	dynasty_house = aoife_aelfgifu
+	culture = reachfolk
+	religion = old_gods
+	female = yes
+
+	trait = callous #Doesn't enjoy killing but has no issue with it
+	trait = ambitious #Determined to get her family back on top
+	trait = deceitful #Killing your daughter's in-laws and their whole family isn't very honest
+	trait = schemer #Didn't get caught through all her killing
+	trait = education_intrigue_4 #Same as above
+
+	father = lakeview_nedes_line_2
+
+	3277.3.19 = { birth = yes }
+	3299.2.21 = { add_spouse = reachwife_1000_dad }
+	3331.1.1 = { death = yes }
+}
+
+reachwife_1000_dad = {
+	name = "Haeferic"
+	culture = reachfolk
+	religion = old_gods
+
+	3276.12.29 = { birth = yes }
+	3333.1.30 = { death = yes }
+}
+
+####Egelwin
+sunderstone_nedes_1 = { #Forest King family
+	name = "Theodlac"
+	dynasty = dynn_egelwin
+	culture = kreath
+	religion = nedic_cult
+
+	trait = brave
+	trait = just
+	trait = callous
+	
+	214.1.1 = { birth = yes }
+	238.1.1 = { add_spouse = sunderstone_nedes_1_wife }
+	263.1.1 = { death = { death_reason = death_battle } } #By Minotaur leader before said Minotaur moves into Half-Moon
+}
+
+sunderstone_nedes_1_wife = {
+	name = "Cwenthryth"
+	culture = kreath
+	religion = nedic_cult
+	female = yes
+	
+	217.1.1 = { birth = yes }
+	269.1.1 = { death = yes }
+}
+
+sunderstone_nedes_2 = { #Forest King family
+	name = "Cenred"
+	dynasty = dynn_egelwin
+	culture = kreath
+	religion = nedic_cult
+
+	father = sunderstone_nedes_1
+	mother = sunderstone_nedes_1_wife
+	
+	245.1.1 = { birth = yes }
+	263.1.1 = { add_spouse = sunderstone_nedes_2_wife }
+	301.1.1 = { death = yes }
+}
+
+sunderstone_nedes_2_wife = {
+	name = "Maerwynn"
+	culture = reachfolk
+	religion = nedic_cult
+	female = yes
+	
+	247.1.1 = { birth = yes }
+	307.1.1 = { death = yes }
+}
+sunderstone_nedes_3_sister = { #Forest King family
+	name = "Saewara"
+	dynasty = dynn_egelwin
+	culture = kreath
+	religion = nedic_cult
+	female = yes
+
+	father = sunderstone_nedes_2
+	mother = sunderstone_nedes_2_wife
+
+	trait = disinherited
+	
+	264.1.1 = { birth = yes }
+	#Married off to lakeview_nedes_3
+	315.1.1 = { death = yes }
+}
+sunderstone_nedes_3 = { #Forest King family
+	name = "Blacwin"
+	dynasty = dynn_egelwin
+	culture = kreath
+	religion = nedic_cult
+
+	father = sunderstone_nedes_2
+	mother = sunderstone_nedes_2_wife
+
+	trait = stubborn
+	trait = lustful
+	trait = impatient
+	
+	268.1.1 = { birth = yes }
+	301.1.1 = { add_spouse = sunderstone_nedes_3_wife } #Very picky, not just any woman would do as his bride
+	339.1.1 = { death = yes }
+}
+sunderstone_nedes_3_wife = {
+	name = "Ricola"
+	culture = kreath
+	religion = nedic_cult
+	female = yes
+
+	trait = greedy
+	trait = honest #I only love you because I want to be a queen
+	trait = beauty_good_2
+	
+	273.1.1 = { birth = yes }
+	347.1.1 = { death = yes }
+}
+sunderstone_nedes_4 = { #Forest King family, first forest queen
+	name = "Estrith"
+	dynasty = dynn_egelwin
+	culture = kreath
+	religion = nedic_cult
+	female = yes
+
+	father = sunderstone_nedes_3
+	mother = sunderstone_nedes_3_wife
+
+	trait = honest
+	trait = content
+	trait = pregnant
+	
+	309.1.1 = { birth = yes }
+	338.1.1 = { add_spouse = sunderstone_nedes_4_husband }
+	342.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = sunderstone_nedes_4_husband #Wrongly believed she was having an affair and that the baby wasn't his
+		}
+	}
+}
+sunderstone_nedes_4_husband = {
+	name = "Caedwalla"
+	culture = kreath
+	religion = nedic_cult
+
+	trait = lunatic_1
+	trait = vengeful
+	trait = paranoid
+	trait = sadistic
+	trait = murderer #Wrongly believed she was having an affair and that the baby wasn't his
+	
+	307.1.1 = { birth = yes }
+	342.1.2 = { #Short trial
+		death = {
+			death_reason = death_execution
+			killer = sunderstone_nedes_4_twin_2
+		}
+	}
+}
+sunderstone_nedes_4_twin_1 = { #Forest King family
+	name = "Breguswith"
+	dynasty = dynn_egelwin
+	culture = kreath
+	religion = nedic_cult
+	female = yes
+
+	father = sunderstone_nedes_3
+	mother = sunderstone_nedes_3_wife
+
+	trait = twin
+	
+	311.1.1 = { birth = yes }
+	326.1.1 = { death = { death_reason = death_accident } }
+}
+sunderstone_nedes_4_twin_2 = { #Forest King family, line continues from him
+	name = "Aelfgeat"
+	dynasty = dynn_egelwin
+	culture = kreath
+	religion = nedic_cult
+
+	father = sunderstone_nedes_3
+	mother = sunderstone_nedes_3_wife
+
+	trait = twin
+	trait = just
+	trait = shy
+	trait = stubborn
+	trait = depressed_1 #Misses his sister and wife
+	
+	311.1.1 = { birth = yes }
+	338.1.1 = { add_spouse = sunderstone_nedes_4_twin_2_wife }
+	378.1.1 = { death = yes }
+}
+sunderstone_nedes_4_twin_2_wife = {
+	name = "Wengeua"
+	culture = kreath
+	religion = nedic_cult
+	dynasty = dynn_thraesfrith
+	female = yes
+
+	father = lakeview_nedes_3_brother
+	mother = neaugrad_nedes_3
+	
+	313.5.12 = { birth = yes }
+	343.6.3 = {
+		death = {
+			death_reason = death_battle
+			killer = buragog_1000
+		}
+	}
+}
+sunderstone_nedes_5_brother = { #Forest King family
+	name = "Leofgiest"
+	dynasty = dynn_egelwin
+	culture = kreath
+	religion = nedic_cult
+
+	father = sunderstone_nedes_4_twin_2
+	mother = sunderstone_nedes_4_twin_2_wife
+
+	trait = sickly
+	
+	339.6.2 = { birth = yes }
+	339.11.18 = {
+		death = {
+			death_reason = death_sickly
+		}
+	}	
+}
+sunderstone_nedes_5 = { #Forest King family
+	name = "Estrith" #Named after murdered aunt
+	dynasty = dynn_egelwin
+	culture = kreath
+	religion = nedic_cult
+	female = yes
+
+	father = sunderstone_nedes_4_twin_2
+	mother = sunderstone_nedes_4_twin_2_wife
+	
+	342.7.5 = { birth = yes }
+	370.6.22 = { add_spouse = sunderstone_nedes_5_husband }
+	411.7.28 = { death = yes }
+}
+sunderstone_nedes_5_husband = {
+	name = "Tynnach"
+	culture = reachfolk
+	religion = nedic_cult
+	
+	341.11.25 = { birth = yes }
+	414.9.14 = { death = yes }
+}
+sunderstone_nedes_6 = { #Forest King family
+	name = "Everildis"
+	dynasty = dynn_egelwin
+	culture = kreath
+	religion = nedic_cult
+	female = yes
+
+	father = sunderstone_nedes_5_husband
+	mother = sunderstone_nedes_5
+	
+	373.6.5 = { birth = yes } #Born exactly a month apart, like grandma and I :)
+	397.12.8 = { add_spouse = sunderstone_nedes_6_husband }
+	452.3.17 = { death = yes }
+}
+sunderstone_nedes_6_husband = {
+	name = "Hynsige"
+	culture = kreath
+	religion = nedic_cult
+	
+	374.5.17 = { birth = yes }
+	456.2.8 = { death = yes }
+}
+sunderstone_nedes_9 = {
+	name = "Everildis"
+	dynasty = dynn_egelwin
+	culture = kreath
+	religion = nedic_cult
+	
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	father = sunderstone_nedes_6_husband
+	mother = sunderstone_nedes_6
+	
+	486.1.6 = { birth = yes }
+	486.1.7 = { give_nickname = nick_line_of }
+	764.1.1 = { death = yes }
+}
+sunderstone_nedes_10 = { #Forest King dad
+	name = "Wulmar"
+	dynasty = dynn_egelwin
+	culture = kreath
+	religion = nedic_cult
+	
+	father = sunderstone_nedes_9
+	
+	764.1.1 = { birth = yes }
+	784.3.19 = { add_spouse = sunderstone_nedes_10_wife }
+	806.1.1 = { death = yes }
+}
+sunderstone_nedes_10_wife = {
+	name = "Aelva"
+	culture = kreath
+	religion = nedic_cult
+	female = yes
+	
+	762.1.1 = { birth = yes }
+	799.6.4 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+sunderstone_nedes_11 = { #The man himself
+	name = "Kestic"
+	dynasty = dynn_egelwin
+	culture = kreath
+	religion = nedic_cult
+	
+	father = sunderstone_nedes_10
+	mother = sunderstone_nedes_10_wife
+
+	trait = trusting
+	trait = just
+	trait = brave
+	trait = compassionate #He would have been a great husband had Virmaril not thrown his fit.
+	trait = beauty_good_1
+	trait = education_martial_2
+	prowess = 20
+	
+	787.1.1 = { birth = yes }
+	807.7.23 = { add_spouse = durac_002 }
+	832.1.1 = { death = { death_reason = death_leech_health_magic killer = virmaril_001 } }
+}
+
+sunderstone_nedes_12 = {
+	name = "Saewig"
+	dynasty = dynn_egelwin
+	culture = kreath
+	religion = minotaur_cult
+	
+	father = sunderstone_nedes_10
+	mother = sunderstone_nedes_10_wife
+
+	trait = disinherited
+	
+	799.6.4 = { birth = yes }
+	830.1.12 = { add_matrilineal_spouse = bullblood_founder_daughter }
+	856.5.28 = { death = yes }
+}
+
+#Neugrad Nedes
+neaugrad_nedes_1 = { #Born into slavery
+	name = "Aschere"
+	dynasty = dynn_thraesfrith
+	culture = kreath
+	religion = nedic_cult
+
+	trait = vengeful
+	trait = just
+	trait = brave
+
+	218.5.3 = { birth = yes }
+	236.6.19 = { add_spouse = neaugrad_nedes_1_wife }
+	242.3.9 = { #Middle of rebellion
+		death = {
+			death_reason = death_battle
+			killer = ayleid_bonechill_1
+		}
+	}
+}
+neaugrad_nedes_1_wife = { #Also born into slavery
+	name = "Mahvia"
+	culture = sedor
+	religion = nedic_cult
+	female = yes
+
+	trait = depressed_1 #For both her husband and murdering an innocent child
+	trait = honest
+	trait = devoted #Gave life to divines after murdering infant in her rage
+	trait = compassionate #War changes people and drove her into deep regret
+	trait = temperate
+	
+	217.4.13 = { birth = yes }
+	284.8.22 = { death = yes }
+}
+neaugrad_nedes_2 = { #Born into slavery like his parents
+	name = "Wictgils"
+	dynasty = dynn_thraesfrith
+	culture = kreath
+	religion = nedic_cult
+
+	father = neaugrad_nedes_1
+	mother = neaugrad_nedes_1_wife
+	
+	237.4.18 = { birth = yes }
+	271.2.18 = { add_spouse = neaugrad_nedes_2_wife }
+	302.6.25 = { death = yes }
+}
+neaugrad_nedes_2_wife = { #Born into slavery
+	name = "Saethryth"
+	culture = sedor
+	religion = nedic_cult
+	female = yes
+	
+	236.3.26 = { birth = yes }
+	300.3.25 = { death = yes }
+}
+neaugrad_nedes_3 = { #First one to be born outside of Ayleid slavery
+	name = "Mildgyth"
+	dynasty = dynn_thraesfrith
+	culture = kreath
+	religion = nedic_cult
+	female = yes
+
+	father = neaugrad_nedes_2
+	mother = neaugrad_nedes_2_wife
+	
+	273.7.11 = { birth = yes }
+	309.2.18 = { add_spouse = lakeview_nedes_3_brother }
+	357.8.18 = { death = yes }
+}
+neaugrad_nedes_4 = {
+	name = "Wicthiue"
+	dynasty = dynn_thraesfrith
+	culture = kreath
+	religion = nedic_cult
+	female = yes
+
+	father = lakeview_nedes_3_brother
+	mother = neaugrad_nedes_3
+	
+	311.3.19 = { birth = yes }
+	336.11.11 = { add_spouse = neaugrad_nedes_4_husband }
+	382.3.26 = { death = yes }
+}
+neaugrad_nedes_4_husband = {
+	name = "Ealhhun"
+	culture = rontha
+	religion = nedic_cult
+	
+	312.2.18 = { birth = yes }
+	395.9.18 = { death = yes }
+}
+neaugrad_nedes_5 = {
+	name = "Roderic"
+	dynasty = dynn_thraesfrith
+	culture = kreath
+	religion = nedic_cult
+
+	father = neaugrad_nedes_4_husband
+	mother = neaugrad_nedes_4
+	
+	337.5.9 = { birth = yes }
+	357.2.17 = { add_spouse = neaugrad_nedes_5_wife }
+	401.5.27 = {
+		death = {
+			death_reason = death_battle
+			killer = palestone_1 #Palestone ancestor
+		}
+	}
+}
+neaugrad_nedes_5_wife = {
+	name = "Vala"
+	culture = hared
+	religion = nedic_cult
+	female = yes
+	
+	332.7.2 = { birth = yes }
+	415.1.19 = { death = yes }
+}
+neaugrad_nedes_6b = {
+	name = "Beornnoth"
+	dynasty = dynn_thraesfrith
+	culture = kreath
+	religion = nedic_cult
+
+	father = neaugrad_nedes_5
+	mother = neaugrad_nedes_5_wife
+	
+	372.2.17 = { birth = yes }
+	398.5.21 = { add_spouse = neaugrad_nedes_6b_wife }
+	401.5.27 = {
+		death = {
+			death_reason = death_battle
+			killer = palestone_1 #Palestone ancestor
+		}
+	}
+}
+neaugrad_nedes_6b_wife = {
+	name = "Eormengyth"
+	culture = kreath
+	religion = nedic_cult
+	female = yes
+	
+	371.2.9 = { birth = yes }
+	401.5.27 = {
+		death = {
+			death_reason = death_battle
+			killer = palestone_1 #Palestone ancestor
+		}
+	}
+}
+neaugrad_nedes_6b_son = {
+	name = "Odalric"
+	dynasty = dynn_thraesfrith
+	culture = kreath
+	religion = nedic_cult
+
+	father = neaugrad_nedes_6b
+	mother = neaugrad_nedes_6b_wife
+	
+	399.3.7 = { birth = yes }
+	408.2.11 = { death = { death_reason = death_accident } }
+}
+neaugrad_nedes_6 = { #Marries into Palestone
+	name = "Erkengota"
+	dynasty = dynn_thraesfrith
+	culture = kreath
+	religion = nedic_cult
+	female = yes
+
+	father = neaugrad_nedes_5
+	mother = neaugrad_nedes_5_wife
+	
+	370.6.21 = { birth = yes }
+	#Marries palestone_1
+	436.3.18 = { death = yes }
+}
+
+## RONTHA- TO DO
+
+bal_100_priest = {
+	name = "Carmilla"
+	female = yes
+	culture = iliac
+	religion = scions_faith
+
+	disallow_random_traits = yes
+
+	trait = education_learning_3
+
+	trait = ambitious
+	trait = zealous
+	trait = sadistic
+
+	trait = beauty_good_1
+	
+	3020.1.1 = { birth = yes } #decently old but not insanely so
+	3057.1.1 = { 
+		trait = vampire_character
+		set_immortal_age = 37
+	}
+	3358.1.1 = { employer = bal_100 }
+	3359.1.1 = { give_council_position = councillor_court_chaplain }
+	4253.11.15 = { death = yes } #let's just let Lamae keep her loyal priest forever
+}

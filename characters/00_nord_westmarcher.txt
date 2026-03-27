@@ -1,0 +1,1770 @@
+﻿# Palestone Dynasty
+palestone_1 = {
+	name = "Kloromild"
+	#dynasty = dyn_palestone #Removed, family stays in Falkreath but doesn't rule, or become relevant, until the 2E
+	culture = westmarcher
+	religion = nord_cult
+
+	trait = education_martial_3
+	trait = sign_thief
+
+	371.12.8 = { birth = yes }
+	396.11.11 = { add_spouse = neaugrad_nedes_6 }
+	438.3.29 = { death = yes }
+}
+palestone_2 = {
+	name = "Fralra"
+	#dynasty = dyn_palestone #Removed, family stays in Falkreath but doesn't rule, or become relevant, until the 2E
+	culture = westmarcher
+	religion = alessian
+	female = yes
+	father = palestone_1
+	mother = neaugrad_nedes_6
+
+	trait = sign_lover
+
+	403.2.1 = { birth = yes }
+	429.1.25 = { add_spouse = palestone_2_husband }
+	465.7.12 = { death = yes }
+}
+palestone_2_husband = {
+	name = "Hajvlund"
+	culture = westmarcher
+	religion = alessian
+
+	trait = sign_apprentice
+
+	402.7.21 = { birth = yes }
+	468.6.19 = { death = yes }
+}
+palestone_line = {
+	name = "Fralra"
+	#dynasty = dyn_palestone #Removed, family stays in Falkreath but doesn't rule, or become relevant, until the 2E
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	father = palestone_2_husband
+	mother = palestone_2
+	
+	465.7.12 = { birth = yes }
+	3000.1.1 = { give_nickname = nick_line_of }
+	3301.1.1 = { death = yes }
+}
+
+palestone_998 = {
+	name = "Amalina"
+	dynasty = dyn_palestone
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+
+	mother = palestone_line
+
+	trait = sign_shadow
+
+	3278.5.6 = { birth = yes }
+	3297.7.24 = { add_spouse = palestone_998_husband }
+	3321.3.29 = { death = { death_reason = death_battle } }
+}
+
+palestone_998_husband = {
+	name = "Viliaris"
+	culture = westmarcher
+	religion = nord_cult
+
+	trait = sign_apprentice
+
+	3277.7.21 = { birth = yes }
+	3321.3.29 = { death = { death_reason = death_battle } }
+}
+
+palestone_999_sister = {
+	name = "Sunilda"
+	dynasty = dyn_palestone
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+	father = palestone_998_husband
+	mother = palestone_998
+
+	trait = sign_steed
+
+	3305.6.13 = { birth = yes }
+	3328.6.24 = { add_spouse = palestone_999_sister_husband }
+	3357.1.1 = { death = { death_reason = death_duel killer = grognak_the_destroyer } } #Defended her brother
+}
+
+palestone_999 = {
+	name = "Gunnbjorn"
+	dynasty = dyn_palestone
+	culture = westmarcher
+	religion = nord_cult
+
+	father = palestone_998_husband
+	mother = palestone_998
+
+	trait = brave
+	trait = just
+	trait = honest
+	trait = sign_lover
+
+	3300.2.6 = { birth = yes }
+	3316.2.7 = { add_spouse = siborel_100b }
+	3357.1.1 = { death = { death_reason = death_duel killer = grognak_the_destroyer } }
+}
+palestone_1000_sister = { #Wife of woodhewn_99
+	name = "Fallaise"
+	dynasty = dyn_palestone
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+
+	father = palestone_999
+	mother = siborel_100b
+
+	trait = sign_steed
+	trait = gluttonous
+	trait = compassionate
+	trait = lazy
+	trait = disinherited
+	trait = denounced
+
+	3322.6.4 = { birth = yes }
+	3346.2.7 = {
+		effect = {
+			if = {
+				limit = { character:palestone_1000 = { is_alive = yes } }
+				set_relation_rival = { reason = rival_historical target = character:palestone_1000 } 
+			}
+		} 
+	}
+	3374.1.1 = { death = { death_reason = death_old_age } }
+}
+palestone_1000 = {
+	name = "Jorulf"
+	dynasty = dyn_palestone
+	culture = westmarcher
+	religion = nord_cult
+	sexuality = heterosexual
+
+	father = palestone_999
+	mother = siborel_100b
+
+	trait = education_martial_3
+	trait = brave
+	trait = callous
+	trait = vengeful
+
+	3317.1.1 = { birth = yes }
+	3338.1.1 = { add_spouse = palestone_1000_wife }
+	3369.1.1 = {
+		death = {
+			death_reason = death_duel
+			killer = yashnag_100
+		}
+	}
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_beards=male_beard_mena_04
+			custom_hair=male_hair_byzantine_02
+		}
+	}
+}
+palestone_1000_wife = {
+	name = "Angirdis"
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+	sexuality = heterosexual
+
+	trait = calm
+	trait = forgiving
+	trait = gluttonous
+	trait = sign_mage
+
+	3316.4.27 = { birth = yes }
+	3369.1.1 = { #Husband slain
+		remove_trait = forgiving
+		add_trait = vengeful
+	}
+	3384.1.1 = { add_trait = depressed_1 }#Son slain
+	3384.7.11 = { death = { death_reason = death_depressed } }
+}
+palestone_1001 = {
+	name = "Robert"
+	dynasty = dyn_palestone
+	culture = westmarcher
+	religion = nord_cult
+
+	trait = education_martial_1
+	trait = craven
+	trait = temperate
+	trait = forgiving
+
+	father = palestone_1000
+	mother = palestone_1000_wife
+
+	3339.1.1 = { birth = yes }
+	3369.2.5 = { add_spouse = broadwall_9408 }
+	3384.1.1 = { death = yes }
+}
+palestone_1002 = {
+	name = "Styrlfar"
+	dynasty = dyn_palestone
+	culture = westmarcher
+	religion = nord_cult
+
+	trait = education_martial_1
+	trait = ambitious
+	trait = fickle
+	trait = patient
+	trait = sign_steed
+
+	father = palestone_1001
+	mother = broadwall_9408
+
+	3383.6.11 = { birth = yes }
+	3415.1.1 = { add_matrilineal_spouse = silveranvil_102 }
+	3402.3.27 = { death = yes }
+}
+
+palestone_999_sister_husband = {
+	name = "Ulfilas"
+	culture = westmarcher
+	religion = nord_cult
+
+	trait = sign_apprentice
+
+	3304.7.21 = { birth = yes }
+	3357.1.1 = { death = { death_reason = death_duel killer = grognak_the_destroyer } }
+}
+
+palestone_2000 = {
+	name = "Ereleuva"
+	dynasty = dyn_palestone
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+	father = palestone_999_sister_husband
+	mother = palestone_999_sister
+
+	trait = sign_lord
+
+	3329.3.16 = { birth = yes }
+	3352.1.12 = { add_spouse = palestone_2000_husband }
+	3357.1.1 = { death = { death_reason = death_duel killer = grognak_the_destroyer } } #Defended her brother
+}
+
+palestone_2000_husband = {
+	name = "Gederic"
+	culture = westmarcher
+	religion = nord_cult
+
+	trait = sign_shadow
+
+	3328.5.21 = { birth = yes }
+	3357.1.1 = { death = { death_reason = death_duel killer = grognak_the_destroyer } }
+}
+
+palestone_2001 = { #Marries someone else of a different dynasty in Hammerfell, rahal_1003?
+	name = "Toke"
+	dynasty = dyn_palestone
+	culture = westmarcher
+	religion = nord_cult
+
+	father = palestone_2000_husband
+	mother = palestone_2000
+
+	3353.1.27 = { birth = yes }
+	3408.5.22 = { death = { death_reason = death_old_age } }
+}
+
+palestone_2002 = { #Marries someone else of a different dynasty in Cyrodiil, Nord or Cyrodiilic
+	name = "Villads"
+	dynasty = dyn_palestone
+	culture = westmarcher
+	religion = nord_cult
+	father = palestone_2000_husband
+	mother = palestone_2000
+
+	trait = sign_steed
+
+	3355.6.21 = { birth = yes }
+	3414.8.30 = { death = { death_reason = death_old_age } }
+}
+
+#Sunderstone Nords- before Yashnag came through
+venukkus_99 = {
+	name = "Birkir"
+	dynasty = dyn_venukkus
+	culture = westmarcher
+	religion = nord_cult
+
+	trait = ill
+
+	3198.1.11 = { birth = yes }
+	3218.12.24 = { add_spouse = venukkus_99_wife }
+	3273.6.27 = { 
+		death = { death_reason = death_ill }
+	}
+}
+
+venukkus_99_wife = {
+	name = "Sepunia"
+	culture = heartlander
+	religion = eight_divines
+	female = yes
+
+	trait = ill
+	trait = sign_lover
+
+	3196.2.12 = { birth = yes }
+	3273.6.26 = { 
+		death = { death_reason = death_ill }
+	}
+}
+
+venukkus_100 = {
+	name = "Sepunia" #After Heartlander mother
+	dynasty = dyn_venukkus
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+	father = venukkus_99
+	mother = venukkus_99_wife
+
+	trait = sign_lover
+
+	3221.2.17 = { birth = yes }
+	3239.4.26 = { add_spouse = venukkus_100_husband }
+	3274.2.9 = { death = { death_reason = death_old_age } }
+}
+
+venukkus_100_husband = {
+	name = "Olvir"
+	culture = westmarcher
+	religion = nord_cult
+
+	trait = sign_warrior
+
+	3219.8.8 = { birth = yes }
+	3271.11.7 = { death = { death_reason = death_old_age } }
+}
+
+venukkus_101 = {
+	name = "Agust"
+	dynasty = dyn_venukkus
+	culture = westmarcher
+	religion = nord_cult
+
+	father = venukkus_100_husband
+	mother = venukkus_100
+
+	trait = consumption
+
+	3241.1.13 = { birth = yes }
+	3268.7.12 = { add_spouse = venukkus_101_wife }
+	3305.5.27 = { 
+		death = { death_reason = death_consumption }
+	}
+}
+
+venukkus_101_wife = {
+	name = "Teresa"
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+
+	trait = sign_warrior
+
+	3242.8.18 = { birth = yes }
+	3312.8.14 = { death = { death_reason = death_old_age } }
+}
+
+venukkus_102 = {
+	name = "Zophonias"
+	dynasty = dyn_venukkus
+	culture = westmarcher
+	religion = nord_cult
+	father = venukkus_101
+	mother = venukkus_101_wife
+
+	trait = weak
+	trait = sign_mage
+
+	3271.4.21 = { birth = yes }
+	3294.8.7 = { add_spouse = venukkus_102_wife }
+	3354.1.1 = { death = { death_reason = death_battle killer = shardbrok_1000 } } #Weak elderly men don't make for tough targets
+}
+
+venukkus_102_wife = {
+	name = "Erla"
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+
+	trait = sign_lover
+
+	3273.2.13 = { birth = yes }
+	3337.2.28 = { death = { death_reason = death_old_age } }
+}
+
+venukkus_103 = { #Line marries into the Battleborn clan
+	name = "Athaulf"
+	dynasty = dyn_venukkus
+	culture = westmarcher
+	religion = nord_cult
+	father = venukkus_102
+	mother = venukkus_102_wife
+
+	trait = sign_lover
+
+	3297.2.12 = { birth = yes }
+	3323.4.30 = { add_spouse = venukkus_103_wife }
+	3354.1.1 = { death = { death_reason = death_battle killer = shardbrok_1000 } }
+}
+
+venukkus_103_wife = {
+	name = "Melisenda"
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+
+	3295.1.23 = { birth = yes }
+	3359.7.17 = { death = { death_reason = death_old_age } }
+}
+
+venukkus_104 = { #Marries battleborn_95 in 3353.3.12
+	name = "Amalfrida"
+	dynasty = dyn_venukkus
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+	father = venukkus_103
+	mother = venukkus_103_wife
+
+	trait = sign_shadow
+
+	3324.5.3 = { birth = yes }
+	3357.1.1 = { set_relation_friend = { reason = friend_generic_history target = character:bullblood_gen_21 } } #The Venukkus clan treated the Bullblood clan well and respected their faith, Weylin never forgot
+	3381.1.1 = { death = { death_reason = death_old_age } }
+}
+
+venukkus_103_brother = { #Family continues from him
+	name = "Wittigis"
+	dynasty = dyn_venukkus
+	culture = westmarcher
+	religion = nord_cult
+	father = venukkus_102
+	mother = venukkus_102_wife
+
+	trait = sign_steed
+
+	3298.6.23 = { birth = yes }
+	3329.4.30 = { add_spouse = venukkus_103_brother_wife }
+	3354.1.1 = { death = { death_reason = death_battle killer = shardbrok_1000 } }
+}
+
+venukkus_103_brother_wife = {
+	name = "Gelvira"
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+
+	3297.1.23 = { birth = yes }
+	3354.1.1 = { death = { death_reason = death_battle killer = shardbrok_1000 } }
+}
+
+venukkus_105_sister = { #Brother's line
+	name = "Siv"
+	dynasty = dyn_venukkus
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+
+	father = venukkus_103_brother
+	mother = venukkus_103_brother_wife
+
+	trait = twin
+	trait = sickly
+	trait = sign_lover
+
+	3331.2.11 = { birth = yes }
+	3333.3.6 = { death = { death_reason = death_sickly }}
+}
+
+venukkus_105 = { #Brother's line
+	name = "Kaethe"
+	dynasty = dyn_venukkus
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+
+	father = venukkus_103_brother
+	mother = venukkus_103_brother_wife
+
+	trait = twin
+	trait = sign_lover
+	trait = vengeful
+	trait = brave
+	trait = patient #Waiting until she can reclaim Sunderstone with the backing of Hakkvild
+
+	3331.2.11 = { birth = yes }
+	3354.1.1 = {
+		employer = skjoralmor_200
+	}
+	3352.2.28 = { add_matrilineal_spouse = venukkus_105_husband }
+	3357.1.1 = { set_relation_friend = { reason = friend_generic_history target = character:bullblood_gen_21 } } #The Venukkus clan treated the Bullblood clan well and respected their faith, Weylin never forgot
+	3394.7.24 = { death = { death_reason = death_old_age } }
+}
+
+venukkus_105_husband = {
+	name = "Bryngeir"
+	dynasty = dyn_goldblood
+	culture = westmarcher
+	religion = nord_cult
+	father = woodhewn_97_bastard_nephew
+	mother = goldblood_9299
+
+	trait = sign_apprentice
+	trait = gregarious
+	trait = vengeful
+	trait = arbitrary
+
+	3330.7.26 = { birth = yes }
+	3354.1.1 = {
+		employer = skjoralmor_200
+	}
+	3386.1.4 = { death = { death_reason = death_old_age } }
+}
+venukkus_106b = { # Marries Astrid Skjoralmor, brother becomes count/clan-head
+	name = "Mikhael"
+	dynasty = dyn_venukkus
+	culture = westmarcher
+	religion = nord_cult
+	father = venukkus_105_husband
+	mother = venukkus_105
+
+	trait = sign_ritual
+
+	3352.1.8 = { birth = yes }
+	3354.1.8 = {
+		employer = skjoralmor_200
+	}
+	3387.1.1 = { trait = disinherited }
+	3421.7.24 = { death = { death_reason = death_old_age } }
+}
+venukkus_106 = { #Becomes count of Evergreen and Half-Moon Side under Hakkvild
+	name = "Thjodmar"
+	dynasty = dyn_venukkus
+	culture = westmarcher
+	religion = nord_cult
+	father = venukkus_105_husband
+	mother = venukkus_105
+
+	trait = sign_atronach
+
+	3356.11.23 = { birth = yes }
+	3357.1.1 = {
+		employer = skjoralmor_200
+	}
+	3375.1.5 = { add_spouse = keeneye_1002 }
+	3421.7.24 = { death = { death_reason = death_old_age } }
+}
+
+skjoralmor_97_wife = {
+	name = "Fridora"
+	dynasty = dyn_venukkus
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+	mother = venukkus_100
+	father = venukkus_100_husband
+
+	trait = sign_shadow
+
+	3242.5.11 = { birth = yes }
+	3305.6.24 = { death = { death_reason = death_old_age } }
+}
+
+##Skjoralmor Dynasty (dyn_skjoralmor)
+
+#House Skjoralmor
+
+
+skjoralmor_1 = {###Bjarfrud Skjoralmor- first founder, unknown date. Born 1E
+	name = "Bjarfrud" #First King of Falkreath
+	dynasty = dyn_skjoralmor #Skjoralmor
+	culture = eastmarcher #Came from The Rift originally- my own lore, not canon
+	religion = nord_cult
+	trait = brave
+	trait = callous
+	trait = just
+	trait = education_martial_4
+	prowess = 15
+	
+	280.1.1 = { birth = yes }
+	300.1.1 = { add_spouse = skjoralmor_1_wife }
+	358.1.1 = { death = yes }
+}
+skjoralmor_2 = {
+	name = "Husgrar"
+	dynasty = dyn_skjoralmor #Skjoralmor
+	culture = westmarcher #Before cultural exchange with Cyrodiil
+	religion = nord_cult
+	father = skjoralmor_1
+	mother = skjoralmor_1_wife
+
+	trait = calm
+	trait = compassionate
+	trait = just
+	trait = education_diplomacy_4 #Inherited understanding of his Nedic grandmother's people
+	
+	308.1.1 = { birth = yes }
+	327.1.1 = { add_spouse = skjoralmor_2_wife }
+	383.6.14 = { death = yes }
+}
+
+skjoralmor_2_wife = {
+	name = "Vegerdur"
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+
+	trait = sign_thief
+
+	307.12.27 = { birth = yes }
+	386.2.12 = { death = yes }
+}
+
+skjoralmor_3 = {
+	name = "Heidarr"
+	dynasty = dyn_skjoralmor #Skjoralmor
+	culture = westmarcher
+	religion = nord_cult
+	father = skjoralmor_2
+	mother = skjoralmor_2_wife
+
+	#trait = fornicator
+	trait = sign_apprentice
+	
+	328.7.19 = { birth = yes }
+	354.9.4 = { add_spouse = skjoralmor_3_wife }
+	386.6.18 = { death = yes }
+}
+
+skjoralmor_3_wife = {
+	name = "Dagbjorg"
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+
+	trait = sign_lord
+	
+	328.3.8 = { birth = yes }
+	389.5.17 = { death = yes }
+}
+
+skjoralmor_3_bastard_mom = {
+	name = "Enola"
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+
+	#trait = fornicator
+	trait = sign_steed
+	
+	326.6.3 = { birth = yes }
+	349.3.12 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+
+skjoralmor_3_bastard = {
+	name = "Astbjorn"
+	dynasty = dyn_kjoric # of Kjoric
+	culture = westmarcher
+	religion = nord_cult
+
+	father = skjoralmor_3
+	mother = skjoralmor_3_bastard_mom
+
+	trait = bastard_founder
+	trait = sign_lord
+
+	349.3.12 = { birth = yes }
+	374.9.4 = { add_spouse = kjoric_100_mom }
+	406.6.18 = { death = yes }
+}
+
+kjoric_100_mom = {
+	name = "Bothildur"
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+
+	trait = sign_tower
+	
+	346.10.8 = { birth = yes }
+	408.12.25 = { death = yes }
+}
+
+skjoralmor_4 = {
+	name = "Fridveig" #The one who conquerors eastern Falkreath
+	dynasty = dyn_skjoralmor #Skjoralmor
+	culture = westmarcher
+	religion = alessian
+	father = skjoralmor_3
+	mother = skjoralmor_3_wife
+	female = yes
+
+	trait = ambitious
+	trait = brave
+	trait = arbitrary
+	trait = deceitful #Backstabs her family's best allies, and her distant family through her great grandma
+	trait = education_martial_3
+	trait = sign_lover
+	prowess = 12
+
+	356.2.9 = { birth = yes }
+	387.3.25 = { add_spouse = skjoralmor_4_husband }
+	422.1.1 = { death = { death_reason = death_duel killer = kjoric_100 } } #Bastard's family launches coup
+}
+
+skjoralmor_4_husband = {
+	name = "Oktovius"
+	culture = westmarcher
+	religion = alessian
+	father = skjoralmor_4_husband_dad
+	mother = skjoralmor_4_husband_mom
+
+	trait = sign_atronach
+
+	353.11.28 = { birth = yes }
+	424.9.6 = { death = yes }
+}
+
+skjoralmor_5_sister = {
+	name = "Heiddis"
+	dynasty = dyn_skjoralmor #Skjoralmor
+	culture = westmarcher
+	religion = alessian
+	father = skjoralmor_4_husband
+	mother = skjoralmor_4
+	female = yes
+
+	trait = ambitious
+	trait = callous
+	trait = deceitful #Backstabs her family for Kjoric- karma for Nedes in a way
+	trait = education_intrigue_3
+	trait = legitimized_bastard
+	trait = disinherited #Why she did what she did
+	trait = sign_steed
+	intrigue = 12
+
+	381.6.13 = { birth = yes }
+	400.1.1 = { add_spouse = kjoric_100 }
+	457.1.1 = { death = { death_reason = death_battle } }
+}
+
+skjoralmor_5 = { #Stays around Helgen until Kjoric's line dies
+	name = "Tibor"
+	dynasty = dyn_skjoralmor #Skjoralmor
+	culture = westmarcher
+	religion = alessian
+	father = skjoralmor_4_husband
+	mother = skjoralmor_4
+
+	trait = vengeful #Wants his throne back
+	trait = craven #But is afraid to face Kjoric
+	trait = just
+	trait = sign_lord
+
+	389.3.17 = { birth = yes }
+	411.8.31 = { add_spouse = skjoralmor_5_wife }
+	446.7.17 = { death = yes }
+}
+
+skjoralmor_5_wife = {
+	name = "Gothmunda"
+	culture = westmarcher
+	religion = alessian
+	female = yes
+
+	trait = sign_lover
+
+	388.2.2 = { birth = yes }
+	448.7.25 = { death = yes }
+}
+
+skjoralmor_6 = { #Stays around Helgen until Kjoric's line dies
+	name = "Lovisa"
+	dynasty = dyn_skjoralmor #Skjoralmor
+	culture = westmarcher
+	religion = alessian
+	father = skjoralmor_5
+	mother = skjoralmor_5_wife
+	female = yes
+
+	trait = sign_mage
+
+	413.4.13 = { birth = yes }
+	436.4.19 = { add_spouse = skjoralmor_6_husband }
+	469.8.30 = { death = yes }
+}
+
+skjoralmor_6_husband = {
+	name = "Alfthor"
+	culture = westmarcher
+	religion = alessian
+
+	trait = sign_tower
+
+	412.10.10 = { birth = yes }
+	473.1.23 = { death = yes }
+}
+
+skjoralmor_7 = { #Takes the throne after Hoag dies
+	name = "Okto"
+	dynasty = dyn_skjoralmor #Skjoralmor
+	culture = westmarcher
+	religion = nord_cult
+	father = skjoralmor_6_husband
+	mother = skjoralmor_6
+
+	trait = sign_lover
+
+	438.2.23 = { birth = yes }
+	461.4.27 = { add_spouse = skjoralmor_7_wife } #Daughter of helgr_1 and sister of helgr_2
+	507.12.11 = { death = yes }
+}
+
+skjoralmor_line = {
+	name = "Okto"
+	dynasty = dyn_skjoralmor #Skjoralmor
+	culture = westmarcher
+	religion = nord_cult
+
+	father = skjoralmor_7
+	mother = skjoralmor_7_wife
+
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+
+	463.5.13 = { birth = yes }
+	500.1.1 = { give_nickname = nick_line_of }
+	3241.1.28 = { death = yes }
+}
+skjoralmor_97 = {
+	name = "Ulfrid"
+	dynasty = dyn_skjoralmor #Skjoralmor
+	culture = westmarcher
+	religion = nord_cult
+	father = skjoralmor_line
+
+	3241.1.28 = { birth = yes }
+	3273.7.8 = { add_spouse = skjoralmor_97_wife }
+	3300.3.30 = { death = { death_reason = death_accident } }
+}
+
+skjoralmor_98_sister = { #Becomes skjoralmor_300
+	name = "Elvira"
+	dynasty = dyn_skjoralmor #Skjoralmor
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+	father = skjoralmor_97
+	mother = skjoralmor_97_wife
+
+	trait = sign_shadow
+
+	3277.5.3 = { birth = yes }
+	3302.2.6 = { add_spouse = skjoralmor_98_sister_husband }
+	3341.3.1 = { death = { death_reason = death_old_age } }
+}
+
+skjoralmor_98_sister_husband = {
+	name = "Alfthor"
+	culture = westmarcher
+	religion = nord_cult
+
+	trait = sign_apprentice
+
+	3278.7.6 = { birth = yes }
+	3339.2.11 = { death = { death_reason = death_old_age } }
+}
+
+skjoralmor_98 = {
+	name = "Thadgeir" #King of Falkreath
+	dna = skjoralmor_thadgeir_dna_entry
+	dynasty = dyn_skjoralmor #Skjoralmor
+	culture = westmarcher
+	religion = nord_cult
+
+	father = skjoralmor_97
+	mother = skjoralmor_97_wife
+
+	trait = cynical
+	trait = diligent
+	trait = greedy
+	trait = education_stewardship_4
+	
+	3275.1.1 = { birth = yes }
+	3299.1.1 = { add_spouse = skjoralmor_98_wife }
+	3345.1.1 = { death = yes }
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_beards=male_beard_fp1_05
+			custom_hair=male_hair_fp1_07
+		}
+	}
+}
+skjoralmor_98_wife = {
+	name = "Agniorta"
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+	
+	3272.1.1 = { birth = yes }
+	3346.1.1 = { death = yes }
+}
+skjoralmor_99 = {
+	name = "Falk" #King of Falkreath
+	dynasty = dyn_skjoralmor #Skjoralmor
+	culture = westmarcher
+	religion = nord_cult
+	
+	father = skjoralmor_98
+	mother = skjoralmor_98_wife
+
+	trait = arbitrary
+	trait = craven
+	trait = greedy
+	trait = education_stewardship_2
+	
+	3300.1.1 = { birth = yes }
+	3329.1.1 = { add_spouse = skjoralmor_99_wife }
+	3354.1.1 = {
+		death = {
+			death_reason = death_duel
+			killer = yashnag_100
+		}
+	}
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_beards=male_beard_fp2_iberian_muslim_01
+			custom_hair=male_hair_fp1_08
+		}
+	}
+}
+skjoralmor_99_wife = {
+	name = "Signhire"
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+
+	trait = wrathful
+	trait = content #Meant to mirror Yashnag in everything but ambition
+	trait = just
+	
+	3306.1.1 = { birth = yes }
+	3354.1.1 = {
+		death = {
+			death_reason = death_duel
+			killer = yashnag_100
+		}
+	}
+}
+skjoralmor_100 = {
+	name = "Hakkvild" #King of Falkreath
+	dynasty = dyn_skjoralmor
+	dna = hakkvild_skjoralmor_dna_entry
+	culture = westmarcher
+	religion = nord_cult
+	father = skjoralmor_99
+	mother = skjoralmor_99_wife
+
+	martial = 10
+	prowess = 13
+	learning = 9 #Already has learning_3 which gives him 6 learning
+
+	trait = education_learning_3
+	trait = brave
+	trait = ambitious
+	trait = vengeful
+	trait = strong
+	trait = p_at_bear
+
+	portrait_override = {
+		portrait_modifier_overrides={
+			custom_beards=male_beard_western_01
+			custom_hair=male_hair_fp1_04
+		}
+	}
+	
+	3330.1.1 = { birth = yes }
+	3349.1.1 = { add_spouse = skjoralmor_100_wife }
+	3354.1.2 = { 
+		effect = {
+			add_pressed_claim = title:k_falkreath
+			add_pressed_claim = title:d_falkreath
+			add_pressed_claim = title:c_falkreath
+			add_pressed_claim = title:c_morgate
+			add_pressed_claim = title:c_peak_shade
+			add_pressed_claim = title:c_shriekwind
+		}
+		employer = skjoralmor_200
+	}
+	3357.1.1 = {
+		effect = {
+			if = { limit = { NOT = { has_perk = pedagogy_perk }}
+				add_perk = pedagogy_perk
+			}
+			if = { limit = { NOT = { has_perk = open_minded_perk }}
+				add_perk = open_minded_perk
+			}
+			if = { limit = { NOT = { has_perk = apostate_perk }}
+				add_perk = apostate_perk
+			}
+			if = { limit = { NOT = { has_perk = scientific_perk }}
+				add_perk = scientific_perk
+			}
+			if = { limit = { NOT = { has_perk = planned_cultivation_perk }}
+				add_perk = planned_cultivation_perk
+			}
+		}
+	}	
+	3359.1.1 = {
+		effect = {
+			if = { limit = { NOT = { has_perk = stalwart_leader_perk }}
+				add_perk = stalwart_leader_perk
+			}
+			if = { limit = { NOT = { has_perk = chivalric_dominance_perk }}
+				add_perk = chivalric_dominance_perk
+			}
+			if = { limit = { NOT = { has_perk = never_back_down_perk }}
+				add_perk = never_back_down_perk
+			}
+		}
+	}
+	3369.11.30 = {
+		effect = {
+			add_secret = {
+				type = secret_murder
+				target = character:blackthorn_200
+			}
+		}
+	}
+	3370.1.1 = {
+		effect = {
+			create_alliance = character:yngvlar_996
+			add_opinion = {
+				modifier = perk_negotiated_alliance_opinion
+				target = character:yngvlar_996
+			}
+		}
+	}
+	3387.3.17 = { give_nickname = nick_yashnag_slayer }
+	3390.1.1 = { death = yes }
+}
+skjoralmor_100_wife = {
+	name = "Illdfrida"
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+
+	trait = family_first
+	trait = compassionate
+	trait = content
+	trait = calm #Just a genuinly kind woman who wanted to raise her small Nordic family in peace
+	
+	3329.1.1 = { birth = yes }
+	3354.1.1 = {
+		death = {
+			death_reason = death_duel
+			killer = yashnag_100 #'Slain' on the day her son was born.
+		}
+	}
+}
+skjoralmor_101 = {
+	name = "Astrid" #Queen of Falkreath
+	female = yes
+	dynasty = dyn_skjoralmor
+	culture = westmarcher
+	religion = nord_cult
+	father = skjoralmor_100
+	mother = skjoralmor_100_wife
+	
+	3350.1.1 = { birth = yes }
+	3354.1.1 = {
+		employer = skjoralmor_200
+	}
+	3360.1.1 = { add_matrilineal_spouse = venukkus_106b }
+	3415.1.1 = { death = yes }
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_beards=female_empty
+			custom_hair=female_hair_fp1_01
+		}
+	}
+}
+skjoralmor_102 = {
+	name = "Falkal" #King of Falkreath
+	dynasty = dyn_skjoralmor
+	culture = westmarcher
+	religion = nord_cult
+	father = venukkus_106b
+	mother = skjoralmor_101
+
+	3374.1.1 = { birth = yes }
+	3395.1.1 = { add_spouse = bullblood_gen_23_son_daughter }
+	3465.1.1 = { death = yes } # Temp
+}
+skjoralmor_103 = {
+	name = "Cuhlain" #King of Falkreath
+	dynasty = dyn_skjoralmor
+	culture = westmarcher
+	religion = nord_cult
+	father = skjoralmor_102
+	mother = bullblood_gen_23_son_daughter
+
+	3396.1.1 = { birth = yes }
+	3416.1.1 = { culture = reachfolk }
+	3492.1.1 = { death = yes } # Temp
+}
+skjoralmor_104 = {
+	name = "Halgeir" #King of Falkreath
+	dynasty = dyn_skjoralmor
+	culture = westmarcher
+	religion = nord_cult
+	father = skjoralmor_103
+	
+	3456.1.1 = { birth = yes }
+	3500.1.1 = { death = yes }
+}
+skjoralmor_105 = {
+	name = "Hjurgol" #King of Falkreath ( Alliance War )
+	dynasty = dyn_skjoralmor 
+	culture = westmarcher
+	religion = nord_cult
+	trait = arrogant
+	trait = wrathful
+	trait = stubborn
+	trait = drunkard
+	trait = depressed_1
+	father = skjoralmor_103
+	
+	3459.1.1 = { birth = yes }
+	3484.1.1 = { add_spouse = nordwife_1000 }
+	3503.1.1 = { death = yes }
+}
+skjoralmor_106 = {
+name = "Eerika" #Thane of Falkreath
+	dynasty = dyn_skjoralmor
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+	trait = education_martial_3
+	trait = brave
+	trait = stubborn
+	trait = trusting
+	trait = unyielding_defender
+	trait = lifestyle_hunter
+	father = skjoralmor_105
+	mother = nordwife_1000
+	
+	3485.1.1 = { birth = yes }
+	3506.1.1 = { death = yes }
+}
+skjoralmor_200 = {
+	name = "Engar" #Duke of Helgen (Warlords)
+	dynasty = dyn_skjoralmor #Skjoralmor
+	dna = engar_skjoralmor_dna_entry
+	culture = westmarcher
+	religion = nord_cult
+	
+	father = skjoralmor_98
+	mother = skjoralmor_98_wife
+
+	trait = education_learning_2
+	trait = craven
+	trait = compassionate
+	trait = shy
+	
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides={
+			custom_clothes=male_clothes_secular_fp1_nobility_02_high
+			custom_headgear=male_headgear_religious_northern_high_01
+			custom_hair=male_hair_fp1_04
+			custom_beards=male_beard_western_06
+			custom_cloaks=male_furs_secular_fp1_nobility_03
+		}
+	}	
+
+	3300.1.1 = { birth = yes }
+	3344.1.1 = { add_spouse = skjoralmor_200_wife }
+	# EK TODO adding perks throws error atm (known vanilla bug), so they should be assigned on game start
+	3340.1.1 = {
+		#effect = {
+		#	add_perk = pedagogy_perk
+		#	add_perk = open_minded_perk
+		#	add_perk = apostate_perk
+		#	add_perk = scientific_perk
+		#	add_perk = planned_cultivation_perk
+		#	add_perk = scholarly_circles_perk
+		#	add_perk = learn_on_the_job_perk
+		#	add_perk = sanctioned_loopholes_perk
+		#	add_perk = scholar_perk
+		#}
+		trait = scholar
+	}
+	#3359.1.1 = {
+	#	effect = {
+	#		add_perk = anatomical_studies_perk
+	#		add_perk = carefree_perk
+	#		add_perk = mental_resilience_perk
+	#		add_perk = restraint_perk
+	#		add_perk = know_thyself_perk
+	#		add_perk = wash_your_hands_perk
+	#	}
+	#}
+	3367.1.1 = {
+		death = { death_reason = death_old_age }
+	}
+}
+skjoralmor_200_wife = {
+	name = "Suslief"
+	dynasty = dyn_helgr
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+	father = helgr_line
+	
+	3300.1.1 = { birth = yes }
+	3345.1.1 = {
+		effect = {
+	add_opinion = {
+				modifier = usurped_title
+				target = character:skjoralmor_200
+				opinion = -20 #Doesn't hate her husband, but felt forced to relinqush her land
+			}
+		}
+	}
+	3365.1.1 = { death = { death_reason = death_old_age }}
+}
+skjoralmor_201 = {
+	name = "Thonnir" #Goes to Riften
+	dynasty = dyn_skjoralmor #Skjoralmor
+	culture = westmarcher
+	religion = nord_cult
+	
+	father = skjoralmor_200
+	mother = skjoralmor_200_wife
+	
+	3344.1.1 = { birth = yes }
+	3360.1.1 = {
+		effect = {
+			create_betrothal = character:blackthorn_200
+		}
+	}
+	3362.1.1 = { add_spouse = blackthorn_200 }
+	3369.1.1 = { 
+		effect = {
+			set_employer = character:blackthorn_1000 
+		}
+	}
+	3421.1.1 = {
+		death = { death_reason = death_old_age }
+	}
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=male_hair_fp1_09
+			custom_beards=male_beard_fp1_02
+		}
+	}
+}
+skjoralmor_202 = {
+	name = "Markus" 
+	dynasty = dyn_skjoralmor #Skjoralmor
+	culture = westmarcher
+	religion = nord_cult
+	
+	father = skjoralmor_201
+	
+	3399.1.1 = { birth = yes }
+	3400.1.1 = { 
+		effect = {
+			set_employer = character:blackthorn_103
+		}
+	}
+	3481.1.1 = {
+		death = { death_reason = death_old_age }
+	}
+}
+skjoralmor_203 = {
+	name = "Hegris" 
+	dynasty = dyn_skjoralmor #Skjoralmor
+	culture = westmarcher
+	religion = nord_cult
+	
+	father = skjoralmor_202
+	
+	3470.1.1 = { birth = yes }
+	3472.1.1 = { 
+		effect = {
+			set_employer = character:blackthorn_103
+		}
+	}
+	3549.1.1 = {
+		death = { death_reason = death_old_age }
+	}
+}
+skjoralmor_204 = {
+	name = "Malsorr" 
+	dynasty = dyn_skjoralmor #Skjoralmor
+	culture = westmarcher
+	religion = nord_cult
+	
+	father = skjoralmor_203
+	
+	3500.1.1 = { birth = yes }
+	3573.1.1 = {
+		death = { death_reason = death_old_age }
+	}
+}
+skjoralmor_205 = {
+	name = "Gomriss"
+	dynasty = dyn_skjoralmor #Skjoralmor
+	culture = westmarcher
+	religion = nord_cult
+	
+	father = skjoralmor_203
+	
+	3502.1.1 = { birth = yes }
+	3577.1.1 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+skjoralmor_300 = { #Niece of Thadgeir
+	name = "Elvira"
+	dynasty = dyn_skjoralmor #Skjoralmor
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+	father = skjoralmor_98_sister_husband
+	mother = skjoralmor_98_sister
+
+	trait = sign_lord
+
+	3304.3.12 = { birth = yes }
+	3327.7.19 = { add_spouse = skjoralmor_300_husband } #Preferably from another house
+	3354.1.1 = { death = { death_reason = death_battle } } #Died protecting Falkreath
+}
+
+skjoralmor_300_husband = {
+	name = "Munderic"
+	culture = westmarcher
+	religion = nord_cult
+
+	trait = sign_shadow
+
+	3303.5.21 = { birth = yes }
+	3354.1.1 = { death = { death_reason = death_battle } }
+}
+
+skjoralmor_301 = { #Wife to Borvir Bjorga (bjorga_10601)
+	name = "Lucienne"
+	dynasty = dyn_skjoralmor #Skjoralmor
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+	father = skjoralmor_300_husband
+	mother = skjoralmor_300
+
+	trait = sign_lord
+
+	3334.3.17 = { birth = yes }
+	3411.7.15 = { death = { death_reason = death_old_age } }
+}
+
+skjoralmor_302 = { #His line eventually marries into another family
+	name = "Farnobius"
+	dynasty = dyn_skjoralmor #Skjoralmor
+	culture = westmarcher
+	religion = nord_cult
+	father = skjoralmor_300_husband
+	mother = skjoralmor_300
+
+	trait = sign_ritual
+
+	3337.1.18 = { birth = yes }
+	3354.1.1 = {
+		employer = skjoralmor_200
+	}
+	3357.7.19 = { add_spouse = skjoralmor_302_wife }
+	3404.8.31 = { death = { death_reason = death_old_age } }
+}
+
+skjoralmor_302_wife = {
+	name = "Richildis"
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+
+	trait = sign_lover
+
+	3339.2.21 = { birth = yes }
+	3354.1.1 = {
+		employer = skjoralmor_200
+	}
+	3401.10.11 = { death = { death_reason = death_old_age } }
+}
+
+skjoralmor_303 = { #Line eventually marries into another family
+	name = "Gundehar"
+	dynasty = dyn_skjoralmor #Skjoralmor
+	culture = westmarcher
+	religion = nord_cult
+	father = skjoralmor_302
+	mother = skjoralmor_302_wife
+
+	trait = sign_mage
+
+	3358.4.13 = { birth = yes }
+	3359.1.1 = {
+		employer = skjoralmor_200
+	}
+	3365.1.23 = {
+		effect = {
+			if = {
+				limit = { character:skjoralmor_304 = { is_alive = yes } }
+				set_relation_best_friend = { reason = friend_generic_history target = character:skjoralmor_304 }
+			}
+		}
+	}
+	#TODO- spouse
+	3414.10.31 = { death = { death_reason = death_battle } }
+}
+
+skjoralmor_304 = { #Line eventually marries into another family
+	name = "Andagis"
+	dynasty = dyn_skjoralmor #Skjoralmor
+	culture = westmarcher
+	religion = nord_cult
+
+	father = skjoralmor_302
+	mother = skjoralmor_302_wife
+
+	3361.1.23 = { birth = yes }
+	3362.1.1 = {
+		employer = skjoralmor_200
+	}
+	#TODO- spouse
+	3414.10.31 = { death = { death_reason = death_battle } } #Dies with big bro
+}
+
+#House Raven-Eye
+skjoralmor_1001 = {
+	name = "Heimskr" #Duke of Helgen (Interregnum)
+	dynasty = dyn_skjoralmor
+	culture = westmarcher
+	religion = nord_cult
+	father = skjoralmor_100
+	mother = skjoralmor_100_wife
+	
+	3354.1.1 = { birth = yes }
+	3354.1.1 = {
+		employer = skjoralmor_200
+	}
+	3370.1.1 = { add_spouse = yngvlar_1997 }
+	3372.1.1 = { dynasty_house = dyn_raveneye }
+	3424.1.1 = { death = yes }
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=male_hair_fp1_02
+			custom_beards=male_empty
+		}
+	}
+}
+raveneye_100 = {
+	name = "Frothar" #Duke of Helgen
+	dynasty_house = dyn_raveneye
+	culture = westmarcher
+	religion = nord_cult
+	father = skjoralmor_1001
+	mother = yngvlar_1997
+
+	trait = sign_atronach
+
+	3372.11.25 = { birth = yes }
+	3446.1.1 = { death = yes }
+}
+raveneye_101 = {
+	name = "Abbard"
+	dynasty_house = dyn_raveneye
+	culture = westmarcher
+	religion = nord_cult
+	father = skjoralmor_1001
+	mother = yngvlar_1997
+
+	trait = sign_ritual
+
+	3374.1.9 = { birth = yes }
+	3451.1.1 = { death = yes }
+}
+raveneye_102 = {
+	name = "Angrenor" #Duke of Helgen
+	dynasty_house = dyn_raveneye
+	culture = westmarcher
+	religion = nord_cult
+	father = raveneye_100
+	
+	3421.1.1 = { birth = yes }
+	3493.1.1 = { death = yes }
+}
+raveneye_103 = {
+	name = "Hroldan" #Duke of Helgen ( Alliance War )
+	dynasty_house = dyn_raveneye
+	culture = westmarcher
+	religion = nord_cult
+	father = raveneye_102
+	
+	3450.1.1 = { birth = yes }
+	3519.1.1 = { death = yes }
+}
+raveneye_104 = {
+	name = "Logrolf" #Duke of Helgen
+	dynasty_house = dyn_raveneye
+	culture = westmarcher
+	religion = nord_cult
+	father = raveneye_103
+	
+	3474.1.1 = { birth = yes }
+	3538.1.1 = { death = yes }
+}
+
+#House Silver-Anvil
+silveranvil_99_mother = {
+	name = "Rainilda"
+	female = yes
+	culture = eastmarcher
+	religion = nord_cult
+
+	trait = sign_mage
+	
+	3301.4.13 = { birth = yes }
+	3336.11.16 = { death = { death_reason = death_childbirth } }
+}
+silveranvil_99 = {
+	name = "Agnorith" #Count of Neugrad, Marries Iliac woman ( Warlords & Interregnum )
+	dynasty = dyn_silver_anvil
+	culture = eastmarcher
+	religion = nord_cult
+	trait = legitimized_bastard
+	mother = silveranvil_99_mother
+
+	trait = cynical #Actually a zealous follower of the Atmoran Totems
+	trait = calm
+	trait = patient
+	trait = sign_atronach
+	
+	3336.11.16 = { birth = yes }
+	3350.1.1 = { effect = { make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:totemism } } }
+	3350.1.2 = { effect = { learn_language = language_atmoran } }
+	3351.1.1 = { effect = { learn_language = language_bretic } }
+	3351.5.26 = { effect = { set_relation_lover = { reason = lover_history target = character:bretonlowborn_1000 } } } #Bonded over shared values for the old faiths
+	3352.5.22 = { add_spouse = bretonlowborn_1000 }
+	3399.8.13 = { death = yes }
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=male_hair_fp1_04
+			custom_beards=male_beard_western_02
+		}
+	}
+}
+bretonlowborn_1000 = {
+	name = "Derelle"
+	religion = breton_cult
+	culture = iliac
+	trait = beauty_good_1
+	female = yes
+
+	trait = patient
+	trait = arrogant
+	trait = cynical #Actually a zealous follower of the Forgotten Gods
+	trait = sign_mage
+
+	3332.4.2 = { birth = yes }
+	3350.1.1 = { effect = { make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:forgotten_gods } } }
+	3351.1.1 = { effect = { learn_language = language_nordic } }
+	# 3352 marries silveranvil_99
+	3396.5.13 = { death = yes }
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=female_hair_western_08
+			custom_beards=female_empty
+		}
+	}
+}
+
+silveranvil_100 = {
+	name = "Arnault"
+	dynasty = dyn_silver_anvil
+	culture = eastmarcher
+	religion = breton_cult #Breton mother raised
+	trait = beauty_good_1
+	father = silveranvil_99
+	mother = bretonlowborn_1000
+
+	trait = sign_lord
+
+	3353.3.16 = { birth = yes }
+	3353.3.17 = { effect = { learn_language = language_bretic } }
+	3369.1.1 = { #But embraces his father's side more
+		culture = eastmarcher
+		religion = nord_cult
+	}
+	3415.11.19 = { death = yes }
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=male_hair_western_06
+			custom_beards=male_beard_fp2_iberian_christian_01
+		}
+	}
+}
+
+silveranvil_101 = {
+	name = "Ormvard"
+	dynasty = dyn_silver_anvil
+	culture = eastmarcher
+	religion = nord_cult
+	father = silveranvil_99
+	mother = bretonlowborn_1000
+
+	trait = sign_lady
+
+	3358.9.13 = { birth = yes }
+	3358.9.14 = { effect = { learn_language = language_bretic } }
+	3394.3.7 = { 
+		trait = ill
+		death = { 
+			death_reason = death_ill
+		}
+	}
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=male_hair_fp1_06
+			custom_beards=male_beard_fp2_iberian_muslim_01
+		}
+	}
+}
+## These will change as more start dates are added
+silveranvil_102 = {
+	name = "Aeta" #Count of Neugrad
+	female = yes
+	dynasty = dyn_silver_anvil
+	culture = westmarcher
+	religion = nord_cult
+	trait = beauty_good_1
+	father = silveranvil_100
+
+	trait = brave
+	trait = content
+	trait = lazy
+	
+	3399.1.1 = { birth = yes }
+	#3415 Matri marries palestone_1002
+	3471.1.1 = { death = yes }
+}
+silveranvil_103 = {
+	name = "Rona" #Count of Neugrad ( Alliance War )
+	female = yes
+	dynasty = dyn_silver_anvil
+	culture = westmarcher
+	religion = nord_cult
+	mother = silveranvil_102
+	father = palestone_1002
+	
+	3434.1.1 = { birth = yes }
+	3503.1.1 = { death = yes }
+}
+silveranvil_104 = {
+	name = "Froki" #Count of Neugrad
+	dynasty = dyn_silver_anvil
+	culture = westmarcher
+	religion = nord_cult
+	mother = silveranvil_103
+	
+	3478.1.1 = { birth = yes }
+	3542.1.1 = { death = yes }
+}
+silveranvil_105 = {
+	name = "Frodnar"
+	dynasty = dyn_silver_anvil
+	culture = westmarcher
+	religion = nord_cult
+	mother = silveranvil_103
+	
+	3482.1.1 = { birth = yes }
+	3542.1.1 = { death = yes }
+}
+
+# Winterborn clan. Ruled Markarth in 1E, dead
+winterborn_99 = {
+	name = "Evandene"
+	dynasty = dyn_winterborn
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+
+	trait = sadistic
+	trait = wrathful
+	trait = vengeful
+	trait = education_martial_2
+	
+	900.1.1 = { birth = yes }
+	925.1.1 = { give_nickname = nick_tusk_collector }
+	956.1.1 = { death = { death_reason = death_murder } }
+}
+winterborn_100 = {
+	name = "Mercedene"
+	dynasty = dyn_winterborn
+	culture = westmarcher
+	religion = nord_cult
+	female = yes
+
+	mother = winterborn_99
+
+	trait = sadistic
+	trait = zealous
+	trait = diligent
+	trait = education_martial_3
+	trait = cannibal
+	
+	930.1.1 = { birth = yes }
+	946.1.1 = { give_nickname = nick_the_beast_of_the_reach }
+	970.7.2 = { death = { death_reason = death_battle } }
+}

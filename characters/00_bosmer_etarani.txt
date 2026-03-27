@@ -1,0 +1,2942 @@
+﻿#Main Camoran line
+camoran_1 = {
+	name = "Eplear"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = morathi
+
+	trait = ambitious
+	trait = generous
+	trait = gregarious
+	trait = education_martial_4
+	trait = lifespan_2
+
+	-60.1.1 = { birth = yes }
+	30.1.1 = { add_spouse = auriel1_4b }
+	127.4.7 = { death = { death_reason = death_natural_causes } }
+}
+camoran_2 = {
+	name = "Haymon"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = morathi
+	
+	#father = camoran_1 #Handled in ek_on_game_start_fix_history_parents due to father being born in negative year
+	#mother = auriel1_4b
+
+	trait = gregarious
+	trait = brave
+	trait = vengeful
+	trait = education_diplomacy_3
+	trait = lifespan_4 #From mother
+
+	43.1.1 = { birth = yes }
+	#Married to Ayleid refugee
+	250.1.1 = { add_spouse = caeleben_002 }
+	411.8.20 = { death = { death_reason = death_natural_causes } }
+}
+camoran_3 = {
+	name = "Emalith"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	father = camoran_2
+	mother = caeleben_002
+
+	trait = lifespan_3 #From grandmother
+
+	261.1.1 = { birth = yes }
+	350.1.1 = { add_matrilineal_spouse = arenthia_4b }
+	509.12.4 = { death = yes }
+}
+camoran_3b = {
+	name = "Calarthor"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	mother = camoran_3
+	father = arenthia_4b
+
+	trait = lifespan_2
+
+	368.1.1 = { birth = yes }
+	557.1.1 = { death = yes }
+}
+camoran_3c = {
+	name = "Egilrineth"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = camoran_3b
+
+	trait = lifespan_2
+
+	439.1.1 = { birth = yes }
+	601.1.1 = { death = yes }
+}
+camoran_3d = {
+	name = "Egolor"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	mother = camoran_3c
+
+	trait = lifespan_2
+
+	505.1.1 = { birth = yes }
+	698.1.1 = { death = yes }
+}
+camoran_4 = {
+	name = "Fiola"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = camoran_3d
+
+	trait = diligent
+	trait = arrogant
+	trait = ambitious
+	trait = education_diplomacy_4
+	trait = lifespan_2
+
+	572.1.1 = { birth = yes }
+	650.1.1 = { add_matrilineal_spouse = brethil_5b }
+	774.11.10 = { death = yes }
+}
+camoran_5 = {
+	name = "Baenlin"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	mother = camoran_4
+	father = brethil_5b
+
+	trait = content
+	trait = diligent
+	trait = chaste
+	trait = journaller
+	trait = education_learning_4
+	trait = lifespan_2
+
+	670.1.1 = { birth = yes }
+	887.2.16 = { death = yes }
+}
+camoran_5b = {
+	name = "Calarthor" #Lore - we know that Camoran with this name existed and died in battle
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	mother = camoran_4
+	father = brethil_5b
+
+	trait = lifespan_2
+	trait = brave
+	trait = vengeful
+
+	654.1.1 = { birth = yes }
+	720.1.1 = { death = { death_reason = death_battle killer = tharedhel_1 } }
+}
+camoran_6 = { #Camoran the Usurper 0.1. Dies without children
+	name = "Cerwil"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = camoran_5
+
+	trait = education_learning_4
+	trait = greedy
+	trait = patient
+	trait = ambitious
+	trait = whole_of_body
+	trait = lifespan_magic_4
+	trait = education_magic_2
+	trait = arcana_good_2
+
+	742.1.1 = { birth = yes }
+	1000.10.10 = { death = { death_reason = death_mysterious } }
+}
+camoran_6b = {
+	name = "Einriel"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = camoran_5
+	
+	trait = lifespan_2
+
+	754.1.1 = { birth = yes }
+	933.1.1 = { death = { death_reason = death_old_age } }
+}
+camoran_7 = {
+	name = "Calarthor"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	mother = camoran_6b
+
+	trait = lifespan_2
+
+	842.1.1 = { birth = yes }
+	1023.9.20 = { death = { death_reason = death_old_age } }
+}
+camoran_8 = {
+	name = "Aeradan"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_7
+
+	trait = lifespan_2
+
+	910.1.1 = { birth = yes }
+	1104.11.18 = { death = yes }
+}
+camoran_9 = {
+	name = "Cerwil"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = camoran_8
+
+	trait = lifespan_2
+
+	999.1.1 = { birth = yes }
+	1202.1.1 = { death = yes }
+}
+#Falinesti branch
+camoran_line = {
+	name = "Cerwil"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+	mother = camoran_9
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	trait = line_of_x
+	disallow_random_traits = yes
+	1272.1.1 = { birth = yes }
+	1300.1.1 = { give_nickname = nick_line_of }
+	1955.1.1 = { death = yes }
+}
+
+camoran_84 = {
+	name = "Glathras"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	mother = camoran_line
+	
+	trait = lifespan_2
+
+	1955.1.1 = { birth = yes }
+	2142.7.15 = { death = yes }
+}
+
+camoran_85 = {
+	name = "Egilrineth"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = camoran_84
+
+	trait = lifespan_2
+
+	2012.1.1 = { birth = yes }
+	2199.2.2 = { death = yes }
+}
+
+camoran_85b = {
+	name = "Aeradan"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_84
+
+	trait = lifespan_2
+
+	2023.1.1 = { birth = yes }
+	2202.1.1 = { death = yes }
+}
+
+camoran_86 = {
+	name = "Haymon"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	mother = camoran_85
+
+	trait = lifespan_2
+
+	2089.1.1 = { birth = yes }
+	2267.3.28 = { death = { death_reason = death_thrassian_plague } }
+}
+
+camoran_86b = {
+	name = "Nilwen"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	mother = camoran_85
+	
+	trait = lifespan_2
+
+	2096.1.1 = { birth = yes }
+	2288.1.1 = { death = yes }
+}
+
+camoran_87 = {
+	name = "Cingor"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_86
+
+	trait = lifespan_2
+
+	2164.1.1 = { birth = yes }
+	2334.5.14 = { death = yes }
+}
+
+camoran_88 = {
+	name = "Aglion"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_87
+
+	trait = lifespan_2
+
+	2250.1.1 = { birth = yes }
+	2439.11.7 = { death = yes }
+}
+
+camoran_89 = {
+	name = "Glathras"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	father =  camoran_88
+	
+	trait = lifespan_2
+
+	2319.1.1 = { birth = yes }
+	2511.8.31 = { death = yes }
+}
+
+camoran_90 = {
+	name = "Aerwaen"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = camoran_89
+
+	trait = lifespan_2
+
+	2407.1.1 = { birth = yes }
+	2599.1.1 = { death = yes }
+}
+
+camoran_91 = {
+	name = "Dailithil"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	mother = camoran_90
+
+	trait = lifespan_2
+
+	2489.1.1 = { birth = yes }
+	2678.10.8 = { death = yes }
+}
+
+camoran_92 = {
+	name = "Glathras"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	mother = camoran_91
+
+	trait = lifespan_2
+
+	2561.1.1 = { birth = yes }
+	2692.6.1 = { death = { death_reason = death_battle } }
+}
+
+camoran_93 = {
+	name = "Maenlorn"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	
+	father = camoran_92
+
+	trait = lifespan_2
+
+	2630.1.1 = { birth = yes }
+	2795.4.27 = { death = yes }
+}
+
+camoran_93b = {
+	name = "Elayel"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+	
+	father = camoran_92
+
+	trait = lifespan_2
+
+	2648.1.1 = { birth = yes }
+	2833.11.19 = { death = { death_reason = death_natural_causes } }
+}
+
+camoran_94 = {
+	name = "Gwinir"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_93
+
+	trait = lifespan_2
+
+	2700.1.1 = { birth = yes }
+	2708.1.1 = { death = { death_reason = death_siege } } #Dies during war with Remans
+}
+
+camoran_95 = {
+	name = "Haymon"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	mother = camoran_93b
+
+	trait = lifespan_2
+
+	2724.1.1 = { birth = yes }
+	2909.1.8 = { death = yes }
+}
+
+camoran_96 = {
+	name = "Adwien"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_95
+	
+	trait = lifespan_2
+
+	2808.1.1 = { birth = yes }
+	2986.3.9 = { death = yes }
+}
+
+camoran_97 = {
+	name = "Maenlorn"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_96
+	
+	trait = lifespan_2
+
+	2889.1.1 = { birth = yes }
+	3074.5.18 = { death = yes }
+}
+
+camoran_97b = {
+	name = "Aenedhel"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_97
+	
+	trait = lifespan_2
+
+	2971.1.1 = { birth = yes }
+	3155.8.10 = { death = yes }
+}
+
+camoran_98 = {
+	name = "Nedhelfin"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_97b
+	
+	trait = lifespan_2
+
+	3068.1.1 = { birth = yes }
+	3257.9.21 = { death = yes }
+}
+
+camoran_99 = {
+	name = "Anoriath"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_98
+	
+	trait = lifespan_2
+
+	3110.1.1 = { birth = yes }
+	3303.4.12 = { death = yes }
+}
+
+camoran_100 = {
+	name = "Aenedhel" #vanished king of falinesti
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_99
+	
+	trait = lifespan_2
+	trait = ambitious
+	trait = education_diplomacy_4
+
+	3178.1.1 = { birth = yes }
+	3340.1.1 = { give_nickname = nick_the_lamented }
+	3340.7.2 = { death = { death_reason = death_falinesti } }
+}
+
+camoran_100b = {
+	name = "Falicia"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+	
+	father = camoran_99
+	
+	trait = lifespan_2
+
+	3185.1.1 = { birth = yes }
+	3340.7.2 = { death = { death_reason = death_falinesti } }
+}
+
+camoran_101 = {
+	name = "Briminor"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_100
+	
+	trait = lifespan_2
+
+	3257.1.1 = { birth = yes }
+	3340.7.2 = { death = { death_reason = death_falinesti } }
+}
+
+camoran_101b = {
+	name = "Aradraen"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+	
+	father = camoran_100
+	
+	trait = lifespan_2
+
+	3264.1.1 = { birth = yes }
+	3340.7.2 = { death = { death_reason = death_falinesti } }
+}
+
+camoran_102 = { #Last mainline Camoran, everyone else disappeared
+	name = "Syndus"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_99
+
+	trait = wild_oat
+	trait = denounced
+	trait = lifespan_2
+	trait = ambitious
+	trait = callous
+	trait = arrogant
+	trait = education_diplomacy_1
+
+	3185.1.1 = { birth = yes }
+	3364.1.1 = { death = { death_reason = death_old_age } }
+}
+
+#Camoran Grahtwood branch
+#Daughter of Queen of Valenwood after Thrassian plague
+camoran_grahtwood_86 = {
+	name = "Cerwil"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	mother = camoran_86b
+	
+	trait = lifespan_2
+
+	2168.1.1 = { birth = yes }
+	2359.1.1 = { death = yes }
+}
+camoran_grahtwood_87 = {
+	name = "Nithelin"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	mother = camoran_grahtwood_86
+	
+	trait = lifespan_2
+
+	2222.1.1 = { birth = yes }
+	2411.1.1 = { death = yes }
+}
+camoran_grahtwood_88 = {
+	name = "Cerwil"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	mother = camoran_grahtwood_87
+	
+	trait = lifespan_2
+
+	2299.1.1 = { birth = yes }
+	2487.2.22 = { death = yes }
+}
+camoran_grahtwood_89 = {
+	name = "Faurwin"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	mother = camoran_grahtwood_88
+	
+	trait = lifespan_2
+
+	2371.1.1 = { birth = yes }
+	2555.6.19 = { death = yes }
+}
+camoran_grahtwood_90 = {
+	name = "Aeradan"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	mother = camoran_grahtwood_89
+	
+	trait = lifespan_2
+
+	2465.1.1 = { birth = yes }
+	2638.7.22 = { death = yes }
+}
+
+camoran_grahtwood_90b = {
+	name = "Nithelin"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	mother = camoran_grahtwood_89
+	
+	trait = lifespan_2
+
+	2478.1.1 = { birth = yes }
+	2655.11.30 = { death = yes }
+}
+
+camoran_grahtwood_91 = {
+	name = "Gariel"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = camoran_grahtwood_90
+
+	trait = lifespan_2
+
+	2532.1.1 = { birth = yes }
+	2709.3.11 = { death = yes }
+}
+
+camoran_grahtwood_92 = {
+	name = "Orenthel"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	mother = camoran_grahtwood_91
+
+	trait = lifespan_2
+
+	2610.1.1 = { birth = yes }
+	2716.1.1 = { dynasty_house = camoran_graht }
+	2812.10.28 = { death = yes }
+}
+
+camoran_grahtwood_93 = {
+	name = "Aeradan"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_grahtwood_92
+
+	trait = education_magic_1
+	trait = lifespan_2
+
+	2691.1.1 = { birth = yes }
+	2887.7.16 = { death = yes }
+}
+
+camoran_grahtwood_94 = {
+	name = "Henrinora"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = camoran_grahtwood_93
+
+	trait = lifespan_2
+
+	2769.1.1 = { birth = yes }
+	2948.1.1 = { death = yes }
+}
+
+camoran_grahtwood_95 = {
+	name = "Engaer"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+
+	mother = camoran_grahtwood_94
+
+	trait = lifespan_2
+
+	2834.1.1 = { birth = yes }
+	3022.12.24 = { death = yes }
+}
+
+camoran_grahtwood_96 = {
+	name = "Aeradan"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_grahtwood_95
+
+	trait = lifespan_2
+
+	2920.1.1 = { birth = yes }
+	2990.1.1 = { add_spouse = varaneth_2b }
+	3088.9.28 = { death = { death_reason = death_hunting_accident } }
+}
+
+camoran_grahtwood_97 = {
+	name = "Orenthel"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_grahtwood_96
+	mother = varaneth_2b
+
+	trait = lifespan_2
+
+	3005.1.1 = { birth = yes }
+	3197.7.1 = { death = yes }
+}
+
+camoran_grahtwood_98 = {
+	name = "Aeradan"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_grahtwood_97
+	
+	trait = lifespan_2
+
+	3099.4.7 = { birth = yes }
+	3160.1.1 = { add_spouse = rayn_98d }
+	3281.8.10 = { death = yes }
+}
+camoran_grahtwood_99 = {
+	name = "Galandir"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_grahtwood_98
+	mother = rayn_98d
+	
+	trait = lifespan_2
+
+	3171.2.1 = { birth = yes }
+	3250.1.1 = { add_spouse = parikh_99c }
+	3354.8.1 = { death = { death_reason = death_natural_causes } }
+}
+camoran_grahtwood_99_lover = {
+	name = "Genriel"
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	trait = lifespan_2
+
+	3198.1.1 = { birth = yes }
+	3386.1.1 = { death = yes }
+}
+camoran_grahtwood_100 = {
+	name = "Nilwen"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+	female = yes
+	
+	dna = camoran_grahtwood_100_dna_entry
+
+	father = camoran_grahtwood_99
+	mother = parikh_99c
+
+	trait = ambitious
+	trait = stubborn
+	trait = impatient
+	trait = education_martial_3
+	trait = lifespan_2
+	trait = sign_steed
+
+	3257.6.6 = { birth = yes }
+	3330.1.1 = { add_matrilineal_spouse = altansar_101c }
+	3360.1.1 = {
+		remove_claim = title:k_cormount
+		remove_claim = title:d_cormount
+		remove_claim = title:c_cormount
+	}
+	3400.1.1 = {
+		trait = scarred
+	}
+	3442.12.26 = { death = { death_reason = death_natural_causes } }
+	
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=female_hair_rtt_02_milla
+		}
+	}
+}
+camoran_grahtwood_101 = { #King of Grahtwood and Valenwood
+	name = "Aeradan" #Lore
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+
+	mother = camoran_grahtwood_100
+	father = altansar_101c
+	
+	disallow_random_traits = yes
+	trait = lifespan_2
+	trait = curious
+	trait = ambitious #Wants to unite Valenwood
+	trait = sign_shadow
+
+	3353.5.18 = { birth = yes }
+	3369.5.18 = {
+		remove_trait = curious
+		trait = cynical #Doesn't care about traditions
+		trait = callous #Will do anything for his ambitions
+		trait = education_diplomacy_3
+	}
+	3408.1.1 = { add_spouse = ulansar_101c }
+	#EK TODO: maybe not. Maybe marries Silvenar Camoran. He's actually less related to Silvenar
+	3446.1.1 = { add_spouse = rayn_101b1 }
+	3530.9.4 = { death = yes }
+}
+#Aeradan unites Valenwood into 1 kingdom
+#By Tiber Septim's rise "heirs of the Camoran Dynasty began to fight over the Valenwood throne"
+#Going to make these heirs descendants of Aeradan (nothing concrete for them yet, just making them exist) 
+camoran_grahtwood_102 = {
+	name = "Galandir"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_grahtwood_101
+	mother = ulansar_101c
+
+	trait = lifespan_2
+
+	3423.1.1 = { birth = yes }
+	3600.1.1 = { death = yes }
+}
+camoran_grahtwood_102b = {
+	name = "Nilwen"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = camoran_grahtwood_101
+	mother = ulansar_101c
+
+	trait = lifespan_2
+
+	3431.1.1 = { birth = yes }
+	3620.1.1 = { death = yes }
+}
+camoran_grahtwood_102c = {
+	name = "Aeranir"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = camoran_grahtwood_101
+	mother = ulansar_101c
+
+	trait = lifespan_2
+
+	3436.1.1 = { birth = yes }
+	3615.1.1 = { death = yes }
+}
+camoran_grahtwood_102d = {
+	name = "Canda"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	mother = rayn_101b1
+	father = camoran_grahtwood_101
+
+	trait = lifespan_2
+
+	3446.1.1 = { birth = yes }
+	3486.1.1 = { trait = bubonic_plague }
+	3487.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+camoran_grahtwood_102e = {
+	name = "Thonoras"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+
+	mother = rayn_101b1
+	father = camoran_grahtwood_101
+
+	trait = lifespan_2
+
+	3455.1.1 = { birth = yes }
+	3666.1.1 = { death = { death_reason = death_natural_causes } }
+}
+camoran_grahtwood_102f = {
+	name = "Elayel"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	mother = rayn_101b1
+	father = camoran_grahtwood_101
+
+	trait = lifespan_2
+
+	3462.1.1 = { birth = yes }
+	3576.1.1 = { death = { death_reason = death_battle } }
+}
+
+#Branch starting from 98
+camoran_grahtwood1_100 = {
+	name = "Adagwen"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = camoran_grahtwood_98
+	mother = rayn_98d
+
+	trait = lifespan_2
+
+	3189.1.1 = { birth = yes }
+	3364.8.6 = { death = yes }
+}
+
+camoran_grahtwood1_100b = {
+	name = "Haymon"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_grahtwood_98
+	mother = rayn_98d
+
+	trait = lifespan_2
+
+	3196.1.1 = { birth = yes }
+	3371.1.1 = { death = yes }
+}
+
+camoran_grahtwood1_101 = {
+	name = "Aeradan"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+
+	mother = camoran_grahtwood1_100
+
+	trait = lifespan_2
+
+	3278.1.1 = { birth = yes }
+	3443.1.1 = { death = yes }
+}
+
+camoran_grahtwood1_101b = {
+	name = "Galthel"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	mother = camoran_grahtwood1_100
+
+	trait = lifespan_2
+
+	3275.1.1 = { birth = yes }
+	3459.1.1 = { death = yes }
+}
+
+camoran_grahtwood1_101c = {
+	name = "Ragalvir"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+
+	mother = camoran_grahtwood1_100
+
+	trait = lifespan_2
+
+	3286.1.1 = { birth = yes }
+	3463.1.1 = { death = yes }
+}
+
+#Second branch
+camoran_grahtwood2_97 = {
+	name = "Elphinia"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = camoran_grahtwood_96
+
+	trait = lifespan_2
+	
+	3012.1.1 = { birth = yes }
+	#Marries into Gil-var-delle family
+	3070.1.1 = { add_matrilineal_spouse = brethil_100 }
+	#3107 - husband dies, takes over as regent for her son (and rules for a century)
+	3204.11.11 = { death = yes }
+}
+camoran_grahtwood2_98 = { #Inherits Gil-var-delle
+	name = "Fenton"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+
+	mother = camoran_grahtwood2_97
+	father = brethil_100
+	
+	trait = lifespan_2
+
+	3085.1.1 = { birth = yes }
+	3268.1.17 = { death = yes }
+}
+camoran_grahtwood2_99 = {
+	name = "Elhiel"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_grahtwood2_98
+	
+	trait = lifespan_2
+
+	3153.1.1 = { birth = yes }
+	3200.1.1 = { add_spouse = liilgur_100 }
+	3336.4.1 = { death = yes }
+}
+camoran_grahtwood2_100 = {
+	name = "Hartmin"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_grahtwood2_99
+	mother = liilgur_100
+	
+	trait = lifespan_2
+
+	3232.1.1 = { birth = yes }
+	3290.1.1 = { add_spouse = camoran_grahtwood2_100_wife }
+	3409.8.5 = { death = yes }
+}
+camoran_grahtwood2_100_wife = {
+	name = "Canda"
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	trait = lifespan_2
+
+	3236.1.1 = { birth = yes }
+	3423.1.1 = { death = yes }
+}
+camoran_grahtwood2_100b = {
+	name = "Draugorin"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_grahtwood2_99
+	mother = liilgur_100
+	
+	trait = lifespan_2
+
+	3241.1.1 = { birth = yes }
+	3377.1.1 = { death = yes }
+}
+camoran_grahtwood2_100c = {
+	name = "Idreloth"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_grahtwood2_99
+	mother = liilgur_100
+	
+	trait = lifespan_2
+
+	3246.1.1 = { birth = yes }
+	3318.1.1 = { death = yes }
+}
+camoran_grahtwood2_100d = {
+	name = "Cariel"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = camoran_grahtwood2_99
+	mother = liilgur_100
+	
+	trait = lifespan_2
+
+	3257.1.1 = { birth = yes }
+	3442.1.1 = { death = yes }
+}
+camoran_grahtwood2_101 = {
+	name = "Adandora"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = camoran_grahtwood2_100
+	mother = camoran_grahtwood2_100_wife
+	
+	trait = lifespan_2
+
+	3297.1.1 = { birth = yes }
+	3469.1.1 = { death = yes }
+}
+camoran_grahtwood2_101b = { #Married to varondo_005
+	name = "Behelir"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_grahtwood2_100
+	mother = camoran_grahtwood2_100_wife
+	
+	trait = lifespan_2
+
+	3308.1.1 = { birth = yes }
+	3477.1.1 = { death = yes }
+}
+camoran_grahtwood2_101c = {
+	name = "Hyna"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = camoran_grahtwood2_100
+	mother = camoran_grahtwood2_100_wife
+
+	trait = lifespan_2
+
+	3314.1.1 = { birth = yes }
+	3509.1.1 = { death = yes }
+}
+camoran_grahtwood2_101d = {
+	name = "Ulandra"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = camoran_grahtwood2_100
+	mother = camoran_grahtwood2_100_wife
+
+	trait = lifespan_2
+
+	3325.1.1 = { birth = yes }
+	3494.1.1 = { death = yes }
+}
+
+#Third branch
+camoran_grahtwood3_96 = {
+	name = "Aeradan"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_grahtwood_95
+
+	trait = lifespan_2
+
+	2931.1.1 = { birth = yes }
+	3097.10.26 = { death = yes }
+}
+camoran_grahtwood3_97 = {
+	name = "Godros"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_grahtwood3_96
+
+	trait = lifespan_2
+
+	2998.1.1 = { birth = yes }
+	3130.1.12 = { death = yes }
+}
+camoran_grahtwood3_98 = {
+	name = "Firwin"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = camoran_grahtwood3_97
+
+	trait = lifespan_2
+
+	3066.1.1 = { birth = yes }
+	3120.1.1 = { add_matrilineal_spouse = camoran_grahtwood3_98_husband }
+	3211.9.5 = { death = yes }
+}
+camoran_grahtwood3_98_husband = {
+	name = "Orthenir"
+	religion = greenpact
+	culture = etarani
+
+	trait = lifespan_2
+
+	3054.1.1 = { birth = yes }
+	3233.1.1 = { death = yes }
+}
+camoran_grahtwood3_99 = {
+	name = "Anrel"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+
+	mother = camoran_grahtwood3_98
+	father = camoran_grahtwood3_98_husband
+	
+	trait = lifespan_2
+
+	3125.1.1 = { birth = yes }
+	3210.1.1 = { add_spouse = camoran_grahtwood3_99_wife }
+	3307.3.21 = { death = { death_reason = death_natural_causes } }
+}
+camoran_grahtwood3_99_wife = {
+	name = "Hyna"
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	trait = lifespan_2
+
+	3122.1.1 = { birth = yes }
+	3330.1.1 = { death = { death_reason = death_old_age } }
+}
+
+camoran_grahtwood3_100 = {
+	name = "Anrela"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = camoran_grahtwood3_99
+	mother = camoran_grahtwood3_99_wife
+	
+	trait = lifespan_2
+	trait = temperate
+	trait = humble
+	trait = zealous
+	trait = weak
+	trait = inappetetic
+	trait = education_learning_2
+
+	3212.1.1 = { birth = yes }
+	3250.1.1 = { add_matrilineal_spouse = endrand_100c }
+	3376.4.25 = { death = { death_reason = death_malnourishment } }
+}
+
+camoran_grahtwood3_100b = {
+	name = "Orthelos"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+	
+	father = camoran_grahtwood3_99
+	mother = camoran_grahtwood3_99_wife
+	
+	trait = lifespan_2
+
+	3214.1.1 = { birth = yes }
+	3408.1.1 = { death = yes }
+}
+
+camoran_grahtwood3_101 = {
+	name = "Sylch"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+
+	mother = camoran_grahtwood3_100
+	father = endrand_100c
+
+	trait = brave
+	trait = impatient
+	trait = stubborn
+	trait = education_martial_3
+	trait = lifespan_2
+
+	3292.1.1 = { birth = yes }
+	#Dies in one of Grahtwood's wars
+	3398.2.15 = { death = { death_reason = death_battle } }
+}
+
+camoran_grahtwood3_101b = {
+	name = "Nalion"
+	dynasty_house = camoran_graht
+	religion = greenpact
+	culture = etarani
+	
+	mother = camoran_grahtwood3_100
+	father = endrand_100c
+
+	trait = lifespan_2
+
+	3307.1.1 = { birth = yes }
+	3478.1.1 = { death = { death_reason = death_natural_causes } }
+}
+
+#Cormount branch, dead by 440
+camoran_cormount_93 = {
+	name = "Harowen"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = camoran_88
+
+	trait = lifespan_2
+
+	2328.1.1 = { birth = yes }
+	2487.2.22 = { death = yes }
+}
+camoran_cormount_94 = {
+	name = "Hagaer"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	mother = camoran_cormount_93
+
+	trait = lifespan_2
+	
+	2401.1.1 = { birth = yes }
+	2576.10.13 = { death = yes }
+}
+
+camoran_cormount_95 = {
+	name = "Frenith"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = camoran_cormount_94
+
+	trait = lifespan_2
+
+	2478.1.1 = { birth = yes }
+	2659.4.25 = { death = yes }
+}
+
+camoran_cormount_96 = {
+	name = "Meleras"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	mother = camoran_cormount_95
+
+	trait = lifespan_2
+
+	2555.1.1 = { birth = yes }
+	2716.1.1 = { dynasty_house = dyn_camoran_cormount }
+	2733.9.21 = { death = yes }
+}
+
+camoran_cormount_97 = {
+	name = "Meleras"
+	dynasty_house = dyn_camoran_cormount
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_cormount_96
+
+	trait = lifespan_2
+
+	2649.1.1 = { birth = yes }
+	2820.7.27 = { death = yes }
+}
+
+camoran_cormount_98 = {
+	name = "Firathil"
+	dynasty_house = dyn_camoran_cormount
+	religion = greenpact
+	culture = etarani
+	female = yes
+	
+	father = camoran_cormount_97
+
+	trait = lifespan_2
+
+	2725.1.1 = { birth = yes }
+	2918.5.13 = { death = yes }
+}
+camoran_cormount_99 = {
+	name = "Nirthindor"
+	dynasty_house = dyn_camoran_cormount
+	religion = greenpact
+	culture = etarani
+
+	mother = camoran_cormount_98
+
+	trait = lifespan_2
+
+	2804.1.1 = { birth = yes }
+	2996.12.11 = { death = yes }
+}
+
+camoran_cormount_100 = {
+	name = "Nirolos"
+	dynasty_house = dyn_camoran_cormount
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_cormount_99
+
+	trait = lifespan_2
+
+	2895.1.1 = { birth = yes }
+	2960.1.1 = { add_spouse = varaneth_2 }
+	3070.5.14 = { death = { death_reason = death_pilgrimage_bandit_attack } }
+}
+
+camoran_cormount_101 = {
+	name = "Gonlas"
+	dynasty_house = dyn_camoran_cormount
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_cormount_100
+	mother = varaneth_2
+
+	trait = lifespan_2
+
+	2989.1.1 = { birth = yes }
+	3070.5.14 = { death = { death_reason = death_pilgrimage_bandit_attack } }
+}
+camoran_cormount_101b = {
+	name = "Elegal"
+	dynasty_house = dyn_camoran_cormount
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_cormount_100
+	mother = varaneth_2
+
+	trait = lifespan_2
+
+	2997.1.1 = { birth = yes }
+	3070.5.14 = { death = { death_reason = death_pilgrimage_bandit_attack } }
+}
+
+#Gorinir branch
+camoran_gorinir_100 = { # Cormount ruler
+	name = "Andriel"
+	dynasty_house = camoran_gorinir
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_grahtwood_99
+	mother = camoran_grahtwood_99_lover
+
+	trait = education_learning_2
+	trait = wild_oat
+	trait = lifespan_2
+	trait = trusting
+	trait = content
+	trait = craven
+
+	3266.1.1 = { birth = yes }
+	3330.1.1 = { add_spouse = camoran_gorinir_100_wife }
+	3369.7.8 = { death = { death_reason = death_mysterious } }
+}
+camoran_gorinir_100_wife = {
+	name = "Ulandra"
+	religion = blacksapmovement
+	culture = etarani
+	female = yes
+	
+	trait = lifespan_2
+
+	3275.9.1 = { birth = yes }
+	3465.1.7 = { death = yes }
+}
+camoran_gorinir_101 = { # Leader of Blacksap movement
+	name = "Gelthior" #Lore
+	dynasty_house = camoran_gorinir
+	religion = blacksapmovement
+	dna = camoran_gorinir_101_dna_entry
+	culture = etarani
+
+	father = camoran_gorinir_100
+	mother = camoran_gorinir_100_wife
+	
+	trait = patient
+	trait = ambitious
+	trait = zealous
+	trait = lifespan_2
+	trait = sign_ritual
+
+	3334.1.28 = { birth = yes }
+	3368.1.1 = { add_spouse = camoran_gorinir_101_wife }
+	3504.9.4 = { death = { death_reason = death_execution } }
+}
+camoran_gorinir_101_wife = { # Gelthior's wife, mother of Gorinir and Lorchon
+	name = "Ulandra"
+	religion = blacksapmovement
+	culture = etarani
+	female = yes
+	
+	trait = lifespan_2
+
+	3340.9.1 = { birth = yes }
+	3504.9.4 = { death = { death_reason = death_execution } }
+}
+camoran_gorinir_102 = { # Son of Gelthior, co-leader of the Second Blacksap Rebellion
+	name = "Gorinir" #Lore
+	dynasty_house = camoran_gorinir
+	religion = blacksapmovement
+	culture = etarani
+
+	father = camoran_gorinir_101
+	mother = camoran_gorinir_101_wife
+
+	trait = rowdy
+	trait = vengeful
+	trait = twin
+	trait = lifespan_2
+	disallow_random_traits = yes
+
+	3399.11.8 = { birth = yes }
+	3415.11.8 = {
+		remove_trait = rowdy
+		trait = wrathful
+		trait = zealous
+		trait = education_martial_2
+	}
+	3504.9.4 = { death = { death_reason = death_execution } }
+}
+camoran_gorinir_102b = { # Son of Gelthior, co-leader of the Second Blacksap Rebellion
+	name = "Lorchon" #Lore
+	dynasty_house = camoran_gorinir
+	religion = blacksapmovement
+	culture = etarani
+
+	father = camoran_gorinir_101
+	mother = camoran_gorinir_101_wife
+
+	trait = charming
+	trait = fickle
+	trait = twin
+	trait = lifespan_2
+	disallow_random_traits = yes
+
+	3399.11.8 = { birth = yes }
+	3415.11.8 = {
+		remove_trait = charming
+		trait = calm
+		trait = zealous
+		trait = education_intrigue_3 #Blacksap's spymaster
+	}
+	3504.9.4 = { death = { death_reason = death_execution } }
+}
+
+#Parikh dynasty - Quirrion
+parikh_98 = {
+	name = "Aerin"
+	dynasty = dyn_parikh
+	religion = greenpact
+	culture = etarani
+	female = yes
+	
+	trait = lifespan_2
+
+	3101.1.1 = { birth = yes }
+	3165.1.1 = { add_matrilineal_spouse = tharedhel_3 }
+	3297.7.5 = { death = yes }
+}
+
+parikh_99 = {
+	name = "Emalith"
+	dynasty = dyn_parikh
+	religion = greenpact
+	culture = etarani
+
+	mother = parikh_98
+	father = tharedhel_3
+	
+	trait = lifespan_2
+
+	3172.1.1 = { birth = yes }
+	3353.4.6 = { death = yes }
+}
+
+parikh_99b = {
+	name = "Faella"
+	dynasty = dyn_parikh
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	mother = parikh_98
+	father = tharedhel_3
+
+	trait = lifespan_2
+
+	3179.1.1 = { birth = yes }
+	3365.1.1 = { death = yes }
+}
+
+parikh_99c = { #Married to camoran_grahtwood_99
+	name = "Canda"
+	dynasty = dyn_parikh
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	mother = parikh_98
+	father = tharedhel_3
+
+	trait = lifespan_2
+
+	3186.1.1 = { birth = yes }
+	3368.1.1 = { death = { death_reason = death_natural_causes } }
+}
+
+parikh_100 = {
+	name = "Aglion"
+	dynasty = dyn_parikh
+	religion = greenpact
+	culture = etarani
+
+	father = parikh_99
+	
+	trait = lifespan_2
+
+	3267.1.1 = { birth = yes }
+	3300.1.1 = { add_spouse = parikh_100_wife }
+	3445.12.30 = { death = yes }
+}
+
+parikh_100_wife = {
+	name = "Dagla"
+	religion = eight_divines
+	culture = etarani
+	female = yes
+
+	trait = lifespan_2
+
+	3279.1.1 = { birth = yes }
+	3461.1.1 = { death = yes }
+}
+
+parikh_100b = {
+	name = "Firwin"
+	dynasty = dyn_parikh
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = parikh_99
+	
+	trait = lifespan_2
+
+	3274.1.1 = { birth = yes }
+	3456.1.1 = { death = yes }
+}
+
+parikh_101 = {
+	name = "Aerin"
+	dynasty = dyn_parikh
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = parikh_100
+	mother = parikh_100_wife
+	
+	trait = lifespan_2
+
+	3334.1.1 = { birth = yes }
+	3515.1.6 = { death = yes }
+}
+
+parikh_101b = { #Married to camoran_silvenar_100
+	name = "Heluin"
+	dynasty = dyn_parikh
+	religion = greenpact
+	culture = etarani
+
+	father = parikh_100
+	mother = parikh_100_wife
+
+	trait = lifespan_2
+
+	3338.1.1 = { birth = yes }
+	#Dies during Blacksap coup
+	3445.1.1 = { death = { death_reason = death_battle } }
+}
+
+#Stagfern dynasty - vassals of Cormount
+thyandri_97 = { 
+	name = "Heluin"
+	dynasty = dyn_thyandri
+	religion = greenpact
+	culture = etarani
+
+	trait = lifespan_2
+
+	3032.1.1 = { birth = yes }
+	3219.4.11 = { death = yes }
+}
+thyandri_98 = { 
+	name = "Helondanbor"
+	dynasty = dyn_thyandri
+	religion = greenpact
+	culture = etarani
+
+	father = thyandri_97
+
+	trait = lifespan_2
+
+	3102.1.1 = { birth = yes }
+	3288.10.13 = { death = yes }
+}
+thyandri_98b = { #Married to Varondo Ayleids
+	name = "Marantar"
+	dynasty = dyn_thyandri
+	religion = greenpact
+	culture = etarani
+
+	father = thyandri_97
+
+	trait = lifespan_2
+
+	3115.1.1 = { birth = yes }
+	3298.1.1 = { death = yes }
+}
+thyandri_98c = { #Married to camoran_haven_98
+	name = "Amrael"
+	dynasty = dyn_thyandri
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = thyandri_97
+
+	trait = lifespan_2
+
+	3130.1.1 = { birth = yes }
+	3324.1.1 = { death = { death_reason = death_old_age } }
+}
+thyandri_99 = { 
+	name = "Elsynia"
+	dynasty = dyn_thyandri
+	religion = greenpact
+	culture = etarani
+	father = thyandri_98
+	female = yes
+
+	trait = lifespan_2
+
+	3207.1.1 = { birth = yes }
+	3356.6.16 = { death = { death_reason = death_mysterious } }
+}
+thyandri_100 = {
+	name = "Eralorn"
+	dynasty = dyn_thyandri
+	religion = greenpact
+	culture = etarani
+
+	mother = thyandri_99
+
+	trait = lifespan_2
+
+	3282.1.1 = { birth = yes }
+	3363.8.9 = { death = { death_reason = death_hunting_mysterious } }
+}
+thyandri_100b = {
+	name = "Erodir"
+	dynasty = dyn_thyandri
+	religion = blacksapmovement
+	culture = etarani
+
+	mother = thyandri_99
+
+	trait = lifespan_2
+
+	3289.1.1 = { birth = yes }
+	3465.4.6 = { death = yes }
+}
+thyandri_101 = {
+	name = "Ganwen"
+	dynasty = dyn_thyandri
+	religion = blacksapmovement
+	culture = etarani
+
+	father = thyandri_100b
+
+	trait = lifespan_2
+	trait = zealous
+	trait = stubborn
+	trait = arrogant
+
+	3377.1.1 = { birth = yes }
+	3500.1.1 = { death = { death_reason = death_battle } }
+}
+
+#Avbala
+avbala_96 = {
+	name = "Eraldir"
+	dynasty = dyn_avbala
+	religion = greenpact
+	culture = etarani
+
+	trait = lifespan_2
+
+	3010.1.1 = { birth = yes }
+	3191.10.27 = { death = yes }
+}
+avbala_97 = {
+	name = "Gwingeval"
+	dynasty = dyn_avbala
+	religion = greenpact
+	culture = etarani
+
+	father = avbala_96
+
+	trait = lifespan_2
+
+	3080.1.1 = { birth = yes }
+	3257.3.19 = { death = yes }
+}
+avbala_97b = { #Married to Altansar
+	name = "Elragail"
+	dynasty = dyn_avbala
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = avbala_96
+	
+	trait = lifespan_2
+
+	3084.1.1 = { birth = yes }
+	3279.1.1 = { death = yes }
+}
+avbala_98 = {
+	name = "Garanel"
+	dynasty = dyn_avbala
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = avbala_97
+	
+	trait = lifespan_2
+
+	3160.1.1 = { birth = yes }
+	3342.9.8 = { death = yes }
+}
+avbala_99 = {
+	name = "Minthelir"
+	dynasty = dyn_avbala
+	religion = greenpact
+	culture = etarani
+
+	mother = avbala_98
+	
+	trait = lifespan_2
+	
+	3233.1.1 = { birth = yes }
+	3365.1.1 = {
+		religion = blacksapmovement
+	}
+	3421.11.10 = { death = { death_reason = death_natural_causes } }
+}
+avbala_99b = {
+	name = "Elragail"
+	dynasty = dyn_avbala
+	religion = greenpact
+	culture = etarani
+	female = yes
+	
+	mother = avbala_98
+
+	trait = lifespan_2
+
+	3251.1.1 = { birth = yes }
+	3445.1.1 = { employer = camoran_grahtwood_101 }
+	3439.1.1 = { death = { death_reason = death_natural_causes } }
+}
+avbala_100 = {
+	name = "Fangilmir"
+	dynasty = dyn_avbala
+	religion = blacksapmovement
+	culture = etarani
+
+	father = avbala_99
+
+	trait = lifespan_2
+
+	3320.7.9 = { birth = yes }
+	3500.1.1 = { death = { death_reason = death_battle } }
+}
+#Non-blacksap branch
+avbala1_100 = {
+	name = "Eraldir"
+	dynasty = dyn_avbala
+	religion = greenpact
+	culture = etarani
+
+	mother = avbala_99b
+
+	trait = lifespan_2
+
+	3324.1.1 = { birth = yes }
+	3445.1.1 = { employer = camoran_grahtwood_101 }
+	3487.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+avbala1_101 = {
+	name = "Garanel"
+	dynasty = dyn_avbala
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = avbala1_100
+
+	trait = lifespan_2
+
+	3393.1.1 = { birth = yes }
+	3445.1.1 = { employer = camoran_grahtwood_101 }
+	3588.1.1 = { death = yes }
+}
+
+#Altansars, counts of Mobar in 440
+altansar_98 = {
+	name = "Heluin"
+	dynasty = dyn_altansar
+	religion = greenpact
+	culture = etarani
+
+	trait = lifespan_2
+
+	3011.1.1 = { birth = yes }
+	3201.3.22 = { death = { death_reason = death_natural_causes } }
+}
+altansar_98_wife = {
+	name = "Dothiel"
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	trait = lifespan_2
+
+	3020.1.1 = { birth = yes }
+	3218.1.1 = { death = { death_reason = death_natural_causes } }
+}
+altansar_99 = {
+	name = "Diranor"
+	dynasty = dyn_altansar
+	religion = greenpact
+	culture = etarani
+
+	father = altansar_98
+	mother = altansar_98_wife
+
+	trait = lifespan_2
+
+	3082.1.1 = { birth = yes }
+	3170.1.1 = { add_spouse = avbala_97b }
+	3273.10.9 = { death = { death_reason = death_natural_causes } }
+}
+altansar_99b = { #Married to benoch_99
+	name = "Cariel"
+	dynasty = dyn_altansar
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = altansar_98
+	mother = altansar_98_wife
+	
+	trait = lifespan_2
+
+	3106.1.1 = { birth = yes }
+	3319.1.1 = { death = { death_reason = death_natural_causes } }
+}
+altansar_100 = {
+	name = "Filbeneth"
+	dynasty = dyn_altansar
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = altansar_99
+	mother = avbala_97b
+
+	trait = education_diplomacy_3
+	trait = gregarious
+	trait = lazy
+	trait = honest
+	trait = lifespan_2
+
+	3174.1.1 = { birth = yes }
+	3220.1.1 = { add_matrilineal_spouse = camoran_haven_98b }
+	3364.11.27 = { death = { death_reason = death_natural_causes } }
+}
+altansar_100c = { #Married to Ellenwen
+	name = "Henrinora"
+	dynasty = dyn_altansar
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = altansar_99
+	mother = avbala_97b
+	
+	trait = lifespan_2
+
+	3185.1.1 = { birth = yes }
+	3366.1.1 = { death = { death_reason = death_old_age } }
+}
+altansar_101 = {
+	name = "Lorregil"
+	dynasty = dyn_altansar
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	mother = altansar_100
+	father = camoran_haven_98b
+
+	trait = lifespan_2
+	trait = education_stewardship_3
+	trait = callous
+	trait = greedy
+	trait = diligent
+	trait = intellect_good_1
+
+	3241.1.1 = { birth = yes }
+	3435.1.12 = { death = yes }
+}
+altansar_101b = {
+	name = "Lobelathel"
+	dynasty = dyn_altansar
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	mother = altansar_100
+	father = camoran_haven_98b
+
+	trait = lifespan_2
+	
+	3246.1.1 = { birth = yes }
+	3401.1.1 = { death = { death_reason = death_accident } }
+}
+altansar_101c = { #Married to ruler of Grahtwood, father of Aeradan
+	name = "Heluin"
+	dynasty = dyn_altansar
+	religion = greenpact
+	culture = etarani
+	mother = altansar_100
+	father = camoran_haven_98b
+	
+	trait = lifespan_2
+	trait = education_martial_2
+	trait = just
+	trait = diligent
+	trait = craven
+
+	3253.1.1 = { birth = yes }
+	3452.1.1 = { death = yes }
+}
+
+altansar_102 = {
+	name = "Manroth"
+	dynasty = dyn_altansar
+	religion = greenpact
+	culture = etarani
+
+	mother = altansar_101
+
+	trait = lifespan_2
+
+	3317.1.1 = { birth = yes }
+	3496.8.3 = { death = yes }
+}
+
+altansar_102b = {
+	name = "Anrel"
+	dynasty = dyn_altansar
+	religion = greenpact
+	culture = etarani
+
+	mother = altansar_101
+
+	trait = lifespan_2
+
+	3324.1.1 = { birth = yes }
+	3509.1.1 = { death = yes }
+}
+
+altansar_102c = {
+	name = "Filbeneth"
+	dynasty = dyn_altansar
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	mother = altansar_101
+	
+	trait = lifespan_2
+
+	3330.1.1 = { birth = yes }
+	3488.1.1 = { trait = bubonic_plague }
+	3488.4.16 = { death = { death_reason = death_bubonic_plague } }
+}
+
+altansar_102c1 = {
+	name = "Thoromlallor"
+	dynasty = dyn_altansar
+	religion = greenpact
+	culture = etarani
+
+	mother = altansar_102c
+
+	trait = lifespan_2
+
+	3398.1.1 = { birth = yes }
+	3488.1.1 = { trait = bubonic_plague }
+	3488.4.14 = { death = { death_reason = death_bubonic_plague } }
+}
+
+altansar_103 = {
+	name = "Garaengrin"
+	dynasty = dyn_altansar
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = altansar_102
+
+	trait = lifespan_2
+	trait = education_intrigue_4
+	trait = deceitful
+	trait = diligent
+	trait = ambitious
+
+	3387.1.1 = { birth = yes }
+	3490.1.1 = {
+		trait = scarred #Blacksap rebellion
+	}
+	3575.1.1 = { death = yes }
+}
+
+#Branch starting with 101b
+altansar1_102 = {
+	name = "Malfinir"
+	dynasty = dyn_altansar
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	mother = altansar_101b
+	
+	trait = lifespan_2
+
+	3314.1.1 = { birth = yes }
+	3499.1.1 = { death = yes }
+}
+altansar1_102b = {
+	name = "Thrangirfin"
+	dynasty = dyn_altansar
+	religion = greenpact
+	culture = etarani
+
+	mother = altansar_101b
+	
+	trait = lifespan_2
+
+	3326.1.1 = { birth = yes }
+	3466.1.1 = { death = { death_reason = death_battle } }
+}
+
+#Bonefang dynasty - dukes of Greenhall
+ulansar_99 = {
+	name = "Ulwaen"
+	dynasty = dyn_ulansar
+	religion = greenpact
+	culture = etarani
+	
+	trait = lifespan_2
+	trait = education_martial_4
+	trait = ambitious
+	trait = brave
+	trait = arrogant
+	trait = scarred
+
+	3172.1.1 = { birth = yes }
+	3240.1.1 = { add_spouse = ulansar_99_wife }
+	3359.11.17 = { death = { death_reason = death_natural_causes } }
+}
+ulansar_99_wife = {
+	name = "Galereth"
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	trait = lifespan_2
+
+	3168.1.1 = { birth = yes }
+	3344.1.1 = { death = { death_reason = death_natural_causes } }
+}
+ulansar_100 = {
+	name = "Thoromlallor"
+	dynasty = dyn_ulansar
+	religion = greenpact
+	culture = etarani
+
+	father = ulansar_99
+	mother = ulansar_99_wife
+	
+	trait = twin
+	trait = lifespan_2
+
+	3246.1.1 = { birth = yes }
+	3250.1.1 = { effect = { set_relation_rival = { reason = rival_historical target = character:ulansar_100b } } }
+	3365.1.1 = { death = { death_reason = death_duel killer = ulansar_100b } }
+}
+ulansar_100b = {
+	name = "Eginir"
+	dynasty = dyn_ulansar
+	religion = greenpact
+	culture = etarani
+
+	father = ulansar_99
+	mother = ulansar_99_wife
+	
+	trait = twin
+	trait = lifespan_2
+
+	3246.1.1 = { birth = yes }
+	3365.1.1 = { death = { death_reason = death_duel killer = ulansar_100 } }
+}
+ulansar_100c = {
+	name = "Nedhelfin"
+	dynasty = dyn_ulansar
+	religion = greenpact
+	culture = etarani
+
+	father = ulansar_99
+	mother = ulansar_99_wife
+	
+	trait = craven
+	trait = lifespan_2
+
+	3261.1.1 = { birth = yes }
+	3440.1.1 = { trait = depressed_1 }
+	3435.5.11 = { death = { death_reason = death_heart_attack } }
+}
+ulansar_101 = {
+	name = "Eginir"
+	dynasty = dyn_ulansar
+	religion = greenpact
+	culture = etarani
+
+	father = ulansar_100c
+	
+	trait = lifespan_2
+
+	3359.1.1 = { birth = yes }
+	3534.1.1 = { death = { death_reason = death_mysterious } }
+}
+
+ulansar_101b = {
+	name = "Thoromlallor"
+	dynasty = dyn_ulansar
+	religion = greenpact
+	culture = etarani
+
+	father = ulansar_100c
+
+	trait = lifespan_2
+
+	3366.1.1 = { birth = yes }
+	3429.1.1 = { death = { death_reason = death_hunting_mistakenly_stabbed } }
+}
+
+ulansar_101c = { #Married to king of Grahtwood
+	name = "Galesse"
+	dynasty = dyn_ulansar
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = ulansar_100c
+	
+	trait = lifespan_2
+
+	3374.1.1 = { birth = yes }
+	3439.1.1 = { trait = ergotism }
+	3440.1.1 = { death = { death_reason = death_ergotism } }
+}
+
+#Ledure - old dynasty of Greenhall
+liilgur_98 = {
+	name = "Finnethil"
+	dynasty = dyn_liilgur
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	trait = lifespan_2
+
+	3030.1.1 = { birth = yes }
+	3153.2.13 = { death = { death_reason = death_apoplexy } }
+}
+
+liilgur_99 = {
+	name = "Cerwaenor"
+	dynasty = dyn_liilgur
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	mother = liilgur_98
+
+	trait = lifespan_2
+
+	3101.1.1 = { birth = yes }
+	3264.7.31 = { death = { death_reason = death_battle killer = ulansar_99 } }
+}
+
+liilgur_100 = { #Married to camoran_grahtwood2_99
+	name = "Eranwen"
+	dynasty = dyn_liilgur
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	mother = liilgur_99
+
+	trait = lifespan_2
+
+	3166.1.1 = { birth = yes }
+	3341.1.1 = { death = { death_reason = death_natural_causes } }
+}
+
+#Benoch
+benoch_98 = {
+	name = "Caranith"
+	dynasty = dyn_benoch
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	trait = lifespan_2
+
+	3041.1.1 = { birth = yes }
+	3110.1.1 = { add_matrilineal_spouse = benoch_98_husband }
+	3236.10.25 = { death = yes }
+}
+benoch_98_husband = {
+	name = "Hurdalas"
+	religion = greenpact
+	culture = etarani
+
+	trait = lifespan_2
+
+	3052.1.1 = { birth = yes }
+	3201.1.1 = { death = yes }
+}
+benoch_99 = {
+	name = "Thollunil"
+	dynasty = dyn_benoch
+	religion = greenpact
+	culture = etarani
+
+	mother = benoch_98
+	father = benoch_98_husband
+
+	trait = lifespan_2
+
+	3115.1.1 = { birth = yes }
+	3195.1.1 = { add_spouse = altansar_99b }
+	3287.6.27 = { death = yes }
+}
+benoch_100 = {
+	name = "Tholerthorn"
+	dynasty = dyn_benoch
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = benoch_99
+	mother = altansar_99b
+
+	trait = lifespan_2
+
+	3203.1.1 = { birth = yes }
+	3270.1.1 = { add_matrilineal_spouse = rayn_100b }
+	3390.3.25 = { death = yes }
+}
+benoch_100b = {
+	name = "Lorading"
+	dynasty = dyn_benoch
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = benoch_99
+	mother = altansar_99b
+
+	trait = lifespan_2
+
+	3209.1.1 = { birth = yes }
+	3388.1.1 = { death = yes }
+}
+benoch_100c = {
+	name = "Fongoth"
+	dynasty = dyn_benoch
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = benoch_99
+	mother = altansar_99b
+
+	trait = lifespan_2
+
+	3218.1.1 = { birth = yes }
+	3406.1.1 = { death = yes }
+}
+benoch_101 = {
+	name = "Drimrin"
+	dynasty = dyn_benoch
+	religion = greenpact
+	culture = etarani
+
+	mother = benoch_100
+	father = rayn_100b
+	
+	trait = lifespan_2
+
+	3287.1.1 = { birth = yes }
+	3366.1.1 = { add_spouse = benoch_101_wife }
+	3488.1.1 = { trait = bubonic_plague }
+	3467.2.18 = { death = { death_reason = death_natural_causes } }
+}
+benoch_101_wife = {
+	name = "Dondreth"
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	trait = lifespan_2
+
+	3294.1.1 = { birth = yes }
+	3483.1.1 =  { death = { death_reason = death_natural_causes } }
+}
+benoch_101b = {
+	name = "Fengrin"
+	dynasty = dyn_benoch
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	mother = benoch_100
+	father = rayn_100b
+
+	trait = lifespan_2
+
+	3295.1.1 = { birth = yes }
+	3414.1.1 = { death = { death_reason = death_choked } }
+}
+benoch_101c = {
+	name = "Canthion"
+	dynasty = dyn_benoch
+	religion = greenpact
+	culture = etarani
+
+	mother = benoch_100
+	father = rayn_100b
+
+	trait = lifespan_2
+	trait = education_magic_3
+
+	3298.1.1 = { birth = yes }
+	3485.1.1 = { death = { death_reason = death_natural_causes } }
+}
+benoch_101d = {
+	name = "Arithiel"
+	dynasty = dyn_benoch
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	mother = benoch_100
+	father = rayn_100b
+
+	trait = lifespan_2
+	trait = lustful
+
+	3300.1.1 = { birth = yes }
+	3463.1.1 = { death = { death_reason = death_physician_mistreatment } }
+}
+benoch_102 = {
+	name = "Caraleth"
+	dynasty = dyn_benoch
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = benoch_101
+	mother = benoch_101_wife
+
+	trait = lifespan_2
+
+	3372.1.1 = { birth = yes }
+	3544.1.1 = { death = yes }
+}
+benoch_103 = {
+	name = "Minlandra"
+	dynasty = dyn_benoch
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	mother = benoch_102
+	
+	trait = lifespan_2
+
+	3440.1.1 = { birth = yes }
+	3617.1.7 = { death = yes }
+}
+
+#Treethane of Cormount in ESO
+jalkin_100 = { #Scribe for Queen/King of Grahtwood
+	name = "Manthir"
+	dynasty = dyn_jalkin
+	religion = greenpact
+	culture = etarani
+
+	trait = education_learning_4
+	trait = scholar
+	trait = journaller
+	trait = lifespan_2
+	
+	diplomacy = 10 #So that he's not bad at his job
+
+	3335.1.1 = { birth = yes }
+	3358.1.1 = { add_spouse = jalkin_100_wife }
+	3359.1.1 = {
+		employer = camoran_grahtwood_100
+		effect = {
+			if = {
+				limit = { has_dlc_feature = legends }
+				liege = {
+					appoint_court_position = {
+						recipient = root
+						court_position = chronicler_court_position
+					}
+				}
+			}
+		}
+	}
+	3443.1.1 = { employer = camoran_grahtwood_101 }
+	3476.1.1 = { death = { death_reason = death_heart_attack } }
+}
+jalkin_100_wife = {
+	name = "Firwin"
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	trait = lifespan_2
+
+	3339.1.1 = { birth = yes }
+	3528.1.1 = { death = { death_reason = death_old_age } }
+}
+jalkin_101 = { #Treethane of Cormount in ESO
+	name = "Iirdel" #Lore
+	dynasty = dyn_jalkin
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = jalkin_100
+	mother = jalkin_100_wife
+
+	trait = shrewd
+	trait = cynical
+	trait = diligent
+	trait = just
+	trait = education_intrigue_4
+	trait = cautious_leader
+	trait = lifespan_2
+
+	3428.1.1 = { birth = yes }
+	3498.1.1 = { trait = one_eyed } #Lost her eye in the war
+	3639.1.1 = { death = { death_reason = death_old_age } }
+}
+
+#Salandas dynasty - ancestor of Parikh, rebelled against Camorans long ago
+tharedhel_1 = {
+	name = "Marantar"
+	dynasty = dyn_tharedhel
+	religion = greenpact
+	culture = morathi
+
+	trait = ambitious
+	trait = stubborn
+	trait = zealous
+	trait = education_martial_3
+	trait = strong
+	trait = lifespan_2
+
+	609.1.1 = { birth = yes }
+	750.1.1 = { death = { death_reason = death_prison } }
+}
+tharedhel_2 = {
+	name = "Fironel"
+	dynasty = dyn_tharedhel
+	religion = greenpact
+	culture = morathi
+	female = yes
+	
+	father = tharedhel_1
+
+	trait = lifespan_2
+
+	675.1.1 = { birth = yes }
+	730.1.1 = { death = { death_reason = death_execution killer = camoran_4 } }
+}
+tharedhel_2b = {
+	name = "Manilbor"
+	dynasty = dyn_tharedhel
+	religion = greenpact
+	culture = morathi
+
+	father = tharedhel_1
+
+	trait = lifespan_2
+
+	684.1.1 = { birth = yes }
+	860.1.1 = { death = yes }
+}
+tharedhel_line = {
+	name = "Manilbor"
+	religion = greenpact
+	culture = morathi
+	dynasty = dyn_tharedhel
+	father = tharedhel_2b
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	860.1.1 = { birth = yes }
+	900.1.1 = { give_nickname = nick_line_of }
+	3105.1.1 = { death = yes }	
+}
+tharedhel_3 = { #Married to parikh_98
+	name = "Aengoth"
+	dynasty = dyn_tharedhel
+	religion = greenpact
+	culture = etarani
+
+	father = tharedhel_line
+
+	trait = lifespan_2
+
+	3105.1.1 = { birth = yes }
+	3286.1.1 = { death = yes }
+}
+
+#Old rulers of Gil-var-delle
+brethil_1 = {
+	name = "Faldiniel"
+	dynasty = dyn_brethil
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	trait = lifespan_2
+
+	200.1.1 = { birth = yes }
+	260.1.1 = { add_matrilineal_spouse = galaspen_002 }
+	382.5.12 = { death = { death_reason = death_old_age } }
+}
+brethil_2 = {
+	name = "Erengor"
+	dynasty = dyn_brethil
+	religion = greenpact
+	culture = morathi
+
+	mother = brethil_1
+	father = galaspen_002
+
+	trait = lifespan_2
+
+	288.1.1 = { birth = yes }
+	471.7.1 = { death = { death_reason = death_natural_causes } }
+}
+brethil_3 = {
+	name = "Bellulor"
+	dynasty = dyn_brethil
+	religion = greenpact
+	culture = morathi
+
+	father = brethil_2
+
+	trait = lifespan_2
+
+	371.1.1 = { birth = yes }
+	564.10.13 = { death = { death_reason = death_old_age } }
+}
+brethil_4 = {
+	name = "Aerledirre"
+	dynasty = dyn_brethil
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	father = brethil_3
+
+	trait = lifespan_2
+
+	468.1.1 = { birth = yes }
+	662.2.15 = { death = { death_reason = death_old_age } }
+}
+brethil_5 = {
+	name = "Erengor"
+	dynasty = dyn_brethil
+	religion = greenpact
+	culture = etarani
+
+	mother = brethil_4
+
+	trait = lifespan_2
+
+	559.1.1 = { birth = yes }
+	748.4.18 = { death = { death_reason = death_natural_causes } }
+}
+brethil_5b = { #Married to Camoran Queen
+	name = "Agarond"
+	dynasty = dyn_brethil
+	religion = greenpact
+	culture = etarani
+
+	father = brethil_3
+
+	trait = lifespan_2
+
+	566.1.1 = { birth = yes }
+	759.1.1 = { death = { death_reason = death_natural_causes } }
+}
+brethil_line = {
+	name = "Erengor"
+	dynasty = dyn_brethil
+	religion = greenpact
+	culture = etarani
+	father = brethil_5
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	748.1.1 = { birth = yes }
+	800.1.1 = { give_nickname = nick_line_of }
+	2711.1.1 = { death = yes }
+}
+brethil_96 = {
+	name = "Iirdel"
+	dynasty = dyn_brethil
+	religion = greenpact
+	culture = etarani
+
+	father = brethil_line
+
+	trait = lifespan_2
+
+	2721.1.1 = { birth = yes }
+	2904.3.11 = { death = yes }
+}
+brethil_97 = {
+	name = "Drilalfin"
+	dynasty = dyn_brethil
+	religion = greenpact
+	culture = etarani
+
+	father = brethil_line
+
+	trait = lifespan_2
+
+	2785.1.1 = { birth = yes }
+	#Actually killed by Molag Bal, but sihnai_1 summoned him. Accurate date.
+	2920.2.19 = { death = { death_reason = death_murder_known killer = sihnai_1 } }
+}
+brethil_98 = {
+	name = "Aerchith"
+	dynasty = dyn_brethil
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = brethil_97
+
+	trait = lifespan_2
+
+	2858.1.1 = { birth = yes }
+	3021.3.18 = { death = yes }
+}
+brethil_99 = {
+	name = "Agarond"
+	dynasty = dyn_brethil
+	religion = greenpact
+	culture = etarani
+
+	mother = brethil_98
+
+	trait = lifespan_2
+
+	2926.1.1 = { birth = yes }
+	3094.1.7 = { death = yes }
+}
+brethil_100 = { #Inherits Gil-var-delle, married to Grahtwood-Camoran
+	name = "Lindowel"
+	dynasty = dyn_brethil
+	religion = greenpact
+	culture = etarani
+
+	father = brethil_99
+
+	trait = lifespan_2
+
+	3018.1.1 = { birth = yes }
+	#Don't live in place that wass destroyed by Molag Bal!!!
+	3107.4.16 = { death = { death_reason = death_mysterious } }
+}

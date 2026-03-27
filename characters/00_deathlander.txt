@@ -1,0 +1,210 @@
+﻿### KEPTU
+
+##Bouati Dynasty (dyn_bouati)
+bouati_99 = {
+    name = "Arantio"
+	dynasty = dyn_bouati
+	culture = keptu
+	religion = celestial_cult
+
+    3288.1.1 = { birth = yes }
+	3321.1.1 = { add_spouse = boutai_99_wife }
+    3350.1.1 = { death = yes }
+}
+boutai_99_wife = {
+    name = "Tona"
+	culture = keptu
+	religion = celestial_cult
+    female = yes
+
+    3296.1.1 = { birth = yes }
+    3364.1.1 = { death = yes }
+}
+bouati_100 = {
+    name = "Duber"
+	dynasty = dyn_bouati
+	culture = keptu
+	religion = celestial_cult
+
+    father = bouati_99
+    mother = boutai_99_wife
+
+    3322.1.1 = { birth = yes }
+    3364.1.1 = { death = yes }
+}
+bouati_100b = {
+	name = "Aetio"
+	dynasty = dyn_bouati
+	culture = keptu
+	religion = celestial_cult
+
+    father = bouati_99
+    mother = boutai_99_wife
+	
+	3327.1.1 = { birth = yes }
+	3382.1.1 = { death = yes }
+}
+bouati_101 = {
+    name = "Loiminna"
+	dynasty = dyn_bouati
+	culture = keptu
+	religion = celestial_cult
+    female = yes
+
+    father = bouati_100b
+
+    3352.1.1 = { birth = yes }
+    3419.1.1 = { death = yes }
+}
+
+##Lahana Dynasty (dyn_lahana)
+lahana_99 = {
+    name = "Cancil"
+	dynasty = dyn_lahana
+	culture = keptu
+	religion = celestial_cult
+
+    3312.1.1 = { birth = yes }
+    3338.1.1 = { add_spouse = lahana_99_wife }
+    3357.1.1 = { death = { death_reason = death_heart_attack } }
+}
+lahana_99_wife = {
+    name = "Igana"
+	culture = keptu
+	religion = celestial_cult
+    female = yes
+
+    3316.1.1 = { birth = yes }
+    3382.1.1 = { death = yes }
+}
+lahana_100 = {
+	name = "Cabuna"
+	dynasty = dyn_lahana
+	culture = keptu
+	religion = celestial_cult
+    female = yes
+
+    father = lahana_99
+    mother = lahana_99_wife
+
+	trait = education_diplomacy_3
+	trait = calm
+	trait = vengeful
+	trait = brave
+	
+	3339.1.1 = { birth = yes }
+    3362.1.1 = { add_matrilineal_spouse = lahana_100_husband }
+	3401.1.1 = { death = yes }
+}
+lahana_100_husband = {
+    name = "Aracus"
+	culture = keptu
+	religion = celestial_cult
+
+    3340.1.1 = { birth = yes }
+    3399.1.1 = { death = yes }
+}
+lahana_100b = {
+    name = "Coruae"
+	dynasty = dyn_lahana
+	culture = keptu
+	religion = celestial_cult
+
+    father = lahana_99
+    mother = lahana_99_wife
+
+    3342.1.1 = { birth = yes }
+    3377.1.1 = { death = { death_reason = death_battle } }
+}
+lahana_100c = {
+    name = "Cosa"
+	dynasty = dyn_lahana
+	culture = keptu
+	religion = celestial_cult
+    female = yes
+
+    father = lahana_99
+    mother = lahana_99_wife
+
+    3349.1.1 = { birth = yes }
+    3413.1.1 = { death = yes }
+}
+lahana_101 = {
+    name = "Dercet"
+	dynasty = dyn_lahana
+	culture = keptu
+	religion = celestial_cult
+
+    mother = lahana_100
+    father = lahana_100_husband
+
+    3364.1.1 = { birth = yes }
+    3389.1.1 = { death = { death_reason = death_battle } }
+}
+lahana_101b = {
+    name = "Occa"
+	dynasty = dyn_lahana
+	culture = keptu
+	religion = celestial_cult
+    female = yes
+
+    mother = lahana_100
+    father = lahana_100_husband
+
+    3368.1.1 = { birth = yes }
+    3428.1.1 = { death = yes }
+}
+
+##Neta Dynasty (dyn_neta)
+neta_100 = { #Gray Host leader guy.
+	name = "Styriche"
+	dynasty = dyn_neta
+	culture = keptu
+	religion = molag_cult
+	
+	trait = vampire_character
+	
+	760.1.1 = { birth = yes } #Before Ra Gada
+	1029.1.1 = { death = { death_reason = death_battle } }
+}
+
+#Ruler of Stonedale before Ra Gada
+stonedale_keptu_1 = {
+	name = "Mirara"
+	culture = keptu
+	religion = celestial_cult
+    female = yes
+
+	783.1.1 = { birth = yes}
+	821.1.1 = { death = { death_reason = death_battle killer = volen_ij_radan } }
+}
+
+### DURAKI
+
+# Duri - Durac's dynasty
+durac_001 = {
+	name = "Durac"
+    dynasty = dyn_duri
+	culture = duraki
+	religion = celestial_cult
+
+	trait = experimentalist #Had fascination for dark magic
+	trait = trusting
+	trait = wrathful
+	trait = zealous
+
+	767.1.1 = { birth = yes }
+	832.1.1 = { death = { death_reason = death_leech_health_magic killer = virmaril_001 } }
+}
+durac_002 = { #Based on Saradin from ESO, renamed to better name that fits her culture
+	name = "Durina"
+    dynasty = dyn_duri
+	culture = duraki
+	religion = celestial_cult
+	female = yes
+
+	father = durac_001
+
+	805.1.1 = { birth = yes }
+	832.1.1 = { death = { death_reason = death_mysterious } }
+}

@@ -1,0 +1,452 @@
+﻿#Grumma
+grumma_99 = {
+	name = "Ruggor"
+	dynasty = dyn_grumma
+	culture = imga
+	religion = ius_cult
+	
+	3307.1.1 = { birth = yes }
+	3330.1.1 = { add_spouse = grumma_99_wife }
+	3356.1.1 = { death = { death_reason = death_battle killer = barkbite_003 } }
+}
+grumma_99_wife = {
+	name = "Shusda"
+	culture = imga
+	religion = ius_cult
+	female = yes
+	
+	3309.1.1 = { birth = yes }
+	3339.1.1 = { death = { death_reason = death_childbirth } }
+}
+grumma_100 = {
+	name = "Brump"
+	dynasty = dyn_grumma
+	culture = imga
+	religion = ius_cult
+
+	father = grumma_99
+	mother = grumma_99_wife
+
+	trait = vengeful
+	trait = fickle
+	trait = patient
+	trait = education_intrigue_2
+
+	3339.1.1 = { birth = yes }
+	#Neighbour wood orc killed his father
+	3356.1.1 = { set_relation_rival = { reason = rival_historical target = character:barkbite_003 } }
+	#Wood orc died before he managed to do it himself
+	3372.1.1 = { trait = depressed_1 }
+	3393.1.1 = { death = { death_reason = death_depressed } }
+}
+grumma_101 = {
+	name = "Mrukka"
+	dynasty = dyn_grumma
+	culture = imga
+	religion = ius_cult
+	female = yes
+
+	father = grumma_100
+
+	trait = bastard
+	trait = pensive
+	trait = patient
+	disallow_random_traits = yes
+
+	3358.1.1 = { birth = yes }
+	3374.1.1 = {
+		remove_trait = pensive
+		trait = content
+		trait = lustful
+		trait = education_martial_2
+	}
+	3393.1.1 = {
+		remove_trait = bastard
+		#trait = bastard_founder
+		dynasty = dyn_grathor
+	}
+	3421.1.1 = { death = { death_reason = death_old_age } }
+}
+
+grumma_102 = {
+	name = "Norkak"
+	dynasty = dyn_grathor
+	culture = imga
+	religion = ius_cult
+
+	mother = grumma_101
+
+	3374.1.1 = { birth = yes }
+	3430.1.1 = { death = { death_reason = death_natural_causes } }
+}
+grumma_102_son = {
+	name = "Brakka"
+	dynasty = dyn_grathor
+	culture = imga
+	religion = ius_cult
+
+	father = grumma_102
+
+	3401.1.1 = { birth = yes }
+	3406.1.1 = { death = { death_reason = death_sickly } }
+}
+grumma_102b = {
+	name = "Imta"
+	dynasty = dyn_grathor
+	culture = imga
+	religion = ius_cult
+	female = yes
+	mother = grumma_101
+	3378.1.1 = { birth = yes }
+	3428.1.1 = { death = { death_reason = death_feast_accident } }
+}
+grumma_103 = {
+	name = "Norkak"
+	dynasty = dyn_grathor
+	culture = imga
+	religion = ius_cult
+
+	mother = grumma_102b
+
+	3406.1.1 = { birth = yes }
+	3468.1.1 = { death = yes }
+}
+
+#Leafeater
+kragul_99 = {
+	name = "Krobuk"
+	dynasty = dyn_kragul
+	culture = imga
+	religion = ius_cult
+	
+	3286.1.1 = { birth = yes }
+	3310.1.1 = { add_spouse = kragul_99_wife }
+	3351.1.1 = { death = { death_reason = death_old_age } }
+}
+kragul_99_wife = {
+	name = "Gruli"
+	culture = imga
+	religion = ius_cult
+	female = yes
+	
+	3283.1.1 = { birth = yes }
+	3356.1.1 = { death = { death_reason = death_old_age } }
+}
+kragul_100 = {
+	name = "Imta" 
+	dynasty = dyn_kragul
+	culture = imga
+	religion = ius_cult
+	female = yes
+
+	father = kragul_99
+	mother = kragul_99_wife
+	
+	3309.1.1 = { birth = yes }
+	3334.1.1 = { add_matrilineal_spouse = kragul_100_husband }
+	3398.1.1 = { death = yes }
+}
+kragul_100_husband = {
+	name = "Malthak"
+	culture = imga
+	religion = ius_cult
+
+	3307.1.1 = { birth = yes }
+	3378.1.1 = { death = yes }
+}
+kragul_101 = {
+	name = "Nukh"
+	dynasty = dyn_kragul
+	culture = imga
+	religion = ius_cult
+
+	father = kragul_100_husband
+	mother = kragul_100
+	
+	3335.1.1 = { birth = yes }
+	3397.1.1 = { death = yes }
+}
+kragul_101b = {
+	name = "Batum"
+	dynasty = dyn_kragul
+	culture = imga
+	religion = ius_cult
+
+	father = kragul_100_husband
+	mother = kragul_100
+	
+	3338.1.1 = { birth = yes }
+	3339.1.1 = { death = { death_reason = death_sickly } }
+}
+kragul_101c = {
+	name = "Mokar"
+	dynasty = dyn_kragul
+	culture = imga
+	religion = ius_cult
+
+	father = kragul_100_husband
+	mother = kragul_100
+	
+	3343.1.1 = { birth = yes }
+	3413.1.1 = { death = yes }
+}
+
+#Cliffshade Dynasty
+kuhloga_100 = {
+	name = "Thramak"
+	dynasty = dyn_kuhloga
+	culture = imga
+	religion = ius_cult
+
+	3305.1.1 = { birth = yes }
+	3310.1.1 = { add_spouse = kuhloga_100_wife }
+	3364.1.1 = { death = { death_reason = death_natural_causes } }
+}
+kuhloga_100_wife = {
+	name = "Groshi"
+	culture = imga
+	religion = ius_cult
+	female = yes
+
+	3303.1.1 = { birth = yes }
+	3378.1.1 = { death = { death_reason = death_natural_causes } }
+}
+kuhloga_101 = {
+	name = "Kukka"
+	dynasty = dyn_kuhloga
+	culture = imga
+	religion = ius_cult
+	female = yes
+
+	father = kuhloga_100
+	mother = kuhloga_100_wife
+
+	3327.1.1 = { birth = yes }
+	3392.1.1 = { death = yes }	
+}
+
+#Thokra
+thokra_99 = {
+	name = "Gorga"
+	dynasty = dyn_thokra
+	culture = imga
+	religion = ius_cult
+	female = yes
+
+	3297.1.1 = { birth = yes }
+	3310.1.1 = { add_matrilineal_spouse = thokra_99_husband }
+	3355.1.1 = { death = { death_reason = death_old_age } }
+}
+thokra_99_husband = {
+	name = "Hurg"
+	culture = imga
+	religion = ius_cult
+
+	3295.1.1 = { birth = yes }
+	3348.1.1 = { death = { death_reason = death_old_age } }
+}
+thokra_100 = {
+	name = "Wumog"
+	dynasty = dyn_thokra
+	culture = imga
+	religion = ius_cult
+
+	mother = thokra_99
+	father = thokra_99_husband
+
+	3325.1.1 = { birth = yes }
+	3387.1.1 = { death = yes }	
+}
+thokra_101 = {
+	name = "Mrukka"
+	dynasty = dyn_thokra
+	culture = imga
+	religion = ius_cult
+	female = yes
+
+	father = thokra_100
+
+	3347.1.1 = { birth = yes }
+	3399.1.1 = { death = yes }
+}
+
+#Apana
+apana_100 = {
+	name = "Batum"
+	dynasty = dyn_apana
+	culture = imga
+	religion = ius_cult
+
+	3332.1.1 = { birth = yes }
+	3352.1.1 = { add_spouse = apana_100_wife }
+	3368.1.1 = { death = { death_reason = death_murder_known killer = hammuhan_100 } }
+}
+
+apana_100_wife = {
+	name = "Krela"
+	culture = imga
+	religion = ius_cult
+	female = yes
+
+	trait = arcana_good_2
+
+	3331.1.1 = { birth = yes }
+	3368.1.1 = { death = { death_reason = death_murder_known killer = hammuhan_100 } }
+}
+apana_101 = {
+	name = "Kodru"
+	dynasty = dyn_apana
+	culture = imga
+	religion = ius_cult
+
+	father = apana_100
+	mother = apana_100_wife
+
+	trait = arcana_good_1
+
+	3350.1.1 = { birth = yes }
+	3368.1.1 = { death = { death_reason = death_murder_known killer = hammuhan_100 } }
+}
+apana_101b = {
+	name = "Thulkar"
+	dynasty = dyn_apana
+	culture = imga
+	religion = ius_cult
+
+	father = apana_100
+	mother = apana_100_wife
+
+	3352.1.1 = { birth = yes }
+	3368.1.1 = { death = { death_reason = death_murder_known killer = hammuhan_100 } }
+}
+apana_101c = {
+	name = "Rulgu"
+	dynasty = dyn_apana
+	culture = imga
+	religion = ius_cult
+	female = yes
+
+	father = apana_100
+	mother = apana_100_wife
+
+	trait = pensive
+	trait = diligent
+	trait = arcana_good_2
+	trait = sign_serpent
+	disallow_random_traits = yes
+
+	3353.1.1 = { birth = yes }
+    3368.1.1 = { 
+		set_relation_nemesis = {
+			target = character:hammuhan_100
+			reason = nemesis_historical # murdered her whole family
+		}
+		add_pressed_claim = title:c_predator_mesa
+		trait = vengeful
+		trait = paranoid
+	}
+	3369.1.1 = { 
+		remove_trait = pensive
+		trait = education_learning_3
+		trait = necromancer
+		effect = {
+			add_arcana_skill = { VALUE = 10 }
+			add_necromancy_perk_effect = { LEVEL = 5 }
+		}
+	}
+    # 3378.1.1 killed hammuhan_100 and conquered the county
+	# 3378.1.1 also conquers Meirvale
+    3390.1.1 = { 
+		add_trait = lich_character
+		add_character_flag = artificial_lifespan
+	
+	}
+	3494.1.1 = { death = { death_reason = death_battle killer = raikar_razum_dar } }	# killed by Razum Dar
+}
+
+#Malga
+malga_99 = {
+	name = "Vonsha"
+	dynasty = dyn_malga
+	culture = imga
+	religion = anui_el
+	female = yes
+
+	3305.1.1 = { birth = yes }
+	3322.1.1 = { add_matrilineal_spouse = malga_99_wife }
+	3352.1.1 = { death = { death_reason = death_accident } }		
+}
+malga_99_wife = {
+	name = "Halak"
+	culture = imga
+	religion = anui_el
+
+	3309.1.1 = { birth = yes }
+	3352.1.1 = { death = { death_reason = death_accident } }	
+}
+malga_100 = {
+	name = "Tavakh"
+	dynasty = dyn_malga
+	culture = imga
+	religion = anui_el
+
+	father = malga_99_wife
+	mother = malga_99
+
+	3326.1.1 = { birth = yes }
+	3407.1.1 = { death = yes }	
+}
+malga_100b = {
+	name = "Ril"
+	dynasty = dyn_malga
+	culture = imga
+	religion = anui_el
+	female = yes
+
+	father = malga_99_wife
+	mother = malga_99
+
+	3323.1.1 = { birth = yes }
+	3352.1.1 = { death = { death_reason = death_accident } }		
+}
+malga_100c = {
+	name = "Lunk"
+	dynasty = dyn_malga
+	culture = imga
+	religion = anui_el
+
+	father = malga_99_wife
+	mother = malga_99
+
+	3336.1.1 = { birth = yes }
+	3405.1.1 = { death = yes }	
+}
+
+#Kraxar dynasty - original rulers of Hectaran
+kraxar_001 = {
+	name = "Grulm"
+	dynasty = dyn_kraxar
+	culture = imga
+	religion = ius_cult
+
+	200.1.1 = { birth = yes }
+	260.1.1 = { death = { death_reason = death_battle killer = wenayalae_002 } }
+}
+
+#Imga rebel, fries up some Ayleids, frees her people
+nagon_001 = { #Also good at desctruction and summoning daedra
+	name = "Vrunda"
+	dynasty = dyn_nagon
+	culture = imga
+	religion = ius_cult
+	female = yes
+
+	trait = ambitious
+	trait = vengeful
+	trait = just
+	trait = arcana_good_3
+	trait = education_martial_4
+
+	3421.1.1 = { birth = yes }
+	3499.1.1 = { death = { death_reason = death_old_age } }
+}

@@ -1,0 +1,136 @@
+﻿##Maormer Pirates
+
+maormer_1_pirate = {
+	name = "Jahlasri"
+	female = yes
+	dynasty = dyn_inlyn
+	culture = beyonder
+	religion = mehrunes_cult
+	dna = maormer_1_pirate_dna_entry
+
+	disallow_random_traits = yes
+
+	trait = education_martial_3
+	trait = lifestyle_blademaster
+	trait = lifespan_3
+	trait = vengeful
+	trait = reckless
+	trait = ambitious
+	trait = callous
+	trait = beauty_good_2
+	trait = reaver
+	trait = one_eyed
+	trait = pirate
+
+	martial = 8
+	prowess = 8
+
+	3319.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_weight
+			add_character_flag = do_not_generate_starting_family
+		}	
+	}
+	3339.1.1 = { give_nickname = nick_blue_snake }
+	3359.12.1 = {set_relation_friend = { reason = friend_generic_history target = character:blue_venom_002 } }
+	3532.1.1 = { 
+		death = { 
+			death_reason = death_duel
+		}
+	}	
+
+	portrait_override = {	# Will override the character's appearance
+		portrait_modifier_overrides={
+				custom_hair=female_hair_western_05
+				custom_clothes=clothes_altmer_female_common_war_01
+				custom_headgear=female_empty
+				custom_legwear=female_legwear_secular_mena_war_nobility_01
+				custom_special=female_headgear_special_eye_patch_01
+		}	
+	}
+}
+
+maormer_khenarthi_001 = { #Ancient ruler of Khenarthi Roost
+	name = "Uldor" #Lore
+	culture = beyonder #TODO:Maybe assign normal Maormer or make Unique one?
+	religion = molag_cult
+
+	disallow_random_traits = yes
+	
+	trait = sadistic
+	trait = arrogant
+	trait = ambitious
+	trait = lifespan_4
+	trait = arcana_good_2
+	trait = education_magic_4
+	trait = necromancer
+
+	500.1.1 = { birth = yes }
+	750.1.1 = { death = yes }
+}
+
+maormer_khenarthi_002 = { #Ruler of Khenarthi Roost during Thrassian Plague
+	name = "Anenelle"
+	culture = beyonder #TODO:Maybe assign normal Maormer or make Unique one?
+	religion = hermaeus_cult #Placeholder, should be actual Maormer religion
+	female = yes
+
+	trait = lifespan_3
+	trait = education_diplomacy_4
+	trait = diplomat
+
+	2100.1.1 = { birth = yes }
+	2300.1.1 = { death = yes }
+}
+
+#Blue venom pirates
+blue_venom_001 = {
+	name = "Qraalel"
+	culture = beyonder
+	religion = molag_cult #Placeholder until real Maormer faith
+	
+	trait = lifespan_3
+	trait = sadistic
+	trait = impatient
+	trait = arrogant
+	trait = eccentric
+	trait = pirate
+	trait = aggressive_attacker
+	trait = education_martial_3
+
+	3270.1.1 = { birth = yes }
+	3358.7.8 = { death = { death_reason = death_torn_to_pieces_by_mob } }
+}
+
+blue_venom_002 = {
+	name = "Alandare"
+	culture = beyonder
+	religion = molag_cult #Placeholder until real Maormer faith
+	female = yes
+	trait = lifespan_3
+	trait = deceitful
+	trait = ambitious
+	trait = patient
+	trait = pirate
+	trait = scarred
+	trait = education_intrigue_3
+	3288.1.1 = { birth = yes }
+	3418.1.1 = { death = { death_reason = death_fire_magic killer = caerllin_1 } }
+}
+
+#Storm Shark pirates
+storm_shark_1000 = {
+	name = "Viscarne"
+	culture = beyonder
+	religion = molag_cult #Placeholder until real Maormer faith
+	trait = lifespan_3
+	trait = zealous
+	trait = impatient
+	trait = arrogant
+	trait = pirate
+	trait = education_martial_4
+
+	3390.1.1 = { birth = yes }
+	3504.5.6 = { death = yes }
+}

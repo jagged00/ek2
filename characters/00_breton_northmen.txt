@@ -1,0 +1,3553 @@
+﻿##Spenard Dynasty (dyn_spenard)
+
+#House Spenard
+
+spenard_1000 = {
+	name = "Frestrien" #Lore
+	dynasty = dyn_spenard
+	religion = breton_cult
+	culture = northmen
+
+	200.1.1 = { birth = yes }
+	240.1.1 = { 
+		trait = vampire_character
+		effect = { set_immortal_age = 40 }
+	}
+	567.1.1 = { 
+		death = {
+			death_reason = death_duel
+			killer = flowdys_1001
+		}
+	}
+}
+
+##Imbel Dynasty (dyn_imbel)
+
+#House Imbel
+
+imbel_100 = {
+	name = "Rosten" #Lore
+	dynasty = dyn_imbel
+	religion = breton_cult
+	culture = northmen
+
+	970.1.1 = { birth = yes }
+	1035.1.1 = { death = yes }
+}
+
+imbel_101 = {
+	name = "Artan" #Lore
+	dynasty = dyn_imbel
+	religion = breton_cult
+	culture = northmen
+
+	father = imbel_100
+
+	1000.1.1 = { birth = yes }
+	1057.1.1 = { death = yes }
+}
+
+imbel_102 = {
+	name = "Faris_zeetl" #Lore
+	dynasty = dyn_imbel
+	religion = breton_cult
+	culture = northmen
+
+	father = imbel_101
+
+	1030.1.1 = { birth = yes }
+	1101.1.1 = { death = yes }
+}
+
+imbel_103 = {
+	name = "Faren" #Lore
+	dynasty = dyn_imbel
+	religion = breton_cult
+	culture = northmen
+
+	father = imbel_101
+
+	1037.1.1 = { birth = yes }
+	1056.1.1 = { death = yes }
+}
+
+imbel_104 = {
+	name = "Corben" #Lore
+	dynasty = dyn_imbel
+	religion = breton_cult
+	culture = northmen
+
+	father = imbel_103
+
+	1053.1.1 = { birth = yes }
+	1102.1.1 = { death = yes }
+}
+
+imbel_105 = {
+	name = "Artan" #Lore
+	dynasty = dyn_imbel
+	religion = breton_cult
+	culture = northmen
+	trait = legitimized_bastard
+
+	father = imbel_104
+
+	1079.1.1 = { birth = yes }
+	1152.1.1 = { death = yes }
+}
+
+imbel_106 = {
+	name = "Faren" #Lore
+	dynasty = dyn_imbel
+	religion = breton_cult
+	culture = northmen
+	trait = legitimized_bastard
+
+	father = imbel_104
+
+	1084.1.1 = { birth = yes }
+	1085.1.1 = { death = yes }
+}
+
+imbel_107 = {
+	name = "Corben" #Lore
+	dynasty = dyn_imbel
+	religion = breton_cult
+	culture = northmen
+	trait = legitimized_bastard
+
+	father = imbel_104
+
+	1086.1.1 = { birth = yes }
+	1167.1.1 = { death = yes }
+}
+imbel_997 = {
+	name = "Corben"
+	dynasty = dyn_imbel
+	religion = breton_cult
+	culture = northmen
+
+	father = imbel_107
+
+	trait = line_of_x
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+
+	1150.1.1 = { birth = yes }
+	1151.1.1 = { give_nickname = nick_line_of }
+	3270.1.1 = { death = yes }
+}
+# HistoryToDoHR unsure if i want Imbel to be in Normar. could move this lower part of the dynasty into a new dynasty and move the imbels somewhere else.
+imbel_998 = {
+	name = "Felyx"
+	dynasty = dyn_imbel
+	religion = breton_cult
+	culture = northmen
+
+	father = imbel_997
+
+	3250.1.1 = { birth = yes }
+	3317.1.1 = { death = yes }
+}
+imbel_999 = {
+	name = "Guthred"
+	dynasty = dyn_imbel
+	religion = breton_cult
+	culture = northmen
+
+	father = imbel_998
+
+	3300.1.1 = { birth = yes }
+	3337.1.1 = { add_spouse = edrald_1000_sister }
+	3338.1.1 = { death = yes }
+}
+imbel_1000 = {
+	name = "Octieve"
+	dynasty = dyn_imbel
+	religion = breton_cult
+	culture = northmen
+
+	trait = education_learning_1
+	trait = arbitrary
+	trait = lazy
+	trait = impatient
+	trait = sign_lady
+
+	father = imbel_999
+	mother = edrald_1000_sister
+
+	3337.9.3 = { birth = yes }
+	3359.1.1 = { add_spouse = merowald_1000_sister }
+	3395.1.1 = { death = yes }
+}
+imbel_1000_sister = {
+	name = "Illise"
+	female = yes
+	dynasty = dyn_imbel
+	religion = breton_cult
+	culture = northmen
+
+	trait = education_stewardship_2
+	trait = diligent
+	trait = patient
+	trait = just
+	trait = disinherited
+	trait = sign_apprentice
+
+	father = imbel_999
+	mother = edrald_1000_sister
+
+	3338.7.19 = { birth = yes }
+	3402.1.1 = { death = yes }
+}
+imbel_1001 = {
+	name = "Philipe"
+	dynasty = dyn_imbel
+	religion = breton_cult
+	culture = northmen
+
+	trait = sign_thief
+
+	father = imbel_1000
+	mother = merowald_1000_sister
+
+	3359.12.3 = { birth = yes }
+	3420.1.1 = { death = yes }
+}
+imbel_1002 = {
+	name = "Thierry"
+	dynasty = dyn_imbel
+	religion = breton_cult
+	culture = northmen
+	
+	trait = sign_warrior
+
+	father = imbel_1000
+	mother = merowald_1000_sister
+
+	3363.8.14 = { birth = yes }
+	3424.1.1 = { death = yes }
+}
+##Branquette Dynasty
+
+#House Branquette
+branquette_hurlburt_1 = {
+    name = "Hurlburt"
+    dynasty = dyn_branquette
+    culture = northmen
+    religion = breton_cult
+
+    2801.5.12 = { birth = yes }
+    2857.8.3 = { death = yes }
+}
+
+branquette_hurlburt_2 = {
+    name = "Hurlburt"
+    dynasty = dyn_branquette
+    culture = northmen
+    religion = breton_cult
+
+    father = branquette_hurlburt_1
+
+    2824.1.9 = { birth = yes }
+    2879.6.21 = { death = yes }
+}
+
+branquette_hurlburt_3 = {
+    name = "Hurlburt"
+    dynasty = dyn_branquette
+    culture = northmen
+    religion = breton_cult
+
+    father = branquette_hurlburt_2
+
+    2848.7.2 = { birth = yes }
+    2903.10.14 = { death = yes }
+}
+branquette_hurlburt_4 = {
+    name = "Hurlburt"
+    dynasty = dyn_branquette
+    culture = northmen
+    religion = breton_cult
+
+	father = branquette_hurlburt_3
+
+    2879.3.17 = { birth = yes }
+    2934.5.28 = { death = yes }
+}
+branquette_hurlburt_5 = {
+    name = "Hurlburt"
+    dynasty = dyn_branquette
+    culture = northmen
+    religion = breton_cult
+
+    father = branquette_hurlburt_4
+
+    2909.10.25 = { birth = yes }
+    2965.1.6 = { death = yes }
+}
+
+branquette_hurlburt_6 = {
+    name = "Hurlburt"
+    dynasty = dyn_branquette
+    culture = northmen
+    religion = breton_cult
+
+    father = branquette_hurlburt_5
+
+    2938.1.15 = { birth = yes }
+    2993.4.26 = { death = yes }
+}
+
+branquette_hurlburt_7 = {
+    name = "Hurlburt"
+    dynasty = dyn_branquette
+    culture = northmen
+    religion = breton_cult
+
+    father = branquette_hurlburt_6
+
+    2968.4.9 = { birth = yes }
+    3023.9.21 = { death = yes }
+}
+
+branquette_hurlburt_8 = {
+    name = "Hurlburt"
+    dynasty = dyn_branquette
+    culture = northmen
+    religion = breton_cult
+
+    father = branquette_hurlburt_7
+
+    2999.6.28 = { birth = yes }
+    3054.12.9 = { death = yes }
+}
+
+branquette_hurlburt_9 = {
+    name = "Hurlburt"
+    dynasty = dyn_branquette
+    culture = northmen
+    religion = breton_cult
+
+    father = branquette_hurlburt_8
+
+    3030.9.17 = { birth = yes }
+    3086.2.28 = { death = yes }
+}
+
+branquette_hurlburt_10 = {
+    name = "Hurlburt"
+    dynasty = dyn_branquette
+    culture = northmen
+    religion = breton_cult
+
+    father = branquette_hurlburt_9
+
+    3061.12.30 = { birth = yes }
+    3117.6.12 = { death = yes }
+}
+
+branquette_hurlburt_11 = {
+    name = "Hurlburt"
+    dynasty = dyn_branquette
+    culture = northmen
+    religion = breton_cult
+
+    father = branquette_hurlburt_10
+
+    3092.2.20 = { birth = yes }
+    3147.4.1 = { death = yes }
+}
+
+branquette_hurlburt_12 = {
+    name = "Hurlburt"
+    dynasty = dyn_branquette
+    culture = northmen
+    religion = breton_cult
+
+    father = branquette_hurlburt_11
+
+    3123.5.9 = { birth = yes }
+    3178.9.21 = { death = yes }
+}
+branquette_15350 = {
+	name = "Ranser"
+	dynasty = dyn_branquette
+	culture = northmen
+	religion = breton_cult
+
+	father = branquette_hurlburt_12
+	
+	3150.1.1 = { birth = yes }
+	3205.1.1 = { death = yes }
+}
+branquette_15351 = {
+	name = "Cerdic"
+	dynasty = dyn_branquette
+	culture = northmen
+	religion = breton_cult
+	
+	father = branquette_15350
+	
+	3180.1.1 = { birth = yes }
+	3240.1.1 = { death = yes }
+}
+branquette_15352 = {
+	name = "Brandon"
+	dynasty = dyn_branquette
+	culture = northmen
+	religion = breton_cult
+	
+	father = branquette_15350
+	
+	3183.1.1 = { birth = yes }
+	3243.1.1 = { death = yes }
+}
+branquette_15353b = { # Marries cursebraid_996
+	name = "Cidathia"
+	dynasty = dyn_branquette
+	culture = northmen
+	religion = breton_cult
+	female = yes
+	
+	father = branquette_15351
+	
+	3211.1.1 = { birth = yes }
+	3274.1.1 = { death = yes }
+}
+branquette_15353 = {
+	name = "Maric"
+	dynasty = dyn_branquette
+	culture = northmen
+	religion = breton_cult
+	
+	father = branquette_15351
+	
+	3208.1.1 = { birth = yes }
+	3274.1.1 = { death = yes }
+}
+branquette_15354 = {
+	name = "Alain"
+	dynasty = dyn_branquette
+	culture = northmen
+	religion = breton_cult
+	
+	father = branquette_15353
+	
+	3238.1.1 = { birth = yes }
+	3255.1.1 = { add_spouse = tamrith_15406_sister }
+	3300.1.1 = { death = yes }
+}
+#theodastyr 'branch' to marry off, will die out before ranser. this is the converted 'main' branch from ek1
+branquette_theodastyr_1 = {
+	name = "Theodastyr"
+	dynasty = dyn_branquette
+	culture = northmen
+	religion = breton_cult
+	
+	father = branquette_15354
+	mother = tamrith_15406_sister
+	
+	3279.1.1 = { birth = yes }
+	3338.1.1 = { death = yes }
+}
+branquette_theodastyr_2 = {
+	name = "Arielle"
+	dynasty = dyn_branquette
+	culture = northmen
+	religion = breton_cult
+	female = yes
+	
+	father = branquette_theodastyr_1
+
+	trait = education_learning_1
+	trait = honest
+	trait = patient
+	trait = just
+	trait = sign_ritual
+	
+	3308.1.25 = { birth = yes }
+	#3333 marries montclair_15453 bryce montclair
+	3368.1.1 = { death = yes }
+}
+branquette_theodastyr_3 = {
+	name = "Weynon"
+	dynasty = dyn_branquette
+	culture = northmen
+	religion = breton_cult
+	
+	father = branquette_theodastyr_1
+	
+	3309.1.1 = { birth = yes }
+	3369.1.1 = { death = yes }
+}
+branquette_theodastyr_4 = {
+	name = "Virene"
+	female = yes
+	dynasty = dyn_branquette
+	culture = northmen
+	religion = breton_cult
+
+	trait = legitimized_bastard
+	trait = education_diplomacy_3
+	trait = brave
+	trait = arbitrary
+	trait = deceitful
+	trait = sign_thief
+	
+	father = branquette_theodastyr_3
+	
+	3341.12.7 = { birth = yes }
+	3403.1.1 = { death = yes }
+}
+branquette_theodastyr_5 = {
+	name = "Mattias"
+	dynasty = dyn_branquette
+	culture = northmen
+	religion = breton_cult
+
+	trait = legitimized_bastard
+	trait = education_intrigue_2
+	trait = lazy
+	trait = shy
+	trait = callous
+	trait = sign_thief
+	
+	father = branquette_theodastyr_3
+	
+	3342.12.27 = { birth = yes }
+	3411.1.1 = { death = yes }
+}
+branquette_theodastyr_6 = {
+	name = "Lywel"
+	dynasty = dyn_branquette
+	culture = northmen
+	religion = breton_cult
+
+	trait = bastard
+	
+	mother = branquette_theodastyr_4
+	
+	3362.1.1 = { birth = yes }
+	3424.1.1 = { death = yes }
+}
+branquette_15365 = {
+	name = "Fergus"
+	dynasty = dyn_branquette
+	culture = northmen
+	religion = breton_cult
+	trait = chaste
+	trait = legitimized_bastard
+	
+	father = branquette_15352
+	mother = farr_15477
+	
+	3219.1.1 = { birth = yes }
+	3239.1.1 = { add_spouse = branquette_15365_spouse }
+	3281.1.1 = { death = yes }
+}
+branquette_15365_spouse = {
+	name = "Mariane"
+	female = yes
+	culture = northmen
+	religion = breton_cult
+	trait = chaste
+	
+	3220.1.1 = { birth = yes }
+	3300.1.1 = { death = yes }
+}
+branquette_15366 = {
+	name = "Arnold"
+	dynasty = dyn_branquette
+	culture = northmen
+	religion = breton_cult
+	
+	father = branquette_15365
+	mother = branquette_15365_spouse
+	
+	3239.1.1 = { birth = yes }
+	3297.1.1 = { death = yes }
+}
+branquette_15367 = {
+	name = "Brandon"
+	dynasty = dyn_branquette
+	culture = northmen
+	religion = breton_cult
+	trait = legitimized_bastard
+	
+	father = branquette_15366
+	
+	3278.1.1 = { birth = yes }
+	3299.1.1 = { add_spouse = branquette_15367_spouse }
+	3345.1.1 = { death = yes }
+}
+branquette_15367_spouse = {
+	name = "Amy"
+	culture = northmen
+	religion = breton_cult
+	female = yes
+	3279.1.1 = { birth = yes }
+	3348.1.1 = { death = yes }
+}
+branquette_15368 = {
+	name = "Aurane"
+	dynasty = dyn_branquette
+	female = yes
+	culture = northmen
+	religion = breton_cult
+	
+	father = branquette_15354
+	mother = tamrith_15406_sister
+	
+	3286.1.1 = { birth = yes }
+	3302.1.1 = {
+		add_trait = education_magic_3
+	}
+	3354.1.1 = { death = yes }
+}
+branquette_15378 = {
+	name = "Rayelle" #Princess of Sharnhelm
+	dynasty = dyn_branquette
+	culture = northmen
+	religion = breton_cult
+	female = yes
+	
+	#father = branquette_15362 HistoryToDoHR seems we didn't import that branch of teh branquette
+	
+	3461.1.1 = { birth = yes }
+	#3480.1.1 = { add_spouse = 15880 }
+	3528.1.1 = { death = yes }
+}
+branquette_998 = {
+	name = "Ranser"
+	dynasty = dyn_branquette
+	culture = northmen
+	religion = breton_cult
+
+	trait = education_diplomacy_4
+	trait = chaste
+	trait = lazy
+	trait = brave
+	
+	father = branquette_15354
+	mother = tamrith_15406_sister
+	
+	3276.1.1 = { birth = yes }
+	3308.1.1 = { add_spouse = cenno2_99b }
+	3343.1.1 = { death = yes }
+}
+branquette_999 = {
+	name = "Edgar"
+	dynasty = dyn_branquette
+	religion = breton_cult
+	culture = northmen
+
+	trait = education_martial_3
+	trait = cautious_leader
+	trait = wrathful
+	trait = sadistic
+	trait = vengeful
+	trait = sign_warrior
+
+	father = branquette_998
+	mother = cenno2_99b
+
+	3309.8.12 = { birth = yes }
+    3329.1.1 = { add_spouse = moile_99b1 }
+	3351.1.1 = { give_nickname = nick_the_orc_crusher } # gained by killing the King of Orsinium
+	3369.1.1 = { death = yes }
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=male_hair_western_07
+			custom_beards=male_beard_mena_04
+		}
+	}
+}
+branquette_999_brother = {
+	name = "Alan"
+	dynasty = dyn_branquette
+	religion = breton_cult
+	culture = northmen
+
+	father = branquette_998
+	mother = cenno2_99b
+
+	trait = education_martial_3
+	trait = sadistic
+	trait = lazy
+	trait = trusting
+	trait = sign_shadow
+
+	3310.5.25 = { birth = yes }
+	#3339 marries garclay_100b
+	3365.1.1 = { death = yes }
+}
+branquette_999_brother_2 = {
+	name = "Pilou"
+	dynasty = dyn_branquette
+	religion = breton_cult
+	culture = northmen
+
+	father = branquette_998
+	mother = cenno2_99b
+
+	trait = education_learning_3
+	trait = journaller #HistoryToDoHR could consider giving Edgar a book artifact written by Pilou, a collection of short stories ofc
+	trait = diligent
+	trait = calm
+	trait = chaste
+	trait = sign_warrior
+
+	3314.8.14 = { birth = yes }
+	3371.1.1 = { death = yes }
+}
+branquette_1000 = {
+	name = "Roderic"
+	dynasty = dyn_branquette
+	religion = breton_cult
+	culture = northmen
+
+	father = branquette_999
+	mother = moile_99b1
+
+	trait = brave
+	trait = gregarious
+	trait = honest
+	trait = education_stewardship_1
+	trait = sign_ritual
+
+	3339.1.14 = { birth = yes }
+	3364.1.1 = { add_spouse = tamrith_1001 } # no alliance with tamrith_1000, as tamrith_1001 is his rival
+	3403.1.1 = { death = yes }
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=male_hair_fp2_iberian_muslim_01
+			custom_beards=male_beard_western_01
+		}
+	}
+}
+
+branquette_1001 = {
+	name = "Matilda"
+	dynasty = dyn_branquette
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	father = branquette_999
+	mother = moile_99b1
+
+	trait = education_intrigue_3
+	trait = fickle
+	trait = lazy
+	trait = shy
+	trait = sign_lover
+	3340.2.17 = { birth = yes }
+	# 3359 marries montclair_1000
+	3411.1.1 = { death = yes }
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=female_hair_northern_03
+			custom_beards=female_empty
+		}
+	}
+}
+branquette_1002_mother = {
+	name = "Foana"
+	female = yes
+	religion = breton_cult
+	culture = reachfolk
+
+	trait = beauty_good_1
+	trait = sign_lord
+
+	3332.3.16 = { birth = yes }
+	3376.1.1 = { death = yes }
+}
+branquette_1002 = {
+	name = "Edwyrick"
+	dynasty = dyn_branquette
+	religion = breton_cult
+	culture = northmen
+
+	father = branquette_1000
+	mother = branquette_1002_mother
+
+	trait = legitimized_bastard
+	trait = sign_apprentice
+
+	3358.7.9 = { birth = yes }
+	3442.1.1 = { death = yes }
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=male_hair_western_02
+			custom_beards=male_empty
+		}
+	}
+}
+
+branquette_1003 = { #Lore
+	name = "Hurlburt"
+	dynasty = dyn_branquette
+	religion = breton_cult
+	culture = northmen
+
+	father = branquette_1002
+
+	3399.1.1 = { birth = yes }
+	3420.1.1 = { add_spouse = montclair_1002 }
+	3466.1.1 = { death = yes }
+}
+
+branquette_1005 = { #Lore
+	name = "Ranser"
+	dynasty = dyn_branquette
+	religion = breton_cult
+	culture = northmen
+	trait = legitimized_bastard
+
+	father = branquette_1003
+	mother = tamrith_1002a
+
+	3438.1.1 = { birth = yes }
+	3487.1.1 = {
+		death = {
+			death_reason = death_duel
+			killer = cumberland_1004
+		}
+	}
+}
+
+# Lore Excursion:
+# so branquette_1003 was the 21st Count Branquette to be named Hurlburt, so we need 20 Hurlburts before him.
+# i am not sorry.
+branquette_hurlburt_13 = {
+    name = "Hurlburt"
+    dynasty = dyn_branquette
+    culture = northmen
+    religion = breton_cult
+
+    father = branquette_hurlburt_12
+
+    3154.8.7 = { birth = yes }
+    3209.1.18 = { death = yes }
+}
+
+branquette_hurlburt_14 = {
+    name = "Hurlburt"
+    dynasty = dyn_branquette
+    culture = northmen
+    religion = breton_cult
+
+    father = branquette_hurlburt_13
+
+    3185.11.18 = { birth = yes }
+    3239.4.30 = { death = yes }
+}
+
+branquette_hurlburt_15 = {
+    name = "Hurlburt"
+    dynasty = dyn_branquette
+    culture = northmen
+    religion = breton_cult
+
+    father = branquette_hurlburt_14
+
+    3216.2.5 = { birth = yes }
+    3271.7.17 = { death = yes }
+}
+
+branquette_hurlburt_16 = {
+    name = "Hurlburt"
+    dynasty = dyn_branquette
+    culture = northmen
+    religion = breton_cult
+
+    father = branquette_hurlburt_15
+
+    3247.4.21 = { birth = yes }
+    3302.9.2 = { death = yes }
+}
+
+branquette_hurlburt_17 = {
+    name = "Hurlburt"
+    dynasty = dyn_branquette
+    culture = northmen
+    religion = breton_cult
+
+    father = branquette_hurlburt_16
+
+    3278.7.13 = { birth = yes }
+    3333.12.25 = { death = yes }
+}
+branquette_hurlburt_18 = {
+    name = "Hurlburt"
+    dynasty = dyn_branquette
+    culture = northmen
+    religion = breton_cult
+
+    father = branquette_hurlburt_17
+
+    3309.9.2 = { birth = yes }
+    3351.10.13 = { death = { death_reason = death_orsinium } }
+}
+
+#House Branquette-Montclair
+
+branquette_montclair_1000 = { #Lore
+	name = "Phylgeon"
+	dynasty = dyn_branquette
+	religion = breton_cult
+	culture = northmen
+
+	father = branquette_1003
+	mother = montclair_1002
+
+	3430.1.1 = { birth = yes }
+	3466.1.1 = { dynasty_house = branquette_montclair }
+	3492.1.1 = { death = yes }
+}
+
+branquette_montclair_1001 = { #ESO
+	name = "Wylon"
+	dynasty_house = branquette_montclair
+	religion = breton_cult
+	culture = northmen
+
+	father = branquette_montclair_1000
+
+	3449.1.1 = { birth = yes }
+	3460.1.1 = { add_spouse = farr_1006 }
+	3460.1.1 = { set_relation_friend = { reason = friend_generic_history target = character:ravenn_1000 } }
+	3487.1.1 = {
+		effect = {
+			add_pressed_claim = title:c_branquette_tor
+			add_pressed_claim = title:c_shornhelm
+			add_pressed_claim = title:d_shornhelm
+			add_pressed_claim = title:k_shornhelm
+		}
+	}
+	3503.1.1 = { death = yes }
+}
+
+branquette_montclair_1002 = { #ESO
+	name = "Lleraya"
+	dynasty_house = branquette_montclair
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	father = branquette_montclair_1001
+	mother = farr_1006
+
+	3471.1.1 = { birth = yes }
+	3503.1.1 = { death = yes }
+}
+
+##Tamrith Dynasty (dyn_tamrith)
+
+#House Tamrith
+tamrith_15400 = {
+	name = "Robert"
+	dynasty = dyn_tamrith
+	culture = northmen
+	religion = breton_cult
+	
+	2841.1.1 = { birth = yes }
+	2921.1.1 = { death = yes }
+}
+tamrith_15400_line = {
+	name = "Robert"
+	dynasty = dyn_tamrith
+	culture = northmen
+	religion = breton_cult
+
+	father = tamrith_15400
+
+	trait = line_of_x
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+
+	2921.1.1 = { birth = yes }
+	2922.1.1 = { give_nickname = nick_line_of }
+	3093.1.1 = { death = yes }
+}
+tamrith_15401 = {
+	name = "Gryf"
+	dynasty = dyn_tamrith
+	culture = northmen
+	religion = breton_cult
+	
+	father = tamrith_15400_line
+	3093.1.1 = { birth = yes }
+	3163.1.1 = { death = yes }
+}
+tamrith_15402 = {
+	name = "Gepard"
+	dynasty = dyn_tamrith
+	culture = northmen
+	religion = breton_cult
+	
+	father = tamrith_15401
+	3120.1.1 = { birth = yes }
+	3180.1.1 = { death = yes }
+}
+tamrith_15403 = {
+	name = "Gaspar"
+	dynasty = dyn_tamrith
+	culture = northmen
+	religion = breton_cult
+	
+	father = tamrith_15402
+	3156.1.1 = { birth = yes }
+	3212.1.1 = { death = yes }
+}
+tamrith_15404 = {
+	name = "Robert"
+	dynasty = dyn_tamrith
+	culture = northmen
+	religion = breton_cult
+	
+	father = tamrith_15403
+	3180.1.1 = { birth = yes }
+	3239.1.1 = { death = yes }
+}
+tamrith_15405 = {
+	name = "Verick"
+	dynasty = dyn_tamrith
+	culture = northmen
+	religion = breton_cult
+	
+	father = tamrith_15403
+	3186.1.1 = { birth = yes }
+	3254.1.1 = { death = yes }
+}
+tamrith_15406 = {
+	name = "Edin"
+	dynasty = dyn_tamrith
+	culture = northmen
+	religion = breton_cult
+	
+	father = tamrith_15404
+	3206.1.1 = { birth = yes }
+	3240.1.1 = { death = yes }
+}
+tamrith_15406_sister = {
+	name = "Nyomie"
+	dynasty = dyn_tamrith
+	culture = northmen
+	religion = breton_cult
+	female = yes
+	
+	father = tamrith_15404
+	3228.1.1 = { birth = yes }
+	# 3255 marries branquette_15354
+	3293.1.1 = { death = yes }
+}
+
+tamrith_15407 = {
+	name = "Kastus"
+	dynasty = dyn_tamrith
+	culture = northmen
+	religion = breton_cult
+	trait = chaste
+	father = tamrith_15405
+	3222.1.1 = { birth = yes }
+	3267.1.1 = { add_spouse = tamrith_15407_wife }
+	3302.1.1 = { death = yes }
+}
+tamrith_15407_wife = {
+	name = "Laetille"
+	# HR ToDo could be added to a colovian dynasty who had some people in HR during the empire days
+	female = yes
+	culture = colovian
+	religion = breton_cult
+	3244.1.1 = { birth = yes }
+	3302.1.1 = { death = yes }
+}
+tamrith_15407_brother = {
+	name = "Gryf"
+	dynasty = dyn_tamrith
+	culture = northmen
+	religion = breton_cult
+	trait = chaste
+	father = tamrith_15405
+	3231.1.1 = { birth = yes }
+	3299.1.1 = { death = yes }
+}
+tamrith_15408 = {
+	name = "Hastrel"
+	dynasty = dyn_tamrith
+	culture = northmen
+	religion = breton_cult
+	trait = legitimized_bastard
+	father = tamrith_15407
+	mother = tamrith_15407_wife
+	3272.1.1 = { birth = yes }
+	3298.1.1 = { add_spouse = farr_15482_sister }
+	3344.1.1 = { death = yes }
+}
+
+tamrith_999 = {
+	name = "Robert" # Count of Southgard (Warlord)
+	dynasty = dyn_tamrith
+	religion = breton_cult
+	culture = northmen
+	trait = education_stewardship_1
+	trait = impatient
+	trait = ambitious
+	trait = gregarious
+	trait = sign_lord
+
+	father = tamrith_15408
+	mother = farr_15482_sister
+
+	3303.3.2 = { birth = yes }
+	3327.1.1 = { add_spouse = rielle_999_sister }
+	3350.1.1 = {
+		add_unpressed_claim = title:d_phrygias
+		add_unpressed_claim = title:c_phrygias
+	}
+	3363.1.1 = { death = yes }
+}
+tamrith_999_sister = {
+	name = "Amarie"
+	dynasty = dyn_tamrith
+	female = yes
+	religion = breton_cult
+	culture = iliac
+
+	father = tamrith_15408
+	mother = farr_15482_sister
+
+	trait = education_learning_2
+	trait = trusting
+	trait = temperate
+	trait = humble
+	trait = sign_shadow
+
+	3304.5.30 = { birth = yes }
+	3341.1.1 = { death = yes }
+}
+tamrith_999_brother = {
+	name = "Gryf"
+	dynasty = dyn_tamrith
+	religion = breton_cult
+	culture = northmen
+
+	father = tamrith_15408
+	mother = farr_15482_sister
+
+	trait = education_martial_2
+	trait = brave
+	trait = gregarious
+	trait = ambitious
+	trait = sign_steed
+
+	3306.6.3 = { birth = yes }
+	3365.1.1 = { death = yes }
+}
+tamrith_1000 = {
+	name = "Mercer" # Count of Southgard (Interregnum)
+	dynasty = dyn_tamrith
+	religion = breton_cult
+	culture = northmen
+
+	father = tamrith_999
+	mother = rielle_999_sister
+
+	trait = education_intrigue_3
+	trait = ambitious
+	trait = deceitful
+	trait = diligent
+	trait = sign_thief
+
+	3333.12.17 = { birth = yes }
+	3364.1.1 = {
+		add_spouse = farr_1001
+	}
+	3392.1.1 = { death = yes }
+}
+
+tamrith_1001 = {
+	name = "Rosalin"
+	dynasty = dyn_tamrith
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	mother = rielle_999_sister
+	father = tamrith_999
+
+	trait = education_stewardship_2
+	trait = diligent
+	trait = temperate
+	trait = shy
+	trait = sign_steed
+
+	3331.6.24 = { birth = yes }
+	3363.1.1 = {
+		remove_trait = shy
+		trait = vengeful
+		set_relation_rival = { reason = rival_claimed_throne target = character:tamrith_1000 } } # she should have gotten the title being the older, but her brother took that from her
+	# 3364 marries branquette_1000
+	3391.1.1 = { death = yes }
+}
+
+tamrith_1002 = {
+	name = "Berenda" #Lore
+	dynasty = dyn_tamrith
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	father = tamrith_1000
+	mother = farr_1001
+
+	3363.1.1 = { birth = yes }
+	3431.1.1 = { death = yes }
+}
+
+tamrith_1003 = { #Marries cragstrider_101 in 3378
+	name = "Agathe"
+	dynasty = dyn_tamrith
+	religion = breton_cult
+	culture = northmen
+	female = yes
+	trait = bastard
+
+	mother = tamrith_1001
+
+	3361.1.1 = { birth = yes }
+	3376.1.1 = {
+		trait = education_learning_3
+	}
+	3430.1.1 = { death = yes }
+}
+
+tamrith_1002a = {
+	name = "Edelinne"
+	dynasty = dyn_tamrith
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	mother = tamrith_1002
+
+	3401.1.1 = { birth = yes }
+	3448.1.1 = { death = yes }
+}
+
+tamrith_1002b = {
+	name = "Aurine" #ESO
+	dynasty = dyn_tamrith
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	mother = tamrith_1002a
+
+	3438.1.1 = { birth = yes }
+	3510.1.1 = { death = yes }
+}
+
+tamrith_1004 = {
+	name = "Esmark" #Lore
+	dynasty = dyn_tamrith
+	religion = breton_cult
+	culture = northmen
+
+	mother = tamrith_1002
+
+	3400.1.1 = { birth = yes }
+	3425.1.1 = { add_spouse = elde_1003 }
+	3487.1.1 = {
+		effect = {
+			add_pressed_claim = title:c_shornhelm
+			add_pressed_claim = title:d_shornhelm
+			add_pressed_claim = title:k_shornhelm
+		}
+	}
+	3490.1.1 = { death = yes }
+}
+
+tamrith_1005 = {
+	name = "Eselde" #ESO
+	dynasty = dyn_tamrith
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	father = tamrith_1004
+	mother = elde_1003
+
+	3475.1.1 = { birth = yes }
+	3490.1.1 = {
+		effect = {
+			add_pressed_claim = title:c_shornhelm
+			add_pressed_claim = title:d_shornhelm
+			add_pressed_claim = title:k_shornhelm
+		}
+	}
+	3535.1.1 = { death = yes }
+}
+
+tamrith_1006 = {
+	name = "Janeve" #ESO
+	dynasty = dyn_tamrith
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	father = tamrith_1004
+	mother = elde_1003
+
+	3477.1.1 = { birth = yes }
+	3543.1.1 = { death = yes }
+}
+
+##Dorell Dynasty
+
+#House Flowdys
+
+flowdys_1000 = { #Lore
+	name = "Yric"
+	dynasty = dyn_flowdys
+	religion = breton_cult
+	culture = northmen
+
+	900.1.1 = { birth = yes }
+	916.1.1 = {
+		trait = education_stewardship_4
+		trait = avaricious
+		trait = ambitious
+		trait = greedy
+		trait = diligent
+	}
+	965.1.1 = { death = yes }
+}
+
+flowdys_1001 = { #Lore
+	name = "Yric"
+	dynasty = dyn_flowdys
+	religion = breton_cult
+	culture = northmen
+	trait = line_of_x
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+	father = flowdys_1000
+
+	964.1.1 = { birth = yes }
+	1050.1.1 = { give_nickname = nick_line_of }
+	2301.1.1 = { death = yes }
+}
+
+#House Dorell
+
+dorell_shornhelm_0 = {
+	name = "Ellic"
+	dynasty_house = dorell_flowdys
+	religion = breton_cult
+	culture = northmen
+
+	father = flowdys_1001
+
+	2301.1.1 = { birth = yes }
+	2361.1.1 = { death = yes }
+}
+dorell_shornhelm_1 = {
+    name = "Berengar"
+    dynasty_house = dorell_flowdys
+    religion = breton_cult
+    culture = northmen
+
+    father = dorell_shornhelm_0
+
+    2361.1.1  = { birth = yes }
+    2401.5.6 = { death = yes }
+}
+dorell_shornhelm_2 = {
+    name = "Berengar"
+    dynasty_house = dorell_flowdys
+    religion = breton_cult
+    culture = northmen
+
+    father = dorell_shornhelm_1
+
+	trait = line_of_x
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+
+    2401.5.6 = { birth = yes }
+	2402.1.1 = { give_nickname = nick_line_of }
+    2649.9.12 = { death = yes }
+}
+dorell_shornhelm_3 = {
+	name = "Gawyne"
+	female = yes
+	dynasty_house = dorell_flowdys
+    religion = breton_cult
+    culture = northmen
+
+	father = dorell_shornhelm_2
+
+	2649.9.12 = { birth = yes }
+	2717.1.1 = { death = yes }
+}
+dorell_northpoint_1 = {
+	name = "Osric"
+	dynasty_house = dorell_flowdys
+	religion = breton_cult
+	culture = northmen
+
+	father = flowdys_1001
+
+	2306.1.1 = { birth = yes }
+	2359.1.1 = { death = yes }
+}
+dorell_northpoint_2 = {
+	name = "Osric"
+	dynasty_house = dorell_flowdys
+	religion = breton_cult
+	culture = northmen
+
+	father = dorell_northpoint_1
+
+	trait = line_of_x
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+
+	2359.1.1 = { birth = yes }
+	2360.1.1 = { give_nickname = nick_line_of }
+	3310.1.1 = { death = yes }
+}
+
+dorell_998 = {
+	name = "Weynon"
+	dynasty_house = dorell_flowdys
+	religion = breton_cult
+	culture = northmen
+	father = dorell_northpoint_2
+
+	3281.1.1 = { birth = yes }
+	3304.1.1 = { add_spouse = dorell_998_wife }
+	3342.1.1 = { death = yes }
+}
+dorell_998_wife = {
+	name = "Shilia"
+	female = yes
+	religion = breton_cult
+	culture = northmen
+
+	3285.1.1 = { birth = yes }
+	3349.1.1 = { death = yes }
+}
+
+dorell_999 = {
+	name = "Lucie"
+	dynasty_house = dorell_flowdys
+	religion = breton_cult
+	culture = northmen
+	female = yes
+	father = dorell_998
+	mother = dorell_998_wife
+
+	trait = generous
+
+	3305.1.1 = { birth = yes }
+	3323.1.1 = { add_spouse = rielle_999_brother }
+	3357.1.1 = { death = yes }
+}
+
+dorell_1000 = {
+	name = "Weynon"
+	dynasty_house = dorell_flowdys
+	religion = breton_cult
+	culture = northmen
+	mother = dorell_999
+	father = rielle_999_brother
+
+	trait = education_martial_4
+	trait = generous
+	trait = lazy
+	trait = sadistic
+	trait = sign_thief
+
+	3323.12.29 = { birth = yes }
+	# already betrothed to thricepierced_97_daughter when he sires maline stenric as a bastard
+	3346.1.1 = {
+		add_spouse = thricepierced_97_daughter
+		effect = {
+			create_alliance = {
+				target = character:thricepierced_98
+				allied_through_owner = character:dorell_1000
+				allied_through_target = character:thricepierced_97_daughter
+			}
+		}
+	}
+	3347.1.1 = { learn_language = language_nordic }
+	3359.1.1 = {
+		set_relation_rival = { reason = rival_historical target = character:montclair_1000 }
+	}
+	3385.1.1 = { death = yes }
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=male_hair_western_06
+			custom_beards=male_beard_indian_01
+		}
+	}
+}
+dorell_1000_sister = {
+	name = "Jeanylle"
+	female = yes
+	dynasty_house = dorell_flowdys
+	religion = breton_cult
+	culture = northmen
+	mother = dorell_999
+	father = rielle_999_brother
+
+	trait = education_intrigue_3
+	trait = deceitful
+	trait = shy
+	trait = temperate
+	trait = sign_lady
+
+	3331.9.15 = { birth = yes }
+	3387.1.1 = { death = yes }
+}
+dorell_1000c = {
+	name = "Silas"
+	dynasty_house = dorell_flowdys
+	religion = breton_cult
+	culture = northmen
+	
+	mother = dorell_999
+	father = rielle_999_brother
+
+	trait = education_diplomacy_3
+	trait = lazy
+	trait = humble
+	trait = generous
+	trait = albino
+	trait = sign_mage
+
+	3335.4.1 = { birth = yes }
+	3391.1.1 = { death = yes }
+}
+dorell_1001 = {
+	name = "Aaric" #Lore
+	dynasty_house = dorell_flowdys
+	religion = breton_cult
+	culture = northmen
+
+	trait = sign_tower
+
+	father = dorell_1000
+	mother = thricepierced_97_daughter
+
+	3348.10.3 = { birth = yes }
+	3348.10.4 = { learn_language = language_nordic }
+	3412.1.1 = { death = yes }
+}
+
+dorell_1002 = {
+	name = "Ailex" #Lore
+	dynasty_house = dorell_flowdys
+	religion = breton_cult
+	culture = northmen
+
+	trait = sign_lover
+
+	father = dorell_1000
+	mother = thricepierced_97_daughter
+
+	3350.2.16 = { birth = yes }
+	3350.2.17 = { learn_language = language_nordic }
+	3420.1.1 = { death = yes }
+}
+
+dorell_1002b = {
+	name = "Lanciot" #Lore
+	dynasty_house = dorell_flowdys
+	religion = breton_cult
+	culture = northmen
+
+	father = dorell_1002
+
+	3371.1.1 = { birth = yes }
+	3452.1.1 = { death = yes }
+}
+
+dorell_1003 = {
+	name = "Gavric"
+	dynasty_house = dorell_flowdys
+	religion = breton_cult
+	culture = northmen
+
+	father = dorell_1001
+	mother = thricepierced_97_daughter
+
+	3375.1.1 = { birth = yes }
+	3454.1.1 = { death = yes }
+}
+
+dorell_1004 = {
+	name = "Eliza"
+	dynasty_house = dorell_flowdys
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	father = dorell_1003
+
+	3402.1.1 = { birth = yes }
+	3483.1.1 = { death = yes }
+}
+
+dorell_1005 = {
+	name = "Alard" #ESO
+	dynasty_house = dorell_flowdys
+	religion = breton_cult
+	culture = northmen
+
+	mother = dorell_1004
+
+	3454.1.1 = { birth = yes }
+	3487.1.1 = {
+		effect = {
+			add_pressed_claim = title:c_shornhelm
+			add_pressed_claim = title:d_shornhelm
+			add_pressed_claim = title:k_shornhelm
+		}
+	}
+	3519.1.1 = { death = yes }
+}
+
+dorell_1006 = { #ESO
+	name = "Ellic"
+	dynasty_house = dorell_flowdys
+	religion = breton_cult
+	culture = northmen
+
+	father = dorell_1005
+
+	3483.1.1 = { birth = yes }
+	3562.1.1 = { death = yes }
+}
+
+#House Stenric
+
+stenric_1000 = {
+	name = "Maline"
+	dynasty_house = dorell_stenric
+	religion = breton_cult
+	culture = northmen
+	female = yes
+	trait = bastard_founder
+	trait = education_martial_1
+	trait = ambitious
+	trait = wrathful
+	trait = vengeful
+	trait = sign_lady
+
+	father = dorell_1000
+
+	3339.9.9 = { birth = yes }
+	3357.1.1 = { add_matrilineal_spouse = stenric_1000_husband }
+	3404.1.1 = { death = yes }
+}
+stenric_1000_husband = {
+	name = "Rodolphe"
+	religion = breton_cult
+	culture = northmen
+
+	trait = education_stewardship_1
+	trait = calm
+	trait = stubborn
+	trait = ambitious
+	trait = sign_steed
+
+	3335.6.13 = { birth = yes }
+	3396.1.1 = { death = yes }
+}
+stenric_1001 = {
+	name = "Marcelle" #Lore
+	dynasty_house = dorell_stenric
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	mother = stenric_1000
+	father = stenric_1000_husband
+
+	trait = sign_atronach
+
+	3359.11.25 = { birth = yes }
+	3432.1.1 = { death = yes }
+}
+
+stenric_1002 = {
+	name = "Fergus"
+	dynasty_house = dorell_stenric
+	religion = breton_cult
+	culture = northmen
+
+	mother = stenric_1001
+
+	3409.1.1 = { birth = yes }
+	3474.1.1 = { death = yes }
+}
+
+stenric_1003 = {
+	name = "Callice"
+	dynasty_house = dorell_stenric
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	father = stenric_1002
+
+	3428.1.1 = { birth = yes }
+	3490.1.1 = { death = yes }
+}
+
+stenric_1004 = {
+	name = "Trierre"
+	dynasty_house = dorell_stenric
+	religion = breton_cult
+	culture = northmen
+
+	mother = stenric_1003
+
+	3452.1.1 = { birth = yes }
+	3512.1.1 = { death = yes }
+}
+
+##Elde Dynasty (dyn_elde)
+
+#House Elde
+elde_998 = {
+	name = "Carine"
+	female = yes
+	dynasty = dyn_elde
+	religion = breton_cult
+	culture = northmen
+
+	3248.1.1 = { birth = yes }
+	3310.1.1 = { death = yes }
+}
+elde_999 = {
+	name = "Morric"
+	dynasty = dyn_elde
+	religion = breton_cult
+	culture = northmen
+
+	mother = elde_998
+
+	3275.1.1 = { birth = yes }
+	# 3301 marries viralaine_999
+	3339.1.1 = { death = yes }
+}
+elde_999_brother = {
+	name = "Erj"
+	dynasty = dyn_elde
+	religion = breton_cult
+	culture = northmen
+
+	mother = elde_998
+
+	3275.1.1 = { birth = yes }
+	3339.1.1 = { death = yes }
+}
+elde_999_1 = {
+	name = "Alicia"
+	dynasty = dyn_elde
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	trait = legitimized_bastard
+
+	father = elde_999
+
+	3302.1.1 = { birth = yes }
+	3362.1.1 = { death = yes }
+}
+elde_999_2 = {
+	name = "Chatelle"
+	dynasty = dyn_elde
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	mother = elde_999_1
+
+	trait = education_learning_1
+	trait = calm
+	trait = forgiving
+	trait = temperate
+	trait = sign_lord
+
+	3322.3.19 = { birth = yes }
+	3381.1.1 = { death = yes }
+}
+elde_999_3 = {
+	name = "Alvuin"
+	dynasty = dyn_elde
+	religion = breton_cult
+	culture = northmen
+
+	mother = elde_999_1
+
+	trait = education_stewardship_2
+	trait = gregarious
+	trait = greedy
+	trait = callous
+	trait = sign_shadow
+
+	3328.5.19 = { birth = yes }
+	# 3344 marries edrald_1001
+	3381.1.1 = { death = yes }
+}
+elde_1000 = {
+	name = "Sabrine"
+	dynasty = dyn_elde
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	father = elde_999
+
+	3300.1.1 = { birth = yes }
+	3321.1.1 = { add_spouse = tamrith_999_brother }
+	3357.1.1 = { death = yes }
+}
+
+elde_1001 = {
+	name = "Nellic"
+	dynasty = dyn_elde
+	religion = breton_cult
+	culture = northmen
+
+	mother = elde_1000
+	father = tamrith_999_brother
+
+	trait = sign_steed
+
+	3325.6.25 = { birth = yes }
+	3342.1.1 = { add_spouse = merowald_999_sister }
+	3402.1.1 = { death = yes }
+}
+elde_1001_sister = {
+	name = "Marciele"
+	dynasty = dyn_elde
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	father = tamrith_999_brother
+	mother = elde_1000
+
+	trait = sign_shadow
+
+	3327.5.18 = { birth = yes }
+	3402.1.1 = { death = yes }
+}
+
+elde_1002 = {
+	name = "Jollivet"
+	dynasty = dyn_elde
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	father = elde_1001
+	mother = merowald_999_sister
+
+	trait = sign_serpent
+
+	3359.12.31 = { birth = yes }
+	3420.1.1 = { death = yes }
+}
+
+elde_1003 = {
+	name = "Janece" #Lore
+	dynasty = dyn_elde
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	mother = elde_1002
+
+	3402.1.1 = { birth = yes }
+	3495.1.1 = { death = yes }
+}
+
+##Succoth Dynasty (dyn_succoth)
+
+#House Succoth
+succoth_mordistair_1 = {
+	name = "Mordistair"
+	dynasty = dyn_succoth
+	religion = breton_cult
+	culture = northmen
+
+	trait = reclusive_vampire
+	trait = education_intrigue_1
+	trait = shy
+	trait = calm
+	trait = deceitful
+	trait = sign_tower
+
+	3206.10.1 = { birth = yes }
+	3278.1.1 = { death = yes }
+}
+succoth_mordistair_2 = {
+	name = "Mordistair"
+	dynasty = dyn_succoth
+	religion = breton_cult
+	culture = northmen
+
+	trait = reclusive_vampire
+	trait = education_stewardship_2
+	trait = shy
+	trait = calm
+	trait = deceitful
+	trait = sign_tower
+
+	father = succoth_mordistair_1
+
+	3278.10.1 = { birth = yes }
+	3347.1.1 = { death = yes }
+}
+succoth_mordistair_3 = {
+	name = "Mordistair"
+	dynasty = dyn_succoth
+	religion = breton_cult
+	culture = northmen
+
+	trait = reclusive_vampire
+	trait = education_learning_3
+	trait = adventurer
+	trait = shy
+	trait = calm
+	trait = deceitful
+	trait = sign_tower
+
+	father = succoth_mordistair_2
+
+	3295.10.1 = { birth = yes }
+	3360.1.1 = {
+		employer = saran_1000
+		effect = {
+			add_character_flag = already_immortal_age_flag
+			give_vampire_secret_or_trait_effect = yes
+			set_immortal_age = 29
+		}
+	}
+	3363.1.1 = {
+		remove_trait = reclusive_vampire
+		trait = vampire_character
+		religion = namira_cult
+	}
+	3364.1.1 = { death = { death_reason = death_burned } }
+}
+succoth_999 = {
+	name = "Gereon"
+	dynasty = dyn_succoth
+	religion = breton_cult
+	culture = northmen
+
+	father = succoth_mordistair_2
+
+	3312.1.1 = { birth = yes }
+	3330.1.1 = { add_spouse = blanche_999_sister}
+	3351.10.13 = { death = { death_reason = death_orsinium } }
+}
+succoth_999_sister = {
+	name = "Ondrissa"
+	female = yes
+	dynasty = dyn_succoth
+	religion = breton_cult
+	culture = northmen
+
+	father = succoth_mordistair_2
+
+	trait = education_diplomacy_3
+	trait = gregarious
+	trait = generous
+	trait = impatient
+	trait = sign_shadow
+
+	3319.5.29 = { birth = yes }
+	# 3337 marries llugwych_1000
+	3383.1.1 = { death = yes }
+}
+succoth_1000 = {
+	name = "Baldwin"
+	dynasty = dyn_succoth
+	religion = breton_cult
+	culture = northmen
+
+	father = succoth_999
+	mother = blanche_999_sister
+
+	sexuality = homosexual
+	trait = education_martial_2
+	trait = brave
+	trait = vengeful
+	trait = generous
+	trait = sign_lord
+
+	3332.3.18 = { birth = yes }
+	3354.1.1 = { add_spouse = elde_1001_sister }
+	3400.1.1 = { death = yes }
+}
+succoth_1000_sister = {
+	name = "Dovice"
+	female = yes
+	dynasty = dyn_succoth
+	religion = breton_cult
+	culture = northmen
+
+	trait = education_diplomacy_4
+	trait = compassionate
+	trait = calm
+	trait = patient
+	trait = sign_shadow
+
+	father = succoth_999
+	mother = blanche_999_sister
+
+	3334.5.1 = { birth = yes }
+	# 3354 marries oldland_1001
+	3394.1.1 = { death = yes }
+}
+
+succoth_1001 = {
+	name = "Rhyne" #Lore
+	dynasty = dyn_succoth
+	religion = breton_cult
+	culture = northmen
+
+	father = succoth_1000
+	mother = elde_1001_sister
+
+	trait = sign_shadow
+
+	3355.5.18 = { birth = yes }
+	3405.1.1 = {
+		death = {
+			death_reason = death_duel
+			killer = stenric_1001
+		}
+	}
+}
+
+##Edrald Dynasty (dyn_edrald)
+
+#House Edrald
+edrald_998 = {
+	name = "Edric"
+	dynasty = dyn_edrald
+	religion = breton_cult
+	culture = northmen
+
+	3248.1.1 = { birth = yes }
+	3301.1.1 = { death = yes }
+}
+edrald_999 = {
+	name = "Lizabet"
+	female = yes
+	dynasty = dyn_edrald
+	religion = breton_cult
+	culture = northmen
+
+	father = edrald_998
+
+	3275.1.1 = { birth = yes }
+	3301.1.1 = { add_matrilineal_spouse = horley_15191 }
+	3339.1.1 = { death = yes }
+}
+edrald_1000 = {
+	name = "Edward"
+	dynasty = dyn_edrald
+	religion = breton_cult
+	culture = northmen
+
+	mother = edrald_999
+	father = horley_15191
+
+	trait = education_intrigue_2
+	trait = trusting
+	trait = brave
+	trait = callous
+	trait = sign_tower
+
+	3300.10.26 = { birth = yes }
+	3321.12.1 = { add_spouse = aurmine_998 }
+	3371.1.1 = { death = yes }
+}
+edrald_1000_brother = {
+	name = "Gib"
+	dynasty = dyn_edrald
+	religion = breton_cult
+	culture = northmen
+
+	mother = edrald_999
+	father = horley_15191
+
+	trait = education_learning_2
+	trait = trusting
+	trait = humble
+	trait = temperate
+	trait = devoted
+	trait = sign_mage
+
+	3312.4.7 = { birth = yes }
+	3379.1.1 = { death = yes }
+}
+edrald_1000_sister = {
+	name = "Delumna"
+	female = yes
+	dynasty = dyn_edrald
+	religion = breton_cult
+	culture = northmen
+
+	mother = edrald_999
+	father = horley_15191
+
+	trait = education_intrigue_1
+	trait = trusting
+	trait = gregarious
+	trait = impatient
+	trait = sign_lord
+
+	3315.3.28 = { birth = yes }
+	3375.1.1 = { death = yes }
+}
+edrald_1001 = {
+	name = "Seline"
+	dynasty = dyn_edrald
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	father = edrald_1000
+	mother = aurmine_998
+
+	trait = education_martial_3
+	trait = brave
+	trait = zealous
+	trait = gregarious
+	trait = sign_lord
+
+	3325.3.14 = { birth = yes }
+	3344.1.1 = { add_matrilineal_spouse = elde_999_3 }
+	3383.1.1 = { death = yes }
+}
+edrald_1001_brother = {
+	name = "Thom"
+	dynasty = dyn_edrald
+	religion = breton_cult
+	culture = northmen
+
+	father = edrald_1000
+	mother = aurmine_998
+
+	trait = education_diplomacy_3
+	trait = calm
+	trait = gregarious
+	trait = patient
+	trait = sign_apprentice
+
+	3331.7.19 = { birth = yes }
+	3364.1.1 = {
+		employer = dorell_1000
+	}
+	3383.1.1 = { death = { death_reason = death_accident } }
+}
+edrald_1002 = {
+	name = "Illise"
+	dynasty = dyn_edrald
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	father = elde_999_3
+	mother = edrald_1001
+
+	trait = sign_serpent
+
+	3349.12.31 = { birth = yes }
+	3365.12.31 = {
+		trait = education_intrigue_3
+		trait = brave
+		trait = deceitful
+		trait = stubborn
+	}
+	3394.1.1 = { death = yes }
+}
+edrald_1003 = {
+	name = "Obart"
+	dynasty = dyn_edrald
+	religion = breton_cult
+	culture = northmen
+
+	father = elde_999_3
+	mother = edrald_1001
+
+	trait = bossy
+	disallow_random_traits = yes
+
+	trait = sign_tower
+	
+	3356.12.31 = { birth = yes }
+	3369.1.1 = {
+		trait = paranoid
+		trait = stubborn
+	}
+	3408.1.1 = { death = yes }
+}
+
+##Aurmine Dynasty
+
+#House Aurmine
+aurmine_996 = {
+	name = "Thomas"
+	dynasty = dyn_aurmine
+	religion = breton_cult
+	culture = northmen
+
+	3201.1.1 = { birth = yes }
+	3275.1.1 = { death = yes }
+}
+aurmine_997 = {
+	name = "Bernard"
+	dynasty = dyn_aurmine
+	religion = breton_cult
+	culture = northmen
+
+	father = aurmine_996
+
+	3249.1.1 = { birth = yes }
+	3275.1.1 = { add_spouse = aurmine_997_wife }
+	3305.1.1 = { death = yes }
+}
+aurmine_997_wife = {
+	name = "Ella"
+	female = yes
+	religion = breton_cult
+	culture = northmen
+
+	3251.1.1 = { birth = yes }
+	3305.1.1 = { death = yes }
+}
+aurmine_997_sister = {
+	name = "Fortisa"
+	female = yes
+	dynasty = dyn_aurmine
+	religion = breton_cult
+	culture = northmen
+
+	father = aurmine_996
+
+	3251.1.1 = { birth = yes }
+	3305.1.1 = { death = yes }
+}
+aurmine_997_sister_son = {
+	name = "Absolard"
+	dynasty = dyn_aurmine
+	religion = breton_cult
+	culture = northmen
+
+	mother = aurmine_997_sister
+
+	3275.1.1 = { birth = yes }
+	3305.1.1 = { death = yes }
+}
+aurmine_997_sister_son_son = {
+	name = "Corbyn"
+	dynasty = dyn_aurmine
+	religion = breton_cult
+	culture = northmen
+
+	trait = education_diplomacy_2
+	trait = lustful
+	trait = wrathful
+	trait = sadistic
+	trait = sign_thief
+
+	father = aurmine_997_sister_son
+
+	3306.12.21 = { birth = yes }
+	3366.1.1 = { death = yes }
+}
+aurmine_998 = {
+	name = "Arturia"
+	dynasty = dyn_aurmine
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	father = aurmine_997
+	mother = aurmine_997_wife
+
+	trait = education_diplomacy_2
+	trait = trusting
+	trait = gregarious
+	trait = generous
+
+	3295.1.1 = { birth = yes }
+	# 3344 marries eldrald_1000
+	3361.1.1 = { death = yes }
+}
+aurmine_999 = {
+	name = "Velica"
+	dynasty = dyn_aurmine
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	father = aurmine_997
+	mother = aurmine_997_wife
+
+	3291.1.1 = { birth = yes}
+	3321.1.1 = { add_matrilineal_spouse = silwer_999_brother }
+	3349.1.1 = { death = yes }
+}
+aurmine_1000 = {
+	name = "Barthel"
+	dynasty = dyn_aurmine
+	religion = breton_cult
+	culture = northmen
+
+	trait = education_stewardship_3
+	trait = gluttonous
+	trait = impatient
+	trait = humble
+	trait = sign_shadow
+
+	mother = aurmine_999
+	father = silwer_999_brother
+
+	3326.5.19 = { birth = yes }
+	3351.1.1 = { add_spouse = ildene_15818 }
+	3388.1.1 = { death = yes }
+}
+
+aurmine_1001 = {
+	name = "Ambroise"
+	dynasty = dyn_aurmine
+	religion = breton_cult
+	culture = northmen
+
+	father = aurmine_1000
+	mother = ildene_15818
+
+	trait = bossy
+	trait = sign_mage
+	disallow_random_traits = yes
+
+	3356.4.24 = { birth = yes }
+	3368.1.1 = {
+		remove_trait = bossy
+		trait = greedy
+		trait = compassionate
+	}
+	3412.1.1 = { death = yes }
+}
+aurmine_1002 = {
+	name = "Odo"
+	dynasty = dyn_aurmine
+	religion = breton_cult
+	culture = northmen
+
+	father = aurmine_1000
+	mother = ildene_15818
+
+	trait = sign_warrior
+
+	3357.8.3 = { birth = yes }
+	3419.1.1 = { death = yes }
+}
+
+##Farr Dynasty (dyn_farr)
+
+#House Farr
+farr_15475 = {
+	name = "Brandon"
+	dynasty = dyn_farr
+	culture = northmen
+	religion = breton_cult
+	
+	3128.1.1 = { birth = yes }
+	3210.1.1 = { death = yes }
+}
+farr_15476 = {
+	name = "Mercer"
+	dynasty = dyn_farr
+	culture = northmen
+	religion = breton_cult
+	
+	father = farr_15475
+	
+	3156.1.1 = { birth = yes }
+	3212.1.1 = { death = yes }
+}
+farr_15477 = {
+	name = "Milie"
+	dynasty = dyn_farr
+	culture = northmen
+	religion = breton_cult
+	trait = legitimized_bastard
+	trait = twin
+	
+	father = farr_15476
+	
+	female = yes
+	
+	3186.1.1 = { birth = yes }
+	3254.1.1 = { death = yes }
+}
+farr_15478 = {
+	name = "Willem"
+	dynasty = dyn_farr
+	culture = northmen
+	religion = breton_cult
+	trait = legitimized_bastard
+	trait = twin
+	
+	father = farr_15476
+	
+	3186.1.1 = { birth = yes }
+	3259.1.1 = { death = yes }
+}
+farr_15479 = {
+	name = "Weynon"
+	dynasty = dyn_farr
+	culture = northmen
+	religion = breton_cult
+	
+	father = farr_15478
+	
+	3212.1.1 = { birth = yes }
+	3269.1.1 = { add_trait = incapable }
+	3288.1.1 = { death = yes }
+}
+farr_15480 = {
+	name = "Ylbert"
+	dynasty = dyn_farr
+	culture = northmen
+	religion = breton_cult
+	
+	father = farr_15479
+	
+	3242.1.1 = { birth = yes }
+	3301.1.1 = { death = yes }
+}
+farr_15481 = {
+	name = "Thierry"
+	dynasty = dyn_farr
+	culture = northmen
+	religion = breton_cult
+	
+	father = farr_15479
+	
+	3244.1.1 = { birth = yes }
+	3279.1.1 = { add_spouse = farr_15481_spouse }
+	3310.1.1 = { death = yes }
+}
+farr_15481_spouse = {
+	name = "Mimou"
+	female = yes
+	culture = northmen
+	religion = breton_cult
+
+	3248.1.1 = { birth = yes }
+	3313.1.1 = { death = yes }
+}
+farr_15482 = {
+	name = "Phinis"
+	dynasty = dyn_farr
+	culture = northmen
+	religion = breton_cult
+	
+	father = farr_15481
+	mother = farr_15481_spouse
+	
+	3275.1.1 = { birth = yes }
+	3335.1.1 = { death = yes }
+}
+farr_15482_sister = {
+	name = "Quirin"
+	female = yes
+	dynasty = dyn_farr
+	culture = northmen
+	religion = breton_cult
+	
+	father = farr_15481
+	mother = farr_15481_spouse
+	
+	3275.1.1 = { birth = yes }
+	3335.1.1 = { death = yes }
+}
+farr_15842_brother = {
+	name = "Crendal"
+	dynasty = dyn_farr
+	culture = northmen
+	religion = breton_cult
+	
+	father = farr_15481
+	mother = farr_15481_spouse
+	
+	3278.1.1 = { birth = yes }
+	3346.1.1 = { death = yes }
+}
+
+farr_1000 = {
+	name = "Bedanele"
+	dynasty = dyn_farr
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	trait = legitimized_bastard
+	trait = education_stewardship_2
+	trait = wrathful
+	trait = arbitrary
+	trait = greedy
+	trait = sign_steed
+
+	father = farr_15482
+
+	3316.6.17 = { birth = yes }
+	3340.1.1 = { add_matrilineal_spouse = aurmine_997_sister_son_son }
+	3378.1.1 = { death = yes }
+}
+farr_1000_sister = {
+	name = "Ingride"
+	female = yes
+	dynasty = dyn_farr
+	religion = breton_cult
+	culture = northmen
+
+	trait = bastard
+	trait = education_learning_1
+	trait = wrathful
+	trait = chaste
+	trait = stubborn
+	trait = sign_warrior
+
+	father = farr_15482
+
+	3321.8.12 = { birth = yes }
+	# 3350 marries woodborne_1002
+	3381.1.1 = { death = yes }
+}
+
+farr_1001 = {
+	name = "Joslin"
+	dynasty = dyn_farr
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	disallow_random_traits = yes
+	trait = brave
+	trait = calm
+	trait = bossy
+	trait = sign_atronach
+
+	mother = farr_1000
+	father = aurmine_997_sister_son_son
+
+	3347.11.1 = { birth = yes }
+	3363.11.1 = {
+		remove_trait = bossy
+		trait = education_stewardship_3
+		trait = generous
+		trait = disinherited
+	}
+	3432.1.1 = { death = yes }
+}
+
+farr_1001b = {
+	name = "Lodys"
+	dynasty = dyn_farr
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	disallow_random_traits = yes
+	trait = pensive
+	trait = sign_steed
+
+	mother = farr_1000
+	father = aurmine_997_sister_son_son
+
+	3352.6.5 = { birth = yes }
+	3359.1.1 = {
+		effect = {
+			create_betrothal_matrilineal = character:aurmine_1002
+		}
+	}
+	3368.6.5 = {
+		remove_trait = pensive
+		trait = education_intrigue_2
+		trait = lazy
+		trait = arbitrary
+		trait = vengeful
+	}
+	3440.1.1 = { death = yes }
+}
+
+farr_1002 = {
+	name = "Beatrice"
+	dynasty = dyn_farr
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	mother = farr_1001b
+
+	3380.1.1 = { birth = yes }
+	3440.1.1 = { death = yes }
+}
+
+farr_1002b = {
+	name = "Gabrien"
+	dynasty = dyn_farr
+	religion = breton_cult
+	culture = northmen
+	trait = bastard
+
+	mother = farr_1002
+
+	3420.1.1 = { birth = yes }
+	3499.1.1 = { death = yes }
+}
+
+farr_1003 = {
+	name = "Marcel"
+	dynasty = dyn_farr
+	religion = breton_cult
+	culture = northmen
+
+	mother = farr_1002
+
+	3400.1.1 = { birth = yes }
+	3462.1.1 = { death = yes }
+}
+
+farr_1004 = {
+	name = "Lister"
+	dynasty = dyn_farr
+	religion = breton_cult
+	culture = northmen
+
+	father = farr_1003
+
+	3420.1.1 = { birth = yes }
+	3487.1.1 = { death = yes }
+}
+
+farr_1005 = {
+	name = "Leseph"
+	dynasty = dyn_farr
+	religion = breton_cult
+	culture = northmen
+
+	father = farr_1004
+
+	3439.1.1 = { birth = yes }
+	3510.1.1 = { death = yes }
+}
+
+farr_1006 = {
+	name = "Leila"
+	dynasty = dyn_farr
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	father = farr_1004
+
+	3440.1.1 = { birth = yes }
+	3499.1.1 = { death = yes }
+}
+
+farr_1007 = {
+	name = "Jacmund"
+	dynasty = dyn_farr
+	religion = breton_cult
+	culture = northmen
+
+	father = farr_1005
+
+	3482.1.1 = { birth = yes }
+	3547.1.1 = { death = yes }
+}
+
+##Montclair Dynasty
+
+#House Montclair
+montclair_992 = {
+	name = "Hannibal"
+	dynasty = dyn_montclair
+	religion = breton_cult
+	culture = northmen
+
+	2698.1.1 = { birth = yes }
+	2769.1.1 = { death = yes }
+}
+montclair_993 = {
+	name = "Callice"
+	female = yes
+	dynasty = dyn_montclair
+	religion = breton_cult
+	culture = northmen
+
+	father = montclair_992
+
+	2759.1.1 = { birth = yes }
+	2823.1.1 = { death = yes }
+}
+montclair_994 = {
+	name = "Dugen"
+	dynasty = dyn_montclair
+	religion = breton_cult
+	culture = northmen
+
+	mother = montclair_993
+
+	2791.1.1 = { birth = yes }
+	2841.1.1 = { death = yes }
+}
+montclair_995 = {
+	name = "Dugen"
+	dynasty = dyn_montclair
+	religion = breton_cult
+	culture = northmen
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+
+	father = montclair_994
+
+	2841.1.1 = { birth = yes }
+	2842.1.1 = { give_nickname = nick_line_of }
+	3200.1.1 = { death = yes }
+}
+montclair_996 = {
+	name = "Donnel"
+	dynasty = dyn_montclair
+	religion = breton_cult
+	culture = northmen
+
+	father = montclair_995
+	
+	3200.1.1 = { birth = yes }
+	3279.1.1 = { death = yes }
+}
+montclair_997 = {
+	name = "Lister"
+	dynasty = dyn_montclair
+	religion = breton_cult
+	culture = northmen
+
+	father = montclair_996
+	
+	3233.1.1 = { birth = yes }
+	3257.1.1 = { add_spouse = montclair_998_mother }
+	3292.1.1 = { death = yes }
+}
+montclair_997_sister = {
+	name = "Dirdre"
+	female = yes
+	dynasty = dyn_montclair
+	religion = breton_cult
+	culture = northmen
+
+	father = montclair_996
+
+	3242.1.1 = { birth = yes }
+	3295.1.1 = { death = yes }
+}
+montclair_998_mother = {
+	name = "Amarie"
+	religion = breton_cult
+	culture = northmen
+	female = yes
+	3235.1.1 = { birth = yes }
+	3301.1.1 = { death = yes }
+}
+montclair_998 = {
+	name = "Branwen"
+	female = yes
+	dynasty = dyn_montclair
+	religion = breton_cult
+	culture = northmen
+	trait = legitimized_bastard
+	
+	father = montclair_997
+	mother = montclair_998_mother
+	
+	3276.1.1 = { birth = yes }
+	3300.1.1 = { add_matrilineal_spouse = farr_15842_brother }
+	3343.1.1 = { death = yes }
+}
+montclair_998_brother = {
+	name = "Bryce"
+	dynasty = dyn_montclair
+	religion = breton_cult
+	culture = northmen
+
+	father = montclair_997
+	mother = montclair_998_mother
+
+	3278.1.1 = { birth = yes }
+	3343.1.1 = { death = yes }
+}
+montclair_998_brother_daughter = {
+	name = "Illise"
+	female = yes
+	dynasty = dyn_montclair
+	religion = breton_cult
+	culture = northmen
+
+	trait = lustful
+	trait = fecund
+
+	father = montclair_998_brother
+
+	3296.1.1 = { birth = yes }
+	3343.1.1 = { death = { death_reason = death_childbirth } }
+}
+montclair_999 = {
+	name = "Bryce"
+	dynasty = dyn_montclair
+	religion = breton_cult
+	culture = northmen
+	
+	mother = montclair_998
+	father = farr_15842_brother
+
+	trait = education_stewardship_1
+	trait = generous
+	trait = compassionate
+	trait = wrathful
+	trait = sign_mage
+	
+	3306.4.9 = { birth = yes }
+	3333.1.1 = { add_spouse = branquette_theodastyr_2 }
+	3366.1.1 = { death = yes }
+}
+montclair_999_sister = {
+	name = "Calysa"
+	female = yes
+	dynasty = dyn_montclair
+	religion = breton_cult
+	culture = northmen
+	
+	mother = montclair_998
+	father = farr_15842_brother
+
+	trait = education_stewardship_2
+	trait = generous
+	trait = callous
+	trait = vengeful
+	trait = sign_mage
+
+	3309.4.1 = { birth = yes }
+	3369.10.12 = { death = yes }
+}
+montclair_1000 = {
+	name = "Luther"
+	dynasty = dyn_montclair
+	religion = breton_cult
+	culture = northmen
+
+	father = montclair_999
+	mother = branquette_theodastyr_2
+
+	trait = education_martial_2
+	trait = content
+	trait = craven
+	trait = generous
+	trait = sign_warrior
+
+	3334.8.19 = { birth = yes }
+	3359.9.1 = {
+		add_spouse = branquette_1001
+	}
+	3396.1.1 = { death = yes }
+}
+montclair_1000_sister = {
+	name = "Mervilda"
+	female = yes
+	dynasty = dyn_montclair
+	religion = breton_cult
+	culture = northmen
+
+	father = montclair_999
+	mother = branquette_theodastyr_2
+
+	trait = education_diplomacy_2
+	trait = content
+	trait = temperate
+	trait = gregarious
+	trait = sign_mage
+
+	3337.4.23 = { birth = yes }
+	3399.1.1 = { death = yes }
+}
+montclair_1000c = {
+	name = "Gervaise"
+	dynasty = dyn_montclair
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	father = montclair_999
+	mother = branquette_theodastyr_2
+
+	3343.1.1 = { birth = yes }
+	3395.1.1 = { death = yes }
+}
+montclair_1001 = {
+	name = "Anton"
+	dynasty = dyn_montclair
+	religion = breton_cult
+	culture = northmen
+
+	father = montclair_1000
+	mother = branquette_1001
+
+	3368.1.1 = { birth = yes }
+	3437.1.1 = { death = yes }
+}
+
+montclair_1002 = {
+	name = "Iphilia"
+	dynasty = dyn_montclair
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	father = montclair_1001
+
+	3398.1.1 = { birth = yes }
+	3475.1.1 = { death = yes }
+}
+
+montclair_1003 = {
+	name = "Drusilla"
+	dynasty = dyn_montclair
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	father = montclair_1001
+
+	3430.1.1 = { birth = yes }
+	3498.1.1 = { death = yes }
+}
+
+montclair_1004 = { #ESO
+	name = "Rohlbert"
+	dynasty = dyn_montclair
+	religion = breton_cult
+	culture = northmen
+
+	mother = montclair_1003
+
+	3468.1.1 = { birth = yes }
+	3503.1.1 = { death = yes }
+}
+
+montclair_1005 = {
+	name = "Delven"
+	dynasty = dyn_montclair
+	religion = breton_cult
+	culture = northmen
+
+	father = montclair_1004
+
+	3481.1.1 = { birth = yes }
+	3545.1.1 = { death = yes }
+}
+
+#Percy Dynasty (dyn_percy)
+
+percy_1000 = {
+	name = "Maurice"
+	dynasty = dyn_percy
+	religion = breton_cult
+	culture = northmen
+	trait = lunatic_genetic
+
+	3279.1.1 = { birth = yes }
+	3338.1.1 = { death = yes }
+}
+
+percy_1001 = {
+	name = "Sebastien"
+	dynasty = dyn_percy
+	religion = breton_cult
+	culture = northmen
+
+	father = percy_1000
+
+	3309.1.1 = { birth = yes }
+	3366.1.1 = { death = yes }
+}
+
+percy_1002 = {
+	name = "Percival" #EK1
+	dynasty = dyn_percy
+	religion = breton_cult
+	culture = northmen
+	trait = lunatic_genetic
+
+	father = percy_1001
+
+	3334.1.1 = { birth = yes }
+	3366.1.1 = {
+		religion = sheogorath_cult
+		give_nickname = nick_the_insane
+	}
+	3404.1.1 = { death = yes }
+}
+
+# Klopmann Dynasty
+klopmann_999_father = {
+	name = "Merovec"
+	culture = northmen
+	religion = breton_cult
+
+	trait = viking
+
+	3248.1.1 = { birth = yes }
+	3273.1.1 = { add_spouse = klopmann_999_mother }
+	3307.1.1 = { death = yes }
+}
+klopmann_999_mother = {
+	name = "Barbayne"
+	female = yes
+	culture = iliac
+	religion = breton_cult
+
+	3250.1.1 = { birth = yes }
+	3309.1.1 = { death = yes }
+}
+klopmann_999 = {
+	name = "Odo"
+	dynasty = dynn_Klopmann
+	culture = northmen
+	religion = breton_cult
+
+	trait = education_martial_2
+	trait = fickle
+	trait = diligent
+	trait = greedy
+	trait = sign_warrior
+
+	father = klopmann_999_father
+	mother = klopmann_999_mother
+
+	3273.8.12 = { birth = yes }
+	3307.1.1 = { add_spouse = klopmann_999_wife }
+	3340.12.7 = { death = yes }
+}
+klopmann_999_wife_father = {
+	name = "Danders"
+	culture = iliac
+	religion = breton_cult
+
+	3250.1.1 = { birth = yes }
+	3276.1.1 = { add_spouse = klopmann_999_wife_mother }
+	3310.1.1 = { death = yes }
+}
+klopmann_999_wife_mother = {
+	name = "Mathilde"
+	female = yes
+	culture = iliac
+	religion = breton_cult
+
+	3251.1.1 = { birth = yes }
+	3311.1.1 = { death = yes }
+}
+klopmann_999_wife = {
+	name = "Celia"
+	female = yes
+	culture = iliac
+	religion = breton_cult
+
+	trait = education_learning_2
+	trait = shy
+	trait = temperate
+	trait = calm
+	trait = sign_apprentice
+
+	father = klopmann_999_wife_father
+	mother = klopmann_999_wife_mother
+
+	3279.7.28 = { birth = yes }
+	3356.1.1 = { death = yes }
+}
+klopmann_1000 = {
+	name = "Merovec"
+	dynasty = dynn_Klopmann
+	culture = northmen
+	religion = breton_cult
+
+	father = klopmann_999
+	mother = klopmann_999_wife
+
+	trait = education_martial_3
+	trait = brave
+	trait = patient
+	trait = calm
+	trait = sign_lord
+
+	3312.3.27 = { birth = yes }
+	3340.1.1 = { add_spouse = elde_999_2 }
+	3379.5.11 = { death = yes }
+}
+klopmann_1001 = {
+	name = "Gisela"
+	female = yes
+	dynasty = dynn_Klopmann
+	culture = northmen
+	religion = breton_cult
+	sexuality = homosexual
+
+	father = klopmann_1000
+	mother = elde_999_2
+
+	trait = education_stewardship_2
+	trait = shy
+	trait = calm
+	trait = vengeful
+	trait = twin
+	trait = sign_ritual
+
+	3341.1.27 = { birth = yes }
+	3342.1.1 = { employer = agluk_999 }
+	3359.1.1 = { set_relation_soulmate = { reason = soulmate_witch_ceremony target = character:klopmann_1001_spouse } }
+	3365.1.1 = { add_same_sex_spouse = klopmann_1001_spouse }
+	3421.12.19 = { death = yes }
+}
+klopmann_1001_spouse = {
+	name = "Azulga"
+	culture = mountain_orc
+	religion = trinimac_cult
+	female = yes
+	sexuality = homosexual
+
+	trait = education_martial_1
+	trait = sign_lover
+
+	3342.2.13 = { birth = yes }
+	3383.3.6 = { death = yes }
+}
+klopmann_1002 = {
+	name = "Dagobert"
+	dynasty = dynn_Klopmann
+	culture = northmen
+	religion = breton_cult
+
+	father = klopmann_1000
+	mother = elde_999_2
+
+	trait = education_stewardship_2
+	trait = lustful
+	trait = gregarious
+	trait = vengeful
+	trait = twin
+	trait = sign_ritual
+
+	3341.1.27 = { birth = yes }
+	3379.1.1 = { death = yes }
+}
+
+#Merowald Dynasty (Lorkrata, vassal of Northpoint)
+merowald_998 = {
+	name = "Aaric"
+	dynasty = dynn_Merowald
+	culture = northmen
+	religion = breton_cult
+
+	trait = education_diplomacy_2
+	trait = honest
+	trait = greedy
+	trait = impatient
+	
+	3276.1.1 = { birth = yes }
+	3348.1.1 = { death = yes }
+}
+merowald_999 = {
+	name = "Leana"
+	dynasty = dynn_Merowald
+	female = yes
+	religion = breton_cult
+	culture = northmen
+
+	trait = education_martial_2
+	trait = honest
+	trait = forgiving
+	trait = brave
+
+	father = merowald_998
+
+	3311.1.1 = { birth = yes }
+	3334.1.1 = { add_matrilineal_spouse = merowald_999_husband }
+	3351.10.13 = { death = { death_reason = death_orsinium } } # died in Orsinium	
+}
+merowald_999_sister = {
+	name = "Elvira"
+	dynasty = dynn_Merowald
+	female = yes
+	religion = breton_cult
+	culture = northmen
+
+	trait = education_stewardship_2
+	trait = honest
+	trait = impatient
+	trait = greedy
+	trait = sign_shadow
+
+	father = merowald_998
+
+	3321.5.13 = { birth = yes }
+	3387.1.1 = { death = yes }
+}
+merowald_999_husband = {
+	name = "Gisulf"
+	religion = breton_cult
+	culture = northmen
+
+	trait = education_martial_1
+	trait = brave
+	trait = patient
+	trait = calm
+	trait = sign_lord
+
+	3309.3.14 = { birth = yes }
+	3351.10.13 = { death = { death_reason = death_orsinium } } # died in Orsinium
+}
+merowald_1000 = {
+	name = "Barthel"
+	dynasty = dynn_Merowald
+	religion = breton_cult
+	culture = northmen
+
+	trait = education_intrigue_2
+	trait = honest
+	trait = craven
+	trait = forgiving
+	trait = sign_lady
+
+	mother = merowald_999
+	father = merowald_999_husband
+
+	3335.9.21 = { birth = yes }
+	3354.1.1 = { add_spouse = montclair_1000_sister }
+	3388.1.1 = { death = yes }
+}
+merowald_1000_sister = {
+	name = "Beddi"
+	female = yes
+	dynasty = dynn_Merowald
+	religion = breton_cult
+	culture = northmen
+
+	trait = education_stewardship_2
+	trait = shy
+	trait = temperate
+	trait = impatient
+	trait = sign_ritual
+
+	mother = merowald_999
+	father = merowald_999_husband
+
+	3339.1.12 = { birth = yes }
+	3390.1.1 = { death = yes }
+}
+merowald_1001 = {
+	name = "Ambroise"
+	dynasty = dynn_Merowald
+	culture = northmen
+	religion = breton_cult
+	father = merowald_1000
+	mother = montclair_1000_sister
+
+	disallow_random_traits = yes
+	trait = curious
+	trait = sign_atronach
+	
+	3356.11.3 = { birth = yes }
+	3412.1.1 = { death = yes }
+}
+merowald_1002 = {
+	name = "Godwin"
+	dynasty = dynn_Merowald
+	culture = northmen
+	religion = breton_cult
+	father = merowald_1001
+	
+	3387.1.1 = { birth = yes }
+	3449.1.1 = { death = yes }
+}
+merowald_1003 = {
+	name = "Connor"
+	dynasty = dynn_Merowald
+	culture = northmen
+	religion = breton_cult
+	father = merowald_1002
+	
+	3424.1.1 = { birth = yes }
+	3487.1.1 = { death = yes }
+}
+merowald_1004 = {
+	name = "Herluin"
+	dynasty = dynn_Merowald
+	culture = northmen
+	religion = breton_cult
+	father = merowald_1003
+	
+	3470.1.1 = { birth = yes }
+	3538.1.1 = { death = yes }
+}
+merowald_1005 = {
+	name = "Leana"
+	female = yes
+	dynasty = dynn_Merowald
+	culture = northmen
+	religion = breton_cult
+	
+	father = merowald_1004
+	
+	3507.1.1 = { birth = yes }
+	3578.1.1 = { death = yes }
+}
+
+#Vorster
+vorster_99 = {
+	name = "Crendal"
+	dynasty = dyn_vorster
+	religion = breton_cult
+	culture = northmen
+
+	3281.1.1 = { birth = yes }
+	3344.1.1 = { death = yes }
+}
+vorster_100 = {
+	name = "Gryff"
+	dynasty = dyn_vorster
+	religion = breton_cult
+	culture = northmen
+	
+	father = vorster_99
+
+	3320.1.1 = { birth = yes }
+	3391.1.1 = { death = yes }
+}
+vorster_101 = {
+	name = "Ariane"
+	dynasty = dyn_vorster
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	father = vorster_100
+
+	3346.1.1 = { birth = yes }
+	3414.1.1 = { death = yes }
+}
+vorster_101b = {
+	name = "Edwinna"
+	dynasty = dyn_vorster
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	father = vorster_100
+
+	3351.1.1 = { birth = yes }
+	3407.1.1 = { death = yes }
+}
+
+#Moerat
+moerat_98 = {
+	name = "Barnand"
+	dynasty = dyn_moerat
+	religion = breton_cult
+	culture = northmen
+
+	3270.1.1 = { birth = yes }
+	3336.1.1 = { death = yes }
+}
+moerat_99 = {
+	name = "Theodore"
+	dynasty = dyn_moerat
+	religion = breton_cult
+	culture = northmen
+
+	father = moerat_98
+
+	trait = education_learning_3
+	trait = brave
+	trait = impatient
+	trait = deceitful
+	trait = sign_shadow
+
+	3296.5.15 = { birth = yes }
+	3347.1.1 = { death = yes }
+}
+moerat_100 = {
+	name = "Yvara"
+	dynasty = dyn_moerat
+	religion = breton_cult
+	culture = northmen
+	female = yes
+
+	father = moerat_99
+
+	trait = education_stewardship_3
+	trait = patient
+	trait = sadistic
+	trait = ambitious
+	trait = sign_serpent
+
+	3321.6.30 = { birth = yes }
+	3383.1.1 = { death = yes }
+}
+moerat_101 = {
+	name = "Baran"
+	religion = breton_cult
+	culture = northmen
+
+	mother = moerat_100
+
+	3349.1.1 = { birth = yes }
+	3418.1.1 = { death = yes }
+}
+
+#Adventurers
+bunduk_100 = {
+	name = "Buneau" #Warband Bunduk
+	religion = breton_cult
+	culture = northmen
+	trait = compassionate
+	trait = vengeful
+	trait = just
+
+	trait = education_martial_3
+	trait = scarred
+	trait = overseer
+	trait = unyielding_defender
+	trait = adventurer
+	disallow_random_traits = yes
+
+	3290.1.1 = {birth = yes}
+	3356.1.1 = {
+		effect = { #famous veteran
+			add_prestige_level = 2
+		}
+	}
+
+	3366.1.1 = { employer = montclair_1000 }
+	3365.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	# 3369.1.1 = { move_to_pool = yes } #retainers don't leave :p
+	3375.1.1 = {death = yes} # PLACEHOLDER DATE
+}
+
+katrine_100 = {
+	name = "Katrine" #Warband Katrin
+	religion = breton_cult
+	culture = northmen
+	female = yes
+	trait = calm
+	trait = brave
+	trait = diligent
+
+	trait = education_stewardship_3
+	trait = avaricious
+	trait = shrewd
+	trait = adventurer
+	disallow_random_traits = yes
+
+	3304.1.1 = {birth = yes}
+	3356.1.1 = {
+		effect = { #old camp follower
+			add_prestige_level = 1
+		}
+	}
+
+	3360.1.1 = { employer = deleyn_999 }
+	3365.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	# 3369.1.1 = { move_to_pool = yes } #retainers don't leave :p
+	3375.1.1 = {death = yes} # PLACEHOLDER DATE
+}
+hegen_100 = {
+	name = "Heseph" #Warband Hegen
+	religion = breton_cult
+	culture = northmen
+	trait = gregarious
+	trait = brave
+	trait = ambitious
+
+	trait = education_martial_2
+	trait = lifestyle_blademaster
+	trait = strong
+	trait = adventurer
+	disallow_random_traits = yes
+
+	3344.1.1 = {birth = yes}
+	3356.1.1 = {
+		effect = { #veteran knight
+			add_prestige_level = 3
+		}
+	}
+
+	3360.1.1 = { employer = cumberland_1000 }
+	3365.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	# 3369.1.1 = { move_to_pool = yes } #retainers don't leave :p
+	3375.1.1 = {death = yes} # PLACEHOLDER DATE
+}

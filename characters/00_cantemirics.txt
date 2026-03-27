@@ -1,0 +1,796 @@
+﻿
+
+#Cantemirics
+
+## Zainat Tribe/Dynasty (dyn_zainat)
+
+#House Zainat
+zainat_98 = { #Lowborn
+	name = "Verara"
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+
+	trait = lifespan_2
+
+	3134.1.1 = { birth = yes }
+	3190.1.1 = { add_spouse = zainat_98_husband }
+	3283.1.1 = { death = { death_reason = death_ill } }
+}
+zainat_98_husband = {
+	name = "Zen"
+	culture = cantemiric
+	religion = cantemiric_sect
+
+	trait = lifespan_2
+
+	3128.1.1 = { birth = yes }
+	3266.1.1 = { death = { death_reason = death_battle } }
+}
+
+zainat_99 = { #Decent leader, takes over Arnesia during crisis but unfortunately not good enough to stop its fall
+	name = "Zainat"
+	dynasty = dyn_zainat
+	culture = cantemiric
+	religion = cantemiric_sect
+
+	mother = zainat_98
+	father = zainat_98_husband
+	
+	trait = education_martial_3
+	trait = brave
+	trait = ambitious
+	trait = zealous
+	trait = lifespan_2
+
+	3192.1.1 = { birth = yes }
+	3230.1.1 = { add_spouse = zainat_99_wife }
+	3290.8.9 = { death = { death_reason = death_viciously_dismembered killer = orma_ka_98 } }
+}
+
+zainat_99_wife = {
+	name = "Kausha"
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+	trait = lifespan_2
+	3180.1.1 = { birth = yes }
+	3374.1.1 = { death = yes }
+}
+
+zainat_100 = { #Isolationist, tries to keep what is left of Arnesia
+	name = "Ashur_Dan"
+	dynasty = dyn_zainat
+	religion = cantemiric_sect
+	culture = cantemiric
+
+	father = zainat_99
+	mother = zainat_99_wife
+	
+	trait = calm
+	trait = temperate
+	trait = stubborn
+	trait = education_diplomacy_3
+	trait = sign_warrior
+	trait = lifespan_2
+	
+	3240.8.24 = { birth = yes }
+	3310.1.1 = { add_spouse = zainat_100_wife }
+	3442.11.20 = { death = { death_reason = death_natural_causes } }
+}
+
+zainat_100_wife = {
+	name = "Zaba"
+	religion = cantemiric_sect
+	culture = cantemiric
+	female = yes
+
+	trait = lifespan_2
+
+	3251.1.1 = { birth = yes }
+	3446.1.1 = { death = yes }
+}
+
+zainat_100b = {
+	name = "Yakum"
+	dynasty = dyn_zainat
+	culture = cantemiric
+	religion = cantemiric_sect
+	
+	father = zainat_99
+	mother = zainat_99_wife
+
+	trait = lifespan_2
+
+	3248.1.1 = { birth = yes }
+	3330.1.1 = { add_spouse = zainat_100b_wife }
+	3456.1.1 = { death = yes }
+}
+
+zainat_100b_wife = {
+	name = "Minabibi"
+	religion = cantemiric_sect
+	culture = cantemiric
+	female = yes
+	trait = lifespan_2
+	3251.1.1 = { birth = yes }
+	3439.1.1 = { death = yes }
+}
+
+zainat_101 = {
+	name = "Nirai"
+	dynasty = dyn_zainat
+	religion = cantemiric_sect
+	culture = cantemiric
+	female = yes
+
+	father = zainat_100
+	mother = zainat_100_wife
+
+	trait = lifespan_2
+
+	3316.1.1 = { birth = yes }
+	3380.1.1 = { add_matrilineal_spouse = zainat_101_husband }
+	3482.4.10 = { trait = bubonic_plague }
+	3482.4.16 = { death = { death_reason = death_bubonic_plague } }
+}
+
+zainat_101_husband = {
+	name = "Yen"
+	religion = cantemiric_sect
+	culture = cantemiric
+	trait = lifespan_2
+	3323.1.1 = { birth = yes }
+	3482.4.10 = { trait = bubonic_plague }
+	3482.4.13 = { death = { death_reason = death_bubonic_plague } }
+}
+
+zainat_101b = { #Married off to Seaspatal to keep peace
+	name = "Zennammu"
+	dynasty = dyn_zainat
+	religion = cantemiric_sect
+	culture = cantemiric
+
+	father = zainat_100
+	mother = zainat_100_wife
+
+	trait = lifespan_2
+
+	3320.1.1 = { birth = yes }
+	3482.1.1 = { trait = bubonic_plague }
+	3482.1.2 = { death = { death_reason = death_bubonic_plague } }
+}
+
+zainat_102 = {
+	name = "Assa"
+	dynasty = dyn_zainat
+	religion = cantemiric_sect
+	culture = cantemiric
+
+	mother = zainat_101
+	father = zainat_101_husband
+
+	trait = lifespan_2
+
+	3385.1.1 = { birth = yes }
+	3445.1.1 = { add_spouse = zainat_102_wife }
+	3482.4.13 = { death = { death_reason = death_torn_to_pieces_by_mob } } #Torn to pieces by very worried peasants
+}
+
+zainat_102_wife = {
+	name = "Ushar"
+	religion = cantemiric_sect
+	culture = cantemiric
+	female = yes
+	trait = lifespan_2
+	3391.1.1 = { birth = yes }
+	3482.4.10 = { trait = bubonic_plague }
+	3482.4.12 = { death = { death_reason = death_bubonic_plague } }
+}
+
+zainat_102b = {
+	name = "Assa"
+	dynasty = dyn_zainat
+	religion = cantemiric_sect
+	culture = cantemiric
+	female = yes
+
+	mother = zainat_101
+	father = zainat_101_husband
+
+	trait = lifespan_2
+
+	3394.1.1 = { birth = yes }
+	3461.4.13 = { death = { death_reason = death_battle } } #Skirmish with neighbors
+}
+
+zainat_103 = {
+	name = "Patababi"
+	dynasty = dyn_zainat
+	religion = cantemiric_sect
+	culture = cantemiric
+
+	father = zainat_102
+	mother = zainat_102_wife
+
+	trait = lifespan_2
+
+	3456.1.1 = { birth = yes }
+	3482.4.10 = { trait = bubonic_plague }
+	3482.4.19 = { death = { death_reason = death_bubonic_plague } }
+}
+
+zainat_103b = {
+	name = "Minabibi"
+	dynasty = dyn_zainat
+	religion = cantemiric_sect
+	culture = cantemiric
+	female = yes
+
+	father = zainat_102
+	mother = zainat_102_wife
+
+	trait = lifespan_2
+	
+	3461.1.1 = { birth = yes }
+	3482.4.20 = { death = { death_reason = death_murder_known killer = zainat1_101 } }
+}
+
+#Second branch
+zainat1_101 = { #Kills his cousin during chaos of Knahaten
+	name = "Nivan"
+	dynasty = dyn_zainat
+	culture = cantemiric
+	religion = cantemiric_sect
+
+	father = zainat_100b
+	mother = zainat_100b_wife
+
+	trait = lifespan_2
+
+	3336.1.1 = { birth = yes }
+	3400.1.1 = { add_spouse = zainat1_101_wife }
+	3482.6.20 = { trait = bubonic_plague }
+	#Dies from Knahaten himself
+	3482.6.27 = { death = { death_reason = death_bubonic_plague } }
+}
+
+zainat1_101_wife = {
+	name = "Hekem"
+	religion = cantemiric_sect
+	culture = cantemiric
+	female = yes
+	trait = lifespan_2
+	3321.1.1 = { birth = yes }
+	3482.5.3 = { trait = bubonic_plague }
+	3482.5.9 = { death = { death_reason = death_bubonic_plague } }
+}
+
+zainat1_102 = {
+	name = "Shara"
+	dynasty = dyn_zainat
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+
+	father = zainat1_101
+	mother = zainat1_101_wife
+
+	trait = lifespan_2
+
+	3409.1.1 = { birth = yes }
+	3482.6.11 = { trait = bubonic_plague }
+	3482.6.14 = { death = { death_reason = death_bubonic_plague } }
+}
+
+#Kusin, Seaspatal's rulers
+kusin_98 = {
+	name = "Asharapli"
+	dynasty = dyn_kusin
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+
+	trait = lifespan_2
+
+	3064.1.1 = { birth = yes }
+	3110.1.1 = { add_matrilineal_spouse = kusin_98_husband }
+	3258.1.1 = { death = yes }
+}
+kusin_98_husband = {
+	name = "Vildras"
+	culture = cantemiric
+	religion = cantemiric_sect
+
+	trait = lifespan_2
+
+	3062.1.1 = { birth = yes }
+	3259.1.1 = { death = yes }
+}
+kusin_99 = {
+	name = "Sannit"
+	dynasty = dyn_kusin
+	culture = cantemiric
+	religion = cantemiric_sect
+
+	mother = kusin_98
+	father = kusin_98_husband
+
+	trait = lifespan_2
+
+	3118.1.1 = { birth = yes }
+	3200.1.1 = { add_spouse = kusin_99_wife }
+	3302.1.1 = { death = yes }
+}
+kusin_99_wife = {
+	name = "Manu"
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+
+	trait = lifespan_2
+
+	3125.1.1 = { birth = yes }
+	3311.1.1 = { death = yes }
+}
+kusin_100 = {
+	name = "Abassel"
+	dynasty = dyn_kusin
+	culture = cantemiric
+	religion = cantemiric_sect
+
+	father = kusin_99
+	mother = kusin_99_wife
+
+	trait = education_learning_2
+	trait = calm
+	trait = reclusive
+	trait = lifespan_2
+
+	3203.1.1 = { birth = yes }
+	3280.1.1 = { add_spouse = kusin_100_wife }
+	3390.1.1 = { death = { death_reason = death_natural_causes } }
+}
+kusin_100_wife = {
+	name = "Ashu"
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+
+	trait = lifespan_2
+
+	3208.1.1 = { birth = yes }
+	3407.1.1 = { death = yes }
+}
+kusin_101 = {
+	name = "Nind"
+	dynasty = dyn_kusin
+	culture = cantemiric
+	religion = cantemiric_sect
+
+	father = kusin_100
+	mother = kusin_100_wife
+
+	trait = lifespan_2
+
+	3284.1.1 = { birth = yes }
+	3360.1.1 = { add_spouse = kusin_101_wife }
+	3482.1.1 = { trait = bubonic_plague }
+	3482.2.1 = { death = { death_reason = death_bubonic_plague } }
+}
+kusin_101_wife = {
+	name = "Adur"
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+
+	trait = lifespan_2
+
+	3290.1.1 = { birth = yes }
+	3482.2.1 = { death = { death_reason = death_bubonic_plague } }
+}
+kusin_102 = { #Flees to Dres when Knahaten starts, expects shelter, gets killed (Dres don't forget old grudges)
+	name = "Teshmus"
+	dynasty = dyn_kusin
+	culture = cantemiric
+	religion = cantemiric_sect
+
+	father = kusin_101
+	mother = kusin_101_wife
+
+	trait = lifespan_2
+
+	3365.1.1 = { birth = yes }
+	3420.1.1 = { add_spouse = kusin_102_wife }
+	#History ToDo: can be some Dres count instead
+	3483.1.1 = { death = { death_reason = death_execution killer = darys_101 } } #Executed by Dres Grand Magnate
+}
+kusin_102_wife = {
+	name = "Kurapli"
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+
+	trait = lifespan_2
+
+	3381.1.1 = { birth = yes }
+	3482.2.1 = { death = { death_reason = death_bubonic_plague } }
+}
+kusin_103 = {
+	name = "Assi"
+	dynasty = dyn_kusin
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+
+	father = kusin_102
+	mother = kusin_102_wife
+
+	trait = lifespan_2
+
+	3432.1.1 = { birth = yes }
+	3483.1.1 = { death = { death_reason = death_execution killer = darys_101 } } #Executed by Dres Grand Magnate
+}
+kusin_103b = {
+	name = "Ibarnadad"
+	dynasty = dyn_kusin
+	culture = cantemiric
+	religion = cantemiric_sect
+
+	father = kusin_102
+	mother = kusin_102_wife
+
+	trait = lifespan_2
+
+	3436.1.1 = { birth = yes }
+	3482.2.1 = { death = { death_reason = death_bubonic_plague } }
+}
+
+#Ruhn Morasi
+belen_97 = {
+	name = "Yan"
+	dynasty = dyn_belen
+	culture = cantemiric
+	religion = cantemiric_sect
+
+	trait = lifespan_2
+
+	3061.1.1 = { birth = yes }
+	3100.1.1 = { add_spouse = belen_97_wife }
+	3255.12.23 = { death = yes } 
+}
+
+belen_97_wife = {
+	name = "Tavi"
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+
+	trait = lifespan_2
+
+	3062.1.1 = { birth = yes }
+	3249.1.1 = { death = yes }
+}
+
+belen_98 = { #Related to Turibs, but not a good warrior at all
+	name = "Teshmus"
+	dynasty = dyn_belen
+	culture = cantemiric
+	religion = cantemiric_sect
+
+	father = belen_97
+	mother = belen_97_wife
+
+	trait = education_learning_2
+	trait = lifespan_2
+	martial = 1
+
+	3105.1.1 = { birth = yes }
+	3165.1.1 = { add_spouse = turib_100b }
+	3286.6.12 = { death = yes } 
+}
+
+belen_99 = {
+	name = "Adda"
+	dynasty = dyn_belen
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+
+	father = belen_98
+	mother = turib_100b
+
+	#Just wants to survive
+	trait = content
+	trait = chaste
+	trait = temperate
+	trait = education_diplomacy_2
+	trait = lifespan_2
+	trait = sign_lover
+
+	3172.2.21 = { birth = yes }
+	3230.1.1 = { add_matrilineal_spouse = belen_99_husband }
+	3363.11.13 = { death = yes } 
+}
+
+belen_99_husband = {
+	name = "Shimsun"
+	culture = cantemiric
+	religion = cantemiric_sect
+
+	trait = lifespan_2
+
+	3161.1.1 = { birth = yes }
+	3358.1.1 = { death = yes }
+}
+
+belen_100 = {
+	name = "Kammu"
+	dynasty = dyn_belen
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+
+	mother = belen_99
+	father = belen_99_husband
+
+	#Just wants to survive, but violently
+	trait = education_martial_2
+	trait = callous
+	trait = diligent
+	trait = arrogant
+	trait = overseer
+	trait = lifespan_2
+	trait = sign_steed
+
+	3233.6.10 = { birth = yes }
+	3300.1.1 = { add_matrilineal_spouse = belen_100_husband }
+	3378.4.8 = { death = { death_reason = death_battle } } 
+}
+
+belen_100_husband = {
+	name = "Telvon"
+	culture = cantemiric
+	religion = cantemiric_sect
+
+	trait = lifespan_2
+
+	3242.1.1 = { birth = yes }
+	3439.1.1 = { death = yes }
+}
+
+belen_101 = {
+	name = "Shina"
+	dynasty = dyn_belen
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+
+	mother = belen_100
+	father = belen_100_husband
+
+	trait = lifespan_2
+
+	3304.1.1 = { birth = yes }
+	3369.1.1 = { add_matrilineal_spouse = zainat_101b }
+	3461.3.28 = { death = { death_reason = death_lost_in_the_bog } }
+}
+
+belen_101b = {
+	name = "Hibaddar"
+	dynasty = dyn_belen
+	culture = cantemiric
+	religion = cantemiric_sect
+
+	mother = belen_100
+	father = belen_100_husband
+
+	trait = lifespan_2
+
+	3311.1.1 = { birth = yes }
+	3382.1.1 = { add_spouse = belen_101b_wife }
+	3482.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+
+belen_101b_wife = {
+	name = "Nibani"
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+
+	trait = lifespan_2
+
+	3318.1.1 = { birth = yes }
+	3482.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+
+belen_102 = {
+	name = "Lassour"
+	dynasty = dyn_belen
+	culture = cantemiric
+	religion = cantemiric_sect
+
+	mother = belen_101
+	father = zainat_101b
+
+	trait = lifespan_2
+
+	3375.1.1 = { birth = yes }
+	3440.1.1 = { add_spouse = belen_102_wife }
+	3482.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+
+belen_102_wife = {
+	name = "Pilu"
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+
+	trait = lifespan_2
+
+	3386.1.1 = { birth = yes }
+	3482.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+
+belen_102b = {
+	name = "Nilae"
+	dynasty = dyn_belen
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+
+	mother = belen_101
+	father = zainat_101b
+
+	trait = lifespan_2
+
+	3382.1.1 = { birth = yes }
+	3454.1.1 = { trait = dysentery }
+	3455.1.1 = { death = { death_reason = death_dysentery } }
+}
+
+belen_103 = {
+	name = "Nilae" #After aunt
+	dynasty = dyn_belen
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+
+	father = belen_102
+	mother = belen_102_wife
+
+	trait = lifespan_2
+
+	3461.1.1 = { birth = yes }
+	3482.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+
+belen1_102 = {
+	name = "Missamsi"
+	dynasty = dyn_belen
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+
+	father = belen_101b
+	mother = belen_101b_wife
+
+	trait = lifespan_2
+
+	3395.1.1 = { birth = yes }
+	3482.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+
+belen1_102b = {
+	name = "Yenabi"
+	dynasty = dyn_belen
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+
+	father = belen_101b
+	mother = belen_101b_wife
+
+	trait = lifespan_2
+
+	3402.1.1 = { birth = yes }
+	3482.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+
+#Tu-Rib, ruled Arnesia before Zainats
+turib_99 = {
+	name = "Nivan"
+	dynasty = dyn_turib
+	culture = cantemiric
+	religion = cantemiric_sect
+
+	trait = lifespan_2
+
+	3039.1.1 = { birth = yes }
+	3100.1.1 = { add_spouse = turib_99_wife }
+	3197.1.1 = { death = { death_reason = death_lost_in_the_bog } }
+}
+turib_99_wife = {
+	name = "Kammu"
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+
+	trait = lifespan_2
+
+	3045.1.1 = { birth = yes }
+	3221.1.1 = { death = yes }
+}
+turib_100 = { #Last Tu-Rib
+	name = "Yanibi"
+	dynasty = dyn_turib
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+
+	father = turib_99
+	mother = turib_99_wife
+
+	trait = lifespan_2
+
+	3112.1.1 = { birth = yes }
+	3270.5.6 = { death = { death_reason = death_battle } } #Orma/argonians	
+}
+
+turib_100b = { #Married to belen_98
+	name = "Sakiran"
+	dynasty = dyn_turib
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+
+	father = turib_99
+	mother = turib_99_wife
+
+	trait = lifespan_2
+
+	3120.1.1 = { birth = yes }
+	3266.1.1 = { death = { death_reason = death_battle } }
+}
+
+#Clan Cantemir, ruled Arnesia in early 1E, gone with Middle Dawn
+#Note: if expanded don't make them just a hereditary monarchy, they still should some sort of council similar to other dunmers
+cantemir_100 = { #Last ruler of Clan Cantemir
+	name = "Verara"
+	dynasty = dyn_cantemir
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+
+	trait = education_learning_3
+	trait = lifestyle_mystic #Leaders of Arnesia were selected from mystics (similar to great houses)
+	trait = lifespan_2
+
+	1023.1.1 = { birth = yes }
+	1200.1.1 = { death = { death_reason = death_mysterious } }
+}
+
+#Thorn was Cantemiric before Dres conquered it
+thorn_1 = {
+	name = "Ashar"
+	culture = chimer #Cantemiric chimer
+	religion = cantemiric_sect
+
+	trait = lifespan_2
+
+	162.1.1 = { birth = yes }
+	337.1.1 = { death = { death_reason = death_execution killer = dres_1 } }
+}
+
+#Archon - abandoned after Thrassian plague
+archon_1 = {
+	name = "Vaama"
+	culture = cantemiric
+	religion = cantemiric_sect
+	female = yes
+
+	trait = lifespan_2
+
+	2136.1.1 = { birth = yes }
+	2283.1.1 = { death = { death_reason = death_thrassian_plague } }
+}

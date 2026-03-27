@@ -1,0 +1,1108 @@
+﻿#Cenno Dynasty (dyn_cenno)
+cenno_93 = {
+	name = "Ariogorax"
+	dynasty = dyn_cenno
+	religion = forgotten_gods
+	culture = bjoule
+
+	3086.1.1 = { birth = yes }
+	3172.1.1 = { death = yes }
+}
+cenno_94 = {
+	name = "Dannotax"
+	dynasty = dyn_cenno
+	religion = forgotten_gods
+	culture = bjoule
+
+	father = cenno_93
+
+	3116.1.1 = { birth = yes }
+	3177.1.1 = { death = yes }
+}
+cenno_95 = {
+	name = "Abrexta"
+	dynasty = dyn_cenno
+	religion = forgotten_gods
+	culture = bjoule
+	female = yes
+	
+	father = cenno_94
+
+	trait = education_martial_3
+	prowess = 6
+	trait = ambitious
+	trait = brave
+	trait = wrathful
+
+	3144.1.1 = { birth = yes }
+	3212.1.1 = { death = yes }
+}
+cenno_95b = {
+	name = "Coria"
+	dynasty = dyn_cenno
+	religion = forgotten_gods
+	culture = bjoule
+	female = yes
+
+	father = cenno_94
+
+	3150.1.1 = { birth = yes }
+	3216.1.1 = { death = yes }
+}
+cenno_96 = {
+	name = "Samorix"
+	dynasty = dyn_cenno
+	religion = forgotten_gods
+	culture = bjoule
+
+	mother = cenno_95
+
+	3168.1.1 = { birth = yes }
+	3170.1.1 = { death = yes }
+}
+cenno_96b = {
+	name = "Dubnorix"
+	dynasty = dyn_cenno
+	religion = forgotten_gods
+	culture = bjoule
+
+	mother = cenno_95
+
+	trait = legitimized_bastard
+
+	3171.1.1 = { birth = yes }
+	3232.1.1 = { death = yes }
+}
+cenno_96c = {
+	name = "Uercassiuellaunos"
+	dynasty = dyn_cenno
+	religion = forgotten_gods
+	culture = bjoule
+
+	mother = cenno_95
+
+	3178.1.1 = { birth = yes }
+	3233.1.1 = { death = yes }
+}
+cenno_96d = {
+	name = "Lukotorix"
+	dynasty = dyn_cenno
+	religion = forgotten_gods
+	culture = bjoule
+
+	mother = cenno_95
+
+	3180.1.1 = { birth = yes }
+	3244.1.1 = { death = yes }
+}
+cenno_97 = {
+	name = "Magurix"
+	dynasty = dyn_cenno
+	culture = colovian
+	religion = eight_divines
+
+	father = cenno_96d
+
+	3212.1.1 = { birth = yes }
+	3212.1.1 = { culture = bjoule }
+	3271.1.1 = { death = yes }
+}
+cenno_98 = {
+	name = "Cudius"
+	dynasty = dyn_cenno
+	religion = forgotten_gods
+	culture = bjoule
+
+	father = cenno_97
+	
+	trait = legitimized_bastard
+
+	3262.1.1 = { birth = yes }
+	3324.1.1 = { death = yes }
+}
+cenno_99 = {
+	name = "Iantumar"
+	dynasty = dyn_cenno
+	religion = forgotten_gods
+	culture = bjoule
+	sexuality = homosexual
+
+	father = cenno_98
+
+	3292.1.1 = { birth = yes }
+	3319.1.1 = { death = { death_reason = death_battle } }
+}
+cenno_99b = {
+	name = "Magurix"
+	dynasty = dyn_cenno
+	religion = forgotten_gods
+	culture = bjoule
+
+	father = cenno_98
+
+	3296.1.1 = { birth = yes }
+	3325.1.1 = { add_spouse = mailgani_101b }
+	3348.1.1 = { death = yes }
+}
+cenno_99c = {
+	name = "Uinda"
+	dynasty = dyn_cenno
+	religion = forgotten_gods
+	culture = bjoule
+	female = yes
+
+	father = cenno_98
+
+	trait = education_diplomacy_1
+	trait = diligent
+	trait = gregarious
+	trait = callous
+	trait = sign_warrior
+
+	3312.8.26 = { birth = yes }
+	# 3339 marries amelion_100
+	3364.1.1 = { death = yes }
+}
+cenno_100 = {
+	name = "Samorix"
+	dynasty = dyn_cenno
+	religion = forgotten_gods
+	culture = bjoule
+
+	father = cenno_99b
+	mother = mailgani_101b
+
+	trait = education_martial_3
+	trait = unyielding_defender
+	trait = greedy
+	trait = zealous
+	trait = sign_atronach
+
+	3326.11.9 = { birth = yes }
+	3348.1.1 = { add_spouse = cenno_100_wife }
+	3349.1.1 = { trait = content }
+	3349.9.26 = { trait = depressed_1 }
+	3381.1.1 = { death = yes }
+}
+cenno_100_wife = {
+	name = "Boudilatis"
+	religion = forgotten_gods
+	culture = bjoule
+	female = yes
+
+	trait = education_intrigue_2
+	trait = content
+	trait = shy
+	trait = greedy
+
+	3327.1.1 = { birth = yes }
+	3349.9.25 = { death = { death_reason = death_childbirth } }
+}
+cenno_101 = {
+	name = "Dannotax"
+	dynasty = dyn_cenno
+	religion = forgotten_gods
+	culture = bjoule
+
+	father = cenno_100
+	mother = cenno_100_wife
+	trait = trusting
+	trait = pensive
+	trait = sign_lady
+
+	3349.9.25 = { birth = yes }
+	3365.9.25 = {
+		remove_trait = pensive
+		trait = calm
+		trait = humble
+		trait = education_stewardship_1
+	}
+	3412.1.1 = { death = yes }
+}
+
+#Second branch
+cenno1_97 = {
+	name = "Mindothrax"
+	dynasty = dyn_cenno
+	religion = forgotten_gods
+	culture = bjoule
+
+	father = cenno_96b
+
+	3206.1.1 = { birth = yes }
+	3269.1.1 = { death = yes }
+}
+cenno1_98 = {
+	name = "Ariogorax"
+	dynasty = dyn_cenno
+	religion = forgotten_gods
+	culture = bjoule
+
+	father = cenno1_97
+
+	3236.1.1 = { birth = yes }
+	3299.1.1 = { death = yes }
+}
+cenno1_99 = {
+	name = "Falisse"
+	dynasty = dyn_cenno
+	religion = forgotten_gods
+	culture = bjoule
+	female = yes
+
+	father = cenno1_98
+
+	3259.1.1 = { birth = yes }
+	3327.1.1 = { death = yes }
+}
+cenno1_99b = {
+	name = "Kunopennos"
+	dynasty = dyn_cenno
+	religion = forgotten_gods
+	culture = bjoule
+	female = yes
+
+	father = cenno1_98
+
+	3272.1.1 = { birth = yes }
+	3344.1.1 = { death = yes }
+}
+cenno1_100 = {
+	name = "Drutalix"
+	dynasty = dyn_cenno
+	religion = forgotten_gods
+	culture = bjoule
+
+	mother = cenno1_99b
+
+	3300.1.1 = { birth = yes }
+	3360.1.1 = { employer = rane_100 }
+	3366.1.1 = { death = yes }
+}
+cenno1_101 = {
+	name = "Boudia"
+	dynasty = dyn_cenno
+	religion = forgotten_gods
+	culture = bjoule
+	female = yes
+	
+	father = cenno1_100
+
+	trait = legitimized_bastard
+	trait = education_diplomacy_1
+	trait = wrathful
+	trait = compassionate
+	trait = shy
+	trait = sign_tower
+
+	3330.10.17 = { birth = yes }
+	3400.1.1 = { death = yes }
+}
+cenno1_101b = {
+	name = "Wirogalos"
+	dynasty = dyn_cenno
+	religion = forgotten_gods
+	culture = bjoule
+
+	father = cenno1_100
+
+	trait = bastard
+
+	3336.1.1 = { birth = yes }
+	3360.1.1 = { employer = rane_100 }
+	3399.1.1 = { death = yes }
+}
+
+#Third branch
+cenno2_97 = {
+	name = "Bellovix"
+	dynasty = dyn_cenno
+	religion = forgotten_gods
+	culture = bjoule
+
+	father = cenno_96c
+
+	3228.1.1 = { birth = yes }
+	3310.1.1 = { death = yes }
+}
+cenno2_98 = {
+	name = "Iymbez"
+	dynasty = dyn_cenno
+	religion = breton_cult
+	culture = bjoule
+
+	father = cenno2_97
+
+	trait = legitimized_bastard
+
+	3256.1.1 = { birth = yes }
+	3281.1.1 = { add_spouse = cenno1_99 }
+	3321.1.1 = { death = yes }
+}
+cenno2_99 = {
+	name = "Abruna"
+	dynasty = dyn_cenno
+	religion = breton_cult
+	culture = bjoule
+	female = yes
+
+	father = cenno2_98
+	mother = cenno1_99
+
+	prowess = 3
+	trait = shy
+	trait = education_intrigue_1
+
+	3283.1.1 = { birth = yes }
+	3349.1.1 = {
+		death = {
+			death_reason = death_duel
+			killer = cenno_100
+		}
+	}
+}
+cenno2_99b = {
+	name = "Acaunissa"
+	dynasty = dyn_cenno
+	religion = breton_cult
+	culture = bjoule
+	female = yes
+
+	father = cenno2_98
+	mother = cenno1_99
+
+	3286.1.1 = { birth = yes }
+	# 3308 marries branquette_998
+	3354.1.1 = { death = yes }
+}
+cenno2_100 = {
+	name = "Dannotax"
+	dynasty = dyn_cenno
+	religion = breton_cult
+	culture = bjoule
+
+	mother = cenno2_99
+
+	trait = education_stewardship_3
+	trait = lazy
+	trait = stubborn
+	trait = generous
+	trait = sign_atronach
+	trait = legitimized_bastard
+
+	3313.11.23 = { birth = yes }
+	3349.1.1 = { employer = dumonte_999 }
+	3379.1.1 = { death = yes }
+}
+cenno2_101 = {
+	name = "Leno"
+	dynasty = dyn_cenno
+	religion = breton_cult
+	culture = bjoule
+
+	father = cenno2_100
+
+	trait = diligent
+	trait = compassionate
+	trait = pensive
+	trait = sign_ritual
+	disallow_random_traits = yes
+	3346.1.21 = { birth = yes }
+	3349.1.1 = { employer = dumonte_999 }
+	3362.1.21 = {
+		remove_trait = pensive
+		trait = humble
+		trait = education_stewardship_2
+	}
+	3413.1.1 = { death = yes }
+}
+cenno2_101b = {
+	name = "Adrienne"
+	dynasty = dyn_cenno
+	religion = breton_cult
+	culture = bjoule
+	female = yes
+
+	father = cenno2_100
+
+	trait = arbitrary
+	trait = charming
+	trait = sign_tower
+
+	3351.10.13 = { birth = yes }
+	3349.1.1 = { employer = dumonte_999 }
+	3367.10.13 = {
+		trait = education_intrigue_1
+		remove_trait = charming
+		trait = calm
+		trait = lazy
+	}
+	3423.1.1 = { death = yes }
+}
+
+#Ashwing (Dunlain) Extinct
+mailgani_100 = {
+	name = "Ourittak"
+	dynasty = dyn_mailgani
+	religion = glenmoril_wyrd
+	culture = bjoule
+
+	3273.1.1 = { birth = yes }
+	3327.9.13 = { death = { death_reason = death_burned } }
+}
+mailgani_101 = {
+	name = "Mindothrax"
+	dynasty = dyn_mailgani
+	religion = glenmoril_wyrd
+	culture = bjoule
+
+	father = mailgani_100
+
+	3295.1.1 = { birth = yes }
+	3358.1.1 = { death = yes }
+}
+mailgani_101b = {
+	name = "Lysaux"
+	dynasty = dyn_mailgani
+	religion = glenmoril_wyrd
+	culture = bjoule
+	female = yes
+
+	trait = sign_thief
+
+	father = mailgani_100
+
+	3296.12.3 = { birth = yes }
+	# 3325 marries cenno_99b
+	3358.1.1 = { death = yes }
+}
+
+#Leucona
+leucona_99 = {
+	name = "Elantia" #Countess of Dunkarn after killing the dragon who killed the previous ruler
+	dynasty = dyn_leucona 
+	religion = glenmoril_wyrd
+	culture = bjoule
+	female = yes
+
+	father = mailgani_100
+
+	trait = bastard_founder
+	trait = varangian
+	trait = education_martial_2
+	trait = brave
+	trait = vengeful
+	trait = calm
+	trait = sign_lady
+
+	3299.9.3 = { birth = yes }
+	3327.9.13 = { give_nickname = nick_the_ashenwing }
+	3357.12.5 = { death = yes }
+}
+leucona_100 = {
+	name = "Adianrix"
+	dynasty = dyn_leucona 
+	religion = glenmoril_wyrd
+	culture = bjoule
+
+	mother = leucona_99
+
+	trait = education_diplomacy_2
+	trait = arbitrary
+	trait = fickle
+	trait = deceitful
+	trait = sign_lord
+	
+	3328.3.12 = { birth = yes }
+	3368.1.1 = { death = yes }
+}
+leucona_100b = {
+	name = "Leno"
+	dynasty = dyn_leucona
+	religion = glenmoril_wyrd
+	culture = bjoule
+
+	trait = education_stewardship_2
+	trait = arbitrary
+	trait = content
+	trait = stubborn
+	trait = sign_ritual
+
+	mother = leucona_99
+
+	3332.1.24 = { birth = yes }
+	3387.1.1 = { death = yes }
+}
+leucona_101 = {
+	name = "Lukotorix" 
+	dynasty = dyn_leucona 
+	religion = glenmoril_wyrd
+	culture = bjoule
+
+	trait = callous
+	trait = arbitrary
+	trait = bossy
+	trait = sign_atronach
+
+	father = leucona_100
+	
+	3348.11.30 = { birth = yes }
+	3364.11.30 = {
+		remove_trait = bossy
+		trait = stubborn
+		trait = education_intrigue_2
+	}
+	3406.1.1 = { death = yes }
+}
+leucona_102 = {
+	name = "Kintugen"
+	dynasty = dyn_leucona 
+	religion = glenmoril_wyrd
+	culture = bjoule
+
+	father = leucona_101
+	
+	3387.1.1 = { birth = yes }
+	3442.1.1 = { death = yes }
+}
+leucona_103 = {
+	name = "Abrexta"
+	dynasty = dyn_leucona 
+	religion = glenmoril_wyrd
+	culture = bjoule
+	female = yes
+
+	father = leucona_102
+	
+	3418.1.1 = { birth = yes }
+	3467.1.1 = { death = yes }
+}
+
+##Rane Dynasty
+rane_98 = {
+	name = "Boudia"
+	dynasty = dyn_vitusca
+	religion = druid_circles
+	culture = bjoule
+	female = yes
+
+	3267.1.1 = { birth = yes }
+	3332.1.1 = { death = yes }
+}
+rane_99 = {
+	name = "Kintugen"
+	dynasty = dyn_vitusca
+	religion = druid_circles
+	culture = bjoule
+
+	mother = rane_98
+
+	trait = wounded_3
+	trait = callous
+	trait = adulterer
+	trait = zealous
+	trait = gregarious
+	trait = education_martial_1
+
+	3312.1.1 = { birth = yes }
+	3330.1.1 = { add_spouse = sanuarach_1000_sister }
+	3358.1.1 = {
+		death = {
+			death_reason = death_duel
+			killer = rane_99b
+		}
+	}
+}
+rane_99_lover = {
+	name = "Uiscareua"
+	religion = druid_circles
+	culture = bjoule
+	female = yes
+
+	trait = education_intrigue_1
+	trait = patient
+	trait = honest
+	trait = stubborn
+
+	3318.1.1 = { birth = yes }
+	3368.1.1 = { death = yes }
+}
+rane_99b = {
+	name = "Dagodubnos"
+	dynasty = dyn_vitusca
+	religion = druid_circles
+	culture = bjoule
+
+	trait = kinslayer_3
+
+	mother = rane_98
+
+	3319.1.1 = { birth = yes }
+	3359.11.5 = { death = { death_reason = death_battle } }
+}
+rane_99b1 = {
+	name = "Iantumar"
+	dynasty = dyn_vitusca
+	religion = druid_circles
+	culture = bjoule
+
+	father = rane_99b
+
+	trait = callous
+	trait = bastard
+	trait = sign_atronach
+
+	3348.11.18 = { birth = yes }
+	3359.11.6 = {
+		effect = {
+			add_opinion = {
+				target = character:rane_100
+				modifier = hate_opinion
+				opinion = -80
+			}
+		}
+	}
+	3396.1.1 = { death = yes }
+}
+rane_100 = {
+	name = "Contuinda"
+	dynasty = dyn_vitusca
+	religion = druid_circles
+	culture = bjoule
+
+	father = rane_99
+	mother = sanuarach_1000_sister
+
+	trait = patient
+	trait = just
+	trait = diligent
+	trait = education_stewardship_1
+	trait = sign_lord
+
+	diplomacy = 2
+	martial = 6
+	stewardship = 7
+	intrigue = 9
+	learning = 3
+
+	3332.3.19 = { birth = yes }
+	3358.1.1 = { add_spouse = cenno1_101 }
+	3384.1.1 = { death = yes }
+}
+rane_100b = {
+	name = "Cauaria"
+	dynasty = dyn_vitusca
+	religion = druid_circles
+	culture = bjoule
+	female = yes
+
+	father = rane_99
+	mother = rane_99_lover
+
+	trait = bastard
+
+	trait = lustful
+	trait = stubborn
+	trait = forgiving
+	trait = education_intrigue_1
+	trait = sign_lady
+
+	3339.9.28 = { birth = yes }
+	# 3360 marries katurix_101b
+	3396.1.1 = { death = yes }
+}
+rane_101 = {
+	name = "Sucaria"
+	dynasty = dyn_vitusca
+	religion = druid_circles
+	culture = bjoule
+	female = yes
+
+	father = rane_100
+	mother = cenno1_101
+
+	trait = sign_atronach
+
+	3359.11.13 = { birth = yes }
+	3396.1.1 = { death = yes }
+}
+rane_101b = {
+	name = "Katumar"
+	dynasty = dyn_vitusca
+	religion = druid_circles
+	culture = bjoule
+
+	father = rane_100
+	mother = cenno1_101
+
+	trait = sign_mage
+
+	3363.4.20 = { birth = yes }
+	3381.1.1 = { death = { death_reason = death_hunting_accident } }
+}
+rane_101c = {
+	name = "Boudilatis"
+	dynasty = dyn_vitusca
+	religion = druid_circles
+	culture = bjoule
+	female = yes
+
+	father = rane_100
+	mother = cenno1_101
+
+	trait = sickly
+	trait = sign_warrior
+
+	3367.8.11 = { birth = yes }
+	3367.8.12 = { death = { death_reason = death_sickly }}
+}
+
+##Galien Dynasty
+katurix_98 = {
+	name = "Coria"
+	religion = glenmoril_wyrd
+	culture = bjoule
+	female = yes
+
+	trait = education_intrigue_2
+	trait = patient
+	trait = sadistic
+	trait = forgiving
+	trait = witch
+	trait = sign_thief
+
+	3287.12.3 = { birth = yes }
+	3352.1.1 = { death = yes }
+}
+katurix_98_lover = {
+	name = "Dosso"
+	religion = breton_cult
+	culture = bjoule
+
+	trait = education_martial_1
+	trait = physique_good_1
+
+	3289.1.1 = { birth = yes }
+	3349.1.1 = { death = yes }
+}
+katurix_99 = {
+	name = "Carata"
+	dynasty = dyn_katurix
+	religion = glenmoril_wyrd
+	culture = bjoule
+	female = yes
+
+	mother = katurix_98
+	father = katurix_98_lover
+
+	trait = witch
+	trait = education_intrigue_3
+	trait = patient
+	trait = stubborn
+	trait = ambitious
+	trait = wild_oat
+
+	3310.1.1 = { birth = yes }
+	3327.1.1 = { set_relation_rival = { reason = rival_historical target = character:viridian_sentinel_1000 } }
+	3333.1.1 = { add_matrilineal_spouse = katurix_99_husband }
+	3359.12.3 = { death = yes }
+}
+katurix_99_husband = {
+	name = "Drutalix"
+	religion = glenmoril_wyrd
+	culture = bjoule
+
+	trait = witch
+	trait = education_stewardship_2
+	trait = forgiving
+	trait = humble
+	trait = temperate
+	trait = sign_steed
+
+	3312.6.13 = { birth = yes }
+	3375.1.1 = { death = yes }
+}
+katurix_100 = {
+	name = "Banna"
+	dynasty = dyn_katurix
+	religion = glenmoril_wyrd
+	culture = bjoule
+	female = yes
+	sexuality = bisexual
+
+	mother = katurix_99
+	father = katurix_99_husband
+
+	trait = witch
+	trait = education_learning_3
+	trait = sign_lover
+	trait = humble
+	trait = patient
+	trait = ambitious
+
+	3336.2.17 = { birth = yes }
+	3359.12.3 = { add_matrilineal_spouse = leucona_100b }
+	3391.1.1 = { death = yes }
+}
+katurix_101b = {
+	name = "Tirax"
+	dynasty = dyn_katurix
+	religion = glenmoril_wyrd
+	culture = bjoule
+
+	mother = katurix_99
+	father = katurix_99_husband
+
+	trait = education_diplomacy_3
+	trait = cynical
+	trait = impatient
+	trait = forgiving
+	trait = sign_warrior
+
+	3343.8.10 = { birth = yes }
+	3360.1.1 = { add_spouse = rane_100b}
+	3362.1.1 = {
+		remove_trait = cynical
+		trait = calm
+		religion = druid_circles
+	}
+	3365.1.1 = {
+		employer = cenno_100
+		set_relation_rival = { reason = rival_took_title target = character:katurix_100 }
+	}
+	3411.1.1 = { death = yes }
+}
+katurix_101 = {
+	name = "Carata"
+	dynasty = dyn_katurix
+	religion = glenmoril_wyrd
+	culture = bjoule
+	female = yes
+
+	trait = charming
+	trait = sign_lord
+	mother = katurix_100
+	father = leucona_100b
+
+	3361.3.12 = { birth = yes }
+	3437.1.1 = { death = yes }
+}
+katurix_102 = {
+	name = "Segoma"
+	dynasty = dyn_katurix
+	religion = breton_cult
+	culture = bjoule
+
+	father = katurix_101b
+	mother = rane_100b
+
+	trait = sign_atronach
+
+	3363.11.27 = { birth = yes }
+	3422.1.1 = { death = yes }
+}
+
+#Senovicix
+senovicix_100 = {
+	name = "Bil"
+	dynasty = dyn_senovicix
+	religion = breton_cult
+	culture = bjoule
+
+	trait = education_diplomacy_2
+	trait = vengeful
+	trait = brave
+	trait = impatient
+
+	3300.1.1 = { birth = yes }
+	3364.1.1 = { death = yes }
+}
+senovicix_101 = {
+	name = "Arcineaux"
+	dynasty = dyn_senovicix
+	religion = breton_cult
+	culture = bjoule
+	female = yes
+
+	father = senovicix_100
+
+	trait = education_intrigue_1
+	trait = lazy
+	trait = vengeful
+	trait = impatient
+	trait = sign_tower
+
+	3321.10.29 = { birth = yes }
+	3383.1.1 = { death = yes }
+}
+senovicix_101b = {
+	name = "Dagodubnos"
+	dynasty = dyn_senovicix
+	religion = breton_cult
+	culture = bjoule
+
+	father = senovicix_100
+
+	trait = education_martial_3
+	trait = brave
+	trait = wrathful
+	trait = vengeful
+	trait = sign_thief
+
+	3329.12.17 = { birth = yes }
+	3383.1.1 = { death = yes }
+}
+
+#EK TODO: expand
+#Atagutis, live in Ephesus
+atagutis_100 = {
+	name = "Mindothrax"
+	dynasty = dyn_atagutis
+	religion = witchman_faith
+	culture = bjoule
+
+	3328.1.1 = { birth = yes }
+	3375.1.1 = { death = { death_reason = death_battle } }
+}
+
+# Viridian Sentinels
+viridian_sentinel_1000 = {
+	name = "Abruna"
+	female = yes
+	religion = druid_circles
+	culture = bjoule
+
+	trait = education_learning_3
+	trait = education_magic_1
+	trait = devoted
+	trait = calm
+	trait = fickle
+	trait = forgiving
+
+	3273.1.1 = { birth = yes }
+	3300.1.1 = { give_nickname = nick_the_viridian_sentinel }
+	3330.8.15 = {
+		death = {
+			death_reason = death_duel
+			killer = katurix_99
+		}
+	}
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_headgear=female_headgear_religious_monk_02
+			custom_clothes=female_clothes_religious_catholic_devoted_01_common
+		}
+	}
+}
+viridian_sentinel_1001 = {
+	name = "Garomar"
+	religion = druid_circles
+	culture = bjoule
+
+	trait = education_learning_1
+	trait = education_magic_2
+	trait = devoted
+	trait = calm
+	trait = brave
+	trait = stubborn
+	trait = sign_thief
+
+	3291.12.3 = { birth = yes }
+	3330.8.15 = {
+		give_nickname = nick_the_viridian_sentinel
+		employer = rane_98
+		add_character_flag = viridian_sentinel_flag # to generate a new Sentinel upon his death
+	}
+	3360.1.1 = {
+		set_relation_rival = { reason = rival_historical target = character:katurix_101b }
+		add_pressed_claim = title:c_viridian_woods
+	}
+	3365.1.1 = {
+		remove_relation_rival = character:katurix_101b
+		set_relation_rival = { reason = rival_historical target = character:katurix_100 }
+	}
+	3379.1.1 = { death = yes }
+}
+
+#Adventurers
+lezalit_100 = {
+	name = "Alezan" #Warband Lezalit
+	religion = glenmoril_wyrd
+	culture = bjoule
+	trait = cynical
+	trait = arbitrary
+	trait = sadistic
+
+	trait = education_martial_3
+	trait = overseer
+	trait = torturer
+	trait = lifestyle_blademaster
+	trait = adventurer
+	disallow_random_traits = yes
+
+	3344.1.1 = {birth = yes}
+	3356.1.1 = {
+		effect = { #skilled trainer
+			add_prestige_level = 3
+		}
+	}
+
+	3360.1.1 = { employer = branquette_999 }
+	3365.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	# 3369.1.1 = { move_to_pool = yes } #retainers don't leave :p
+	3375.1.1 = {death = yes} # PLACEHOLDER DATE
+}
+
+argo_100 = {
+	name = "Amberic" #Warband Argo
+	religion = glenmoril_wyrd
+	culture = bjoule
+	trait = greedy
+	trait = stubborn
+	trait = diligent
+
+	trait = education_stewardship_3
+	trait = avaricious
+	trait = lifestyle_blademaster
+	trait = adventurer
+	disallow_random_traits = yes
+
+	3344.1.1 = {birth = yes}
+	3356.1.1 = {
+		effect = { #some horse thief
+			add_prestige_level = 2
+		}
+	}
+
+	3360.1.1 = { employer = cumberland_1000 }
+	3365.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	# 3369.1.1 = { move_to_pool = yes } #retainers don't leave :p
+	3375.1.1 = {death = yes} # PLACEHOLDER DATE
+}
+
+aethrod_100 = {
+	name = "Andrec" #Warband Aethrod
+	religion = glenmoril_wyrd
+	culture = bjoule
+	trait = deceitful
+	trait = fickle
+	trait = lazy
+
+	trait = education_intrigue_1
+	trait = lifestyle_hunter
+	trait = adventurer
+	disallow_random_traits = yes
+
+	3344.1.1 = {birth = yes}
+	3356.1.1 = {
+		effect = { #some horse thief
+			add_prestige_level = 2
+		}
+	}
+
+	3360.1.1 = { employer = cumberland_1000 }
+	3365.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	# 3369.1.1 = { move_to_pool = yes } #retainers don't leave :p
+	3375.1.1 = {death = yes} # PLACEHOLDER DATE
+}

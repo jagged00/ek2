@@ -1,0 +1,3300 @@
+﻿##Republics/Theocracies
+
+silvenar_1 = {
+	name = "Iulidul"
+	religion = greenpact
+	culture = morathi
+
+	trait = lifespan_2
+
+	210.1.1 = { birth = yes }
+	180.1.1 = { add_spouse = green_lady_1 }
+	369.1.1 = { death = { death_reason = death_wild_hunt } } #Wild Hunt against king Borgas of Skyrim
+}
+green_lady_1 = {
+	name = "Faedridil"
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	trait = lifespan_2
+
+	216.1.1 = { birth = yes }
+	369.1.1 = { death = { death_reason = death_wild_hunt } } #Wild Hunt against king Borgas of Skyrim
+}
+
+silvenar_2 = {
+	name = "Laelrion"
+	religion = greenpact
+	culture = silvenari
+	dna = cortisellis_1_dna_entry
+	
+	trait = lifespan_2
+
+	338.1.1 = { birth = yes }
+	369.1.1 = { add_spouse = green_lady_2 }
+	565.1.1 = { death = { death_reason = death_old_age } }
+}
+
+green_lady_2 = {
+	name = "Mordaya"
+	religion = greenpact
+	culture = mathmeldi
+	female = yes
+	
+	trait = lifespan_2
+
+	336.1.1 = { birth = yes }
+	350.1.1 = {culture = silvenari}
+	369.1.1 = { give_nickname = nick_green_lady }		
+	565.1.1 = { death = { death_reason = death_old_age } }
+}
+
+silvenar_99 = {
+	name = "Ralondel"
+	religion = greenpact
+	culture = etarani
+
+	trait = lifespan_2
+	trait = lifestyle_mystic
+
+	3130.1.1 = { birth = yes }
+	3150.1.1 = { add_spouse = green_lady_99 }
+	#Lore - there was Silvenar before ESO that vanished into Hectahame
+	3319.1.1 = { death = { death_reason = death_vanished } }
+}
+
+green_lady_99 = {
+	name = "Malioneth"
+	religion = greenpact
+	culture = arenthi
+	female = yes
+	
+	trait = lifespan_2
+
+	3133.1.1 = { birth = yes }
+	3319.1.1 = { death = yes }
+}
+
+silvenar_100 = { #Silvenar in ESO
+	name = "Edhelorn" #Lore
+	religion = greenpact
+	culture = silvenari
+	
+	trait = lifespan_2
+	trait = education_diplomacy_4
+	trait = calm
+	trait = compassionate
+	trait = trusting
+	trait = cannibal
+
+	3295.1.1 = { birth = yes }
+	3502.2.1 = { death = yes } #Dies during ESO
+}
+
+green_lady_100 = { #Green lady in ESO
+	name = "Finoriell" #Lore
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	mother = deepwoods_001
+
+	trait = lifespan_2
+	trait = cannibal
+	trait = lifestyle_hunter
+	trait = athletic
+	trait = brave
+	trait = vengeful
+	trait = wrathful
+	trait = education_martial_4
+	trait = education_martial_prowess_3
+	prowess = 20
+
+	3295.1.1 = { birth = yes }
+	3340.1.1 = { add_spouse = silvenar_100 }
+	3502.2.1 = { death = yes } #Dies during ESO
+}
+
+silvenar_101 = { #Silvenar after ESO
+	name = "Indaenir" #Lore
+	religion = greenpact
+	culture = morathi
+
+	trait = lifespan_2
+
+	3465.1.1 = { birth = yes }
+	3680.1.1 = { death = yes } 
+}
+green_lady_101 = { #Green lady after ESO
+	name = "Gwaering" #Lore
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	mother = deepwoods_002
+
+	trait = lifespan_2
+
+	3462.1.1 = { birth = yes }
+	3680.1.1 = { death = yes }
+}
+
+#Greenlady 3 is niece of 1
+deepwoods_001 = {
+	name = "Dailirwen"
+	religion = greenpact
+	culture = silvenari
+	female = yes
+	
+	trait = lifespan_2
+
+	3214.1.1 = { birth = yes }
+	3378.1.1 = { death = yes }
+}
+deepwoods_002 = {
+	name = "Balia"
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	mother = deepwoods_001
+
+	trait = lifespan_2
+
+	3287.1.1 = { birth = yes }
+	3482.1.1 = { death = yes }
+}
+
+#Greenheart dynasty
+valen_96 = { #Ex-Wilderking, made into normal guy
+	name = "Ostion"
+	dynasty = dyn_valen
+	culture = morathi
+	religion = wilderking
+	
+	trait = content
+	trait = honest
+	trait = temperate
+	trait = education_learning_4
+	trait = sign_mage
+	trait = lifestyle_mystic
+	trait = lifespan_magic_4
+
+	2845.4.9 = { birth = yes }
+	3000.1.1 = { add_spouse = valen_96_wife }
+	3212.1.1 = { death = { death_reason = death_natural_causes } }
+}
+valen_96_wife = { #Ex-Wilderqueen, made into normal person
+	name = "Aranias"
+	culture = auridon
+	religion = wilderking
+	female = yes
+
+	trait = content
+	trait = honest
+	trait = humble
+	trait = reclusive
+	trait = education_learning_4
+	trait = lifestyle_mystic
+	trait = arcana_good_3
+	trait = lifespan_magic_4
+
+	2877.1.1 = { birth = yes }
+	3301.1.1 = { death = { death_reason = death_natural_causes } }
+}
+valen_97 ={
+	name = "Endregail"
+	dynasty = dyn_valen
+	culture = morathi
+	religion = wilderking
+	female = yes
+
+	father = valen_96
+	mother = valen_96_wife
+
+	trait = lifespan_2
+
+	3086.1.1 = { birth = yes }
+	3262.1.1 = { death = yes } 
+}
+valen_98 = {
+	name = "Heralbor"
+	culture = morathi
+	religion = wilderking
+	dynasty = dyn_valen
+
+	mother = valen_97
+
+	trait = lifespan_2
+
+	3150.1.1 = { birth = yes }
+	3314.1.1 = { death = yes }
+}
+valen_99 = {
+	name = "Eronthor"
+	culture = morathi
+	religion = wilderking
+	dynasty = dyn_valen
+
+	father = valen_98
+
+	trait = lifespan_2
+
+	3219.1.1 = { birth = yes }
+	3271.1.1 = { add_spouse = kylthun_99b }
+	3378.1.1 = { death = yes }
+}
+valen_100 = {
+	name = "Gorendir"
+	dynasty = dyn_valen
+	culture = morathi
+	religion = wilderking
+	
+	father = valen_99
+	mother = kylthun_99b
+
+	trait = content
+	trait = honest
+	trait = temperate
+	trait = education_learning_4
+	trait = sign_mage
+	trait = lifespan_2
+
+	3279.4.1 = { birth = yes }
+	3462.10.1 = { death = yes }
+}
+
+#Kylthun clan, Bramblebreach
+kylthun_95 = {
+	name = "Dayagwen"
+	dynasty = dyn_kylthun
+	culture = morathi
+	religion = greenpact
+	female = yes
+
+	trait = lifespan_2
+
+	2791.1.1 = { birth = yes }
+	2950.1.1 = { death = yes }
+}
+kylthun_96 = {
+	name = "Dandra"
+	dynasty = dyn_kylthun
+	culture = morathi
+	religion = greenpact
+	female = yes
+
+	mother = kylthun_95
+	
+	trait = lifespan_2
+
+	2857.1.1 = { birth = yes }
+	3049.1.1 = { death = yes }
+}
+kylthun_97 = {
+	name = "Dairihill"
+	dynasty = dyn_kylthun
+	culture = morathi
+	religion = greenpact
+	female = yes
+
+	mother = kylthun_96
+
+	trait = lifespan_2
+
+	2930.1.1 = { birth = yes }
+	3113.1.1 = { death = yes }
+}
+kylthun_98 = {
+	name = "Nondor"
+	dynasty = dyn_kylthun
+	culture = morathi
+	religion = greenpact
+
+	mother = kylthun_97
+
+	trait = lifespan_2
+
+	3024.1.1 = { birth = yes }
+	3189.1.1 = { death = yes }
+}
+kylthun_99 = {
+	name = "Erengor"
+	dynasty = dyn_kylthun
+	culture = morathi
+	religion = greenpact
+
+	father = kylthun_98
+
+	trait = lifespan_2
+
+	3109.1.1 = { birth = yes }
+	3220.1.1 = { add_spouse = kylthun_99_wife }
+	3297.1.1 = { death = yes }
+}
+kylthun_99_wife = {
+	name = "Fauril"
+	culture = morathi
+	religion = greenpact
+	female = yes
+
+	trait = lifespan_2
+
+	3105.1.1 = { birth = yes }
+	3298.1.1 = { death = yes }
+}
+kylthun_99b = { #Part of Bramblebreach clan
+	name = "Galathel"
+	culture = morathi
+	religion = greenpact
+	dynasty = dyn_kylthun
+	female = yes
+
+	father = kylthun_98
+	
+	trait = lifespan_2
+	
+	3192.1.1 = { birth = yes }
+	3362.1.1 = { death = yes }
+}
+kylthun_100 = {
+	name = "Galathel"
+	dynasty = dyn_kylthun
+	culture = morathi
+	religion = greenpact
+	female = yes
+
+	father = kylthun_99
+	mother = kylthun_99_wife
+
+	trait = lifespan_2
+
+	3265.4.9 = { birth = yes }
+	3290.1.1 = { add_matrilineal_spouse = krisilthi_100b }
+	3430.1.1 = { death = yes }
+}
+kylthun_100b = {
+	name = "Farwilwen"
+	dynasty = dyn_kylthun
+	culture = morathi
+	religion = greenpact
+	female = yes
+
+	father = kylthun_99
+	mother = kylthun_99_wife
+
+	trait = lifespan_2
+
+	3276.1.1 = { birth = yes }
+	3461.1.1 = { death = yes }
+}
+kylthun_101 = { #Treethane of Bramblebreach clan in ESO
+	name = "Niriel" #Lore
+	dynasty = dyn_kylthun
+	culture = morathi
+	religion = greenpact
+	female = yes
+
+	mother = kylthun_100
+	father = krisilthi_100b
+
+	trait = humble
+	trait = impatient
+	trait = zealous
+	trait = lifespan_2
+	trait = sign_tower
+
+	3340.10.22 = { birth = yes }
+	3531.1.1 = { death = yes }
+}
+
+#Valefern dynasty
+krisilthi_99 = {
+	name = "Henilien"
+	dynasty = dyn_krisilthi
+	culture = morathi
+	religion = greenpact
+
+	trait = lifespan_2
+
+	3160.1.1 = { birth = yes }
+	3220.1.1 = { add_spouse = krisilthi_99_wife }
+	3320.1.1 = { death = yes }
+}
+krisilthi_99_wife = {
+	name = "Emelin"
+	culture = morathi
+	religion = greenpact
+	female = yes
+
+	trait = lifespan_2
+
+	3180.1.1 = { birth = yes }
+	3374.1.1 = { death = yes }
+}
+krisilthi_100 = {
+	name = "Emuin"
+	dynasty = dyn_krisilthi
+	culture = morathi
+	religion = greenpact
+	female = yes
+
+	father = krisilthi_99
+	mother = krisilthi_99_wife
+
+	trait = zealous
+	trait = arrogant
+	trait = arbitrary
+	trait = education_martial_2
+	trait = one_legged
+	trait = lifespan_2
+	trait = sign_apprentice
+
+	3240.7.12 = { birth = yes }
+	#Killed by Wood Orc neighbour
+	3366.1.1 = { death = { death_reason = death_raid killer = lhurgash_004 } }	
+}
+krisilthi_100b = { #Married to Bramblbreach
+	name = "Hengolir"
+	dynasty = dyn_krisilthi
+	culture = morathi
+	religion = greenpact
+
+	father = krisilthi_99
+	mother = krisilthi_99_wife
+
+	trait = lifespan_2
+
+	3254.1.1 = { birth = yes }
+	3430.1.1 = { death = yes }	
+}
+krisilthi_101 = {
+	name = "Ondor"
+	dynasty = dyn_krisilthi
+	culture = morathi
+	religion = greenpact
+
+	mother = krisilthi_100
+
+	trait = lifespan_2
+	trait = education_intrigue_3
+	trait = callous
+	trait = gluttonous
+	trait = fickle
+	trait = sign_lover
+
+	3330.2.9 = { birth = yes }
+	#Wood Orc killed his mother
+	3366.1.1 = { 
+		effect = {
+			if = {
+				limit = { character:lhurgash_004 = { is_alive = yes } }
+				set_relation_rival = { reason = rival_historical target = character:lhurgash_004 } 
+			}
+		}
+	}
+	3368.1.1 = {
+		trait = scarred
+	}
+	3515.1.1 = { death = yes }
+}
+
+#Iyanden
+iyanden_99 = {
+	name = "Galithor"
+	dynasty = dyn_iyanden
+	culture = morathi
+	religion = greenpact
+	
+	trait = lifespan_2
+
+	3109.1.1 = { birth = yes }
+	3274.1.1 = { death = yes }
+}
+
+iyanden_100 = {
+	name = "Galithor"
+	dynasty = dyn_iyanden
+	culture = morathi
+	religion = greenpact
+
+	father = iyanden_99
+
+	trait = lifespan_2
+
+	3195.1.1 = { birth = yes }
+	3376.1.1 = { death = yes }
+}
+iyanden_101 = {
+	name = "Galithor"
+	dynasty = dyn_iyanden
+	culture = morathi
+	religion = greenpact
+
+	father = iyanden_100
+
+	trait = lifespan_2
+	trait = education_learning_3
+	trait = shy
+	trait = calm
+	trait = humble
+
+	3262.1.1 = { birth = yes }
+	3439.1.1 = { death = yes }
+}
+
+#Garnona
+garnona_99 = {
+	name = "Fara"
+	dynasty_house = dyn_garnona
+	culture = morathi
+	religion = greenpact
+	female = yes
+	
+	father = iyanden_99
+
+	trait = lifespan_2
+
+	3217.1.1 = { birth = yes }
+	3190.1.1 = { add_spouse = garnona_99_husband } 
+	3358.1.1 = { death = yes }
+}
+garnona_99_husband = { #Nord adventurer hired to explore Greenheart
+	name = "Torkild"
+	culture = eastmarcher
+	religion = greenpact #Converts to local faith
+
+	trait = adventurer
+	trait = education_martial_3
+	trait = brave
+	trait = ambitious
+	trait = greedy
+
+	3250.1.1 = { birth = yes }
+	#3190.1.1 - marries a local
+	3312.1.1 = { death = { death_reason = death_old_age } }
+}
+garnona_100 = {
+	name = "Lenonion"
+	dynasty_house = dyn_garnona
+	culture = morathi
+	religion = greenpact
+
+	father = garnona_99_husband
+	mother = garnona_99
+
+	trait = content
+	trait = lazy
+	trait = trusting
+	trait = education_diplomacy_1
+	trait = sign_warrior
+	trait = lifespan_2
+
+	3280.8.20 = { birth = yes }
+	3290.1.1 = { add_spouse = etitan_100b }
+	3454.1.1 = { death = yes }
+}
+garnona_101 = {
+	name = "Fanadis"
+	dynasty_house = dyn_garnona
+	culture = morathi
+	religion = greenpact
+	female = yes
+
+	father = garnona_100
+	mother = etitan_100b
+	
+	trait = lifespan_2
+
+	3347.1.1 = { birth = yes }
+	3519.1.1 = { death = yes }
+}
+garnona_101b = {
+	name = "Lestadir"
+	dynasty_house = dyn_garnona
+	culture = morathi
+	religion = greenpact
+
+	father = garnona_100
+	mother = etitan_100b
+
+	trait = education_magic_2
+	trait = lifespan_2
+
+	3360.1.1 = { birth = yes }
+	3514.1.1 = { death = yes }
+}
+
+#Elyrimil dynasty, clan of Oreyn Bearclaw
+elyrimil_99 = {
+	name = "Esladir"
+	dynasty = dyn_elyrimil
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	trait = lifespan_2
+
+	3176.1.1 = { birth = yes }
+	3250.1.1 = { add_matrilineal_spouse = elyrimil_99_husband }
+	3332.4.26 = { death = { death_reason = death_accident } }
+}
+elyrimil_99_husband = {
+	name = "Esladir"
+	religion = greenpact
+	culture = morathi
+	
+	trait = lifespan_2
+
+	3180.1.1 = { birth = yes }
+	3332.4.26 = { death = { death_reason = death_accident } }
+}
+elyrimil_100 = { 
+	name = "Faume"
+	dynasty = dyn_elyrimil
+	religion = greenpact
+	culture = morathi
+
+	father = elyrimil_99_husband
+	mother = elyrimil_99
+
+	trait = education_learning_3
+	trait = callous
+	trait = ambitious
+	trait = shy
+	trait = beauty_bad_1
+	trait = necromancer
+	trait = education_magic_1
+	trait = lifespan_2
+
+	3262.9.9 = { birth = yes }
+	3332.1.1 = { add_spouse = elyrimil_100_wife }
+	3350.1.1 = {	
+		give_nickname = nick_toad_eye
+		effect = {
+			if = {
+				limit = { is_independent_ruler = no }			
+				liege = {
+					appoint_court_position = {
+						recipient = root
+						court_position = court_mage_court_position
+					}
+				}
+			}
+		}
+	}
+	3369.10.10 = { # Raises himself a small undead army to take Woodhearth
+		religion = idealmasters
+		effect = {
+			spawn_army = {
+				men_at_arms = {
+                    type = maa_undead_soldiers
+                    stacks = 3
+                }
+                inheritable = no
+				uses_supply = no
+                name = "undead_horde"
+				location = province:3201
+				origin = province:3201				
+			}
+			imprison = {
+				target = character:camoran_woodhearth_100
+				type = dungeon 
+			}
+		}
+	}
+	3371.3.21 = { death = { death_reason = death_duel killer = elyrimil_101 } }
+}
+elyrimil_100_wife = { # Faume Toad-Eye's Dunmer Wife
+	name = "Milesa"
+	religion = idealmasters
+	culture = chuzei
+	female = yes
+
+	trait = necromancer
+	trait = lifespan_2
+
+	3244.9.1 = { birth = yes }
+	3425.1.7 = { death = yes }
+}
+elyrimil_101 = {
+	name = "Oreyn"
+	dynasty = dyn_elyrimil
+	religion = greenpact
+	culture = morathi
+	dna = elyrimil_101_dna_entry
+
+	father = elyrimil_100
+	mother = elyrimil_100_wife
+
+	trait = education_martial_4
+	trait = brave
+	trait = ambitious
+	trait = deceitful
+	trait = lifestyle_hunter
+	trait = adventurer
+	trait = lifespan_2
+	trait = sign_tower
+
+	3323.10.22 = { birth = yes }
+	3338.1.1 = { 
+		effect = {
+			if = {
+				limit = { character:elyrimil_100 = { is_alive = yes } }
+				set_relation_rival = { reason = rival_historical target = character:elyrimil_100 }
+			}
+		}
+	}
+	3355.1.1 = {
+		give_nickname = nick_bearclaw
+		effect = {
+			if = {
+				limit = { character:shatul_1000b = { is_alive = yes } }
+				set_relation_friend =  { reason = friend_generic_history target = character:shatul_1000b }
+			}
+			if = {
+				limit = { NOT = { has_dlc_feature = roads_to_power } } #If unlanded
+				set_employer = character:camoran_grahtwood_100 
+			}
+		}
+	}
+	3369.1.1 = { add_spouse = brihil_101c }
+	3483.1.1 = { trait = bubonic_plague }
+	3484.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+elyrimil_101b = { 
+	name = "Nimriell"
+	dynasty = dyn_elyrimil
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	father = elyrimil_100
+	mother = elyrimil_100_wife
+	
+	trait = lifespan_2
+
+	3335.1.1 = { birth = yes }
+	3483.1.1 = { trait = bubonic_plague }
+	3484.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+elyrimil_102 = { #Main Bosmer branch of Bearclaw
+	name = "Elriniel"
+	dynasty = dyn_elyrimil
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	father = elyrimil_101
+	mother = brihil_101c
+
+	trait = lifespan_2
+	trait = sign_thief
+
+	3379.12.26 = { birth = yes }
+	3483.1.1 = { trait = bubonic_plague }
+	3484.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+elyrimil_102b = { #Married to undriel_101
+	name = "Eranas"
+	dynasty = dyn_elyrimil
+	religion = greenpact
+	culture = morathi
+
+	father = elyrimil_101
+	mother = brihil_101c
+
+	trait = lifespan_2
+
+	3388.1.1 = { birth = yes }
+	3483.1.1 = { trait = bubonic_plague }
+	3484.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+elyrimil_103 = {
+	name = "Madruin"
+	dynasty = dyn_elyrimil
+	religion = greenpact
+	culture = morathi
+
+	mother = elyrimil_102
+
+	trait = lifespan_2
+
+	3438.1.1 = { birth = yes }
+	3505.1.1 = { death = { death_reason = death_hunting_mysterious }}
+}
+elyrimil_103b = { #Oreyn from ESO (not game, additional materials)
+	name = "Gadnuth" #Lore
+	dynasty = dyn_elyrimil
+	religion = greenpact
+	culture = morathi
+
+	mother = elyrimil_102
+
+	trait = lifespan_2
+	trait = greedy
+	trait = ambitious
+	trait = cynical
+	trait = adventurer
+	trait = education_intrigue_2
+
+	3442.1.1 = { birth = yes }
+	3630.1.1 = { death = yes }
+}
+
+#Dunmer branch of Bearclaw
+oreyn_100 = {
+	name = "Behelir"
+	religion = greenpact
+	culture = morathi
+	dynasty_house = dyn_oreyn
+
+	father = elyrimil_101
+	mother = brihil_101c
+
+	trait = lifespan_2
+	trait = adventurer #Goes to Morrowind
+
+	3399.1.1 = { birth = yes }
+	3570.1.1 = { death = yes } #EK history ToDo: give him family and land in Morrowind?
+	#Maybe a landless Hlaalu noble?
+}
+
+#Driladan clan
+driladan_97 = {
+	name = "Adagwen"
+	dynasty = dyn_driladan
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	trait = lifespan_2
+
+	2966.1.1 = { birth = yes }
+	3145.2.12 = { death = yes }
+}
+driladan_98 = {
+	name = "Aengoth"
+	dynasty = dyn_driladan
+	religion = greenpact
+	culture = morathi
+
+	mother = driladan_97
+
+	trait = lifespan_2
+
+	3035.1.1 = { birth = yes }
+	3100.1.1 = { add_spouse = driladan_98_wife }
+	3219.3.1 = { death = yes }
+}
+driladan_98_wife = {
+	name = "Emolwen"
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	trait = lifespan_2
+
+	3043.1.1 = { birth = yes }
+	3238.1.1 = { death = yes }
+}
+driladan_99 = {
+	name = "Erasmo"
+	dynasty = dyn_driladan
+	religion = greenpact
+	culture = morathi
+	
+	father = driladan_98
+	mother = driladan_98_wife
+
+	trait = lifespan_2
+
+	3104.1.1 = { birth = yes }
+	3150.1.1 = { add_spouse = driladan_99_wife }
+	3297.6.26 = { death = yes }
+}
+driladan_99_wife = {
+	name = "Marinora"
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	trait = lifespan_2
+
+	3106.1.1 = { birth = yes }
+	3304.1.1 = { death = yes }
+}
+driladan_99b = { #Married to Duskthorn
+	name = "Adagwen"
+	dynasty = dyn_driladan
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	father = driladan_98
+	mother = driladan_98_wife
+
+	trait = lifespan_2
+
+	3111.1.1 = { birth = yes }
+	3288.1.1 = { death = yes }
+}
+driladan_100 = {
+	name = "Emalith"
+	dynasty = dyn_driladan
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	father = driladan_99
+	mother = driladan_99_wife
+
+	trait = lifespan_2
+
+	3196.7.9 = { birth = yes }
+	3250.1.1 = { add_matrilineal_spouse = driladan_100_husband }
+	3369.1.1 = { 
+		effect = { #Rivals with nephew who worships Hircine
+			if = {
+				limit = { character:driladan_100b1 = { is_alive = yes } }
+				set_relation_rival = { reason = rival_historical target = character:driladan_100b1 }
+			}
+		}
+	}
+	3379.6.28 = { death = yes }
+}
+driladan_100_husband = {
+	name = "Lemrongorn"
+	religion = greenpact
+	culture = morathi
+
+	trait = lifespan_2
+
+	3194.1.1 = { birth = yes }
+	3395.1.1 = { death = yes }
+}
+driladan_100b = {
+	name = "Behelir"
+	dynasty = dyn_driladan
+	religion = greenpact
+	culture = morathi
+
+	father = driladan_99
+	mother = driladan_99_wife
+
+	trait = lifespan_2
+
+	3199.1.1 = { birth = yes }
+	3229.1.1 = { add_spouse = driladan_100b_wife }
+	3364.2.7 = { death = { death_reason = death_ill } }
+}
+driladan_100b_wife = {
+	name = "Falphirion"
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	trait = patient
+	trait = lifespan_2
+
+	3204.1.1 = { birth = yes }
+	#Secret Hircine worshipper
+	3230.1.1 = { effect = { make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:hircine_cult } } }
+	3369.7.9 = { 
+		religion = hircine_cult
+		random_secret = {
+			type = secret_crypto_religionist
+			remove_secret = yes
+		} 
+	}
+	3411.1.1 = { death = yes }
+}
+
+driladan_100b1 = {
+	name = "Celanir"
+	dynasty = dyn_driladan
+	religion = greenpact
+	culture = morathi
+
+	father = driladan_100b
+	mother = driladan_100b_wife
+
+	trait = lifespan_2
+
+	3283.1.1 = { birth = yes }
+	3330.1.1 = { effect = { make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:hircine_cult } } }
+	3369.7.9 = { 
+		religion = hircine_cult
+		random_secret = {
+			type = secret_crypto_religionist
+			remove_secret = yes
+		} 
+	}
+	3390.10.10 = { death = { death_reason = death_battle } }
+}
+
+driladan_100c = {
+	name = "Firanarth"
+	dynasty = dyn_driladan
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	father = driladan_99
+	mother = driladan_99_wife
+
+	trait = lifespan_2
+
+	3205.1.1 = { birth = yes }
+	3398.1.1 = { death = yes }
+}
+
+driladan_101 = {
+	name = "Mandor"
+	dynasty = dyn_driladan
+	religion = greenpact
+	culture = morathi
+
+	mother = driladan_100
+	father = driladan_100_husband
+
+	trait = lifespan_2
+
+	3267.1.1 = { birth = yes }
+	3441.1.1 = { death = yes }
+}
+driladan_101b = {
+	name = "Emalith"
+	dynasty = dyn_driladan
+	religion = greenpact
+	culture = morathi
+	female = yes
+	
+	mother = driladan_100
+	father = driladan_100_husband
+
+	trait = lifespan_2
+
+	3275.1.1 = { birth = yes }
+	3468.1.1 = { death = yes }
+}
+driladan_102 = {
+	name = "Emalith"
+	dynasty = dyn_driladan
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	mother = driladan_100c
+
+	trait = lifespan_2
+
+	3328.1.1 = { birth = yes }
+	3468.1.1 = { death = { death_reason = death_battle } }
+}
+driladan_103 = {
+	name = "Idreloth"
+	dynasty = dyn_driladan
+	religion = greenpact
+	culture = morathi
+
+	mother = driladan_102
+
+	trait = lifespan_2
+
+	3394.1.1 = { birth = yes }
+	3501.1.1 = { death = yes } #Dies during/before ESO
+}
+driladan_104 = { #Leader of remnants of Driladan Clan in ESO
+	name = "Indanas" #Lore
+	dynasty = dyn_driladan
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	father = driladan_103
+
+	trait = brave
+	trait = stubborn
+	trait = honest
+	trait = lifespan_2
+
+	3460.1.1 = { birth = yes }
+	3502.10.10 = { death = yes } #Placeholder
+}
+
+#Aglath clan, previously Blackroot. Now Blackroot is Magloth's nickname
+aglath_98 = {
+	name = "Edherien"
+	dynasty = dyn_aglath
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	trait = lifespan_2
+
+	3101.1.1 = { birth = yes }
+	3120.1.1 = { add_matrilineal_spouse = aglath_98_husband }
+	3277.1.1 = { death = { death_reason = death_natural_causes } }
+}
+aglath_98_husband = {
+	name = "Enthoras"
+	religion = greenpact
+	culture = morathi
+
+	trait = adulterer
+	trait = lifespan_2
+
+	3108.1.1 = { birth = yes }
+	3291.1.1 = { death = { death_reason = death_natural_causes } }
+}
+aglath_99 = {
+	name = "Gwaerarth"
+	dynasty = dyn_aglath
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	mother = aglath_98
+	father = aglath_98_husband
+
+	trait = zealous
+	trait = lifespan_2
+
+	3184.1.1 = { birth = yes }
+	3190.1.1 = { add_matrilineal_spouse = aglath_99_husband }
+	3349.1.1 = { death = { death_reason = death_natural_causes } }
+}
+aglath_99_husband = {
+	name = "Odrethin"
+	religion = greenpact
+	culture = morathi
+
+	trait = zealous
+	trait = lifespan_2
+	
+	3170.1.1 = { birth = yes }
+	3344.1.1 = { death = { death_reason = death_natural_causes } }
+}
+aglath_99b = { #Married to serliel_99
+	name = "Indinor"
+	dynasty = dyn_aglath
+	religion = greenpact
+	culture = morathi
+
+	mother = aglath_98
+	father = aglath_98_husband
+
+	trait = lifespan_2
+	
+	3191.1.1 = { birth = yes }
+	3363.1.1 = { death = { death_reason = death_heart_attack } }
+}
+aglath_100 = {
+	name = "Malgoth" #Lore
+	dynasty = dyn_aglath
+	religion = greenpact
+	culture = morathi
+	dna = aglath_100_dna_entry
+
+	father = aglath_99_husband
+	mother = aglath_99
+
+	trait = education_martial_3
+	trait = aggressive_attacker
+	trait = ambitious
+	trait = zealous
+	trait = callous
+	trait = lifespan_2
+	trait = sign_atronach
+	trait = cannibal
+
+	3274.11.9 = { birth = yes }
+	3360.1.1 = {
+		give_nickname = nick_blackroot
+		effect = {
+			spawn_army = {
+				men_at_arms = {
+					type = bosmer_stalkers
+					stacks = 7
+				}
+				inheritable = no
+				name = event_troop_default_name
+				location = province:3242
+				origin = province:3242
+			}
+		}
+	}
+	3362.1.1 = {
+		effect = { add_prestige = 1000 }
+	}
+	#Canon - killed after eating poisoned corpses of villagers of Vullain
+	3374.6.18 = { death = { death_reason = death_poison } }
+}
+
+#Blackroot generals
+dimrin_99 = {
+	name = "Gerethel"
+	dynasty = dyn_dimrin
+	religion = greenpact
+	culture = morathi
+	female = yes
+	
+	father = aglath_98_husband
+
+	trait = wild_oat
+	trait = lifespan_2
+	trait = cannibal
+
+	3193.1.1 = { birth = yes }
+	3280.1.1 = { add_matrilineal_spouse = dimrin_99_husband }
+	3344.1.1 = { death = { death_reason = death_drowned } }
+}
+dimrin_99_husband = {
+	name = "Helondanbor"
+	religion = greenpact
+	culture = morathi
+	
+	trait = lifespan_2
+	trait = cannibal
+
+	3189.1.1 = { birth = yes }
+	3366.1.1 = { death = { death_reason = death_natural_causes } }
+}
+dimrin_100 = { #Was left by Blackroot to control Hectahame
+	name = "Einriel"
+	dynasty = dyn_dimrin
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	mother = dimrin_99
+	father = dimrin_99_husband
+
+	trait = education_martial_3
+	trait = sadistic
+	trait = ambitious
+	trait = zealous
+	trait = lifespan_2
+	trait = sign_shadow
+	trait = cannibal
+
+	3288.5.27 = { birth = yes }
+	3335.1.1 = { add_matrilineal_spouse = dimrin_100_husband }
+	3355.1.1 = { employer = aglath_100 }
+	3390.7.12 = { death = { death_reason = death_execution killer = allir_100 } }
+}
+dimrin_100_husband = {
+	name = "Monvaras"
+	religion = greenpact
+	culture = morathi
+
+	trait = lifespan_2
+	trait = cannibal
+
+	3291.1.1 = { birth = yes }
+	3390.7.12 = { death = { death_reason = death_execution killer = allir_100 } }
+}
+dimrin_101 = {
+	name = "Malgoth"
+	dynasty = dyn_dimrin
+	religion = greenpact
+	culture = morathi
+
+	mother = dimrin_100
+	father = dimrin_100_husband
+
+	trait = lifespan_2
+
+	3352.1.1 = { birth = yes }
+	3474.1.1 = { death = { death_reason = death_battle } }
+}
+dimrin_101b = {
+	name = "Gathraenor"
+	dynasty = dyn_dimrin
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	mother = dimrin_100
+	father = dimrin_100_husband
+
+	trait = lifespan_2
+
+	3357.1.1 = { birth = yes }
+	3542.1.1 = { death = yes }
+}
+
+#Fernsky
+serliel_99 = {
+	name = "Erinel"
+	dynasty = dyn_serliel
+	religion = greenpact
+	culture = morathi
+	female = yes
+	
+	trait = lifespan_2
+
+	3203.1.1 = { birth = yes }
+	3275.1.1 = { add_matrilineal_spouse = aglath_99b }
+	3300.1.1 = { death = { death_reason = death_childbirth } }
+}
+serliel_100 = { #Was left in charge of Diss when Malgoth attacked Vullain
+	name = "Daenilroth"
+	dynasty = dyn_serliel
+	religion = greenpact
+	culture = morathi
+
+	mother = serliel_99
+	father = aglath_99b
+
+	trait = education_stewardship_3
+	trait = zealous
+	trait = callous
+	trait = content
+	trait = lifespan_2
+
+	3281.1.1 = { birth = yes }
+	3355.1.1 = { employer = aglath_100 }
+	3476.5.20 = { death = {  death_reason = death_natural_causes } }
+}
+serliel_100b = {
+	name = "Eranwen"
+	dynasty = dyn_serliel
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	mother = serliel_99
+	father = aglath_99b
+
+	trait = lifespan_2
+
+	3283.1.1 = { birth = yes }
+	3355.1.1 = { employer = aglath_100 }
+	3472.1.1 = { death = {  death_reason = death_natural_causes } }
+}
+serliel_101 = {
+	name = "Orcholin"
+	dynasty = dyn_serliel
+	religion = greenpact
+	culture = morathi
+
+	father = serliel_100
+
+	trait = lifespan_2
+
+	3357.1.1 = { birth = yes }
+	3485.7.1 = { trait = bubonic_plague }
+	3485.7.5 = { death = { death_reason = death_bubonic_plague } }
+}
+
+#Ruler of Hectahame after Blackroot people
+allir_99 = {
+	name = "Nalion"
+	dynasty = dyn_allir
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	trait = lifespan_2
+
+	3222.1.1 = { birth = yes }
+	3300.1.1 = { add_spouse = allir_99_husband }
+	3340.1.1 = { employer = oiobala_100 } #Lives in Hectahame
+	#Killed by Blackroot general
+	3372.3.9 = { death = { death_reason = death_ritually_eaten killer = dimrin_100 } }
+}
+allir_99_husband = {
+	name = "Haromir"
+	religion = ilpenada
+	culture = mathmeldi
+
+	trait = lifespan_3
+
+	3205.1.1 = { birth = yes }
+	#Killed by Blackroot general
+	3372.3.9 = { death = { death_reason = death_ritually_eaten killer = dimrin_100 } }
+}
+allir_100 = {
+	name = "Nalion"
+	dynasty = dyn_allir
+	religion = greenpact
+	culture = morathi
+
+	mother = allir_99
+	father = allir_99_husband
+
+	trait = wild_oat
+	trait = vengeful
+	trait = wrathful
+	trait = fickle
+	trait = education_intrigue_3
+	trait = lifespan_3 #From father
+	trait = cannibal
+
+	3304.1.1 = { birth = yes }
+	#Takes over Hectahame, kills old ruler and marries her daughter
+	3390.7.12 = { add_spouse = dimrin_101b }
+	3497.5.19 = { death = yes }
+}
+allir_101 = {
+	name = "Ethlinor"
+	dynasty = dyn_allir
+	religion = greenpact
+	culture = morathi
+
+	father = allir_100
+	mother = dimrin_101b
+
+	trait = lifespan_2
+
+	3401.1.1 = { birth = yes }
+	3582.1.1 = { death = yes }
+}
+
+#Whisper grove rulers
+thynsa_99 = {
+	name = "Fiabess"
+	dynasty = dyn_thynsa
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	trait = lifespan_2
+
+	3125.1.1 = { birth = yes }
+	3200.1.1 = { add_matrilineal_spouse = thynsa_99_husband1 }
+	3260.1.1 = { add_matrilineal_spouse = thynsa_99_husband2 }
+	3308.9.20 = { death = { death_reason = death_natural_causes } }
+}
+thynsa_99_husband1 = {
+	name = "Maenthanaras"
+	religion = greenpact
+	culture = morathi
+	
+	trait = lifespan_2
+
+	3124.1.1 = { birth = yes }
+	3257.1.1 = { death = { death_reason = death_deer } }
+}
+thynsa_99_husband2 = {
+	name = "Magaelion"
+	religion = greenpact
+	culture = morathi
+	
+	trait = lifespan_2
+
+	3152.1.1 = { birth = yes }
+	3315.1.1 = { death = { death_reason = death_lost_in_the_forest } }
+}
+#Main branch - Redbranch
+thynsa_100 = {
+	name = "Maglir"
+	dynasty = dyn_thynsa
+	religion = greenpact
+	culture = morathi
+
+	mother = thynsa_99
+	father = thynsa_99_husband1
+
+	trait = lifespan_2
+	trait = cannibal
+
+	3218.1.1 = { birth = yes }
+	3290.1.1 = { add_spouse = mandiron_99b }
+	3381.2.5 = { death = { death_reason = death_hunting_trap } }
+}
+thynsa_100b = { #Married to Endrand
+	name = "Melbethil"
+	dynasty = dyn_thynsa
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	mother = thynsa_99
+	father = thynsa_99_husband1
+
+	trait = lifespan_2
+	trait = cannibal
+
+	3226.1.1 = { birth = yes }
+	3412.1.1 = { death = yes }
+}
+thynsa_101 = {
+	name = "Anoriath"
+	dynasty = dyn_thynsa
+	religion = greenpact
+	culture = morathi
+
+	father = thynsa_100
+	mother = mandiron_99b
+
+	trait = lifespan_2
+	trait = cannibal
+
+	3300.1.1 = { birth = yes }
+	3371.1.1 = { add_spouse = thynsa_101_wife }
+	3473.10.26 = { death = { death_reason = death_boar } }
+}
+thynsa_101_wife = {
+	name = "Giningil"
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	trait = lifespan_2
+
+	3321.1.1 = { birth = yes }
+	3516.1.1 = { death = yes }
+}
+thynsa_102 = {
+	name = "Ranedor"
+	dynasty = dyn_thynsa
+	religion = greenpact
+	culture = morathi
+
+	father = thynsa_101
+	mother = thynsa_101_wife
+
+	trait = lifespan_2
+	trait = twin
+
+	3375.1.1 = { birth = yes }
+	3556.1.1 = { death = yes }
+}
+thynsa_102b = {
+	name = "Ralondel"
+	dynasty = dyn_thynsa
+	religion = greenpact
+	culture = morathi
+
+	father = thynsa_101
+	mother = thynsa_101_wife
+
+	trait = lifespan_2
+	trait = twin
+
+	3375.1.1 = { birth = yes }
+	3529.1.1 = { death = yes }
+}
+
+#Vanellion branch
+vanellion_100 = {
+	name = "Filberel"
+	dynasty_house = dyn_vanellion
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	mother = thynsa_99
+	father = thynsa_99_husband2
+
+	trait = lifespan_2
+
+	3255.1.1 = { birth = yes }
+	3438.1.1 = { death = yes }
+}
+vanellion_101 = {
+	name = "Neronnir"
+	dynasty_house = dyn_vanellion
+	religion = greenpact
+	culture = morathi
+
+	mother = vanellion_100
+	
+	trait = lifespan_2
+
+	3324.1.1 = { birth = yes }
+	3485.1.1 = { trait = bubonic_plague }
+	3486.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+vanellion_102 = {
+	name = "Erthas" #Lore - dungeon boss in ESO
+	dynasty_house = dyn_vanellion
+	religion = greenpact
+	culture = morathi
+
+	father = vanellion_101
+
+	trait = deceitful
+	trait = sadistic
+	trait = gregarious
+	trait = education_intrigue_3
+	trait = lifespan_2
+
+	3418.7.9 = { birth = yes }
+	3502.1.1 = { religion = mehrunes_cult }
+	3503.1.1 = { death = yes } #Vestige
+}
+
+#Springbrook, rule Vullain
+fileyren_99 = {
+	name = "Dayagwen"
+	dynasty = dyn_fileyren
+	religion = greenpact
+	culture = morathi
+	female = yes
+	
+	trait = lifespan_2
+
+	3079.1.1 = { birth = yes }
+	3130.1.1 = { add_matrilineal_spouse = fileyren_99_husband }
+	3271.10.9 = { death = { death_reason = death_natural_causes } }
+}
+fileyren_99_husband = {
+	name = "Glaurolin"
+	religion = greenpact
+	culture = morathi
+	
+	trait = lifespan_2
+
+	3081.1.1 = { birth = yes }
+	3267.1.1 = { death = { death_reason = death_natural_causes } }
+}
+fileyren_100 = {
+	name = "Urunil"
+	dynasty = dyn_fileyren
+	religion = greenpact
+	culture = morathi
+
+	mother = fileyren_99
+	father = fileyren_99_husband
+	
+	trait = lifespan_2
+	trait = education_learning_3
+	trait = whole_of_body
+	trait = depressed_1
+	trait = patient
+	trait = stubborn
+	trait = compassionate
+	trait = cannibal
+
+	3153.7.9 = { birth = yes }
+	3185.1.1 = { add_spouse = fileyren_100_wife }
+	3371.1.6 = { death = yes }
+}
+fileyren_100_wife = {
+	name = "Lirela"
+	religion = greenpact
+	culture = morathi
+	female = yes
+	
+	trait = lifespan_2
+	trait = cannibal
+
+	3136.1.1 = { birth = yes }
+	3325.1.1 = { death = yes }
+}
+fileyren_101 = {
+	name = "Mennel"
+	dynasty = dyn_fileyren
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	father = fileyren_100
+	mother = fileyren_100_wife
+	
+	trait = lifespan_2
+	trait = cannibal
+
+	3210.1.1 = { birth = yes }
+	3352.1.1 = { death = { death_reason = death_ill } }
+}
+fileyren_101b = {
+	name = "Eginir"
+	dynasty = dyn_fileyren
+	religion = greenpact
+	culture = morathi
+
+	father = fileyren_100
+	mother = fileyren_100_wife
+	
+	trait = lifespan_2
+	trait = cannibal
+
+	3215.1.1 = { birth = yes }
+	3374.6.17 = { death = { death_reason = death_execution killer = aglath_100 } }
+}
+fileyren_102 = {
+	name = "Lirela"
+	dynasty = dyn_fileyren
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	mother = fileyren_101
+	
+	trait = lifespan_2
+	trait = cannibal
+
+	3287.1.1 = { birth = yes }
+	3374.6.17 = { death = { death_reason = death_battle killer = aglath_100 } }
+}
+
+#Forestwalker dynasty
+forayn_99 = {
+	name = "Guilenarth"
+	dynasty = dyn_forayn
+	religion = greenpact
+	culture = morathi
+	female = yes
+	
+	trait = lifespan_2
+	trait = trusting
+	trait = cannibal
+
+	3171.1.1 = { birth = yes }
+	3200.1.1 = { add_matrilineal_spouse = forayn_99_husband }
+	3332.4.16 = { death = { death_reason = death_lycan killer = forayn_100 }}
+}
+forayn_99_husband = {
+	name = "Behelir"
+	religion = greenpact
+	culture = morathi
+
+	trait = lifespan_2
+	trait = cannibal
+
+	3176.1.1 = { birth = yes }
+	3332.4.16 = { death = { death_reason = death_lycan killer = forayn_100 }}
+}
+forayn_100 = {
+	name = "Halindor"
+	dynasty = dyn_forayn
+	religion = hircine_cult
+	culture = morathi
+
+	mother = forayn_99
+	father = forayn_99_husband
+
+	trait = lifespan_2
+	trait = lycan_character
+	trait = wrathful
+	trait = brave
+	trait = lifestyle_hunter
+	trait = fickle
+	trait = kinslayer_3
+	trait = education_martial_2
+	trait = cannibal
+
+	3252.1.1 = { birth = yes }
+	#Killed by his sister
+	3368.8.5 = { death = { death_reason = death_murder_known killer = forayn_100b } }
+}
+
+forayn_100b = { #Hates her brother for killing their parents
+	name = "Firalboreth"
+	culture = morathi
+	dynasty = dyn_forayn
+	religion = greenpact
+	female = yes
+
+	mother = forayn_99
+	father = forayn_99_husband
+
+	trait = lifespan_2
+	trait = vengeful
+	trait = deceitful
+	trait = stubborn
+	trait = cannibal
+	trait = education_intrigue_3
+
+	3260.1.1 = { birth = yes }
+	3290.1.1 = { add_matrilineal_spouse = forayn_100b_husband }
+	3332.4.16 = {
+		effect = { #Her brother killed their parents
+			if = {
+				limit = { character:forayn_100 = { is_alive = yes } }
+				set_relation_rival = { reason = rival_historical target = character:forayn_100 }
+			}
+		}
+	}
+	3359.1.1 = { employer = kragul_100 } #Staying with Imgas
+	3368.1.1 = { 
+		trait = kinslayer_3 #Kills her brother
+		#Truce with Imga who sheltered her
+		effect = {
+			add_truce_both_ways = {
+				character = character:kragul_100
+				years = 5
+				name = TRUCE_COLLABORATION
+			}
+		}
+	}
+	#Killed by random werewolf
+	3438.4.9 = { death = { death_reason = death_lycan } }
+}
+forayn_100b_husband = {
+	name = "Haras"
+	culture = morathi
+	religion = greenpact
+
+	trait = cannibal
+	trait = lifespan_2
+	
+	3263.1.1 = { birth = yes }
+	3457.1.1 = { death = yes }
+}
+forayn_101 = {
+	name = "Hareglor"
+	dynasty = dyn_forayn
+	culture = morathi
+	religion = greenpact
+
+	mother = forayn_100b
+	father = forayn_100b_husband
+
+	trait = lifespan_2
+
+	3325.1.1 = { birth = yes }
+	3499.3.6 = { death = { death_reason = death_duel killer = forayn_eso } }
+}
+forayn_101b = {
+	name = "Elphiron"
+	dynasty = dyn_forayn
+	culture = morathi
+	religion = greenpact
+	female = yes
+
+	mother = forayn_100b
+	father = forayn_100b_husband
+
+	trait = lifespan_2
+
+	3333.1.1 = { birth = yes }
+	3517.1.1 = { death = yes } #Placeholder
+}
+forayn_101c = {
+	name = "Behelir"
+	dynasty = dyn_forayn
+	culture = morathi
+	religion = greenpact
+
+	mother = forayn_100b
+	father = forayn_100b_husband
+
+	trait = lifespan_2
+
+	3342.1.1 = { birth = yes }
+	3486.1.1 = { death = yes } #Placeholder
+}
+
+forestwalker1_102 = {
+	name = "Behelir"
+	dynasty = dyn_forayn
+	culture = morathi
+	religion = greenpact
+	female = yes
+
+	father = forayn_101c
+
+	trait = lifespan_2
+
+	3407.1.1 = { birth = yes }
+	3526.1.1 = { death = yes }
+}
+
+forayn_eso = { #Character from ESO, connection to dynasty made up
+	name = "Ulthorn" #Lore
+	dynasty = dyn_forayn
+	culture = morathi
+	religion = greenpact
+
+	mother = forestwalker1_102
+	
+	trait = lifespan_2
+	trait = zealous
+	trait = vengeful
+	trait = sadistic
+	trait = education_martial_2
+
+	3465.7.9 = { birth = yes }
+	3500.1.1 = { 
+		give_nickname = nick_the_hound 
+		religion = hircine_cult
+	}
+	3502.10.6 = { death = yes }
+}
+
+#Sharp-arrow dynasty - Spearwood
+mandiron_98 = {
+	name = "Foldor"
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+	
+	trait = lifespan_2
+	trait = lifestyle_hunter
+
+	3100.1.1 = { birth = yes }
+	3180.1.1 ={ add_spouse = mandiron_98_wife }
+	3286.10.31 = { death = yes }
+}
+
+mandiron_98_wife = {
+	name = "Iirdilin"
+	religion = greenpact
+	culture = morathi
+	female = yes
+	
+	trait = lifespan_2
+	trait = lifestyle_hunter
+
+	3112.1.1 = { birth = yes }
+	3299.1.1 = { death = yes }
+}
+mandiron_99 = {
+	name = "Eginir"
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+
+	father = mandiron_98
+	mother = mandiron_98_wife
+	
+	trait = lifespan_2
+	trait = lifestyle_hunter
+	trait = cannibal
+
+	3183.1.1 = { birth = yes }
+	3210.1.1 = { add_spouse = mandiron_99_wife }
+	3362.7.2 = { death = { death_reason = death_raid } }
+}
+mandiron_99_wife = {
+	name = "Mennel"
+	religion = greenpact
+	culture = morathi
+	female = yes
+	
+	trait = lifespan_2
+	trait = lifestyle_hunter
+
+	3192.1.1 = { birth = yes }
+	3386.1.1 = { death = yes }
+}
+mandiron_99b = { #Married to Redbranch
+	name = "Eginir"
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	father = mandiron_98
+	mother = mandiron_98_wife
+	
+	trait = lifespan_2
+	trait = lifestyle_hunter
+
+	3207.1.1 = { birth = yes }
+	3295.1.1 = { death = { death_reason = death_natural_causes } }
+}
+mandiron_100 = {
+	name = "Foldor"
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+
+	father = mandiron_99
+	mother = mandiron_99_wife
+	
+	trait = lifespan_2
+	trait = cannibal
+
+	3272.1.1 = { birth = yes }
+	3456.9.26 = { death = yes }
+}
+mandiron_100b = {
+	name = "Lirela"
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	father = mandiron_99
+	mother = mandiron_99_wife
+	
+	trait = cannibal
+	trait = lifespan_2
+	trait = education_martial_3
+	trait = aggressive_attacker
+	trait = brave
+	trait = zealous
+	trait = ambitious
+
+	3287.1.1 = { birth = yes }
+	3340.1.1 = { add_matrilineal_spouse = mandiron_100b_husband }
+	3474.8.30 = { death = { death_reason = death_natural_causes } }
+}
+mandiron_100b_husband = {
+	name = "Nedaegaer"
+	religion = greenpact
+	culture = morathi
+
+	trait = cannibal
+	trait = lifespan_2
+
+	3297.1.1 = { birth = yes }
+	3422.1.1 = { death = { death_reason = death_battle } }
+}
+mandiron_101c = { #Married to endrand_101
+	name = "Glenora"
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+	female = yes
+	
+	father = mandiron_99
+	mother = mandiron_99_wife
+	
+	trait = cannibal
+	trait = lifespan_2
+
+	3303.1.1 = { birth = yes }
+	3494.1.1 = { death = yes }
+}
+mandiron_101 = {
+	name = "Falicia"
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	father = mandiron_100
+	
+	trait = cannibal
+	trait = lifespan_2
+
+	3343.1.1 = { birth = yes }
+	3386.1.1 = { death = { death_reason = death_battle } }
+}
+mandiron_101b = {
+	name = "Gendinora"
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	father = mandiron_100
+
+	trait = cannibal
+	trait = lifespan_2
+
+	3351.1.1 = { birth = yes }
+	3390.1.1 = { add_matrilineal_spouse = mandiron_101b_husband }
+	3530.1.1 = { death = yes }
+}
+mandiron_101b_husband = {
+	name = "Nalion"
+	religion = greenpact
+	culture = morathi
+
+	trait = lifespan_2
+
+	3346.1.1 = { birth = yes }
+	3540.1.1 = { death = yes }
+}
+#Eveli Sharp-Arrow says that she has 12 siblings
+mandiron_102 = {
+	name = "Bellulor"
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+
+	mother = mandiron_101b
+	father = mandiron_101b_husband
+
+	trait = lifespan_2
+
+	3395.1.1 = { birth = yes }
+	3574.1.1 = { death = yes }
+}
+mandiron_102b = {
+	name = "Aerin"
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	mother = mandiron_101b
+	father = mandiron_101b_husband
+
+	trait = lifespan_2
+
+	3403.1.1 = { birth = yes }
+	3600.1.1 = { death = yes }
+}
+mandiron_102c = {
+	name = "Elayel"
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	mother = mandiron_101b
+	father = mandiron_101b_husband
+
+	trait = lifespan_2
+
+	3405.1.1 = { birth = yes }
+	3600.1.1 = { death = yes }
+}
+mandiron_102d = { #Older brother of Eveli, adventurer and later scribe for Blackdrake emperors
+	name = "Beragon" #Lore
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+
+	mother = mandiron_101b
+	father = mandiron_101b_husband
+
+	trait = lifespan_2
+	trait = adventurer
+	trait = education_learning_3
+
+	3411.1.1 = { birth = yes }
+	3465.1.1 = { trait = scholar } #Scribe for Blackdrakes
+	3600.1.1 = { death = yes }
+}
+mandiron_102e = {
+	name = "Halalin"
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+
+	mother = mandiron_101b
+	father = mandiron_101b_husband
+
+	trait = lifespan_2
+
+	3414.1.1 = { birth = yes }
+	3600.1.1 = { death = yes }
+}
+mandiron_102f = {
+	name = "Nirolos"
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+
+	mother = mandiron_101b
+	father = mandiron_101b_husband
+
+	trait = lifespan_2
+
+	3420.1.1 = { birth = yes }
+	3600.1.1 = { death = yes }
+}
+mandiron_102g = {
+	name = "Lianedirre"
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	mother = mandiron_101b
+	father = mandiron_101b_husband
+
+	trait = lifespan_2
+
+	3426.1.1 = { birth = yes }
+	3600.1.1 = { death = yes }
+}
+mandiron_102h = {
+	name = "Indraseth"
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	mother = mandiron_101b
+	father = mandiron_101b_husband
+
+	trait = lifespan_2
+
+	3431.1.1 = { birth = yes }
+	3600.1.1 = { death = yes }
+}
+mandiron_102i = {
+	name = "Henriel"
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	mother = mandiron_101b
+	father = mandiron_101b_husband
+
+	trait = lifespan_2
+
+	3436.1.1 = { birth = yes }
+	3600.1.1 = { death = yes }
+}
+mandiron_102j = {
+	name = "Galbenel"
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	mother = mandiron_101b
+	father = mandiron_101b_husband
+
+	trait = lifespan_2
+
+	3439.1.1 = { birth = yes }
+	3600.1.1 = { death = yes }
+}
+mandiron_102k = {
+	name = "Elphiniel"
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+	female = yes
+	
+	mother = mandiron_101b
+	father = mandiron_101b_husband
+
+	trait = lifespan_2
+
+	3443.1.1 = { birth = yes }
+	3600.1.1 = { death = yes }
+}
+
+mandiron_102l = { #Eveli is the youngest of 12 siblings
+	name = "Eveli" #Lore
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	mother = mandiron_101b
+	father = mandiron_101b_husband
+
+	trait = education_martial_3
+	trait = lifespan_2
+	trait = compassionate
+	trait = stubborn
+	trait = brave
+	
+	3452.1.1 = { birth = yes }
+	3502.1.1 = {
+		trait = adventurer
+		give_nickname = nick_sharp_arrow
+	}
+	3600.1.1 = { death = yes }
+}
+
+#Sharparrow 2 - children of mandiron_100b
+mandiron1_101 = {
+	name = "Mennel"
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	mother = mandiron_100b
+	father = mandiron_100b_husband
+	
+	trait = lifespan_2
+
+	3344.1.1 = { birth = yes }
+	3424.1.1 = { death = { death_reason = death_battle } }
+}
+
+mandiron1_101b = {
+	name = "Halronion"
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+
+	mother = mandiron_100b
+	father = mandiron_100b_husband
+
+	trait = lifespan_2
+	
+	3358.1.1 = { birth = yes }
+	3527.1.1 = { death = { death_reason = death_old_age } }
+}
+mandiron1_101c = {
+	name = "Lathriel"
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	mother = mandiron_100b
+	father = mandiron_100b_husband
+
+	trait = lifespan_2
+
+	3374.1.1 = { birth = yes }
+	3498.1.1 = { death = { death_reason = death_deer } }
+}
+mandiron1_102 = {
+	name = "Nalion"
+	dynasty = dyn_mandiron
+	religion = greenpact
+	culture = morathi
+
+	mother = mandiron1_101
+	
+	trait = lifespan_2
+
+	3413.1.1 = { birth = yes }
+	3589.1.1 = { death = yes }
+}
+
+#Endrand dynasty (Stranglevine, Silvenar kingdom)
+endrand_98 = {
+	name = "Emalith"
+	dynasty = dyn_endrand
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	trait = lifespan_2
+
+	3055.1.1 = { birth = yes }
+	3100.1.1 = { add_matrilineal_spouse = endrand_98_husband }
+	3238.2.1 = { death = yes }
+}
+endrand_98_husband = {
+	name = "Gandalor"
+	religion = greenpact
+	culture = morathi
+
+	trait = lifespan_2
+
+	3040.1.1 = { birth = yes }
+	3233.1.1 = { death = yes }
+}
+endrand_99 = {
+	name = "Heluin"
+	dynasty = dyn_endrand
+	religion = greenpact
+	culture = morathi
+
+	mother = endrand_98
+	father = endrand_98_husband
+
+	trait = lifespan_2
+
+	3120.1.1 = { birth = yes }
+	3130.1.1 ={ add_spouse = endrand_99_wife }
+	3314.3.25 = { death = yes }
+}
+endrand_99_wife = {
+	name = "Teliwen"
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	trait = lifespan_2
+
+	3129.1.1 = { birth = yes }
+	3320.1.1 = { death = yes }
+}
+endrand_99b = { #Married to neighbouring Ayleid
+	name = "Edalor"
+	dynasty = dyn_endrand
+	religion = greenpact
+	culture = morathi
+
+	mother = endrand_98
+	father = endrand_98_husband
+
+	trait = lifespan_2
+
+	3135.1.1 = { birth = yes }
+	3330.1.1 = { death = yes }
+}
+endrand_100 = {
+	name = "Gandalor"
+	dynasty = dyn_endrand
+	religion = greenpact
+	culture = morathi
+
+	father = endrand_99
+	mother = endrand_99_wife
+
+	trait = cannibal
+	trait = lifespan_2
+	trait = lustful
+	trait = fickle
+	trait = greedy
+	trait = education_intrigue_3
+
+	3208.1.1 = { birth = yes }
+	3250.1.1 = { add_spouse = thynsa_100b }
+	3397.9.19 = { death = { death_reason = death_natural_causes } }
+}
+endrand_100b = { #Married to Rayn
+	name = "Edalor"
+	dynasty = dyn_endrand
+	religion = greenpact
+	culture = morathi
+
+	father = endrand_99
+	mother = endrand_99_wife
+
+	trait = cannibal
+	trait = lifespan_2
+
+	3215.1.1 = { birth = yes }
+	3400.1.1 = { death = yes }
+}
+endrand_100c = { #Married to Camoran-Grahtwood
+	name = "Orthonor"
+	dynasty = dyn_endrand
+	religion = greenpact
+	culture = morathi
+
+	father = endrand_99
+	mother = endrand_99_wife
+
+	trait = cannibal
+	trait = lifespan_2
+
+	3220.1.1 = { birth = yes }
+	3399.1.1 = { death = { death_reason = death_dysentery } }
+}
+endrand_101 = {
+	name = "Faendal"
+	dynasty = dyn_endrand
+	religion = greenpact
+	culture = morathi
+
+	father = endrand_100
+	mother = thynsa_100b
+
+	trait = cannibal
+	trait = lifespan_2
+
+	3312.1.1 = { birth = yes }
+	3380.1.1 = { add_spouse = mandiron_101c }
+	3499.7.13 = { death = { death_reason = death_natural_causes } }
+}
+endrand_101b = {
+	name = "Perinor"
+	dynasty = dyn_endrand
+	religion = greenpact
+	culture = morathi
+
+	father = endrand_100
+	mother = thynsa_100b
+
+	trait = cannibal
+	trait = lifespan_2
+
+	3335.1.1 = { birth = yes }
+	3520.1.6 = { death = yes }
+}
+endrand_102 = {
+	name = "Egidnor"
+	dynasty = dyn_endrand
+	religion = greenpact
+	culture = morathi
+
+	father = endrand_101
+	mother = mandiron_101c
+
+	trait = cannibal
+	trait = lifespan_2
+
+	3386.1.1 = { birth = yes }
+	3574.1.1 = { death = yes }
+}
+endrand_102b = {
+	name = "Glinthinar"
+	dynasty = dyn_endrand
+	religion = greenpact
+	culture = morathi
+
+	father = endrand_101
+	mother = mandiron_101c
+	
+	trait = cannibal
+	trait = lifespan_2
+
+	3394.1.1 = { birth = yes }
+	3573.1.1 = { death = yes }
+}
+endrand_102c = {
+	name = "Dennilwen"
+	dynasty = dyn_endrand
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	father = endrand_101
+	mother = mandiron_101c
+	
+	trait = cannibal
+	trait = lifespan_2
+
+	3405.1.1 = { birth = yes }
+	3592.1.1 = { death = yes }
+}
+endrand_102d = {
+	name = "Lirela"
+	dynasty = dyn_endrand
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	father = endrand_101
+	mother = mandiron_101c
+	
+	trait = cannibal
+	trait = lifespan_2
+
+	3408.1.1 = { birth = yes }
+	3599.1.1 = { death = yes }
+}
+
+#Counts in Woodhearth
+brihil_98 = {
+	name = "Gelduin"
+	dynasty = dyn_brihil
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	trait = lifespan_2
+
+	3060.1.1 = { birth = yes }
+	3125.1.1 = { add_matrilineal_spouse = brihil_98_husband }
+	3254.1.5 = { death = yes }
+}
+brihil_98_husband = {
+	name = "Aglion"
+	religion = greenpact
+	culture = morathi
+
+	trait = lifespan_2
+
+	3053.1.1 = { birth = yes }
+	3246.1.1 = { death = yes }
+}
+brihil_99 = {
+	name = "Tholor"
+	dynasty = dyn_brihil
+	religion = greenpact
+	culture = morathi
+
+	mother = brihil_98
+	father = brihil_98_husband
+
+	trait = lifespan_2
+
+	3139.1.1 = { birth = yes }
+	3200.1.1 = { add_matrilineal_spouse = driladan_99b }
+	3330.8.14 = { death = yes }
+}
+brihil_100 = {
+	name = "Aglion"
+	dynasty = dyn_brihil
+	religion = greenpact
+	culture = morathi
+
+	father = brihil_99
+	mother = driladan_99b
+
+	trait = lifespan_2
+	trait = cannibal
+
+	3215.1.1 = { birth = yes }
+	3270.1.1 = { add_spouse = brihil_100_wife }
+	3402.9.22 = { death = yes }
+}
+brihil_100_wife = {
+	name = "Lorregil"
+	religion = greenpact
+	culture = morathi
+	female = yes
+	
+	trait = lifespan_2
+
+	3227.1.1 = { birth = yes }
+	3436.1.1 = { death = yes }
+}
+brihil_101 = {
+	name = "Thollunil"
+	religion = greenpact
+	culture = morathi
+	dynasty = dyn_brihil
+
+	father = brihil_100
+	mother = brihil_100_wife
+
+	trait = lifespan_2
+	trait = arrogant
+	trait = wrathful
+	trait = lustful
+	trait = lifestyle_hunter
+	trait = stuttering
+	trait = sign_ritual
+	trait = cannibal
+
+	3290.1.20 = { birth = yes }
+	3330.1.1 = { add_spouse = brihil_101_wife }
+	3484.1.1 = { trait = bubonic_plague }
+	3485.11.18 = { death = { death_reason = death_bubonic_plague } }
+}
+brihil_101_wife = {
+	name = "Arathel"
+	religion = greenpact
+	culture = morathi
+	female = yes
+	
+	trait = lifespan_2
+
+	3284.1.1 = { birth = yes }
+	3473.1.1 = { death = { death_reason = death_natural_causes } }
+}
+brihil_101_lover = {
+	name = "Galthel"
+	religion = greenpact
+	culture = morathi
+	female = yes
+	
+	trait = lifespan_2
+
+	3293.1.1 = { birth = yes }
+	3485.1.1 = { death = { death_reason = death_natural_causes } }
+}
+brihil_101b = {
+	name = "Aerledirre"
+	dynasty = dyn_brihil
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	father = brihil_100
+	mother = brihil_100_wife
+
+	trait = lifespan_2
+
+	3296.1.1 = { birth = yes }
+	#3369 - married to ayleid in woodhearth to secure his neutrality
+	3444.1.1 = { death = { death_reason = death_murder_known killer = rulanyil_101 }}
+}
+brihil_101c = { #Married to Oreyn Bearclaw
+	name = "Amariel"
+	dynasty = dyn_brihil
+	religion = greenpact
+	culture = morathi
+	female = yes
+	
+	father = brihil_100
+	mother = brihil_100_wife
+
+	trait = lifespan_2
+
+	3311.1.1 = { birth = yes }
+	3484.1.1 = { trait = bubonic_plague }
+	3485.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+brihil_102 = {
+	name = "Aranwen"
+	dynasty = dyn_brihil
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	father = brihil_101
+	mother = brihil_101_lover
+
+	trait = lifespan_2
+	trait = wild_oat
+	trait = adventurer
+	trait = greedy
+	trait = ambitious
+	trait = callous
+	trait = sign_serpent
+	trait = education_intrigue_3
+	trait = cannibal
+
+	3377.8.12 = { birth = yes }
+	3521.7.8 = { death = { death_reason = death_battle } }
+}
+brihil_102b = {
+	name = "Caentholrin"
+	dynasty = dyn_brihil
+	religion = greenpact
+	culture = morathi
+
+	father = brihil_101
+	mother = brihil_101_wife
+
+	trait = lifespan_2
+	trait = cannibal
+
+	3383.1.1 = { birth = yes }
+	3485.11.16 = { death = { death_reason = death_bubonic_plague } }
+}
+brihil_103 = {
+	name = "Essonarth"
+	dynasty = dyn_brihil
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	mother = brihil_102
+
+	trait = lifespan_2
+	trait = cannibal
+
+	3459.1.1 = { birth = yes }
+	3643.1.1 = { death = yes }
+}
+
+#Irillyth
+irillyth_98 = {
+	name = "Fithragaer"
+	dynasty = dyn_irillyth
+	religion = greenpact
+	culture = morathi
+
+	trait = lifespan_2
+	trait = family_first
+	trait = gregarious
+	trait = education_diplomacy_3
+
+	3078.1.1 = { birth = yes }
+	3150.1.1 = { add_spouse = irillyth_98_wife }
+	3261.6.9 = { death = yes }
+}
+irillyth_98_wife = {
+	name = "Mordaya"
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	trait = lifespan_2
+
+	3085.1.1 = { birth = yes }
+	3294.1.1 = { death = yes }
+}
+irillyth_99 = {
+	name = "Calenethel"
+	dynasty = dyn_irillyth
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	mother = irillyth_98_wife
+	father = irillyth_98
+
+	trait = lifespan_2
+
+	3159.1.1 = { birth = yes }
+	3152.1.1 = { add_spouse = irillyth_99_husband }
+	3347.7.23 = { death = yes }
+}
+irillyth_99_husband = {
+	name = "Calenethel"
+	religion = greenpact
+	culture = morathi
+
+	trait = lifespan_2
+
+	3162.1.1 = { birth = yes }
+	3348.1.1 = { death = yes }
+}
+irillyth_99b = { #Married to rayn_99
+	name = "Thaeril"
+	dynasty = dyn_irillyth
+	religion = greenpact
+	culture = morathi
+
+	mother = irillyth_98_wife
+	father = irillyth_98
+
+	trait = lifespan_2
+
+	3165.1.1 = { birth = yes }
+	3354.1.1 = { death = yes }
+}
+irillyth_99c = { #Married to Boldonor
+	name = "Barothlas"
+	dynasty = dyn_irillyth
+	religion = greenpact
+	culture = morathi
+
+	mother = irillyth_98_wife
+	father = irillyth_98
+
+	trait = lifespan_2
+
+	3172.1.1 = { birth = yes }
+	3290.1.1 = { death = { death_reason = death_hunting_trap } }
+}
+irillyth_100 = {
+	name = "Nalguin"
+	dynasty = dyn_irillyth
+	religion = greenpact
+	culture = morathi
+
+	mother = irillyth_99
+	father = irillyth_99_husband
+
+	trait = cannibal
+	trait = ambitious
+	trait = gluttonous
+	trait = honest
+	trait = education_martial_3
+	trait = lifespan_2
+
+	3251.1.1 = { birth = yes }
+	3359.6.1 = { add_character_flag = should_become_independent }
+	3437.11.18 = { death = yes }
+}
+
+#Counts in Woodhearth
+branck_98 = {
+	name = "Eridor"
+	dynasty = dyn_branck
+	religion = greenpact
+	culture = morathi
+
+	trait = lifespan_2
+
+	3095.1.1 = { birth = yes }
+	3160.1.1 = { add_spouse = branck_98_wife }
+	3276.9.9 = { death = yes }
+}
+branck_98_wife = {
+	name = "Rilineth"
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	trait = lifespan_2
+
+	3094.1.1 = { birth = yes }
+	3283.1.1 = { death = yes }
+}
+branck_99 = {
+	name = "Bendralas"
+	dynasty = dyn_branck
+	religion = greenpact
+	culture = morathi
+
+	father = branck_98
+	mother = branck_98_wife
+
+	trait = lifespan_2
+	trait = drunkard
+
+	3161.1.1 = { birth = yes }
+	3240.1.1 = { add_spouse = branck_99_wife }
+	3329.2.12 = { death = { death_reason = death_drinking_passive } }
+}
+branck_99_wife = {
+	name = "Malesse"
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	trait = lifespan_2
+
+	3170.1.1 = { birth = yes }
+	3358.1.1 = { death = { death_reason = death_natural_causes } }
+}
+branck_99b = { #Married to camoran_woodhearth_99
+	name = "Earnaana"
+	dynasty = dyn_branck
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	father = branck_98
+	mother = branck_98_wife
+	
+	trait = lifespan_2
+
+	3166.1.1 = { birth = yes }
+	3348.1.1 = { death = { death_reason = death_natural_causes } }
+}
+branck_100 = { #Zealous green pact, doesn't accept Faume's usurpation of Woodhearth
+	name = "Aerolor"
+	dynasty = dyn_branck
+	religion = greenpact
+	culture = morathi
+
+	father = branck_99
+	mother = branck_99_wife
+
+	trait = lifespan_2
+	trait = zealous
+	trait = brave
+	trait = stubborn
+	trait = sign_thief
+
+	3258.12.4 = { birth = yes }
+	3300.1.1 = { add_spouse = branck_100_wife }
+	3369.10.15 = { death = { death_reason = death_leech_health_magic killer = elyrimil_100 } }
+}
+branck_100_wife = {
+	name = "Lorwen"
+	religion = greenpact
+	culture = cyrobosmer
+	female = yes
+
+	trait = lifespan_2
+
+	3262.1.1 = { birth = yes }
+	3369.10.15 = { death = { death_reason = death_leech_health_magic killer = elyrimil_100 } }
+}
+branck_100b = {
+	name = "Aerin"
+	dynasty = dyn_branck
+	religion = hircine_cult
+	culture = morathi
+	female = yes
+
+	father = branck_99
+	mother = branck_99_wife
+
+	trait = lifespan_2
+
+	3266.1.1 = { birth = yes }
+	3372.1.6 = { death = { death_reason = death_duel killer = shatul_1000b } }
+}
+branck_101 = {
+	name = "Menelras"
+	dynasty = dyn_branck
+	religion = greenpact
+	culture = morathi
+
+	father = branck_100
+	mother = branck_100_wife
+
+	trait = lifespan_2
+	trait = sign_lover
+	
+	3330.2.27 = { birth = yes }
+	3369.1.1 = { employer = elyrimil_101 }
+	3513.1.1 = { death = yes }
+}
+branck_102 = {
+	name = "Niraniel"
+	dynasty = dyn_branck
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	father = branck_101
+
+	trait = lifespan_2
+
+	3406.1.1 = { birth = yes }
+	3599.1.1 = { death = yes }
+}
+
+#Pelda Tarn former Ayleid man
+etitan_99 = {
+	name = "Falicia"
+	dynasty = dyn_etitan
+	religion = wilderking
+	culture = morathi
+	female = yes
+
+	trait = lifespan_2
+
+	3170.1.1 = { birth = yes }
+	3250.1.1 = { add_spouse = etitan_99_husband }
+	3349.1.1 = { death = { death_reason = death_heart_attack } }
+}
+etitan_99_husband = {
+	name = "Amdir"
+	religion = wilderking
+	culture = mathmeldi
+
+	trait = lifespan_2
+
+	3176.1.1 = { birth = yes }
+	3363.1.1 = { death = { death_reason = death_old_age } }
+}
+etitan_100 = { 
+	name = "Celemaril" 
+	dynasty = dyn_etitan
+	religion = wilderking
+	culture = morathi
+
+	mother = etitan_99
+	father = etitan_99_husband
+
+	trait = lifespan_2
+	trait = education_magic_3
+	trait = reclusive
+	trait = shy
+	trait = paranoid
+	trait = deceitful
+	trait = education_learning_3
+	trait = sign_thief
+	
+	3250.12.7 = { birth = yes }
+	3442.1.1 = { death = yes }
+}
+etitan_100b = { #Married to Garnona
+	name = "Altrissimicka" 
+	dynasty = dyn_etitan
+	religion = wilderking
+	culture = morathi
+	female = yes
+
+	mother = etitan_99
+	father = etitan_99_husband
+
+	trait = education_magic_2
+	trait = lifespan_2
+	
+	3263.1.1 = { birth = yes }
+	3423.1.1 = { death = { death_reason = death_accident } }
+}
+
+#EK TODO: expand dynasty. Maybe they survive somehow and get new county somewhere 
+#Cuuldri, vassals of altmer
+cuuldri_99 = {
+	name = "Garniel"
+	dynasty = dyn_cuuldri
+	religion = greenpact
+	culture = morathi
+	female = yes
+	
+	trait = lifespan_2
+
+	3194.1.1 = { birth = yes }
+	3342.5.30 = { death = { death_reason = death_natural_causes } }
+}
+cuuldri_100 = {
+	name = "Adandora"
+	dynasty = dyn_cuuldri
+	religion = greenpact
+	culture = morathi
+	female = yes
+
+	mother = cuuldri_99
+	
+	trait = lifespan_2
+
+	3289.1.1 = { birth = yes }
+	3462.1.1 = { death = yes }
+}
+cuuldri_101 = {
+	name = "Natesse"
+	dynasty = dyn_cuuldri
+	culture = morathi
+	religion = greenpact
+	female = yes
+
+	mother = cuuldri_100
+
+	trait = zealous
+	trait = lifespan_2
+
+	3344.1.1 = { birth = yes }
+	3528.1.1 = { death = yes }
+}
+
+#EK TODO: unused
+#Lowborns
+longhaven_001 = { # Longhaven
+	name = "Gwilir"
+	religion = greenpact
+	culture = morathi
+	
+	trait = lifespan_2
+
+	3250.9.1 = { birth = yes }
+	3440.1.1 = { death = yes }
+}
+
+longhaven_002 = { #Leader of Longhaven in ESO
+	name = "Breduin" #Lore
+	religion = greenpact
+	culture = morathi
+	
+	trait = lifespan_2
+	trait = gregarious
+	trait = diligent
+	trait = content
+	trait = education_stewardship_3
+
+	3430.1.1 = { birth = yes }
+	3610.1.7 = { death = yes }
+}
+
+#Arananga
+arananga_001 = {
+	name = "Althomir"
+	religion = wilderking
+	culture = morathi
+	
+	trait = lifespan_2
+
+	3230.1.1 = { birth = yes }
+	3405.1.1 = { death = yes }
+}
+
+arananga_002 = {
+	name = "Maruin"
+	religion = wilderking
+	culture = morathi
+
+	father = arananga_001
+
+	trait = calm
+	trait = compassionate
+	trait = gregarious
+	trait = lifespan_2
+
+	3319.1.1 = { birth = yes }
+	3501.1.1 = { death = yes }
+}
+
+rootwater_001 = { # Rootwater
+	name = "Balia"
+	religion = hermaeus_cult
+	culture = morathi
+	female = yes
+	
+	trait = lifespan_2
+
+	3280.9.1 = { birth = yes }
+	3480.12.26 = { death = yes }
+}
+
+rootwater_002 = { #ESO character
+	name = "Saromir" #Lore
+	religion = hermaeus_cult
+	culture = morathi
+	
+	trait = lifespan_2
+	trait = lunatic_1
+	trait = trusting
+
+	3382.9.1 = { birth = yes }
+	3505.1.7 = { death = yes }
+}
+
+####################
+### Adventurers  ###
+####################
+
+### Wanderers
+aramril_100 = { # Aramril
+	name = "Aramril"
+	culture = morathi
+	religion = greenpact
+	female = yes
+
+	trait = lifespan_2
+	trait = sign_steed
+	trait = intellect_good_1
+
+	trait = arrogant
+	trait = brave
+	trait = arbitrary
+
+	trait = education_martial_3
+	trait = education_magic_3
+	trait = arcana_good_2
+	trait = battlemage
+	disallow_random_traits = yes
+
+	3323.6.27 = { birth = yes }
+	3343.1.1 = {
+		effect = { 
+			add_destruction_perk_effect = { LEVEL = 5 }
+		}
+	}
+	3350.1.1 = { move_to_pool = yes }
+	3502.1.1 = { death = { death_reason = death_apocrypha } } # gets lost in Apocrypha
+}
+
+
+#Legolas reference
+greenleaf_1 = {
+	name = "Legolas"
+	dynasty = dyn_orodhel
+	religion = greenpact
+	culture = morathi
+
+	trait = education_martial_prowess_4
+	trait = lifespan_2
+
+	3331.7.9 = { birth = yes }
+	3515.1.6 = { death = yes }
+}
+
+### LAAMPS
+quickstep_100 = {
+	name = "Morthelos"
+	dynasty = dyn_fyrethoch
+	culture = morathi
+	religion = hircine_cult
+
+	trait = lifespan_2
+	trait = sign_steed
+
+	trait = arrogant
+	trait = sadistic
+	trait = impatient
+
+	trait = education_martial_3
+	trait = lifestyle_hunter
+	trait = gallowsbait
+	trait = cannibal
+
+	3277.6.12 = { birth = yes }
+	3359.1.1 = {
+		effect = { 
+			add_trait_xp = {
+				trait = lifestyle_hunter
+				track = hunter
+				value = 30
+			}
+			add_trait_xp = {
+				trait = gallowsbait
+				track = poacher
+				value = 20
+			}
+		}
+	}
+	3360.1.1 = {
+		# EK NOTE: has to do this instead of using give_lycan_secret_or_trait_effect if we want this guy to not be an open lycan, due to his faith accepting it
+		add_secret = { type = secret_lycan }
+		add_character_flag = lycan
+		add_trait = irritable_lycan
+		add_character_modifier = secret_lycan_modifier
+	}
+	3370.1.1 = {
+		effect = {
+			add_trait = scarred
+			add_trait_xp = {
+				trait = scarred
+				value = 50
+			}
+			add_trait_xp = {
+				trait = gallowsbait
+				track = poacher
+				value = 40
+			}
+			add_trait_xp = {
+				trait = gallowsbait
+				track = marauder
+				value = 20
+			}
+			if = {
+				limit = { character:varantha_100 = { is_alive = yes } }
+				set_relation_rival = { reason = rival_historical target = character:varantha_100 }
+			}
+		}
+	}
+	3376.1.1 = { death = { death_reason = death_lycan_hunters } }
+}

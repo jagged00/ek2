@@ -1,0 +1,433 @@
+﻿#Baandari traders in Valenwood (Silvenar)
+tavaknai_1 = {
+	name = "Ratassir"
+	religion = baandari_code
+	culture = baandari
+	dynasty = dyn_tavaknai
+	trait = furstock_cathay
+
+	3310.1.1 = { birth = yes }
+	3380.1.7 = { death = yes }
+}
+
+tavaknai_2 = {
+	name = "Jora"
+	religion = baandari_code
+	culture = baandari
+	dynasty = dyn_tavaknai
+	father = tavaknai_1
+	trait = furstock_pahmar
+
+	3350.1.1 = { birth = yes }
+	3400.1.7 = { death = yes }
+}
+
+#Tenmori caravan
+siirtokal_999 = {
+	name = "Zargal"
+	dynasty = dyn_siirtokal
+	culture = baandari
+	religion = baandari_code
+
+	trait = furstock_pahmar
+
+	3244.1.1 = { birth = yes }
+	3310.1.1 = { death = yes }
+}
+siirtokal_100 = {
+	name = "Riswathi"
+	dynasty = dyn_siirtokal
+	culture = baandari
+	religion = baandari_code
+
+	father = siirtokal_999
+
+	#furstock
+	trait = furstock_suthay
+	trait = sign_steed
+	trait = education_stewardship_3
+	trait = greedy
+	trait = wrathful
+	trait = gluttonous
+
+	3295.6.23 = { birth = yes }
+	3365.8.15 = { death = yes }
+}
+
+siirtokal_101 = {
+	name = "Abanji"
+	dynasty = dyn_siirtokal
+	culture = baandari
+	religion = baandari_code
+	female = yes
+
+	father = siirtokal_100
+
+	#furstock
+	trait = furstock_cathay
+	trait = lustful
+	trait = gregarious
+	trait = trusting
+	trait = sign_mage
+	trait = education_diplomacy_3
+
+	3325.4.21 = { birth = yes }
+	3386.6.19 = { death = yes }
+}
+
+siirtokal_101b = { #HistoryToDo 527: give him his own caravan outside of Elsweyr?
+	name = "Kasan"
+	dynasty = dyn_siirtokal
+	culture = baandari
+	religion = baandari_code
+
+	father = siirtokal_100
+
+	#furstock
+	trait = furstock_pahmar
+	trait = sign_apprentice
+
+	3335.7.21 = { birth = yes }
+	3385.4.17 = { death = yes }
+}
+
+siirtokal_102 = {
+	name = "Riswathi"
+	dynasty = dyn_siirtokal
+	culture = baandari
+	religion = baandari_code
+
+	mother = siirtokal_101
+
+	#furstock
+	trait = furstock_dagi
+	trait = sign_lord
+
+	3343.3.19 = { birth = yes }
+	3402.8.23 = { death = yes }
+}
+
+siirtokal_102b = {
+	name = "Ilara"
+	dynasty = dyn_siirtokal
+	culture = baandari
+	religion = baandari_code
+	mother = siirtokal_101
+	female = yes
+	sexuality = homosexual
+
+	#furstock
+	trait = furstock_pahmar
+	trait = sign_atronach
+
+	3348.11.22 = { birth = yes }
+	3400.5.4 = { death = yes }
+}
+
+siirtokal_103 = {
+	name = "Sadir"
+	dynasty = dyn_siirtokal
+	culture = baandari
+	religion = baandari_code
+
+	father = siirtokal_102
+
+	3368.1.1 = { birth = yes }
+	3437.1.1 = { death = yes }
+}
+
+siirtokal_104 = { #Swears allegiance to Dune to keep peace
+	name = "Khalima"
+	dynasty = dyn_siirtokal
+	culture = baandari
+	religion = baandari_code
+	female = yes
+
+	father = siirtokal_103
+
+	trait = furstock_cathay
+	trait = education_learning_4
+	trait = calm
+	trait = patient
+	trait = compassionate
+
+	3396.1.1 = { birth = yes }
+	3469.1.1 = { death = yes }
+}
+
+#History ToDo: add a bunch more dynasty members who die from Knahaten, dynasty itself should survive though
+siirtokal_105 = {
+	name = "Mazaka"
+	dynasty = dyn_siirtokal
+	culture = baandari
+	religion = baandari_code
+
+	mother = siirtokal_104
+
+	3433.1.1 = { birth = yes }
+	3490.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+
+siirtokal_106 = {
+	name = "Mahazi"
+	dynasty = dyn_siirtokal
+	culture = baandari
+	religion = baandari_code
+	female = yes
+
+	father = siirtokal_105
+
+	3461.1.1 = { birth = yes }
+	3530.1.1 = { death = yes }
+}
+
+#Durres Baandari tribe
+korahz_100 = {
+	name = "Vasa"
+	dynasty = dyn_korahz
+	culture = baandari
+	religion = baandari_code
+	female = yes
+
+	trait = furstock_cathay
+	trait = sign_atronach
+	trait = education_intrigue_2
+	trait = deceitful
+	trait = greedy
+	trait = impatient
+
+	3323.11.11 = { birth = yes }
+	3350.1.1 = { add_matrilineal_spouse = verqara_101b }
+	3381.11.11 = { death = yes }
+}
+
+korahz_101 = {
+	name = "Mahazi"
+	dynasty = dyn_korahz
+	culture = baandari
+	religion = baandari_code
+	female = yes
+
+	father = verqara_101b
+	mother = korahz_100
+
+	trait = curious
+	trait = sign_thief
+	trait = furstock_pahmar
+
+	3355.12.8 = { birth = yes }
+	3426.1.1 = { death = yes }
+}
+
+korahz_102 = {
+	name = "Khalama"
+	dynasty = dyn_korahz
+	culture = baandari
+	religion = baandari_code
+	female = yes
+
+	mother = korahz_101
+
+	3379.1.1 = { birth = yes }
+	3433.1.1 = { death = { death_reason = death_disappearance } } #Lost in the desert
+}
+
+korahz_102b = {
+	name = "Sarshar"
+	dynasty = dyn_korahz
+	culture = baandari
+	religion = baandari_code
+
+	mother = korahz_101
+
+	3383.1.1 = { birth = yes }
+	3441.1.1 = { death = yes }
+}
+
+korahz_103 = {
+	name = "Kanzin"
+	dynasty = dyn_korahz
+	culture = baandari
+	religion = baandari_code
+
+	father = korahz_102b
+
+	3410.1.1 = { birth = yes }
+	3473.1.1 = { death = yes }
+}
+
+#Daryaj monks
+#History ToDo: unused
+daryaj_100 = {
+	name = "Kunira_daro"
+	culture = baandari
+	religion = baandari_code
+	female = yes
+
+	trait = furstock_cathay
+	trait = education_learning_3
+	trait = deceitful
+	trait = gregarious
+	trait = calm
+	trait = clan_parent
+	trait = sign_mage
+
+	3315.4.4 = { birth = yes }
+	3391.1.1 = { death = yes }
+}
+
+daryaj_101 = {
+	name = "Mideyah"
+	culture = baandari
+	religion = baandari_code
+	female = yes
+
+	trait = furstock_suthay
+
+	3359.1.1 = { birth = yes }
+	3391.1.1 = { trait = clan_parent }
+	3424.1.1 = { death = yes }
+}
+
+daryaj_102 = {
+	name = "Mazy"
+	culture = baandari
+	religion = baandari_code
+	female = yes
+
+	#furstock
+	trait = furstock_cathay_raht
+	trait = clan_parent
+
+	3396.1.1 = { birth = yes }
+	3461.1.1 = { death = yes }
+}
+
+daryaj_103 = {
+	name = "Hezura"
+	culture = baandari
+	religion = baandari_code
+	female = yes
+
+	3420.1.1 = { birth = yes }
+	3461.1.1 = { trait = clan_parent }
+	3498.1.1 = { death = yes }
+}
+
+daryaj_104 = {
+	name = "Khurra"
+	culture = baandari
+	religion = baandari_code
+	female = yes
+
+	3450.1.1 = { birth = yes }
+	3498.1.1 = { trait = clan_parent }
+	3539.1.1 = { death = yes }
+}
+
+#Cathay leaders
+zrish_100 = {
+	name = "Dartaad"
+	dynasty = dyn_zrish
+	culture = baandari
+	religion = baandari_code
+
+	#furstock
+	trait = furstock_dagi #Alfiq when implemented
+	trait = sign_ritual
+	trait = education_stewardship_3
+	trait = ambitious
+	trait = gregarious
+	trait = cynical
+
+	3341.1.22 = { birth = yes }
+	3359.1.1 = {
+		effect = {
+			if = {
+				limit = { character:shabu_101c = { is_alive = yes } }				
+				set_relation_friend = { reason = friend_generic_history target = character:shabu_101c }
+				set_relation_lover = { reason = lover_history target = character:shabu_101c }
+			}
+		}
+		add_spouse = shabu_101c
+	}
+	3396.1.1 = { death = yes }
+}
+
+zrish_101 = {
+	name = "Savar"
+	dynasty = dyn_zrish
+	culture = baandari
+	religion = baandari_code
+
+	father = zrish_100
+	mother = shabu_101c 
+
+	#furstock
+	trait = furstock_cathay
+	trait = sign_lady
+
+	3368.9.19 = { birth = yes }
+	3390.1.1 = { add_spouse = verqara_102b }
+	3423.1.1 = { death = yes }
+}
+
+zrish_102 = {
+	name = "Ahnissi"
+	dynasty = dyn_zrish
+	culture = baandari
+	religion = baandari_code
+	female = yes
+
+	father = zrish_101
+	mother = verqara_102b
+
+	trait = furstock_cathay
+
+	3395.1.1 = { birth = yes }
+	3458.1.1 = { death = yes }
+}
+
+zrish_103 = {
+	name = "Mahkar"
+	dynasty = dyn_zrish
+	culture = baandari
+	religion = baandari_code
+
+	mother = zrish_102
+
+	3422.1.1 = { birth = yes }
+	3487.1.1 = { death = yes }
+}
+
+zrish_104 = {
+	name = "Aza"
+	dynasty = dyn_zrish
+	culture = baandari
+	religion = baandari_code
+	female = yes
+
+	father = zrish_103
+
+	3445.1.1 = { birth = yes }
+	3521.1.1 = { death = yes }
+}
+
+### Laamps
+jashanzir_100 = {
+	name = "Ashima"
+	dynasty = dyn_jashanzir
+	religion = baandari_code
+	culture = baandari
+	female = yes
+	#Furstock
+	trait = furstock_cathay
+
+	trait = greedy
+	trait = just
+	trait = fickle
+	trait = education_stewardship_4
+
+	3334.2.4 = { birth = yes }
+	3392.1.1 = { death = yes }
+}

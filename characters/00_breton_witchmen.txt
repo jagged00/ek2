@@ -1,0 +1,2999 @@
+﻿#Arthe Dynasty (dyn_arthe)
+arthe_97 = {
+	name = "Jeanne"
+	dynasty = dyn_arthe
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	trait = education_magic_3
+
+	3239.1.1 = { birth = yes }
+	3289.1.1 = { death = yes }
+}
+arthe_98 = {
+	name = "Ales"
+	dynasty = dyn_arthe
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	mother = arthe_97
+
+	trait = education_diplomacy_3
+	
+	3263.1.1 = { birth = yes }
+	3290.1.1 = { add_spouse = arthe_98_husband }
+	3327.1.1 = { death = yes }
+}
+arthe_98_husband = {
+	name = "Ylbert"
+	culture = witchman
+	religion = witchman_faith
+
+	3268.1.1 = { birth = yes }
+	3321.1.1 = { death = yes }
+}
+arthe_99 = {
+	name = "Joncis"
+	dynasty = dyn_arthe
+	culture = witchman
+	religion = witchman_faith
+
+	mother = arthe_98
+	father = arthe_98_husband
+
+	trait = education_stewardship_2
+	trait = education_magic_2
+	
+	3297.1.1 = { birth = yes }
+	3326.1.1 = { add_spouse = dalomax_99b }
+	3351.6.3 = { death = { death_reason = death_hunting_accident } }
+}
+arthe_99b = {
+	name = "Celence"
+	dynasty = dyn_arthe
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	mother = arthe_98
+	father = arthe_98_husband
+
+	trait = sign_lady
+	trait = education_intrigue_2
+	trait = education_magic_2
+	trait = fickle
+	trait = brave
+	trait = zealous
+
+	3298.9.24 = { birth = yes }
+	3364.1.1 = { death = yes }
+}
+arthe_100 = {
+	name = "Simine"
+	dynasty = dyn_arthe
+	culture = witchman
+	religion = witchman_faith
+
+	father = arthe_99
+	mother = dalomax_99b
+
+	trait = education_learning_3
+	trait = education_magic_3
+	trait = sadistic
+	trait = content
+	trait = gregarious
+	trait = sign_shadow
+	
+	3328.5.22 = { birth = yes }
+	3353.1.1 = { add_spouse = arthe_100_wife }
+	3354.1.1 = { set_relation_rival = { reason = rival_claimed_my_title target = character:ence_101 } } # Scarp should be mine!
+	3395.1.1 = { death = yes }
+}
+arthe_100_wife = {
+	name = "Fianna"
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	trait = education_martial_1
+	trait = education_magic_1
+	trait = aggressive_attacker
+	trait = sadistic
+	trait = gluttonous
+	trait = gregarious
+	trait = sign_mage
+
+	3329.4.14 = { birth = yes }
+	3391.1.1 = { death = yes }
+}
+arthe_100b = {
+	name = "Gilbara"
+	dynasty = dyn_arthe
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	father = arthe_99
+	mother = dalomax_99b
+
+	trait = education_stewardship_3
+	trait = education_magic_2
+	trait = shy
+	trait = chaste
+	trait = compassionate
+	trait = sign_lord
+
+	3331.3.25 = { birth = yes }
+	# 3358 marries sarkarain_101
+	3401.1.1 = { death = yes }
+}
+arthe_100c = {
+	name = "Reges"
+	dynasty = dyn_arthe
+	culture = witchman
+	religion = witchman_faith
+
+	father = arthe_99
+	mother = dalomax_99b
+
+	trait = sign_mage
+	trait = wild_oat
+	trait = education_learning_1
+	trait = education_magic_1
+	trait = vengeful
+	trait = trusting
+	trait = fickle
+
+	3335.4.22 = { birth = yes }
+	3375.6.3 = { death = { death_reason = death_hunting_accident } }
+}
+arthe_101 = {
+	name = "Marelle"
+	dynasty = dyn_arthe
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+	
+	father = arthe_100
+	mother = arthe_100_wife
+
+	trait = rowdy
+	trait = sign_lord
+	disallow_random_traits = yes
+	
+	3356.3.30 = { birth = yes }
+	3369.1.1 = {
+		trait = deceitful
+		trait = impatient
+	}
+	3372.1.1 = {
+		remove_trait = rowdy
+		trait = education_intrigue_2
+		trait = education_magic_3
+		trait = zealous
+	}
+	3405.1.1 = { death = yes }
+}
+arthe_101b = {
+	name = "Nilas"
+	dynasty = dyn_arthe
+	culture = witchman
+	religion = witchman_faith
+	
+	father = arthe_100
+	mother = arthe_100_wife
+
+	trait = sign_shadow
+	
+	3359.5.17 = { birth = yes }
+	3405.1.1 = { death = yes }
+}
+arthe_102 = {
+	name = "Gregory"
+	dynasty = dyn_arthe
+	culture = witchman
+	religion = witchman_faith
+
+	father = arthe_101
+
+	3382.1.1 = { birth = yes }
+	3438.1.1 = { death = yes }
+}
+
+#Jolvanne Dynasty (dyn_jolvanne)
+jolvanne_98 = {
+	name = "Alexandra"
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	trait = education_republican_knowledge_2 #Mayor/village leader
+
+	3174.1.1 = { birth = yes }
+	3225.1.1 = { death = yes }
+}
+jolvanne_99 = {
+	name = "Telfour"
+	dynasty = dyn_jolvanne
+	culture = witchman
+	religion = witchman_faith
+
+	mother = jolvanne_98
+
+	trait = education_magic_3
+	trait = arcana_good_3
+	
+	3299.1.1 = { birth = yes }
+	3330.1.1 = { add_spouse = jolvanne_99_wife }
+	3349.1.1 = { death = yes }
+}
+jolvanne_99_wife = {
+	name = "Isabella"
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	3305.1.1 = { birth = yes }
+	3374.1.1 = { death = yes }
+}
+jolvanne_100 = {
+	name = "Agrard"
+	dynasty = dyn_jolvanne
+	culture = witchman
+	religion = witchman_faith
+
+	father = jolvanne_99
+	mother = jolvanne_99_wife
+
+	trait = deceitful
+	trait = callous
+	trait = shy
+	trait = education_intrigue_4
+	trait = education_magic_2
+	trait = sign_shadow
+	trait = arcana_good_1
+	
+	3335.5.19 = { birth = yes }
+	3361.1.1 = { add_spouse = jolvanne_100_wife }
+	3401.1.1 = { death = yes }
+}
+jolvanne_100_wife = {
+	name = "Lily"
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	3337.1.1 = { birth = yes }
+	3378.1.1 = { death = yes }
+}
+jolvanne_100b = {
+	name = "Falette"
+	dynasty = dyn_jolvanne
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+	sexuality = heterosexual
+
+	father = jolvanne_99
+	mother = jolvanne_99_wife
+
+	trait = education_diplomacy_2
+	trait = education_magic_2
+	trait = sign_atronach
+	trait = compassionate
+	trait = arbitrary
+	trait = craven
+	trait = arcana_good_1
+	
+	3337.11.28 = { birth = yes }
+	# 3359 marries tailas_101
+	3401.1.1 = { death = yes }
+}
+jolvanne_100c = {
+	name = "Ulrich"
+	dynasty = dyn_jolvanne
+	culture = witchman
+	religion = witchman_faith
+
+	father = jolvanne_99
+	mother = jolvanne_99_wife
+
+	trait = education_martial_1
+	trait = education_magic_1
+	trait = sign_apprentice
+	trait = stubborn
+	trait = ambitious
+	trait = forgiving
+	trait = arcana_good_1
+	
+	3339.7.3 = { birth = yes }
+	3401.1.1 = { death = yes }
+}
+jolvanne_101 = {
+	name = "Thetrard" 
+	dynasty = dyn_jolvanne
+	culture = witchman
+	religion = witchman_faith
+	
+	father = jolvanne_100
+	mother = jolvanne_100_wife
+	
+	trait = arcana_good_1
+	
+	3362.1.1 = { birth = yes }
+	3425.1.1 = { death = yes }
+}
+jolvanne_102 = {
+	name = "Rose"
+	dynasty = dyn_jolvanne
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	father = jolvanne_101
+
+	3391.1.1 = { birth = yes }
+	3462.1.1 = { death = yes }
+}
+
+#Dalomax Dynasty (dyn_dalomax)
+dalomax_96 = {
+	name = "Evandene"
+	dynasty = dyn_dalomax
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	trait = sadistic
+	trait = wrathful
+	trait = vengeful
+
+	trait = education_martial_2
+	trait = education_magic_2
+	
+	3222.1.1 = { birth = yes }
+	3276.1.1 = { death = { death_reason = death_ill } }
+}
+dalomax_97 = {
+	name = "Mercedene"
+	dynasty = dyn_dalomax
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	mother = dalomax_96
+
+	trait = education_martial_3
+	trait = education_magic_2
+	trait = sadistic
+	trait = zealous
+	trait = diligent
+	
+	3250.1.1 = { birth = yes }
+	3294.7.10 = { death = { death_reason = death_battle } }
+}
+dalomax_98 = {
+	name = "Merard"
+	dynasty = dyn_dalomax
+	culture = witchman
+	religion = witchman_faith
+	
+	mother = dalomax_97
+	
+	trait = education_magic_3
+	
+	3276.1.1 = { birth = yes }
+	3298.1.1 = { add_spouse = dalomax_98_wife}
+	3333.1.1 = { death = yes }
+}
+dalomax_98_wife = {
+	name = "Kynbellairn"
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	trait = education_learning_1
+	
+	3279.1.1 = { birth = yes }
+	3359.1.1 = { death = yes }
+}
+dalomax_99 = {
+	name = "Dunyn"
+	dynasty = dyn_dalomax
+	culture = witchman
+	religion = witchman_faith
+	
+	father = dalomax_98
+	mother = dalomax_98_wife
+
+	trait = education_martial_3
+	trait = education_magic_3
+	trait = wrathful
+	trait = ambitious
+	trait = patient
+	trait = sign_warrior
+	prowess = 6
+	
+	3300.8.13 = { birth = yes }
+	3329.1.1 = { add_concubine = dalomax_99_concubine }
+	3356.3.17  = { death = { death_reason = death_duel } } #Random duel
+}
+dalomax_99_concubine = {
+	name = "Mya"
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	trait = education_learning_1
+	trait = education_magic_1
+	trait = content
+	trait = diligent
+	trait = gregarious
+	trait = beauty_good_1
+
+	3311.1.1 = { birth = yes }
+	3370.1.1 = { trait = pneumonic }
+	3371.1.1 = { death = { death_reason = death_pneumonic } }
+}
+dalomax_99b = {
+	name = "Erith"
+	dynasty = dyn_dalomax
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	father = dalomax_98
+	mother = dalomax_98_wife
+
+	trait = education_learning_3
+	trait = education_magic_3
+	trait = content
+	trait = patient
+	trait = calm
+	trait = sign_lord
+
+	3308.3.9 = { birth = yes }
+	3367.1.1 = { death = yes }
+}
+dalomax_100 = {
+	name = "Fenas"
+	dynasty = dyn_dalomax
+	culture = witchman
+	religion = witchman_faith
+	
+	father = dalomax_99
+	mother = dalomax_99_concubine
+
+	trait = child_of_concubine_female
+	trait = education_intrigue_3
+	trait = education_magic_3
+	trait = vengeful
+	trait = gregarious
+	trait = greedy
+	
+	3330.1.1 = { birth = yes }
+	3350.1.1 = { add_spouse = dalomax_100_wife }
+	3367.1.1 = { death = yes }
+}
+dalomax_100_wife = {
+	name = "Gohlla"
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	trait = education_stewardship_1
+	trait = education_magic_4
+	trait = sign_mage
+	trait = honest
+	trait = impatient
+	trait = gluttonous
+
+	3332.4.20 = { birth = yes }
+	3394.1.1 = { death = yes }
+}
+dalomax_101 = {
+	name = "Merard" 
+	dynasty = dyn_dalomax
+	culture = witchman
+	religion = witchman_faith
+	
+	father = dalomax_100
+	mother = dalomax_100_wife
+
+	trait = sign_warrior
+	trait = intellect_bad_1 # not the fastest chicken in the coop
+	
+	3352.8.3 = { birth = yes }
+	3368.8.3 = {
+		trait = education_magic_1
+	}
+	3415.1.1 = { death = yes }
+}
+dalomax_101b = {
+	name = "Pryner"
+	dynasty = dyn_dalomax
+	culture = witchman
+	religion = witchman_faith
+	
+	father = dalomax_100
+	mother = dalomax_100_wife
+
+	trait = sign_atronach
+	
+	3354.11.19 = { birth = yes }
+	3406.1.1 = { death = yes }
+}
+dalomax_101c = {
+	name = "Isolen"
+	dynasty = dyn_dalomax
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+	
+	father = dalomax_100
+	mother = dalomax_100_wife
+
+	trait = sign_shadow
+	
+	3359.5.26 = { birth = yes }
+	3405.1.1 = { death = yes }
+}
+dalomax_102 = {
+	name = "Merard"
+	dynasty = dyn_dalomax
+	culture = witchman
+	religion = witchman_faith
+
+	father  = dalomax_101b
+
+	trait = child_of_concubine_female
+
+	3377.1.1 = { birth = yes }
+	3431.1.1 = { death = yes }	
+}
+dalomax_103 = {
+	name = "Vienne"
+	dynasty = dyn_dalomax
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	father = dalomax_102
+
+	3411.1.1 = { birth = yes }
+	3457.1.1 = { death = yes }
+}
+
+#Tailas Dynasty (dyn_tailas)
+tailas_99 = {
+	name = "Adeber"
+	dynasty = dyn_tailas
+	culture = witchman
+	religion = witchman_faith
+
+	3284.1.1 = { birth = yes }
+	3346.1.1 = { death = yes }
+}
+tailas_100 = {
+	name = "Melra"
+	dynasty = dyn_tailas
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+	sexuality = heterosexual
+
+	father = tailas_99
+	
+	trait = education_learning_3
+	trait = education_magic_3
+	trait = brave
+	trait = calm
+	trait = trusting
+	trait = sign_lover
+	
+	3318.2.26 = { birth = yes }
+	3343.1.1 = { add_matrilineal_spouse = ence_101b }
+	3382.1.1 = { death = yes }
+}
+tailas_101 = {
+	name = "Daric" 
+	dynasty = dyn_tailas
+	culture = witchman
+	religion = witchman_faith
+	
+	mother = tailas_100
+	father = ence_101b
+	
+	trait = sign_tower
+	trait = diligent
+	trait = arrogant
+	trait = generous
+	trait = education_intrigue_1
+	trait = education_magic_2
+	
+	3343.10.27 = { birth = yes }
+	3359.1.1 = { add_spouse = jolvanne_100b }
+	3383.1.1 = { death = yes }
+}
+tailas_101b = {
+	name = "Elgeryl"
+	dynasty = dyn_tailas
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	mother = tailas_100
+	father = ence_101b
+
+	trait = sign_ritual
+	trait = education_learning_2
+	trait = education_magic_3
+	trait = diligent
+	trait = patient
+	trait = gregarious
+
+	3347.1.12 = { birth = yes }
+	3386.1.1 = { death = yes }
+}
+tailas_102 = {
+	name = "Tyra"
+	dynasty = dyn_tailas
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	father = tailas_101
+	mother = jolvanne_100b
+
+	trait = twin
+	trait = sign_mage
+
+	3363.4.7 = { birth = yes }
+	3409.1.1 = { death = { death_reason = death_battle } }
+}
+tailas_102b = {
+	name = "Lirielle"
+	dynasty = dyn_tailas
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	father = tailas_101
+	mother = jolvanne_100b
+
+	trait = twin
+	trait = sign_mage
+
+	3363.4.7 = { birth = yes }
+	3426.1.1 = { death = yes }
+}
+tailas_103 = {
+	name = "Ferarilie"
+	dynasty = dyn_tailas
+	culture = witchman
+	religion = witchman_faith
+
+	mother = tailas_102b
+	
+	trait = education_magic_4
+
+	3391.1.1 = { birth = yes }
+	3440.1.1 = {
+		effect = {
+			add_trait = lifespan_magic_1
+			add_character_flag = artificial_lifespan
+			add_character_flag = natural_lifespan_0
+		}
+	}
+	3497.1.1 = { death = { death_reason = death_natural_causes } }
+}
+tailas_104 = {
+	name = "Fasele"
+	dynasty = dyn_tailas
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	mother = tailas_103
+
+	3425.1.1 = { birth = yes }
+	3490.1.1 = { birth = yes }
+}
+tailas_105 = {
+	name = "Emusette"
+	dynasty = dyn_tailas
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	mother = tailas_104
+
+	3450.1.1 = { birth = yes }
+	3512.1.1 = { death = yes }
+}
+tailas_105b = {
+	name = "Marq"
+	dynasty = dyn_tailas
+	culture = witchman
+	religion = witchman_faith
+
+	mother = tailas_104
+
+	3461.1.1 = { birth = yes }
+	3480.1.1 = {
+		trait = holy_warrior
+		trait = order_member
+	}
+	3503.1.1 = { death = yes }
+}
+
+##Ence Dynasty (dyn_ence)
+ence_98 = {
+	name = "Fiona"
+	dynasty = dyn_ence
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	3234.1.1 = { birth = yes }
+	3285.1.1 = { death = yes }
+}
+ence_99 = {
+	name = "Melisandre"
+	dynasty = dyn_ence
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	mother = ence_98
+
+	3258.1.1 = { birth = yes }
+	3331.1.1 = { death = yes }
+}
+ence_100 = {
+	name = "Pea"
+	dynasty = dyn_ence
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	mother = ence_99
+	
+	trait = education_magic_2
+	
+	3287.1.1 = { birth = yes }
+	3320.1.1 = { add_matrilineal_spouse = ence_100_husband }
+	3364.1.1 = { death = yes }
+}
+ence_100_husband = {
+	name = "Adlan"
+	culture = witchman
+	religion = witchman_faith
+	
+	trait = education_magic_1
+	
+	3289.1.1 = { birth = yes }
+	3353.1.1 = { death = { death_reason = death_battle } }
+}
+ence_101 = {
+	name = "Uratra"
+	dynasty = dyn_ence
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+	sexuality = homosexual
+	
+	mother = ence_100
+	father = ence_100_husband
+
+	trait = education_martial_2
+	trait = education_magic_2
+	trait = humble
+	trait = stubborn
+	trait = paranoid
+	trait = sign_lover
+
+	3323.2.17 = { birth = yes }
+	3353.1.1 = { 
+		effect = { # become friends during the Invasion
+			if = {
+				limit = { character:tailas_100 = { is_alive = yes } }
+				set_relation_friend = { reason = friend_generic_history target = character:tailas_100 }
+			}
+		}
+	}
+	3356.3.14 = { add_matrilineal_spouse = ence_101_husband }
+	3364.6.7 = {
+		effect = {
+			if = {
+				limit = { character:ence_101_husband = { is_alive = yes } }
+				set_relation_friend = { reason = friend_generic_history target = character:ence_101_husband } 
+			}
+		}
+	}
+	3391.1.6 = { death = yes }
+}
+ence_101_husband = {
+	name = "Gondynach"
+	culture = witchman
+	religion = witchman_faith
+	sexuality = homosexual
+
+	trait = education_diplomacy_3
+	trait = education_magic_1
+	trait = humble
+	trait = compassionate
+	trait = calm
+	trait = sign_steed
+
+	3324.6.16 = { birth = yes }
+	3395.1.1 = { death = yes }
+}
+ence_101b = {
+	name = "Altian"
+	dynasty = dyn_ence
+	culture = witchman
+	religion = witchman_faith
+
+	mother = ence_100
+	father = ence_100_husband
+
+	trait = education_stewardship_2
+	trait = education_magic_3
+	trait = sign_thief
+	trait = brave
+	trait = patient
+	trait = gregarious
+
+	3325.12.29 = { birth = yes }
+	# 3343 marries tailas_100
+	3391.1.1 = { death = yes }
+}
+ence_102 = {
+	name = "Gebriel"
+	dynasty = dyn_ence
+	culture = witchman
+	religion = witchman_faith
+
+	mother = ence_101
+	father = ence_101_husband
+
+	trait = sign_thief
+
+	3356.12.6 = { birth = yes }
+	3391.4.15 = { death = yes }
+}
+ence_102b = {
+	name = "Layren"
+	dynasty = dyn_ence
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	mother = ence_101
+	father = ence_101_husband
+
+	trait = sign_mage
+
+	3359.4.18 = { birth = yes }
+	3399.1.1 = { death = yes }
+}
+ence_102c = {
+	name = "Drisene"
+	dynasty = dyn_ence
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	mother = ence_101
+	father = ence_101_husband
+
+	trait = sickly
+	trait = sign_shadow
+
+	3364.5.30 = { birth = yes }
+	3364.6.6 = { death = { death_reason = death_sickly }}
+}
+ence_103 = {
+	name = "Lanard"
+	dynasty = dyn_ence
+	culture = witchman
+	religion = witchman_faith
+
+	father = ence_102
+
+	3383.1.1 = { birth = yes }
+	3404.1.1 = { death = yes }
+}
+ence_104 = {
+	name = "Saric"
+	dynasty = dyn_ence
+	culture = witchman
+	religion = witchman_faith
+
+	mother = ence_102b
+
+	3382.1.1 = { birth = yes }
+	3456.1.1 = { death = yes }
+}
+
+
+#Knotbeard Dynasty (dyn_phirrienele)
+knotbeard_98 = {
+	name = "Roberick"
+	dynasty = dyn_knotbeard #EK TODO: can be a nordic house somewhere (probably in Haafingar due to proximity)
+	culture = westmarcher
+	religion = witchman_faith
+
+	3275.1.1 = { birth = yes }
+	3329.1.1 = { death = yes }
+}
+phirrienele_99 = {
+	name = "Taryce"
+	dynasty = dyn_knotbeard
+	culture = witchman
+	religion = witchman_faith
+
+	father = knotbeard_98
+
+	trait = education_magic_4
+
+	3302.1.1 = { birth = yes }
+	3326.1.1 = { 
+		add_spouse = phirrienele_99_wife
+		dynasty = dyn_phirrienele #Witchmanization
+	}
+	3349.1.1 = { death = yes }
+}
+phirrienele_99_wife = {
+	name = "Uaile"
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	3297.1.1 = { birth = yes }
+	3331.8.6 = { death = {death_reason = death_childbirth} }
+}
+phirrienele_100 = {
+	name = "Duaric"
+	dynasty = dyn_phirrienele
+	culture = witchman
+	religion = witchman_faith
+	sexuality = bisexual
+
+	father = phirrienele_99
+	mother = phirrienele_99_wife
+
+	trait = zealous
+	trait = brave
+	trait = generous
+	trait = education_intrigue_2
+	trait = education_magic_2
+	trait = sign_thief
+	
+	3329.12.16 = { birth = yes }
+	3354.2.26 = { 
+		effect = { 
+			set_relation_soulmate = { reason = soulmate_wedding_accepting_partner target = character:phirrienele_100_husband } 
+		}
+	}
+	3355.1.1 = { add_same_sex_spouse = phirrienele_100_husband }
+	3362.1.1 = { add_concubine = phirrienele_100_concubine1 }
+	3367.1.1 = { add_concubine = phirrienele_100_concubine2 }
+	3391.1.1 = { death = yes }
+}
+phirrienele_100_husband = {
+	name = "Tynan"
+	culture = witchman
+	religion = witchman_faith
+	sexuality = homosexual
+
+	trait = ambitious
+	trait = lazy
+	trait = compassionate
+	trait = education_intrigue_1
+	trait = education_magic_3
+	trait = sign_lover
+
+	3333.2.29 = { birth = yes }
+	3374.1.1 = { death = yes }
+}
+phirrienele_100_concubine1 = {
+	name = "Edana"
+    religion = witchman_faith
+    culture = witchman
+	female = yes
+	
+	trait = sign_lord
+
+	trait = education_magic_3
+
+	3341.3.1 = { birth = yes }
+	3391.1.1 = { death = yes }
+}
+phirrienele_100_concubine2 = {
+	name = "Lilou"
+    religion = witchman_faith
+    culture = witchman
+	female = yes
+
+	trait = sign_serpent
+
+	trait = education_magic_4
+
+	3343.2.28 = { birth = yes }
+	3395.1.1 = { death = yes }
+}
+phirrienele_100b = {
+	name = "Adelyne"
+	dynasty = dyn_phirrienele
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+	sexuality = heterosexual
+
+	father = phirrienele_99
+	mother = phirrienele_99_wife
+
+	trait = education_martial_3
+	trait = education_magic_1
+	trait = generous
+	trait = trusting
+	trait = patient
+
+	3331.8.6 = { birth = yes }
+	# doesn't track, so it just costs performance
+	#3353.1.1 = { add_matrilineal_spouse = phirrienele_100_husband }
+	#3355.12.3 = { remove_spouse = phirrienele_100_husband }
+	# opinions however work :>
+	3354.3.5 = {
+		effect = {
+			add_opinion = {
+				target = character:phirrienele_100
+				modifier = slept_with_spouse_exposed_opinion
+				opinion = -30
+			}
+			add_opinion = {
+				target = character:phirrienele_100_husband
+				modifier = unfaithful_spouse_discovered_opinion
+				opinion = -60
+			}
+		}
+	}
+	3355.12.3 = {
+		effect = {
+			add_opinion = {
+				target = character:phirrienele_100
+				modifier = forced_divorce_opinion
+				opinion = -30
+			}
+			add_opinion = {
+				target = character:phirrienele_100_husband
+				modifier = divorced_me_opinion
+				opinion = -25
+			}
+		}
+	}
+	3356.1.1 = { employer = charien_100 }
+	# 3359 marries charien_100
+	3393.1.1 = { death = yes }
+}
+phirrienele_101 = {
+    name = "Loriel" 
+	dynasty = dyn_phirrienele
+    religion = witchman_faith
+    culture = witchman
+    female = yes
+
+    father = phirrienele_100
+	mother = phirrienele_100_concubine1
+
+	trait = sign_lover
+	trait = child_of_concubine_female
+
+    3365.2.14 = { birth = yes }
+    3435.5.2 = { death = { death_reason = death_natural_causes } }
+}
+phirrienele_101b = {
+    name = "Ylvandre" 
+    dynasty = dyn_phirrienele
+    religion = witchman_faith
+    culture = witchman
+	female = yes
+
+    father = phirrienele_100
+	mother = phirrienele_100_concubine2
+
+	trait = sign_mage
+	trait = child_of_concubine_female
+
+    3369.4.13 = { birth = yes }
+    3397.1.17 = {
+		sexuality = bisexual
+        add_same_sex_spouse = phirrienele_101b_spouse
+    }
+    3439.12.13 = { death = { death_reason = death_natural_causes } }
+}
+phirrienele_101b_spouse = {
+    name = "Mairrna" 
+    religion = witchman_faith
+    culture = witchman
+    female = yes
+
+    sexuality = homosexual
+    trait = zealous
+    trait = honest
+    trait = just
+
+    3380.4.3 = { birth = yes }
+    3452.1.8 = { death = { death_reason = death_natural_causes } }
+}
+phirrienele_102 = {
+	name = "Geor"
+	dynasty = dyn_phirrienele
+    religion = witchman_faith
+    culture = witchman
+
+	mother = phirrienele_101
+
+	trait = education_magic_3
+
+	3391.1.1 = { birth = yes }
+	3452.1.1 = { death = { death_reason = death_chrondiasis } }
+}
+
+#Charien
+charien_99 = {
+	name = "Corien"
+	# no dynasty is intentional, Uracain is the founder
+	culture = witchman
+	religion = witchman_faith
+
+	3276.1.1 = { birth = yes }
+	3317.1.1 = { add_spouse = charien_99_wife}
+	3351.1.1 = { death = yes }
+}
+charien_99_wife = {
+	name = "Avelra"
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	trait = sign_steed
+	trait = gregarious
+	trait = fickle
+	trait = impatient
+	trait = beauty_good_1
+	trait = education_diplomacy_1
+
+	3301.6.5 = { birth = yes }
+	# 3317 marries charien_99
+	# 3354 marries blackmoon_999
+	3369.1.1 = { death = yes }
+}
+charien_100 = {
+	name = "Voleric"
+	culture = witchman
+	religion = witchman_faith
+
+	father = charien_99
+	mother = charien_99_wife
+
+	trait = education_intrigue_2
+	trait = lifestyle_poet
+	trait = warlike_court_1
+	trait = content
+	trait = impatient
+	trait = compassionate
+	trait = sign_atronach
+	trait = education_magic_2
+	
+	3318.11.23 = { birth = yes }
+	3355.1.1 = {
+		dynasty = dyn_charien
+	}
+	3359.1.1 = { add_spouse = phirrienele_100b }
+	3372.1.1 = { death = yes }
+}
+charien_101 = {
+	name = "Allunen"
+	dynasty = dyn_charien
+	culture = witchman
+	religion = witchman_faith
+
+	father = charien_100
+	mother = phirrienele_100b
+
+	trait = sign_atronach
+
+	3363.11.12 = { birth = yes }
+	3399.1.1 = { death = yes }
+}
+charien_101b = {
+	name = "Perrere"
+	dynasty = dyn_charien
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	father = charien_100
+	mother = phirrienele_100b
+
+	trait = sign_mage
+
+	3366.4.27 = { birth = yes }
+	3427.1.1 = { death = yes }
+}
+charien_102 = {
+	name = "Sosia"
+	dynasty = dyn_charien
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	mother = charien_101b
+
+	3402.1.1 = { birth = yes }
+	3455.1.1 = { death = yes }
+}
+
+#Suadurix Dynasty (dyn_suadurix)
+#Original bjoule house
+suadurix_99 = {
+	name = "Acco"
+	dynasty = dyn_suadurix
+	culture = bjoule
+	religion = forgotten_gods
+
+	trait = sign_mage
+
+	3299.4.4 = { birth = yes }
+	3330.1.1 = { add_spouse = suadurix_99_wife }
+	3354.1.1 = { death = yes }
+}
+suadurix_99_wife = {
+	name = "Cantismerta"
+	culture = bjoule
+	religion = forgotten_gods
+	female = yes
+
+	trait = education_martial_1
+	trait = compassionate
+	trait = patient
+	trait = temperate
+	trait = sign_thief
+	learning = 9
+
+	3310.12.7 = { birth = yes }
+	3371.1.1 = { death = yes }
+}
+suadurix_100 = {
+	name = "Abruna"
+	dynasty = dyn_suadurix
+	culture = bjoule
+	religion = forgotten_gods
+	female = yes
+
+	trait = education_martial_3
+	trait = callous
+	trait = ambitious
+	trait = temperate
+	trait = adulterer
+	trait = sign_lord
+
+	father = suadurix_99
+	mother = suadurix_99_wife
+	
+	3331.3.29 = { birth = yes }
+	3351.1.1 = { add_matrilineal_spouse = suadurix_100_husband }
+	3399.1.1 = { death = yes }
+}
+suadurix_100_husband = {
+	name = "Verkingetorix"
+	culture = bjoule
+	religion = forgotten_gods
+
+	trait = education_intrigue_2
+	trait = callous
+	trait = patient
+	trait = trusting
+	trait = sign_lover
+
+	3332.2.14 = { birth = yes }
+	3401.1.1 = { death = yes }
+}
+suadurix_100b = {
+	name = "Boudiaca"
+	dynasty = dyn_suadurix
+	culture = bjoule
+	religion = forgotten_gods
+	female = yes
+
+	father = suadurix_99
+	mother = suadurix_99_wife
+
+	trait = education_stewardship_3
+	trait = callous
+	trait = temperate
+	trait = arbitrary
+	trait = sign_shadow
+
+	3336.5.8 = { birth = yes }
+	3401.1.1 = { death = yes }
+}
+suadurix_101 = {
+	name = "Uesuca"
+	dynasty = dyn_suadurix
+	culture = bjoule
+	religion = forgotten_gods
+	female = yes
+
+	mother = suadurix_100
+	father = suadurix_100_husband
+
+	trait = sign_apprentice
+
+	3355.7.8 = { birth = yes }
+	3405.1.1 = {
+		dynasty_house = dyn_sele #Witchmanization
+		culture = witchman
+		religion = witchman_faith
+	}
+	3418.1.1 = { death = yes }
+}
+suadurix_101b = {
+	name = "Lutumo"
+	dynasty = dyn_suadurix
+	culture = bjoule
+	religion = forgotten_gods
+
+	trait = sign_ritual
+
+	mother = suadurix_100
+	father = suadurix_100_husband
+
+	3359.1.12 = { birth = yes }
+	3421.1.1 = { death = yes }
+}
+sele_102 = {
+	name = "Cloustria"
+	dynasty_house = dyn_sele
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	mother = suadurix_101
+	
+	trait = education_magic_2
+
+	3377.1.1 = { birth = yes }
+	3438.1.1 = { death = yes }
+}
+sele_103 = {
+	name = "Barteau"
+	dynasty_house = dyn_sele
+	culture = witchman
+	religion = witchman_faith
+
+	mother = sele_102
+
+	trait = education_magic_4
+
+	3406.1.1 = { birth = yes }
+	3475.1.1 = { death = yes }
+}
+sele_104 = {
+	name = "Baldric"
+	dynasty_house = dyn_sele
+	culture = witchman
+	religion = witchman_faith
+
+	father = sele_103
+
+	3433.1.1 = { birth = yes }
+	3462.1.1 = { death = { death_reason = death_battle } }
+}
+sele_104b = {
+	name = "Renchant"
+	dynasty_house = dyn_sele
+	culture = witchman
+	religion = witchman_faith
+
+	father = sele_103
+
+	3438.1.1 = { birth = yes }
+	3497.1.1 = { death = yes }
+}
+
+#Amelion Dynasty (Oxshire)
+amelion_97 = {
+	name = "Lantoine"
+	dynasty = dyn_amelion
+	culture = witchman
+	religion = witchman_faith
+
+	3234.1.1 = { birth = yes }
+	3252.1.1 = { add_spouse = amelion_97_wife }
+	3273.1.1 = { death = yes }
+}
+amelion_97_wife = {
+	name = "Blynnie"
+	female = yes
+	culture = witchman
+	religion = witchman_faith
+
+	3232.1.1 = { birth = yes }
+	3271.1.1 = { death = yes }
+}
+amelion_98 = {
+	name = "Percival"
+	dynasty = dyn_amelion
+	culture = witchman
+	religion = witchman_faith
+
+	father = amelion_97
+	mother = amelion_97_wife
+
+	3253.1.1 = { birth = yes }
+	3313.1.1 = { death = yes }
+}
+amelion_98b = {
+	name = "Grobert"
+	dynasty = dyn_amelion
+	culture = witchman
+	religion = witchman_faith
+
+	father = amelion_97
+	mother = amelion_97_wife
+
+	3259.1.1 = { birth = yes }
+	# 3285 marries 
+	3315.1.1 = { death = yes }
+}
+amelion_99 = {
+	name = "Mordane"
+	dynasty = dyn_amelion
+	culture = witchman
+	religion = witchman_faith
+
+	father = amelion_98
+
+	3281.1.1 = { birth = yes }
+	3300.1.1 = { add_spouse = amelion_99_wife }
+	3340.1.1 = { death = yes }
+}
+amelion_99_wife = {
+	name = "Una"
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	3287.1.1 = { birth = yes }
+	3348.1.1 = { death = yes }
+}
+amelion_99b = {
+	name = "Ofelia"
+	dynasty = dyn_amelion
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	father = amelion_98
+
+	trait = education_stewardship_2
+	trait = education_magic_2
+	trait = temperate
+	trait = generous
+	trait = diligent
+	trait = sign_atronach
+
+	3285.11.28 = { birth = yes }
+	#3310 marries moile_99
+	3376.1.1 = { death = yes }
+}
+amelion_100 = {
+	name = "Edwin"
+	dynasty = dyn_amelion
+	culture = witchman
+	religion = witchman_faith
+
+	father = amelion_99
+	mother = amelion_99_wife
+
+	trait = education_stewardship_3
+	trait = education_magic_2
+	trait = diligent
+	trait = sadistic
+	trait = temperate
+
+	3304.1.1 = { birth = yes }
+	3339.1.1 = { add_spouse = cenno_99c }
+	3358.1.1 = { death = yes }
+}
+amelion_100c = {
+	name = "Phinis"
+	dynasty = dyn_amelion
+	culture = witchman
+	religion = witchman_faith
+
+	father = amelion_99
+	mother = amelion_99_wife
+
+	trait = temperate
+	trait = generous
+	trait = lustful
+	trait = education_intrigue_2
+	trait = education_magic_2
+	trait = sign_atronach
+
+	3309.11.29 = { birth = yes }
+	3327.1.1 = { add_spouse = woodborne_1000_sister }
+	3367.1.1 = { death = yes }
+}
+amelion1_101 = {
+	name = "Aaric"
+	dynasty = dyn_amelion
+	culture = witchman
+	religion = witchman_faith
+
+	father = amelion_100c
+	mother = woodborne_1000_sister
+
+	trait = lazy
+	trait = lustful
+	trait = forgiving
+	trait = education_learning_4
+	trait = education_magic_4
+	trait = sign_apprentice
+
+	3331.7.30 = { birth = yes }
+	3367.12.2 = { death = { death_reason = death_accident } }
+}
+amelion1_101b = {
+	name = "Margaret"
+	dynasty = dyn_amelion
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	trait = chaste
+	trait = trusting
+	trait = honest
+	trait = education_diplomacy_3
+	trait = education_magic_2
+	trait = sign_lord
+
+	father = amelion_100c
+	mother = woodborne_1000_sister
+
+	3334.3.21 = { birth = yes }
+	# 3350 marries dumonte_1000
+	3391.9.1 = { death = yes }
+}
+amelion_101 = {
+	name = "Roberto" #Count of Oxshire (Interregnum)
+	dynasty = dyn_amelion
+	culture = witchman
+	religion = witchman_faith
+
+	father = amelion_100
+	mother = cenno_99c
+
+	trait = stubborn
+	trait = greedy
+	trait = gregarious
+	trait = education_diplomacy_3
+	trait = education_magic_2
+	trait = sign_thief
+
+	3338.12.17 = { birth = yes }
+	3363.1.1 = { trait = one_eyed }
+	3400.1.1 = { death = yes }
+}
+amelion_101b = {
+	name = "Sosara"
+	dynasty = dyn_amelion
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	father = amelion_100
+	mother = cenno_99c
+
+	trait = education_diplomacy_2
+	trait = education_magic_1
+	trait = temperate
+	trait = honest
+	trait = lazy
+	trait = sign_shadow
+
+	3341.5.27 = { birth = yes }
+	3398.1.1 = { death = yes }
+}
+amelion_102 = {
+	name = "Lazare" #Count of Orlais
+	dynasty = dyn_amelion
+	culture = witchman
+	religion = witchman_faith
+
+	father = amelion_101
+
+	trait = education_magic_3
+
+	3372.1.1 = { birth = yes }
+	3436.1.1 = { death = yes }
+}
+amelion_103 = {
+	name = "Anthony"
+	dynasty = dyn_amelion
+	culture = witchman
+	religion = witchman_faith
+
+	father = amelion_102
+
+	trait = education_magic_3
+
+	3407.1.1 = { birth = yes }
+	3461.1.1 = { death = yes }
+}
+amelion_104 = {
+	name = "Ulrich" #Count of Orlais (Kamal)
+	dynasty = dyn_amelion
+	culture = witchman
+	religion = witchman_faith
+
+	father = amelion_103
+
+	trait = legitimized_bastard
+
+	3425.1.1 = { birth = yes }
+	3487.1.1 = { death = yes }
+}
+amelion_104b = {
+	name = "Hannibal" #Heir to Orlais (Kamal)
+	dynasty = dyn_amelion
+	culture = witchman
+	religion = witchman_faith
+
+	father = amelion_103
+
+	3436.1.1 = { birth = yes }
+	3454.1.1 = { death = yes }
+}
+amelion_104c = {
+	name = "Marcella"
+	dynasty = dyn_amelion
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	father = amelion_104b
+
+	3442.1.1 = { birth = yes }
+	3461.1.1 = { death = { death_reason = death_mysterious } }
+}
+amelion_105 = {
+	name = "Torvic"
+	dynasty = dyn_amelion
+	culture = witchman
+	religion = witchman_faith
+
+	father = amelion_104
+
+	3455.1.1 = { birth = yes }
+	3519.1.1 = { death = yes }
+}
+
+##Moile Dynasty
+
+#House Moile
+moile_95 = {
+	name = "Weynon"
+	dynasty = dyn_moile
+	culture = witchman
+	religion = witchman_faith
+
+	3155.1.1 = { birth = yes }
+	3217.1.1 = { death = yes }
+}
+moile_96 = {
+	name = "Ambroise"
+	dynasty = dyn_moile
+	culture = witchman
+	religion = witchman_faith
+
+	father = moile_95
+
+	3184.1.1 = { birth = yes }
+	3253.1.1 = { death = yes }
+}
+moile_97 = {
+	name = "Aronil"
+	dynasty = dyn_moile
+	culture = witchman
+	religion = witchman_faith
+
+	father = moile_96
+
+	3206.1.1 = { birth = yes }
+	3249.1.1 = { death = yes }
+}
+moile_98 = {
+	name = "Solomon"
+	dynasty = dyn_moile
+	culture = witchman
+	religion = witchman_faith
+
+	father = moile_97
+
+	3235.1.1 = { birth = yes }
+	3270.1.1 = { add_spouse = moile_98_wife }
+	3301.9.7 = { death = yes }
+}
+moile_98_wife = {
+	name = "Elivette"
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	3242.1.1 = { birth = yes }
+	3312.1.1 = { death = yes }
+}
+moile_99 = {
+	name = "Philipe"
+	dynasty = dyn_moile
+	culture = witchman
+	religion = witchman_faith
+
+	father = moile_98
+	mother = moile_98_wife
+	
+	trait = education_magic_4
+	trait = sign_lover
+	trait = adulterer
+
+	3271.2.3 = { birth = yes }
+	3310.1.1 = { add_spouse = amelion_99b }
+	3346.6.22 = { death = yes } #Good at magick, lived for a while
+}
+moile_99b = {
+	name = "Vincent"
+	dynasty = dyn_moile
+	culture = witchman
+	religion = witchman_faith
+
+	father = moile_98
+	mother = moile_98_wife
+
+	3273.1.16 = { birth = yes }
+	3337.1.1 = { death = yes }
+}
+moile_99b1 = {
+	name = "Roxanne"
+	dynasty = dyn_moile
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	father = moile_99b
+
+	trait = education_learning_2
+	trait = education_magic_1
+	trait = calm
+	trait = stubborn
+	trait = callous
+	trait = sign_shadow
+
+	3304.5.27 = { birth = yes }
+	# 3329 marrries branquette_999
+	3373.1.1 = { death = yes }
+}
+moile_100 = {
+	name = "Aronil" 
+	dynasty = dyn_moile
+	religion = witchman_faith
+	culture = witchman
+
+	#Not very good at magic, but good at diplomacy
+	trait = education_diplomacy_3
+	trait = education_magic_2
+	trait = compassionate
+	trait = gregarious
+	trait = paranoid
+	trait = physique_bad_1
+	trait = sign_lover
+
+	father = moile_99
+	mother = amelion_99b
+
+	3313.2.14 = { birth = yes }
+	3344.1.1 = { add_spouse = moile_100_wife }
+	3358.1.1 = { set_relation_friend = { reason = friend_generic_history target = character:dumonte_1000 } }
+	3365.1.1 = {
+		effect = {
+			add_opinion = {
+				target = character:gardner_1000
+				modifier = unfriendly_opinion
+				opinion = -25
+			}
+		}
+	}
+	3368.1.1 = { death = { death_reason = death_natural_causes } }
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_beards=male_beard_western_03
+			custom_hair=male_hair_mena_01
+		}
+	}
+}
+moile_100_wife = {
+	name = "Evangelina"
+	religion = witchman_faith
+	culture = witchman
+	female = yes
+
+	trait = education_stewardship_1
+	trait = education_magic_2
+	trait = craven
+	trait = just
+	trait = ambitious
+	trait = sign_apprentice
+
+	3319.7.19 = { birth = yes }
+	3368.1.1 = { death = yes }
+}
+moile_100b = {
+	name = "Evelyssa"
+	dynasty = dyn_moile
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	father = moile_99
+	mother = amelion_99b
+
+	trait = education_magic_3
+	trait = education_learning_2
+	trait = calm
+	trait = chaste
+	trait = diligent
+	trait = sign_mage
+	trait = lisping
+	trait = shrewd
+
+	3329.4.16 = { birth = yes }
+	3358.1.1 = { add_arcana_skill = { VALUE = 7 } }
+	3359.1.1 = {
+		employer = moile_100
+		effect = {
+			liege = {
+				appoint_court_position = {
+					recipient = root
+					court_position = court_mage_court_position
+				}
+			}
+			if = {
+				limit = {
+					has_dlc_feature = royal_court
+				}
+				create_inspiration = book_inspiration
+			}
+		}
+	}
+	3362.1.1 = { add_matrilineal_spouse = moile_100b_husband }
+	3396.1.1 = { death = yes }
+}
+moile_100b_husband = {
+	name = "Percival"
+	culture = witchman
+	religion = witchman_faith
+
+	3331.1.1 = { birth = yes }
+	3392.1.1 = { death = yes }
+}
+moile_100c = {
+	name = "Vienne"
+	dynasty = dyn_moile
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	father = moile_99
+
+	trait = bastard
+	trait = education_learning_2
+	trait = education_magic_2
+	trait = diligent
+	trait = calm
+	trait = deceitful
+	trait = sign_ritual
+
+	3339.1.8 = { birth = yes }
+	# 3365 marries gardner_1001
+	3399.1.1 = { death = yes }
+}
+moile_100d = {
+	name = "Tristane"
+	dynasty = dyn_moile
+	culture = witchman
+	religion = witchman_faith
+
+	father = moile_99
+
+	trait = dwarf
+	trait = bastard
+	trait = education_magic_1
+
+	3296.1.1 = { birth = yes }
+	3358.1.1 = { death = yes }
+}
+moile_100e = { #Married to madach_100
+	name = "Mathieu"
+	dynasty = dyn_moile
+	culture = witchman
+	religion = witchman_faith
+	sexuality = homosexual
+
+	father = moile_99
+	
+	trait = bastard
+	trait = education_magic_2
+
+	3309.1.1 = { birth = yes }
+	3379.1.1 = { death = yes }
+}
+moile_101 = {
+	name = "Percival" #Heir of Evermore
+	dynasty = dyn_moile
+	culture = witchman
+	religion = witchman_faith
+
+	disallow_random_traits = yes
+	trait = sign_tower
+	trait = trusting
+	trait = charming
+
+	father = moile_100
+	mother = moile_100_wife
+
+	3346.10.24 = { birth = yes }
+	3362.10.24 =  {
+		remove_trait = charming
+		trait = education_diplomacy_3
+		trait = education_magic_2
+		trait = ambitious
+		trait = gregarious
+	}
+	3367.1.1 = { add_spouse = moile_101_spouse }
+	3411.1.1 = { death = yes }
+}
+moile_101_spouse = {
+	name = "Morgana"
+	religion = nord_cult
+	culture = westmarcher
+	female = yes
+
+	trait = education_martial_1
+	trait = sign_mage
+	trait = brave
+	trait = patient
+	trait = trusting
+
+	3347.4.4 = { birth = yes }
+	3367.1.1 = { 
+		effect = {
+			if = {
+				limit = { character:moile_101 = { is_alive = yes } }
+				set_relation_rival = { reason = rival_historical target = character:moile_101 }
+			}
+		} 
+	}
+	3421.1.1 = { death = yes }
+}
+moile_101b = {
+	name = "Hamelin" #Second son of Evermore
+	dynasty = dyn_moile
+	culture = witchman
+	religion = witchman_faith
+
+	disallow_random_traits = yes
+	trait = content
+	trait = curious
+	trait = sign_lady
+
+	father = moile_100
+	mother = moile_100_wife
+
+	3350.9.27 = { birth = yes }
+	3366.9.27 = {
+		remove_trait = curious
+		trait = fickle
+		trait = lustful
+		trait = education_intrigue_2
+		trait = education_magic_2
+	}
+	3407.1.1 = { death = yes }
+}
+moile_102 = {
+	name = "Ranser"
+	dynasty = dyn_moile
+	culture = witchman
+	religion = witchman_faith
+
+	trait = sign_thief
+
+	father = moile_101
+	mother = moile_101_spouse
+
+	3369.12.12 = { birth = yes }
+	3429.1.1 = { death = yes }
+}
+
+#House Vuitton
+vuitton_100 = { #theoretical moile_999
+	name = "Louis"
+	dynasty_house = dyn_vuitton
+	religion = witchman_faith
+	culture = witchman
+
+	father = moile_99b
+	
+	trait = education_magic_1
+
+	3297.1.1 = { birth = yes }
+	3321.1.1 = { add_spouse = ojwa_99b }
+	3361.1.1 = { death = yes }
+}
+vuitton_101 = {
+	name = "Octieve"
+	dynasty_house = dyn_vuitton
+	religion = witchman_faith
+	culture = witchman
+
+	father = vuitton_100
+	mother = ojwa_99b
+
+	trait = education_learning_3
+	trait = education_magic_3
+	trait = lazy
+	trait = compassionate
+	trait = cynical
+	trait = sign_lord
+
+	3324.7.3 = { birth = yes }
+	3349.1.1 = { add_spouse = oldland_1001_sister }
+	3376.1.1 = { death = yes }
+}
+vuitton_102 = {
+	name = "Roderic"
+	dynasty_house = dyn_vuitton
+	religion = witchman_faith
+	culture = witchman
+
+	father = vuitton_101
+	mother = oldland_1001_sister
+	
+	trait = sign_lord
+	
+	3350.3.19 = { birth = yes }
+	3366.3.19 = {
+		trait = education_magic_2
+	}
+	3407.1.1 = { death = yes }
+}
+vuitton_102b = {
+	name = "Coraline"
+	dynasty_house = dyn_vuitton
+	religion = witchman_faith
+	culture = witchman
+	female = yes
+	
+	father = vuitton_101
+	mother = oldland_1001_sister
+
+	trait = sign_lady
+	
+	3352.9.26 = { birth = yes }
+	3368.9.26 = {
+		trait = education_magic_3
+	}
+	3414.1.1 = { death = yes }
+}
+
+##Guimard Dynasty (Monarchs of Evermore after 542)
+
+#House Guimard
+guy_marde = {
+	name = "Guy" # Lore, Guy Marde of the River Banks
+	dynasty = dyn_marde
+	culture = bjoule
+	religion = witchman_faith #Urbanized bjoule
+	
+	trait = education_magic_3
+
+	2989.1.1 = { birth = yes }
+	3029.1.1 = { give_nickname = nick_rivver_banke }
+	3054.1.1 = { death = yes }
+}
+guimard_90 = {
+	name = "Olsien" #Lore
+	dynasty = dyn_marde
+	culture = bjoule
+	religion = witchman_faith
+
+	father = guy_marde
+
+	3020.1.1 = { birth = yes }
+	#2260.1.1 = { give_nickname = nick_baron_captain } 
+	3095.1.1 = { death = yes }
+}
+guimard_91 = {
+	name = "Martinne"
+	dynasty = dyn_marde
+	culture = bjoule
+	religion = witchman_faith
+	female = yes
+
+	father = guimard_90
+
+	3055.1.1 = { birth = yes }
+	3121.1.1 = { death = yes }
+}
+guimard_92 = {
+	name = "Falinne"
+	dynasty = dyn_marde
+	culture = bjoule
+	religion = witchman_faith
+	female = yes
+
+	mother = guimard_91
+
+	3080.1.1 = { birth = yes }
+	3133.1.1 = { death = yes }
+}
+guimard_93 = {
+	name = "Marq" #Lore
+	dynasty = dyn_marde
+	culture = bjoule
+	religion = witchman_faith
+
+	mother = guimard_92
+
+	3110.1.1 = { birth = yes }
+	3153.1.1 = { death = yes }
+}
+guimard_93b = {
+	name = "Guillaume"
+	dynasty = dyn_marde
+	culture = bjoule
+	religion = witchman_faith
+
+	mother = guimard_92
+
+	trait = compassionate
+
+	3113.1.1 = { birth = yes }
+	3165.1.1 = { death = yes }
+}
+guimard_94 = {
+	name = "Jean_Pierre"
+	dynasty_house = dyn_guimard
+	culture = witchman #Witchmanization complete
+	religion = witchman_faith
+
+	father = guimard_93b
+
+	3138.1.1 = { birth = yes }
+	3197.1.1 = { death = yes }
+}
+guimard_95 = {
+	name = "Perien"
+	dynasty_house = dyn_guimard
+	culture = witchman
+	religion = witchman_faith
+
+	father = guimard_94
+
+	trait = legitimized_bastard
+
+	3158.1.1 = { birth = yes }
+	3216.1.1 = { death = yes }
+}
+guimard_96 = {
+	name = "Ylbert"
+	dynasty_house = dyn_guimard
+	culture = witchman
+	religion = witchman_faith
+
+	father = guimard_95
+
+	3188.1.1 = { birth = yes }
+	3256.1.1 = { death = yes }
+}
+guimard_96b = {
+	name = "Jean_Pierre"
+	dynasty_house = dyn_guimard
+	culture = witchman
+	religion = witchman_faith
+
+	father = guimard_95
+
+	3191.1.1 = { birth = yes }
+	3251.1.1 = { death = yes }
+}
+guimard_97 = {
+	name = "Brandon"
+	dynasty_house = dyn_guimard
+	culture = witchman
+	religion = witchman_faith
+
+	father = guimard_96b
+
+	3221.1.1 = { birth = yes }
+	3298.1.1 = { death = yes }
+}
+guimard_98 = {
+	name = "Cristophe"
+	dynasty_house = dyn_guimard
+	culture = witchman
+	religion = witchman_faith
+
+	father = guimard_97
+
+	3252.1.1 = { birth = yes }
+	3269.1.1 = { add_spouse = dumonte_998_sister }
+	3304.1.1 = { death = yes }
+}
+guimard_99 = {
+	name = "Meric"
+	dynasty_house = dyn_guimard
+	culture = witchman
+	religion = witchman_faith
+
+	father = guimard_98
+	mother = dumonte_998_sister
+
+	trait = zealous
+	trait = stubborn
+	trait = shy
+	trait = education_martial_2
+	trait = education_magic_3
+	trait = open_terrain_expert
+	trait = sign_tower
+
+	3288.10.21 = { birth = yes }
+	3314.1.1 = { add_spouse = guimard_99_wife }
+	3330.1.1 = { set_relation_friend = { reason = friend_generic_history target = character:rafir_99 } }
+	3351.10.13 = { death = { death_reason = death_orsinium } } # died in Orsinium	
+}
+guimard_99_wife = {
+	name = "Vannona"
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	trait = zealous
+	trait = gregarious
+	trait = humble
+	trait = education_learning_2
+	trait = sign_apprentice
+
+	3290.7.18 = { birth = yes }
+	3365.1.1 = { death = yes }
+}
+guimard_100 = {
+	name = "Lodvique"
+	dynasty_house = dyn_guimard
+	culture = witchman
+	religion = witchman_faith
+
+	father = guimard_99
+	mother = guimard_99_wife
+
+	trait = education_martial_1
+	trait = education_magic_2
+	trait = humble
+	trait = stubborn
+	trait = gregarious
+	trait = sign_apprentice
+	trait = flexible_leader
+	prowess = 4
+
+	3315.1.1 = { birth = yes }
+	3351.10.13 = { death = { death_reason = death_orsinium } } # died in Orsinium	
+}
+guimard_100b = {
+	name = "Belchimac"
+	dynasty_house = dyn_guimard
+	culture = witchman
+	religion = sanguine_cult
+	sexuality = homosexual
+
+	father = guimard_99
+	mother = guimard_99_wife
+
+	trait = lustful
+	trait = gluttonous
+	trait = disinherited # disinherited because of is beliefs
+	trait = humble
+	trait = zealous
+	trait = sign_tower
+	trait = education_learning_3
+	trait = education_magic_3
+
+	3316.10.28 = { birth = yes }
+	3381.1.1 = { death = yes }
+}
+guimard_100c = {
+	name = "Fulvert" #Lore
+	dynasty_house = dyn_guimard
+	culture = witchman
+	religion = witchman_faith
+	sexuality = bisexual
+	
+	father = guimard_99
+	mother = guimard_99_wife
+
+	trait = paranoid
+	trait = zealous
+	trait = arbitrary
+	trait = education_martial_2
+	trait = education_magic_2
+	trait = cautious_leader
+	trait = sign_warrior
+	trait = p_ae_magnus
+	
+	diplomacy = 6
+	martial = 6
+	stewardship = 5
+	intrigue = 8
+	learning = 1
+
+	3321.8.13 = { birth = yes }
+	3341.1.1 = { set_relation_friend = { reason = friend_generic_history target = character:oritar_100b } } # they befriend during a feast held by Ahala's father
+	3349.1.1 = { set_relation_lover = { reason = lover_history target = character:oritar_100b } } # they get even closer
+	3351.1.1 = {
+		set_relation_soulmate = character:oritar_100b 
+		add_spouse = oritar_100b
+		effect = {
+			add_character_modifier = {
+				modifier = pilgrimage_sympathetic_towards_faiths_modifier
+				years = 10
+			}
+		}
+	} # marries daughter of redguard count across the border after she converted to breton faith
+	3382.1.1 = { death = yes }
+}
+guimard_100d = {
+	name = "Belethor"
+	dynasty_house = dyn_guimard
+	culture = witchman
+	religion = witchman_faith
+
+	father = guimard_99
+	mother = guimard_99_wife
+
+	trait = education_diplomacy_1
+	trait = education_magic_1
+	trait = temperate
+	trait = wrathful
+	trait = forgiving
+	trait = sign_thief
+
+	3333.12.3 = { birth = yes }
+	3398.1.1 = { death = yes }
+}
+guimard_101 = {
+	name = "Ernard"
+	dynasty_house = dyn_guimard
+	culture = witchman
+	religion = witchman_faith
+
+	father = guimard_100c
+	mother = oritar_100b
+
+	trait = bossy
+	trait = sign_mage
+	disallow_random_traits = yes
+
+	3353.4.18 = { birth = yes }
+	3369.4.18 = {
+		remove_trait = bossy
+		trait = stubborn
+		trait = wrathful
+		trait = honest
+		trait = education_martial_3
+		trait = education_magic_2
+	}
+	3406.1.1 = { death = yes }
+}
+guimard_102 = {
+	name = "Balduin"
+	dynasty_house = dyn_guimard
+	culture = witchman
+	religion = witchman_faith
+
+	father = guimard_101
+
+	3379.1.1 = { birth = yes }
+	3442.1.1 = { death = yes }
+}
+guimard_103 = {
+	name = "Bradon"
+	dynasty_house = dyn_guimard
+	culture = witchman
+	religion = witchman_faith
+
+	father = guimard_102
+
+	trait = education_magic_3
+
+	3412.1.1 = { birth = yes }
+	3469.1.1 = { death = yes }
+}
+guimard_104 = {
+	name = "Blaise" #King of Evermore
+	dynasty_house = dyn_guimard
+	culture = witchman
+	religion = witchman_faith
+
+	father = guimard_103
+
+	3433.1.1 = { birth = yes }
+	3488.1.1 = { death = yes }
+}
+guimard_105 = {
+	name = "Eamond"
+	dynasty_house = dyn_guimard
+	culture = witchman
+	religion = witchman_faith
+
+	father = guimard_104
+
+	3459.1.1 = { birth = yes }
+	#3488 - marries Emeric's cousin
+	3501.12.7 = { death = yes }
+}
+guimard_106 = {
+	name = "Adrien" #Prince of Evermore, killed by Reachmen
+	dynasty_house = dyn_guimard
+	culture = witchman
+	religion = witchman_faith
+
+	father = guimard_105
+	#mother = 15127 #Emeric's cousin
+
+	3481.1.1 = { birth = yes }
+	3502.1.1 = {
+		death = {
+			death_reason = death_battle
+			#killer = 3627
+		}
+	}
+}
+guimard_106b = {
+	name = "Elara" #Princess of Evermore
+	dynasty_house = dyn_guimard
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	father = guimard_105
+	#mother = 15127
+
+	3484.1.1 = { birth = yes }
+	3502.1.1 = {
+		death = {
+			death_reason = death_battle
+			#killer = 3627
+		}
+	}
+}
+
+#Bastards of Belchimac
+guimard1_101 = {
+	name = "Donall"
+	dynasty_house = dyn_guimard
+	culture = witchman
+	religion = sanguine_cult
+	trait = education_intrigue_3
+	trait = gluttonous
+	trait = fickle
+	trait = impatient
+	trait = lifestyle_reveler
+	trait = bastard
+	trait = sign_lady
+
+	father = guimard_100b
+	
+	3340.9.6 = { birth = yes }
+	3402.1.1 = { death = yes }
+}
+guimard1_101b = {
+	name = "Theranis"
+	dynasty_house = dyn_guimard
+	culture = witchman
+	religion = boethiah_cult
+	trait = education_martial_3
+	trait = wrathful
+	trait = ambitious
+	trait = deceitful
+	trait = bastard
+	trait = sign_lady
+
+	father = guimard_100b
+	
+	3341.9.6 = { birth = yes }
+	3359.1.1 = {
+		move_to_pool = yes
+	}
+	3399.1.1 = { death = yes }
+}
+guimard1_101c = {
+	name = "Lielle"
+	female = yes
+	dynasty_house = dyn_guimard
+	culture = witchman
+	religion = sanguine_cult
+	
+	trait = education_diplomacy_2
+	trait = arrogant
+	trait = calm
+	trait = gluttonous
+	trait = lifestyle_reveler
+	trait = bastard
+	trait = sign_lady
+
+	father = guimard_100b
+	
+	3342.9.6 = { birth = yes }
+	3401.1.1 = { death = yes }
+}
+guimard1_101d = {
+	name = "Jory"
+	dynasty_house = dyn_guimard
+	culture = witchman
+	religion = sanguine_cult
+	sexuality = homosexual
+	trait = education_stewardship_1
+	trait = fickle
+	trait = forgiving
+	trait = gregarious
+	trait = lifestyle_reveler
+	trait = bastard
+	trait = sign_lady
+	
+	father = guimard_100b
+	
+	3343.9.6 = { birth = yes }
+	3424.1.1 = { death = yes }
+}
+guimard1_101e = {
+	name = "Lily"
+	female = yes
+	dynasty_house = dyn_guimard
+	culture = witchman
+	sexuality = asexual
+	religion = hermaeus_cult
+
+	trait = honest
+	trait = patient
+	trait = bastard
+	trait = charming
+	trait = education_magic_1
+	trait = sign_lady
+	disallow_random_traits = yes
+
+	father = guimard_100b
+	
+	3345.9.6 = { birth = yes }
+	3361.9.6 = {
+		remove_trait = charming
+		trait = education_learning_4
+		trait = lustful
+		trait = shy
+		move_to_pool = yes
+	}
+	3399.1.1 = { death = yes }
+}
+guimard1_101f = {
+	name = "Mirabelle"
+	female = yes
+	dynasty_house = dyn_guimard
+	culture = witchman
+	religion = sanguine_cult
+	sexuality = bisexual
+
+	trait = charming
+	trait = bastard
+	trait = calm
+	trait = sign_lady
+	disallow_random_traits = yes
+
+	father = guimard_100b
+	
+	3350.9.6 = { birth = yes }
+	3366.9.6 = {
+		remove_trait = charming
+		trait = education_stewardship_1
+		trait = lifestyle_reveler
+		trait = gregarious
+		trait = lustful
+		move_to_pool = yes
+	}
+	3401.1.1 = { death = yes }
+}
+
+##Mornard Dynasty (dyn_mornard)
+mornard_96 = {
+	name = "Olivier"
+	dynasty = dyn_mornard
+	culture = witchman
+	religion = witchman_faith
+
+	3191.1.1 = { birth = yes }
+	3252.1.1 = { death = yes }	
+}
+mornard_97 = {
+	name = "Renchant"
+	dynasty = dyn_mornard
+	culture = witchman
+	religion = witchman_faith
+
+	father = mornard_96
+
+	trait = education_magic_4
+
+	3217.1.1 = { birth = yes }
+	3300.1.1 = { give_nickname = nick_the_old }
+	3309.1.1 = { death = yes }
+}
+mornard_98 = {
+	name = "Lianna"
+	dynasty = dyn_mornard
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+	dna = fabrelle_dna_entry
+
+	father = mornard_97
+
+	3281.1.1 = { birth = yes }
+	3303.1.1 = { add_spouse = mornard_98_husband }
+	3342.1.1 = { death = yes }
+}
+mornard_98_husband = {
+	name = "Rogolphe"
+	culture = witchman
+	religion = witchman_faith
+
+	3277.1.1 = { birth = yes }
+	3322.1.1 = { death = yes }
+}
+mornard_99 = {
+	name = "Philimac"
+	dynasty = dyn_mornard
+	culture = witchman
+	religion = witchman_faith
+
+	mother = mornard_98
+	father = mornard_98_husband
+
+	3305.1.1 = { birth = yes }
+	3334.1.1 = { add_spouse = mornard_99_wife }
+	3354.1.1 = { death = yes }
+}
+mornard_99_wife = {
+	name = "Helenette"
+	religion = witchman_faith
+	culture = witchman
+	female = yes
+	
+	trait = education_magic_3
+
+	3310.1.1 = { birth = yes }
+	3372.1.1 = { death = yes }
+}
+mornard_99b = {
+	name = "Cheryline"
+	dynasty = dyn_mornard
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	mother = mornard_98
+	father = mornard_98_husband
+
+	trait = education_magic_2
+
+	3312.1.1 = { birth = yes }
+	3377.1.1 = { death = yes }
+}
+mornard_100 = {
+	name = "Fabrelle"
+	dna = fabrelle_dna_entry
+	dynasty = dyn_mornard
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+	
+	father = mornard_99
+	mother = mornard_99_wife
+
+	trait = sign_ritual
+	trait = diligent
+	trait = calm
+	trait = zealous
+	trait = education_diplomacy_3
+	trait = education_magic_3
+
+	3335.1.12 = { birth = yes }
+	3402.1.1 = { death = yes }
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=female_hair_western_03
+		}
+	}
+}
+mornard_100b = {
+	name = "Davier"
+	dynasty = dyn_mornard
+	culture = witchman
+	religion = witchman_faith
+
+	father = mornard_99
+	mother = mornard_99_wife
+	
+	trait = education_magic_2
+
+	3340.1.1 = { birth = yes }
+	3396.1.1 = { death = yes }
+}
+mornard_101 = {
+	name = "Bruno"
+	dynasty = dyn_mornard
+	culture = witchman
+	religion = witchman_faith
+
+	mother = mornard_100
+
+	3367.1.1 = { birth = yes }
+	3420.1.1 = { death = yes }
+}
+mornard_102 = {
+	name = "Ruffe" #Lore
+	dynasty = dyn_mornard
+	culture = witchman
+	religion = witchman_faith
+
+	father = mornard_101
+
+	3402.1.1 = { birth = yes }
+	3470.1.1 = { death = yes }
+}
+
+# Mantel Dynasty
+mantel_1000 = {
+	name = "Daric"
+	dynasty = dyn_mantel
+	culture = witchman
+	religion = witchman_faith
+
+	trait = education_magic_4
+	trait = lifespan_magic_4
+
+	2947.1.1 = { birth = yes }
+	3228.1.1 = { death = { death_reason = death_murder_known } }
+}
+
+#Madach (dyn_madach)
+madach_99 = {
+	name = "Dryston"
+	dynasty = dyn_madach
+	culture = witchman
+	religion = witchman_faith
+
+	3272.1.1 = { birth = yes }
+	3344.1.1 = { death = yes }
+}
+madach_100 = {
+	name = "Morrigan"
+	dynasty = dyn_madach
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	father = madach_99
+
+	trait = education_learning_3
+	trait = education_magic_4
+	trait = generous
+	trait = humble
+	trait = gregarious
+	trait = sign_mage
+
+	3311.4.19 = { birth = yes }
+	3332.1.1 = { add_spouse = moile_100e }
+	3375.1.1 = { death = yes }
+}
+madach_100b = {
+	name = "Idunhael"
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	father = madach_99
+
+	trait = education_stewardship_2
+	trait = education_magic_2
+	trait = generous
+	trait = stubborn
+	trait = patient
+	trait = sign_thief
+
+	3307.12.3 = { birth = yes }
+	3375.1.1 = { death = yes }
+}
+madach_101 = {
+	name = "Dryston"
+	dynasty = dyn_madach
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	mother = madach_100
+	father = moile_100e
+	
+	trait = education_magic_3
+
+	3335.1.1 = { birth = yes }
+	3407.1.1 = { death = yes }
+}
+
+#Riscel
+riscel_100 = {
+	name = "Petigan"
+	dynasty = dyn_riscel
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+	
+	trait = education_magic_2
+	
+	3309.1.1 = { birth = yes }
+	3366.1.1 = { death = yes }
+}
+riscel_101 = {
+	name = "Urson"
+	dynasty = dyn_riscel
+	culture = witchman
+	religion = witchman_faith
+
+	mother = riscel_100
+	
+	trait = education_magic_2
+	
+	3336.1.1 = { birth = yes }
+	3391.1.1 = { death = yes }
+}
+
+#Lan, recent rulers of Jehanna
+lan_99 = {
+	name = "Astien"
+	dynasty = dyn_lan
+	culture = witchman
+	religion = witchman_faith
+
+	3171.1.1 = { birth = yes }
+	3228.1.1 = { death = yes }
+}
+lan_100 = {
+	name = "Rerlas"
+	dynasty = dyn_lan
+	culture = witchman
+	religion = witchman_faith
+
+	father = lan_99
+
+	3201.1.1 = { birth = yes }
+	3273.1.1 = { death = yes }
+}
+lan_100b = {
+	name = "Amarie"
+	dynasty = dyn_lan
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	father = lan_99
+
+	3203.1.1 =  { birth = yes }
+	3251.1.1 = { death = yes }
+}
+lan_100c = {
+	name = "Warrane"
+	dynasty = dyn_lan
+	culture = witchman
+	religion = witchman_faith
+
+	father = lan_99
+
+	trait = child_of_concubine_male
+
+	3224.1.1 = { birth = yes }
+	3266.1.1 = { death = yes }
+}
+lan_101 = {
+	name = "Maurrie"
+	dynasty = dyn_lan
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	father = lan_100c
+
+	trait = education_magic_1
+
+	3257.1.1 = { birth = yes }
+	3314.1.1 = { death = yes }
+}
+
+#Direnni
+rirne_mother = {
+	name = "Aurnie"
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+	
+	trait = education_magic_3
+
+	473.1.1 = { birth = yes }
+	536.1.1 = { death = yes }
+}
+rirne_1 = {
+	name = "Asliel"
+	dynasty = dyn_rirne
+	culture = witchman
+	religion = witchman_faith
+
+	father = direnni_3b1
+	mother = rirne_mother
+
+	trait = lifespan_2
+	trait = education_magic_2
+
+	507.1.1 = { birth = yes }
+	671.1.1 = { death = yes }
+}
+rirne_2 = {
+	name = "Malielle"
+	dynasty = dyn_rirne
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	father = rirne_1
+
+	trait = lifespan_1
+
+	584.1.1 = { birth = yes }
+	709.1.1 = { death = yes }
+}
+rirne_3 = {
+	name = "Rianciene"
+	dynasty = dyn_rirne
+	culture = witchman
+	religion = witchman_faith
+	female = yes
+
+	mother = rirne_2
+
+	trait = lifespan_magic_1
+	trait = education_magic_4
+
+	630.1.1 = { birth = yes }
+	745.1.1 = { death = yes } #Die by this point or soon after, literal Direnni shouldn't stick for long
+}

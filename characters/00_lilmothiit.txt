@@ -1,0 +1,830 @@
+﻿dyaan_1 = { # King of Lilmoth
+	name = "Xir"
+	dynasty = dyn_dyaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	
+	trait = education_stewardship_4
+	trait = shrewd
+	trait = patient
+	trait = just
+	trait = fickle
+	trait = p_dv_shezarr #Fox x3
+	
+	disallow_random_traits = yes
+
+	300.1.1 = { birth = yes }
+	350.1.1 = { give_nickname = nick_the_fox }	# ;)
+	400.1.1 = { death = yes }
+}
+dyaan_line = { # Line of King of Lilmoth
+	name = "Xir"
+	dynasty = dyn_dyaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	father = dyaan_1
+	trait = line_of_x
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+	400.1.1 = { birth = yes }
+	500.1.1 = { give_nickname = nick_line_of }		
+	3220.1.1 = { death = yes }
+}
+
+dyaan_96 = {
+	name = "Amiqwun"
+	dynasty = dyn_dyaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	father = dyaan_line
+
+	3222.1.1 = { birth = yes }
+	3286.1.9 = { death = yes }
+}
+dyaan_97 = {
+	name = "Aiima"
+	dynasty = dyn_dyaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	mother = dyaan_96
+
+	3249.1.1 = { birth = yes }
+	3305.5.26 = { death = yes }
+}
+dyaan_98 = {
+	name = "Aimxir"
+	dynasty = dyn_dyaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	
+	mother = dyaan_97
+
+	3273.1.1 = { birth = yes }
+	3294.1.1 = { add_spouse = dyaan_98_wife }
+	3310.1.1 = { add_concubine = dyaan_98_concubine }
+	3318.9.14 = { death = yes }
+}
+dyaan_98_wife = {
+	name = "Ilfo"
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	3271.1.1 = { birth = yes }
+	3333.1.1 = { death = yes }
+}
+dyaan_98_concubine = {
+	name = "Tinapo"
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	3285.1.1 = { birth = yes }
+	3353.1.1 = { death = yes }
+}
+dyaan_99 = {
+	name = "Aiisxar"
+	dynasty = dyn_dyaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	
+	father = dyaan_98
+	mother = dyaan_98_wife
+	
+	trait = gregarious
+	trait = ambitious
+	trait = just
+	trait = shrewd
+	trait = education_stewardship_4
+
+	3295.1.1 = { birth = yes }
+	3315.1.1 = { add_concubine = dyaan_99_concubine1 }
+	3319.9.8 = { add_spouse = mispatiit_99b }
+	3325.1.1 = { add_concubine = dyaan_99_concubine2 }
+	3338.1.1 = { add_concubine = dyaan_99_concubine3 }
+	#3345.1.1 = { give_nickname = nick_the_fox }	# i hate delta i hate delta i hate delta i ha
+	3359.11.24 = { death = yes }
+}
+dyaan_99_concubine1 = {
+	name = "Nimants"
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	3292.1.1 = { birth = yes }
+	3354.1.1 = { death = yes }
+}
+dyaan_99_concubine2 = {
+	name = "Fijataji"
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	3302.1.1 = { birth = yes }
+	3374.1.1 = { death = yes }
+}
+dyaan_99_concubine3 = {
+	name = "Iixolifa"
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	3317.1.1 = { birth = yes }
+	3385.1.1 = { death = yes }
+}
+dyaan_99b = {
+	name = "Pepewat"
+	dynasty = dyn_dyaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+	
+	father = dyaan_98
+	mother = dyaan_98_wife
+	
+	3304.1.1 = { birth = yes }
+	3369.1.1 = { death = yes }
+}
+dyaan_99c = {
+	name = "Raikwew"
+	dynasty = dyn_dyaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+	
+	father = dyaan_98
+	mother = dyaan_98_concubine
+
+	trait = child_of_concubine_female
+	
+	3312.1.1 = { birth = yes }
+	3386.1.1 = { death = yes }
+}
+dyaan_100 = { #Exiled Would-Be-Heir / Duke of Lakemire
+	name = "Xir"
+	dna = dyaan_100_dna_entry
+	dynasty = dyn_dyaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	
+	father = dyaan_99
+	mother = mispatiit_99b
+	
+	trait = education_martial_2
+	trait = denounced #Lilmothiit don't disinherit
+	trait = ambitious
+	trait = greedy
+	trait = arrogant
+	trait = adventurer
+	trait = sign_atronach
+	
+	diplomacy = 8
+	martial = 7
+	stewardship = 6
+	intrigue = 5
+	learning = 2
+
+	3320.10.16 = { birth = yes }
+	3360.1.1 = {
+		effect = { 
+			add_pressed_claim = title:d_blackrose
+			if = {
+				limit = { character:dyaan_100b = { is_alive = yes } }
+				set_relation_rival = { reason = rival_historical target = character:dyaan_100b }
+			}
+			if = {
+				limit = { character:mispatiit_100 = { is_alive = yes } }
+				set_relation_friend = { reason = friend_generic_history target = character:mispatiit_100 }
+			}
+		}
+		give_nickname = nick_the_usurper
+	}
+	3340.1.1 = { add_spouse = dyaan_100_spouse }
+	3367.11.17 = { death = { death_reason = death_scuffle_with_soldiers } }
+}
+dyaan_100_spouse = {
+	name = "Tartiti"
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	3321.1.1 = { birth = yes }
+	3420.1.1 = { death = yes }
+}
+dyaan_100b = { #Daughter / Duchess of Blackrose 
+	name = "Mispaxa"
+	dna = dyaan_100b_dna_entry
+	dynasty = dyn_dyaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+	sexuality = homosexual
+
+	father = dyaan_99
+	mother = mispatiit_99b
+	
+	trait = education_diplomacy_3
+	trait = shrewd
+	trait = honest
+	trait = craven
+	trait = patient
+	trait = sign_mage
+
+	3338.4.29 = { birth = yes }
+	3360.1.1 = { effect = { add_pressed_claim = title:d_lakemire } }
+	3367.11.12 = { death = { death_reason = death_assassination } } #Assassinated when it becomes clear that Xir will win
+}
+dyaan_100c = {
+	name = "SA_r"
+	dynasty = dyn_dyaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+
+	father = dyaan_99
+	mother = dyaan_99_concubine1
+
+	trait = child_of_concubine_male
+
+	3316.2.19 = { birth = yes }
+	3378.1.1 = { death = yes }
+}
+dyaan_100d = {
+	name = "Mipui"
+	dynasty = dyn_dyaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	father = dyaan_99
+	mother = dyaan_99_concubine1
+
+	trait = child_of_concubine_female
+
+	3322.1.1 = { birth = yes }
+	3364.10.22 = { death = { death_reason = death_ill } }
+}
+dyaan_100e = {
+	name = "Api"
+	dynasty = dyn_dyaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+	
+	father = dyaan_99
+	mother = dyaan_99_concubine2
+
+	trait = child_of_concubine_female
+
+	3327.1.1 = { birth = yes }
+	#Supports xir
+	3359.12.12 = { employer = dyaan_100 }
+	3392.1.1 = { death = yes }
+}
+dyaan_100f = {
+	name = "IwimA_kE_"
+	dynasty = dyn_dyaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+	
+	father = dyaan_99
+	mother = dyaan_99_concubine1
+
+	trait = child_of_concubine_female
+	trait = education_intrigue_3
+	trait = ambitious
+	trait = deceitful
+	trait = arrogant
+
+	3329.1.1 = { birth = yes }
+	3387.1.1 = { death = yes }
+}
+dyaan_100g = {
+	name = "Fitamioo"
+	dynasty = dyn_dyaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	
+	father = dyaan_99
+	mother = dyaan_99_concubine2
+
+	trait = child_of_concubine_male
+	trait = brave
+	trait = stubborn
+
+	3336.1.1 = { birth = yes }
+	#Supports xir
+	3359.12.12 = { 
+		employer = dyaan_100
+		effect = {
+			if = {
+				limit = { character:dyaan_100h = { is_alive = yes } }
+				set_relation_rival = { reason = rival_historical target = character:dyaan_100h }
+			}
+		} 
+	}
+	3363.8.19 = { death = {  death_reason = death_battle killer = dyaan_100h } }
+}
+dyaan_100h = {
+	name = "RU_n"
+	dynasty = dyn_dyaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	
+	father = dyaan_99
+	mother = dyaan_99_concubine3
+
+	trait = child_of_concubine_male
+	trait = brave
+	trait = stubborn
+
+	3341.1.1 = { birth = yes }
+	#Support Mispaxa
+	3359.12.12 = { employer = dyaan_100b }
+	3363.8.19 = { death = {  death_reason = death_battle killer = dyaan_100g } }
+}
+dyaan_100i = {
+	name = "FEttaxa"
+	dynasty = dyn_dyaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	
+	father = dyaan_99
+	mother = dyaan_99_concubine3
+
+	trait = child_of_concubine_male
+
+	3346.1.1 = { birth = yes }
+	3402.1.1 = { death = yes }
+}
+dyaan_101 = {
+	name = "Aimxir"
+	dynasty = dyn_dyaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+
+	father = dyaan_100
+	mother = dyaan_100_spouse
+	
+	trait = twin
+	trait = education_martial_3
+
+	3341.9.8 = { birth = yes }
+	3430.1.1 = { death = yes }	
+}
+
+dyaan_101b = {
+	name = "FA_ina"
+	dynasty = dyn_dyaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	father = dyaan_100
+	mother = dyaan_100_spouse
+
+	trait = twin
+	trait = education_intrigue_3
+
+	3341.9.8 = { birth = yes }
+	3360.1.1 = { add_spouse = mispatiit_101 }
+	3430.1.1 = { death = yes }	
+}
+#Children of 100e
+dyaan1_101 = {
+	name = "Kesis"
+	dynasty = dyn_dyaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+
+	mother = dyaan_100e
+
+	3353.1.1 = { birth = yes }
+	3406.1.1 = { death = yes }
+}
+#Children of 100f
+dyaan2_101 = {
+	name = "Aiisxar"
+	dynasty = dyn_dyaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	mother = dyaan_100f
+
+	3354.1.1 = { birth = yes }
+	3402.1.1 = { death = yes }
+}
+dyaan2_101b = {
+	name = "Aiisxar"
+	dynasty = dyn_dyaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+
+	mother = dyaan_100f
+
+	3359.1.1 = { birth = yes }
+	3391.1.1 = { death = yes }
+}
+
+# holders of northern Lakemire/ Buwomousa region
+mispatiit_98 = {
+	name = "FA_ina"
+	dynasty = dyn_mispatiit
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+	
+	3271.1.1 = { birth = yes }
+	3338.6.27 = { death = yes }
+}
+mispatiit_99 = {
+	name = "Sanonta"
+	dynasty = dyn_mispatiit
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	mother = mispatiit_98
+	
+	trait = education_martial_1
+	
+	3292.1.1 = { birth = yes }
+	3350.3.12 = { death = yes }
+}
+mispatiit_99b = { #Married to dyaan_99, mother of Xir and Mispaxa
+	name = "Marle"
+	dynasty = dyn_mispatiit
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	mother = mispatiit_98
+	
+	trait = gregarious
+
+	3301.1.1 = { birth = yes }
+	3370.1.1 = { death = yes }
+}
+mispatiit_100 = {
+	name = "AapomA_rs"
+	dynasty = dyn_mispatiit
+	religion = lilmothiit_hist
+	culture = lilmothiit
+
+	mother = mispatiit_99
+	
+	trait = education_martial_2
+	
+	3321.1.1 = { birth = yes }
+	3339.1.1 = { add_spouse = mispatiit_100_spouse }
+	3389.1.1 = { death = yes }
+}
+mispatiit_100_spouse = {
+	name = "Mimini"
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+	
+	3324.1.1 = { birth = yes }
+	3385.1.1 = { death = yes }
+}
+mispatiit_101 = {
+	name = "PA_ita"
+	dynasty = dyn_mispatiit
+	religion = lilmothiit_hist
+	culture = lilmothiit
+
+	father = mispatiit_100
+	mother = mispatiit_100_spouse
+		
+	3340.1.1 = { birth = yes }
+	3420.1.1 = { death = yes }
+}
+
+#Qdiir
+qdiir_98 = {
+	name = "Aijin"
+	dynasty = dyn_qdiir
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	3282.1.1 = { birth = yes }
+	3334.11.1 = { death = yes }
+}
+qdiir_99 = {
+	name = "Saajitur"
+	dynasty = dyn_qdiir
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	sexuality = bisexual
+
+	mother = qdiir_98
+
+	3306.1.1 = { birth = yes }
+	3323.1.1 = { add_concubine = qdiir_99_concubine1 }
+	3324.1.1 = { add_concubine = qdiir_99_concubine2 }
+	3347.10.6 = { death = yes }
+}
+qdiir_99_concubine1 = {
+	name = "Aqa"
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	3301.1.1 = { birth = yes }
+	3374.1.1 = { death = yes }
+}
+qdiir_99_concubine2 = {
+	name = "Apoweri"
+	religion = lilmothiit_hist
+	culture = lilmothiit
+
+	3305.1.1 = { birth = yes }
+	3366.1.1 = { death = yes }
+}
+qdiir_100 = {
+	name = "Fitamioo"
+	dynasty = dyn_qdiir
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	father = qdiir_99
+	mother = qdiir_99_concubine1
+
+	trait = child_of_concubine_female
+
+	3324.1.1 = { birth = yes }
+	3345.1.1 = { add_matrilineal_spouse = dyaan_100c }
+	3382.5.8 = { death = yes }
+}
+qdiir_100b = {
+	name = "Kaqifal"
+	dynasty = dyn_qdiir
+	religion = lilmothiit_hist
+	culture = lilmothiit
+
+	father = qdiir_99
+	mother = qdiir_99_concubine1
+
+	trait = child_of_concubine_male
+
+	3337.1.1 = { birth = yes }
+	3391.1.1 = { death = yes }
+}
+qdiir_101 = {
+	name = "Kaimola"
+	dynasty = dyn_qdiir
+	religion = lilmothiit_hist
+	culture = lilmothiit
+
+	mother = qdiir_100
+	father = dyaan_100c
+
+	3347.1.1 = { birth = yes }
+	3364.1.1 = { death = { death_reason = death_battle } }
+}
+qdiir_101b = {
+	name = "Maixo"
+	dynasty = dyn_qdiir
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	mother = qdiir_100
+	father = dyaan_100c
+
+	3351.1.1 = { birth = yes }
+	3413.11.22 = { death = { death_reason = death_natural_causes } }
+}
+
+#Nmaat
+nmaat_98 = {
+	name = "LI_klapo"
+	dynasty = dyn_nmaat
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	3267.1.1 = { birth = yes }
+	3325.5.20 = { death = yes }
+}
+nmaat_99 = {
+	name = "Melt"
+	dynasty = dyn_nmaat
+	religion = lilmothiit_hist
+	culture = lilmothiit
+
+	mother = nmaat_98
+
+	trait = chaste
+
+	3289.1.1 = { birth = yes }
+	3324.1.1 = { add_spouse = nmaat_99_wife }
+	3347.1.22 = { death = yes }
+}
+nmaat_99_wife = {
+	name = "Silse"
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	trait = depressed_1
+
+	3301.1.1 = { birth = yes }
+	3362.1.1 = { death = yes }
+}
+nmaat_100 = {
+	name = "Aitaa"
+	dynasty = dyn_nmaat
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	father = nmaat_99
+	mother = nmaat_99_wife
+
+	3326.1.1 = { birth = yes }
+	3354.12.8 = { death = { death_reason = death_ill } }
+}
+nmaat_100b = {
+	name = "Fijataji"
+	dynasty = dyn_nmaat
+	religion = lilmothiit_hist
+	culture = lilmothiit
+
+	father = nmaat_99
+	mother = nmaat_99_wife
+
+	3334.1.1 = { birth = yes }
+	3402.1.1 = { death = yes }
+}
+nmaat_100c = {
+	name = "WI_x"
+	dynasty = dyn_nmaat
+	religion = lilmothiit_hist
+	culture = lilmothiit
+
+	father = nmaat_99
+	mother = nmaat_99_wife
+
+	3337.1.1 = { birth = yes }
+	3342.1.1 = { death = { death_reason = death_sickly } }
+}
+
+#Zmaan
+zmaan_98 = {
+	name = "Eppwapo"
+	dynasty = dyn_zmaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	3259.6.11 = { birth = yes }
+	3321.5.2 = { death = yes }
+}
+zmaan_99 = {
+	name = "Qinnako"
+	dynasty = dyn_zmaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+
+	mother = zmaan_98
+
+	3285.7.22 = { birth = yes }
+	3310.1.1 = { add_spouse = zmaan_99_wife }
+	3311.1.1 = { add_concubine = zmaan_99_concubine }
+	3342.11.18 = { death = yes }
+}
+zmaan_99_wife = {
+	name = "Napamone"
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	3289.1.1 = { birth = yes }
+	3354.1.1 = { death = yes }
+}
+zmaan_99_concubine = {
+	name = "Saajitur"
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	3284.9.2 = { birth = yes }
+	3347.10.6 = { death = yes }
+}
+zmaan_100 = {
+	name = "Met"
+	dynasty = dyn_zmaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+
+	father = zmaan_99
+	mother = zmaan_99_wife
+
+	3313.5.3 = { birth = yes }
+	3344.1.4 = { death = yes }
+}
+zmaan_100b = {
+	name = "Xar"
+	dynasty = dyn_zmaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	father = zmaan_99
+	mother = zmaan_99_concubine
+
+	trait = child_of_concubine_female
+
+	3313.7.19 = { birth = yes }
+	3337.1.1 = { death = yes }
+}
+zmaan_100c = {
+	name = "Marfowaj"
+	dynasty = dyn_zmaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+
+	father = zmaan_99
+	mother = zmaan_99_wife
+
+	3318.1.1 = { birth = yes }
+	3383.1.1 = { death = yes }
+}
+zmaan_100d = {
+	name = "LI_klapo"
+	dynasty = dyn_zmaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	father = zmaan_99
+	mother = zmaan_99_concubine
+
+	trait = child_of_concubine_female
+
+	3321.1.1 = { birth = yes }
+	3392.1.1 = { death = yes }
+}
+zmaan_100e = {
+	name = "Tiqaa"
+	dynasty = dyn_zmaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	father = zmaan_99
+	mother = zmaan_99_wife
+
+	3324.3.14 = { birth = yes }
+	3372.1.1 = { death = yes }
+}
+zmaan_101 = {
+	name = "Wiiwew"
+	dynasty = dyn_zmaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+
+	father = zmaan_100c
+
+	3339.1.1 = { birth = yes }
+	3401.1.1 = { death = yes }
+}
+zmaan_101b = {
+	name = "Napamone"
+	dynasty = dyn_zmaan
+	religion = lilmothiit_hist
+	culture = lilmothiit
+	female = yes
+
+	father = zmaan_100c
+
+	3343.1.1 = { birth = yes }
+	3392.1.1 = { death = yes }
+}
+
+#lowborn
+arnand_the_fox = {
+	name = "Arnand"
+	religion = breton_cult
+	culture = lilmothiit
+		
+	3340.1.1 = { birth = yes }
+	3342.1.1 = { give_nickname = nick_the_fox }
+	3360.1.1 = { employer = viralaine_1000 }
+	#3360.1.2 = { set_culture_same_as = viralaine_1000 } TODO: PRODUCES ERRORS - BUCK
+	3420.1.1 = { death = yes }
+}

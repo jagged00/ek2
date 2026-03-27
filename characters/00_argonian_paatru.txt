@@ -1,0 +1,464 @@
+﻿### Thuxis Dynasty
+#House Thuxis
+thuxis_1 = {
+	name = "Dar_Jasa"
+	dynasty = dyn_thuxis
+	religion = hist
+	culture = paatru
+
+	trait = strong
+	trait = intellect_good_1
+	trait = education_martial_4
+	trait = honest
+	trait = fickle
+	trait = wrathful
+	trait = lifespan_magic_1
+	
+	3204.1.1 = { birth = yes }
+	3030.1.1 = { give_nickname = nick_strongarm }		
+	3307.5.19 = { death = yes }
+}
+thuxleel_98 = {
+	name = "Mach_Loh"
+	dynasty_house = thuxis_thuxleel	
+	religion = hist
+	culture = paatru
+
+	father = thuxis_1
+
+	3288.1.1 = { birth = yes }
+	3346.1.17 = { death = yes }	
+}
+thuxleel_99 = {
+	name = "Dar_Jasa"
+	dynasty_house = thuxis_thuxleel	
+	religion = hist
+	culture = paatru
+
+	father = thuxleel_98	
+
+	trait = fickle
+	trait = deceitful
+	trait = brave
+	trait = seducer
+	trait = education_intrigue_2
+
+	3316.1.1 = { birth = yes }
+	3340.1.1 = { give_nickname = nick_the_lewd }	
+	3363.5.25 = { death = { death_reason = death_battle } }	
+}
+thuxleel_100 = {
+	name = "Dar_Jasa"
+	dynasty_house = thuxis_thuxleel
+	religion = hist
+	culture = paatru
+
+	father = thuxleel_99
+
+	trait = strong
+	trait = intellect_good_1
+	trait = education_martial_3
+	trait = honest
+	trait = fickle
+	trait = wrathful
+	
+	3337.1.1 = { birth = yes }
+	3353.1.1 = {
+		effect = {
+			set_variable = { name = reincarnation_of value = character:thuxis_1 } #Thank you magic code man
+		}
+		add_trait = reincarnation	
+		give_nickname = nick_the_mighty
+		set_relation_rival = { reason = rival_historical target = character:thuxleel_100b }
+	}
+	3374.2.1 = { death = { death_reason = death_murder } }
+}
+thuxleel_100b = {
+	name = "Honei"
+	dynasty_house = thuxis_thuxleel
+	religion = hist
+	culture = paatru
+	female = yes
+
+	father = thuxleel_99
+
+	trait = beauty_good_3
+	trait = weak
+	trait = education_intrigue_4
+	trait = deceitful
+	trait = zealous
+	trait = gluttonous
+	
+	3339.1.1 = { birth = yes }
+	3406.11.12 = { death = yes }
+}
+thuxleel_100c = {
+	name = "Chalaree"
+	dynasty_house = thuxis_thuxleel
+	religion = hist
+	culture = paatru
+	father = thuxleel_99
+	female = yes
+
+	trait = temperate
+	trait = stubborn
+	trait = patient
+	trait = education_learning_3
+	
+	3343.1.1 = { birth = yes }
+	3364.1.1 = { death = { death_reason = death_battle } }	
+}
+thuxleel_100d = {
+	name = "Kuseem"
+	dynasty_house = thuxis_thuxleel
+	religion = hist
+	culture = paatru
+	female = yes
+
+	father = thuxleel_99
+
+	trait = bossy
+	trait = impatient
+	trait = paranoid
+	disallow_random_traits = yes
+	
+	3346.1.1 = { birth = yes }
+	3362.1.1 = {
+		remove_trait = bossy
+		trait = compassionate
+		trait = education_stewardship_2
+	}
+	3392.1.1 = { death = yes }
+}
+thuxleel_101 = {
+	name = "An_Deesei"
+	dynasty_house = thuxis_thuxleel
+	religion = hist
+	culture = paatru
+	female = yes
+
+	mother = thuxleel_100b
+
+	3362.1.1 = { birth = yes }
+	3420.1.1 = {
+		effect = {
+			add_trait = lifespan_magic_1
+			add_character_flag = artificial_lifespan
+			add_character_flag = natural_lifespan_0
+		}
+	}
+	3478.1.1 = { death = yes }
+}
+
+##Thuxis Main
+thuxis_99 = {
+	name = "Vetra_Maxath"
+	dynasty = dyn_thuxis
+	religion = hist
+	culture = paatru
+
+	father = thuxis_1
+
+	3276.1.1 = { birth = yes }
+	3329.9.18 = { death = yes }	
+}
+thuxis_100 = {
+	name = "Aojee_Ei"
+	dynasty = dyn_thuxis	
+	religion = hist
+	culture = paatru
+
+	father = thuxis_99	
+
+	3303.1.1 = { birth = yes }	
+	3367.12.20 = { death = yes }	
+}
+thuxis_101 = {
+	name = "Nam_Shah"
+	dynasty = dyn_thuxis
+	religion = hist
+	culture = paatru
+
+	father = thuxis_100
+	
+	3331.1.1 = { birth = yes }
+	3394.1.1 = { death = yes }
+}
+
+##Portdun
+keeolisalei_99 = {
+	name = "Vaeshna"
+	dynasty = dyn_keeolisalei
+	religion = hist
+	culture = paatru
+	
+	3305.1.1 = { birth = yes }
+	3365.8.3 = { death = yes }
+}
+keeolisalei_100 = {
+	name = "Mahei_Goh"
+	dynasty = dyn_keeolisalei
+	religion = hist
+	culture = paatru
+
+	father = keeolisalei_99
+	
+	3335.1.1 = { birth = yes }
+	3365.1.1 = {
+		add_pressed_claim = title:c_xulpan
+	}
+	3429.1.1 = { death = yes }
+}
+keeolisalei_100b = {
+	name = "Miun_Gei"
+	dynasty = dyn_keeolisalei
+	religion = hist
+	culture = paatru
+
+	father = keeolisalei_99	
+	
+	3342.1.1 = { birth = yes }
+	3405.1.1 = { death = yes }
+}
+
+##Hajan
+raeelru_98 = {
+	name = "Tseeneesh"
+	dynasty = dyn_raeelru
+	religion = hist
+	culture = paatru
+
+	trait = arcana_good_1
+	
+	3256.1.1 = { birth = yes }
+	3313.6.27 = { death = yes }
+}
+raeelru_99 = {
+	name = "Buxutheeus"
+	dynasty = dyn_raeelru
+	religion = hist
+	culture = paatru
+
+	father = raeelru_98
+
+	trait = arcana_good_3
+	
+	3282.1.1 = { birth = yes }
+	3351.8.13 = { death = yes }
+}
+raeelru_100 = {
+	name = "Oleen_Lan"
+	dynasty = dyn_raeelru
+	religion = hist
+	culture = paatru
+
+	father = raeelru_99	
+
+	trait = arcana_good_2
+	
+	3307.1.1 = { birth = yes }
+	3373.1.1 = { death = yes }
+}
+raeelru_100b = {
+	name = "Oleen_Jei"
+	dynasty = dyn_raeelru
+	religion = hist
+	culture = paatru
+
+	father = raeelru_99
+	
+	trait = arcana_good_2
+	
+	3315.1.1 = { birth = yes }
+	3377.1.1 = { death = yes }
+}
+raeelru_100c = {
+	name = "Chaneej"
+	dynasty = dyn_raeelru
+	religion = hist
+	culture = paatru
+	female = yes
+
+	father = raeelru_99
+	
+	trait = arcana_good_1
+
+	3326.1.1 = { birth = yes }
+	3381.1.1 = { death = yes }
+}
+
+#Elfejumee
+elfejumee_100 = { #Tributary of Urseth
+	name = "Chuna"
+	dynasty = dyn_elfejumee
+	religion = hist
+	culture = paatru
+
+	trait = arcana_good_2
+	trait = patient
+
+	3317.1.1 = { birth = yes }
+	3392.1.1 = { death = yes }
+}
+
+#Wizawmee
+wizawmee_100 = {
+	name = "Olik_Reenus"
+	dynasty = dyn_wizawmee
+	religion = hist
+	culture = paatru
+
+	trait = callous
+	trait = calm
+	trait = lazy
+	trait = education_stewardship_1
+	trait = arcana_good_2
+	
+	3318.1.1 = { birth = yes }
+	3373.1.1 = { death = yes }
+}
+wizawmee_101 = {
+	name = "Huzei"
+	dynasty = dyn_wizawmee
+	religion = hist
+	culture = paatru
+
+	father = wizawmee_100
+
+	trait = twin
+	trait = gluttonous
+	trait = stubborn
+	trait = sadistic
+	trait = education_martial_2
+	trait = arcana_good_2
+	
+	3343.1.1 = { birth = yes }
+	3418.1.1 = { death = yes }
+}
+wizawmee_101b = {
+	name = "Bahsei"
+	dynasty = dyn_wizawmee
+	religion = hist
+	culture = paatru
+	female = yes
+
+	father = wizawmee_100
+
+	trait = twin
+	trait = just
+	trait = deceitful
+	trait = sadistic
+	trait = education_diplomacy_3
+	trait = arcana_good_1
+	
+	3343.1.1 = { birth = yes }
+	3409.1.1 = { death = yes }
+}
+
+#Bunru
+bunru_100 = {
+	name = "Heenashan"
+	dynasty = dyn_bunru
+    religion = hist
+    culture = paatru
+	female = yes
+
+	trait = arcana_good_2
+
+	3314.1.1 = { birth = yes }
+	3389.1.1 = { death = yes }
+}
+bunru_101 = {
+	name = "Shuvh_Mok"
+	dynasty = dyn_bunru
+    religion = hist
+    culture = paatru
+
+	mother = bunru_100
+
+	trait = arcana_good_1
+
+	3348.1.1 = { birth = yes }
+	3412.1.1 = { death = yes }
+}
+
+##Sharp-Fang Dynasty/Tribe. Vampyrs.
+whetfang_100 = {
+    name = "Resari"
+    dynasty = dyn_whetfang
+    religion = hist
+    culture = paatru
+
+	trait = education_magic_3
+	trait = callous
+	trait = greedy
+	trait = calm
+
+    3031.1.29 = { birth = yes }
+	3359.9.1 = { 
+		effect = { make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:molag_cult } }
+		give_vampire_secret_or_trait_effect = yes
+	}
+	#Unlucky with vampire hunter
+    3478.3.28 = { death = { death_reason = death_battle } }
+}
+whetfang_101 = {
+    name = "Kal_Ma"
+    religion = hist
+    culture = paatru
+	female = yes
+
+	trait = arcana_good_2
+	
+    3332.3.5 = { birth = yes }
+	3367.9.12 = { #Turned into vampyr
+		effect = { make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:molag_cult } }
+		give_vampire_secret_or_trait_effect = yes
+		dynasty = dyn_whetfang
+	}
+    4114.5.22 = { death = yes }
+}
+
+#Lowborns
+argonian_unlanded_0006 = {
+	name = "Haj_Ei"
+	culture = paatru
+	religion = hist
+	disallow_random_traits = yes
+
+	trait = wild_oat
+	trait = rowdy
+
+	3350.1.1 = { birth = yes }
+	3368.1.1 = {
+		remove_trait = rowdy
+		add_trait = ambitious
+		add_trait = vengeful
+		add_trait = arbitrary
+		add_trait = education_martial_3
+		add_trait = murderer
+	}	
+	3380.1.1 = { death = { death_reason = death_battle } }
+}
+
+argonian_unlanded_0007 = {
+	name = "Paway"
+	culture = paatru
+	religion = hist
+	female = yes
+	disallow_random_traits = yes
+
+	trait = rowdy
+
+	3350.1.1 = { birth = yes }
+	3368.1.1 = {
+		remove_trait = rowdy
+		add_trait = diligent
+		add_trait = calm
+		add_trait = arbitrary
+		add_trait = education_intrigue_3
+		add_trait = lunatic_1
+		add_spouse = argonian_unlanded_0006 
+	}	
+	3380.1.1 = { death = { death_reason = death_battle } }
+}

@@ -1,0 +1,2160 @@
+﻿##Frost-Beard Dynasty (dyn_frostbeard)
+
+#House Frost-Beard
+frostbeard_97 = {
+	name = "Aenar" #Troll-Hunter
+	#Lowborn
+	culture = cyro_nord
+	religion = nord_cult
+
+	trait = education_martial_2
+	trait = content
+	trait = diligent
+	trait = brave
+	trait = lifestyle_hunter
+
+	3291.1.1 = { birth = yes }
+	3312.1.1 = { add_spouse = frostbeard_97_wife }
+	3333.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = jano_99
+		}
+	}
+}
+frostbeard_97_wife = {
+	name = "Lailla"
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	3287.1.1 = { birth = yes }
+	3342.1.1 = { death = { death_reason = death_natural_causes } }
+}
+frostbeard_98 = {
+	name = "Borvir" #King of Bruma, took it in conquest
+	dynasty = dyn_frostbeard
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = frostbeard_97
+	mother = frostbeard_97_wife
+
+	trait = education_martial_3
+	trait = ambitious
+	trait = brave
+	trait = vengeful
+	trait = sign_shadow
+
+	3316.5.18 = { birth = yes }
+	3333.1.1 = { add_spouse = frostbeard_98_wife }
+	3368.11.6 = { death = { death_reason = death_natural_causes } }
+}
+frostbeard_98_wife = {
+	name = "Ysolda"
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	3314.1.1 = { birth = yes }
+	3376.1.1 = { death = { death_reason = death_natural_causes } }
+}
+frostbeard_99 = {
+	name = "Harald" #King of Bruma (Warlords & Interregnum)
+	dynasty = dyn_frostbeard
+	dna = harald_frostbeard_dna_entry
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = frostbeard_98
+	mother = frostbeard_98_wife
+
+	trait = education_diplomacy_2
+	trait = brave
+	trait = diligent
+	trait = calm
+	trait = sign_steed
+
+	3334.6.26 = { birth = yes }
+	3359.1.1 = { add_spouse = vlinorman_101b }
+	3397.7.15 = { death = yes }
+}
+frostbeard_100 = {
+	name = "Stenvar" #King of Bruma
+	dynasty = dyn_frostbeard
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = frostbeard_99
+	mother = vlinorman_101b
+
+	3361.1.1 = { birth = yes }
+	3416.1.1 = { death = yes }
+}
+frostbeard_100b = {
+	name = "Aenar" #King of Bruma
+	dynasty = dyn_frostbeard
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = frostbeard_99
+	mother = vlinorman_101b
+
+	3365.1.1 = { birth = yes }
+	3421.1.1 = { death = yes }
+}
+frostbeard_100c = {
+	name = "Svari"
+	dynasty = dyn_frostbeard
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	father = frostbeard_99
+	mother = vlinorman_101b
+
+	3369.1.1 = { birth = yes }
+	3438.1.1 = { death = yes }
+}
+frostbeard_101 = {
+	name = "Knud"
+	dynasty = dyn_frostbeard
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = frostbeard_100
+
+	3389.1.1 = { birth = yes }
+	3424.1.1 = { death = yes }
+}
+frostbeard_101b = {
+	name = "Igna"
+	dynasty = dyn_frostbeard
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	father = frostbeard_100
+
+	3396.1.1 = { birth = yes }
+	3457.1.1 = { death = yes }
+}
+frostbeard_102 = {
+	name = "Bolgeir"
+	dynasty = dyn_frostbeard
+	culture = cyro_nord
+	religion = nord_cult
+
+	mother = frostbeard_101b
+
+	3423.1.1 = { birth = yes }
+	3482.1.1 = { death = yes }
+}
+
+#House Gray-Fists
+grayfists_100 = {
+	name = "Hakon"
+	dynasty = dyn_frostbeard
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = frostbeard_98
+	mother = frostbeard_98_wife
+
+	3336.1.1 = { birth = yes }
+	3361.1.1 = { add_spouse = wolfgale_101b }
+	3368.11.6 = {
+		dynasty_house = dyn_grayfists
+	}
+	3397.11.29 = { death = { death_reason = death_natural_causes } }
+}
+grayfists_101 = {
+	name = "Haknir"
+	dynasty = dyn_frostbeard
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = grayfists_100
+	mother = wolfgale_101b
+
+	3362.1.1 = { birth = yes }
+	3368.11.6 = {
+		dynasty_house = dyn_grayfists
+	}
+	3385.1.1 = { death = { death_reason = death_battle } }
+}
+grayfists_101b = {
+	name = "Solaf"
+	dynasty = dyn_frostbeard
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = grayfists_100
+	mother = wolfgale_101b
+
+	3367.1.1 = { birth = yes }
+	3368.11.6 = {
+		dynasty_house = dyn_grayfists
+	}
+	3429.9.7 = { death = { death_reason = death_natural_causes } }
+}
+grayfists_101c = {
+	name = "Sorli"
+	dynasty_house = dyn_grayfists
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	father = grayfists_100
+
+	3371.1.1 = { birth = yes }
+	3437.1.1 = { death = yes }
+}
+grayfists_102 = {
+	name = "Heidmir"
+	dynasty_house = dyn_grayfists
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = grayfists_101b
+
+	3393.1.1 = { birth = yes }
+	3457.1.1 = { death = yes }
+}
+grayfists_102b = {
+	name = "Kjakur"
+	dynasty_house = dyn_grayfists
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = grayfists_101b
+
+	3401.1.1 = { birth = yes }
+	3460.1.1 = { death = yes }
+}
+
+##Star-Song Dynasty (dyn_starsong)
+starsong_99 = {
+	name = "Fraki" #Adventurer
+	dynasty = dyn_starsong
+	culture = westmarcher
+	religion = nord_cult
+
+	trait = adventurer
+
+	3294.1.1 = { birth = yes }
+	3357.1.1 = { death = yes }
+}
+starsong_100 = {
+	name = "Froki" #Duke of Caractacus (Warlords & Interregnum)
+	dynasty = dyn_starsong
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = starsong_99
+
+	trait = education_martial_3
+	trait = lustful
+	trait = ambitious
+	trait = honest
+	trait = adventurer
+
+	prowess = 10
+	martial = 8 #Warlord
+
+	3326.1.1 = { birth = yes }
+	3326.1.2 = { effect = { learn_language = language_nordic } }
+	3342.1.1 = { add_spouse = nordwife_1003 }
+	3342.4.5 = { trait = adulterer }
+	3373.4.19 = { death = { death_reason = death_battle } }
+}
+starsong_100_lover = {
+	name = "Aelia"
+	culture = heartlander
+	religion = eight_divines
+	female = yes
+
+	trait = lustful
+	trait = beauty_good_2
+
+	3320.1.1 = { birth = yes }
+	3341.1.1 = { effect = { learn_language = language_nordic } }
+	3342.1.1 = {
+		effect = {
+			if = {
+				limit = { character:starsong_100 = { is_alive = yes } }
+				set_relation_soulmate = { reason = lover_history target = character:starsong_100 }
+			}
+		}
+	}
+	3342.4.5 = { trait = adulterer }
+	3397.1.1 = { death = yes }
+}
+starsong_100_lover_husband = {
+	name = "Callipho"
+	culture = heartlander
+	religion = eight_divines
+
+	trait = vengeful
+
+	3320.1.1 = { birth = yes }
+	3340.1.1 = { add_spouse = starsong_100_lover }
+	3342.4.5 = { 
+		effect = {
+			if = {
+				limit = { character:starsong_100 = { is_alive = yes } }
+				set_relation_nemesis = { reason = slept_with_spouse_exposed_opinion target = character:starsong_100 }
+			}
+		}
+	}
+	3397.1.1 = { death = yes }
+}
+starsong_101 = {
+	name = "Geilir"
+	dynasty = dyn_starsong
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = starsong_100
+	mother = nordwife_1003
+
+	#Close in personality to his father
+	trait = rowdy
+	trait = brave
+	trait = ambitious
+	disallow_random_traits = yes
+
+	3346.1.1 = { birth = yes }
+	3362.1.1 = {
+		remove_trait = rowdy
+		trait = education_martial_2
+		trait = arbitrary
+	}
+	3369.1.1 = { #feels betrayed by both his father and brother, who changed cultures and the latter being legitimized
+		effect = {
+			if = {
+				limit = { character:starsong_100 = { is_alive = yes } }
+				set_relation_rival = { reason = rival_historical target = character:starsong_100 }
+			}
+			if = {
+				limit = { character:starsong_101b = { is_alive = yes } }
+				set_relation_rival = { reason = rival_historical target = character:starsong_101b }
+			}
+		}
+	}
+	3382.6.8 = { death = { death_reason = death_battle } } #Dies like his father
+}
+starsong_101b = {
+	name = "Brond" #Duke of Caractacus
+	dynasty = dyn_starsong
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = starsong_100
+	mother = starsong_100_lover
+
+	trait = bastard
+	trait = beauty_good_1
+	trait = sign_mage
+	
+	3352.4.5 = { birth = yes }
+	3369.1.1 = { 
+		effect = {
+			remove_trait = bastard
+			add_trait = legitimized_bastard 
+		}
+	}
+	3375.1.1 = {
+		name = "Bruno"
+		culture = heartlander
+		dynasty_house = dyn_siralus
+	}
+	3414.1.1 = { death = { death_reason = death_natural_causes } }
+}
+starsong_102 = {
+	name = "Parvo"
+	dynasty_house = dyn_siralus
+	culture = heartlander
+	religion = nord_cult
+
+	father = starsong_101b
+
+	3387.1.1 = { birth = yes }
+	3445.1.1 = { death = yes }
+}
+starsong_103 = {
+	name = "Thena"
+	dynasty_house = dyn_siralus
+	culture = heartlander
+	religion = hero_cult
+	female = yes
+
+	father = starsong_102
+
+	3411.1.1 = { birth = yes }
+	3477.1.1 = { death = yes }
+}
+
+##Storm-Catcher Dynasty (dyn_stormcatcher)
+stormcatcher_99 = {
+	name = "Fryssa" #Adventurer
+	dynasty = dyn_stormcatcher
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	trait = adventurer
+	trait = education_martial_4
+
+	3319.1.1 = { birth = yes }
+	3315.1.1 = { add_matrilineal_spouse = ironhandhusband_1 }
+	3357.7.19 = { death = { death_reason = death_battle killer = sartos_100 } }
+}
+stormcatcher_100 = {
+	name = "Threki" #Duke of Arrius (Warlords)
+	dynasty = dyn_stormcatcher
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+	
+	father = ironhandhusband_1
+	mother = stormcatcher_99
+
+	trait = education_diplomacy_2
+	trait = gregarious
+	trait = fickle
+	trait = ambitious
+
+	3337.1.1 = { birth = yes }
+	3353.1.1 = { add_matrilineal_spouse = woodhewnhusband_1 }
+	3368.1.1 = {
+		name = "Threkia"
+		culture = nibenese
+		religion = hero_cult
+		effect = {
+			learn_language = language_nordic
+		}
+	}
+	3376.4.5 = { death = { death_reason = death_battle } }
+}
+stormcatcher_101 = {
+	name = "Jeek" #Count of Harm's Folly and Broke Pick Ravine (Warlords & Interregnum)
+	dynasty = dyn_stormcatcher
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = ironhandhusband_1
+	mother = stormcatcher_99
+
+	3339.1.1 = { birth = yes }
+	3360.1.1 = {
+		effect = {
+			learn_language = language_nordic
+		}
+	}
+	3402.1.1 = { death = yes }
+}
+stormcatcher_102 = {
+	name = "Jod" #Duke of Arrius (Interregnum)
+	dynasty = dyn_stormcatcher
+	culture = cyro_nord
+	religion = nord_cult
+	
+	father = woodhewnhusband_1
+	mother = stormcatcher_100
+
+	3354.1.1 = { birth = yes }
+	3358.1.1 = {
+		culture = nibenese
+		religion = hero_cult
+		name = "Jorus"
+		effect = {
+			learn_language = language_nordic
+		}
+	}
+	3407.1.1 = { death = { death_reason = death_battle } }
+}
+stormcatcher_103 = {
+	name = "Siri" #Duke of Arrius
+	female = yes
+	dynasty = dyn_stormcatcher
+	culture = nibenese
+	religion = hero_cult
+
+	father = stormcatcher_102
+
+	3389.1.1 = { birth = yes }
+	3443.1.1 = { death = yes }
+}
+
+stormcatcher1_102 = {
+	name = "Erik" #Count of Harm's Folly and Broke Pick Ravine
+	dynasty = dyn_stormcatcher
+	culture = cyro_nord
+	religion = nord_cult
+	sexuality = asexual
+
+	father = stormcatcher_101
+
+	3368.1.1 = { birth = yes }
+	3427.1.1 = { death = yes }
+}
+stormcatcher1_102b = {
+	name = "Kjar"
+	dynasty = dyn_stormcatcher
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = stormcatcher_101
+
+	3374.1.1 = { birth = yes }
+	3423.1.1 = { death = yes }
+}
+stormcatcher1_103 = {
+	name = "Grejver"
+	dynasty = dyn_stormcatcher
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = stormcatcher1_102b
+
+	3409.1.1 = { birth = yes }
+	3465.1.1 = { death = yes }
+}
+
+##Brittleblade Dynasty (dyn_brittleblade)
+
+#House Brittleblade
+brittleblade_99 = {
+	name = "Bjalfi"
+	culture = cyro_nord
+	religion = temple_one #Message me for explanation - PrinceYriel
+	female = yes
+
+	3249.1.1 = { birth = yes }
+	3331.1.1 = { death = { death_reason = death_old_age } }
+}
+brittleblade_100 = {
+	name = "Eyja" #Count of Eastwatch (Warlords & Interregnum)
+	female = yes
+	dynasty = dyn_brittleblade
+	culture = cyro_nord
+	religion = temple_one #Message me for explanation - PrinceYriel
+	mother = brittleblade_99
+
+	3343.1.1 = { birth = yes }
+	3360.1.1 = { add_matrilineal_spouse = brittleblade_husband_100 }
+	3438.1.1 = { death = { death_reason = death_old_age } }
+}
+brittleblade_husband_100 = {
+	name = "Heddic"
+	culture = cyro_nord
+	religion = nord_cult
+
+	3343.1.1 = { birth = yes }
+	3438.1.1 = { death = { death_reason = death_old_age } }
+}
+brittleblade_101 = {
+	name = "Torkild" #Count of Eastwatch
+	dynasty = dyn_brittleblade
+	culture = cyro_nord
+	religion = temple_one #Message me for explanation - PrinceYriel
+	father = brittleblade_husband_100
+	mother = brittleblade_100
+
+	3364.1.1 = { birth = yes }
+	3455.1.1 = { death = { death_reason = death_old_age } }
+}
+brittleblade_102 = {
+	name = "Thonar"
+	dynasty = dyn_brittleblade
+	culture = cyro_nord
+	religion = temple_one #Message me for explanation - PrinceYriel
+	father = brittleblade_husband_100
+	mother = brittleblade_100
+
+	3366.1.1 = { birth = yes }
+	3452.1.1 = { death = { death_reason = death_old_age } }
+}
+brittleblade_103 = {
+	name = "Hoag" #Count of Eastwatch
+	dynasty = dyn_brittleblade
+	culture = cyro_nord
+	religion = temple_one #Message me for explanation - PrinceYriel
+	father = brittleblade_101
+
+	3401.1.1 = { birth = yes }
+	3490.1.1 = { death = { death_reason = death_old_age } }
+}
+
+#Wolf-Gale Dynasty (dyn_wolfgale)
+wolfgale_98 = {
+	name = "Andistyr"
+	#Lowborn
+	culture = cyro_nord
+	religion = nord_cult
+
+	3263.1.1 = { birth = yes }
+	3286.1.1 = { add_spouse = wolfgale_98_wife }
+	3306.1.1 = { death = yes }
+}
+wolfgale_98_wife = {
+	name = "Boti"
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	3262.1.1 = { birth = yes }
+	3327.1.1 = { death = yes }
+}
+wolfgale_99 = {
+	name = "Karl"
+	dynasty = dyn_wolfgale
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = wolfgale_98
+	mother = wolfgale_98_wife
+
+	3287.1.1 = { birth = yes }
+	3310.1.1 = { add_spouse = wolfgale_99_wife }
+	3340.1.1 = { death = yes }
+}
+wolfgale_99_wife = {
+	name = "Aldi"
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+	
+	3290.1.1 = { birth = yes }
+	3345.1.1 = { death = yes }
+}
+wolfgale_100 = {
+	name = "Grejver" #Count of Dragonclaw (Warlord)
+	dynasty = dyn_wolfgale
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = wolfgale_99
+	mother = wolfgale_99_wife
+	
+	trait = viking
+	
+	3312.1.1 = { birth = yes }
+	3367.1.1 = { death = yes }
+}
+wolfgale_100b = {
+	name = "Fryssa"
+	dynasty = dyn_wolfgale
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	father = wolfgale_99
+	mother = wolfgale_99_wife
+	
+	trait = viking
+
+	3315.1.1 = { birth = yes }
+	3374.1.1 = { death = yes }
+}
+wolfgale_101 = {
+	name = "Holger" #Count of Dragonclaw (Interregnum)
+	dynasty = dyn_wolfgale
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = wolfgale_100
+	
+	trait = viking
+	
+	3337.1.1 = { birth = yes }
+	3375.1.1 = { death = { death_reason = death_battle } }
+}
+wolfgale_101b = {
+	name = "Grelrenn"
+	dynasty = dyn_wolfgale
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	father = wolfgale_100
+	
+	trait = viking
+	
+	3341.1.1 = { birth = yes }
+	3366.1.1 = { death = { death_reason = death_battle } }
+}
+wolfgale_101c = {
+	name = "Lorkmir" #Count of Dragonclaw (Reachman)
+	dynasty = dyn_wolfgale
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = wolfgale_100
+	
+	trait = viking
+	
+	3343.1.1 = { birth = yes }
+	3406.1.1 = { death = yes }
+}
+wolfgale_102 = {
+	name = "Angvild"
+	dynasty = dyn_wolfgale
+	culture = cyro_nord
+	religion = nord_cult
+	
+	father = wolfgale_101
+	
+	3359.1.1 = { birth = yes }
+	3381.1.1 = { death = { death_reason = death_ill } }
+}
+wolfgale_103 = {
+	name = "Runa"
+	dynasty = dyn_wolfgale
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	father = wolfgale_101c
+	
+	3372.1.1 = { birth = yes }
+	3433.1.1 = { death = yes }
+}
+wolfgale_104 = {
+	name = "Kirsten"
+	dynasty = dyn_wolfgale
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+	
+	mother = wolfgale_103
+	
+	3404.1.1 = { birth = yes }
+	3469.1.1 = { death = yes }
+}
+wolfgale_105 = {
+	name = "Birna"
+	dynasty = dyn_wolfgale
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+	
+	mother = wolfgale_104
+
+	3427.1.1 = { birth = yes }
+	3476.1.1 = { death = yes }
+}
+wolfgale_105b = {
+	name = "Argi"
+	dynasty = dyn_wolfgale
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+	
+	mother = wolfgale_104
+
+	3433.1.1 = { birth = yes }
+	3461.1.1 = { death = yes }
+}
+
+#Ice-Heart Dynasty (dyn_iceheart)
+iceheart_97 = {
+	name = "Hranura"
+	dynasty = dyn_iceheart
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	3244.1.1 = { birth = yes }
+	3270.1.1 = { add_matrilineal_spouse = iceheart_97_husband }
+	3309.1.1 = { death = yes }
+}
+iceheart_97_husband = {
+	name = "Sold"
+	culture = cyro_nord
+	religion = nord_cult
+
+	3241.1.1 = { birth = yes }
+	3304.1.1 = { death = yes }
+}
+iceheart_98 = {
+	name = "Thaer"
+	dynasty = dyn_iceheart
+	culture = cyro_nord
+	religion = nord_cult
+
+	mother = iceheart_97
+	father = iceheart_97_husband
+
+	3273.1.1 = { birth = yes }
+	3299.1.1 = { add_spouse = iceheart_98_wife }
+	3346.1.1 = { death = yes }
+}
+iceheart_98_wife = {
+	name = "Helgith"
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	3276.1.1 = { birth = yes }
+	3344.1.1 = { death = yes }
+}
+iceheart_99 = {
+	name = "Agneta"
+	dynasty = dyn_iceheart
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	father = iceheart_98
+	mother = iceheart_98_wife
+
+	3301.1.1 = { birth = yes }
+	3330.1.1 = { add_matrilineal_spouse = iceheart_99_husband }
+	3365.1.1 = { death = yes }
+}
+iceheart_99_husband = {
+	name = "Lars"
+	culture = cyro_nord
+	religion = nord_cult
+
+	3306.1.1 = { birth = yes }
+	3355.1.1 = { death = yes }
+}
+iceheart_100 = {
+	name = "Ugor"
+	dynasty = dyn_iceheart
+	culture = cyro_nord
+	religion = nord_cult
+
+	mother = iceheart_99
+	father = iceheart_99_husband
+
+	3334.1.1 = { birth = yes }
+	3381.1.1 = { death = yes }
+}
+iceheart_atli = { #from ESO
+	name = "Atli"
+	dynasty = dyn_iceheart
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	3468.1.1 = { birth = yes }
+	3489.1.1 = { add_spouse = iceheart_oljorn }
+	3559.1.1 = { death = yes }
+}
+iceheart_oljorn = { #from ESO
+	name = "Oljorn"
+	culture = cyro_nord
+	religion = nord_cult
+	
+	3471.1.1 = { birth = yes }
+	3558.1.1 = { death = yes }
+}
+
+#Troll-Vanquisher (dyn_trollvanquisher)
+trollvanquisher_99 = {
+	name = "Eydis"
+	dynasty = dyn_trollvanquisher
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	3273.1.1 = { birth = yes }
+	3332.1.1 = { death = yes }
+}
+trollvanquisher_100 = {
+	name = "Kjorgel"
+	dynasty = dyn_trollvanquisher
+	culture = cyro_nord
+	religion = nord_cult
+
+	mother = trollvanquisher_99
+
+	trait = sign_mage
+	
+	3307.4.18 = { birth = yes }
+	3369.6.9 = { death = yes }
+}
+trollvanquisher_101 = {
+	name = "Erikka"
+	dynasty = dyn_trollvanquisher
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+	
+	father = trollvanquisher_100
+
+	trait = calm
+	trait = honest
+	trait = zealous
+
+	3336.1.29 = { birth = yes }
+	3356.2.1 = { effect = { learn_language = language_nordic } }
+	3356.12.3 = { add_matrilineal_spouse = darkhammer_99_brother }
+	3383.2.15 = { death = yes }
+}
+trollvanquisher_101b = {
+	name = "Freyda"
+	dynasty = dyn_trollvanquisher
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+	
+	father = trollvanquisher_100
+
+	trait = callous
+	trait = ambitious
+	trait = sign_mage
+
+	3339.4.23 = { birth = yes }
+	3402.9.9 = { death = yes }
+}
+trollvanquisher_102 = {
+	name = "Ulfred"
+	dynasty = dyn_trollvanquisher
+	culture = cyro_nord
+	religion = nord_cult
+
+	mother = trollvanquisher_101
+	father = darkhammer_99_brother
+
+	trait = sign_lady
+
+	3358.9.17 = { birth = yes }
+	3399.1.1 = { death = yes }
+}
+
+#Starshield, rule Bleaker's Way
+starshield_98 = {
+	name = "Gunjar"
+	dynasty = dyn_starshield
+	culture = cyro_nord
+	religion = nord_cult
+
+	3266.1.1 = { birth = yes }
+	3290.1.1 = { add_spouse = starshield_98_wife }
+	3311.1.1 = { death = yes }
+}
+starshield_98_wife = {
+	name = "Heddvild"
+	religion = nord_cult
+	culture = cyro_nord
+	female = yes
+
+	trait = sign_warrior
+
+	3265.8.6 = { birth = yes }
+	3338.12.21 = { death = { death_reason = death_natural_causes } }
+}
+starshield_99 = {
+	name = "Olfina"
+	dynasty = dyn_starshield
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	father = starshield_98
+	mother = starshield_98_wife
+
+	3292.1.1 = { birth = yes }
+	3345.1.1 = { death = { death_reason = death_ill } }
+}
+starshield_100 = {
+	name = "Sven"
+	dynasty = dyn_starshield
+	religion = nord_cult
+	culture = cyro_nord
+
+	mother = starshield_99
+
+	trait = sign_warrior
+
+	3314.8.11 = { birth = yes }
+	3378.6.24 = { death = { death_reason = death_natural_causes } }
+}
+starshield_101 = {
+	name = "Atli"
+	dynasty = dyn_starshield
+	religion = nord_cult
+	culture = cyro_nord
+	female = yes
+
+	father = starshield_100
+
+	3339.1.1 = { birth = yes }
+	3404.1.1 = { death = yes }
+}
+
+#Foeslayer, vassals of Stuhn. Local Cyro-Nords
+foeslayer_98 = {
+	name = "Hanse"
+	dynasty = dyn_foe_slayer
+	culture = cyro_nord
+	religion = nord_cult
+
+	3276.1.1 = { birth = yes }
+	3297.1.1 = { add_spouse = foeslayer_98_wife }
+	3332.1.1 = { death = yes }
+}
+foeslayer_98_wife = {
+	name = "Raki"
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	3274.1.1 = { birth = yes }
+	3336.1.1 = { death = yes }
+}
+foeslayer_99 = {
+	name = "Gundlar"
+	dynasty = dyn_foe_slayer
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = foeslayer_98
+	mother = foeslayer_98_wife
+
+	3298.1.1 = { birth = yes }
+	3328.1.1 = { add_spouse = foeslayer_99_wife }
+	3350.1.1 = { death = yes }
+}
+foeslayer_99_wife = {
+	name = "Odhilda"
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	3306.1.1 = { birth = yes }
+	3365.1.1 = { death = yes }
+}
+foeslayer_100 = {
+	name = "Heddvild"
+	dynasty = dyn_foe_slayer
+	religion = nord_cult
+	culture = cyro_nord
+	female = yes
+
+	father = foeslayer_99
+	mother = foeslayer_99_wife
+
+	3331.1.1 = { birth = yes }
+	3354.1.1 = { add_matrilineal_spouse = foeslayer_100_husband }
+	3392.1.1 = { death = yes }
+}
+foeslayer_100_husband = {
+	name = "Aenar"
+	culture = cyro_nord
+	religion = nord_cult
+
+	3326.1.1 = { birth = yes }
+	3376.1.1 = { death = yes }
+}
+foeslayer_101 = {
+	name = "Ergnir"
+	dynasty = dyn_foe_slayer
+	culture = cyro_nord
+	religion = nord_cult
+
+	mother = foeslayer_100
+	father = foeslayer_100_husband
+	
+	3355.1.1 = { birth = yes }
+	3374.1.1 = { add_spouse = foeslayer_101_wife1 }
+	3392.1.1 = { add_spouse = foeslayer_101_wife2 }
+	3408.1.1 = { death = yes }
+}
+foeslayer_101_wife1 = {
+	name = "Katilda"
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	3352.1.1 = { birth = yes }
+	3385.1.1 = { death = yes }
+}
+foeslayer_101_wife2 = { #TODO: can be a noble
+	name = "Tolfrika"
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	3371.1.1 = { birth = yes }
+	3436.1.1 = { death = yes }
+}
+foeslayer_102 = {
+	name = "Helvard"
+	dynasty = dyn_foe_slayer
+	culture = cyro_nord
+	religion = nord_cult
+	
+	father = foeslayer_101
+	mother = foeslayer_101_wife1
+
+	3376.1.1 = { birth = yes }
+	3401.1.1 = { death = { death_reason = death_battle } } #Raid
+}
+foeslayer_102b = {
+	name = "Stenvar"
+	dynasty = dyn_foe_slayer
+	culture = cyro_nord
+	religion = nord_cult
+	
+	father = foeslayer_101
+	mother = foeslayer_101_wife2
+
+	3394.1.1 = { birth = yes }
+	3466.1.1 = { death = yes }
+}
+
+##Salt-Breaker Dynasty (dyn_saltbreaker)
+
+saltbreaker_98 = {
+	name = "Froki" #Adventurer
+	dynasty = dyn_saltbreaker
+	culture = cyro_nord
+	religion = nord_cult
+	
+	3312.1.1 = { birth = yes }
+	3398.1.1 = { death = { death_reason = death_battle } }
+}
+saltbreaker_99 = {
+	name = "Gorm" #Count of Jerall
+	dynasty = dyn_saltbreaker
+	culture = cyro_nord
+	religion = nord_cult
+	father = saltbreaker_98
+	
+	3339.1.1 = { birth = yes }
+	3360.1.1 = { add_spouse = trollvanquisher_101b }
+	3398.1.1 = { death = yes }
+}
+saltbreaker_100 = {
+	name = "Viri" 
+	female = yes
+	dynasty = dyn_saltbreaker
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = saltbreaker_99
+	mother = trollvanquisher_101b
+	
+	
+	3357.1.1 = { birth = yes }
+	3423.1.1 = { death = yes }
+}
+
+saltbreaker_101 = {
+	name = "Odar" #Count of Jerall, loses to Imperials or becomes a moth priest
+	dynasty = dyn_saltbreaker
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = saltbreaker_99
+	mother = trollvanquisher_101b
+	
+	3358.1.1 = { birth = yes }
+	3417.1.1 = { death = yes }
+}
+
+saltbreaker_102 = {
+	name = "Sten" #Count of Sedor
+	dynasty = dyn_saltbreaker
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = saltbreaker_99
+	mother = trollvanquisher_101b
+	
+	3360.1.1 = { birth = yes }
+	3430.1.1 = { death = yes }
+}
+saltbreaker_103 = {
+	name = "Idolaf" #Count of Sedor
+	dynasty = dyn_saltbreaker
+	culture = cyro_nord
+	religion = nord_cult
+	father = saltbreaker_102
+	
+	3394.1.1 = { birth = yes }
+	3460.1.1 = { death = yes }
+}
+saltbreaker_104 = {
+	name = "Ingjard"
+	dynasty = dyn_saltbreaker
+	culture = cyro_nord
+	religion = nord_cult
+	father = saltbreaker_102
+	female = yes
+	
+	3396.1.1 = { birth = yes }
+	3468.1.1 = { death = yes }
+}
+saltbreaker_105 = {
+	name = "Sigaar" #Count of Sedor & Winter's Peak
+	dynasty = dyn_saltbreaker
+	culture = cyro_nord
+	religion = nord_cult
+	father = saltbreaker_103
+	
+	3428.1.1 = { birth = yes }
+	3496.1.1 = { death = yes }
+}
+saltbreaker_106 = {
+	name = "Ragna" #Count of Sedor & Winter's Peak
+	dynasty = dyn_saltbreaker
+	culture = cyro_nord
+	religion = nord_cult
+	father = saltbreaker_105
+	female = yes
+	
+	3460.1.1 = { birth = yes }
+	3532.1.1 = { death = yes }
+}
+saltbreaker_107 = {
+	name = "Njoll"
+	dynasty = dyn_saltbreaker
+	culture = cyro_nord
+	religion = nord_cult
+	father = saltbreaker_105
+	female = yes
+	
+	3466.1.1 = { birth = yes }
+	3496.1.1 = { death = yes }
+}
+saltbreaker_108 = {
+	name = "Bredin" #Count of Sedor & Winter's Peak
+	dynasty = dyn_saltbreaker
+	culture = cyro_nord
+	religion = nord_cult
+	trait = twin
+	mother = saltbreaker_106 #Ragna Salt-Breaker
+	
+	3490.1.1 = { birth = yes }
+	3557.1.3 = { death = yes }
+}
+saltbreaker_109 = {
+	name = "Bredrek"
+	dynasty = dyn_saltbreaker
+	culture = cyro_nord
+	religion = nord_cult
+	trait = twin
+	mother = saltbreaker_106 #Ragna Salt-Breaker
+	
+	3490.1.1 = { birth = yes }
+	3557.1.2 = { death = yes }
+}
+
+##Stuhns that leave Skyrim, becoming Cairn-Breaker
+cairnbreaker_100 = {
+	name = "Hrisskar" #Duke of Frostcrag 
+	dynasty_house = dyn_cairn_breaker
+	culture = cyro_nord
+	religion = nord_cult
+	sexuality = bisexual
+
+	father = stuhn_3
+	mother = stuhn_3_wife
+
+	trait = education_diplomacy_3
+	trait = physique_good_1
+	trait = adventurer
+	trait = sign_lady
+	trait = honest
+	trait = fickle
+	trait = calm
+
+	diplomacy = 4
+	martial = 10
+	stewardship = 13
+	intrigue = 9
+	learning = 3
+	prowess = 10
+	
+	3320.9.14 = { birth = yes }
+	3321.1.1 = { effect = { learn_language = language_nordic } }
+	3348.10.2 = { add_spouse = cairnbreaker_100_wife }
+	3373.4.11 = { death = { death_reason = death_old_age } }
+}
+cairnbreaker_100_wife = {
+	name = "Javora"
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	trait = cynical
+	trait = patient
+	trait = just
+	trait = sign_lover
+	
+	3320.2.1 = { birth = yes }
+	3377.9.7 = { death = { death_reason = death_old_age } }
+}
+cairnbreaker_101 = {
+	name = "Regner"
+	dynasty_house = dyn_cairn_breaker
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = cairnbreaker_100
+	mother = cairnbreaker_100_wife
+
+	trait = sign_apprentice
+	trait = bossy
+	trait = lazy
+	trait = sadistic
+	disallow_random_traits = yes
+	
+	3349.7.25 = { birth = yes }
+	3365.7.25 = {
+		remove_trait = bossy
+		trait = education_stewardship_1
+		trait = chaste
+	}
+	3408.5.1 = { death = { death_reason = death_old_age } }
+}
+cairnbreaker_101b = {
+	name = "Hilde" #Countess of Redruby 
+	dynasty_house = dyn_cairn_breaker
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	father = cairnbreaker_100
+	mother = cairnbreaker_100_wife
+	
+	trait = curious
+	trait = brave
+	trait = humble
+	trait = sign_thief
+	disallow_random_traits = yes
+
+	3350.12.28 = { birth = yes }
+	3366.12.28 = {
+		remove_trait = curious
+		trait = education_learning_1
+		trait = compassionate
+	}
+	3423.11.7 = { death = { death_reason = death_old_age } }
+}
+cairnbreaker_102 = {
+	name = "Jorundr" #Duke of Horunn & Frostcrag
+	dynasty_house = dyn_cairn_breaker
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = cairnbreaker_101
+	
+	3380.1.1 = { birth = yes }
+	3436.1.1 = { death = yes }
+}
+cairnbreaker_102b = { #Married to tharn_abnur
+	name = "Selena" 
+	dynasty_house = dyn_cairn_breaker
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+	
+	father = cairnbreaker_101
+
+	trait = intellect_good_1
+	trait = arrogant
+	trait = gregarious
+
+	3387.1.1 = { birth = yes }
+	3449.1.1 = { death = yes }
+}
+cairnbreaker_103 = {
+	name = "Ingjard" #Duchess of Horunn & Frostcrag (Reachman)
+	dynasty_house = dyn_cairn_breaker
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	father = cairnbreaker_102
+	
+	3407.1.1 = { birth = yes }
+	3472.1.1 = { death = yes }
+}
+cairnbreaker_103b = {
+	name = "Thoring" #Count of Redruby
+	dynasty_house = dyn_cairn_breaker
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = cairnbreaker_102
+	
+	3412.1.1 = { birth = yes }
+	3456.1.1 = { death = yes }
+}
+cairnbreaker_104 = {
+	name = "Ogmund" #Count of Red Ruby
+	dynasty_house = dyn_cairn_breaker
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = cairnbreaker_103
+	
+	3431.1.1 = { birth = yes }
+	3488.1.1 = { death = yes }
+}
+cairnbreaker_105 = {
+	name = "Eyja" #Duchess of Frostcrag
+	dynasty_house = dyn_cairn_breaker
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	father = cairnbreaker_104
+	
+	3464.1.1 = { birth = yes }
+	3529.1.1 = { death = yes }
+}
+
+
+#Staghorn House
+#Staghorn Dynasty
+stuhn_3_lover = {
+	name = "Javolea"
+	culture = nibenese
+	religion = niben_cult
+	female = yes
+
+	trait = adventurer
+	trait = humble
+	#trait = fornicator
+	trait = zealous
+	trait = patient
+	trait = sign_apprentice
+
+	3308.7.14 = { birth = yes }
+	3371.5.17 = { death = { death_reason = death_old_age } }
+}
+staghorn_100 = {
+	name = "Hjoldir"
+	dynasty_house = dyn_staghorn
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = stuhn_3
+	mother = stuhn_3_lover
+
+	trait = legitimized_bastard #He's in his own house, not a new dynasty
+	trait = calm
+	trait = ambitious
+	trait = patient
+	trait = sign_apprentice
+	
+	3336.7.16 = { birth = yes }
+	3337.1.1 = { effect = { learn_language = language_nordic } }
+	3350.1.1 = {
+		effect = {
+			add_pressed_claim = title:d_red_ruby
+		}
+	}
+	3355.4.13 = { add_spouse = staghorn_100_wife }
+	3396.1.14 = { death = { death_reason = death_old_age } }
+}
+staghorn_100_wife = {
+	name = "Arriallona"
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	trait = sign_lady
+
+	3333.9.8 = { birth = yes }
+	3399.11.25 = { death = { death_reason = death_old_age } }
+}
+staghorn_101 = {
+	name = "Addvar"
+	dynasty_house = dyn_staghorn
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = staghorn_100
+	mother = staghorn_100_wife
+
+	3356.1.22 = { birth = yes }
+	3416.10.17 = { death = { death_reason = death_old_age } }
+}
+staghorn_101b = {
+	name = "Ranmir"
+	dynasty_house = dyn_staghorn
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = staghorn_100
+	mother = staghorn_100_wife
+
+	3360.4.2 = { birth = yes }
+	3415.1.1 = { death = yes }
+}
+staghorn_101c = {
+	name = "Lynfa"
+	dynasty_house = dyn_staghorn
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	father = staghorn_100
+	mother = staghorn_100_wife
+
+	3364.1.1 = { birth = yes }
+	3402.1.1 = { death = yes }
+}
+staghorn_102 = {
+	name = "Hadring"
+	dynasty_house = dyn_staghorn
+	culture = cyro_nord
+	religion = nord_cult
+	
+	father = staghorn_101
+
+	3382.1.1 = { birth = yes }
+	3430.1.1 = { death = yes }
+}
+staghorn_103 = {
+	name = "Pelf"
+	dynasty_house = dyn_staghorn
+	culture = cyro_nord
+	religion = nord_cult
+	
+	father = staghorn_102
+
+	3411.1.1 = { birth = yes }
+	3459.1.1 = { death = yes }
+}
+staghorn1_102 = {
+	name = "Garvilda"
+	dynasty_house = dyn_staghorn
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+	
+	father = staghorn_101b
+
+	3396.1.1 = { birth = yes }
+	3472.1.1 = { death = yes }
+}
+staghorn1_103 = {
+	name = "Burd"
+	dynasty_house = dyn_staghorn
+	culture = cyro_nord
+	religion = nord_cult
+	
+	father = staghorn1_102
+
+	3411.1.1 = { birth = yes }
+	3469.1.1 = { death = yes }
+}
+staghorn_104 = {
+	name = "Logvaar"
+	dynasty_house = dyn_staghorn
+	culture = cyro_nord
+	religion = nord_cult
+	
+	father = staghorn1_103
+
+	3445.1.1 = { birth = yes }
+	3497.1.1 = { death = yes }
+}
+staghorn_9059 = {
+	name = "Addvild"
+	dynasty_house = dyn_staghorn
+	culture = cyro_nord
+	religion = nord_cult
+	
+	
+	father = staghorn_104
+
+	3516.1.1 = { birth = yes }
+	3576.1.1 = { death = yes }
+}
+staghorn_9060 = {
+	name = "Addvild"
+	dynasty_house = dyn_staghorn
+	culture = cyro_nord
+	religion = nord_cult
+	
+	
+	father = staghorn_9059
+
+	3536.1.1 = { birth = yes }
+	3596.1.1 = { death = yes }
+}
+
+#Lowborns
+chim_1000 = {
+	name = "Baldur"
+	culture = cyro_nord
+	religion = temple_one
+	
+	3335.1.1 = { birth = yes }
+	3396.1.1 = { death = yes }
+}
+
+dawnguard_1000 = {
+    name = "Ogierd"
+    religion = eight_divines
+    culture = cyro_nord
+	diplomacy = 5
+	martial = 9
+	prowess = 6
+	sexuality = heterosexual
+	trait = sign_lord
+	trait = education_martial_4
+	trait = education_martial_prowess_2
+	trait = stubborn
+	trait = zealous
+	trait = impatient
+	trait = giant
+
+    3333.3.10 = { birth = yes }
+	3350.10.9 = {
+		employer = bjorga_10600
+		effect = {
+			add_gold = 90
+			add_character_flag = do_not_generate_starting_family
+		}
+	}
+	3351.1.1 = { 
+		effect = {
+			add_trait = lifestyle_blademaster # dawnguard founder be blading
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+                value = {
+                    integer_range = {
+                        min = medium_lifestyle_random_xp_low
+                        max = medium_lifestyle_random_xp_high
+                    }
+                }
+			}
+		}
+		add_trait = reckless
+	}
+	3367.8.17 = {
+		trait = order_member # dawnguard founded
+	}
+    3375.5.2 = { death = { death_reason = death_duel killer = vittr_majorn } }
+}
+dawnguard_1001 = {
+    name = "Almos"
+    religion = eight_divines
+    culture = cyro_nord
+	diplomacy = 5
+	martial = 9
+	prowess = 5
+	sexuality = heterosexual
+	trait = sign_thief
+	trait = lifestyle_herbalist
+	trait = cautious_leader
+	trait = calm
+	trait = zealous
+	trait = arrogant
+
+	trait = education_martial_3
+	trait = education_magic_2
+
+    3351.12.10 = { birth = yes }
+	3367.8.17 = {
+		trait = order_member # dawnguard founded
+	}
+	3370.10.9 = { 
+		effect = {
+			add_gold = 20
+		}
+	}
+	3370.1.1 = { employer = dawnguard_1000 }
+    3399.4.1 = { death = death_murder }
+}
+dawnguard_1002 = {
+	name = "Lodvar"
+	religion = eight_divines
+    culture = cyro_nord
+
+	trait = order_member
+
+	3363.1.1 = { birth = yes }
+	3434.1.1 = { death = yes }
+}
+dawnguard_1003 = {
+	name = "Valdr"
+	religion = eight_divines
+    culture = cyro_nord
+
+	trait = order_member
+
+	3397.1.1 = { birth = yes }
+	3473.1.1 = { death = yes }
+}
+
+#Nordic warlords during Alessia
+forkbeard_1 = {
+	name = "Ithelsten"
+	dynasty = dyn_fork_beard
+	culture = westmarcher
+	religion = nord_cult
+
+	trait = strong
+
+	223.1.1 = { birth = yes }
+	291.1.1 = { death = yes }
+}
+forkbeard_2 = {
+	name = "Wulfgar"
+	dynasty = dyn_fork_beard
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = forkbeard_1
+
+	251.1.1 = { birth = yes }
+	319.1.1 = { death = yes }
+}
+forkbeard_3 = {
+	name = "Bolfrida"
+	dynasty = dyn_fork_beard
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	father = forkbeard_2
+
+	273.1.1 = { birth = yes }
+	328.1.1 = { death = yes }
+}
+
+#Nordic ruler of Ontus
+long_arm_001 = {
+	name = "Skjorta"
+	culture = eastmarcher
+	religion = nord_cult
+	dynasty = dyn_long_arm
+	female = yes
+	trait = reckless #Got a little bit lost
+	trait = education_martial_3
+	211.1.1 = { birth = yes }
+	289.1.1 = { death = yes }
+}
+long_arm_002 = {
+	name = "Skjorta"
+	religion = eight_divines
+    culture = colovian
+	dynasty = dyn_long_arm
+	mother = long_arm_001
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	289.1.1 = { birth = yes }
+	311.1.1 = { give_nickname = nick_line_of }
+	3223.1.1 = { death = yes }
+}
+
+#Founders of Woodehand (duchy north of Skingrad)
+elf_hewer_001 = { #PT
+	name = "Radul"
+	culture = eastmarcher
+	religion = nord_cult
+	dynasty = dyn_elf_hewer #Self-explanatory
+	trait = sadistic
+	trait = zealous
+	trait = education_martial_4
+	215.1.1 = { birth = yes }
+	281.1.1 = { death = yes }
+}
+
+elf_hewer_002 = {
+	name = "Radul"
+	culture = eastmarcher
+	religion = nord_cult
+	dynasty = dyn_elf_hewer
+	father = elf_hewer_001
+	female = yes
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	281.1.1 = { birth = yes }
+	311.1.1 = { give_nickname = nick_line_of }
+	410.1.1 = { death = yes }
+}
+
+anvil_founder_001 = { #PT - protected village that would become Anvil
+	name = "Naharine"
+	culture = eastmarcher
+	religion = eight_divines
+	trait = shieldmaiden
+	female = yes
+
+	trait = saint
+	
+	221.1.1 = { birth = yes }
+	288.1.1 = { death = yes }
+}
+
+#Brumaht - kings of Bruma during Reman
+brumaht_1 = { #King from PT book about Colovia during Reman
+	name = "Rein" #PT
+	dynasty = dyn_brumaht
+	culture = cyro_nord
+	religion = nord_cult
+
+	trait = impatient
+	trait = wrathful
+	trait = sadistic
+
+	2662.1.1 = { birth = yes }
+	2670.1.1 = { give_nickname = nick_beggar_king }
+	2731.5.14 = { death = yes }
+}
+brumaht_2 = { #Name from PT book
+	name = "Vythu"
+	dynasty = dyn_brumaht
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = brumaht_1
+	
+	2690.1.1 = { birth = yes }
+	2762.10.18 = { death = yes }
+}
+brumaht_3 = {
+	name = "Thaena"
+	dynasty = dyn_brumaht
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	father = brumaht_2
+
+	2715.1.1 = { birth = yes }
+	2754.6.20 = { death = yes }
+}
+brumaht_4 = {
+	name = "Thyra"
+	dynasty = dyn_brumaht
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	mother = brumaht_3
+
+	2736.1.1 = { birth = yes }
+	2771.12.15 = { death = yes }
+}
+brumaht_4b = {
+	name = "Ordan"
+	dynasty = dyn_brumaht
+	culture = cyro_nord
+	religion = nord_cult
+
+	mother = brumaht_3
+
+	2741.1.1 = { birth = yes }
+	2802.9.11 = { death = yes }
+}
+brumaht_5 = {
+	name = "Thaena"
+	dynasty = dyn_brumaht
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	father = brumaht_4b
+
+	2770.1.1 = { birth = yes }
+	2833.11.10 = { death = yes }
+}
+brumaht_6 = {
+	name = "Ranmir"
+	dynasty = dyn_brumaht
+	culture = cyro_nord
+	religion = nord_cult
+
+	mother = brumaht_5
+
+	2797.1.1 = { birth = yes }
+	2863.8.20 = { death = yes }
+}
+brumaht_7 = {
+	name = "Vythu"
+	dynasty = dyn_brumaht
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = brumaht_6
+
+	2829.1.1 = { birth = yes }
+	2870.5.15 = { death = { death_reason = death_battle } }
+}
+brumaht_8 = {
+	name = "Lokil"
+	dynasty = dyn_brumaht
+	culture = cyro_nord
+	religion = nord_cult
+
+	father = brumaht_7
+
+	2852.1.1 = { birth = yes }
+	2901.9.4 = { death = { death_reason = death_battle } }
+}
+brumaht_9 = {
+	name = "Thyra"
+	dynasty = dyn_brumaht
+	culture = cyro_nord
+	religion = nord_cult
+	female = yes
+
+	father = brumaht_8
+
+	trait = varangian
+
+	2876.1.1 = { birth = yes }
+	2900.7.8 = { death = { death_reason = death_battle } }
+}
+
+#Bruiant, bastards of Brumaht
+bruiant_1 = {
+	name = "Hlormar"
+	dynasty = dyn_brumaht
+	culture = cyro_nord
+	religion = hero_cult
+
+	father = brumaht_6
+
+	trait = bastard_founder
+
+	2820.1.1 = { birth = yes }
+	2847.1.1 = {
+		dynasty = dyn_bruiant
+	}
+	2873.1.1 = { death = yes }
+}
+bruiant_2 = {
+	name = "Celia"
+	dynasty = dyn_bruiant
+	culture = colovian
+	religion = hero_cult
+	female = yes
+	
+	father = bruiant_1
+
+	2847.1.1 = { birth = yes }
+	2918.10.14 = { death = yes }
+}
+bruiant_3 = {
+	name = "Haron"
+	dynasty = dyn_bruiant
+	culture = colovian
+	religion = hero_cult
+
+	mother = bruiant_2
+
+	2871.1.1 = { birth = yes }
+	2940.7.31 = { death = yes }
+}
+bruiant_4 = {
+	name = "Haron"
+	dynasty = dyn_bruiant
+	culture = colovian
+	religion = hero_cult
+
+	father = bruiant_3
+
+	2901.1.1 = { birth = yes }
+	2962.8.13 = { death = yes }
+}
+bruiant_5 = {
+	name = "Tetras"
+	dynasty = dyn_bruiant
+	culture = colovian
+	religion = hero_cult
+
+	father = bruiant_4
+
+	2923.1.1 = { birth = yes }
+	2975.3.1 = { death = yes }
+}
+bruiant_5b = {
+	name = "Radrus"
+	dynasty = dyn_bruiant
+	culture = colovian
+	religion = hero_cult
+
+	father = bruiant_4
+
+	2929.1.1 = { birth = yes }
+	2950.1.1 = { death = yes }
+}
+bruiant_5c = {
+	name = "Kaltan"
+	dynasty = dyn_bruiant
+	culture = colovian
+	religion = hero_cult
+
+	father = bruiant_4
+
+	2932.1.1 = { birth = yes }
+	2990.3.3 = { death = yes }
+}
+bruiant_6 = {
+	name = "Geriana"
+	dynasty = dyn_bruiant
+	culture = colovian
+	religion = hero_cult
+	female = yes
+
+	father = bruiant_5c
+
+	2957.1.1 = { birth = yes }
+	3021.6.17 = { death = yes }
+}
+bruiant_7 = {
+	name = "Merilla"
+	dynasty = dyn_bruiant
+	culture = colovian
+	religion = hero_cult
+	female = yes
+
+	mother = bruiant_6
+
+	2991.1.1 = { birth = yes }
+	3067.9.2 = { death = yes }
+}
+bruiant_8 = {
+	name = "Colisa"
+	dynasty = dyn_bruiant
+	culture = colovian
+	religion = hero_cult
+	female = yes
+
+	mother = bruiant_7
+
+	3022.1.1 = { birth = yes }
+	3084.4.26 = { death = yes }
+}
+bruiant_9 = {
+	name = "Korus"
+	dynasty = dyn_bruiant
+	culture = colovian
+	religion = hero_cult
+
+	mother = bruiant_8
+
+	3049.1.1 = { birth = yes }
+	3105.1.29 = { death = yes }
+}
+bruiant_10 = {
+	name = "Sallus"
+	dynasty = dyn_bruiant
+	culture = colovian
+	religion = hero_cult
+
+	father = bruiant_9
+
+	3076.1.1 = { birth = yes }
+	3111.1.1 = { trait = measles }
+	3111.2.7 = { death = { death_reason = death_measles } }
+}
+bruiant_10b = {
+	name = "Torbal"
+	dynasty = dyn_bruiant
+	culture = colovian
+	religion = hero_cult
+
+	father = bruiant_9
+
+	3080.1.1 = { birth = yes }
+	3138.10.18 = { death = yes }
+}
+bruiant_10c = {
+	name = "Ilav"
+	dynasty = dyn_bruiant
+	culture = colovian
+	religion = hero_cult
+
+	father = bruiant_9
+
+	3083.1.1 = { birth = yes }
+	3111.1.1 = { death = yes }
+}
+bruiant_11 = {
+	name = "Mila"
+	dynasty = dyn_bruiant
+	culture = colovian
+	religion = hero_cult
+	female = yes
+
+	father = bruiant_10
+
+	3101.1.1 = { birth = yes }
+	3111.1.1 = { trait = measles }
+	3111.2.5 = { death = { death_reason = death_measles } }
+}
+bruiant_11b = {
+	name = "Korus"
+	dynasty = dyn_bruiant
+	culture = colovian
+	religion = hero_cult
+
+	father = bruiant_10
+
+	3107.1.1 = { birth = yes }
+	3111.1.1 = { trait = measles }
+	3111.2.19 = { death = { death_reason = death_measles } }
+}
+
+cheydin_001 = { #Founder of Cheydinhal
+	name = "Cheydin"
+	culture = eastmarcher
+	religion = eight_divines
+	211.1.1 = { birth = yes }
+	268.1.1 = { death = yes }
+}
+harlun_001 = { #Founder of Harlun's watch
+	name = "Harlun"
+	culture = eastmarcher
+	religion = nord_cult
+	211.1.1 = { birth = yes }
+	268.1.1 = { death = yes }
+}
+
+#Founders of Kvatch
+hardheart_100 = {
+	name = "Venhir" #PT - saint
+	culture = eastmarcher
+	religion = nord_cult
+	dynasty = dyn_hard_heart
+
+	trait = viking
+	trait = education_martial_3
+	trait = saint
+	
+	202.1.1 = { birth = yes }
+	269.1.31 = { death = yes }
+}
+hardheart_101 = {
+	name = "Sten" #PT - saint
+	culture = eastmarcher
+	religion = eight_divines
+	dynasty = dyn_hard_heart
+
+	father = hardheart_100
+
+	trait = saint
+
+	231.1.1 = { birth = yes }
+	291.5.2 = { death = yes }
+}

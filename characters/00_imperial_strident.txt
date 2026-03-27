@@ -1,0 +1,2024 @@
+﻿##Inveran Dynasty (dyn_inveran)
+
+#House Inveran
+inveran_97 = {
+	name = "Turia"
+	dynasty = dyn_inveran
+	religion = hero_cult
+	culture = strident
+	female = yes
+	3214.1.1 = { birth = yes }
+	3263.1.1 = { death = yes }
+}
+inveran_98 = {
+	name = "Vontus"
+	dynasty = dyn_inveran
+	religion = hero_cult
+	culture = strident
+
+	mother = inveran_97
+
+	3243.1.1 = { birth = yes }
+	3270.1.1 = { add_spouse = inveran_98_wife }
+	3294.1.1 = { death = yes }
+}
+inveran_98_wife = {
+	name = "Faustina"
+	religion = hero_cult
+	culture = strident
+	female = yes
+
+	3248.1.1 = { birth = yes }
+	3312.1.1 = { death = yes }
+}
+inveran_98b = { #Married to pasic_99
+	name = "Adrianne"
+	dynasty = dyn_inveran
+	religion = hero_cult
+	culture = strident
+	mother = inveran_97
+	female = yes
+	3248.1.1 = { birth = yes }
+	3311.1.1 = { death = yes }
+}
+inveran_99 = {
+	name = "Rena"
+	dynasty = dyn_inveran
+	religion = hero_cult
+	culture = strident
+	female = yes
+
+	father = inveran_98
+	mother = inveran_98_wife
+
+	3271.1.1 = { birth = yes }
+	3334.1.1 = { death = yes }
+}
+inveran_99b = {
+	name = "Jastia" #Married to olo_97
+	dynasty = dyn_inveran
+	religion = hero_cult
+	culture = strident
+	female = yes
+
+	father = inveran_98
+	mother = inveran_98_wife
+
+	3274.1.1 = { birth = yes }
+	3348.1.1 = { death = yes }
+}
+inveran_99c = {
+	name = "Turia" #Married to hani_99
+	dynasty = dyn_inveran
+	religion = hero_cult
+	culture = strident
+	female = yes
+
+	father = inveran_98
+	mother = inveran_98_wife
+
+	3277.1.1 = { birth = yes }
+	3337.1.1 = { death = yes }
+}
+inveran_100 = {
+	name = "Tyran" #Duke of Hastrel ( Warlords & Interregnum )
+	dynasty = dyn_inveran
+	religion = hero_cult
+	culture = strident
+
+	mother = inveran_99
+
+	trait = education_learning_3
+	trait = vengeful
+	trait = greedy
+	trait = just
+
+	diplomacy = 8
+	martial = 1
+	stewardship = 7
+	intrigue = 4
+	learning = 3
+
+	3299.1.1 = { birth = yes }
+	3325.1.1 = { add_spouse = sevrick_1000b }
+	3363.1.1 = { death = yes }
+}
+inveran_101 = {
+	name = "Mhorus" #Duke of Hastrel
+	dynasty = dyn_inveran
+	religion = hero_cult
+	culture = strident
+	father = inveran_100
+	mother = sevrick_1000b
+
+	3330.1.1 = { birth = yes }
+	3352.1.1 = { add_spouse = inveran_101_wife }
+	3434.1.1 = { death = yes }
+}
+inveran_101_wife = {
+	name = "Zaria"
+	religion = walkabout
+	culture = forebear
+	female = yes
+
+	3336.1.1 = { birth = yes }
+	3390.1.1 = { death = yes }
+}
+inveran_101b = {
+	name = "Faustina" #Married to jarol
+	dynasty = dyn_inveran
+	religion = hero_cult
+	culture = strident
+	father = inveran_100
+	mother = sevrick_1000b
+	female = yes
+
+	3335.1.1 = { birth = yes }
+	3408.1.1 = { death = yes }
+}
+inveran_102 = {
+	name = "Rislav" #Duke of Hastrel
+	dynasty = dyn_inveran
+	religion = hero_cult
+	culture = strident
+	father = inveran_101
+	mother = inveran_101_wife
+
+	3354.1.1 = { birth = yes }
+	3438.1.1 = { death = yes }
+}
+inveran_103 = {
+	name = "Cinda"
+	female = yes
+	dynasty = dyn_inveran
+	religion = hero_cult
+	culture = strident
+	father = inveran_101
+	mother = inveran_101_wife
+
+	3357.1.1 = { birth = yes }
+	3428.1.1 = { death = yes }
+}
+inveran_104 = {
+	name = "Hasphat"
+	dynasty = dyn_inveran
+	religion = hero_cult
+	culture = strident
+	father = inveran_101
+	mother = inveran_101_wife
+
+	3360.1.1 = { birth = yes }
+	3430.1.1 = { death = yes }
+}
+## Olo Dynasty (olo)
+#House Olo
+olo_1 = {
+	name = "Clovius" #Duke of Anvil
+	dynasty = olo
+	religion = eight_divines
+	culture = strident
+
+	trait = arrogant
+
+	2180.1.1 = { birth = yes }
+	2234.1.1 = { death = { death_reason = death_thrassian_plague } }
+}
+olo_2 = {
+	name = "Bendu" #Lore - Admiral Bendu Olo, King of Anvil
+	dynasty = olo
+	religion = eight_divines
+	culture = strident #He is THE Strident. Also serves as a contrast to colovian Shore-Kings.
+
+	father = olo_1
+
+	trait = education_diplomacy_4 #United everyone against Thras
+	trait = brave
+	trait = diligent
+	trait = vengeful
+	trait = gregarious
+
+	2212.1.1 = { birth = yes }
+	2260.1.1 = { give_nickname = nick_admiral }
+	2278.1.1 = { death = yes }
+}
+olo_2b = {
+	name = "Gavros"
+	dynasty = olo
+	religion = eight_divines
+	culture = strident
+
+	father = olo_1
+
+	2213.1.1 = { birth = yes }
+	2266.1.1 = { death = { death_reason = death_thrassian_plague } }
+}
+olo_2c = { #Married to Tharns
+	name = "Placidia"
+	dynasty = olo
+	religion = eight_divines
+	culture = strident
+	female = yes
+	
+	father = olo_1
+
+	2220.1.1 = { birth = yes }
+	2288.1.1 = { death = yes }
+}
+olo_3 = {
+	name = "Sornatius" #King of Anvil
+	dynasty = olo
+	religion = eight_divines
+	culture = strident
+
+	father = olo_2
+
+	2238.1.1 = { birth = yes }
+	2299.1.1 = { death = yes }
+}
+
+olo_line = {
+	name = "Sornatius"
+	dynasty = olo
+	religion = eight_divines
+	culture = strident
+	father = olo_3
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	2299.1.1 = { birth = yes }
+	2350.1.1 = { give_nickname = nick_line_of }
+	3200.1.1 = { death = yes }
+}
+olo_95 = {
+	name = "Rusio"
+	dynasty = olo
+	religion = eight_divines
+	culture = strident
+
+	father = olo_line
+
+	3200.1.1 = { birth = yes }
+	3267.1.1 = { death = yes }
+}
+olo_96 = {
+	name = "Claudia"
+	dynasty = olo
+	religion = eight_divines
+	culture = strident
+	female = yes
+	father = olo_95
+	3233.1.1 = { birth = yes }
+	3250.1.1 = { add_matrilineal_spouse = helvor_005 }
+	3288.1.1 = { death = yes }
+}
+olo_96b = { #Married to larich_98
+	name = "Restita"
+	dynasty = olo
+	religion = eight_divines
+	culture = strident
+	female = yes
+
+	father = olo_95
+
+	3242.1.1 = { birth = yes }
+	3276.1.1 = { death = yes }
+}
+olo_97 = {
+	name = "Rogatus" #King of Anvil
+	dynasty = olo
+	religion = eight_divines
+	culture = strident
+	mother = olo_96
+	father = helvor_005
+
+	3262.1.1 = { birth = yes }
+	3290.1.1 = { add_spouse = inveran_99b }
+	3309.1.1 = { death = yes }
+}
+olo_98 = {
+	name = "Fortis" #King of Anvil
+	dynasty = olo
+	religion = eight_divines
+	culture = strident
+	father = olo_97
+	mother = inveran_99b
+
+	3303.1.1 = { birth = yes }
+	3325.1.1 = { add_spouse = linchal_99b }
+	3359.1.1 = { death = { death_reason = death_battle killer = dralgoner_arctur }}
+}
+olo_98b = { #Married to danobia_99
+	name = "Placidia"
+	dynasty = olo
+	religion = eight_divines
+	culture = strident
+	female = yes
+	
+	father = olo_97
+	mother = inveran_99b
+
+	3305.1.1 = { birth = yes }
+	3377.1.1 = { death = yes }
+}
+olo_99 = {
+	name = "Rogatus" #King of Anvil
+	dynasty = olo
+	dna = olo_99_dna_entry
+	religion = eight_divines
+	culture = strident
+	father = olo_98
+	mother = linchal_99b
+
+	trait = education_learning_2
+	trait = shy
+	trait = compassionate
+	trait = vengeful
+	trait = sign_ritual
+	diplomacy = 5
+	martial = 4
+	stewardship = 5
+	intrigue = 7
+	learning = 10
+	prowess = 5
+
+	3332.1.19 = { birth = yes }
+	3357.5.1 = { add_spouse	= olo_99_wife }
+	3364.1.1 = { death = { death_reason = death_battle killer = dralgoner_arctur } }
+}
+olo_99_wife = {
+	name = "Veresa"
+	dna = olo_99_wife_dna_entry
+	dynasty = dyn_senyan
+	religion = eight_divines
+	culture = strident
+	female = yes
+
+	mother = senyan_100b
+
+	trait = education_martial_1
+	trait = open_terrain_expert
+	trait = lustful
+	trait = fickle
+	trait = cynical
+	trait = beauty_good_2
+	trait = sign_lover
+
+	3341.2.1 = { birth = yes }
+	3364.1.1 = { employer = jarol_100 } # after the death of Rogatus, flees to the uncle of her kid
+	3402.1.1 = { birth = yes }
+}
+olo_100 = {
+	name = "Rusio" #Order of the Hour's original warrior-priest, third pillar
+	dynasty = olo
+	religion = eight_divines
+	culture = colovian #Closer to people in Kvatch
+	father = olo_98
+	mother = linchal_99b
+
+	trait = education_martial_4
+	trait = zealous
+	trait = greedy
+	trait = temperate
+	trait = sign_serpent
+	trait = order_member
+
+	3334.3.15 = { birth = yes }
+	##3357, ends the order of the black worm infestation in Kvatch
+	3388.1.1 = { death = yes }
+}
+olo_101 = {
+	name = "Appos" #Count of Duskwatch
+	dynasty = olo
+	religion = eight_divines
+	culture = strident
+	father = olo_99
+	mother = olo_99_wife
+
+	trait = sign_atronach	
+
+	3358.11.13 = { birth = yes }
+	3364.1.1 = { employer = jarol_100 } # after the death of Rogatus, flees to his uncle
+	3430.1.1 = { death = yes }
+}
+olo_102 = {
+	name = "Veresa"
+	female = yes
+	dynasty = olo
+	religion = eight_divines
+	culture = strident
+	father = olo_98
+	mother = linchal_99b
+
+	trait = education_martial_3
+	trait = stubborn
+	trait = brave
+	trait = just
+	trait = sign_serpent
+
+	3340.10.31 = { birth = yes }
+	3356.1.1 = {
+		add_spouse = chorak_103
+		employer = chorak_101b
+	}
+	3362.12.4 = { death = { death_reason = death_battle killer = sosildor_100 } }
+}
+
+#House Jarol
+jarol_100 = {
+	name = "Ignas" #Duke of Crowhaven, forms Cadet Branch
+	dynasty_house = olo_jarol
+	religion = eight_divines
+	culture = strident
+	father = olo_98
+	mother = linchal_99b
+
+	trait = education_stewardship_1
+	trait = gluttonous
+	trait = humble
+	trait = gregarious
+	trait = sign_atronach
+
+	3339.11.21 = { birth = yes }
+	3355.1.1 = { culture = strident }
+	3358.1.1 = { add_spouse = inveran_101b }
+	3364.1.1 = {
+		remove_trait = humble
+		trait = vengeful
+	}
+	3397.1.1 = { death = yes }
+}
+jarol_101 = {
+	name = "Belisar" #Duke of Crowhaven
+	dynasty_house = olo_jarol
+	religion = eight_divines
+	culture = strident
+	father = jarol_100
+	mother = inveran_101b
+
+	3360.1.1 = { birth = yes }
+	3432.1.1 = { death = yes }
+}
+jarol_102 = {
+	name = "Morihaus" #Duke of Crowhaven
+	dynasty_house = olo_jarol
+	religion = eight_divines
+	culture = strident
+	father = jarol_101
+	trait = intellect_good_2
+
+	3392.1.1 = { birth = yes }
+	3420.1.1 = {
+		effect = {
+			add_character_flag = artificial_lifespan
+			add_character_flag = natural_lifespan_0
+			add_trait = lifespan_magic_2 #Powerful mage
+		}
+	}
+	3501.1.1 = { death = yes }
+}
+jarol_103 = {
+	name = "Quintus" #Duke of Crowhaven
+	dynasty_house = olo_jarol
+	religion = eight_divines
+	culture = strident
+	father = jarol_102
+	trait = arrogant
+	trait = greedy
+	trait = drunkard
+
+	3460.1.1 = { birth = yes }
+	3502.6.6 = {
+		death = {
+			death_reason = death_dark_brotherhood
+		}
+	}
+}
+jarol_104 = {
+	name = "Idessa" #Duke of Crowhaven
+	female = yes
+	dynasty_house = olo_jarol
+	religion = eight_divines
+	culture = strident
+	father = jarol_103
+	trait = compassionate
+	trait = just
+	trait = temperate
+
+	3482.1.1 = { birth = yes }
+	3548.1.1 = { death = yes }
+}
+jarol_105 = {
+	name = "Vorenus"
+	dynasty_house = olo_jarol
+	religion = eight_divines
+	culture = strident
+	father = jarol_103
+	trait = temperate
+	trait = ambitious
+
+	3484.1.1 = { birth = yes }
+	3533.1.1 = { death = yes }
+}
+## Ap-Dugal Dynasty (dyn_dugal)
+
+#House Ap-Dugal
+dugal_1000 = {
+	name = "Fortunata" #Governor of Anvil
+	dynasty = dyn_dugal
+	female = yes
+	religion = eight_divines
+	culture = strident
+
+	trait = education_martial_3
+	trait = ambitious
+	trait = arrogant
+	trait = callous
+	trait = cynical
+	trait = forder
+	trait = pirate
+	trait = physique_good_1
+
+	3462.2.10 = { birth = yes }
+    3503.12.12 = { death = yes }
+}
+
+## Massiner Dynasty (dyn_massiner)
+massiner_98 = { #Lowborn
+	name = "Igelvos"
+	religion = eight_divines
+	culture = strident
+
+	3282.8.7 = { birth = yes }
+	3336.2.15 = { death = yes }
+}
+massiner_99 = {
+	name = "Aimeric" #Adventurer, then Duke of Sutch
+	dynasty = dyn_massiner
+	religion = hero_cult
+	culture = strident
+
+	father = massiner_98
+
+	trait = adventurer
+
+	3310.1.1 = { birth = yes }
+	3358.1.7 = { trait = wounded_2 }
+	3335.1.1 = { add_spouse = massiner_99_wife }
+	3358.2.7 = { death = { death_reason = death_wounded_2 } }
+}
+massiner_99_wife = {
+	name = "Faustina"
+	religion = hero_cult
+	culture = strident
+	female = yes
+	3317.1.1 = { birth = yes }
+	3379.1.1 = { death = { death_reason = death_old_age } }
+}
+massiner_100 = {
+	name = "Adrian" #Duke of Sutch, marries Odiil wife ( odiil_101c ) (Warlords & Interregnum)
+	dynasty = dyn_massiner
+	religion = hero_cult
+	culture = strident
+	father = massiner_99
+	mother = massiner_99_wife
+
+	trait = education_martial_4
+	trait = fickle
+	trait = arbitrary
+	trait = gluttonous
+
+	3339.1.1 = { birth = yes }
+	3410.1.1 = { death = yes }
+}
+massiner_100_2 = {
+	name = "Faric" #Marries Mervial (Warlords & Interregnum)
+	dynasty = dyn_massiner
+	religion = hero_cult
+	culture = strident
+	father = massiner_99
+	mother = massiner_99_wife
+
+	3341.1.1 = { birth = yes }
+	3412.1.1 = { death = yes }
+}
+massiner_101 = {
+	name = "Octavian" #Duke of Sutch
+	dynasty = dyn_massiner
+	religion = hero_cult
+	culture = strident
+
+	father = massiner_100
+	mother = odiil_101c
+
+	3358.1.1 = { birth = yes }
+	3429.1.1 = { death = yes }
+}
+massiner_102 = {
+	name = "Ontus"
+	dynasty = dyn_massiner
+	religion = hero_cult
+	culture = strident
+	father = massiner_100
+	mother = odiil_101c
+
+	3359.1.1 = { birth = yes }
+	3422.1.1 = { death = yes }
+}
+massiner_103 = {
+	name = "Flavia" #Duke of Sutch
+	female = yes
+	dynasty = dyn_massiner
+	religion = hero_cult
+	culture = strident
+	father = massiner_102
+
+	3402.1.1 = { birth = yes }
+	3468.1.1 = { death = yes }
+}
+massiner_104 = {
+	name = "Sabinus" #Duke of Sutch (Alliance War)
+	dynasty = dyn_massiner
+	religion = hero_cult
+	culture = strident
+	father = massiner_102
+
+	3438.1.1 = { birth = yes }
+	3505.1.1 = { death = yes }
+}
+
+##Gurges Dynasty (dyn_gurges)
+gurges_100 = {
+	name = "Isobel" #Lore
+	dynasty = dyn_gurges
+	religion = eight_divines
+	culture = strident
+	female = yes
+
+	trait = education_martial_3
+	trait = reckless
+	trait = greedy
+	trait = ambitious
+	trait = cynical
+	trait = pirate
+	trait = viking
+	
+	diplomacy = 2
+	martial = 7
+	stewardship = 3
+	intrigue = 2
+	learning = 4
+
+	3337.1.1 = { birth = yes }
+	3350.1.1 = { give_nickname = nick_the_regal_pirate }
+	3360.1.1 = {
+			effect = {
+				add_character_flag = has_scripted_weight
+			}
+	}
+	3396.1.1 = { death = yes }
+	
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_headgear=female_headgear_tricorn_02
+			custom_hair=female_hair_northern_03
+		}
+	}	
+}
+gurges_100_lover = {
+	name = "Namvar"
+	religion = redguard_cult
+	culture = abecean #Fellow pirate
+	
+	trait = pirate
+
+	3336.1.1 = { birth = yes }
+	3361.1.1 = { death = { death_reason = death_battle } } #He's in a dangerous profession
+}
+gurges_101 = {
+	name = "Juntinus"
+	dynasty = dyn_gurges
+	religion = eight_divines
+	culture = strident
+
+	mother = gurges_100
+	father = gurges_100_lover
+
+	trait = wild_oat #Born out of wedlock
+
+	3356.1.1 = { birth = yes }
+	3421.1.1 = { death = yes }
+}
+gurges_102 = {
+	name = "Claber"
+	dynasty = dyn_gurges
+	religion = eight_divines
+	culture = strident
+
+	father = gurges_101
+
+	3388.1.1 = { birth = yes }
+	3454.1.1 = { death = yes }
+}
+gurges_103 = {
+	name = "Adraria"
+	dynasty = dyn_gurges
+	religion = eight_divines
+	culture = strident
+	female = yes
+
+	father = gurges_102
+
+	3413.1.1 = { birth = yes }
+	3479.1.1 = { death = yes }
+}
+gurges_104 = {
+	name = "Martinus" #Lore
+	dynasty = dyn_gurges
+	religion = eight_divines
+	culture = strident
+
+	mother = gurges_103
+
+	trait = vengeful
+	trait = greedy
+
+	3449.1.1 = { birth = yes }
+	3527.1.1 = { death = yes }
+}
+
+##of Stirk Dynasty (dyn_stirk)
+
+#House of Stirk
+stirk_1000 = {
+    name = "Hieronymus"
+    dynasty = dyn_stirk
+    religion = hero_cult
+    culture = strident
+
+	father = didatus_100b
+
+	trait = bastard_founder
+	trait = pirate
+    
+    3328.1.1 = { birth = yes }
+    3376.1.1 = { death = yes }
+}
+
+#Kovich Dynasty (dyn_kovich)
+kovich_1000 = {
+	name = "Stanek"
+	dynasty = dyn_kovich
+	religion = eight_divines
+	culture = strident
+
+	3334.1.1 = { birth = yes }
+	3397.1.1 = { death = yes }
+}
+kovich_1001 = {
+	name = "Zlatina"
+	female = yes
+	dynasty = dyn_kovich
+	religion = eight_divines
+	culture = strident
+
+	father = kovich_1000
+
+	3359.1.1 = { birth = yes }
+	3431.1.1 = { death = yes }
+}
+
+#Dralgoner Dynasty (dralgoner)
+dralgoner_99 = { #Parent of Arctur, lowborn
+	name = "Pacuvius"
+	religion = hero_cult
+    culture = strident
+	3311.1.1 = { birth = yes }
+	3332.1.1 = { add_spouse = dralgoner_99_wife }
+	3354.1.1 = { death = { death_reason = death_drowned } }
+}
+dralgoner_99_wife = { #Parent of Arctur, lowborn
+	name = "Messalina"
+	religion = hero_cult
+    culture = strident
+	female = yes
+	3313.1.1 = { birth = yes }
+	3354.1.1 = { death = { death_reason = death_drowned } }
+}
+dralgoner_arctur = {
+	dna = arctur_dna_entry
+	name = "Arctur"
+	dynasty = dralgoner
+	religion = hero_cult
+    culture = strident
+
+	mother = dralgoner_99_wife
+	father = dralgoner_99
+
+	trait = education_martial_4
+	trait = ambitious
+	trait = wrathful
+	trait = deceitful
+	trait = p_ch_bendu
+	trait = pirate
+	trait = sign_lord
+
+	3340.3.11 = { birth = yes }
+	3359.1.1 = {
+		add_unpressed_claim = title:k_anvil
+		add_spouse = attar_1000b 
+		effect = {
+			create_alliance = {
+				target = character:attar_1000
+				allied_through_owner = character:dralgoner_arctur
+				allied_through_target = character:attar_1000b
+			}
+			if = {
+				limit = { character:olo_99 = { is_alive = yes } }
+				set_relation_nemesis = { target = character:olo_99 reason = rival_killed_parent }
+			}
+			if = {
+				limit = { NOT = { has_perk = taking_it_all_perk } } 
+				add_perk = taking_it_all_perk
+			}
+			if = {
+				limit = { NOT = { has_perk = open_seas_perk } } 
+				add_perk = open_seas_perk
+			}
+			if = {
+				limit = { NOT = { has_perk = bountiful_offerings_perk } } 
+				add_perk = bountiful_offerings_perk
+			}
+			if = {
+				limit = { NOT = { has_perk = hard_bitten_perk } } 
+				add_perk = hard_bitten_perk
+			}
+		}
+		effect = {
+		}
+	}
+	3362.1.1 = {
+		effect = {
+			if = {
+				limit = { NOT = { has_perk = prisoners_and_loot_perk } } 
+				add_perk = prisoners_and_loot_perk
+			}
+		}
+	}
+	3364.1.1 = {
+		effect = {
+			if = {
+				limit = { character:jarol_100 = { is_alive = yes } }
+				set_relation_nemesis = { target = character:jarol_100 reason = nemesis_rival_killed_sibling }
+			}
+			if = {
+				limit = { character:senyan_101 = { is_alive = yes } }
+				set_relation_rival = { target = character:senyan_101 reason = rival_killed_parent }
+			}
+		}
+	}
+	3407.1.1 = { death = yes }
+}
+dralgoner_101 = {
+	name = "Lurian"
+	dynasty = dralgoner
+	religion = hero_cult
+    culture = strident
+
+	father = dralgoner_arctur
+	mother = attar_1000b
+
+	3366.1.1 = { birth = yes }
+	3422.1.1 = { death = yes }
+}
+dralgoner_101b = {
+	name = "Orthus"
+	dynasty = dralgoner
+	religion = hero_cult
+    culture = strident
+
+	father = dralgoner_arctur
+	mother = attar_1000b
+
+	3371.1.1 = { birth = yes }
+	3431.1.1 = { death = yes }
+}
+dralgoner_102 = { #Oldest son, but born later and very young when his father dies, couped by uncle without much resistance
+	name = "Hader"
+	dynasty = dralgoner
+	religion = hero_cult
+    culture = strident
+
+	father = dralgoner_101
+
+	3416.1.1 = { birth = yes }
+	3478.1.1 = { death = yes }
+}
+dralgoner_103 = { #Dies without heir
+	name = "Rusio"
+	dynasty = dralgoner
+	religion = hero_cult
+    culture = strident
+
+	father = dralgoner_101b
+
+	3397.1.1 = { birth = yes }
+	3436.1.1 = { death = yes }
+}
+dralgoner_103b = {
+	name = "Claudia" #Heir to Anvil (Kamal)
+	dynasty = dralgoner
+	religion = hero_cult
+    culture = strident
+	female = yes
+
+	father = dralgoner_101b
+
+	3402.1.1 = { birth = yes }
+	3423.1.1 = { add_matrilineal_spouse = neder_103b }
+	3478.1.1 = { death = yes }
+}
+dralgoner_103c = {
+	name = "Livilla"
+	dynasty = dralgoner
+	religion = hero_cult
+    culture = strident
+	female = yes
+	
+	father = dralgoner_101b
+
+	3407.1.1 = { birth = yes }
+	3474.1.1 = { death = yes }
+}
+dralgoner_104 = {
+	name = "Avita" #Heir to Anvil
+	dynasty = dralgoner
+	religion = hero_cult
+    culture = strident
+	female = yes
+
+	mother = dralgoner_103b
+	father = neder_103b
+
+	3425.1.1 = { birth = yes }
+	3491.1.1 = { death = yes }
+}
+dralgoner_104b = {
+	name = "Epidius"
+	dynasty = dralgoner
+	religion = hero_cult
+    culture = strident
+
+	mother = dralgoner_103b
+	father = neder_103b
+
+	3431.1.1 = { birth = yes }
+	3435.1.1 = { death = { death_reason = death_sickly } }
+}
+dralgoner_104c = {
+	name = "Salanius"
+	dynasty = dralgoner
+	religion = hero_cult
+    culture = strident
+
+	mother = dralgoner_103b
+	father = neder_103b
+
+	3440.1.1 = { birth = yes }
+	3471.1.1 = { death = { death_reason = death_sea_storm } }
+}
+dralgoner_105 = {
+	name = "Cylindrus"
+	dynasty = dralgoner
+	religion = hero_cult
+    culture = strident
+
+	mother = dralgoner_104
+
+	3456.1.1 = { birth = yes }
+	3521.1.1 = { death = yes }
+}
+dralgoner_106 = {
+	name = "Leta"
+	dynasty = dralgoner
+	religion = hero_cult
+    culture = strident
+	female = yes
+
+	father = dralgoner_105
+
+	3479.1.1 = { birth = yes }
+	3542.1.1 = { death = yes }
+}
+dralgoner_106b = {
+	name = "Lucina"
+	dynasty = dralgoner
+	religion = hero_cult
+    culture = strident
+	female = yes
+
+	father = dralgoner_105
+
+	3482.1.1 = { birth = yes }
+	3554.1.1 = { death = yes }
+}
+
+#Sirota Dynasty (dyn_sirota)
+sirota_998 = { #Not actually Sirota, parent of sirota_999_wife and previous count of c_atrene
+	name = "Caesina"
+	religion = eight_divines
+    culture = strident
+	female = yes
+	3261.1.1 = { birth = yes }
+	3316.1.1 = { death = yes }
+}
+sirota_998_daughter = { #Last not-Sirota, title goes to her husband of her sister
+	name = "Ulpia"
+	religion = eight_divines
+    culture = strident
+	female = yes
+	mother = sirota_998
+	3284.1.1 = { birth = yes }
+	3333.1.1 = { death = { death_reason = death_natural_causes } }
+}
+sirota_999 = {
+	name = "Stasio"
+	dynasty = dyn_sirota
+	religion = eight_divines
+    culture = strident
+
+	3298.7.18 = { birth = yes }
+	3320.1.1 = { add_spouse = sirota_999_wife }
+	3357.12.3 = { death = yes }
+}
+sirota_999_wife = {
+	name = "Marara"
+	religion = eight_divines
+    culture = strident
+	mother = sirota_998
+	female = yes
+	3289.1.1 = { birth = yes }
+	3330.1.1 = { death = { death_reason = death_ill } }
+}
+sirota_1000 = {
+	name = "Ilka"
+	female = yes
+	dynasty = dyn_sirota
+	religion = eight_divines
+    culture = strident
+
+	father = sirota_999
+	mother = sirota_999_wife
+
+	3326.3.6 = { birth = yes }
+	3398.9.28 = { death = yes }
+}
+sirota_1000_1 = {
+	name = "Vedivis"
+	dynasty = dyn_sirota
+	religion = eight_divines
+    culture = strident
+
+	father = sirota_999
+	mother = sirota_999_wife
+
+	3327.5.7 = { birth = yes }
+	3398.3.18 = { death = yes }
+}
+sirota_1001 = {
+	name = "Ivibus"
+	dynasty = dyn_sirota
+	religion = eight_divines
+    culture = strident
+
+	mother = sirota_1000
+
+	3356.8.5 = { birth = yes }
+	3419.11.1 = { death = yes }
+}
+sirota_1002 = {
+	name = "Zorah"
+	female = yes
+	dynasty = dyn_sirota
+	religion = eight_divines
+    culture = strident
+
+	mother = sirota_1000
+
+	3357.5.12 = { birth = yes }
+	3419.3.14 = { death = yes }
+}
+
+#Matić Dynasty (dyn_matic)
+matic_997 = { #Pirate, stops after being granted land in Anvil, starts dynasty
+	name = "Erina"
+	dynasty = dyn_matic
+	religion = hero_cult
+    culture = strident
+	female = yes
+
+	trait = pirate
+	trait = ambitious
+	trait = shrewd
+
+	3240.1.1 = { birth = yes }
+	3270.1.1 = { add_matrilineal_spouse = matic_997_husband }
+	3314.1.1 = { death = { death_reason = death_old_age } }
+}
+matic_997_husband = {
+	name = "Riel"
+	culture = colovian
+	religion = eight_divines
+
+	3239.1.1 = { birth = yes }
+	3307.1.1 = { death = yes }
+}
+matic_998 = {
+	name = "Tienius"
+	dynasty = dyn_matic
+	religion = hero_cult
+    culture = strident
+
+	mother = matic_997
+	father = matic_997_husband
+
+	3272.1.1 = { birth = yes }
+	3295.1.1 = { add_spouse = matic_998_wife }
+	3323.1.1 = { death = { death_reason = death_dog_attack } }
+}
+matic_998_wife = {
+	name = "Arnora"
+	religion = hero_cult
+    culture = strident
+	female = yes
+	3275.1.1 = { birth = yes }
+	3344.1.1 = { death = yes }
+}
+matic_999 = {
+	name = "Volrina"
+	female = yes
+	dynasty = dyn_matic
+	religion = hero_cult
+    culture = strident
+
+	father = matic_998
+	mother = matic_998_wife
+
+	3301.1.1 = { birth = yes }
+	3321.1.1 = { add_matrilineal_spouse = matic_999_husband }
+	3362.1.1 = { death = { death_reason = death_natural_causes } }
+}
+matic_999_husband = {
+	name = "Abdussah"
+	religion = redguard_cult
+    culture = abecean
+
+	3297.1.1 = { birth = yes }
+	3355.1.1 = { death = { death_reason = death_natural_causes } }
+}
+matic_1000 = {
+	name = "Mejra"
+	dynasty = dyn_matic
+	religion = hero_cult
+    culture = strident
+	female = yes
+
+	mother = matic_999
+	father = matic_999_husband
+
+	3323.8.19 = { birth = yes }
+	3344.5.7 = { add_matrilineal_spouse = sirota_1000_1 }
+	3397.6.12 = { death = yes }
+}
+matic_1000b = { #Married to aqabi_100c
+	name = "Igelvos"
+	dynasty = dyn_matic
+	religion = hero_cult
+    culture = strident
+
+	mother = matic_999
+	father = matic_999_husband
+
+	3329.5.11 = { birth = yes }
+	3381.12.8 = { death = yes }
+}
+matic_1001 = {
+	name = "Levica"
+	dynasty = dyn_matic
+	religion = hero_cult
+    culture = strident
+	female = yes
+
+	mother = matic_1000
+	father = sirota_1000_1
+
+	3345.4.4 = { birth = yes }
+	3413.9.27 = { death = yes }
+}
+matic_1002 = {
+	name = "Ovis"
+	dynasty = dyn_matic
+	religion = hero_cult
+    culture = strident
+
+	mother = matic_1000
+	father = sirota_1000_1
+
+	3347.9.12 = { birth = yes }
+	3413.9.27 = { death = yes }
+}
+
+#Justani Dynasty (dyn_justani)
+justani_100 = {
+	name = "Polivia"
+	dynasty = dyn_justani
+	female = yes
+	religion = hero_cult
+    culture = strident
+
+	trait = education_learning_3
+	trait = humble
+	trait = lazy
+
+	3328.4.13 = { birth = yes }
+	3343.1.1 = { add_matrilineal_spouse = mervial_98_brother }
+	3401.7.1 = { death = yes }
+}
+justani_101 = {
+	name = "Rolf"
+	dynasty = dyn_justani
+	religion = hero_cult
+    culture = strident
+
+	mother = justani_100
+	father = mervial_98_brother
+
+	3353.8.14 = { birth = yes }
+	3384.1.1 = { add_spouse = justani_101_wife }
+	3427.12.12 = { death = yes }
+}
+justani_101_wife = {
+	name = "Pellecia"
+	religion = hero_cult
+    culture = strident
+	female = yes
+
+	3358.1.1 = { birth = yes }
+	3423.1.1 = { death = yes }
+}
+justani_101b = {
+	name = "Olivia"
+	dynasty = dyn_justani
+	female = yes
+	religion = hero_cult
+    culture = strident
+
+	mother = justani_100
+	father = mervial_98_brother
+
+	3356.3.19 = { birth = yes }
+	3429.7.22 = { death = yes }
+}
+justani_102 = {
+	name = "Germia"
+	dynasty = dyn_justani
+	religion = hero_cult
+    culture = strident
+	female = yes
+
+	father = justani_101
+	mother = justani_101_wife
+
+	3387.1.1 = { birth = yes }
+	3444.1.1 = { death = yes }
+}
+justani_103 = {
+	name = "Livilla"
+	dynasty = dyn_justani
+	religion = hero_cult
+    culture = strident
+	female = yes
+
+	mother = justani_102
+
+	3415.1.1 = { birth = yes }
+	3456.1.1 = { death = yes }
+}
+justani_104 = {
+	name = "Clothius"
+	dynasty = dyn_justani
+	religion = hero_cult
+    culture = strident
+
+	mother = justani_103
+
+	3443.1.1 = { birth = yes }
+	3518.1.1 = { death = yes }
+}
+
+#Wasil Dynasty (dyn_wasil)
+wasil_999 = {
+	name = "Benirus"
+	dynasty = dyn_wasil
+	religion = hero_cult
+    culture = strident
+
+	3301.3.12 = { birth = yes }
+	3367.9.2 = { death = yes }
+}
+wasil_1000 = {
+	name = "Endrak"
+	dynasty = dyn_wasil
+	religion = hero_cult
+    culture = strident
+
+	father = wasil_999
+
+	3336.6.3 = { birth = yes }
+	3398.12.4 = { death = yes }
+}
+wasil_1001 = {
+	name = "Vitella"
+	female = yes
+	dynasty = dyn_wasil
+	religion = hero_cult
+    culture = strident
+
+	father = wasil_999
+
+	3340.10.15 = { birth = yes }
+	3386.4.29 = { death = yes }
+}
+#Attar Dynasty (dyn_attar)
+attar_998 = { #Minor noble in Anvil
+	name = "Jera"
+	dynasty = dyn_attar
+	religion = eight_divines
+    culture = strident
+	female = yes
+	3280.1.1 = { birth = yes }
+	3344.1.1 = { death = yes }
+}
+attar_999 = { #Becomes landed noble
+	name = "Claber"
+	dynasty = dyn_attar
+	religion = eight_divines
+    culture = strident
+	mother = attar_998
+
+	3301.1.1 = { birth = yes }
+	3332.1.1 = { add_spouse = uvravo_100b }
+	3359.1.1 = { death = yes }
+}
+attar_1000 = { #Supports Arctur as king of Anvil
+	name = "Berich"
+	dynasty = dyn_attar
+	religion = eight_divines
+    culture = strident
+	father = attar_999
+	mother = uvravo_100b
+
+	trait = education_intrigue_3
+	trait = ambitious
+	trait = deceitful
+	trait = greedy
+
+	3333.1.1 = { birth = yes }
+	3358.1.1 = { add_spouse = romuval_102 }
+	3402.1.1 = { death = yes }
+}
+attar_1000b = {
+	name = "Livia" #Married to dralgoner_arctur
+	dynasty = dyn_attar
+	religion = eight_divines
+    culture = strident
+	female = yes
+	father = attar_999
+	mother = uvravo_100b
+	3337.1.1 = { birth = yes }
+	3398.1.1 = { death = yes }
+}
+attar_1001 = {
+	name = "Rellic"
+	dynasty = dyn_attar
+	religion = eight_divines
+    culture = strident
+	father = attar_1000
+	mother = romuval_102
+
+	3360.1.1 = { birth = yes }
+	3429.1.1 = { death = yes }
+}
+attar_1002 = {
+	name = "Roderic"
+	dynasty = dyn_attar
+	religion = eight_divines
+    culture = strident
+	father = attar_1000
+	mother = romuval_102
+
+	3368.1.1 = { birth = yes }
+	3439.1.1 = { death = yes }
+}
+
+#Senyan Dynasty (dyn_senyan) - EK1 import, heavily edited
+senyan_99 = {
+	name = "Tettius"
+	dynasty = dyn_senyan
+	religion = hero_cult
+    culture = strident
+	3289.1.1 = { birth = yes }
+	3346.1.1 = { death = yes }
+}
+senyan_100 = {
+	name = "Claber"
+	dynasty = dyn_senyan
+	religion = hero_cult
+    culture = strident
+	father = senyan_99
+
+	3311.1.1 = { birth = yes }
+	3339.1.1 = { add_spouse = senyan_100_wife }
+	3350.1.1 = {
+		add_pressed_claim = title:d_sutch
+		add_pressed_claim = title:c_sutch
+	}
+	3364.1.1 = { death = { death_reason = death_battle killer = dralgoner_arctur } }
+}
+senyan_100_wife = {
+	name = "Perennia"
+	religion = eight_divines
+	culture = colovian
+	female = yes
+
+	3315.1.1 = { birth = yes }
+	3392.1.1 = { death = yes }
+}
+senyan_100b = {
+	name = "Adraria"
+	dynasty = dyn_senyan
+	religion = hero_cult
+    culture = strident
+	female = yes
+	father = senyan_99
+	3316.1.1 = { birth = yes }
+	3364.1.1 = { employer = jarol_100 } # after the death of Rogatus, flees to his brother
+	3377.1.1 = { death = { death_reason = death_old_age } }
+}
+senyan_101 = {
+	name = "Andorak"
+	dynasty = dyn_senyan
+	religion = hero_cult
+    culture = strident
+
+	father = senyan_100
+	mother = senyan_100_wife
+
+	3341.1.1 = { birth = yes }
+	3359.1.1 = { add_spouse = wasil_1001 }
+	3406.1.1 = { death = yes }
+}
+senyan_101b = {
+	name = "Julitta"
+	dynasty = dyn_senyan
+	religion = hero_cult
+    culture = strident
+	female = yes
+
+	father = senyan_100
+	mother = senyan_100_wife
+
+	3345.1.1 = { birth = yes }
+	3410.1.1 = { death = yes }
+}
+senyan_102 = {
+	name = "Tavian"
+	dynasty = dyn_senyan
+	religion = hero_cult
+    culture = strident
+
+	father = senyan_101
+	mother = wasil_1001
+
+	3364.1.1 = { birth = yes }
+	3426.1.1 = { death = yes }
+}
+senyan_102b = {
+	name = "Ariulcabor"
+	dynasty = dyn_senyan
+	religion = hero_cult
+    culture = strident
+
+	father = senyan_101
+	mother = wasil_1001
+
+	3368.1.1 = { birth = yes }
+	3414.1.1 = { death = yes }
+}
+senyan_103 = {
+	name = "Marana"
+	dynasty = dyn_senyan
+	religion = hero_cult
+    culture = strident
+	female = yes
+
+	father = senyan_102
+
+	3391.1.1 = { birth = yes }
+	3454.1.1 = { death = yes }
+}
+senyan_104 = {
+	name = "Renee"
+	dynasty = dyn_senyan
+	religion = hero_cult
+    culture = strident
+	female = yes
+
+	mother = senyan_103
+
+	3411.1.1 = { birth = yes }
+	#3501.1.1 = { add_matrilineal_spouse = 8305 } #Gustav of Trumbe
+	3467.1.1 = { death = yes }
+}
+senyan_104b = {
+	name = "Marlena"
+	dynasty = dyn_senyan
+	religion = hero_cult
+    culture = strident
+	female = yes
+
+	mother = senyan_103
+
+	3414.1.1 = { birth = yes }
+	3479.1.1 = { death = yes }
+}
+senyan_104c = {
+	name = "Prax"
+	dynasty = dyn_senyan
+	religion = hero_cult
+    culture = strident
+
+	mother = senyan_103
+
+	3417.1.1 = { birth = yes }
+	3482.1.1 = { death = yes }
+}
+senyan_105 = {
+	name = "Pomponia"
+	dynasty = dyn_senyan
+	religion = hero_cult
+    culture = strident
+	female = yes
+
+	mother = senyan_104
+	#father = 8305
+
+	3437.1.1 = { birth = yes }
+	3499.1.1 = { death = yes }
+}
+senyan_105b = {
+	name = "Marana"
+	dynasty = dyn_senyan
+	religion = hero_cult
+    culture = strident
+	female = yes
+
+	mother = senyan_104
+	#father = 8305
+
+	3441.1.1 = { birth = yes }
+	3478.1.1 = { death = { death_reason = death_battle } }
+}
+senyan_106 = {
+	name = "Mucius"
+	dynasty = dyn_senyan
+	religion = hero_cult
+    culture = strident
+
+	mother = senyan_104b
+
+	3440.1.1 = { birth = yes }
+	3458.1.1 = { trait = pneumonic }
+	3459.1.1 = { death = { death_reason = death_pneumonic } }
+}
+senyan_106b = {
+	name = "Kaslowyn"
+	dynasty = dyn_senyan
+	religion = hero_cult
+    culture = strident
+
+	mother = senyan_104b
+
+	3444.1.1 = { birth = yes }
+	3516.1.1 = { death = yes }
+}
+senyan_107 = {
+	name = "Quintia"
+	dynasty = dyn_senyan
+	religion = hero_cult
+    culture = strident
+	female = yes
+
+	father = senyan_104c
+
+	trait = bastard
+	trait = twin
+
+	3439.1.1 = { birth = yes }
+	3508.1.1 = { death = yes }
+}
+senyan_107b = {
+	name = "Pladina"
+	dynasty = dyn_senyan
+	religion = hero_cult
+    culture = strident
+	female = yes
+
+	father = senyan_104c
+
+	trait = bastard
+	trait = twin
+
+	3439.1.1 = { birth = yes }
+	3501.1.1 = { death = yes }
+}
+senyan_108 = {
+	name = "Viola"
+	dynasty = dyn_senyan
+	religion = hero_cult
+    culture = strident
+	female = yes
+
+	mother = senyan_105
+
+	trait = zealous
+
+	3459.1.1 = { birth = yes }
+	#Joins Varen in his rebellion and dies
+	3497.1.1 = { death = { death_reason = death_battle } }
+}
+senyan_109 = {
+	name = "Severina"
+	dynasty = dyn_senyan
+	religion = hero_cult
+    culture = strident
+	female = yes
+
+	father = senyan_106b
+
+	3468.1.1 = { birth = yes }
+	3520.1.1 = { death = yes }
+}
+senyan_109b = {
+	name = "Larisus"
+	dynasty = dyn_senyan
+	religion = hero_cult
+    culture = strident
+
+	father = senyan_106b
+
+	3473.1.1 = { birth = yes }
+	3539.1.1 = { death = yes }
+}
+senyan_110 = {
+	name = "Galeria"
+	dynasty = dyn_senyan
+	religion = hero_cult
+    culture = strident
+	female = yes
+
+	father = senyan_109b
+
+	3497.1.1 = { birth = yes }
+	3563.1.1 = { death = yes }
+}
+senyan_110b = {
+	name = "Fortunata"
+	dynasty = dyn_senyan
+	religion = hero_cult
+    culture = strident
+	female = yes
+
+	father = senyan_109b
+
+	3500.1.1 = { birth = yes }
+	3551.1.1 = { death = yes }
+}
+
+#Bursio, rule Strident springs
+bursio_100 = {
+	name = "Orisius"
+	dynasty = dyn_bursio
+	religion = eight_divines
+	culture = strident
+
+	trait = education_stewardship_2
+
+	3329.1.1 = { birth = yes }
+	3387.1.1 = { death = yes }
+}
+bursio_101 = {
+	name = "Nadia"
+	religion = eight_divines
+	culture = strident
+	female = yes
+
+	father = bursio_100
+
+	3358.1.1 = { birth = yes }
+	3427.1.1 = { death = yes }
+}
+
+#Benirus - rulers of Anvil during Blackdrakes
+#History ToDo: connect them to existing Strident dynasty (or not)
+benirus_001 = {
+	name = "Cordius" #Not lore, can be removed if necessary
+	dynasty = dyn_benirus
+	religion = eight_divines
+    culture = strident
+	3424.1.1 = { birth = yes }
+	3479.1.1 = { death = yes }
+}
+benirus_002 = {
+	name = "Ephrem" #Lore
+	dynasty = dyn_benirus
+	religion = eight_divines
+    culture = strident
+	father = benirus_001
+	3446.1.1 = { birth = yes }
+	#Executed by Fortunata
+	3497.1.1 = { death = { death_reason = death_execution killer = dugal_1000 } }
+}
+
+## Valenwood Imperials
+#Southpoint - Zantonius dynasty
+zantonius_1000 = {
+	name = "Argyrippus"
+	dynasty = dyn_zantonius #Should be different, but don't want to make new dynasty for one character
+	religion = eight_divines
+	culture = colovian
+	2645.1.1 = { birth = yes }
+	2710.1.1 = { death = yes }
+}
+zantonius_999 = {
+	name = "Zantonius"
+	dynasty = dyn_zantonius
+	religion = eight_divines
+	culture = colovian
+	father = zantonius_1000
+	trait = zealous #Didn't like Valenwood natives
+	trait = sadistic 
+	trait = greedy #High taxes
+	trait = deceitful #Lied about peasant origins
+	trait = education_martial_2
+	trait = reckless
+	trait = varangian
+	2680.1.1 = { birth = yes }
+	2754.1.1 = { death = yes }
+}
+zantonius_998 = {
+	name = "Zantonius"
+	dynasty = dyn_zantonius
+	religion = eight_divines
+	culture = strident
+	father = zantonius_999
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	2754.1.1 = { birth = yes }
+	3000.1.1 = { give_nickname = nick_line_of }
+	3240.1.1 = { death = yes }
+}
+zantonius_997 = {
+	name = "Tasellis"
+	dynasty = dyn_zantonius
+	religion = eight_divines
+	culture = strident
+	father = zantonius_998
+	3240.1.1 = { birth = yes }
+	3300.1.1 = { death = yes }
+}
+zantonius_996 = {
+	name = "Cleobulina"
+	dynasty = dyn_zantonius
+	religion = eight_divines
+	culture = strident
+	father = zantonius_997
+	female = yes
+	3270.1.1 = { birth = yes }
+	3295.1.1 = { add_matrilineal_spouse = zantonius_996_husband }
+	3330.1.1 = { death = { death_reason = death_old_age } }
+}
+zantonius_996_husband = {
+	name = "Adrianus"
+	religion = eight_divines
+	culture = strident
+	trait = varangian
+	3271.1.1 = { birth = yes }
+	3334.1.1 = { death = { death_reason = death_old_age } }
+}
+zantonius_1 = {
+	name = "Gallus"
+	dna = zantonius_1_dna_entry
+	dynasty = dyn_zantonius
+	religion = eight_divines
+	culture = strident
+	mother = zantonius_996
+	father = zantonius_996_husband
+	
+	trait = education_stewardship_1
+	trait = arrogant
+	trait = arbitrary
+	trait = greedy
+	trait = sign_thief
+
+	3300.12.13 = { birth = yes }
+	3328.1.1 = { add_spouse = zantonius_wife_1 }
+	3371.6.4 = { death = yes }
+}
+zantonius_wife_1 = { #Local Ilniviri
+	name = "Herata"
+	religion = reman_cult
+	culture = ilniviri
+	female = yes
+	3304.1.1 = { birth = yes }
+	3375.1.1 = { death = yes }
+}
+zantonius_2 = {
+	name = "Julius"
+	dynasty = dyn_zantonius
+	religion = reman_cult
+	culture = strident
+	father = zantonius_1
+	mother = zantonius_wife_1
+
+	trait = education_martial_2
+	trait = arrogant
+	trait = zealous
+	trait = just
+
+	3330.7.4 = { birth = yes }
+	3360.1.1 = { effect = { set_relation_rival = { reason = rival_historical target = character:zantonius_3 } } }
+	3362.6.4 = { death = { death_reason = death_battle} }
+}
+zantonius_3 = {
+	name = "Scipion"
+	dynasty = dyn_zantonius
+	religion = eight_divines
+	culture = strident
+	father = zantonius_1
+	mother = zantonius_wife_1
+
+	trait = education_martial_2
+	trait = stubborn
+	trait = zealous
+	trait = just
+
+	3334.7.4 = { birth = yes }
+	3392.6.4 = { death = yes }
+}
+zantonius_4 = {
+	name = "Fabio"
+	dynasty = dyn_zantonius
+	religion = eight_divines
+	culture = strident
+	father = zantonius_3
+
+	3370.7.4 = { birth = yes }
+	3441.6.4 = { death = yes }
+}
+zantonius_5 = {
+	name = "Florius"
+	dynasty = dyn_zantonius
+	religion = eight_divines
+	culture = strident
+	father = zantonius_4
+
+	3415.7.4 = { birth = yes }
+	3480.6.4 = { death = yes }
+}
+zantonius_5b ={
+	name = "Marlena"
+	dynasty = dyn_zantonius
+	religion = eight_divines
+	culture = strident
+	female = yes
+	father = zantonius_5
+	3440.1.1 = { birth = yes }
+	3499.1.1 = { death = yes }
+}
+zantonius_6 = {
+	name = "Aulus"
+	dynasty = dyn_zantonius
+	religion = sheogorath_cult
+	culture = strident
+	mother = zantonius_5b
+	trait = education_learning_2
+	trait = craven
+	trait = arrogant
+	trait = shy
+
+	3470.7.4 = { birth = yes }
+	3503.6.4 = { death = yes }
+}
+
+#Adrich, involved with Hammerfell administration
+adrich_98 = { #Unlanded
+	name = "Kalia"
+	dynasty = dyn_adrich
+	religion = hero_cult
+	culture = strident
+	female = yes
+
+	3274.1.1 = { birth = yes }
+	3300.1.1 = { add_matrilineal_spouse = adrich_98_husband }
+	3345.1.1 = { death = yes }
+}
+adrich_98_husband = {
+	name = "Alerios"
+	religion = hero_cult
+	culture = colovian
+
+	3278.1.1 = { birth = yes }
+	3340.1.1 = { death = yes }
+}
+adrich_99 = {
+	name = "Jonav"
+	dynasty = dyn_adrich
+	religion = redguard_cult
+	culture = strident
+
+	mother = adrich_98
+	father = adrich_98_husband
+
+	trait = loyal
+
+	3302.1.1 = { birth = yes }
+	#Marries a breton noble
+	3335.1.1 = { add_spouse = mornard_99b }
+	#3337 - sent to govern Systres
+	3367.1.1 = { death = yes }
+}
+adrich_100 = {
+	name = "Martina"
+	dynasty = dyn_adrich
+	religion = redguard_cult
+	culture = strident
+	female = yes
+	dna = fabrelle_dna_entry
+
+	father = adrich_99
+	mother = mornard_99b
+	
+	trait = education_stewardship_2
+	trait = stubborn
+	trait = calm
+	trait = cynical
+	trait = sign_tower
+	
+	martial = 6
+	diplomacy = 9
+	intrigue = 5
+	stewardship = 10
+	learning = 7
+
+	3339.10.13 = { birth = yes }
+	3371.1.1 = { add_matrilineal_spouse = adrich_100_husband } #Marries a local noble to please her subjects
+	3398.1.1 = { death = yes }
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=female_hair_western_03
+		}
+	}
+}
+adrich_100_husband = {
+	name = "Nebezh"
+	religion = redguard_cult
+	culture = abecean
+
+	3341.1.1 = { birth = yes }
+	3394.1.1 = { death = yes }
+}
+adrich_101 = {
+	name = "Kalia"
+	dynasty = dyn_adrich
+	religion = redguard_cult
+	culture = strident
+	female = yes
+
+	mother = adrich_100
+	father = adrich_100_husband
+
+	3374.1.1 = { birth = yes }
+	3436.1.1 = { death = yes }
+}

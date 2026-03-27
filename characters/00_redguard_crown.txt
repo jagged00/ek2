@@ -1,0 +1,5175 @@
+﻿#Various Crown Kings before and during Reman
+diagna_100 = { #King Diagna, first king of Hammerfell
+	name = "Diagna"
+	dynasty = dyn_the_crown
+	religion = walkabout
+	culture = crown_culture #Na-Totambu
+
+	trait = education_diplomacy_5 #Could be martial, but this highlights him as statesman
+	#Note: Frandar Hunding gets martial education 5
+	trait = ambitious
+	trait = just
+	trait = brave
+	trait = shrewd
+	trait = lifestyle_blademaster #Sword-singer
+	trait = intellect_good_2
+	trait = p_yp_hoonding #Reincarnation of HoonDing
+
+	743.1.1 = { birth = yes } #Actively participated in war that ended with destruction of Yokuda
+	845.3.26 = { death = { death_reason = death_ascended } } #Becomes a god
+}
+
+#Yathe Dynasty (dyn_yath)
+yath_98 = {
+	name = "Leja"
+	dynasty = dyn_yath
+	religion = yoku_spirits
+	culture = raga
+	female = yes
+
+	697.1.1 = { birth = yes }
+	749.1.1 = { death = yes }
+}
+yath_99 = {
+	name = "Gonda"
+	dynasty = dyn_yath
+	religion = walkabout
+	culture = crown_culture #Na-Totambu
+	female = yes
+
+	mother = yath_98
+
+	728.1.1 = { birth = yes }
+	791.1.1 = { death = yes }
+}
+yathe_100 = {
+	name = "Xakhwan" #Lore
+	dynasty = dyn_yath
+	religion = walkabout
+	culture = crown_culture #Na-Totambu
+
+	mother = yath_99
+	
+	768.1.1 = { birth = yes }
+	813.7.18 = { death = { death_reason = death_duel killer = yathe_101b } }
+}
+yathe_101 = {
+	name = "Haqmir" #Lore
+	dynasty = dyn_yath
+	religion = walkabout
+	culture = crown_culture #Na-Totambu
+
+	father = yathe_100
+	
+	789.1.1 = { birth = yes }
+	874.1.1 = { death = yes }
+}
+yathe_101b = {
+	name = "Sameer" #Lore
+	dynasty = dyn_yath
+	religion = satakal
+	culture = alikr
+	
+	father = yathe_100
+
+	trait = disinherited
+	
+	791.1.1 = { birth = yes }
+	813.7.18 = { dynasty = dyn_ashabah }
+	841.1.1 = { death = yes }
+}
+
+#Yul
+yul_100 = {
+	name = "Yisra"
+	dynasty = dyn_yul
+	religion = walkabout
+	culture = crown_culture #Na-Totambu
+	female = yes
+
+	839.1.1 = { birth = yes }
+	905.1.1 = { death = yes }
+}
+
+#Kutu
+kutu_90 = {
+	name = "Mirisa"
+	dynasty = dyn_kutu
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	trait = education_stewardship_5
+
+	2361.1.1 = { birth = yes }
+	2457.7.24 = { death = yes }
+}
+kutu_91 = {
+	name = "Mardina"
+	dynasty = dyn_kutu
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = kutu_90
+
+	2396.1.1 = { birth = yes }
+	2461.11.8 = { death = yes }
+}
+kutu_92 = {
+	name = "Siraj"
+	dynasty = dyn_kutu
+	religion = walkabout
+	culture = crown_culture
+
+	mother = kutu_91
+
+	2417.1.1 = { birth = yes }
+	2480.4.10 = { death = yes }
+}
+kutu_92b = {
+	name = "Malexa"
+	dynasty = dyn_kutu
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = kutu_91
+
+	2421.1.1 = { birth = yes }
+	2494.12.11 = { death = yes }
+}
+kutu_93 = {
+	name = "Mirisa"
+	dynasty = dyn_kutu
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = kutu_92b
+
+	2443.1.1 = { birth = yes }
+	2507.8.13 = { death = yes }
+}
+kutu_93b = {
+	name = "Mardina"
+	dynasty = dyn_kutu
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = kutu_92b
+
+	2456.1.1 = { birth = yes }
+	2510.5.29 = { death = yes }
+}
+kutu_93c = {
+	name = "Mardina"
+	dynasty = dyn_kutu
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = kutu_92b
+
+	2461.1.1 = { birth = yes }
+	2524.6.10 = { death = yes }
+}
+kutu_94 = {
+	name = "Mirisa"
+	dynasty = dyn_kutu
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = kutu_93c
+
+	2484.1.1 = { birth = yes }
+	2559.8.20 = { death = yes }
+}
+kutu_95 = {
+	name = "Sirali"
+	dynasty = dyn_kutu
+	religion = walkabout
+	culture = crown_culture
+
+	mother = kutu_94
+
+	2511.1.1 = { birth = yes }
+	2579.3.23 = { death = yes }
+}
+kutu_96 = {
+	name = "Mardina"
+	dynasty = dyn_kutu
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = kutu_95
+
+	2531.1.1 = { birth = yes }
+	2595.12.4 = { death = yes }
+}
+kutu_97 = {
+	name = "Mardina"
+	dynasty = dyn_kutu
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = kutu_96
+
+	2558.1.1 = { birth = yes }
+	2658.1.21 = { death = yes }
+}
+kutu_98 = {
+	name = "Endon"
+	dynasty = dyn_kutu
+	religion = walkabout
+	culture = crown_culture
+
+	mother = kutu_97
+
+	2592.1.1 = { birth = yes }
+	2651.1.1 = { death = yes }
+}
+kutu_99 = {
+	name = "Namvar"
+	dynasty = dyn_kutu
+	religion = walkabout
+	culture = crown_culture
+
+	father = kutu_98
+
+	2626.1.1 = { birth = yes }
+	2689.2.1 = { death = yes }
+}
+kutu_100 = {
+	name = "Mardina"
+	dynasty = dyn_kutu
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = kutu_99
+
+	2666.1.1 = { birth = yes }
+	2711.10.16 = { death = { death_reason = death_battle } }
+}
+
+#Acetar, last dynasty of Hammerfell before Remans
+ketaro_99 = {
+	name = "Currod"
+	dynasty = dyn_ketaro
+	religion = walkabout
+	culture = crown_culture
+
+	2681.1.1 = { birth = yes }
+	2732.7.22 = { death = yes }
+}
+ketaro_100 = { #Last Crown queen, Crowns stop being kings of Hammerfell
+	name = "Rania"
+	dynasty = dyn_ketaro
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = ketaro_99
+
+	2705.1.1 = { birth = yes }
+	2749.4.7 = { death = { death_reason = death_battle } }
+}
+ketaro_100b = { #First ruler of e_crown
+	name = "Kalig"
+	dynasty = dyn_ketaro
+	religion = walkabout
+	culture = crown_culture
+
+	father = ketaro_99
+
+	2708.1.1 = { birth = yes }
+	2770.11.13 = { death = yes }
+}
+ketaro_101 = {
+	name = "Farzaneh"
+	dynasty = dyn_ketaro
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = ketaro_100b
+	
+	2742.1.1 = { birth = yes }
+	2799.3.3 = { death = yes }
+}
+ketaro_102 = {
+	name = "Sabur"
+	dynasty = dyn_ketaro
+	religion = walkabout
+	culture = crown_culture
+
+	mother = ketaro_101
+
+	2774.1.1 = { birth = yes }
+	2795.1.1 = { add_spouse = pataro_100 }
+	2805.1.24 = { death = { death_reason = death_accident } }
+}
+
+#Pataro
+pataro_100 = { #Married to ketaro_102, becomes queen after he dies
+	name = "Sirali"
+	dynasty = dyn_pataro
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	trait = education_diplomacy_4
+	trait = ambitious
+
+	2773.1.1 = { birth = yes }
+	2835.2.22 = { death = yes }
+}
+pataro_101 = { #Child from second marriage
+	name = "Sabur"
+	dynasty = dyn_pataro
+	religion = walkabout
+	culture = crown_culture
+
+	mother = pataro_100
+
+	2807.1.1 = { birth = yes }
+	2858.6.16 = { death = yes }
+}
+pataro_102 = {
+	name = "Nidal"
+	dynasty = dyn_pataro
+	religion = walkabout
+	culture = crown_culture
+
+	father = pataro_101
+
+	2829.1.1 = { birth = yes }
+	2886.9.26 = { death = { death_reason = death_consumption } }
+}
+pataro_103 = { #King Amdashir from eso, killed over concerns of too-much collaboration with Remans
+	name = "Amdashir" #Lore
+	dynasty = dyn_pataro
+	religion = walkabout
+	culture = crown_culture
+
+	father = pataro_102
+
+	2861.1.1 = { birth = yes }
+	2902.3.23 = { death = { death_reason = death_murder } }
+}
+
+#Queen Afsar from eso, united throne not-peacefully, ruled peacefully, late 1E
+rasfa_100 = {
+	name = "Afsar" #Lore
+	dynasty = dyn_rasfa
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	trait = education_martial_3
+	trait = ambitious
+	trait = diligent
+	trait = arrogant
+	trait = shrewd
+
+	2875.1.1 = { birth = yes }
+	2939.10.2 = { death = yes }
+}
+rasfa_101 = {
+	name = "Jezerei" #Lore - queen mentioned in eso
+	dynasty = dyn_rasfa
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = rasfa_100
+
+	2905.1.1 = { birth = yes }
+	2966.9.7 = { death = yes }
+}
+rasfa_102 = {
+	name = "Makala" #Lore - king mentioned in eso
+	dynasty = dyn_rasfa
+	religion = walkabout
+	culture = crown_culture
+
+	mother = rasfa_101
+
+	2937.1.1 = { birth = yes }
+	3008.2.5 = { death = yes }
+}
+rasfa_103 = {
+	name = "Niyya"
+	dynasty = dyn_rasfa
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = rasfa_102
+
+	trait = education_learning_4
+	trait = education_magic_3
+
+	2966.1.1 = { birth = yes }
+	3069.1.9 = { death = yes }
+}
+rasfa_103b = { #Ancestor of Phyllos
+	name = "Roshinah"
+	dynasty = dyn_rasfa
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = rasfa_102
+
+	2971.1.1 = { birth = yes }
+	3039.1.1 = { death = yes }
+}
+
+#Bahia
+bahia_1 = {
+	name = "Hebera"
+	dynasty = dyn_bahia
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	3026.1.1 = { birth = yes }
+	3097.8.22 = { death = yes }
+}
+bahia_2 = {
+	name = "Tamarik"
+	dynasty = dyn_bahia
+	religion = walkabout
+	culture = crown_culture
+
+	mother = bahia_1
+
+	3052.1.1 = { birth = yes }
+	3119.1.1 = { death = yes }
+}
+bahia_2b = {
+	name = "Jalaima"
+	dynasty = dyn_bahia
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = bahia_1
+
+	3057.1.1 = { birth = yes }
+	3129.1.1 = { death = yes }
+}
+bahia_2c = {
+	name = "Niyya"
+	dynasty = dyn_bahia
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = bahia_1
+
+	3061.1.1 = { birth = yes }
+	3136.5.14 = { death = yes }
+}
+bahia_3 = {
+	name = "Makala"
+	dynasty = dyn_bahia
+	religion = walkabout
+	culture = crown_culture
+
+	mother = bahia_2c
+
+	3096.1.1 = { birth = yes }
+	3148.9.5 = { death = yes }
+}
+bahia_3b = {
+	name = "Hebera"
+	dynasty = dyn_bahia
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = bahia_2c
+
+	3102.1.1 = { birth = yes }
+	3172.12.19 = { death = yes }
+}
+bahia_4 = {
+	name = "Niyya"
+	dynasty = dyn_bahia
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = bahia_3b
+
+	3139.1.1 = { birth = yes }
+	3177.10.23 = { death = yes }
+}
+
+####################################
+### Crownlands (Hegathe, Gilane) ###
+####################################
+
+#Phyllos Dynasty
+phyllos_89 = {
+	name = "Hakam"
+	dynasty = dyn_phyllos
+	religion = walkabout
+	culture = crown_culture
+
+	2974.1.1 = { birth = yes }
+	3008.1.1 = { add_spouse = rasfa_103b }
+	3031.1.1 = { death = yes }
+}
+phyllos_90 = {
+	name = "Clesa"
+	dynasty = dyn_phyllos
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = phyllos_89
+	mother = rasfa_103b
+
+	3009.1.1 = { birth = yes }
+	3072.1.1 = { death = yes }
+}
+phyllos_91 = {
+	name = "Rana"
+	dynasty = dyn_phyllos
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = phyllos_90
+
+	3036.1.1 = { birth = yes }
+	3101.1.1 = { death = yes }
+}
+phyllos_92 = {
+	name = "Thanik"
+	dynasty = dyn_phyllos
+	religion = walkabout
+	culture = crown_culture
+
+	mother = phyllos_91
+
+	3061.1.1 = { birth = yes }
+	3132.1.1 = { death = yes }
+}
+phyllos_93 = {
+	name = "Berin"
+	dynasty = dyn_phyllos
+	religion = walkabout
+	culture = crown_culture
+
+	father = phyllos_92
+
+	3090.1.1 = { birth = yes }
+	3155.1.1 = { death = yes }
+}
+phyllos_94 = {
+	name = "Hakam"
+	dynasty = dyn_phyllos
+	religion = walkabout
+	culture = crown_culture
+
+	father = phyllos_93
+
+	3123.1.1 = { birth = yes }
+	3191.1.1 = { death = yes }
+}
+phyllos_95 = {
+	name = "Anrei"
+	dynasty = dyn_phyllos
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = phyllos_94
+
+	3152.1.1 = { birth = yes }
+	3205.1.1 = { death = yes }
+}
+phyllos_96 = {
+	name = "Arlimahera"
+	dynasty = dyn_phyllos
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = phyllos_95
+
+	3183.1.1 = { birth = yes }
+	3246.1.1 = { death = yes }
+}
+phyllos_97 = {
+	name = "Hakam"
+	dynasty = dyn_phyllos
+	religion = walkabout
+	culture = crown_culture
+
+	mother = phyllos_96
+
+	3211.1.1 = { birth = yes }
+	3278.3.28 = { death = yes }	
+}
+phyllos_98 = {
+	name = "Kavar"
+	dynasty = dyn_phyllos
+	religion = walkabout
+	culture = crown_culture
+	
+	father = phyllos_97
+
+	trait = education_diplomacy_3
+
+	3242.1.1 = { birth = yes }
+	3268.1.1 = { add_spouse = tavan_97b }
+	3309.11.9 = { death = yes }
+}
+
+phyllos_99 = {
+	name = "Ernest"
+	dynasty = dyn_phyllos
+	religion = walkabout
+	culture = crown_culture
+	
+	father = phyllos_98
+	mother = tavan_97b
+
+	trait = zealous
+	trait = humble
+	trait = honest
+	trait = education_diplomacy_4
+
+	3271.1.1 = { birth = yes }
+	3291.1.1 = { add_spouse = lainlyn_97b }
+	3327.4.14 = { death = yes }
+}
+
+phyllos_100 = { #Blood Queen Arlimahera, used Dark Brotherhood in 412 (3332)
+	name = "Arlimahera" #Lore
+	dna = curetar_arlimahera_dna_entry
+	dynasty = dyn_phyllos
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+	
+	father = phyllos_99
+	mother = lainlyn_97b
+
+	trait = callous
+	trait = ambitious
+	trait = deceitful
+	trait = education_intrigue_3
+	trait = journaller
+	trait = education_martial_prowess_3
+	trait = sign_thief
+
+	3304.12.18 = { birth = yes }
+	3328.1.1 = { add_matrilineal_spouse = karr_100b }
+	3359.1.1 = { #Speaks classical yoku (due to mystic satakal interactions)
+		effect = { learn_language = language_yoku }
+	}
+	#Gains nickname after death
+	3364.1.1 = { give_nickname = nick_the_blood_king_queen }
+	3365.4.7 = { death = { death_reason = death_natural_causes } }	
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=female_hair_fp2_iberian_muslim_02
+			custom_beards=female_empty
+		}
+	}
+}
+
+phyllos_101 = {
+	name = "Karifa"
+	dynasty = dyn_phyllos
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+	
+	mother = phyllos_100
+	father = karr_100b
+
+	3337.1.1 = { birth = yes }
+	3401.5.1 = { death = yes }	
+}
+
+phyllos_102 = {
+	name = "Kavar"
+	dynasty = dyn_phyllos
+	religion = walkabout
+	culture = crown_culture
+
+	mother = phyllos_101
+	
+	3374.1.1 = { birth = yes }
+	3442.3.9 = { death = yes }
+}
+
+phyllos_103 = {
+	name = "Yaeli"
+	dynasty = dyn_phyllos
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = phyllos_102
+
+	3406.1.1 = { birth = yes }
+	3468.7.27 = { death = yes }
+}
+
+phyllos_103b = {
+	name = "Fadiya"
+	dynasty = dyn_phyllos
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+	
+	father = phyllos_102
+
+	3399.1.1 = { birth = yes }
+	3466.1.1 = { death = yes }	
+}
+
+phyllos_104 = {
+	name = "Dozhim"
+	dynasty = dyn_phyllos
+	religion = walkabout
+	culture = crown_culture
+	
+	mother = phyllos_103
+
+	3438.1.1 = { birth = yes }
+	3494.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+
+phyllos_104b = {
+	name = "Hakan"
+	dynasty = dyn_phyllos
+	religion = walkabout
+	culture = crown_culture
+	
+	mother = phyllos_103
+
+	3443.1.1 = { birth = yes }
+	3516.1.1 = { death = yes }	
+}
+
+##Bamenda Dynasty (dyn_bamenda)
+bamenda_97 = {
+	name = "Alestu"
+	dynasty = dyn_bamenda
+	religion = walkabout
+	culture = crown_culture
+
+	3258.1.1 = { birth = yes }
+	3278.1.1 = { add_spouse = bamenda_97_wife }
+	3317.6.10 = { death = yes }
+}
+bamenda_97_wife = {
+	name = "Honai"
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	3256.1.1 = { birth = yes }
+	3329.1.1 = { death = yes }
+}
+bamenda_98 = {
+	name = "Abal"
+	dynasty = dyn_bamenda
+	religion = walkabout
+	culture = crown_culture
+
+	father = bamenda_97
+	mother = bamenda_97_wife
+
+	3281.1.1 = { birth = yes }
+	3305.1.1 = { add_spouse = hisa_99b }
+	3347.3.3 = { death = yes }
+}
+bamenda_98b = { #Married to kasa_99
+	name = "Glesa"
+	dynasty = dyn_bamenda
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = bamenda_97
+	mother = bamenda_97_wife
+
+	3284.1.1 = { birth = yes }
+	3349.1.1 = { death = yes }
+}
+bamenda_99 = {
+	name = "Kalbuur"
+	dynasty = dyn_bamenda
+	religion = walkabout
+	culture = crown_culture
+
+	father = bamenda_98
+	mother = hisa_99b
+
+	trait = education_stewardship_3
+	trait = sign_lover
+
+	3308.2.11 = { birth = yes }
+	3338.1.1 = { add_spouse = karr_100c }
+	3368.7.19 = { death = yes }
+}
+bamenda_100 = {
+	name = "Malenah"
+	dynasty = dyn_bamenda
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = bamenda_99
+	mother = karr_100c
+
+	trait = education_diplomacy_2
+	trait = lustful
+	trait = humble
+	trait = vengeful
+	trait = sign_thief
+
+	3340.12.30 = { birth = yes }
+	3358.1.1 = {	
+		effect = {
+			if = {
+				limit = { character:tura_100d = { is_alive = yes } }
+				set_relation_lover = { target = character:tura_100d reason = lover_history }
+			}
+		}
+	}
+	3365.1.1 = { add_spouse = tura_100d }
+	3411.9.25 = { death = yes }	
+}
+bamenda_100b = {
+	name = "Jahsul"
+	dynasty = dyn_bamenda
+	religion = walkabout
+	culture = crown_culture
+
+	father = bamenda_99
+	mother = karr_100c
+
+	3343.1.1 = { birth = yes }
+	3404.1.1 = { death = yes }	
+}
+bamenda_101 = {
+	name = "Pelamar"
+	dynasty = dyn_bamenda
+	religion = walkabout
+	culture = crown_culture
+	
+	mother = bamenda_100
+	father = tura_100d
+
+	3368.1.1 = { birth = yes }
+	3434.3.8 = { death = yes }
+}
+bamenda_101b = {
+	name = "Ehshaz"
+	dynasty = dyn_bamenda
+	religion = walkabout
+	culture = crown_culture
+	
+	mother = bamenda_100
+	father = tura_100d
+
+	3373.1.1 = { birth = yes }
+	3449.1.1 = { death = yes }	
+}
+bamenda_102 = {
+	name = "Cora"
+	dynasty = dyn_bamenda
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+	
+	father = bamenda_101
+
+	3401.1.1 = { birth = yes }
+	3473.1.1 = { death = yes }	
+}
+
+#Karr dynasty
+karr_96 = { #Founder, can be moved further back if required
+	name = "Karrod"
+	dynasty = dyn_karr
+	religion = walkabout
+	culture = crown_culture
+
+	trait = education_learning_4
+
+	3203.1.1 = { birth = yes }
+	3272.4.19 = { death = yes }
+}
+karr_97 = {
+	name = "Jambi"
+	dynasty = dyn_karr
+	religion = walkabout
+	culture = crown_culture
+
+	father = karr_96
+
+	3230.1.1 = { birth = yes }
+	3298.6.6 = { death = yes }
+}
+karr_98 = {
+	name = "Ena"
+	dynasty = dyn_karr
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = karr_97
+
+	3259.1.1 = { birth = yes }
+	3280.1.1 = { add_matrilineal_spouse = karr_98_husband }
+	3311.10.24 = { death = yes }
+}
+karr_98_husband = {
+	name = "Nidal"
+	religion = walkabout
+	culture = crown_culture
+
+	3261.1.1 = { birth = yes }
+	3328.1.1 = { death = yes }
+}
+karr_99 = {
+	name = "Ahriah"
+	dynasty = dyn_karr
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = karr_98
+	father = karr_98_husband
+
+	3276.1.1 = { birth = yes }
+	3305.1.1 = { add_matrilineal_spouse = karr_99_husband }
+	3327.10.10 = { death = { death_reason = death_contest_duel_accident } }
+}
+karr_99_husband = {
+	name = "Sagabar"
+	religion = walkabout
+	culture = crown_culture
+
+	3279.1.1 = { birth = yes }
+	3342.1.1 = { death = yes }
+}
+karr_99b = { 
+	name = "Bassa"
+	dynasty = dyn_karr
+	religion = walkabout
+	culture = crown_culture
+
+	mother = karr_98
+	father = karr_98_husband
+
+	3278.1.1 = { birth = yes }
+	3341.1.1 = { death = yes }
+}
+karr_100 = {
+	name = "Ikran"
+	dynasty = dyn_karr
+	religion = walkabout
+	culture = crown_culture
+
+	mother = karr_99
+	father = karr_99_husband
+
+	trait = education_diplomacy_4
+
+	3307.1.1 = { birth = yes }
+	3362.12.26 = { death = yes }
+}
+karr_100b = { #Married to phyllos_100
+	name = "Kewan"
+	dynasty = dyn_karr
+	religion = walkabout
+	culture = crown_culture
+
+	mother = karr_99
+	father = karr_99_husband
+
+	3311.1.1 = { birth = yes }
+	3374.1.1 = { death = yes }
+}
+karr_100c = { #Married to bamenda_99
+	name = "Ena"
+	dynasty = dyn_karr
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = karr_99
+	father = karr_99_husband
+
+	3316.1.1 = { birth = yes }
+	3395.1.1 = { death = yes }
+}
+karr_101 = {
+	name = "Kalrzud"
+	dynasty = dyn_karr
+	religion = walkabout
+	culture = crown_culture
+
+	father = karr_100
+	
+	trait = education_stewardship_2
+	trait = calm
+	trait = cynical
+	trait = fickle
+
+	3336.1.1 = { birth = yes }
+	3409.1.29 = { death = yes }
+}
+karr_102 = {
+	name = "Karrod"
+	dynasty = dyn_karr
+	religion = walkabout
+	culture = crown_culture
+
+	father = karr_101
+
+	3363.1.1 = { birth = yes }
+	3421.4.23 = { death = yes }
+}
+karr_103 = {
+	name = "Ikran"
+	dynasty = dyn_karr
+	religion = walkabout
+	culture = crown_culture
+
+	father = karr_102
+
+	3387.1.1 = { birth = yes }
+	3430.1.1 = { culture = abecean } #Governs abecean isles
+	3452.1.1 = { death = yes }
+}
+
+##Lainlyn Dynasty (dyn_lainlyn)
+#Actually ruled Lainlyn before Reman
+lainlyn_1 = {
+	name = "Balabar"
+	dynasty = dyn_lainlyn
+	religion = walkabout
+	culture = crown_culture
+
+	2667.1.1 = { birth = yes }
+	2732.5.30 = { death = yes }
+}
+lainlyn_2 = {
+	name = "Beriana"
+	dynasty = dyn_lainlyn
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = lainlyn_1
+
+	2698.1.1 = { birth = yes }
+	2764.1.1 = { death = yes }
+}
+lainlyn_line = {
+	name = "Beriana"
+	dynasty = dyn_lainlyn
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+	mother = lainlyn_2
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	2762.1.1 = { birth = yes }
+	2920.1.1 = { give_nickname = nick_line_of }
+	3227.1.1 = { death = yes }	
+}
+
+lainlyn_96 = {
+	name = "Tamarik"
+	dynasty = dyn_lainlyn
+	religion = walkabout
+	culture = crown_culture
+
+	mother = lainlyn_line
+
+	3227.1.1 = { birth = yes }
+	3257.1.1 = { add_spouse = lainlyn_96_wife }
+	3294.7.18 = { death = yes }
+}
+lainlyn_96_wife = {
+	name = "Karifa"
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	3231.1.1 = { birth = yes }
+	3305.1.1 = { death = yes }
+}
+lainlyn_97 = {
+	name = "Kalmasir"
+	dynasty = dyn_lainlyn
+	religion = walkabout
+	culture = crown_culture
+
+	father = lainlyn_96
+	mother = lainlyn_96_wife
+
+	3259.1.1 = { birth = yes }
+	3329.12.27 = { death = yes }
+}
+lainlyn_97b = {
+	name = "Laurel"
+	dynasty = dyn_lainlyn
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = lainlyn_96
+	mother = lainlyn_96_wife
+
+	3266.1.1 = { birth = yes }
+	3339.1.1 = { death = yes }
+}
+
+lainlyn_98 = {
+	name = "Ila"
+	dynasty = dyn_lainlyn
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+	
+	father = lainlyn_97
+
+	3281.1.1 = { birth = yes }
+	3300.1.1 = { add_matrilineal_spouse = lainlyn_98_husband }
+	3340.1.8 = { death = yes }	
+}
+
+lainlyn_98_husband = {
+	name = "Padrul"
+	religion = walkabout
+	culture = crown_culture
+
+	3284.1.1 = { birth = yes }
+	3347.1.1 = { death = yes }
+}
+
+lainlyn_99 = {
+	name = "Azani"
+	dynasty = dyn_lainlyn
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+	
+	mother = lainlyn_98
+	father = lainlyn_98_husband
+
+	3309.1.1 = { birth = yes }
+	3357.11.28 = { death = yes }	
+}
+
+lainlyn_100 = {
+	name = "Saffir"
+	dynasty = dyn_lainlyn
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+	
+	mother = lainlyn_99
+
+	trait = education_diplomacy_2
+	trait = stubborn
+	trait = impatient
+	trait = wrathful
+
+	3334.1.1 = { birth = yes }
+	3391.2.14 = { death = yes }	
+}
+lainlyn_101 = {
+	name = "Tohrz"
+	dynasty = dyn_lainlyn
+	religion = walkabout
+	culture = crown_culture
+	
+	mother = lainlyn_100
+
+	3355.1.1 = { birth = yes }
+	3418.4.6 = { death = yes }	
+}
+lainlyn_102 = {
+	name = "Limark"
+	dynasty = dyn_lainlyn
+	religion = walkabout
+	culture = crown_culture
+	
+	father = lainlyn_101
+
+	3384.1.1 = { birth = yes }
+	3441.10.23 = { death = yes }	
+}
+lainlyn_103 = {
+	name = "Nadar"
+	dynasty = dyn_lainlyn
+	religion = walkabout
+	culture = crown_culture
+	
+	father = lainlyn_102
+
+	3408.1.1 = { birth = yes }
+	3472.1.1 = { death = yes }	
+}
+
+##Curetar Dynasty (dyn_curetar)
+curetar_98 = {
+	name = "Hadir"
+	dynasty = dyn_curetar
+	religion = walkabout
+	culture = crown_culture
+
+	3243.1.1 = { birth = yes }
+	3260.1.1 = { add_spouse = curetar_98_wife }
+	3301.1.1 = { death = yes }
+}
+curetar_98_wife = {
+	name = "Faliara"
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	3241.1.1 = { birth = yes }
+	3303.1.1 = { death = yes }
+}
+curetar_99 = {
+	name = "Enie"
+	dynasty = dyn_curetar
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = curetar_98
+	mother = curetar_98_wife
+
+	3266.1.1 = { birth = yes }
+	3290.1.1 = { add_matrilineal_spouse = berbera_98b }
+	3323.1.1 = { death = yes }	
+}
+curetar_100 = {
+	name = "Fertab"
+	dynasty = dyn_curetar
+	religion = walkabout
+	culture = crown_culture
+	
+	mother = curetar_99
+	father = berbera_98b
+
+	trait = education_martial_3
+	trait = arbitrary
+	trait = gregarious
+	trait = stubborn
+	trait = sign_tower
+
+	3295.10.19 = { birth = yes }
+	3319.1.1 = { add_spouse = moni_99b }
+	3363.7.5 = { death = yes }
+}
+curetar_100b = { #Married to nizwa_100
+	name = "Gilame"
+	dynasty = dyn_curetar
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+	
+	mother = curetar_99
+	father = berbera_98b
+
+	3298.1.1 = { birth = yes }
+	3361.1.1 = { death = yes }	
+}
+curetar_100c = { #Married to kasa_100
+	name = "Sura"
+	dynasty = dyn_curetar
+	religion = walkabout
+	culture = crown_culture
+	
+	mother = curetar_99
+	father = berbera_98b
+
+	3303.1.1 = { birth = yes }
+	3358.1.1 = { death = { death_reason = death_ill } }	
+}
+curetar_101 = {
+	name = "Enneh"
+	dynasty = dyn_curetar
+	religion = walkabout
+	culture = crown_culture
+
+	father = curetar_100
+	mother = moni_99b
+
+	3321.1.1 = { birth = yes }
+	3372.1.1 = { death = yes }	
+}
+curetar_101b = {
+	name = "Yahyif"
+	dynasty = dyn_curetar
+	religion = walkabout
+	culture = crown_culture
+	
+	father = curetar_100
+	mother = moni_99b
+
+	3324.1.1 = { birth = yes }
+	3357.1.1 = { death = yes }	
+}
+curetar_102 = {
+	name = "Nizran"
+	dynasty = dyn_curetar
+	religion = walkabout
+	culture = crown_culture
+
+	father = curetar_101b
+
+	trait = education_stewardship_3
+	trait = generous
+	trait = honest
+	trait = content
+	
+	3342.1.1 = { birth = yes }
+	3385.12.7 = { death = yes }	
+}
+curetar_102b = {
+	name = "Azazh"
+	dynasty = dyn_curetar
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+	
+	father = curetar_101b
+
+	3346.1.1 = { birth = yes }
+	3407.1.1 = { death = yes }	
+}
+curetar_103 = {
+	name = "Nanimir"
+	dynasty = dyn_curetar
+	religion = walkabout
+	culture = crown_culture
+	
+	father = curetar_102
+
+	3368.1.1 = { birth = yes }
+	3431.7.8 = { death = yes }	
+}
+curetar_104 = {
+	name = "Maereshah"
+	dynasty = dyn_curetar
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+	
+	father = curetar_103
+
+	3403.1.1 = { birth = yes }
+	3472.1.1 = { death = yes }	
+}
+curetar_105 = {
+	name = "Thassad" #Thassad I
+	dynasty = dyn_curetar
+	religion = walkabout
+	culture = crown_culture
+
+	mother = curetar_104
+
+	3432.1.1 = { birth = yes }
+	3507.1.1 = { death = yes }
+}
+
+##Tura Dynasty (dyn_tura)
+tura_98 = {
+	name = "Sogora"
+	dynasty = dyn_tura
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	3259.1.1 = { birth = yes }
+	3282.1.1 = { add_matrilineal_spouse = tura_98_husband }
+	3328.3.25 = { death = yes }
+}
+tura_98_husband = {
+	name = "Rokdun"
+	religion = walkabout
+	culture = crown_culture
+
+	3262.1.1 = { birth = yes }
+	3330.1.1 = { death = yes }
+}
+tura_99 = {
+	name = "Korin"
+	dynasty = dyn_tura
+	religion = walkabout
+	culture = crown_culture
+
+	mother = tura_98
+	father = tura_98_husband
+
+	trait = lustful
+	trait = generous
+	trait = compassionate
+
+	3285.1.1 = { birth = yes }
+	3325.1.1 = { add_spouse = rohon_99b }
+	3348.1.1 = { death = yes }
+}
+tura_99_lover1 = {
+	name = "Aqabi"
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	3281.1.1 = { birth = yes }
+	3335.1.1 = { death = { death_reason = death_ill } }
+}
+tura_99_lover2 = {
+	name = "Doletta"
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	3302.1.1 = { birth = yes }
+	3367.1.1 = { death = { death_reason = death_natural_causes } }
+}
+tura_99_lover3 = {
+	name = "Honai"
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	3299.1.1 = { birth = yes }
+	3364.1.1 = { death = { death_reason = death_natural_causes } }
+}
+tura_99b = { #Married off to skavyn_99
+	name = "Leila"
+	dynasty = dyn_tura
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = tura_98
+	father = tura_98_husband
+
+	3292.1.1 = { birth = yes }
+	3359.1.1 = { death = yes }
+}
+tura_100 = {
+	name = "Tralan"
+	dynasty = dyn_tura
+	religion = walkabout
+	culture = crown_culture
+
+	father = tura_99
+	mother = rohon_99b
+
+	trait = education_intrigue_3
+	trait = craven
+	trait = shy
+	trait = arrogant
+	trait = sign_ritual
+
+	3329.1.7 = { birth = yes }
+	3367.1.1 = { add_spouse = shavir_101b }
+	3399.6.16 = { death = yes }	
+}
+tura_100b = {
+	name = "Liliya"
+	dynasty = dyn_tura
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = tura_99
+	mother = tura_99_lover1
+
+	trait = bastard
+
+	3312.1.1 = { birth = yes }
+	3379.1.1 = { death = yes }
+}
+tura_100d = {
+	name = "Torim"
+	dynasty = dyn_tura
+	religion = walkabout
+	culture = crown_culture
+
+	father = tura_99
+	mother = tura_99_lover3
+
+	trait = bastard
+
+	3336.1.1 = { birth = yes }
+	3403.1.1 = { death = yes }	
+}
+tura_100e = { #Married to pharos_100
+	name = "Abannah"
+	dynasty = dyn_tura
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = tura_99
+	mother = rohon_99b
+
+	3336.1.1 = { birth = yes }
+	3408.1.1 = { death = yes }	
+}
+tura_101 = {
+	name = "Tobba"
+	dynasty = dyn_tura
+	religion = walkabout
+	culture = crown_culture
+	
+	father = tura_100
+	mother = shavir_101b
+
+	3369.1.1 = { birth = yes }
+	3427.4.29 = { death = yes }	
+}
+tura_102 = {
+	name = "Rida"
+	dynasty = dyn_tura
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = tura_101
+
+	3387.1.1 = { birth = yes }
+	3438.12.22 = { death = yes }
+}
+tura_103 = {
+	name = "Isodi"
+	dynasty = dyn_tura
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = tura_102
+
+	3415.1.1 = { birth = yes }
+	3478.1.1 = { death = yes }
+}
+
+#Korin, branch of Tura
+korin_100 = {
+	name = "Rinanda"
+	dynasty = dyn_tura
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = tura_99
+	mother = tura_99_lover2
+
+	trait = bastard_founder
+	trait = ambitious
+	trait = education_diplomacy_3
+	trait = sign_lady
+
+	3323.9.24 = { birth = yes }
+	3349.1.1 = { add_matrilineal_spouse = korin_100_husband }
+	3351.1.1 = { dynasty_house = dyn_korin }
+	3392.1.1 = { death = yes }
+}
+korin_100_husband = {
+	name = "Rodoro"
+	religion = walkabout
+	culture = crown_culture
+
+	3327.1.1 = { birth = yes }
+	3390.1.1 = { death = yes }
+}
+korin_101 = {
+	name = "Delyna"
+	dynasty_house = dyn_korin
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = korin_100
+	father = korin_100_husband
+
+	3351.1.1 = { birth = yes }
+	3419.1.1 = { death = yes }
+}
+
+#Nizwa Dynasty, relatively recent dynasty
+nizwa_97 = {
+	name = "Jorin"
+	dynasty = dyn_nizwa
+	religion = walkabout
+	culture = crown_culture
+
+	3201.1.1 = { birth = yes }
+	3272.1.1 = { death = yes }
+}
+nizwa_98 = {
+	name = "Adara"
+	dynasty = dyn_nizwa
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = nizwa_97
+
+	3234.1.1 = { birth = yes }
+	3264.1.1 = { add_matrilineal_spouse = nizwa_98_husband }
+	3298.1.1 = { death = yes }
+}
+nizwa_98_husband = {
+	name = "Ubay"
+	religion = walkabout
+	culture = crown_culture
+
+	3238.1.1 = { birth = yes }
+	3312.1.1 = { death = yes }
+}
+nizwa_99 = {
+	name = "Davina"
+	dynasty = dyn_nizwa
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = nizwa_98
+	father = nizwa_98_husband
+
+	3266.1.1 = { birth = yes }
+	3292.1.1 = { add_matrilineal_spouse = pharos_98b }
+	3323.1.1 = { death = yes }
+}
+nizwa_100 = {
+	name = "Azzan"
+	dynasty = dyn_nizwa
+	religion = walkabout
+	culture = crown_culture
+
+	mother = nizwa_99
+	father = pharos_98b
+
+	trait = loyal
+	trait = just
+	trait = calm
+	trait = content
+	trait = education_diplomacy_3
+	trait = sign_steed
+
+	3295.6.22 = { birth = yes }
+	3318.1.1 = { add_spouse = curetar_100b }
+	3362.12.7 = { death = yes }	
+}
+nizwa_101 = {
+	name = "Torgett"
+	dynasty = dyn_nizwa
+	religion = walkabout
+	culture = crown_culture
+
+	father = nizwa_100
+	mother = curetar_100b
+
+	trait = diligent
+	trait = greedy
+	trait = education_intrigue_3
+	trait = sign_lover
+
+	3321.2.4 = { birth = yes }
+	3349.1.1 = { add_spouse = baut1_101b }
+	3385.2.24 = { death = yes }	
+}
+nizwa_101b = {
+	name = "Azzana"
+	dynasty = dyn_nizwa
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = nizwa_100
+	mother = curetar_100b
+
+	3327.1.1 = { birth = yes }
+	3393.1.1 = { death = yes }
+}
+nizwa_101c = { #Married to rohon_100
+	name = "Yaghoub"
+	dynasty = dyn_nizwa
+	religion = walkabout
+	culture = crown_culture
+
+	father = nizwa_100
+	mother = curetar_100b
+
+	3330.1.1 = { birth = yes }
+	3391.1.1 = { death = yes }
+}
+nizwa_102 = {
+	name = "Azita"
+	dynasty = dyn_nizwa
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+	
+	father = nizwa_101
+	mother = baut1_101b
+
+	3351.1.1 = { birth = yes }
+	3401.5.19 = { death = yes }	
+}
+
+nizwa_103 = {
+	name = "Azzana"
+	dynasty = dyn_nizwa
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = nizwa_102
+
+	3379.1.1 = { birth = yes }
+	3410.1.1 = { add_matrilineal_spouse = bamenda_101b }
+	3444.12.5 = { death = yes }
+}
+
+nizwa_104 = {
+	name = "Mihra"
+	dynasty = dyn_nizwa
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = nizwa_103
+	father = bamenda_101b
+
+	3412.1.1 = { birth = yes }
+	3487.1.1 = { death = yes }
+}
+
+nizwa_105 = {
+	name = "Hakan"
+	dynasty = dyn_nizwa
+	religion = walkabout
+	culture = crown_culture
+
+	mother = nizwa_104
+
+	3438.1.1 = { birth = yes }
+	3489.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+
+nizwa_106 = {
+	name = "Thassad"
+	dynasty = dyn_nizwa
+	religion = walkabout
+	culture = crown_culture
+
+	father = nizwa_105
+
+	3462.1.1 = { birth = yes }
+	3533.1.1 = { death = yes }
+}
+
+#Moni
+moni_98 = {
+	name = "Rona"
+	dynasty = dyn_moni
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	3266.1.1 = { birth = yes }
+	3295.1.1 = { add_matrilineal_spouse = moni_98_husband }
+	3327.6.29 = { death = yes }
+}
+moni_98_husband = {
+	name = "Zakriah"
+	religion = walkabout
+	culture = crown_culture
+
+	3270.1.1 = { birth = yes }
+	3309.1.1 = { death = yes }
+}
+moni_99 = {
+	name = "Jart"
+	dynasty = dyn_moni
+	religion = walkabout
+	culture = crown_culture
+
+	mother = moni_98
+	father = moni_98_husband
+
+	3297.1.1 = { birth = yes }
+	3322.1.1 = { add_spouse = tam_99c }
+	3356.5.24 = { death = yes }
+}
+moni_99b = { #Married to curetar_100
+	name = "Ana"
+	dynasty = dyn_moni
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = moni_98
+	father = moni_98_husband
+
+	3300.1.1 = { birth = yes }
+	3365.1.1 = { death = yes }
+}
+moni_100 = {
+	name = "Fireya"
+	dynasty = dyn_moni
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = moni_99
+	mother = tam_99c
+
+	trait = chaste
+	trait = diligent
+	trait = intellect_good_2
+	trait = education_stewardship_4
+	trait = sign_shadow
+
+	3324.5.27 = { birth = yes }
+	3427.12.12 = { death = yes }
+}
+moni_100b = {
+	name = "Makdodd"
+	dynasty = dyn_moni
+	religion = walkabout
+	culture = crown_culture
+
+	father = moni_99
+	mother = tam_99c
+
+	trait = sign_steed
+
+	3329.6.13 = { birth = yes }
+	3358.1.1 = { add_spouse = moni_100b_wife }
+	3394.1.1 = { death = yes }
+}
+moni_100b_wife = {
+	name = "Izradi"
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	3332.1.1 = { birth = yes }
+	3398.1.1 = { death = yes }
+}
+moni_100c = { #Married to roukad_100
+	name = "Pinnald"
+	dynasty = dyn_moni
+	religion = walkabout
+	culture = crown_culture
+
+	father = moni_99
+	mother = tam_99c
+
+	trait = twin
+
+	3332.1.1 = { birth = yes }
+	3398.1.1 = { death = yes }
+}
+moni_100d = {
+	name = "Amanta"
+	dynasty = dyn_moni
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = moni_99
+	mother = tam_99c
+
+	trait = twin
+
+	3332.1.1 = { birth = yes }
+	3406.1.1 = { death = yes }
+}
+moni_101 = {
+	name = "Ruben"
+	dynasty = dyn_moni
+	religion = walkabout
+	culture = crown_culture
+
+	father = moni_100b
+	mother = moni_100b_wife
+
+	3362.1.1 = { birth = yes }
+	3428.2.25 = { death = yes }
+}
+moni_101b = {
+	name = "Nazz"
+	dynasty = dyn_moni
+	religion = walkabout
+	culture = crown_culture
+
+	father = moni_100b
+	mother = moni_100b_wife
+
+	3367.1.1 = { birth = yes }
+	3403.1.1 = { death = { death_reason = death_tournament_melee_throat } }
+}
+moni_102 = {
+	name = "Jenses"
+	dynasty = dyn_moni
+	religion = walkabout
+	culture = crown_culture
+
+	father = moni_101
+
+	3391.1.1 = { birth = yes }
+	3456.1.1 = { death = yes }
+}
+
+#Rohon
+rohon_95 = {
+	name = "Marzya"
+	dynasty = dyn_rohon
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	3187.1.1 = { birth = yes }
+	3240.1.1 = { death = yes }
+}
+rohon_96 = {
+	name = "Kushorithi"
+	dynasty = dyn_rohon
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = rohon_95
+
+	3214.1.1 = { birth = yes }
+	3281.2.3 = { death = yes }
+}
+rohon_97 = {
+	name = "Atin"
+	dynasty = dyn_rohon
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = rohon_96
+
+	3243.1.1 = { birth = yes }
+	3301.1.1 = { death = yes }
+}
+rohon_97b = {
+	name = "Azad"
+	dynasty = dyn_rohon
+	religion = walkabout
+	culture = crown_culture
+
+	mother = rohon_96
+	
+	3248.1.1 = { birth = yes }
+	3275.1.1 = { add_spouse = rohon_97b_wife }
+	3286.1.1 = { death = yes }
+}
+rohon_97b_wife = {
+	name = "Esthirh"
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	3251.1.1 = { birth = yes }
+	3318.1.1 = { death = yes }
+}
+rohon_98 = {
+	name = "Sirali"
+	dynasty = dyn_rohon
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = rohon_97
+
+	3278.1.1 = { birth = yes }
+	3309.1.1 = { death = yes }
+}
+rohon1_98 = {
+	name = "Samuur"
+	dynasty = dyn_rohon
+	religion = walkabout
+	culture = crown_culture
+
+	father = rohon_97b
+	mother = rohon_97b_wife
+
+	3270.1.1 = { birth = yes }
+	3292.1.1 = { add_spouse = rohon1_98_wife }
+	3335.1.1 = { death = yes }
+}
+rohon1_98_wife = {
+	name = "Corda"
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	3272.1.1 = { birth = yes }
+	3346.1.1 = { death = yes }
+}
+rohon1_98b = { #Married to talat_99
+	name = "Finaha"
+	dynasty = dyn_rohon
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = rohon_97b
+	mother = rohon_97b_wife
+	
+	3277.1.1 = { birth = yes }
+	3352.1.1 = { death = yes }
+}
+rohon_99 = {
+	name = "Layla"
+	dynasty = dyn_rohon
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = rohon1_98
+	mother = rohon1_98_wife
+
+	trait = education_learning_2
+	trait = sign_mage
+
+	3294.4.30 = { birth = yes }
+	3319.1.1 = { add_matrilineal_spouse = rohon_99_husband }
+	3364.8.12 = { death = yes }
+}
+rohon_99_husband = {
+	name = "Thadret"
+	religion = walkabout
+	culture = crown_culture
+
+	3297.1.1 = { birth = yes }
+	3358.1.1 = { death = yes }
+}
+rohon_99b = { #Married to tura_99
+	name = "Esthirh"
+	dynasty = dyn_rohon
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = rohon1_98
+	mother = rohon1_98_wife
+
+	3300.1.1 = { birth = yes }
+	3374.1.1 = { death = yes }
+}
+rohon_100 = {
+	name = "Ramati"
+	dynasty = dyn_rohon
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = rohon_99
+	father = rohon_99_husband
+
+	trait = education_martial_3
+	trait = aggressive_attacker
+	trait = honest
+	trait = impatient
+	trait = stubborn
+	trait = sign_apprentice
+
+	3321.7.29 = { birth = yes }
+	3349.1.1 = { add_matrilineal_spouse = nizwa_101c }
+	3392.9.30 = { death = yes }
+}
+rohon_100b = { #Married to hnas_100
+	name = "Daleila"
+	dynasty = dyn_rohon
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = rohon_99
+	father = rohon_99_husband
+
+	3326.1.1 = { birth = yes }
+	3403.1.1 = { death = yes }
+}
+rohon_101 = {
+	name = "Yata"
+	dynasty = dyn_rohon
+	religion = walkabout
+	culture = crown_culture
+
+	mother = rohon_100
+	father = nizwa_101c
+
+	3352.1.1 = { birth = yes }
+	3414.10.25 = { death = yes }
+}
+
+#Tava Dynasty (dyn_tava)
+tavan_1 = {
+	name = "Rasul"
+	dynasty = dyn_tava
+	religion = yoku_spirits
+	culture = raga
+	
+	692.1.1 = { birth = yes }
+	755.1.1 = { death = yes }
+}
+
+tavan_2 = {
+	name = "Jengar"
+	dynasty = dyn_tava
+	religion = yoku_spirits
+	culture = raga
+	
+	father = tavan_1
+	
+	721.1.1 = { birth = yes }
+	786.1.1 = { death = yes }
+}
+
+tavan_2b = {
+	name = "Bahraha" #Lore
+	dynasty = dyn_tava
+	religion = yoku_spirits #Kept worshipping Satakal
+	culture = crown_culture #Totambu
+	
+	father = tavan_1
+
+	trait = necromancer
+	trait = education_magic_4
+	trait = lifestyle_mystic
+	trait = lifespan_magic_1
+	
+	724.1.1 = { birth = yes }
+	825.1.1 = { death = { death_reason = death_duel killer = tavan_3b } }
+}
+
+tavan_3 = {
+	name = "Teqhan"
+	dynasty = dyn_tava
+	religion = yoku_spirits
+	culture = raga
+	
+	father = tavan_2
+	
+	748.1.1 = { birth = yes }
+	802.1.1 = { death = yes }
+}
+
+tavan_3b = {
+	name = "Hubalajad" #Lore
+	dynasty = dyn_tava
+	religion = walkabout
+	culture = crown_culture #Totambu
+	
+	father = tavan_2
+	
+	769.1.1 = { birth = yes }
+	810.1.1 = { give_nickname = nick_hew }
+	836.1.1 = { death = yes }
+}
+
+tavan_line = {
+	name = "Hubalajad"
+	dynasty = dyn_tava
+	religion = walkabout
+	culture = crown_culture #Totambu
+	father = tavan_3b
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	836.1.1 = { birth = yes }
+	856.1.1 = { give_nickname = nick_line_of }
+	3239.1.1 = { death = yes }
+}
+
+tavan_96 = {
+	name = "Praldyn"
+	dynasty = dyn_tava
+	religion = walkabout
+	culture = crown_culture
+
+	father = tavan_line
+
+	3212.1.1 = { birth = yes }
+	3271.9.11 = { death = yes }
+}
+tavan_97 = {
+	name = "Sahima"
+	dynasty = dyn_tava
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+	
+	father = tavan_96
+	
+	3239.1.1 = { birth = yes }
+	3310.2.8 = { death = yes }
+}
+tavan_97b = { #Married to phyllos_98
+	name = "Hazihi"
+	dynasty = dyn_tava
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+	
+	father = tavan_96
+	
+	3243.1.1 = { birth = yes }
+	3311.1.1 = { death = yes }
+}
+tavan_98 = {
+	name = "Hubalajad"
+	dynasty = dyn_tava
+	religion = walkabout
+	culture = crown_culture
+	
+	mother = tavan_97
+	
+	3267.1.1 = { birth = yes }
+	3300.1.1 = { add_spouse = tavan_98_wife }
+	3331.1.14 = { death = yes }
+}
+tavan_98_wife = {
+	name = "Jalian"
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	3274.1.1 = { birth = yes }
+	3341.1.1 = { death = yes }
+}
+tavan_99 = {
+	name = "Hisal"
+	dynasty = dyn_tava
+	religion = walkabout
+	culture = crown_culture
+
+	father = tavan_98
+	mother = tavan_98_wife
+
+	3301.1.1 = { birth = yes }
+	3352.4.6 = { death = yes }
+}
+tavan_99b = {
+	name = "Zaqeeb"
+	dynasty = dyn_tava
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+	
+	father = tavan_98
+	mother = tavan_98_wife
+
+	trait = zealous
+	trait = humble
+	trait = honest
+	trait = devoted
+	trait = p_yp_tava
+	trait = education_learning_4
+	trait = theologian
+	trait = whole_of_body
+
+	3309.1.1 = { birth = yes }
+	3332.1.1 = { give_nickname = nick_the_admirable }	
+	3369.1.1 = { employer = kasa_101 }
+	3386.1.1 = { death = { death_reason = death_old_age } }	
+}
+tavan_99c = { #Married to shavir_100
+	name = "Hironi"
+	dynasty = dyn_tava
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+	
+	father = tavan_98
+	mother = tavan_98_wife
+
+	3312.1.1 = { birth = yes }
+	3377.1.1 = { death = yes }
+}
+tavan_100 = {
+	name = "Hubalajad"
+	dynasty = dyn_tava
+	religion = walkabout
+	culture = crown_culture
+
+	father = tavan_99
+
+	3326.1.1 = { birth = yes }
+	3399.2.7 = { death = { death_reason = death_natural_causes } }
+}
+tavan_101 = {
+	name = "Katie"
+	dynasty = dyn_tava
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = tavan_100
+
+	3353.1.1 = { birth = yes }
+	3417.8.28 = { death = yes }
+}
+tavan_102 = {
+	name = "Ator"
+	dynasty = dyn_tava
+	religion = walkabout
+	culture = crown_culture
+
+	mother = tavan_101
+
+	3378.1.1 = { birth = yes }
+	3426.1.1 = { death = { death_reason = death_duel } } #Random duel
+}
+tavan_103 = {
+	name = "Ilden"
+	dynasty = dyn_tava
+	religion = walkabout
+	culture = crown_culture
+
+	father = tavan_102
+
+	3405.1.1 = { birth = yes }
+	3475.1.1 = { death = yes }
+}
+tavan_104 = {
+	name = "Dahlia"
+	dynasty = dyn_tava
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = tavan_103
+	
+	3431.1.1 = { birth = yes }
+	3498.1.1 = { death = yes }
+}
+
+#Kasa, old Na-Totambu family, led Republic on few occasions
+kasa_94 = {
+	name = "Lanika"
+	dynasty = dyn_kasa
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	3138.1.1 = { birth = yes }
+	3191.8.2 = { death = yes }
+}
+kasa_95 = {
+	name = "Voa"
+	dynasty = dyn_kasa
+	religion = walkabout
+	culture = crown_culture
+
+	mother = kasa_94
+
+	3166.1.1 = { birth = yes }
+	3234.12.8 = { death = yes }
+}
+kasa_96 = {
+	name = "Zerzhan"
+	dynasty = dyn_kasa
+	religion = walkabout
+	culture = crown_culture
+
+	father = kasa_95
+
+	3201.1.1 = { birth = yes }
+	3274.1.1 = { death = yes }
+}
+kasa_97 = {
+	name = "Lurana"
+	dynasty = dyn_kasa
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = kasa_96
+
+	3230.1.1 = { birth = yes }
+	3298.1.1 = { death = yes }
+}
+kasa_98 = {
+	name = "Afsar"
+	dynasty = dyn_kasa
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = kasa_97
+
+	3258.1.1 = { birth = yes }
+	3333.1.1 = { death = yes }
+}
+kasa_99 = {
+	name = "Kithlan"
+	dynasty = dyn_kasa
+	religion = walkabout
+	culture = crown_culture
+
+	mother = kasa_98
+
+	trait = legitimized_bastard
+
+	3280.1.1 = { birth = yes }
+	3303.1.1 = { add_spouse = bamenda_98b }
+	3344.1.1 = { death = yes }
+}
+kasa_100 = {
+	name = "Lurana"
+	dynasty = dyn_kasa
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = kasa_99
+	mother = bamenda_98b
+
+	3304.1.1 = { birth = yes }
+	3329.1.1 = { add_matrilineal_spouse = curetar_100c }
+	3361.1.1 = { death = yes }
+}
+kasa_101 = { #Crown in 450, real philosopher-king guy
+	name = "Kavar"
+	dna = hegathe_1000_dna_entry
+	dynasty = dyn_kasa
+	religion = walkabout
+	culture = crown_culture
+
+	mother = kasa_100
+	father = curetar_100c
+
+	trait = education_learning_3
+	trait = just
+	trait = honest
+	trait = chaste
+	trait = scholar
+	trait = p_yp_ruptga #King stuff
+	trait = sign_lover
+
+	learning = 10
+	martial = 9
+	stewardship = 6
+	diplomacy = 9 
+	intrigue = 4
+	prowess = 5
+
+	3331.2.19 = { birth = yes }
+	3359.1.1 = { add_spouse = nizwa_101b }
+	3358.1.1 = {
+		effect = {
+			if = { #Friends with fellow nerd
+				limit = { character:tavan_99b = { is_alive = yes } }
+				set_relation_best_friend = { target = character:tavan_99b reason = friend_generic_history } 
+			}
+			if = { #Friends with altmer mage
+				limit = { character:firsthold_100 = { is_alive = yes } }
+				set_relation_friend = { target = character:firsthold_100 reason = friend_generic_history }
+			}
+			if = { #Lovers with an altmer apparently
+				limit = { character:firsthold_101 = { is_alive = yes } }
+				set_relation_lover = { target = character:firsthold_101 reason = lover_history }
+			}
+			learn_language = language_altmeris
+			learn_language = language_cyrodiilic
+		}
+	}
+	3412.8.11 = { death = { death_reason = death_natural_causes } }
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=male_hair_sub_saharan_01
+			custom_beards=male_beard_mena_01
+		}
+	}
+}
+kasa_101b = {
+	name = "Ahriah"
+	dynasty = dyn_kasa
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = kasa_100
+	father = curetar_100c
+
+	3341.1.1 = { birth = yes }
+	3412.1.1 = { death = yes }
+}
+kasa_102 = {
+	name = "Sura"
+	dynasty = dyn_kasa
+	religion = walkabout
+	culture = crown_culture
+	
+	father = kasa_101
+	mother = nizwa_101b
+
+	3367.1.1 = { birth = yes }
+	3433.2.18 = { death = yes }
+}
+kasa_103 = {
+	name = "Lurana"
+	dynasty = dyn_kasa
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = kasa_102
+
+	3389.1.1 = { birth = yes }
+	3437.1.12 = { death = yes }
+}
+kasa_104 = {
+	name = "Parvana"
+	dynasty = dyn_kasa
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = kasa_103
+
+	3415.1.1 = { birth = yes }
+	3474.1.1 = { death = yes }
+}
+
+#Baut
+baut_94 = {
+	name = "Serogan"
+	dynasty = dyn_baut
+	religion = walkabout
+	culture = crown_culture
+
+	3144.1.1 = { birth = yes }
+	3231.1.1 = { death = yes }
+}
+baut_95 = {
+	name = "Tamaima"
+	dynasty = dyn_baut
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = baut_94
+
+	3169.1.1 = { birth = yes }
+	3222.1.1 = { death = yes }
+}
+baut_96 = {
+	name = "Nizran"
+	dynasty = dyn_baut
+	religion = walkabout
+	culture = crown_culture
+
+	mother = baut_95
+
+	3199.1.1 = { birth = yes }
+	3272.1.1 = { death = yes }
+}
+baut_98 = {
+	name = "Tamaima"
+	dynasty = dyn_baut
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = baut_96
+
+	3228.1.1 = { birth = yes }
+	3260.1.1 = { add_matrilineal_spouse = baut_98_husband }
+	3304.1.21 = { death = yes }
+}
+baut_98_husband = {
+	name = "Tobba"
+	religion = walkabout
+	culture = crown_culture
+
+	3230.1.1 = { birth = yes }
+	3299.1.1 = { death = yes }
+}
+baut_99 = {
+	name = "Dudley"
+	dynasty = dyn_baut
+	religion = walkabout
+	culture = crown_culture
+
+	mother = baut_98
+	father = baut_98_husband
+
+	trait = infertile
+
+	3262.1.1 = { birth = yes }
+	3335.1.1 = { death = yes } 
+}
+baut_99b = {
+	name = "Adara"
+	dynasty = dyn_baut
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = baut_98
+	father = baut_98_husband
+
+	3265.1.1 = { birth = yes }
+	3327.1.1 = { death = yes }
+}
+baut_99c = { #Married to shavir_99
+	name = "Taggar"
+	dynasty = dyn_baut
+	religion = walkabout
+	culture = crown_culture
+
+	mother = baut_98
+	father = baut_98_husband
+
+	3269.1.1 = { birth = yes }
+	3319.1.1 = { death = yes }
+}
+baut_100 = {
+	name = "Jim"
+	dynasty = dyn_baut
+	religion = walkabout
+	culture = crown_culture
+
+	father = baut_99
+
+	3317.1.1 = { birth = yes }
+	3368.1.1 = { death = { death_reason = death_disappearance } }
+}
+baut_101 = {
+	name = "Emmita"
+	dynasty = dyn_baut
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = baut_100
+
+	3343.1.1 = { birth = yes }
+	3368.1.1 = { death = { death_reason = death_disappearance } }
+}
+
+#Branch starting from baut_99b
+baut1_100 = {
+	name = "Bilami"
+	dynasty = dyn_baut
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = baut_99b
+
+	3292.1.1 = { birth = yes }
+	3355.1.1 = { death = yes }
+}
+baut1_101 = {
+	name = "Kiara"
+	dynasty = dyn_baut
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = baut1_100
+
+	3321.1.1 = { birth = yes }
+	3394.1.1 = { death = yes }
+}
+baut1_101b = { #Married to nizwa_101
+	name = "Caminda"
+	dynasty = dyn_baut
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = baut1_100
+
+	3324.1.1 = { birth = yes }
+	3409.1.1 = { death = yes }
+}
+baut_102 = {
+	name = "Tobba"
+	dynasty = dyn_baut
+	religion = walkabout
+	culture = crown_culture
+
+	mother = baut1_101
+
+	3347.1.1 = { birth = yes }
+	3418.1.1 = { death = yes }
+}
+
+#Sora
+sora_96 = {
+	name = "Seinda"
+	dynasty = dyn_sora
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	3192.1.1 = { birth = yes }
+	3258.5.2 = { death = yes }
+}
+sora_97 = {
+	name = "Sandol"
+	dynasty = dyn_sora
+	religion = walkabout
+	culture = crown_culture
+
+	mother = sora_96
+
+	3227.1.1 = { birth = yes }
+	3296.4.16 = { death = yes }
+}
+sora_98 = {
+	name = "Laire"
+	dynasty = dyn_sora
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = sora_97
+
+	trait = education_learning_4
+
+	3256.1.1 = { birth = yes }
+	3339.6.5 = { death = yes }
+}
+sora_99 = {
+	name = "Talan"
+	dynasty = dyn_sora
+	religion = walkabout
+	culture = crown_culture
+
+	mother = sora_98
+
+	3289.1.1 = { birth = yes }
+	3357.1.1 = { death = yes }
+}
+sora_100 = {
+	name = "Laire"
+	dynasty = dyn_sora
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = sora_99
+
+	3326.1.1 = { birth = yes }
+	3391.5.1 = { death = yes }
+}
+sora_101 = {
+	name = "Shadr"
+	dynasty = dyn_sora
+	religion = walkabout
+	culture = crown_culture
+
+	mother = sora_100
+
+	3358.1.1 = { birth = yes }
+	3426.10.24 = { death = yes }
+}
+sora_102 = {
+	name = "Seinda"
+	dynasty = dyn_sora
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = sora_101
+
+	3384.1.1 = { birth = yes }
+	3455.1.1 = { death = yes }
+}
+
+#Nisren, smaller nobles turned adventurers
+nisren_99 = {
+	name = "Zerik"
+	dynasty = dyn_nisren
+	religion = walkabout
+	culture = crown_culture
+
+	3306.1.1 = { birth = yes }
+	3328.1.1 = { add_spouse = talat_100b }
+	3368.1.1 = { death = yes }
+}
+nisren_100 = { #Attacks Taneth in attempt to conquer land. First attempt fails, but he kills quite a few forebear nobles. Second attempt with the Crown's backing succeeds. 
+	name = "Thassad"
+	dynasty = dyn_nisren
+	religion = walkabout
+	culture = crown_culture
+
+	father = nisren_99
+	mother = talat_100b
+
+	trait = zealous
+	trait = education_martial_4
+
+	3332.1.1 = { birth = yes }
+	3389.11.20 = { death = yes }
+}
+nisren_101 = {
+	name = "Jessmyn"
+	dynasty = dyn_nisren
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = nisren_100
+
+	trait = legitimized_bastard
+
+	3377.1.1 = { birth = yes }
+	3438.1.1 = { death = yes }
+}
+nisren_102 = {
+	name = "Marlon"
+	dynasty = dyn_nisren
+	religion = walkabout
+	culture = crown_culture
+
+	mother = nisren_101
+
+	3396.1.1 = { birth = yes }
+	3462.1.1 = { death = yes }
+}
+
+#Talat, rule Mundra in 440/450
+talat_98 = {
+	name = "Bakti"
+	dynasty = dyn_talat
+	religion = walkabout
+	culture = crown_culture
+
+	3243.1.1 = { birth = yes }
+	3272.1.1 = { add_spouse = talat_98_wife }
+	3305.1.1 = { death = yes }
+}
+talat_98_wife = {
+	name = "Adara"
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	3246.1.1 = { birth = yes }
+	3312.1.1 = { death = yes }
+}
+talat_99 = {
+	name = "Stenet"
+	dynasty = dyn_talat
+	religion = walkabout
+	culture = crown_culture
+
+	father = talat_98
+	mother = talat_98_wife
+
+	3274.1.1 = { birth = yes }
+	3300.1.1 = { add_spouse = rohon1_98b }
+	3328.1.1 = { death = yes }
+}
+talat_100 = {
+	name = "Finaha"
+	dynasty = dyn_talat
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = talat_99
+	mother = rohon1_98b
+
+	trait = compassionate
+	trait = generous
+	trait = education_stewardship_2
+	trait = sign_shadow
+
+	3301.5.24 = { birth = yes }
+	3327.1.1 = { add_matrilineal_spouse = talat_100_husband }
+	3365.3.10 = { death = yes }
+}
+talat_100_husband = {
+	name = "Rogon"
+	religion = walkabout
+	culture = crown_culture
+
+	3305.1.1 = { birth = yes }
+	3362.1.1 = { death = { death_reason = death_heart_attack } }
+}
+talat_100b = { #Married to nisren_99
+	name = "Leja"
+	dynasty = dyn_talat
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = talat_99
+	mother = rohon1_98b
+
+	3309.1.1 = { birth = yes }
+	3375.1.1 = { death = yes }
+}
+talat_100c = {
+	name = "Thanik"
+	dynasty = dyn_talat
+	religion = walkabout
+	culture = crown_culture
+
+	father = talat_99
+	mother = rohon1_98b
+
+	3314.1.1 = { birth = yes }
+	3365.1.1 = { death = yes }
+}
+talat_101 = {
+	name = "Zalan"
+	dynasty = dyn_talat
+	religion = walkabout
+	culture = crown_culture
+
+	mother = talat_100
+	father = talat_100_husband
+
+	3329.1.1 = { birth = yes }
+	3355.1.1 = { add_spouse = talat_101_wife }
+	3401.2.12 = { death = yes }
+}
+talat_101_wife = {
+	name = "Hadima"
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	3332.1.1 = { birth = yes }
+	3410.1.1 = { death = yes }
+}
+talat_101b = {
+	name = "Samay"
+	dynasty = dyn_talat
+	religion = walkabout
+	culture = crown_culture
+
+	mother = talat_100
+	father = talat_100_husband
+
+	3332.1.1 = { birth = yes }
+	3335.1.1 = { death = { death_reason = death_sickly } }
+}
+talat_101c = {
+	name = "Samay"
+	dynasty = dyn_talat
+	religion = walkabout
+	culture = crown_culture
+
+	mother = talat_100
+	father = talat_100_husband
+
+	3338.1.1 = { birth = yes }
+	3405.1.1 = { death = yes }
+}
+talat_102 = {
+	name = "Bahree"
+	dynasty = dyn_talat
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = talat_101
+	mother = talat_101_wife
+
+	3357.1.1 = { birth = yes }
+	3422.6.7 = { death = yes }
+}
+talat_102b = {
+	name = "Udhush"
+	dynasty = dyn_talat
+	religion = walkabout
+	culture = crown_culture
+
+	father = talat_101
+	mother = talat_101_wife
+
+	3362.1.1 = { birth = yes }
+	3439.1.1 = { death = yes }
+}
+
+#Shavir
+shavir_97 = {
+	name = "Bahree"
+	dynasty = dyn_shavir
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	3223.1.1 = { birth =yes }
+	3271.1.1 = { death = yes }
+}
+shavir_98 = {
+	name = "Heizym"
+	dynasty = dyn_shavir
+	religion = walkabout
+	culture = crown_culture
+
+	mother = shavir_97
+
+	3250.1.1 = { birth = yes }
+	3268.1.1 = { add_spouse = shavir_98_wife }
+	3314.1.1 = { death = yes }
+}
+shavir_98_wife = {
+	name = "Kaliyana"
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	3248.1.1 = { birth = yes }
+	3328.1.1 = { death = yes }
+}
+shavir_99 = {
+	name = "Ghadiya"
+	dynasty = dyn_shavir
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+	
+	father = shavir_98
+	mother = shavir_98_wife
+
+	3271.1.1 = { birth = yes }
+	3300.1.1 = { add_spouse = baut_99c }
+	3327.1.1 = { death = yes }
+}
+shavir_100 = {
+	name = "Divad"
+	dynasty = dyn_shavir
+	religion = walkabout
+	culture = crown_culture
+
+	mother = shavir_99
+	father = baut_99c
+
+	trait = craven
+	trait = education_stewardship_4
+	trait = sign_tower
+
+	3308.10.24 = { birth = yes }
+	3330.1.1 = { add_spouse = tavan_99c }
+	3381.1.1 = { death = yes }
+}
+shavir_101 = {
+	name = "Faribah"
+	dynasty = dyn_shavir
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = shavir_100
+	mother = tavan_99c
+
+	3331.1.1 = { birth = yes }
+	3355.1.1 = { add_matrilineal_spouse = roukad_100b }
+	3395.1.1 = { death = yes }
+}
+shavir_101b = {
+	name = "Areshu"
+	dynasty = dyn_shavir
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = shavir_100
+	mother = tavan_99c
+
+	3336.1.1 = { birth = yes }
+	3408.1.1 = { death = yes }
+}
+shavir_101c = {
+	name = "Kerran"
+	dynasty = dyn_shavir
+	religion = walkabout
+	culture = crown_culture
+
+	father = shavir_100
+	mother = tavan_99c
+
+	3339.1.1 = { birth = yes }
+	3398.1.1 = { death = yes }
+}
+shavir_101d = {
+	name = "Zalan"
+	dynasty = dyn_shavir
+	religion = walkabout
+	culture = crown_culture
+
+	father = shavir_100
+	mother = tavan_99c
+
+	3345.1.1 = { birth = yes }
+	3429.1.1 = { death = yes }
+}
+shavir_101e = {
+	name = "Vhos"
+	dynasty = dyn_shavir
+	religion = walkabout
+	culture = crown_culture
+
+	father = shavir_100
+	mother = tavan_99c
+
+	3351.1.1 = { birth = yes }
+	3413.1.1 = { death = yes }
+}
+shavir_102 = {
+	name = "Kaliyana"
+	dynasty = dyn_shavir
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = shavir_101
+	father = roukad_100b
+
+	3358.1.1 = { birth = yes }
+	3432.6.26 = { death = yes }
+}
+shavir_103 = {
+	name = "Taggar"
+	dynasty = dyn_shavir
+	religion = walkabout
+	culture = crown_culture
+
+	mother = shavir_102
+
+	trait = lazy
+
+	3382.1.1 = { birth = yes }
+	3450.1.1 = { death = yes }
+}
+shavir_103b = {
+	name = "Senyndie"
+	dynasty = dyn_shavir
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = shavir_102
+
+	3390.1.1 = { birth = yes }
+	3468.1.1 = { death = yes }
+}
+shavir_104 = { #His grandmother's heir
+	name = "Rekil"
+	dynasty = dyn_shavir
+	religion = walkabout
+	culture = crown_culture
+
+	father = shavir_103
+
+	trait = diligent
+
+	3411.1.1 = { birth = yes }
+	3474.1.1 = { death = yes }
+}
+shavir_104b = {
+	name = "Hamika"
+	dynasty = dyn_shavir
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = shavir_103
+
+	trait = twin
+
+	3417.1.1 = { birth = yes }
+	3466.1.1 = { death = yes }
+}
+shavir_104c = {
+	name = "Kerah"
+	dynasty = dyn_shavir
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = shavir_103
+
+	trait = twin
+
+	3417.1.1 = { birth = yes }
+	3499.1.1 = { death = yes }
+}
+shavir_105 = {
+	name = "Jonna"
+	dynasty = dyn_shavir
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = shavir_104
+
+	3437.1.1 = { birth = yes }
+	3489.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+shavir_105b = {
+	name = "Carrod"
+	dynasty = dyn_shavir
+	religion = walkabout
+	culture = crown_culture
+
+	father = shavir_104
+
+	3440.1.1 = { birth = yes }
+	3489.1.1 = {
+		trait = disfigured
+	}
+	3501.1.1 = { death = yes }
+}
+shavir_106 = {
+	name = "Kati"
+	dynasty = dyn_shavir
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = shavir_105
+
+	3468.1.1 = { birth = yes }
+	3489.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+
+#########################
+### End of Crownlands ###
+#########################
+
+#######################
+### Northern Crowns ###
+#######################
+#Bahah Dynasty (dyn_baha)
+baha_98 = {
+	name = "Adifa"
+	dynasty = dyn_baha
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	3261.1.1 = { birth = yes }
+	3284.1.1 = { add_matrilineal_spouse = baha_98_husband }
+	3316.5.19 = { death = yes }
+}
+baha_98_husband = {
+	name = "Stanno"
+	religion = walkabout
+	culture = crown_culture
+
+	3263.1.1 = { birth = yes }
+	3330.1.1 = { death = yes }
+}
+baha_99 = {
+	name = "Ashanta"
+	dynasty = dyn_baha
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = baha_98
+	father = baha_98_husband
+
+	3285.1.1 = { birth = yes }
+	3308.1.1 = { add_spouse = hnas_98b }
+	3347.3.8 = { death = yes }
+}
+baha_100 = {
+	name = "Juncan"
+	dynasty = dyn_baha
+	religion = walkabout
+	culture = crown_culture
+
+	mother = baha_99
+	father = hnas_98b
+
+	trait = education_learning_3
+	trait = diligent
+	trait = deceitful
+	trait = humble
+	trait = sign_steed
+
+	3311.6.22 = { birth = yes }
+	3338.1.1 = { add_spouse = skavyn_100b }
+	3392.10.27 = { death = yes }	
+}
+baha_101 = {
+	name = "Stanno"
+	dynasty = dyn_baha
+	religion = walkabout
+	culture = crown_culture
+
+	father = baha_100
+	mother = skavyn_100b
+	
+	3340.1.1 = { birth = yes }
+	3405.9.29 = { death = yes }
+}
+baha_102 = {
+	name = "Daleila"
+	dynasty = dyn_baha
+	religion = walkabout
+	culture = crown_culture
+
+	father = baha_101
+
+	3383.1.1 = { birth = yes } #Born late
+	3430.1.1 = { death = yes }
+}
+
+#Ska'vyn Dynasty (dyn_skavyn)
+skavyn_98 = {
+	name = "Jeran"
+	dynasty = dyn_skavyn
+	religion = walkabout
+	culture = crown_culture
+
+	3258.1.1 = { birth = yes }
+	3320.1.1 = { death = yes }
+}
+skavyn_99 = {
+	name = "Rayya"
+	dynasty = dyn_skavyn
+	religion = walkabout
+	culture = crown_culture
+
+	father = skavyn_98
+	
+	3291.1.1 = { birth = yes }
+	3312.1.1 = { add_spouse = tura_99b }
+	3356.10.16 = { death = yes }
+}
+skavyn_100 = {
+	name = "Eilina"
+	dynasty = dyn_skavyn
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = skavyn_99
+	mother = tura_99b
+
+	trait = education_stewardship_2
+	trait = gregarious
+	trait = arrogant
+	trait = greedy
+
+	3315.1.1 = { birth = yes }
+	3382.3.18 = { death = yes }	
+}
+skavyn_100b = {
+	name = "Faribah"
+	dynasty = dyn_skavyn
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = skavyn_99
+	mother = tura_99b
+
+	3318.1.1 = { birth = yes }
+	3387.1.1 = { death = yes }	
+}
+skavyn_101 = {
+	name = "Kewan"
+	dynasty = dyn_skavyn
+	religion = walkabout
+	culture = crown_culture
+
+	mother = skavyn_100
+
+	trait = education_learning_3
+	trait = gluttonous
+	trait = fickle
+	trait = honest
+
+	3342.1.1 = { birth = yes }
+	3411.4.23 = { death = yes }	
+}
+skavyn_101b = {
+	name = "Kewina"
+	dynasty = dyn_skavyn
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+	
+	mother = skavyn_100
+
+	3346.1.1 = { birth = yes }
+	3413.1.1 = { death = yes }	
+}
+
+#Princess Ojwa of Ojwambu, Crown, not related to modern dynasty
+ojwa_1 = {
+	name = "Ojwa" #Lore
+	religion = walkabout
+	culture = crown_culture #Na-Totambu
+	female = yes
+
+	889.1.1 = { birth = yes }
+	964.1.1 = { death = yes }
+}
+
+#Soko dynasty
+soko_1 = {
+	name = "Qariar"
+	dynasty = dyn_soko
+	religion = yoku_spirits
+	culture = raga
+
+	722.1.1 = { birth = yes }
+	783.1.1 = { death = yes }
+}
+soko_2 = {
+	name = "Gulisheh"
+	dynasty = dyn_soko
+	religion = walkabout
+	culture = crown_culture #Na-Totambu
+	female = yes
+
+	father = soko_1
+
+	759.1.1 = { birth = yes }
+	821.1.1 = { death = yes }
+}
+soko_3 = { #Tarish-Zi, rushed Craglorn and became Grand Prince, but the realm proved to be too unstable for his successors
+	name = "Tarish_Zi" #Lore
+	dynasty = dyn_soko
+	religion = walkabout
+	culture = crown_culture #Na-Totambu
+
+	mother = soko_2
+
+	trait = ambitious
+	trait = callous
+	trait = brave
+	trait = education_martial_4
+	trait = overseer
+	trait = strategist
+	
+	792.1.1 = { birth = yes }
+	863.1.1 = { death = yes }
+}
+
+#Tam, descendants of Taman the Windwalker 
+tam_1 = {
+	name = "Taman"
+	dynasty = dyn_tam
+	religion = walkabout
+	culture = crown_culture #Na Totambu
+	trait = lifestyle_blademaster
+
+	934.1.1 = { birth = yes }
+	954.1.1 = { give_nickname = nick_windwalker }
+	1001.1.1 = { death = yes }	
+}
+tam_line = {
+	name = "Taman"
+	dynasty = dyn_tam
+	religion = walkabout
+	culture = crown_culture #Na Totambu
+	father = tam_1
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	1001.1.1 = { birth = yes }
+	3239.1.1 = { death = yes }
+}
+tam_97 = {
+	name = "Gonda"
+	dynasty = dyn_tam
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+	
+	father = tam_line
+
+	3239.1.1 = { birth = yes }
+	3299.9.25 = { death = yes }
+}
+tam_98 = {
+	name = "Kati"
+	dynasty = dyn_tam
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = tam_97
+
+	3262.1.1 = { birth = yes }
+	3291.1.1 = { add_matrilineal_spouse = tam_98_husband }
+	3324.3.17 = { death = yes }
+}
+tam_98_husband = {
+	name = "Bahram"
+	religion = walkabout
+	culture = crown_culture
+
+	3267.1.1 = { birth = yes }
+	3328.1.1 = { death = yes }
+}
+tam_99 = {
+	name = "Amar"
+	dynasty = dyn_tam
+	religion = walkabout
+	culture = crown_culture
+
+	mother = tam_98
+	father = tam_98_husband
+
+	3294.1.1 = { birth = yes }
+	3346.1.1 = { death = yes }
+}
+tam_99b = { #Married to hnas_99
+	name = "Rhanon"
+	dynasty = dyn_tam
+	religion = walkabout
+	culture = crown_culture
+
+	mother = tam_98
+	father = tam_98_husband
+
+	3299.1.1 = { birth = yes }
+	3376.1.1 = { death = yes }
+}
+tam_99c = { #Married to moni_99
+	name = "Ery"
+	dynasty = dyn_tam
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = tam_98
+	father = tam_98_husband
+
+	3302.1.1 = { birth = yes }
+	3367.1.1 = { death = yes }
+}
+tam_100 = {
+	name = "Hosni"
+	dynasty = dyn_tam
+	religion = walkabout
+	culture = crown_culture
+
+	father = tam_99
+
+	3321.1.1 = { birth = yes }
+	3392.1.1 = { death = yes }
+}
+
+#Yola
+yola_100 = {
+	name = "Sterran"
+	dynasty = dyn_yola
+	religion = walkabout
+	culture = crown_culture
+
+	3335.1.1 = { birth = yes }
+	3397.1.1 = { death = yes }
+}
+yola_101 = {
+	name = "Chiri"
+	dynasty = dyn_yola
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = yola_100
+
+	3364.1.1 = { birth = yes }
+	3436.6.24 = { death = yes }
+}
+yola_102 = {
+	name = "Tama"
+	dynasty = dyn_yola
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	mother = yola_101
+
+	3391.1.1 = { birth = yes }
+	3459.1.1 = { death = yes }
+}
+
+#Lekaga
+lekaga_98 = {
+	name = "Sahledir"
+	dynasty = dyn_lekaga
+	religion = walkabout
+	culture = crown_culture
+
+	3250.1.1 = { birth = yes }
+	3311.1.1 = { death = yes }
+}
+lekaga_99 = {
+	name = "Jenses"
+	dynasty = dyn_lekaga
+	religion = walkabout
+	culture = crown_culture
+
+	father = lekaga_98
+
+	3272.1.1 = { birth = yes }
+	3338.8.7 = { death = yes }
+}
+lekaga_99b = {
+	name = "Rahaja"
+	dynasty = dyn_lekaga
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = lekaga_98
+
+	3291.1.1 = { birth = yes }
+	3332.1.1 = { death = yes }
+}
+lekaga_100 = {
+	name = "Kiarallah"
+	dynasty = dyn_lekaga
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	father = lekaga_99
+
+	3317.1.1 = { birth = yes }
+	3379.1.1 = { death = yes }
+}
+lekaga_101 = {
+	name = "Sahledir"
+	dynasty = dyn_lekaga
+	religion = walkabout
+	culture = crown_culture
+
+	mother = lekaga_100
+
+	trait = content
+
+	3346.1.1 = { birth = yes }
+	3412.1.1 = { death = yes }
+}
+lekaga_102 = {
+	name = "Iraj"
+	dynasty = dyn_lekaga
+	religion = walkabout
+	culture = crown_culture
+
+	father = lekaga_101
+
+	3372.1.1 = { birth = yes }
+	3442.3.6 = { death = yes }
+}
+lekaga_103 = {
+	name = "Kalvyn"
+	dynasty = dyn_lekaga
+	religion = walkabout
+	culture = crown_culture
+
+	father = lekaga_102
+	
+	3395.1.1 = { birth = yes }
+	3461.1.1 = { death = yes }
+}
+
+##############################
+### End of Northern Crowns ###
+##############################
+
+################
+### Abeceans ###
+################
+
+##Pharos Dynasty (dyn_pharos)
+pharos_97 = {
+	name = "Arndon"
+	dynasty = dyn_pharos
+	religion = walkabout
+	culture = abecean
+
+	3233.1.1 = { birth = yes }
+	3265.1.1 = { add_spouse = pharos_97_wife }
+	3300.1.1 = { death = yes }
+}
+pharos_97_wife = {
+	name = "Azita"
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	3240.1.1 = { birth = yes }
+	3318.1.1 = { death = yes }
+}
+pharos_98 = {
+	name = "Domas"
+	dynasty = dyn_pharos
+	religion = walkabout
+	culture = abecean
+
+	father = pharos_97
+	mother = pharos_97_wife
+
+	3268.1.1 = { birth = yes }
+	3295.1.1 = { add_spouse = pharos_98_wife }
+	3327.1.1 = { death = yes }
+}
+pharos_98_wife = {
+	name = "Habasah"
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	3270.1.1 = { birth = yes }
+	3335.1.1 = { death = yes }
+}
+pharos_98b = {
+	name = "Samay"
+	dynasty = dyn_pharos
+	religion = walkabout
+	culture = abecean
+
+	father = pharos_97
+	mother = pharos_97_wife
+
+	3270.1.1 = { birth = yes }
+	3334.1.1 = { death = yes }
+}
+pharos_99 = {
+	name = "Relan"
+	dynasty = dyn_pharos
+	religion = walkabout
+	culture = abecean
+
+	father = pharos_98
+	mother = pharos_98_wife
+
+	3297.1.1 = { birth = yes }
+	3326.1.1 = { add_spouse = kufan_99b }
+	3333.1.1 = { death = { death_reason = death_drowned } }
+}
+pharos_100 = {
+	name = "Uhrih"
+	dynasty = dyn_pharos
+	religion = walkabout
+	culture = abecean
+
+	father = pharos_99
+	mother = kufan_99b
+
+	trait = education_learning_3
+	trait = paranoid
+	trait = gregarious
+	trait = patient
+	trait = sign_shadow
+
+	3329.5.10 = { birth = yes }
+	3358.1.1 = { add_spouse = tura_100e }
+	3359.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3393.1.1 = { death = yes }	
+}
+pharos_100b = {
+	name = "Bilaira"
+	dynasty = dyn_pharos
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	father = pharos_99
+	mother = kufan_99b
+
+	3332.1.1 = { birth = yes }
+	3359.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3397.1.1 = { death = yes }	
+}
+pharos_101 = {
+	name = "Kareth"
+	dynasty = dyn_pharos
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	father = pharos_100
+	mother = tura_100e
+
+	3359.1.1 = { birth = yes }
+	3369.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3408.1.1 = { death = yes }
+}
+pharos_101b = {
+	name = "Ridar"
+	dynasty = dyn_pharos
+	religion = walkabout
+	culture = abecean
+
+	father = pharos_100
+	mother = tura_100e
+
+	3368.1.1 = { birth = yes }
+	3435.1.1 = { death = yes }
+}
+
+##Berbera Dynasty (dyn_berbera)
+berbera_97 = {
+	name = "Jenni"
+	dynasty = dyn_berbera
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	3241.1.1 = { birth = yes }
+	3265.1.1 = { add_matrilineal_spouse = berbera_97_husband }
+	3305.1.1 = { death = yes }
+}
+berbera_97_husband = {
+	name = "Sabir"
+	religion = walkabout
+	culture = abecean
+
+	3238.1.1 = { birth = yes }
+	3299.1.1 = { death = yes }
+}
+berbera_98 = {
+	name = "Korin"
+	dynasty = dyn_berbera
+	religion = walkabout
+	culture = abecean
+
+	mother = berbera_97
+	father = berbera_97_husband
+
+	trait = adulterer
+
+	3268.1.1 = { birth = yes }
+	3294.1.1 = { add_spouse = berbera_98_wife }
+	3332.1.1 = { death = yes }
+}
+berbera_98_lover = {
+	name = "Midyah"
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	3283.1.1 = { birth = yes }
+	3306.1.1 = { death = { death_reason = death_childbirth } }
+}
+berbera_98_wife = {
+	name = "Caminda"
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	3276.1.1 = { birth = yes }
+	3321.1.1 = { death = yes }
+}
+berbera_98b = { #Married to curetar_99
+	name = "Nizran"
+	dynasty = dyn_berbera
+	religion = walkabout
+	culture = abecean
+
+	mother = berbera_97
+	father = berbera_97_husband
+
+	3272.1.1 = { birth = yes }
+	3339.1.1 = { death = yes }
+}
+berbera_99 = {
+	name = "Jaganvir"
+	dynasty = dyn_berbera
+	religion = walkabout
+	culture = abecean
+
+	father = berbera_98
+	mother = berbera_98_wife
+
+	3296.1.1 = { birth = yes }
+	3325.1.1 = { add_spouse = hnas_99b }
+	3355.11.2 = { death = yes }	
+}
+berbera_99b = { #Married to roukad_99
+	name = "Zimar"
+	dynasty = dyn_berbera
+	religion = walkabout
+	culture = abecean
+
+	father = berbera_98
+	mother = berbera_98_wife
+
+	3300.1.1 = { birth = yes }
+	3359.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3378.1.1 = { death = yes }
+}
+berbera_99c = { #Married to kanesh_99
+	name = "Jenni"
+	dynasty = dyn_berbera
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	father = berbera_98
+	mother = berbera_98_lover
+
+	trait = bastard
+
+	3306.1.1 = { birth = yes }
+	3359.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3368.1.1 = { death = yes }	
+}
+berbera_100 = {
+	name = "Majdazh"
+	dynasty = dyn_berbera
+	religion = walkabout
+	culture = abecean
+
+	father = berbera_99
+	mother = hnas_99b
+
+	trait = impatient
+	trait = sign_lord
+
+	3328.3.16 = { birth = yes }
+	3359.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3362.5.13 = { death = yes }	
+}
+berbera_100b = {
+	name = "Hannah"
+	dynasty = dyn_berbera
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	father = berbera_99
+	mother = hnas_99b
+
+	trait = patient
+	trait = sign_apprentice
+
+	3331.7.15 = { birth = yes }
+	3359.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3361.1.1 = { add_matrilineal_spouse = talum_100b }
+	3392.6.12 = { death = yes }	
+}
+berbera_100c = {
+	name = "Tommas"
+	dynasty = dyn_berbera
+	religion = walkabout
+	culture = abecean
+
+	father = berbera_99
+	mother = hnas_99b
+	
+	trait = twin
+
+	3335.1.1 = { birth = yes }
+	3359.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3416.1.1 = { death = yes }	
+}
+berbera_100d = {
+	name = "Jared"
+	dynasty = dyn_berbera
+	religion = walkabout
+	culture = abecean
+
+	father = berbera_99
+	mother = hnas_99b
+	
+	trait = twin
+
+	3335.1.1 = { birth = yes }
+	3359.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3401.1.1 = { death = yes }	
+}
+berbera_101 = {
+	name = "Gilame"
+	dynasty = dyn_berbera
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	mother = berbera_100b
+	father = talum_100b
+
+	3364.1.1 = { birth = yes }
+	3414.1.1 = { death = yes }
+}
+
+#Hnas Dynasty (dyn_hnas)
+hnas_97 = {
+	name = "Tobba"
+	dynasty = dyn_hnas
+	religion = walkabout
+	culture = abecean
+
+	3239.1.1 = { birth = yes }
+	3268.1.1 = { add_spouse = hnas_97_wife }
+	3302.3.15 = { death = yes }
+}
+hnas_97_wife = {
+	name = "Beriana"
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	3242.1.1 = { birth = yes }
+	3307.1.1 = { death = yes }
+}
+hnas_98 = {
+	name = "Aureylah"
+	dynasty = dyn_hnas
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	father = hnas_97
+	mother = hnas_97_wife
+
+	3271.1.1 = { birth = yes }
+	3295.1.1 = { add_matrilineal_spouse = hnas_98_husband }
+	3325.10.29 = { death = yes }
+}
+hnas_98_husband = {
+	name = "Stanno"
+	religion = walkabout
+	culture = abecean
+
+	3269.1.1 = { birth = yes }
+	3321.1.1 = { death = yes }
+}
+hnas_98b = {
+	name = "Stanno"
+	dynasty = dyn_hnas
+	religion = walkabout
+	culture = abecean
+
+	father = hnas_97
+	mother = hnas_97_wife
+
+	3277.1.1 = { birth = yes }
+	3342.1.1 = { death = yes }
+}
+hnas_99 = {
+	name = "Beriana"
+	dynasty = dyn_hnas
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	mother = hnas_98
+	father = hnas_98_husband
+
+	3297.1.1 = { birth = yes }
+	3318.1.1 = { add_spouse = tam_99b }
+	3349.3.24 = { death = yes }
+}
+hnas_99b = { #Married to berbera_99
+	name = "Hannah"
+	dynasty = dyn_hnas
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	mother = hnas_98
+	father = hnas_98_husband
+
+	3300.1.1 = { birth = yes }
+	3359.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3376.1.1 = { death = yes }
+}
+hnas_100 = {
+	name = "Basil"
+	dynasty = dyn_hnas
+	religion = walkabout
+	culture = abecean
+
+	mother = hnas_99
+	father = tam_99b
+
+	trait = education_stewardship_1
+	trait = calm
+	trait = patient
+	trait = arrogant
+	trait = sign_lord
+
+	3320.3.23 = { birth = yes }
+	3351.1.1 = { add_spouse = rohon_100b }
+	3359.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3382.1.1 = { death = yes }	
+}
+hnas_101 = {
+	name = "Letta"
+	dynasty = dyn_hnas
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	father = hnas_100
+	mother = rohon_100b
+
+	3352.1.1 = { birth = yes }
+	3369.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3408.1.1 = { death = yes }	
+}
+
+#Addin Dynasty (dyn_addin)
+addin_98 = { #Unlanded
+	name = "Kelad"
+	dynasty = dyn_addin
+	religion = walkabout
+	culture = abecean
+
+	3277.1.1 = { birth = yes }
+	3301.1.1 = { add_spouse = addin_98_wife }
+	3337.1.1 = { death = yes }
+}
+addin_98_wife = {
+	name = "Yadilah"
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	3279.1.1 = { birth = yes }
+	3340.1.1 = { death = yes }
+}
+addin_99 = {
+	name = "Safia"
+	dynasty = dyn_addin
+	religion = walkabout
+	culture = abecean
+	female = yes
+	
+	father = addin_98
+	mother = addin_98_wife
+
+	3304.1.1 = { birth = yes }
+	3335.1.1 = { add_matrilineal_spouse = addin_99_husband }
+	3359.11.9 = { death = yes }
+}
+addin_99_husband = { #Minor noble, represented as lowborn. To show that Afshuur isn't an important guy
+	name = "Jahhudah"
+	religion = walkabout
+	culture = abecean
+
+	3312.1.1 = { birth = yes }
+	3367.1.1 = { death = yes }
+}
+addin_100 = {
+	name = "Afshuur" #Lore
+	dynasty = dyn_addin
+	religion = walkabout
+	culture = abecean
+	dna = afshuur_dna_entry
+
+	mother = addin_99
+	father = addin_99_husband
+
+	trait = education_stewardship_2
+	trait = greedy
+	trait = deceitful
+	trait = cynical
+	trait = sign_warrior
+
+	3340.8.12 = { birth = yes }
+	3359.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3365.9.18 = { 
+		religion = redguard_cult #Converts to faith of his new subjects in Abah's Landing
+		add_spouse = addin_100_wife #Marries a local noble
+	} 
+	3407.9.8 = { death = yes }	
+}
+addin_100_wife = {
+	name = "Ena"
+	religion = redguard_cult
+	culture = abecean
+	female = yes
+
+	3342.1.1 = { birth = yes }
+	3413.1.1 = { death = yes }
+}
+addin_101 = {
+	name = "Nebezh"
+	dynasty = dyn_addin
+	religion = redguard_cult
+	culture = abecean
+	
+	father = addin_100
+	mother = addin_100_wife
+
+	3367.1.1 = { birth = yes }
+	3411.3.14 = { death = { death_reason = death_mysterious } }	
+}
+addin_101b = {
+	name = "Nizran"
+	dynasty = dyn_addin
+	religion = redguard_cult
+	culture = abecean
+	
+	father = addin_100
+	mother = addin_100_wife
+
+	3373.1.1 = { birth = yes }
+	3422.7.16 = { death = yes }
+}
+addin_102 = {
+	name = "Jenna"
+	dynasty = dyn_addin
+	religion = redguard_cult
+	culture = abecean
+	female = yes
+
+	father = addin_101b
+
+	3398.1.1 = { birth = yes }
+	3472.6.22 = { death = yes }
+}
+addin_103 = {
+	name = "Bodan"
+	dynasty = dyn_addin
+	religion = redguard_cult
+	culture = abecean
+
+	mother = addin_102
+
+	3427.1.1 = { birth = yes }
+	3485.5.11 = { death = yes }
+}
+addin_104 = {
+	name = "Orahan" #Lore
+	dynasty = dyn_addin
+	religion = redguard_cult
+	culture = abecean
+
+	father = addin_103
+
+	trait = education_stewardship_4
+	trait = callous
+	trait = diligent
+	trait = greedy
+
+	3459.1.1 = { birth = yes }
+	3518.1.1 = { death = yes }
+}
+
+#Hisan
+hisa_98 = {
+	name = "Zagari"
+	dynasty = dyn_hisa
+	religion = walkabout
+	culture = abecean
+
+	3250.1.1 = { birth = yes }
+	3278.1.1 = { add_spouse = hisa_98_wife }
+	3315.1.1 = { death = yes }
+}
+hisa_98_wife = {
+	name = "Branwadai"
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	3254.1.1 = { birth = yes }
+	3321.1.1 = { death = yes }
+}
+hisa_99 = {
+	name = "Rida"
+	dynasty = dyn_hisa
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	father = hisa_98
+	mother = hisa_98_wife
+
+	3281.1.1 = { birth = yes }
+	3354.1.1 = { death = yes }
+}
+hisa_99b = { #Married to bamenda_98
+	name = "Cora"
+	dynasty = dyn_hisa
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	father = hisa_98
+	mother = hisa_98_wife
+
+	3285.1.1 = { birth = yes }
+	3344.1.1 = { death = yes }
+}
+hisa_100 = {
+	name = "Guibor"
+	dynasty = dyn_hisa
+	religion = walkabout
+	culture = abecean
+
+	mother = hisa_99
+
+	3306.1.1 = { birth = yes }
+	3359.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3378.1.1 = { death = yes }
+}
+hisa_101 = {
+	name = "Joquala"
+	dynasty = dyn_hisa
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	father = hisa_100
+
+	trait = content
+
+	3332.1.1 = { birth = yes }
+	3359.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3411.1.1 = { death = yes }
+}
+hisa_102 = {
+	name = "Tirona"
+	dynasty = dyn_hisa
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	mother = hisa_101
+
+	3361.1.1 = { birth = yes }
+	3369.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3417.1.1 = { death = yes }
+}
+
+#Roukad
+roukad_97 = {
+	name = "Rhenan"
+	dynasty = dyn_roukad
+	religion = walkabout
+	culture = abecean
+
+	3249.1.1 = { birth = yes }
+	3310.1.1 = { death = yes }
+}
+roukad_98 = {
+	name = "Unar"
+	dynasty = dyn_roukad
+	religion = walkabout
+	culture = abecean
+
+	father = roukad_97
+
+	3272.1.1 = { birth = yes }
+	3298.1.1 = { add_spouse = roukad_98_wife }
+	3338.1.1 = { death = yes }
+}
+roukad_98_wife = {
+	name = "Esmee"
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	3276.1.1 = { birth = yes }
+	3329.1.1 = { death = yes }
+}
+roukad_99 = {
+	name = "Faliara"
+	dynasty = dyn_roukad
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	father = roukad_98
+	mother = roukad_98_wife
+
+	3303.1.1 = { birth = yes }
+	3330.1.1 = { add_matrilineal_spouse = berbera_99b }
+	3342.1.1 = { death = { death_reason = death_hunting_accident } }
+}
+roukad_99b = {
+	name = "Doletta"
+	dynasty = dyn_roukad
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	father = roukad_98
+	mother = roukad_98_wife
+
+	3306.1.1 = { birth = yes }
+	3359.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3369.1.1 = { death = yes }
+}
+roukad_100 = {
+	name = "Tannida"
+	dynasty = dyn_roukad
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	mother = roukad_99
+	father = berbera_99b
+
+	trait = education_learning_3
+	trait = education_magic_2
+	trait = diligent
+	trait = humble
+	trait = sign_tower
+
+	3334.10.7 = { birth = yes }
+	3359.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3362.1.1 = { add_spouse = moni_100c }
+	3402.1.1 = { death = yes }
+}
+roukad_100b = { #Married to shavir_101
+	name = "Roban"
+	dynasty = dyn_roukad
+	religion = walkabout
+	culture = abecean
+
+	mother = roukad_99
+	father = berbera_99b
+
+	3337.1.1 = { birth = yes }
+	3359.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3395.1.1 = { death = yes }
+}
+roukad_101 = {
+	name = "Rona"
+	dynasty = dyn_roukad
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	mother = roukad_100
+	father = moni_100c
+
+	3366.1.1 = { birth = yes }
+	3418.1.1 = { death = yes }
+}
+
+#Talum
+talum_99 = {
+	name = "Mubdi"
+	dynasty = dyn_talum
+	religion = walkabout
+	culture = abecean
+
+	3302.1.1 = { birth = yes }
+	3359.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3332.1.1 = { add_spouse = talum_99_wife }
+	3364.1.1 = { death = yes }
+}
+talum_99_wife = {
+	name = "Enna"
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	3308.1.1 = { birth = yes }
+	3379.1.1 = { death = yes }
+}
+talum_100 = {
+	name = "Rhemalu"
+	dynasty = dyn_talum
+	religion = walkabout
+	culture = abecean
+
+	father = talum_99
+	mother = talum_99_wife
+	
+	3334.1.1 = { birth = yes }
+	3359.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3389.1.1 = { death = yes }
+}
+talum_100b = { #Married to berbera_100b
+	name = "Zakhin"
+	dynasty = dyn_talum
+	religion = walkabout
+	culture = abecean
+
+	father = talum_99
+	mother = talum_99_wife
+	
+	3337.1.1 = { birth = yes }
+	3359.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3395.1.1 = { death = yes }
+}
+talum_101 = {
+	name = "Mubdi"
+	dynasty = dyn_talum
+	religion = walkabout
+	culture = abecean
+
+	father = talum_100
+
+	3374.1.1 = { birth = yes }
+	3430.1.1 = { death = yes }
+}
+
+#Kufan
+kufan_98 = {
+	name = "Gwenna"
+	dynasty = dyn_kufan
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	3278.1.1 = { birth = yes }
+	3300.1.1 = { add_spouse = kufan_98_husband }
+	3341.1.1 = { death = yes }
+}
+kufan_98_husband = {
+	name = "Uhrih"
+	religion = walkabout
+	culture = abecean
+
+	3275.1.1 = { birth = yes }
+	3339.1.1 = { death = yes }
+}
+kufan_99 = {
+	name = "Salar"
+	dynasty = dyn_kufan
+	religion = walkabout
+	culture = abecean
+
+	mother = kufan_98
+	father = kufan_98_husband
+
+	3303.1.1 = { birth = yes }
+	3359.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3367.1.1 = { death = yes }
+}
+kufan_99b = { #Married to pharos_99
+	name = "Eilina"
+	dynasty = dyn_kufan
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	mother = kufan_98
+	father = kufan_98_husband
+
+	3306.1.1 = { birth = yes }
+	3359.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3375.1.1 = { death = yes }
+}
+kufan_100 = {
+	name = "Salmaran"
+	dynasty = dyn_kufan
+	religion = walkabout
+	culture = abecean
+
+	father = kufan_99
+
+	3341.1.1 = { birth = yes }
+	3359.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3442.1.1 = { death = yes }
+}
+kufan_101 = {
+	name = "Nudeelar"
+	dynasty = dyn_kufan
+	religion = walkabout
+	culture = abecean
+
+	father = kufan_100
+
+	3368.1.1 = { birth = yes }
+	3419.1.1 = { death = yes }
+}
+kufan_102 = {
+	name = "Dhola"
+	dynasty = dyn_kufan
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	father = kufan_101
+
+	3396.1.1 = { birth = yes }
+	3468.1.1 = { death = yes }
+}
+
+#Iserra
+iserra_100 = {
+	name = "Jalian"
+	dynasty = dyn_iserra
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	3319.1.1 = { birth = yes }
+	3359.1.1 = { #Abecean nobles speak both Yoku and Cyrodilic
+		effect = { learn_language = language_tamrielic_yoku }
+	}
+	3391.1.1 = { death = yes }
+}
+
+#Telet, nobles on Herne
+telet_100 = {
+	name = "Sahlar"
+	dynasty = dyn_telet
+	religion = walkabout
+	culture = abecean
+
+	3312.1.1 = { birth = yes }
+	3376.1.1 = { death = yes }
+}
+telet_101 = {
+	name = "Ehteram"
+	dynasty = dyn_telet
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	father = telet_100
+
+	3339.1.1 = { birth = yes }
+	3397.1.1 = { death = yes }
+}
+telet_102 = {
+	name = "Sahlar"
+	dynasty = dyn_telet
+	religion = walkabout
+	culture = abecean
+
+	mother = telet_101
+
+	3367.1.1 = { birth = yes }
+	3429.1.1 = { death = yes }
+}
+telet_102b = {
+	name = "Durdira"
+	dynasty = dyn_telet
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	mother = telet_101
+
+	3375.1.1 = { birth = yes }
+	3444.1.1 = { death = yes }
+}
+telet_103 = {
+	name = "Gisele"
+	dynasty = dyn_telet
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	father = telet_102
+
+	3394.1.1 = { birth = yes }
+	3466.1.1 = { death = yes }
+}
+
+#Ateko
+ateko_99 = {
+	name = "Qasrin"
+	dynasty = dyn_ateko
+	religion = walkabout
+	culture = abecean
+
+	3300.1.1 = { birth = yes }
+	3357.1.1 = { death = yes }
+}
+ateko_100 = {
+	name = "Phintias"
+	dynasty = dyn_ateko
+	religion = walkabout
+	culture = abecean
+
+	father = ateko_99
+
+	3331.1.1 = { birth = yes }
+	3382.1.1 = { death = yes }
+}
+ateko_101 = {
+	name = "Balan"
+	dynasty = dyn_ateko
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	father = ateko_100
+
+	3357.1.1 = { birth = yes }
+	3404.1.1 = { death = yes }
+}
+ateko_102 = {
+	name = "Temzukar"
+	dynasty = dyn_ateko
+	religion = walkabout
+	culture = abecean
+
+	mother = ateko_101
+
+	3382.1.1 = { birth = yes }
+	3436.1.1 = { birth = yes }
+}
+ateko_103 = {
+	name = "Hanneh"
+	dynasty = dyn_ateko
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	father = ateko_102
+
+	3408.1.1 = { birth = yes }
+	3461.1.1 = { death = yes }
+}
+
+#Ameen, pirates in Hew's Bane in 440 and in Kabu in 450
+ameen_99 = { #Lowborns
+	name = "Vharer"
+	religion = walkabout
+	culture = abecean
+
+	3304.1.1 = { birth = yes }
+	3328.1.1 = { add_spouse = ameen_99_wife }
+	3348.1.1 = { death = yes }
+}
+ameen_99_wife = {
+	name = "Farrin"
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	3301.1.1 = { birth = yes }
+	3350.1.1 = { death = yes }
+}
+ameen_100 = {
+	name = "Dulia"
+	dynasty = dyn_ameen
+	religion = walkabout
+	culture = abecean
+	female = yes
+
+	father = ameen_99
+	mother = ameen_99_wife
+
+	trait = education_martial_2
+	trait = fickle
+	trait = arrogant
+	trait = pirate
+	trait = sign_ritual
+	
+	3331.1.6 = { birth = yes }
+	3377.1.1 = { death = yes }
+}
+
+# Dogata Dynasty
+dogata_100 = {
+	name = "Rojanna"
+	culture = abecean
+	religion = redguard_cult
+	female = yes
+
+	trait = education_martial_4
+	trait = sign_ritual
+	trait = ambitious
+	trait = brave
+	trait = vengeful
+
+	3340.1.26 = { birth = yes }
+	3360.1.1 = { trait = depressed_1 }
+	3378.1.1 = { remove_trait = depressed_1 }
+	3381.3.22 = { dynasty = dyn_dogata }
+	3410.2.10 = { death = yes }
+}
+#Rojanna adopts falco_103_1 and falco_103_2 into her dynasty
+dogata_101 = {
+	name = "Kalvyn"
+	dynasty = dyn_dogata
+	culture = abecean
+	religion = redguard_cult
+
+	father = falco_103_2
+	mother = falco_103_2_wife
+
+	trait = education_martial_3
+	trait = sign_steed
+	trait = scarred
+	trait = brave
+	trait = greedy
+	trait = arrogant
+
+	3399.6.25 = { birth = yes }
+	3422.1.1 = { add_spouse = zetaf_103 }
+	3448.2.10 = { death = { death_reason = death_pirates } }
+}
+dogata_101_1 = {
+	name = "Zineah"
+	dynasty = dyn_dogata
+	culture = abecean
+	religion = redguard_cult
+	female = yes
+
+	father = dogata_101
+	mother = zetaf_103
+
+	trait = education_martial_2
+	trait = education_magic_1
+	trait = sign_tower
+	trait = brave
+	trait = generous
+	trait = just
+
+	3423.10.4 = { birth = yes }
+	3448.2.10 = { death = { death_reason = death_pirates } }
+}
+dogata_102 = {
+	name = "Vilamon"
+	dynasty = dyn_dogata
+	culture = abecean
+	religion = redguard_cult
+
+	father = falco_103_2
+	mother = falco_103_2_wife
+
+	trait = education_intrigue_1
+	trait = sign_lover
+	trait = arbitrary
+	trait = stubborn
+	trait = craven
+
+	3408.2.19 = { birth = yes }
+	3484.1.1 = { death = yes }
+}
+
+#Rahan Dynasty
+rahan_100 = {
+	name = "Karrod"
+	culture = abecean
+	religion = redguard_cult
+
+	trait = education_stewardship_1
+	trait = sign_steed
+	trait = greedy
+	trait = wrathful
+	trait = lazy
+	trait = drunkard
+
+	3315.6.3 = { birth = yes }
+	3338.1.1 = { add_spouse = rahan_100_wife }
+	3359.9.10 = { death = { death_reason = death_disappearance } }
+}
+rahan_100_wife = {
+	name = "Cassanda"
+	culture = abecean
+	religion = redguard_cult
+	female = yes
+
+	3321.1.1 = { birth = yes }
+	3359.9.10 = { death = { death_reason = death_disappearance } }
+}
+rahan_101 = {
+	name = "Damar"
+	culture = abecean
+	religion = redguard_cult
+
+	father = rahan_100
+	mother = rahan_100_wife
+
+	trait = education_martial_3
+	trait = sign_warrior
+	trait = brave
+	trait = greedy
+	trait = gregarious
+	trait = gallowsbait
+	trait = twin
+
+	3339.8.13 = { birth = yes }
+	3358.1.1 = { add_spouse = dogata_100 }
+	3359.9.10 = { death = { death_reason = death_prison } }	#died in Amenos Station
+}
+rahan_102 = {
+	name = "Bakti"
+	culture = abecean
+	religion = redguard_cult
+
+	father = rahan_100
+	mother = rahan_100_wife
+
+	trait = education_martial_3
+	trait = sign_warrior
+	trait = brave
+	trait = vengeful
+	trait = honest
+	trait = pirate
+	trait = twin
+
+	3339.8.13 = { birth = yes }
+	3381.1.1 = { dynasty = dyn_rahan }
+	3380.1.1 = { add_spouse = rahan_102_wife }
+	3404.6.7 = { death = yes }
+}
+rahan_102_wife = {
+	name = "Lillet"
+	culture = duadri
+	religion = yoku_spirits
+	female = yes
+
+	3372.1.1 = { birth = yes }
+	3442.1.1 = { death = yes }
+}
+rahan_103 = {
+	name = "Damar"
+	dynasty = dyn_rahan
+	culture = abecean
+	religion = redguard_cult
+
+	father = rahan_102
+	mother = rahan_102_wife
+
+	trait = education_intrigue_3
+	trait = sign_mage
+	trait = brave
+	trait = calm
+	trait = temperate
+	trait = twin
+
+	3386.4.2 = { birth = yes }
+	3443.2.22 = { death = { death_reason = death_battle } }
+}
+rahan_103_1 = {
+	name = "Rhenan"
+	dynasty = dyn_rahan
+	culture = abecean
+	religion = redguard_cult
+
+	father = rahan_103
+
+	trait = sign_lover
+	trait = bastard
+	trait = brave
+	trait = impatient
+
+	3408.2.6 = { birth = yes }
+	3453.1.8 = { death = { death_reason = death_battle } }
+}
+rahan_103_2 = {
+	name = "Mason"
+	dynasty = dyn_rahan
+	culture = abecean
+	religion = redguard_cult
+
+	father = rahan_103
+
+	trait = sign_lady
+	trait = bastard
+	trait = calm
+	trait = greedy
+
+	3408.9.3 = { birth = yes }
+	3453.3.16 = { death = { death_reason = death_battle } }
+}
+rahan_103_3 = {
+	name = "Ceryl"
+	dynasty = dyn_rahan
+	culture = abecean
+	religion = redguard_cult
+	female = yes
+
+	father = rahan_103
+
+	trait = sign_apprentice
+	trait = bastard
+	trait = paranoid
+	trait = shy
+
+	3412.7.9 = { birth = yes }
+	3497.1.12 = { death = yes }
+}
+rahan_104 = {
+	name = "Nazzim"
+	dynasty = dyn_rahan
+	culture = abecean
+	religion = redguard_cult
+
+	father = rahan_102
+	mother = rahan_102_wife
+
+	trait = education_stewardship_1
+	trait = sign_mage
+	trait = stubborn
+	trait = calm
+	trait = forgiving
+	trait = twin
+
+	3386.4.2 = { birth = yes }
+	3471.4.13 = { death = yes }
+}
+
+#######################
+### End of Abeceans ###
+#######################
+
+
+#High Oracles
+ruptga_oracle_100 = {
+	name = "Miniel"
+	religion = walkabout
+	culture = crown_culture
+	female = yes
+
+	trait = education_learning_4
+
+	3313.1.1 = { birth = yes }
+	3391.1.1 = { death = yes }
+}
+
+#Misc ancient rulers
+lainlyn_ancient_1 = { #Ra Gada ruler of Lainlyn
+	name = "Karun"
+	religion = walkabout
+	culture = crown_culture #Na-Totambu
+
+	776.1.1 = { birth = yes }
+	843.1.1 = { death = yes }
+}
+
+sentinel_ancient_1 = {
+	name = "Ralti"
+	religion = walkabout
+	culture = crown_culture #Na-Totambu
+	female = yes
+
+	765.1.1 = { birth = yes }
+	827.1.1 = { death = yes }
+}
+
+#Lowborns
+
+#Other
+
+####################
+### Adventurers  ###
+####################
+
+#Redguards in High Rock
+nizar_100 = {
+	name = "Nazir" #Warband Nizar
+	religion = walkabout
+	culture = crown_culture
+
+	trait = arrogant
+	trait = brave
+	trait = lustful
+
+	trait = education_martial_3
+	trait = lifestyle_blademaster
+	trait = lifestyle_hunter
+	trait = gallant
+	trait = lifestyle_poet
+	trait = adventurer
+	disallow_random_traits = yes
+	
+	3337.1.1 = { birth = yes }
+	3356.1.1 = {
+		effect = { #Famous warrior poet
+			add_prestige_level = 3
+		}
+	}
+
+	3360.1.1 = { employer = gulitte_1000 }
+	3365.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	# 3369.1.1 = { move_to_pool = yes } #retainers don't leave :p
+	3371.1.1 = { death = yes }
+}

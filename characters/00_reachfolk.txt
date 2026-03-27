@@ -1,0 +1,7435 @@
+﻿##Blackdrake Dynasty (dyn_blackdrake)
+
+#House Blackdrake
+blackdrake_99 = {
+	name = "Madaric" #Count of Kolskeggr, Blindcliff (Interregnum) Duke of Markarth (Post Interregnum)
+	dynasty = dyn_blackdrake
+	culture = reachfolk
+	religion = old_gods
+	
+	3339.1.1 = { birth = yes }
+	3398.1.1 = { death = yes }
+}
+
+blackdrake_100 = {
+	name = "Cuhlenac" #Father of Durcorach Duke of Markarth/King of Markarth
+	dynasty = dyn_blackdrake
+	culture = reachfolk
+	religion = old_gods
+
+	father = blackdrake_99
+	
+	3368.1.1 = { birth = yes }
+	3433.1.1 = { death = yes }
+}
+
+blackdrake_101 = {
+	name = "Durcorach" #The Black Drake, First of the Longhouse Emperors, marries Veraxia Tharn # EK TODO
+	dynasty = dyn_blackdrake
+	culture = reachfolk
+	religion = old_gods
+
+	father = blackdrake_100
+	
+	3405.1.1 = { birth = yes }
+	3452.1.1 = { add_concubine = tharn1_102b }
+	3453.1.1 = { give_nickname = nick_the_blackdrake }
+	3461.1.1 = { death = yes } #Killed by Emeric
+}
+blackdrake_101b = {
+	name = "Petigan"
+	dynasty = dyn_blackdrake
+	culture = reachfolk
+	religion = old_gods
+	female = yes
+
+	father = blackdrake_100
+	
+	3409.1.1 = { birth = yes }
+	3489.1.1 = { death = yes }
+}
+blackdrake_102 = {
+	name = "Moricar" #Emperor Moricar, Son of Durcorach
+	dynasty = dyn_blackdrake
+	culture = reachfolk
+	religion = old_gods
+
+	father = blackdrake_101
+	
+	3438.1.1 = { birth = yes }
+	3484.1.1 = { death = yes }
+}
+blackdrake_104 = {
+	name = "Caddach" #Ruler of Markarth, Cousin Caddach, also executes every living member of the family in 2E 582
+	dynasty = dyn_blackdrake
+	culture = reachfolk
+	religion = old_gods
+
+	mother = blackdrake_101b
+	
+	3446.1.1 = { birth = yes }
+	3511.1.1 = { death = yes }
+}
+blackdrake_105 = {
+	name = "Leovic" #Emperor Leovic, last of the Longhouse emperors, marries Clivia Tharn TODO
+	dynasty = dyn_blackdrake
+	culture = reachfolk
+	religion = old_gods
+	father = blackdrake_102
+	
+	3462.1.1 = { birth = yes }
+	3497.1.1 = { death = yes } #About this date he is killed by Varen
+}
+##Black-Moon Dynasty
+
+#House Black-Moon
+blackmoon_998 = {
+	name = "Ambritt"
+	female = yes
+	dynasty = 500013
+	culture = reachfolk
+	religion = old_gods
+
+	trait = education_intrigue_2
+	trait = forgiving
+	trait = sign_lord
+
+	3257.4.26 = { birth = yes }
+	3289.1.1 = { add_same_sex_spouse = blackmoon_998_wife }
+	3322.1.1 = { death = yes }
+}
+blackmoon_998_wife = {
+	name = "Bodgeln"
+	female = yes
+	culture = reachfolk
+	religion = hircine_coven
+
+	trait = education_martial_4
+	trait = arrogant
+	trait = temperate
+	trait = arbitrary
+
+	3256.1.1 = { birth = yes }
+	3327.1.1 = { death = yes }
+}
+blackmoon_999_father = {
+	name = "Grisvar"
+	culture = reachfolk
+	religion = hircine_coven
+
+	trait = education_learning_2
+	trait = brave
+	trait = humble
+	trait = content
+
+	3258.1.1 = { birth = yes }
+	3345.1.1 = { death = yes }
+}
+blackmoon_999 = {
+	name = "Caddach" #Count of Blackmoon
+	dynasty = 500013
+	culture = reachfolk
+	religion = old_gods
+	mother = blackmoon_998
+	father = blackmoon_999_father
+
+	trait = education_intrigue_2
+	trait = lazy
+	trait = generous
+	trait = forgiving
+	trait = sign_lady
+	trait = wild_oat
+	
+	3299.9.4 = { birth = yes }
+	3334.1.1 = { add_spouse = blackmoon_999_wife } # first wife
+	3353.1.1 = { set_relation_friend = { reason = friend_generic_history target = character:charien_99_wife } }
+	3354.1.1 = { add_spouse = charien_99_wife } # she remarried
+	3366.3.27 = {
+		death = {
+			death_reason = death_murder_known # Killed by his son!
+			killer = blackmoon_1000
+		}
+	}
+}
+blackmoon_999_wife = {
+	name = "Delait"
+	female = yes
+	culture = reachfolk
+	religion = old_gods
+	
+	trait = diligent
+	trait = generous
+	trait = gregarious
+	trait = sign_lady
+
+	3301.9.18 = { birth = yes }
+	3351.12.15 = { death = yes }
+}
+blackmoon_1000 = {
+	name = "Vardan" #Count of Blackmoon
+	dynasty = 500013
+	culture = reachfolk
+	religion = old_gods
+	father = blackmoon_999
+	mother = blackmoon_999_wife
+
+	trait = education_learning_1
+	trait = education_magic_2
+	trait = sadistic
+	trait = deceitful
+	trait = impatient
+	trait = sign_shadow
+	
+	3342.5.3 = { birth = yes }
+	3366.3.27 = {
+		trait = kinslayer_3
+		trait = necromancer
+	}
+	3421.1.1 = { death = yes }
+}
+blackmoon_1000_sister = {
+	name = "Leven"
+	female = yes
+	dynasty = 500013
+	culture = reachfolk
+	religion = old_gods
+	father = blackmoon_999
+	mother = blackmoon_999_wife
+
+	trait = education_stewardship_1
+	trait = lazy
+	trait = gregarious
+	trait = content
+	trait = sign_thief
+	
+	3343.12.3 = { birth = yes }
+	# 3363 marries wildspear_103
+	3421.1.1 = { death = yes }
+}
+blackmoon_1001 = {
+	name = "Verrik" #Count of Blackmoon
+	dynasty = 500013
+	culture = reachfolk
+	religion = old_gods
+	father = blackmoon_1000
+
+	trait = education_learning_2
+	trait = education_magic_1
+	trait = deceitful
+	trait = compassionate
+	trait = humble
+	trait = sign_lover
+	
+	3391.2.7 = { birth = yes }
+	3460.1.1 = { death = yes }
+}
+blackmoon_1002 = {
+	name = "Erroch" #Count of Blackmoon ( Alliance War )
+	dynasty = 500013
+	culture = reachfolk
+	religion = old_gods
+	father = blackmoon_1001
+	
+	3450.1.1 = { birth = yes }
+	3529.1.1 = { death = yes }
+}
+blackmoon_1003 = {
+	name = "Duavar" #Count of Blackmoon
+	dynasty = 500013
+	culture = reachfolk
+	religion = old_gods
+	father = blackmoon_1002
+	
+	3487.1.1 = { birth = yes }
+	3558.1.1 = { death = yes }
+}
+##Sarkarain Dynasty
+
+#House Sarkarain
+sarkarain_98 = {
+	name = "Mordastyr"
+	dynasty = 500014
+	culture = reachfolk
+	religion = druadach_cult
+
+	3231.1.1 = { birth = yes }
+	3296.1.1 = { death = yes }
+}
+sarkarain_99 = {
+	name = "Kelinoch"
+	female = yes
+	dynasty = 500014
+	culture = reachfolk
+	religion = druadach_cult
+	father = sarkarain_98
+
+	trait = education_diplomacy_2
+	trait = diligent
+	trait = compassionate
+	trait = forgiving
+	trait = sign_lady
+	trait = ill
+
+	3264.9.14 = { birth = yes }
+	3298.1.1 = { add_matrilineal_spouse = sarkarain_99_husband }
+	3311.1.1 = { death = { death_reason = death_ill }}
+}
+sarkarain_99_husband = {
+	name = "Vund"
+	culture = reachfolk
+	religion = old_gods
+
+	trait = education_learning_1
+	trait = honest
+	trait = greedy
+	trait = shy
+	trait = sign_mage
+
+	3270.4.2 = { birth = yes }
+	3342.1.1 = { death = yes }
+}
+sarkarain_100 = {
+	name = "Uraccen" #Duke of Druadach ( Warlords )
+	dynasty = 500014
+	culture = reachfolk
+	religion = druadach_cult
+	mother = sarkarain_99
+	father = sarkarain_99_husband
+
+	trait = education_learning_1
+	trait = diligent
+	trait = honest
+	trait = content
+	trait = adulterer
+	trait = sign_mage
+	
+	3299.4.30 = { birth = yes }
+	3325.1.1 = { add_spouse = ghostsong_gen_7b }
+	3326.3.5 = { 
+		effect = {
+			if = {
+				limit = { character:sarkarain_100_lover = { is_alive = yes } }
+				set_relation_lover = { reason = lover_history target = character:sarkarain_100_lover }
+			}
+		}
+	}
+	3327.8.22 = {
+		effect = {
+			random_secret = {
+				type = secret_lover
+				expose_secret = character:sarkarain_100_lover
+			}
+		}
+	}
+	3327.8.23 = { add_concubine = sarkarain_100_lover } # Makes it offical
+	3359.1.1 = {
+		effect = {
+			create_alliance = { #Participate in war together
+				target = character:hillhunter_100
+				allied_through_owner = character:sarkarain_100
+				allied_through_target = character:sarkarain_200 # their children are married
+			}
+		}
+	}
+	3361.1.1 = { death = yes }
+}
+sarkarain_100_lover = {
+	name = "Maia"
+	female = yes
+	culture = reachfolk
+	religion = druadach_cult
+
+	trait = education_diplomacy_3
+	trait = lustful
+	trait = seducer
+	trait = greedy
+	trait = callous
+	trait = sign_lover
+
+	3308.2.14 = { birth = yes }
+	3368.3.2 = { death = { death_reason = death_old_age } }
+}
+sarkarain_100_brother = {
+	name = "Nenach"
+	dynasty = 500014
+	culture = reachfolk
+	religion = druadach_cult
+	mother = sarkarain_99
+	father = sarkarain_99_husband
+
+	trait = education_learning_1
+	trait = greedy
+	trait = shy
+	trait = callous
+	trait = sign_mage
+
+	3302.4.4 = { birth = yes }
+	3350.1.1 = { employer = pecua }
+	3361.9.4 = { death = yes }
+}
+sarkarain_101 = {
+	name = "Aldraig" #Duke of Druadach ( Interregnum )
+	dynasty = 500014
+	culture = reachfolk
+	religion = druadach_cult
+	
+	father = sarkarain_100
+	mother = ghostsong_gen_7b
+
+	trait = callous
+	trait = vengeful
+	trait = shy
+	trait = education_intrigue_1
+	trait = sign_serpent
+	
+	3326.12.31 = { birth = yes }
+	#Rulers of Jehanna marry off their relative to a big eastern tribe
+	3358.1.1 = { add_spouse = arthe_100b }
+	3359.1.1 = {
+		effect = {
+			if = {
+				limit = { character:reachbreaker_101 = { is_alive = yes } }
+				add_opinion = {
+					target = character:reachbreaker_101
+					modifier = cruelty_opinion
+					opinion = -50
+				}
+			}
+		}
+	}
+	3415.1.1 = { death = yes }
+}
+sarkarain_102 = {
+	name = "Crayg" #Duke of Druadach
+	dynasty = 500014
+	culture = reachfolk
+	religion = druadach_cult
+
+	father = sarkarain_101
+	mother = arthe_100b
+	
+	3364.1.1 = { birth = yes }
+	3432.1.1 = { death = yes }
+}
+sarkarain_103 = {
+	name = "Morrika"
+	female = yes
+	dynasty = 500014
+	culture = reachfolk
+	religion = druadach_cult
+
+	father = sarkarain_101
+	mother = arthe_100b
+	
+	3368.1.1 = { birth = yes }
+	3415.1.1 = { death = yes }
+}
+sarkarain_104 = {
+	name = "Agrnach" #Duke of Druadach
+	dynasty = 500014
+	culture = reachfolk
+	religion = druadach_cult
+	father = sarkarain_102
+	
+	3402.1.1 = { birth = yes }
+	3476.1.1 = { death = yes }
+}
+sarkarain_105 = {
+	name = "Bedven" #Duke of Druadach ( Alliance War )
+	dynasty = 500014
+	culture = reachfolk
+	religion = druadach_cult
+	father = sarkarain_104
+	
+	3470.1.1 = { birth = yes }
+	3531.1.1 = { death = yes }
+}
+sarkarain_106 = {
+	name = "Uraric"
+	dynasty = 500014
+	culture = reachfolk
+	religion = druadach_cult
+	father = sarkarain_104
+	
+	3473.1.1 = { birth = yes }
+	3536.1.1 = { death = yes }
+}
+sarkarain_200 = {
+	name = "Cuhleric" #Count of Bleakwind
+	dynasty = 500014
+	culture = reachfolk
+	religion = hircine_coven
+	
+	father = sarkarain_100
+	mother = ghostsong_gen_7b
+
+	trait = education_learning_2
+	trait = fickle
+	trait = lustful
+	trait = just
+	trait = sign_warrior
+	
+	3329.8.8 = { birth = yes }
+	3358.1.1 = { add_spouse = hillhunter_101_sister }
+	3359.1.1 = {
+		effect = {
+			if = {
+				limit = { character:hillhunter_100 = { is_alive = yes } }
+				create_alliance = {
+					target = character:hillhunter_100
+					allied_through_owner = character:sarkarain_200
+					allied_through_target = character:hillhunter_101_sister # is married to hillhunter_100 daughter
+				}
+			}
+			if = {
+				limit = { character:sarkarain_100 = { is_alive = yes } }
+				create_alliance = {
+					target = character:sarkarain_100
+					allied_through_owner = character:sarkarain_200
+					allied_through_target = character:sarkarain_200 # allied with father
+				}
+			}
+		}
+	}
+	3422.1.1 = { death = yes }
+}
+sarkarain_201 = {
+	name = "Alastyr" #Count of Bleakwind
+	dynasty = 500014
+	culture = reachfolk
+	religion = hircine_coven
+	father = sarkarain_200
+	mother = hillhunter_101_sister
+
+	trait = sign_apprentice
+	
+	3358.7.20 = { birth = yes }
+	3430.1.1 = { death = yes }
+}
+sarkarain_202 = {
+	name = "Duaic" #Count of Bleakwind
+	dynasty = 500014
+	culture = reachfolk
+	religion = hircine_coven
+	father = sarkarain_201
+	
+	3407.1.1 = { birth = yes }
+	3486.1.1 = { death = yes }
+}
+sarkarain_203 = {
+	name = "Cynryc" #Count of Bleakwind
+	dynasty = 500014
+	culture = reachfolk
+	religion = hircine_coven
+	father = sarkarain_202
+	
+	3447.1.1 = { birth = yes }
+	3516.1.1 = { death = yes }
+}
+sarkarain_204 = {
+	name = "Uthynach" #Count of Bleakwind
+	dynasty = 500014
+	culture = reachfolk
+	religion = hircine_coven
+	father = sarkarain_203
+	
+	3477.1.1 = { birth = yes }
+	3543.1.1 = { death = yes }
+}
+##Rimerock Dynasty/Clan
+
+#House Rimerock
+rimerock_97 = {
+    name = "Trenol" 
+    dynasty = 500015
+    religion = hircine_coven
+    culture = reachfolk
+
+    sexuality = heterosexual
+    trait = humble
+    trait = fickle
+    trait = gluttonous
+
+    3200.12.6 = { birth = yes }
+    3230.7.10 = {
+        add_spouse = rimerock_97_spouse
+    }
+    3286.5.2 = { death = { death_reason = death_natural_causes } }
+}
+
+rimerock_97_spouse = {
+    name = "Onora" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = bisexual
+    trait = patient
+    trait = craven
+    trait = generous
+	trait = leper
+
+    3213.7.28 = { birth = yes }
+    3267.9.24 = {
+        death = { death_reason = death_leper }
+    }
+}
+
+rimerock_98 = {
+    name = "Madgorn" 
+    dynasty = 500015
+    religion = hircine_coven
+    culture = reachfolk
+
+    father = rimerock_97
+    mother = rimerock_97_spouse
+
+    sexuality = heterosexual
+    trait = callous
+    trait = zealous
+    trait = craven
+
+    3245.9.28 = { birth = yes }
+    3271.8.26 = {
+        add_spouse = rimerock_98_wife
+    }
+    3320.9.26 = { death = { death_reason = death_natural_causes } }
+}
+
+rimerock_98_wife = {
+    name = "Desone" 
+    female = yes
+    religion = hircine_coven
+    culture = reachfolk
+
+    sexuality = heterosexual
+    trait = honest
+    trait = temperate
+    trait = craven
+
+    3254.7.8 = { birth = yes }
+    3329.6.26 = { death = { death_reason = death_natural_causes } }
+}
+
+rimerock_99 = {
+    name = "Grivier" 
+    dynasty = 500015
+    religion = hircine_coven
+    culture = reachfolk
+
+    father = rimerock_98
+    mother = rimerock_98_wife
+
+    sexuality = heterosexual
+    trait = arrogant
+    trait = just
+    trait = lazy
+
+    3279.2.17 = { birth = yes }
+    3304.7.27 = {
+        add_spouse = seablood_1001
+    }
+    3341.10.23 = { death = { death_reason = death_natural_causes } }
+}
+rimerock_100 = {
+	name = "Tynic" #Count of Rimerock
+	dynasty = 500015
+	culture = reachfolk
+	religion = hircine_coven
+
+	father = rimerock_99
+    mother = seablood_1001
+
+	sexuality = asexual
+
+	trait = education_martial_3
+    trait = diligent
+    trait = honest
+    trait = wrathful
+	trait = sign_lady
+	
+	3316.9.17 = { 
+		birth = yes 
+		effect = { give_lycan_secret_or_trait_effect = yes }
+	}
+	3335.1.1 = { add_spouse = rimerock_100_wife }
+	# 3369 alliance with c_deepwood
+	3385.1.1 = { death = yes }
+}
+rimerock_100_wife = {
+	name = "Drascua"
+	female = yes
+	culture = reachfolk
+	religion = hircine_coven
+
+	trait = education_learning_1
+	trait = diligent
+	trait = compassionate
+	trait = shy
+	trait = sign_warrior
+
+	3319.8.28 = { birth = yes }
+	3381.1.1 = { death = yes }
+}
+rimerock_100_brother = {
+	name = "Rodcain"
+	dynasty = 500015
+	culture = reachfolk
+	religion = hircine_coven
+
+	father = rimerock_99
+    mother = seablood_1001
+
+	trait = education_stewardship_2
+	trait = diligent
+	trait = trusting
+	trait = content
+	trait = sign_shadow
+
+	3321.5.17 = { birth = yes }
+	3394.1.1 = { death = yes }
+}
+rimerock_101 = {
+	name = "Donlan" #Count of Rimerock
+	dynasty = 500015
+	culture = reachfolk
+	religion = hircine_coven
+	father = rimerock_100
+	mother = rimerock_100_wife
+
+	trait = education_martial_2
+	trait = shy
+	trait = trusting
+	trait = stubborn
+	trait = sign_steed
+	
+	3336.6.28 = { birth = yes }
+	3413.1.1 = { death = yes }
+}
+rimerock_102 = {
+	name = "Corint"
+	dynasty = 500015
+	culture = reachfolk
+	religion = hircine_coven
+	father = rimerock_100
+	mother = rimerock_100_wife
+
+	trait = education_learning_4
+	trait = calm
+	trait = humble
+	trait = patient
+	trait = sign_steed
+	
+	3340.6.14 = { birth = yes }
+	3418.1.1 = { death = yes }
+}
+rimerock_103 = {
+	name = "Stral"
+	dynasty = 500015
+	culture = reachfolk
+	religion = hircine_coven
+	father = rimerock_100
+	mother = rimerock_100_wife
+
+	trait = forgiving
+	trait = eccentric
+	trait = deceitful
+	trait = sign_steed
+	trait = pensive
+	disallow_random_traits = yes
+	
+	3344.6.5 = { birth = yes }
+	3360.6.5 = {
+		trait = education_learning_2
+		remove_trait = pensive
+	}
+	3424.1.1 = { death = yes }
+}
+
+##Wolfblood Dynasty
+
+#House Wolfblood
+wolfblood_99 = {
+	name = "Ordun"
+	dynasty = 500016
+	culture = reachfolk
+	religion = hircine_coven
+
+	trait = education_martial_2
+	trait = brave
+	trait = ambitious
+	trait = wrathful
+	trait = peasant_leader
+	trait = sign_serpent
+
+	3304.12.31 = { birth = yes }
+	3329.1.1 = { add_spouse = wolfblood_99_wife }
+	3356.9.12 = { death = { death_reason = death_hunting_accident } }
+}
+wolfblood_99_wife = {
+	name = "Drasna"
+	female = yes
+	culture = reachfolk
+	religion = hircine_coven
+
+	trait = education_intrigue_2
+	trait = diligent
+	trait = calm
+	trait = patient
+	trait = sign_apprentice
+
+	3306.7.29 = { birth = yes }
+	3367.1.1 = { death = yes }
+}
+wolfblood_100 = {
+	name = "Durcorach" #Count of Pinefrost
+	dynasty = 500016
+	culture = reachfolk
+	religion = hircine_coven
+
+	father = wolfblood_99
+	mother = wolfblood_99_wife
+
+	trait = education_stewardship_2
+	trait = calm
+	trait = content
+	trait = gluttonous
+	trait = sign_mage
+	
+	3330.4.14 = {
+		birth = yes
+		effect = { give_lycan_secret_or_trait_effect = yes }
+	}
+	3346.9.1 = { add_spouse = hillhunter_100_sister_daughter }
+	3404.1.1 = { death = yes }
+}
+wolfblood_100_sister1 = {
+	name = "Braina"
+	female = yes
+	dynasty = 500016
+	culture = reachfolk
+	religion = hircine_coven
+
+	father = wolfblood_99
+	mother = wolfblood_99_wife
+
+	trait = education_intrigue_3
+	trait = brave
+	trait = vengeful
+	trait = zealous
+	trait = sign_shadow
+
+	3332.5.2 = { birth = yes }
+	3399.1.1 = { death = yes }
+}
+wolfblood_100_sister2 = {
+	name = "Tancia"
+	female = yes
+	dynasty = 500016
+	culture = reachfolk
+	religion = hircine_coven
+
+	father = wolfblood_99
+	mother = wolfblood_99_wife
+
+	trait = education_stewardship_1
+	trait = brave
+	trait = vengeful
+	trait = zealous
+	trait = sign_warrior
+
+	3333.8.17 = {
+		birth = yes
+		effect = { give_lycan_secret_or_trait_effect = yes }
+	}
+	3399.1.1 = { death = yes }
+}
+wolfblood_101 = {
+	name = "Kaenach" #Count of Pinefrost
+	dynasty = 500016
+	culture = reachfolk
+	religion = hircine_coven
+	father = wolfblood_100
+	mother = hillhunter_100_sister_daughter
+
+	trait = vengeful
+	trait = ambitious
+	trait = curious
+	trait = sign_steed
+	disallow_random_traits = yes
+	
+	3347.6.20 = { 
+		birth = yes 
+	}
+	3362.1.1 = {
+		effect = { give_lycan_secret_or_trait_effect = yes }
+	}
+	3367.6.20 = {
+		trait = patient
+		trait = education_martial_3
+		remove_trait = curious
+	}
+	3447.1.1 = { death = yes }
+}
+wolfblood_102 = {
+	name = "Kaie"
+	female = yes
+	dynasty = 500016
+	culture = reachfolk
+	religion = hircine_coven
+	father = wolfblood_100
+	mother = hillhunter_100_sister_daughter
+
+	trait = patient
+	trait = brave
+	trait = rowdy
+	trait = sign_mage
+	disallow_random_traits = yes
+
+	3348.4.23 = { birth = yes }
+	3368.4.23 = {
+		trait = stubborn
+		trait = education_stewardship_2
+		remove_trait = rowdy
+	}
+	3419.1.1 = { death = yes }
+}
+
+##Wildspear Dynasty
+
+#House Wildspear
+wildspear_97 = {
+	name = "Glyna"
+	female = yes
+	dynasty = 500017
+	culture = reachfolk
+	religion = hircine_coven
+	trait = peasant_leader
+
+	3253.1.1 = { birth = yes }
+	3322.5.27 = { death = yes }
+}
+wildspear_98 = {
+	name = "Nenach"
+	dynasty = 500017
+	culture = reachfolk
+	religion = hircine_coven
+	mother = wildspear_97
+
+	trait = peasant_leader
+	trait = twin
+	trait = sign_serpent
+	trait = diligent
+	trait = zealous
+	trait = wrathful
+
+	3279.9.9 = { birth = yes }
+	# 3328 looses his new gained title, moves to his brothers court
+	3359.1.1 = { employer = wildspear_100 } # spawn at nephews court at gamestart
+	3367.1.1 = { death = yes }
+}
+wildspear_99 = {
+	name = "Crionach" #Count of Deepwood
+	dynasty = 500017
+	culture = reachfolk
+	religion = hircine_coven
+	mother = wildspear_97
+
+	trait = peasant_leader
+	trait = twin
+	trait = sign_serpent
+	trait = diligent
+	trait = fickle
+	trait = vengeful
+	
+	3279.9.9 = { birth = yes }
+	3350.1.1 = { death = yes }
+}
+wildspear_100 = {
+	name = "Cairnec" #Count of Deepwood (Warlords)
+	dynasty = 500017
+	culture = reachfolk
+	religion = hircine_coven
+	father = wildspear_99
+
+	trait = education_diplomacy_2
+	trait = content
+	trait = arbitrary
+	trait = stubborn
+	trait = sign_apprentice
+	
+	3301.7.2 = { birth = yes }
+	3327.12.19 = { add_spouse = wildspear_100_wife }
+	3367.1.1 = { death = yes }
+}
+wildspear_100_wife = {
+	name = "Callacha"
+	female = yes
+	culture = reachfolk
+	religion = hircine_coven
+
+	trait = witch
+	trait = education_intrigue_2
+	trait = content
+	trait = patient
+	trait = deceitful
+	trait = sign_lord
+
+	3304.3.20 = { birth = yes }
+	3365.1.1 = { death = yes }
+}
+wildspear_101 = {
+	name = "Ciannait" #Count of Deepwood (Interregnum)
+	female = yes
+	dynasty = 500017
+	culture = reachfolk
+	religion = hircine_coven
+	father = wildspear_100
+
+	trait = education_diplomacy_2
+	trait = lustful
+	trait = impatient
+	trait = arrogant
+	trait = sign_warrior
+	
+	3328.8.19 = { 
+		birth = yes 
+		effect = { give_lycan_secret_or_trait_effect = yes }
+	}
+	3348.1.1 = { add_matrilineal_spouse = rimerock_100_brother }
+	3489.1.1 = { death = yes }
+}
+wildspear_102 = {
+	name = "Caohlan" #Count of Deepwood
+	dynasty = 500017
+	culture = reachfolk
+	religion = hircine_coven
+	mother = wildspear_101
+	father = rimerock_100_brother
+
+	trait = fickle
+	trait = pensive
+	disallow_random_traits = yes
+
+	trait = sign_lady
+	
+	3347.9.13 = { birth = yes }
+	3363.9.13 = {
+		trait = education_martial_3
+		trait = chaste
+		trait = humble
+	}
+	3423.1.1 = { death = yes }
+}
+wildspear_103 = {
+	name = "Eochaidh"
+	dynasty = 500017
+	culture = reachfolk
+	religion = hircine_coven
+	father = wildspear_100
+
+	trait = education_diplomacy_2
+	trait = lazy
+	trait = gregarious
+	trait = deceitful
+	trait = sign_lady
+	
+	3330.9.14 = { birth = yes }
+	3363.1.1 = { add_spouse = blackmoon_1000_sister }
+	3411.1.1 = { death = yes }
+}
+wildspear_103_daughter = {
+	name = "Mairrna"
+	female = yes
+	dynasty = 500017
+	culture = reachfolk
+	religion = hircine_coven
+	father = wildspear_103
+	mother = blackmoon_1000_sister
+
+	trait = sign_apprentice
+
+	3364.7.26 = { birth = yes }
+	3423.1.1 = { death = yes }
+}
+wildspear_103_son = {
+	name = "Odvan"
+	dynasty = 500017
+	culture = reachfolk
+	religion = hircine_coven
+	father = wildspear_103
+	mother = blackmoon_1000_sister
+
+	trait = sign_lover
+
+	3366.2.17 = { birth = yes }
+	3425.1.1 = { death = yes }
+}
+wildspear_104 = {
+	name = "Tynhal"
+	dynasty = 500017
+	culture = reachfolk
+	religion = hircine_coven
+	father = wildspear_100
+
+	trait = education_stewardship_3
+	trait = gregarious
+	trait = honest
+	trait = trusting
+	trait = sign_lover
+	
+	3337.2.8 = { birth = yes }
+	3406.1.1 = { death = yes }
+}
+
+##Thornroot Dynasty # EK WIP
+
+#House Thornroot Hagraven Matron leads clan in ESO, probably further back as well
+thornroot_997 = {
+    name = "Celarion"
+	female = yes
+    dynasty = 500005
+    religion = old_gods
+    culture = reachfolk
+
+	trait = hagraven
+
+    3202.1.15 = { birth = yes }
+    3272.8.18 = { death = { death_reason = death_natural_causes } }
+}
+thornroot_998 = {
+	name = "Rodynach" #Count of Reachcliff
+	dynasty = 500005
+	culture = reachfolk
+	religion = old_gods
+	mother = thornroot_997
+	
+	3254.1.1 = { birth = yes }
+	3298.1.1 = { add_spouse = cinderheart_gen_114 }
+	3322.1.1 = { death = yes }
+}
+thornroot_999 = {
+	name = "Brinarch" #Duke of Reachcliff ( Warlords )
+	dynasty = 500005
+	culture = reachfolk
+	religion = old_gods
+	father = thornroot_998
+	mother = cinderheart_gen_114
+
+	trait = education_stewardship_2
+	trait = trusting
+	trait = fickle
+	trait = just
+	trait = sign_steed
+	
+	3299.6.3 = { birth = yes }
+	3337.1.1 = { add_spouse = shadefeather_gen_120 }
+	3367.1.1 = { death = yes }
+}
+thornroot_999_brother = {
+	name = "Teodven"
+	dynasty = 500005
+	culture = reachfolk
+	religion = old_gods
+	father = thornroot_998
+	mother = cinderheart_gen_114
+
+	trait = education_intrigue_2
+	trait = deceitful
+	trait = ambitious
+	trait = paranoid
+	trait = sign_warrior
+
+	3301.8.17 = { birth = yes }
+	3341.1.1 = { employer = pecua }
+	3369.1.1 = { death = yes }
+}
+thornroot_1000 = {
+	name = "Uraric" #Duke of Reachcliff ( Interregnum )
+	dynasty = 500005
+	culture = reachfolk
+	religion = old_gods
+	father = thornroot_999
+	mother = shadefeather_gen_120
+
+	trait = education_diplomacy_3
+	trait = temperate
+	trait = zealous
+	trait = sadistic
+	trait = sign_thief
+	
+	3338.12.9 = { birth = yes }
+	3411.1.1 = { death = yes }
+}
+thornroot_1000_brother = {
+	name = "Mael"
+	dynasty = 500005
+	culture = reachfolk
+	religion = old_gods
+	father = thornroot_999
+	mother = shadefeather_gen_120
+
+	trait = education_learning_3
+	trait = sadistic
+	trait = brave
+	trait = calm
+	trait = sign_thief
+	
+	3340.12.27 = { birth = yes }
+	3411.1.1 = { death = yes }
+}
+thornroot_1000_sister = {
+	name = "Edola"
+	female = yes
+	dynasty = 500005
+	culture = reachfolk
+	religion = old_gods
+	father = thornroot_999
+	mother = shadefeather_gen_120
+
+	trait = diligent
+	trait = generous
+	trait = rowdy
+	trait = sign_mage
+	
+	3345.4.15 = { birth = yes }
+	3361.4.15 = {
+		trait = education_intrigue_2
+		remove_trait = rowdy
+		trait = brave
+	}
+	3411.1.1 = { death = yes }
+}
+thornroot_1001 = {
+	name = "Tynic" #Duke of Reachcliff
+	dynasty = 500005
+	culture = reachfolk
+	religion = old_gods
+	father = thornroot_1000
+
+	trait = sign_lady
+	
+	3356.9.4 = { birth = yes }
+	3359.1.1 = {
+		effect = {
+			create_betrothal = character:horn_eater_gen_68
+		}
+	}
+	3436.1.1 = { death = yes }
+}
+thornroot_1002 = {
+	name = "Faocain"
+	dynasty = 500005
+	culture = reachfolk
+	religion = old_gods
+	father = thornroot_1000
+
+	trait = sign_atronach
+	
+	3358.11.27 = { birth = yes }
+	3433.1.1 = { death = yes }
+}
+thornroot_1003 = {
+	name = "Dualan" #Duke of Reachcliff
+	dynasty = 500005
+	culture = reachfolk
+	religion = old_gods
+	father = thornroot_1001
+	
+	3411.1.1 = { birth = yes }
+	3489.1.1 = { death = yes }
+}
+thornroot_1004 = {
+	name = "Alacain" #Duke of Reachcliff ( Alliance War )
+	dynasty = 500005
+	culture = reachfolk
+	religion = old_gods
+	father = thornroot_1003
+	
+	3453.1.1 = { birth = yes }
+	3502.3.5 = { death = { death_reason = death_battle #Killed alongside Matron?
+		}
+	}
+}
+thornroot_1005 = {
+	name = "Trististyr"
+	dynasty = 500005
+	culture = reachfolk
+	religion = old_gods
+	father = thornroot_1004
+	
+	3486.1.1 = { birth = yes }
+	3502.3.5 = { death = { death_reason = death_battle #Killed alongside Matron?
+		}
+	}
+}
+
+##Hillhunter Clan | Wandering Clan, Wipes out Thornroot? # EK WIP
+
+#House Hillhunter
+hillhunter_98 = {
+	name = "Ciannait"
+	female = yes
+	dynasty = 500010
+	culture = reachfolk
+	religion = old_gods
+
+	3221.1.1 = { birth = yes }
+	3293.1.1 = { death = yes }
+}
+hillhunter_99 = {
+	name = "Nak'tah"
+	dynasty = 500010
+	culture = reachfolk
+	religion = old_gods
+	mother = hillhunter_98
+
+	trait = education_intrigue_2
+	trait = deceitful
+	trait = ambitious
+	trait = paranoid
+
+	3254.1.1 = { birth = yes }
+	3289.1.1 = { add_spouse = hillhunter_99_wife }
+	3322.1.1 = { death = yes }
+}
+hillhunter_99_wife = {
+	name = "Laine"
+	female = yes
+	culture = reachfolk
+	religion = druadach_cult
+
+	3259.1.1 = { birth = yes }
+	3330.1.1 = { death = yes }
+}
+hillhunter_100 = {
+	name = "Uthyn" #Count of Dragontooth ( Warlords & Interregnum )
+	dynasty = 500010
+	culture = reachfolk
+	religion = old_gods
+	father = hillhunter_99
+	mother = hillhunter_99_wife
+
+	trait = education_stewardship_2
+	trait = fickle
+	trait = compassionate
+	trait = patient
+	trait = sign_tower
+	
+	3299.10.4 = { birth = yes }
+	3334.1.1 = { add_spouse = hillhunter_100_wife }
+	3371.1.1 = { death = yes }
+}
+hillhunter_100_wife = {
+	name = "Glyna"
+	female = yes
+	culture = reachfolk
+	religion = old_gods
+
+	trait = education_intrigue_1
+	trait = brave
+	trait = stubborn
+	trait = paranoid
+	trait = physique_good_1
+	trait = sign_mage
+
+	3297.4.1 = { birth = yes }
+}
+hillhunter_100_sister = {
+	name = "Eslyn"
+	female = yes
+	dynasty = 500010
+	culture = reachfolk
+	religion = old_gods
+	father = hillhunter_99
+	mother = hillhunter_99_wife
+
+	trait = education_diplomacy_3
+	trait = wrathful
+	trait = zealous
+	trait = greedy
+	trait = sign_lady
+
+	3301.9.16 = { birth = yes }
+	3369.1.1 = { death = yes }
+}
+hillhunter_100_sister_daughter = {
+	name = "Lilou"
+	female = yes
+	dynasty = 500010
+	culture = reachfolk
+	religion = old_gods
+	mother = hillhunter_100_sister
+
+	trait = education_intrigue_3
+	trait = brave
+	trait = vengeful
+	trait = zealous
+	trait = wild_oat
+	trait = sign_shadow
+
+	3329.5.3 = { birth = yes }
+	3399.1.1 = { death = yes }
+}
+hillhunter_101 = {
+	name = "Faovar" #Count of Dragontooth
+	dynasty = 500010
+	culture = reachfolk
+	religion = old_gods
+	father = hillhunter_100
+	mother = hillhunter_100_wife
+
+	trait = education_intrigue_1
+	trait = craven
+	trait = lazy
+	trait = paranoid
+	trait = sign_shadow
+	
+	3335.5.5 = { birth = yes }
+	3411.1.1 = { death = yes }
+}
+hillhunter_101_sister = {
+	name = "Pegan"
+	female = yes
+	dynasty = 500010
+	culture = reachfolk
+	religion = old_gods
+	father = hillhunter_100
+	mother = hillhunter_100_wife
+
+	trait = education_stewardship_1
+	trait = gregarious
+	trait = lazy
+	trait = humble
+	trait = sign_atronach
+	
+	3336.11.29 = { birth = yes }
+	3411.1.1 = { death = yes }
+}
+hillhunter_102 = {
+	name = "Donvar" #Wandering
+	dynasty = 500010
+	culture = reachfolk
+	religion = old_gods
+	father = hillhunter_100
+	mother = hillhunter_100_wife
+
+	trait = education_stewardship_3
+	trait = arrogant
+	trait = lazy
+	trait = stubborn
+	trait = adventurer
+	trait = sign_steed
+	
+	3340.6.15 = { birth = yes }
+	3421.1.1 = { death = yes }
+}
+hillhunter_103 = {
+	name = "Rodvar" #Wandering
+	dynasty = 500010
+	culture = reachfolk
+	religion = old_gods
+	father = hillhunter_102
+	
+	3410.1.1 = { birth = yes }
+	3473.1.1 = { death = yes }
+}
+hillhunter_104 = {
+	name = "Faorin" #Ends up in Briar Rock ( Alliance War ), Captive by Thornroot Matron
+	dynasty = 500010
+	culture = reachfolk
+	religion = old_gods
+	father = hillhunter_103
+	
+	3446.1.1 = { birth = yes } # HistoryToDo AW prisoner to Thornroot Matron
+	3516.1.1 = { death = yes }
+}
+hillhunter_105 = {
+	name = "Uracain" #Sacrificed by Thornroot Matron ( Alliance War )
+	dynasty = 500010
+	culture = reachfolk
+	religion = old_gods
+	father = hillhunter_103
+	
+	3448.1.1 = { birth = yes }
+	3502.1.1 = { death = yes }
+}
+hillhunter_106 = {
+	name = "Medone" #Duke of Briar Rock/Reachcliff ( Post-Alliance War )
+	female = yes
+	dynasty = 500010
+	culture = reachfolk
+	religion = old_gods
+	father = hillhunter_104
+	
+	3479.1.1 = { birth = yes }
+	3548.1.1 = { death = yes }
+}
+hillhunter_107 = {
+	name = "Brenelsa"
+	female = yes
+	dynasty = 500010
+	culture = reachfolk
+	religion = old_gods
+	father = hillhunter_104
+	
+	3481.1.1 = { birth = yes }
+	3555.1.1 = { death = yes }
+}
+hillhunter_108 = {
+	name = "Branhurt"
+	dynasty = 500010
+	culture = reachfolk
+	religion = old_gods
+	father = hillhunter_105
+	
+	3483.1.1 = { birth = yes }
+	3559.1.1 = { death = yes }
+}
+
+# Horn-Stride Clan (dynn_horn_eater)
+# extinct before 2E 582
+horn_eater_50 = {
+    name = "Melukah" 
+	female = yes
+    dynasty = dynn_horn_eater
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = heterosexual
+    trait = paranoid
+    trait = ambitious
+    trait = impatient
+
+    3100.10.23 = { birth = yes }
+    3167.5.26 = { death = { death_reason = death_natural_causes } }
+}
+horn_eater_51 = {
+    name = "Melukah" 
+    dynasty = dynn_horn_eater
+    religion = old_gods
+    culture = reachfolk
+	mother = horn_eater_50
+	female = yes
+
+    trait = line_of_x
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+
+    3156.1.1 = { birth = yes }
+	3167.5.26 = { give_nickname = nick_line_of }
+    3219.1.1 = { death = yes }
+}
+
+horn_eater_56 = {
+    name = "Lesuin" 
+    dynasty = dynn_horn_eater
+    religion = old_gods
+    culture = reachfolk
+
+	mother = horn_eater_51
+
+    sexuality = heterosexual
+    trait = humble
+    trait = patient
+    trait = lazy
+
+    3218.9.10 = { birth = yes }
+    3240.5.23 = {
+        add_spouse = horn_eater_57
+    }
+    3302.2.7 = { death = { death_reason = death_natural_causes } }
+}
+
+horn_eater_57 = {
+    name = "Aislin" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = heterosexual
+    trait = sadistic
+    trait = deceitful
+    trait = diligent
+
+    3223.3.16 = { birth = yes }
+    3288.1.22 = { death = { death_reason = death_natural_causes } }
+}
+
+horn_eater_58 = {
+    name = "Kraig" 
+    dynasty = dynn_horn_eater
+    religion = old_gods
+    culture = reachfolk
+
+    father = horn_eater_56
+    mother = horn_eater_57
+
+    sexuality = heterosexual
+    trait = just
+    trait = shy
+    trait = chaste
+
+    3252.5.21 = { birth = yes }
+    3274.12.28 = {
+        add_spouse = horn_eater_59
+    }
+    3327.4.13 = { death = { death_reason = death_natural_causes } }
+}
+horn_eater_gen_59 = {
+    name = "Nak'tah" 
+    dynasty = dynn_horn_eater
+    religion = old_gods
+    culture = reachfolk
+	father = horn_eater_58
+
+    sexuality = heterosexual
+
+    trait = humble
+    trait = fickle
+    trait = gluttonous
+
+    3282.1.15 = { birth = yes }
+    3305.3.19 = {
+        add_spouse = horn_eater_gen_60
+    }
+    3342.8.18 = { death = { death_reason = death_natural_causes } }
+}
+
+horn_eater_gen_60 = {
+    name = "Tancia" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = homosexual
+
+    trait = patient
+    trait = craven
+    trait = generous
+
+    3288.7.22 = { birth = yes }
+    3347.6.14 = {
+        death = { death_reason = death_leper }
+    }
+}
+
+horn_eater_gen_61 = {
+    name = "Uraka"
+	female = yes
+    dynasty = dynn_horn_eater
+    religion = old_gods
+    culture = reachfolk
+
+    father = horn_eater_gen_59
+    mother = horn_eater_gen_60
+
+    sexuality = heterosexual
+
+	trait = education_stewardship_1
+    trait = callous
+    trait = zealous
+    trait = craven
+	trait = sign_lover
+
+    3313.2.6 = { birth = yes }
+    3335.11.20 = {
+        add_matrilineal_spouse = horn_eater_gen_62
+    }
+    3387.7.27 = { death = { death_reason = death_natural_causes } }
+}
+
+horn_eater_gen_62 = {
+    name = "Moricar" 
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = heterosexual
+
+	trait = education_intrigue_4
+    trait = calm
+    trait = temperate
+    trait = craven
+	trait = sign_warrior
+
+    3318.8.21 = { birth = yes }
+    3382.1.20 = { death = { death_reason = death_natural_causes } }
+}
+
+horn_eater_gen_63 = {
+    name = "Mornach" 
+    dynasty = dynn_horn_eater
+    religion = old_gods
+    culture = reachfolk
+
+    mother = horn_eater_gen_61
+    father = horn_eater_gen_62
+
+    sexuality = heterosexual
+
+    trait = arrogant
+    trait = just
+	trait = sign_apprentice
+	trait = rowdy
+	disallow_random_traits = yes
+
+    3349.7.6 = { birth = yes }
+	3359.1.1 = {
+		effect = {
+			create_betrothal = character:spiritblood_gen_68
+		}
+	}
+	3365.7.6 = {
+		trait = education_learning_2
+		trait = lazy
+		remove_trait = rowdy
+	}
+    3376.4.3 = {
+        add_spouse = horn_eater_gen_64
+    }
+    3414.12.14 = { death = { death_reason = death_natural_causes } }
+}
+
+horn_eater_gen_64 = {
+    name = "Nara" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = homosexual
+
+	disallow_random_traits = yes
+	trait = charming
+
+    3359.4.12 = { birth = yes }
+	# 3359 + 16 = 3375
+	3375.4.12 = {
+		remove_trait = charming
+		trait = education_diplomacy_3
+		trait = trusting
+		trait = humble
+		trait = sadistic
+	}
+    3434.10.3 = { death = { death_reason = death_natural_causes } }
+}
+
+horn_eater_gen_65 = {
+    name = "Millengor" 
+    dynasty = dynn_horn_eater
+    religion = old_gods
+    culture = reachfolk
+
+    father = horn_eater_gen_59
+    mother = horn_eater_gen_60
+
+    sexuality = asexual
+	trait = education_martial_3
+    trait = diligent
+    trait = honest
+    trait = wrathful
+	trait = sign_mage
+
+    3316.4.15 = { birth = yes }
+    3344.12.15 = {
+        add_spouse = horn_eater_gen_66
+    }
+    3354.10.28 = {
+        death = { death_reason = death_ritually_eaten  }
+    }
+}
+
+horn_eater_gen_66 = {
+    name = "Dena" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = bisexual
+	trait = education_diplomacy_3
+    trait = brave
+    trait = humble
+    trait = wrathful
+	trait = sign_lover
+    3327.2.1 = { birth = yes }
+    3412.8.23 = { death = { death_reason = death_natural_causes } }
+}
+
+horn_eater_gen_67 = {
+    name = "Rhiada" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    father = horn_eater_gen_65
+    mother = horn_eater_gen_66
+
+    sexuality = heterosexual
+
+    trait = craven
+	trait = sign_warrior
+	trait = rowdy
+	disallow_random_traits = yes
+
+    3353.8.11 = { birth = yes }
+	3369.8.11 = {
+		trait = education_diplomacy_1
+		trait = fickle
+		trait = vengeful
+		remove_trait = rowdy
+	}
+    3442.5.12 = { death = { death_reason = death_natural_causes } }
+}
+
+horn_eater_gen_68 = {
+    name = "Methira" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    father = horn_eater_gen_65
+    mother = horn_eater_gen_66
+
+    trait = generous
+	trait = charming
+	trait = sign_steed
+	disallow_random_traits = yes
+
+    3351.6.14 = { birth = yes }
+	# 3359 betrothed to thornroot_1001, son of heir of neighbouring ruler
+	3369.6.14 = {
+		sexuality = asexual
+		remove_trait = charming
+		trait = education_intrigue_2
+		trait = lazy
+		trait = lustful
+	}
+    3414.10.21 = { death = { death_reason = death_natural_causes } }
+}
+
+horn_eater_gen_69 = {
+    name = "Kienola" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    father = horn_eater_gen_59
+    mother = horn_eater_gen_60
+
+    sexuality = heterosexual
+	trait = education_martial_3
+    trait = generous
+    trait = patient
+    trait = stubborn
+	trait = sign_tower
+	prowess = 6
+
+    3317.10.13 = { birth = yes }
+	# 3333 marries shadefeather_100
+    3410.5.18 = { death = { death_reason = death_natural_causes } }
+}
+
+
+horn_eater_59 = {
+    name = "Foagan" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = heterosexual
+    trait = humble
+    trait = arbitrary
+    trait = wrathful
+
+    3257.6.26 = { birth = yes }
+    3334.6.13 = { death = { death_reason = death_natural_causes } }
+}
+
+horn_eater_60 = {
+    name = "Bjora" 
+	female = yes
+    dynasty = dynn_horn_eater
+    religion = old_gods
+    culture = reachfolk
+
+    father = horn_eater_58
+    mother = horn_eater_59
+
+    sexuality = bisexual
+	trait = education_learning_1
+    trait = greedy
+    trait = calm
+    trait = shy
+
+    3282.12.21 = { birth = yes }
+    3304.6.28 = {
+        add_matrilineal_spouse = horn_eater_61
+    }
+    3356.3.11 = { death = { death_reason = death_natural_causes } }
+}
+
+horn_eater_61 = {
+    name = "Moricar"
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = heterosexual
+    trait = generous
+    trait = chaste
+    trait = stubborn
+
+    3287.10.9 = { birth = yes }
+    3349.2.27 = { death = { death_reason = death_natural_causes } }
+}
+horn_eater_62 = {
+    name = "Barhurn" 
+    dynasty = dynn_horn_eater
+    religion = old_gods
+    culture = reachfolk
+
+    mother = horn_eater_60
+    father = horn_eater_61
+
+    sexuality = heterosexual
+	trait = education_diplomacy_2
+    trait = generous
+    trait = gregarious
+    trait = calm
+	trait = sign_atronach
+
+    3326.11.20 = { birth = yes }
+    3351.2.9 = {
+        add_spouse = horn_eater_63
+    }
+    3387.5.16 = { death = { death_reason = death_natural_causes } }
+}
+
+horn_eater_63 = {
+    name = "Uratra" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = heterosexual
+	trait = education_stewardship_1
+    trait = callous
+    trait = lazy
+    trait = content
+	trait = sign_steed
+
+    3334.6.7 = { birth = yes }
+    3424.5.12 = { death = { death_reason = death_natural_causes } }
+}
+
+horn_eater_64 = {
+    name = "Rowliefar" 
+    dynasty = dynn_horn_eater
+    religion = old_gods
+    culture = reachfolk
+
+    father = horn_eater_62
+    mother = horn_eater_63
+
+    disallow_random_traits = yes
+	trait = sign_atronach
+	trait = rowdy
+
+    3361.11.18 = { birth = yes }
+	3369.1.1 = {
+		trait = calm
+	}
+	3377.11.18 = {
+		trait = education_martial_2
+		trait = vengeful
+		trait = lazy
+		remove_trait = rowdy
+	}
+    3394.5.16 = {
+        add_spouse = horn_eater_65
+    }
+    3429.4.21 = { death = { death_reason = death_natural_causes } }
+}
+
+horn_eater_65 = {
+    name = "Braika" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = heterosexual
+	trait = education_diplomacy_1
+    trait = deceitful
+    trait = zealous
+    trait = generous
+	trait = sign_warrior
+    3377.8.19 = { birth = yes }
+    3448.10.22 = { death = { death_reason = death_natural_causes } }
+}
+
+horn_eater_66 = {
+    name = "Allunen" 
+    dynasty = dynn_horn_eater
+    religion = old_gods
+    culture = reachfolk
+
+    father = horn_eater_62
+    mother = horn_eater_63
+
+    sexuality = heterosexual
+	trait = education_learning_1
+    trait = wrathful
+    trait = lustful
+    trait = temperate
+	trait = sign_lover
+    3369.2.1 = { birth = yes }
+    3391.1.10 = {
+        add_spouse = horn_eater_67
+    }
+    3442.3.2 = { death = { death_reason = death_natural_causes } }
+}
+
+horn_eater_67 = {
+    name = "Foae" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = heterosexual
+	trait = education_intrigue_1
+    trait = craven
+    trait = patient
+    trait = paranoid
+	trait = sign_tower
+
+    3374.10.22 = { birth = yes }
+    3436.4.24 = { death = { death_reason = death_natural_causes } }
+}
+
+##Ironhand Dynasty
+
+#House Ironhand ( Nord Origins, gasp heresy )
+ironhand_998 = {
+	name = "Addvar" #Duke of Nimalten
+	dynasty = 500003
+	culture = eastmarcher
+	religion = nord_cult
+
+	father = sweetrollstealer_96
+	mother = ironhand_998_mom
+
+	trait = ambitious
+	trait = brave
+	trait = arrogant
+	trait = shrewd
+	trait = adventurer #Left the ice sheet like half sister
+	trait = bastard_founder #Bastard of sweetrollstealer_96
+
+	3259.4.11 = { birth = yes }
+	3340.1.1 = { give_nickname = nick_the_old }
+	3342.2.6 = { death = { death_reason = death_old_age } }
+}
+ironhand_998_mom = {
+	name = "Indira"
+	female = yes
+	culture = eastmarcher
+	religion = totemism
+
+	#trait = fornicator
+	
+	3223.3.12 = { birth = yes }
+	3259.4.11 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+ironhand_999 = {
+	name = "Eirikr" #Duke of Nimalten ( Warlords )
+	dna = ironhand_eirikr_dna_entry
+	dynasty = 500003
+	culture = eastmarcher
+	religion = nord_cult
+	father = ironhand_998
+	mother = winterthorn_100 #In Nord file
+
+	trait = compassionate
+	trait = gregarious
+	trait = content
+	trait = education_learning_2 #Understands wife's ways and respects them
+	
+	3298.9.27 = { birth = yes }
+	3315.1.1 = { effect = { learn_language = language_bretic } }
+	3316.1.1 = {
+		add_spouse = reachwife_1000
+		set_relation_soulmate = character:reachwife_1000 
+	}
+	3359.1.1 = {
+		effect = {
+			# Eirikr is already a Nordic Pantheon faithful
+			# vassal_contract_set_obligation_level = {
+				# type = religious_rights
+				# level = 1
+			# }
+			vassal_contract_set_obligation_level = {
+				type = title_revocation_rights
+				level = 1
+			}
+		}
+	}
+	3361.4.12 = {death = {death_reason = death_old_age } }
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_beards=male_beard_fp1_03
+			custom_hair=male_hair_mena_02
+		}
+	}
+}
+ironhandhusband_1 = {
+	name = "Fultheim"
+	dynasty = 500003
+	culture = eastmarcher
+	religion = nord_cult
+	father = ironhand_998
+	mother = winterthorn_100
+
+	trait = cynical
+	trait = fickle
+	trait = compassionate
+	
+	3299.8.16 = { birth = yes }
+	3366.2.5 = {death = {death_reason = death_old_age } }
+}
+ironhand_1000 = {
+	name = "Erroch" #Duke of Nimalten ( Interregnum )
+	dynasty = 500003
+	culture = reachfolk
+	religion = old_gods
+	father = ironhand_999
+	mother = reachwife_1000
+
+	trait = generous
+	trait = zealous
+	trait = brave
+	trait = education_martial_2
+	
+	3324.1.6 = { birth = yes }
+	3324.1.7 = { effect = { learn_language = language_nordic } }
+	3350.3.7 = { add_spouse = ironhand_1000_wife }
+	3369.1.1 = { set_relation_friend = { reason = friend_generic_history target = character:flamehair_1000 } }
+	3370.1.1 = {
+		# The title is independent at the time
+		# effect = {
+			# vassal_contract_set_obligation_level = {
+				# type = religious_rights
+				# level = 1
+			# }
+			# vassal_contract_set_obligation_level = {
+				# type = title_revocation_rights
+				# level = 1
+			# }
+		# }
+	}
+	3396.11.15 = { death = yes }
+}
+
+ironhand_1000_wife = {
+	name = "Mirrutra"
+	female = yes
+	culture = reachfolk
+	religion = old_gods
+
+	trait = zealous
+	trait = callous
+	trait = content
+	trait = sign_apprentice
+
+	3326.7.31 = { birth = yes }
+	3389.2.30 = { death = yes }
+}
+
+ironhand_1000_1 = { # Wife of bjorga_10599
+	name = "Gisla"
+	female = yes
+	dynasty = 500003
+	culture = eastmarcher
+	religion = nord_cult
+	father = ironhand_999
+	mother = reachwife_1000
+
+	trait = zealous
+	trait = brave
+	trait = honest
+	trait = education_learning_2
+
+	disallow_random_traits = yes
+
+	3326.4.13 = { birth = yes }
+	3326.5.15 = { effect = { learn_language = language_bretic } }
+	3361.1.1 = { set_relation_rival = { reason = rival_historical target = character:ironhand_1000 } } #Tried to force her to convert to Old Gods and embrace their mother's heritage
+	3348.1.1 = {
+		effect = {
+			if = {
+				limit = { character:bjorga_10599 = { is_alive = yes } } # Estranged husband
+				set_relation_grudge = character:bjorga_10599
+			}
+		} 
+	}
+	3402.11.6 = {death = {death_reason = death_old_age } }
+}
+ironhand_1001 = {
+	name = "Aldraig" #Duke of Nimalten
+	dynasty = 500003
+	culture = reachfolk
+	religion = old_gods
+	father = ironhand_1000
+	mother = ironhand_1000_wife
+
+	3352.9.21 = { birth = yes }
+	3430.6.24 = {death = {death_reason = death_old_age } }
+}
+ironhand_1002 = {
+	name = "Donric"
+	dynasty = 500003
+	culture = reachfolk
+	religion = old_gods
+	father = ironhand_1000
+	mother = ironhand_1000_wife
+
+	3355.4.13 = { birth = yes }
+	3382.2.8 = { death = { death_reason = death_battle } }
+}
+## These will change as more start dates are added
+ironhand_1003 = {
+	name = "Morrigan" #Duke of Nimalten
+	female = yes
+	dynasty = 500003
+	culture = reachfolk
+	religion = old_gods
+	father = ironhand_1001
+	
+	3408.1.1 = { birth = yes }
+	3501.1.1 = { death = yes }
+}
+ironhand_1004 = {
+	name = "Uthnach" #Duke of Nimalten ( Alliance War )
+	dynasty = 500003
+	culture = reachfolk
+	religion = old_gods
+	mother = ironhand_1003
+	
+	3438.1.1 = { birth = yes }
+	3502.1.1 = {
+		# The title is independent at the time
+		# effect = {
+			# vassal_contract_set_obligation_level = {
+				# type = religious_rights
+				# level = 1
+			# }
+			# vassal_contract_set_obligation_level = {
+				# type = title_revocation_rights
+				# level = 1
+			# }
+		# }
+	}
+	3504.1.1 = { death = yes }
+}
+ironhand_1005 = {
+	name = "Kaenach" #Duke of Nimalten
+	dynasty = 500003
+	culture = reachfolk
+	religion = old_gods
+	mother = ironhand_1003
+	
+	3471.1.1 = { birth = yes }
+	3539.1.1 = { death = yes }
+}
+ironhand_1006 = {
+	name = "Erroch" #Duke of Nimalten
+	dynasty = 500003
+	culture = reachfolk
+	religion = old_gods
+	father = ironhand_1004
+	
+	3499.1.1 = { birth = yes }
+	3563.1.1 = { death = yes }
+}
+
+##Duimnach Dynasty
+
+#House Duimnach
+duimnach_999 = {
+	name = "Braika"
+	female = yes
+	dynasty = 500000
+	religion = dwemer_idolatry
+	culture = reachfolk
+
+	trait = education_martial_3
+	trait = brave
+	trait = ambitious
+	trait = wrathful
+	
+	3311.1.1 = { birth = yes }
+	3339.1.1 = { add_matrilineal_spouse = duimnarch_999_husband }
+	3354.9.7 = { death = { death_reason = death_battle killer = thornroot_999} }
+}
+duimnarch_999_husband = {
+	name = "Hroltar"
+	religion = dwemer_idolatry
+	culture = reachfolk
+
+	trait = education_intrigue_2
+
+	3310.1.1 = { birth = yes }
+	3354.9.10 = { death = { death_reason = death_execution killer = thornroot_999 } }
+}
+duimnach_1000 = { # astras dev character
+	name = "Maira"
+	female = yes
+	dna = maira_dna_entry
+	dynasty = 500000
+	religion = dwemer_idolatry
+	culture = reachfolk
+	
+	father = duimnarch_999_husband
+	mother = duimnach_999
+
+	sexuality = homosexual
+	trait = education_learning_4
+	trait = trusting
+	trait = compassionate
+	trait = shy
+	trait = lifestyle_mystic
+	trait = education_magic_1
+	trait = sign_ritual
+
+	3340.1.11 = { birth = yes }
+	3354.9.10 = {
+		effect = {
+			if = {
+				limit = { character:thornroot_999 = { is_alive = yes } }
+				set_relation_rival = { reason = rival_historical target = character:thornroot_999 } 
+			}
+		}
+	}
+	3359.1.1 = {
+		add_same_sex_spouse = duimnach_1000_wife
+		effect = {
+			if = {
+				limit = { character:reachbreaker_101 = { is_alive = yes } }
+				add_opinion = {
+					target = character:reachbreaker_101
+					modifier = cruelty_opinion
+					opinion = -50
+				}
+			}
+		}
+	}
+	3500.1.1 = { death = yes }
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=female_hair_rtt_02
+			custom_cloaks = female_furs_secular_fp1_nobility_02
+		}
+	}
+}
+duimnach_1000_wife = {
+	name = "Cayleigh"
+	female = yes
+	religion = dwemer_idolatry
+	culture = reachfolk
+
+	sexuality = homosexual
+	trait = education_martial_3
+	trait = brave
+	trait = compassionate
+	trait = calm
+	trait = sign_lord
+
+	3342.3.11 = { birth = yes }
+	3405.1.1 = { death = yes }
+}
+duimnarch_1000 = {
+	name = "Uracain"
+	dynasty = 500000
+	religion = dwemer_idolatry
+	culture = reachfolk
+	
+	father = duimnarch_999_husband
+	mother = duimnach_999
+
+	trait = cynical
+	trait = trusting
+	trait = curious
+	trait = wrathful
+	trait = sign_serpent
+	disallow_random_traits = yes
+
+	3345.2.1 = { birth = yes }
+	3361.2.1 = {
+		trait = education_martial_3
+		remove_trait = curious
+	}
+	3374.1.1 = { death = yes }
+}
+duimnarch_1001 = {
+	name = "Nolovan"
+	dynasty = 500000
+	religion = dwemer_idolatry
+	culture = reachfolk
+	
+	father = duimnarch_999_husband
+	mother = duimnach_999
+
+	trait = callous
+	trait = gregarious
+	trait = diligent
+	trait = sign_atronach
+	trait = bossy
+	disallow_random_traits = yes
+
+	3347.11.19 = { birth = yes }
+	3363.11.19 = {
+		trait = education_intrigue_2
+		remove_trait = bossy
+	}
+	3387.1.1 = { death = yes }
+}
+duimnarch_1002 = {
+	name = "Jagiska"
+	female = yes
+	dynasty = 500000
+	religion = dwemer_idolatry
+	culture = reachfolk
+	
+	father = duimnarch_999_husband
+	mother = duimnach_999
+
+	trait = zealous
+	trait = gregarious
+	trait = pensive
+	trait = sign_apprentice
+	disallow_random_traits = yes
+
+	3349.7.9 = { birth = yes }
+	3365.7.9 = {
+		trait = education_learning_3
+		trait = calm
+		remove_trait = pensive
+	}
+	3389.1.1 = { death = yes }
+}
+
+## Shadefeather Dynasty
+#House Shadefeather
+shadefeather_gen_100 = {
+    name = "Mordynach" 
+    dynasty = 500008
+    religion = namira_coven
+    culture = reachfolk
+
+    sexuality = heterosexual
+
+    trait = greedy
+    trait = lazy
+    trait = zealous
+
+    3185.11.28 = { birth = yes }
+    3209.4.1 = {
+        add_spouse = shadefeather_gen_101
+    }
+    3219.12.16 = {
+        death = { death_reason = death_ritually_eaten  }
+    }
+}
+shadefeather_gen_101 = {
+    name = "Deantenna" 
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    sexuality = heterosexual
+
+    trait = arbitrary
+    trait = diligent
+    trait = wrathful
+
+    3192.11.11 = { birth = yes }
+    3272.6.18 = { death = { death_reason = death_natural_causes } }
+}
+shadefeather_gen_102 = {
+    name = "Tynvar" 
+    dynasty = 500008
+    religion = namira_coven
+    culture = reachfolk
+
+    father = shadefeather_gen_100
+    mother = shadefeather_gen_101
+
+    sexuality = bisexual
+
+    trait = fickle
+    trait = diligent
+    trait = gregarious
+
+    3218.5.18 = { birth = yes }
+    3245.2.20 = {
+        add_spouse = shadefeather_gen_103
+    }
+    3278.8.15 = { death = { death_reason = death_natural_causes } }
+}
+shadefeather_gen_103 = {
+    name = "Aodhait" 
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    sexuality = heterosexual
+
+    trait = craven
+    trait = gregarious
+    trait = ambitious
+
+    3228.10.15 = { birth = yes }
+    3318.3.27 = { death = { death_reason = death_natural_causes } }
+}
+shadefeather_gen_104 = {
+    name = "Manechta" 
+    dynasty = 500008
+    religion = namira_coven
+    culture = reachfolk
+
+    father = shadefeather_gen_102
+    mother = shadefeather_gen_103
+
+    sexuality = bisexual
+
+    trait = compassionate
+    trait = stubborn
+    trait = deceitful
+
+    3257.9.27 = { birth = yes }
+    3281.10.5 = {
+        add_spouse = shadefeather_gen_105
+    }
+    3332.11.28 = { death = { death_reason = death_natural_causes } }
+}
+shadefeather_gen_105 = {
+    name = "Eslirn" 
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    sexuality = heterosexual
+
+    trait = callous
+    trait = chaste
+    trait = arrogant
+
+    3264.12.2 = { birth = yes }
+	3306.1.1 = { add_trait = cancer }
+    3306.3.19 = {
+        death = { death_reason = death_cancer }
+    }
+}
+shadefeather_gen_106 = {
+    name = "Kaina" 
+    female = yes
+	dynasty = 500008
+    religion = namira_coven
+    culture = reachfolk
+
+    father = shadefeather_gen_104
+    mother = shadefeather_gen_105
+
+    sexuality = heterosexual
+
+    trait = sadistic
+    trait = chaste
+    trait = craven
+
+    3294.11.4 = { birth = yes }
+    3341.7.26 = {
+        death = { death_reason = death_hunting_accident  }
+    }
+}
+shadefeather_gen_107 = {
+    name = "Drusilla"
+	dynasty = 500008
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    father = shadefeather_gen_104
+    mother = shadefeather_gen_105
+
+    sexuality = homosexual
+	trait = education_diplomacy_2
+    trait = honest
+    trait = generous
+    trait = paranoid
+	trait = sign_lord
+
+    3297.3.2 = { birth = yes }
+	3353.1.1 = {
+		employer = cinderheart_100
+		effect = {
+			if = {
+				limit = { character:shadefeather_gen_110 = { is_alive = yes } }
+				set_relation_rival = { reason = rival_usurper target = character:shadefeather_gen_110 } 
+			}
+		}
+	}
+	3357.1.1 = { effect = { set_relation_rival = { reason = rival_usurper target = character:shadefeather_100 } } }
+    3377.9.10 = { death = { death_reason = death_natural_causes } }
+}
+shadefeather_gen_108 = {
+    name = "Lessa"
+	female = yes
+    dynasty = 500008
+    religion = namira_coven
+    culture = reachfolk
+
+    father = shadefeather_gen_102
+    mother = shadefeather_gen_103
+
+    sexuality = bisexual
+
+    trait = sadistic
+    trait = stubborn
+    trait = shy
+
+    3258.6.16 = { birth = yes }
+    3285.1.28 = {
+        add_spouse = shadefeather_gen_109
+    }
+    3346.1.5 = { death = { death_reason = death_natural_causes } }
+}
+shadefeather_gen_109 = {
+    name = "Frizwyr" 
+    religion = namira_coven
+    culture = reachfolk
+
+    sexuality = bisexual
+
+    trait = content
+    trait = generous
+    trait = deceitful
+
+    3268.7.12 = { birth = yes }
+    3353.2.26 = { death = { death_reason = death_natural_causes } }
+}
+shadefeather_gen_110 = {
+    name = "Bienghar" 
+    dynasty = 500008
+    religion = namira_coven
+    culture = reachfolk
+
+    mother = shadefeather_gen_108
+    father = shadefeather_gen_109
+
+    sexuality = heterosexual
+	trait = sign_ritual
+	trait = education_martial_2
+    trait = shy
+    trait = ambitious
+    trait = arrogant
+
+    3300.1.20 = { birth = yes }
+    3324.11.22 = {
+        add_spouse = shadefeather_gen_111
+    }
+	3357.1.1 = {
+		employer = thornroot_999
+		effect = { set_relation_rival = { reason = rival_usurper target = character:shadefeather_100 } }
+	}
+    3363.12.5 = { death = { death_reason = death_natural_causes } }
+}
+shadefeather_gen_111 = {
+    name = "Tisfira" 
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    sexuality = bisexual
+
+	trait = education_intrigue_1
+    trait = cynical
+    trait = forgiving
+    trait = fickle
+	trait = sign_shadow
+
+    3307.5.21 = { birth = yes }
+    3383.8.11 = { death = { death_reason = death_natural_causes } }
+}
+shadefeather_gen_112 = {
+    name = "Kaie" 
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    father = shadefeather_gen_110
+    mother = shadefeather_gen_111
+
+    sexuality = heterosexual
+	trait = education_stewardship_3
+    trait = humble
+    trait = forgiving
+    trait = zealous
+	trait = sign_tower
+
+    3336.10.12 = { birth = yes }
+	3357.1.1 = { employer = thornroot_999 }
+    3368.2.17 = {
+        death = { death_reason = death_torture killer = horn_eater_gen_61 }
+    }
+}
+shadefeather_gen_113 = {
+    name = "Brailka" 
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    father = shadefeather_gen_110
+    mother = shadefeather_gen_111
+
+    sexuality = bisexual
+	trait = education_martial_2
+    trait = arrogant
+    trait = gluttonous
+    trait = lustful
+	trait = sign_lady
+
+    3339.9.14 = { birth = yes }
+	3358.1.1 = {
+		effect = { set_relation_lover = { reason = lover_history target = character:lothid_101 } }
+	}
+	3363.1.1 = {
+		employer = sarkarain_101
+		effect = { remove_relation_lover = character:lothid_101 }
+		effect = { give_vampire_secret_or_trait_effect = yes }
+	}
+    3372.4.23 = {
+        death = { death_reason = death_crushed  }
+    }
+}
+shadefeather_gen_114 = {
+    name = "Durcorach" 
+    dynasty = 500008
+    religion = namira_coven
+    culture = reachfolk
+
+    father = shadefeather_gen_110
+    mother = shadefeather_gen_111
+
+    sexuality = heterosexual
+
+	trait = education_learning_2
+    trait = calm
+    trait = gluttonous
+    trait = vengeful
+	trait = sign_ritual
+
+    3342.1.9 = { birth = yes }
+    3365.6.10 = {
+        add_spouse = shadefeather_gen_115
+    }
+    3406.11.22 = {
+        death = { death_reason = death_ritually_eaten  }
+    }
+}
+shadefeather_gen_115 = {
+    name = "Tyntra" 
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    sexuality = heterosexual
+
+    trait = chaste
+    trait = content
+    trait = craven
+
+    3348.12.25 = { birth = yes }
+    3412.9.25 = { death = { death_reason = death_natural_causes } }
+}
+shadefeather_gen_116 = {
+    name = "Jolnengar" 
+    dynasty = 500008
+    religion = namira_coven
+    culture = reachfolk
+
+    father = shadefeather_gen_114
+    mother = shadefeather_gen_115
+
+    sexuality = bisexual
+
+    trait = ambitious
+    trait = gregarious
+    trait = temperate
+
+    3379.6.28 = { birth = yes }
+    3407.7.2 = {
+        add_spouse = shadefeather_gen_117
+    }
+    3445.9.15 = { death = { death_reason = death_natural_causes } }
+}
+shadefeather_gen_117 = {
+    name = "Drasigan" 
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    sexuality = heterosexual
+
+    trait = cynical
+    trait = temperate
+    trait = wrathful
+
+    3390.5.26 = { birth = yes }
+    3473.6.5 = { death = { death_reason = death_natural_causes } }
+}
+shadefeather_gen_118 = {
+    name = "Elgnolan" 
+    dynasty = 500008
+    religion = namira_coven
+    culture = reachfolk
+
+    father = shadefeather_gen_114
+    mother = shadefeather_gen_115
+
+    sexuality = heterosexual
+
+    trait = greedy
+    trait = lazy
+    trait = sadistic
+
+    3381.12.7 = { birth = yes }
+    3405.7.16 = {
+        add_spouse = shadefeather_gen_119
+    }
+    3447.7.10 = { death = { death_reason = death_natural_causes } }
+}
+shadefeather_gen_119 = {
+    name = "Hereline" 
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    sexuality = bisexual
+
+    trait = generous
+    trait = impatient
+    trait = lazy
+
+    3388.2.13 = { birth = yes }
+    3457.2.25 = { death = { death_reason = death_natural_causes } }
+}
+shadefeather_gen_120 = {
+    name = "Vivian" 
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    mother = shadefeather_gen_108
+    father = shadefeather_gen_109
+
+    sexuality = homosexual
+
+	trait = education_learning_3
+    trait = chaste
+    trait = just
+    trait = forgiving
+	trait = sign_thief
+
+    3318.12.1 = { birth = yes }
+    3369.12.2 = { death = { death_reason = death_natural_causes } }
+}
+shadefeather_gen_121 = {
+    name = "Aydsil" 
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    father = shadefeather_gen_102
+    mother = shadefeather_gen_103
+
+    sexuality = heterosexual
+
+    trait = callous
+    trait = honest
+    trait = shy
+
+    3260.7.2 = { birth = yes }
+    3307.10.8 = {
+        death = { death_reason = death_plotting  }
+    }
+}
+
+shadefeather_100 = {
+	name = "Brailan" #Count of Valthume
+	dynasty = 500008
+	religion = namira_coven
+	culture = reachfolk
+	mother = shadefeather_gen_108
+    father = shadefeather_gen_109
+
+	trait = education_martial_3
+	trait = lazy
+	trait = forgiving
+	trait = zealous
+	trait = sign_lover
+	
+	3318.2.16 = { birth = yes }
+	3333.1.1 = {
+		add_spouse = horn_eater_gen_69
+	}
+	3379.1.1 = { death = yes }
+}
+shadefeather_101 = {
+	name = "Duareg" #Count of Valthume
+	dynasty = 500008
+	religion = namira_coven
+	culture = reachfolk
+	father = shadefeather_100
+	mother = horn_eater_gen_69
+
+	trait = education_diplomacy_3
+	trait = stubborn
+	trait = trusting
+	trait = brave
+	trait = sign_ritual
+	
+	3335.1.29 = { birth = yes }
+	3401.1.1 = { death = yes }
+}
+shadefeather_102 = {
+	name = "Braic" 
+	dynasty = 500008
+	religion = namira_coven
+	culture = reachfolk
+	father = shadefeather_100
+	mother = horn_eater_gen_69
+
+	trait = education_learning_2
+	trait = lustful
+	trait = patient
+	trait = diligent
+	trait = sign_apprentice
+	
+	3337.7.7 = { birth = yes }
+	# 3358 marries ghostsong_100
+	3422.1.1 = { death = yes }
+}
+shadefeather_103 = {
+	name = "Nenacain" #Count of Valthume
+	dynasty = 500008
+	religion = namira_coven
+	culture = reachfolk
+	father = shadefeather_100
+	
+	3392.1.1 = { birth = yes }
+	3462.1.1 = { death = yes }
+}
+shadefeather_104 = {
+	name = "Petigan" #Count of Valthume
+	female = yes
+	dynasty = 500008
+	religion = namira_coven
+	culture = reachfolk
+	father = shadefeather_103
+	
+	3428.1.1 = { birth = yes }
+	3523.1.1 = { death = yes }
+}
+shadefeather_105 = {
+	name = "Morvar" #Count of Valthume ( Alliance War )
+	dynasty = 500008
+	religion = namira_coven
+	culture = reachfolk
+	mother = shadefeather_104
+	
+	3450.1.1 = { birth = yes }
+	3523.1.1 = { death = yes }
+}
+shadefeather_106 = {
+	name = "Morcain" #Count of Valthume
+	dynasty = 500008
+	religion = namira_coven
+	culture = reachfolk
+	mother = shadefeather_104
+	
+	3486.1.1 = { birth = yes }
+	3543.1.1 = { death = yes }
+}
+##Spiritblood Clan
+
+#House Spiritblood
+spiritblood_1_father = {
+	name = "Rodnach"
+	dynasty = 500065 # Quicktalon Clan
+	religion = old_gods
+    culture = reachfolk
+
+	trait = education_diplomacy_1
+	trait = calm
+	trait = compassionate
+	trait = lazy
+
+	1020.1.1 = { birth = yes }
+	1089.1.1 = { death = { death_reason = death_murder_known killer = spiritblood_1 } }
+}
+spiritblood_1 = {
+	name = "Carinar"
+	dynasty = 500007
+    religion = old_gods
+    culture = reachfolk
+
+	father = spiritblood_1_father
+
+	trait = education_intrigue_2
+	trait = deceitful
+	trait = callous
+	trait = calm
+	trait = sign_serpent
+	trait = kinslayer_3
+
+	1064.1.1 = { birth = yes }
+	1130.1.1 = { death = yes }
+}
+spiritblood_2 = {
+	name = "Carinar"
+	dynasty = 500007
+    religion = old_gods
+    culture = reachfolk
+	trait = line_of_x
+
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+	
+	father = spiritblood_1
+	
+	1129.1.1 = { birth = yes }
+	1300.1.1 = { give_nickname = nick_line_of }
+	3201.1.1 = { death = yes }
+}
+spiritblood_gen_50 = {
+    name = "Duaric" 
+    dynasty = 500007
+    religion = old_gods
+    culture = reachfolk
+	father = spiritblood_2
+
+    sexuality = heterosexual
+    trait = cynical
+    trait = craven
+    trait = humble
+
+    3200.11.3= { birth = yes }
+    3227.12.5 = {
+        add_spouse = spiritblood_gen_51
+    }
+    3286.2.22 = { death = { death_reason = death_natural_causes } }
+}
+spiritblood_gen_51 = {
+    name = "Madicua" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = bisexual
+    trait = greedy
+    trait = paranoid
+    trait = calm
+
+    3210.5.19= { birth = yes }
+    3280.10.23 = { death = { death_reason = death_natural_causes } }
+}
+spiritblood_gen_52 = {
+    name = "Desevaen" 
+	female = yes
+    dynasty = 500007
+    religion = old_gods
+    culture = reachfolk
+
+    father = spiritblood_gen_50
+    mother = spiritblood_gen_51
+
+    sexuality = bisexual
+    trait = greedy
+    trait = sadistic
+    trait = chaste
+
+    3237.8.16= { birth = yes }
+    3260.12.1 = {
+        add_matrilineal_spouse = spiritblood_gen_53
+    }
+    3327.1.20 = { death = { death_reason = death_natural_causes } }
+}
+spiritblood_gen_53 = {
+    name = "Eltrys" 
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = homosexual
+    trait = impatient
+    trait = shy
+    trait = sadistic
+
+    3243.3.17= { birth = yes }
+    3319.4.9 = { death = { death_reason = death_natural_causes } }
+}
+spiritblood_gen_54 = {
+    name = "Tynlan" 
+    dynasty = 500007
+    religion = old_gods
+    culture = reachfolk
+
+    mother = spiritblood_gen_52
+    father = spiritblood_gen_53
+
+    sexuality = heterosexual
+    trait = zealous
+    trait = impatient
+    trait = vengeful
+
+    3273.11.12= { birth = yes }
+    3297.5.4 = {
+        add_spouse = spiritblood_gen_55
+    }
+    3329.9.2 = {
+        death = { death_reason = death_dog_attack  }
+    }
+}
+spiritblood_gen_55 = {
+    name = "Ulecia" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = heterosexual
+    trait = arbitrary
+    trait = fickle
+    trait = wrathful
+
+    3280.12.7= { birth = yes }
+	3326.1.1 = { add_trait = cancer }
+    3326.12.3 = {
+        death = { death_reason = death_cancer }
+    }
+}
+spiritblood_gen_56 = {
+    name = "Alona" 
+	female = yes
+    dynasty = 500007
+    religion = old_gods
+    culture = reachfolk
+
+    father = spiritblood_gen_54
+    mother = spiritblood_gen_55
+
+    sexuality = heterosexual
+    trait = paranoid
+    trait = compassionate
+    trait = ambitious
+
+    3309.5.6= { birth = yes }
+    3336.6.5 = {
+        add_matrilineal_spouse = spiritblood_gen_57
+    }
+    3343.9.2 = {
+        death = { death_reason = death_drowned }
+    }
+}
+spiritblood_gen_57 = {
+    name = "Grisvar" 
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = bisexual
+	trait = education_stewardship_2
+    trait = stubborn
+    trait = paranoid
+    trait = gluttonous
+	trait = sign_warrior
+    3319.8.2 = { birth = yes }
+    3377.4.7 = { death = { death_reason = death_ritually_eaten  } }
+}
+spiritblood_gen_58 = {
+    name = "Arana" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    mother = spiritblood_gen_56
+    father = spiritblood_gen_57
+
+    sexuality = heterosexual
+    trait = honest
+    trait = gregarious
+    trait = humble
+	trait = sign_steed
+	trait = pensive
+	disallow_random_traits = yes
+
+    3344.6.9 = { birth = yes }
+	3360.6.9 = {
+		trait = education_intrigue_2
+		remove_trait = pensive
+	}
+    3410.10.27 = { death = { death_reason = death_natural_causes } }
+}
+spiritblood_gen_59 = {
+    name = "Andastyr" 
+    dynasty = 500007
+    religion = old_gods
+    culture = reachfolk
+
+    mother = spiritblood_gen_56
+    father = spiritblood_gen_57
+    
+	trait = education_learning_2
+    trait = zealous
+    trait = lazy
+    trait = humble
+	trait = sign_tower
+	trait = curious
+	disallow_random_traits = yes
+
+    3350.10.15 = { birth = yes }
+	3366.10.15 = {
+		remove_trait = curious
+	}
+    3373.8.4 = { add_spouse = spiritblood_gen_60 }
+	3413.4.16 = { death = { death_reason = death_natural_causes } }
+}
+spiritblood_gen_60 = {
+    name = "Ambritt" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = heterosexual
+    trait = honest
+    trait = callous
+    trait = vengeful
+
+    3356.4.2 = { birth = yes }
+    3399.9.1 = { death = { death_reason = death_ended_on_feast_table  } }
+}
+spiritblood_gen_61 = {
+    name = "Melcua" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    father = spiritblood_gen_59
+    mother = spiritblood_gen_60
+
+    sexuality = heterosexual
+    trait = patient
+    trait = stubborn
+    trait = craven
+
+    3381.5.3 = { birth = yes }
+    3448.10.2 = { death = { death_reason = death_natural_causes } }
+}
+spiritblood_gen_66 = {
+    name = "Dremar" 
+    dynasty = 500007
+    religion = old_gods
+    culture = reachfolk
+
+    father = spiritblood_gen_54
+    mother = spiritblood_gen_55
+
+    sexuality = bisexual
+	trait = education_martial_1
+    trait = generous
+    trait = temperate
+    trait = content
+	trait = sign_atronach
+
+    3313.11.27= { birth = yes }
+    3335.5.13 = { add_spouse = spiritblood_gen_67 }
+    3376.4.21 = { death = { death_reason = death_natural_causes } }
+}
+spiritblood_gen_67 = {
+    name = "Brenelsa" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = heterosexual
+	trait = education_diplomacy_1
+    trait = calm
+    trait = fickle
+    trait = just
+	trait = sign_shadow
+
+    3318.5.24= { birth = yes }
+    3403.11.16 = { death = { death_reason = death_natural_causes } }
+}
+spiritblood_gen_68 = {
+    name = "Elggane" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    father = spiritblood_gen_66
+    mother = spiritblood_gen_67
+
+    trait = education_diplomacy_3
+    trait = greedy
+    trait = compassionate
+    trait = gregarious
+	trait = sign_lover
+	trait = rowdy
+	disallow_random_traits = yes
+
+    3345.2.7 = { birth = yes }
+	# 3359 betrothed to horn_eater_gen_63, heir to neighbouring ruler
+	3366.2.7 = {
+		remove_trait = rowdy
+	}
+	3369.1.1 = { sexuality = heterosexual }
+	# becomes lover of cousin spiritblood_100
+    3423.12.10 = { death = { death_reason = death_natural_causes } }
+}
+spiritblood_gen_69 = {
+    name = "Camkull" 
+    dynasty = 500007
+    religion = old_gods
+    culture = reachfolk
+
+    mother = spiritblood_gen_52
+    father = spiritblood_gen_53
+
+    sexuality = bisexual
+    trait = patient
+    trait = ambitious
+    trait = lustful
+
+    3278.3.27= { birth = yes }
+    3304.10.19 = { add_spouse = spiritblood_gen_70 }
+    3342.5.12 = { death = { death_reason = death_natural_causes } }
+}
+spiritblood_gen_70 = {
+    name = "Eoline" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = asexual
+    trait = gluttonous
+    trait = deceitful
+    trait = vengeful
+
+    3287.5.14= { birth = yes }
+    3353.1.1 = { death = { death_reason = death_natural_causes } }
+}
+spiritblood_gen_71 = {
+    name = "Beirma" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    father = spiritblood_gen_69
+    mother = spiritblood_gen_70
+
+    sexuality = heterosexual
+	trait = education_learning_2
+    trait = patient
+    trait = arrogant
+    trait = content
+	trait = sign_apprentice
+    3312.7.23 = { birth = yes }
+	3339.1.1 = { employer = pecua }
+    3390.2.13 = { death = { death_reason = death_natural_causes } }
+}
+spiritblood_100 = {
+	name = "Cosnach" #Count of Rockwatch & Skyhammer
+	dynasty = 500007
+	religion = namira_coven
+	culture = reachfolk
+	mother = spiritblood_gen_56
+	father = spiritblood_gen_57
+
+	sexuality = heterosexual
+	trait = education_diplomacy_1
+	trait = lazy
+	trait = lustful
+	trait = just
+	trait = sign_lord
+	
+	3340.3.25 = { birth = yes }
+	3359.1.1 = { effect = { set_relation_lover = { reason = lover_history target = character:spiritblood_gen_68 } } }
+	3421.1.1 = { death = yes }
+}
+spiritblood_101 = {
+	name = "Karadog" #Count of Rockwatch & Skyhammer
+	dynasty = 500007
+	religion = namira_coven
+	culture = reachfolk
+	father = spiritblood_100
+	
+	3361.1.1 = { birth = yes }
+	3451.1.1 = { death = yes }
+}
+spiritblood_102 = {
+	name = "Donvar" #Count of Rockwatch & Skyhammer ( Alliance War )
+	dynasty = 500007
+	religion = namira_coven
+	culture = reachfolk
+	father = spiritblood_101
+	
+	3442.1.1 = { birth = yes }
+	3503.1.1 = { death = yes }
+}
+spiritblood_103 = {
+	name = "Faovar" #Count of Rockwatch & Skyhammer
+	dynasty = 500007
+	religion = namira_coven
+	culture = reachfolk
+	father = spiritblood_102
+	
+	3468.1.1 = { birth = yes }
+	3539.1.1 = { death = yes }
+}
+spiritblood_104 = {
+	name = "Bednach"
+	dynasty = 500007
+	religion = namira_coven
+	culture = reachfolk
+	father = spiritblood_102
+	
+	3474.1.1 = { birth = yes }
+	3546.1.1 = { death = yes }
+}
+
+## Ghostsong Dynasty
+#House Ghostsong
+ghostsong_gen_1 = {
+    name = "Melra"
+	female = yes
+    dynasty = 500009
+    religion = namira_coven
+    culture = reachfolk
+
+    sexuality = heterosexual
+
+    trait = sadistic
+    trait = honest
+    trait = cynical
+
+    3196.12.26 = { birth = yes }
+    3224.4.17 = {
+        add_matrilineal_spouse = ghostsong_gen_2
+    }
+    3280.1.3 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+ghostsong_gen_2 = {
+    name = "Faoch" 
+    religion = namira_coven
+    culture = reachfolk
+
+    sexuality = homosexual
+
+    trait = vengeful
+    trait = paranoid
+    trait = greedy
+
+    3207.5.26 = { birth = yes }
+    3294.8.8 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+ghostsong_gen_3 = {
+    name = "Madric" 
+    dynasty = 500009
+    religion = namira_coven
+    culture = reachfolk
+
+    mother = ghostsong_gen_1
+    father = ghostsong_gen_2
+
+    sexuality = bisexual
+
+    trait = generous
+    trait = chaste
+    trait = arbitrary
+
+    3232.2.13 = { birth = yes }
+    3256.7.15 = {
+        add_spouse = ghostsong_gen_4
+    }
+    3307.5.27 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+ghostsong_gen_4 = {
+    name = "Madka" 
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    sexuality = heterosexual
+
+    trait = humble
+    trait = forgiving
+    trait = arbitrary
+
+    3239.2.1 = { birth = yes }
+    3278.10.2 = {
+        death = { death_reason = death_accident  }
+    }
+}
+ghostsong_gen_5 = {
+    name = "Kraig" 
+    dynasty = 500009
+    religion = namira_coven
+    culture = reachfolk
+
+    father = ghostsong_gen_3
+    mother = ghostsong_gen_4
+
+    sexuality = heterosexual
+
+    trait = greedy
+    trait = forgiving
+    trait = sadistic
+
+    3265.12.15 = { birth = yes }
+    3289.9.7 = {
+        add_spouse = ghostsong_gen_6
+    }
+    3313.6.18 = {
+        death = { death_reason = death_murder  }
+    }
+}
+ghostsong_gen_6 = {
+    name = "Glynnetal" 
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    sexuality = heterosexual
+
+    trait = sadistic
+    trait = fickle
+    trait = lazy
+
+    3272.3.26 = { birth = yes }
+    3344.2.20 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+ghostsong_gen_7 = {
+    name = "Uragan"
+	dynasty = 500009
+    female = yes
+    religion = nord_cult
+    culture = reachfolk
+
+    father = ghostsong_gen_5
+    mother = ghostsong_gen_6
+
+    sexuality = heterosexual
+
+    trait = compassionate
+    trait = greedy
+    trait = humble
+	trait = zealous
+	trait = disinherited
+	trait = sign_warrior
+
+    3298.8.5 = { birth = yes }
+	3351.1.1 = { employer = reachbreaker_101 }
+    3360.4.22 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+ghostsong_gen_7b = { # Married to sarkarain_100
+    name = "Cartimandua"
+	dynasty = 500009
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    father = ghostsong_gen_5
+    mother = ghostsong_gen_6
+
+	trait = sign_lord
+
+    3300.3.2 = { birth = yes }
+    3364.12.7 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+ghostsong_gen_8 = {
+    name = "Morrigan"
+	dynasty = 500009
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    father = ghostsong_gen_5
+    mother = ghostsong_gen_6
+
+    sexuality = homosexual
+	trait = education_learning_1
+    trait = gregarious
+    trait = greedy
+    trait = forgiving
+	trait = sign_thief
+
+    3302.12.22 = { birth = yes }
+	3319.1.1 = { add_spouse = ghostsong_gen_8_spouse }
+	
+    3352.5.14 = {
+        death = { death_reason = death_plotting  }
+    }
+}
+ghostsong_gen_8_spouse = {
+	name = "Urfon"
+	religion = namira_coven
+    culture = reachfolk
+	trait = sign_lord
+
+	3301.3.14 = { birth = yes }
+	3358.1.1 = { death = yes }
+}
+ghostsong_gen_9 = {
+    name = "Kynbellairn" 
+	dynasty = 500009
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    father = ghostsong_gen_5
+    mother = ghostsong_gen_6
+
+    sexuality = bisexual
+	trait = education_learning_3
+    trait = lazy
+    trait = gregarious
+    trait = stubborn
+	trait = sign_lover
+
+    3304.2.22 = { birth = yes }
+    3372.10.22 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+ghostsong_gen_10 = {
+    name = "Mael" 
+    dynasty = 500009
+    religion = namira_coven
+    culture = reachfolk
+
+    father = ghostsong_gen_5
+    mother = ghostsong_gen_6
+
+    sexuality = homosexual
+	trait = education_stewardship_3
+    trait = ambitious
+    trait = wrathful
+    trait = gregarious
+	trait = sign_warrior
+
+    3306.8.2 = { birth = yes }
+    3334.4.3 = {
+        add_spouse = ghostsong_gen_11
+    }
+    3384.10.8 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+ghostsong_gen_11 = {
+    name = "Braile" 
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    sexuality = heterosexual
+	trait = education_intrigue_3
+    trait = paranoid
+    trait = arbitrary
+    trait = gluttonous
+	trait = sign_apprentice
+
+    3317.7.5 = { birth = yes }
+    3374.12.20 = {
+        death = { death_reason = death_dungeon  }
+    }
+}
+ghostsong_gen_12 = {
+    name = "Burlota" 
+    female = yes
+	dynasty = 500009
+    religion = namira_coven
+    culture = reachfolk
+
+    father = ghostsong_gen_10
+    mother = ghostsong_gen_11
+	
+    trait = gluttonous
+    trait = content
+	trait = bossy
+	disallow_random_traits = yes
+	trait = sign_atronach
+
+    3346.11.6 = { birth = yes }
+	3362.11.6 = {
+		sexuality = asexual
+		trait = education_stewardship_1
+		trait = arrogant
+		remove_trait = bossy
+	}
+    3375.7.11 = {
+        death = { death_reason = death_drowned  }
+    }
+}
+ghostsong_gen_13 = {
+    name = "Degaine" 
+    dynasty = 500009
+    religion = namira_coven
+    culture = reachfolk
+
+    father = ghostsong_gen_10
+    mother = ghostsong_gen_11
+
+    trait = pensive
+	trait = sign_atronach
+	disallow_random_traits = yes
+
+    3349.11.26 = { birth = yes }
+	3351.5.3 = { death = { death_reason = death_execution killer = bullblood_1000 } }
+}
+ghostsong_gen_15 = {
+    name = "Alix" 
+    dynasty = 500009
+    religion = namira_coven
+    culture = reachfolk
+
+    father = ghostsong_gen_10
+    mother = ghostsong_gen_11
+
+    trait = generous
+    trait = patient
+	trait = pensive
+	trait = sign_shadow
+	disallow_random_traits = yes
+
+    3352.5.14 = { birth = yes }
+	3368.5.14 = {
+		sexuality = heterosexual
+		trait = sadistic
+		remove_trait = pensive
+		trait = education_intrigue_2
+	}
+    3380.12.20 = {
+        add_spouse = ghostsong_gen_16
+    }
+    3425.8.7 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+ghostsong_gen_16 = {
+    name = "Ambre" 
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    3363.11.3 = { birth = yes }
+    3452.10.22 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+ghostsong_gen_17 = {
+    name = "Karadog" 
+    dynasty = 500009
+    religion = namira_coven
+    culture = reachfolk
+
+    father = ghostsong_gen_3
+    mother = ghostsong_gen_4
+
+    sexuality = homosexual
+
+    trait = stubborn
+    trait = greedy
+    trait = cynical
+
+    3270.7.6 = { birth = yes }
+    3296.11.17 = {
+        add_spouse = ghostsong_gen_18
+    }
+    3310.8.2 = {
+        death = { death_reason = death_raid }
+    }
+}
+ghostsong_gen_18 = {
+    name = "Hila" 
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    sexuality = heterosexual
+
+    trait = content
+    trait = deceitful
+    trait = diligent
+
+    3279.8.21 = { birth = yes }
+    3356.3.27 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+ghostsong_gen_19 = {
+    name = "Edana"
+	female = yes
+    dynasty = 500009
+    religion = namira_coven
+    culture = reachfolk
+
+    father = ghostsong_gen_17
+    mother = ghostsong_gen_18
+
+    sexuality = heterosexual
+
+	trait = education_stewardship_3
+    trait = deceitful
+    trait = greedy
+    trait = diligent
+	trait = sign_shadow
+
+    3305.5.5 = { birth = yes }
+    3335.4.25 = {
+        add_matrilineal_spouse = ghostsong_gen_20
+    }
+    3351.5.3 = { death = { death_reason = death_execution killer = bullblood_1000 } }
+}
+ghostsong_gen_20 = {
+    name = "Gorrof" 
+    religion = namira_coven
+    culture = reachfolk
+
+    sexuality = heterosexual
+
+    trait = just
+    trait = paranoid
+    trait = stubborn
+
+    3318.3.12 = { birth = yes }
+    3351.5.3 = { death = { death_reason = death_execution killer = bullblood_1000 } }
+}
+ghostsong_gen_21 = {
+    name = "Duaic" 
+    dynasty = 500009
+    religion = namira_coven
+    culture = reachfolk
+
+    mother = ghostsong_gen_19
+    father = ghostsong_gen_20
+
+	disallow_random_traits = yes
+    trait = humble
+    trait = sign_warrior
+
+    3350.8.28 = { birth = yes }
+	3351.5.3 = { death = { death_reason = death_execution killer = bullblood_1000 } }
+}
+ghostsong_gen_22 = {
+    name = "Uaie" 
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+	trait = sign_ritual
+
+    3358.1.9 = { birth = yes }
+    3448.6.1 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+ghostsong_gen_23 = {
+    name = "Morvar" 
+    dynasty = 500009
+    religion = namira_coven
+    culture = reachfolk
+
+    father = ghostsong_gen_17
+    mother = ghostsong_gen_18
+
+    sexuality = heterosexual
+	trait = education_martial_1
+    trait = ambitious
+    trait = arrogant
+    trait = just
+	trait = sign_ritual
+
+    3307.1.3 = { birth = yes }
+    3337.5.13 = { add_spouse = ghostsong_gen_24 }
+	3351.9.3 = { add_spouse = ghostsong_gen_23_second_spouse }
+    3367.5.14 = {
+        death = { death_reason = death_chopped_to_pieces }
+    }
+}
+ghostsong_gen_24 = {
+    name = "Voanche" 
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    sexuality = heterosexual
+	trait = education_martial_2
+    trait = wrathful
+    trait = arbitrary
+    trait = lustful
+	trait = sign_tower
+    3320.10.10 = { birth = yes }
+    3351.5.3 = { death = { death_reason = death_execution killer = bullblood_1000 } }
+}
+ghostsong_gen_23_second_spouse = {
+	name = "Linele"
+	female = yes
+	religion = namira_coven
+    culture = reachfolk
+
+	trait = education_learning_1
+	trait = calm
+	trait = compassionate
+	trait = shy
+	trait = sign_steed
+
+	3323.6.17 = { birth = yes }
+	3395.9.3 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+ghostsong_gen_25 = {
+    name = "Cuandala" 
+    female = yes
+	dynasty = 500009
+    religion = namira_coven
+    culture = reachfolk
+
+    father = ghostsong_gen_23
+    mother = ghostsong_gen_24
+
+    trait = pensive
+	trait = sign_lady
+	disallow_random_traits = yes
+
+    3349.9.1 = { birth = yes }
+	3351.5.3 = { death = { death_reason = death_execution killer = bullblood_1000 } }
+}
+ghostsong_gen_26 = {
+    name = "Verfae" 
+    female = yes
+	dynasty = 500009
+    religion = namira_coven
+    culture = reachfolk
+
+    father = ghostsong_gen_23
+    mother = ghostsong_gen_23_second_spouse
+
+    trait = curious
+	trait = sign_warrior
+	disallow_random_traits = yes
+
+    3352.8.27 = { birth = yes }
+	3368.8.27 = {
+		sexuality = bisexual
+		remove_trait = curious
+		trait = sadistic
+		trait = gregarious
+		trait = content
+	}
+    3413.5.22 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+ghostsong_gen_27 = {
+    name = "Donallorta" 
+    dynasty = 500009
+    religion = namira_coven
+    culture = reachfolk
+
+    father = ghostsong_gen_23
+    mother = ghostsong_gen_23_second_spouse
+
+	trait = rowdy
+	trait = sign_ritual
+	disallow_random_traits = yes
+
+    3353.1.11 = { birth = yes }
+	3369.1.11 = {
+		sexuality = bisexual
+		remove_trait = rowdy
+		trait = ambitious
+		trait = paranoid
+		trait = gregarious
+	}
+    3379.12.26 = {
+        add_spouse = ghostsong_gen_28
+    }
+    3399.7.4 = {
+        death = { death_reason = death_dungeon  }
+    }
+}
+ghostsong_gen_28 = {
+    name = "Prynlinnait" 
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    3362.4.8 = { birth = yes }
+    3425.3.3 = {
+        death = { death_reason = death_ritually_eaten  }
+    }
+}
+ghostsong_gen_29 = {
+    name = "Hathrasil" 
+    dynasty = 500009
+    religion = namira_coven
+    culture = reachfolk
+
+    father = ghostsong_gen_17
+    mother = ghostsong_gen_18
+
+    sexuality = homosexual
+	trait = education_stewardship_2
+    trait = ambitious
+    trait = cynical
+    trait = paranoid
+	trait = sign_tower
+    3308.10.10 = { birth = yes }
+    3337.10.14 = {
+        add_spouse = ghostsong_gen_30
+    }
+    3389.10.21 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+ghostsong_gen_30 = {
+    name = "Dena" 
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    sexuality = heterosexual
+	trait = education_martial_1
+    trait = diligent
+    trait = ambitious
+    trait = calm
+	trait = sign_lord
+
+    3320.3.9 = { birth = yes }
+    3382.1.21 = {
+        death = { death_reason = death_plotting  }
+    }
+}
+ghostsong_gen_31 = {
+    name = "Glonn" 
+    dynasty = 500009
+    religion = namira_coven
+    culture = reachfolk
+
+    father = ghostsong_gen_29
+    mother = ghostsong_gen_30
+
+    sexuality = heterosexual
+
+    trait = arrogant
+    trait = brave
+    trait = bossy
+	disallow_random_traits = yes
+
+    3347.3.21 = { birth = yes }
+	3363.3.21 = {
+		trait = education_stewardship_3
+		remove_trait = bossy
+		trait = greedy
+	}
+    3377.6.25 = {
+        add_spouse = ghostsong_gen_32
+    }
+    3436.11.4 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+ghostsong_gen_32 = {
+    name = "Braile" 
+    female = yes
+    religion = namira_coven
+    culture = reachfolk
+
+    3360.12.9 = { birth = yes }
+    3388.4.2 = {
+        death = { death_reason = death_consumption }
+    }
+}
+ghostsong_gen_33 = {
+    name = "Cairnec" 
+    dynasty = 500009
+    religion = namira_coven
+    culture = reachfolk
+
+    father = ghostsong_gen_29
+    mother = ghostsong_gen_30
+
+	trait = sign_lover
+
+    3350.2.25 = { birth = yes }
+    3351.5.3 = { death = { death_reason = death_execution killer = bullblood_1000 } }
+}
+ghostsong_gen_35 = {
+    name = "Isolen" 
+    female = yes
+	dynasty = 500009
+    religion = namira_coven
+    culture = reachfolk
+
+    father = ghostsong_gen_29
+    mother = ghostsong_gen_30
+
+	trait = charming
+	trait = sign_lord
+	disallow_random_traits = yes
+
+    3353.3.17 = { birth = yes }
+	3369.3.17 = {
+		sexuality = bisexual
+		remove_trait = charming
+		trait = humble
+		trait = cynical
+		trait = gluttonous
+	}
+    3435.2.12 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+ghostsong_gen_36 = {
+    name = "Barhurn" 
+    dynasty = 500009
+    religion = namira_coven
+    culture = reachfolk
+
+    father = ghostsong_gen_29
+    mother = ghostsong_gen_30
+
+    sexuality = asexual
+
+	trait = curious
+	trait = sign_lord
+
+    3353.3.4 = { birth = yes }
+	3369.3.4 = {
+		trait = education_diplomacy_2
+		remove_trait = curious
+		trait = lazy
+    	trait = fickle
+    	trait = humble
+	}
+    3443.10.23 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+ghostsong_100 = {
+	name = "Kaigan" #Count of Ravenhall ( Warlords & Interregnum )
+	dynasty = 500009
+	religion = namira_coven #namira followers ruling over a Old Gods county for the sake of variety
+	culture = reachfolk
+	female = yes
+	mother = ghostsong_gen_8
+	father = ghostsong_gen_8_spouse
+	
+	trait = education_intrigue_3
+	trait = zealous
+	trait = gregarious
+	trait = diligent
+	trait = sign_atronach
+
+	3320.11.25 = { birth = yes }
+	3358.1.1 = {
+		add_matrilineal_spouse = shadefeather_102
+		effect = {
+			create_alliance = {
+				target = character:shadefeather_100
+				allied_through_owner = character:ghostsong_100
+				allied_through_target = character:shadefeather_102
+			}
+		}
+	}
+	3379.1.1 = { death = yes }
+}
+ghostsong_101 = {
+	name = "Bedawyr" #Count of Ravenhall
+	dynasty = 500009
+	religion = namira_coven
+	culture = reachfolk
+	mother = ghostsong_100
+	father = shadefeather_102
+
+	trait = sign_mage
+	
+	3359.4.13 = { birth = yes }
+	3442.1.1 = { death = yes }
+}
+ghostsong_102 = {
+	name = "Agrnel"
+	dynasty = 500009
+	religion = namira_coven
+	culture = reachfolk
+	mother = ghostsong_100
+	father = shadefeather_102
+
+	trait = sign_shadow
+	
+	3363.5.26 = { birth = yes }
+	3448.1.1 = { death = yes }
+}
+ghostsong_103 = {
+	name = "Urach" #Duke of Sundgard ( Alliance War )
+	dynasty = 500009
+	religion = namira_coven
+	culture = reachfolk
+	father = ghostsong_101
+	
+	3441.1.1 = { birth = yes }
+	3514.1.1 = { death = yes }
+}
+
+##Sanuarach Dynasty
+#House Sanuarach
+#Sanuarach Dynasty
+#titles in comments below here are mostly ek1 imports
+sanuarach_998 = {
+	name = "Riane"
+	female = yes
+	dynasty = 500001
+	culture = reachfolk
+	religion = old_gods
+
+	2425.1.1 = { birth = yes }
+	2479.1.1 = { death = yes }
+}
+sanuarach_999 = {
+	name = "Riane"
+	female = yes
+	dynasty = 500001
+	culture = reachfolk
+	religion = old_gods
+	mother = sanuarach_998
+	trait = line_of_x
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+	
+	2479.1.1 = { birth = yes }
+	2900.1.1 = { give_nickname = nick_line_of }
+	3301.1.1 = { death = yes }
+}
+sanuarach_18125 = {
+	name = "Agrlan"
+	dynasty = 500001
+	culture = reachfolk
+	religion = old_gods
+	mother = sanuarach_999
+	
+	3268.1.1 = { birth = yes }
+	3336.1.1 = { death = yes }
+}
+sanuarach_18126 = {
+	name = "Madanach"
+	dynasty = 500001
+	culture = reachfolk
+	religion = old_gods
+	
+	
+	father = sanuarach_18125
+	
+	3294.1.1 = { birth = yes }
+	3343.1.1 = { death = yes }
+}
+sanuarach_18127 = {
+	name = "Morvar"
+	dynasty = 500001
+	culture = reachfolk
+	religion = old_gods
+	
+	father = sanuarach_18125
+	
+	3297.1.1 = { birth = yes }
+	3367.1.1 = { death = yes }
+}
+sanuarach_18128 = {
+	name = "Rodnach"
+	dynasty = 500001
+	culture = reachfolk
+	religion = old_gods
+	
+	
+	father = sanuarach_18125
+	
+	3300.1.1 = { birth = yes }
+	3351.1.1 = { death = yes }
+}
+sanuarach_18129 = {
+	name = "Donvar" #Duke of Ravenhall (Interregnum)
+	dynasty = 500001
+	culture = reachfolk
+	religion = old_gods
+	
+	
+	father = sanuarach_18126
+	
+	3316.1.1 = { birth = yes }
+	3346.1.1 = { effect = { make_concubine = character:concubine_sanuarach_nana } }
+	3377.1.1 = { death = yes }
+}
+concubine_sanuarach_nana = {
+	name = "Nana"
+	culture = reachfolk
+	religion = old_gods
+	female = yes
+	3330.1.1 = { birth = yes }
+	3389.1.1 = { death = yes }
+}
+sanuarach_18131 = {
+	name = "Made" #Duchess of Ravenhall
+	dynasty = 500001
+	culture = reachfolk
+	religion = old_gods
+	
+	trait = child_of_concubine_female
+	female = yes
+	father = sanuarach_18129
+	mother = concubine_sanuarach_nana
+	
+	3349.1.1 = { birth = yes }
+	3409.1.1 = { death = yes }
+}
+concubine_sanuarach_cuhlena = {
+	name = "Cuhlena"
+	culture = reachfolk
+	religion = old_gods
+	female = yes
+	3321.1.1 = { birth = yes }
+	3377.1.1 = { death = yes }
+}
+sanuarach_18135 = {
+	name = "Nechlan" #Duke of Dunkarn (Reachman)
+	dynasty = 500001
+	culture = reachfolk
+	religion = old_gods
+	
+	trait = content
+	
+	father = sanuarach_102
+
+	3409.1.1 = { birth = yes }
+	3484.1.1 = { death = yes }
+}
+sanuarach_18138 = {
+	name = "Andcain" #Duke of Ravenhall
+	dynasty = 500001
+	culture = reachfolk
+	religion = old_gods
+	
+
+	mother = sanuarach_18131
+	
+	3381.1.1 = { birth = yes }
+	3445.1.1 = { death = yes }
+}
+sanuarach_18139 = {
+	name = "Tyntra" #Duchess of Ravenhall
+	dynasty = 500001
+	culture = reachfolk
+	religion = old_gods
+	
+	trait = education_stewardship_4
+	trait = brave
+	trait = just
+	trait = gregarious
+	trait = diligent
+	stewardship = 12
+	diplomacy = 10
+	female = yes
+	father = sanuarach_18138
+	
+	3429.1.1 = { birth = yes }
+	3478.1.1 = { death = yes }
+}
+sanuarach_18140 = {
+	name = "Rodcain" #Duke of Ravenhall (Kamal)
+	dynasty = 500001
+	culture = reachfolk
+	religion = old_gods
+	
+
+	mother = sanuarach_18139
+	
+	3450.1.1 = { birth = yes }
+	3510.1.1 = { death = yes }
+}
+sanuarach_18141 = {
+	name = "Odric" #Count of Cambrian (Kamal)
+	dynasty = 500001
+	culture = reachfolk
+	religion = old_gods
+	
+	
+	father = sanuarach_18135
+
+	3474.1.1 = { birth = yes }
+	3539.1.1 = { death = yes }
+}
+sanuarach_18143 = {
+	name = "Mya" #Duke of Ravenhall
+	female = yes
+	dynasty = 500001
+	culture = reachfolk
+	religion = old_gods
+	
+
+	father = sanuarach_18140
+	
+	3475.1.1 = { birth = yes }
+	3543.1.1 = { death = yes }
+}
+sanuarach_18144 = {
+	name = "Agrnel" #Count of Cambrian
+	dynasty = 500001
+	culture = reachfolk
+	religion = old_gods
+	
+	
+	father = sanuarach_18141
+
+	3497.1.1 = { birth = yes }
+	3552.1.1 = { death = yes }
+}
+sanuarach_18146 = {
+	name = "Uraccen"
+	dynasty = 500001
+	culture = reachfolk
+	religion = old_gods
+	
+	
+	mother = sanuarach_18143
+
+	3507.1.1 = { birth = yes }
+	3569.1.1 = { death = yes }
+}
+sanuarach_18147 = {
+	name = "Duacca" #Duke of Ingmarok
+	female = yes
+	dynasty = 500001
+	culture = reachfolk
+	religion = old_gods
+	
+	
+	father = sanuarach1_104
+	
+	3511.1.1 = { birth = yes }
+	3579.1.1 = { death = yes }
+}
+sanuarach_18148 = {
+	name = "Made" #Count of Cambrian
+	female = yes 
+	dynasty = 500001
+	culture = reachfolk
+	religion = old_gods
+	
+	
+	father = sanuarach_18141
+	
+	3507.1.1 = { birth = yes }
+	3574.1.1 = { death = yes }
+}
+sanuarach_18149 = {
+	name = "Donvar"
+	dynasty = 500001
+	culture = reachfolk
+	religion = old_gods
+	
+	
+	father = sanuarach_18144
+	
+	3518.1.1 = { birth = yes }
+	3578.1.1 = { death = yes }
+}
+sanuarach_1000_mother = {
+	name = "Eselde"
+	culture = reachfolk
+	religion = druadach_cult
+	female = yes
+
+	3299.1.1 = { birth = yes }
+	3369.1.1 = { death = yes }
+}
+sanuarach_1000 = {
+	name = "Adramelech"
+	dynasty = 500001
+	culture = reachfolk
+	religion = druadach_cult
+
+	father = sanuarach_18127
+	mother = sanuarach_1000_mother
+
+	trait = arbitrary
+	trait = cynical
+	trait = content
+	trait = education_martial_2
+	trait = wild_oat
+	trait = sign_tower
+
+	3317.10.6 = { birth = yes }
+	3337.1.1 = { effect = { make_concubine = character:concubine_sanuarach_cuhlena } }
+	3343.1.1 = { add_spouse = sanuarach_1000_wife }
+	3368.1.1 = { death = yes }
+}
+sanuarach_1000_wife = {
+	name = "Maira"
+	female = yes
+	culture = reachfolk
+	religion = druadach_cult
+
+	trait = sadistic
+	trait = craven
+	trait = vengeful
+	trait = education_stewardship_1
+
+	3319.3.15 = { birth = yes }
+	3371.1.1 = { death = yes }
+}
+sanuarach_1000_sister = {
+	name = "Peka"
+	dynasty = 500001
+	culture = reachfolk
+	religion = druadach_cult
+	female = yes
+
+	trait = wild_oat
+	trait = education_diplomacy_4
+	trait = brave
+	trait = calm
+	trait = greedy
+	trait = sign_shadow
+
+	father = sanuarach_18127
+	mother = sanuarach_1000_mother
+
+	3319.5.13 = { birth = yes }
+	# 3330 marries rane_99
+	3337.1.1 = { religion = druid_circles }
+	3378.1.1 = { death = yes }
+}
+
+sanuarach_101 = {
+	name = "Madanach" #Duke of Dunkarn (Interregnum)
+	dynasty = 500001
+	culture = reachfolk
+	religion = druadach_cult
+
+	father = sanuarach_1000
+	mother = concubine_sanuarach_cuhlena
+
+	trait = child_of_concubine_male	
+	trait = education_martial_3
+	trait = forest_fighter
+	trait = fickle
+	trait = calm
+	trait = brave
+	trait = sign_steed
+
+	3343.6.7 = { birth = yes }
+	3370.1.1 = {
+		#Wants their land
+		set_relation_rival = { reason = rival_historical target = character:suadurix_100 }
+	}
+	3378.1.1 = { death = { death_reason = death_battle } } #Dies in battle against Evermore
+}
+sanuarach_101b = {
+	name = "Cuhlenach" #Duke of Ingmarok (Interregnum)
+	dynasty = 500001
+	culture = reachfolk
+	religion = old_gods
+	
+	father = sanuarach_1000
+	mother = concubine_sanuarach_cuhlena
+	
+	trait = child_of_concubine_male
+	trait = craven
+	trait = ambitious
+	trait = education_intrigue_3
+	trait = disinherited #Disinherited by his father for his not very warlike character
+
+	3339.1.1 = { birth = yes }
+	3408.1.1 = { death = yes }
+}
+sanuarach_101c = {
+	name = "Andastyr" #Husband to Cinder-Heart
+	dynasty = 500001
+	culture = reachfolk
+	religion = druadach_cult
+
+	trait = shy
+	trait = paranoid
+	trait = wrathful
+	trait = education_diplomacy_2
+	trait = sign_serpent
+
+	disallow_random_traits = yes
+
+	father = sanuarach_1000
+	mother = sanuarach_1000_wife
+
+	3343.12.31 = { birth = yes }
+	3398.1.1 = { death = yes }
+}
+sanuarach_102 = {
+	name = "Ainethach" #Duke of Dunkarn
+	dynasty = 500001
+	culture = reachfolk
+	religion = old_gods
+	
+	father = sanuarach_101
+
+	3365.1.1 = { birth = yes }
+	3407.1.1 = { death = yes }
+}
+sanuarach1_102 = {
+	name = "Cuhleric" #Duke of Ingmarok (Reachman)
+	dynasty = 500001
+	culture = reachfolk
+	religion = old_gods
+	
+	father = sanuarach_101b
+
+	3362.1.1 = { birth = yes }
+	#EK TODO: married to a witchman
+	3392.1.1 = {
+		religion = witchman_faith #Starts liking those witchmen beliefs...
+	}
+	3425.1.1 = { death = yes }
+}
+sanuarach1_103 = {
+	name = "Uthcain" #Duke of Ingmarok (Kamal)
+	dynasty = 500001 #EK TODO: new house
+	culture = witchman
+	religion = witchman_faith
+	
+	father = sanuarach1_102
+
+	3389.1.1 = { birth = yes }
+	3444.1.1 = { death = yes }
+}
+sanuarach1_104 = {
+	name = "Grisvar" #Duke of Ingmarok
+	dynasty = 500001
+	culture = witchman
+	religion = witchman_faith
+	
+	father = sanuarach1_103
+
+	3412.1.1 = { birth = yes }
+	3477.1.1 = { death = yes }
+}
+
+#House Bloodthorn
+
+bloodthorn_1000 = {
+	name = "Angof" #"The Gravesinger"
+	#EK TODO: if he is sanuarch he should be from a different branch
+	dynasty_house = sanuarach_bloodthorn
+	culture = reachfolk
+	religion = old_gods	
+	
+	#father = sanuarach1_102
+
+	3462.1.1 = { birth = yes }
+	3478.1.1 = {
+		add_trait = education_magic_4
+		add_trait = necromancer
+		add_trait = wrathful
+		add_trait = brave
+		add_trait = callous
+	}
+	3498.1.1 = {
+		effect = {
+			add_trait = lich_character
+			add_character_flag = artificial_lifespan
+		}
+		add_trait = p_ob_molag
+		give_nickname = nick_the_gravesinger
+	}
+	3502.1.1 = {
+		add_unpressed_claim = title:d_camlorn
+	}
+	3503.1.1 = {
+		death = yes 
+	}
+}
+
+faolchu_999 = {
+	name = "Faolchu"
+	religion = alessian
+	culture = nibenese
+	trait = lycan_character
+	449.1.1 = { birth = yes }
+	479.1.1 = { 
+		death = {
+			death_reason = death_battle
+			killer = direnni_3b1
+		}
+	}
+}
+faolchu_1000 = {
+	name = "Faolchu"
+	culture = reachfolk
+	religion = molag_cult
+	
+	3450.1.1 = { birth = yes }
+	3502.1.1 = { give_nickname = nick_the_returned }
+	3503.1.1 = { death = yes }
+}
+
+##Dreadhorn Dynasty
+#House Dreadhorn
+bullblood_founder = {
+	name = "Eral"
+	dynasty = 500002
+	culture = keptu
+	religion = celestial_cult
+
+	751.1.1 = { birth = yes }
+	823.1.1 = { death = yes }
+}
+bullblood_founder_daughter = {
+	name = "Desha"
+	female = yes
+	dynasty = 500002
+	culture = keptu
+	religion = minotaur_cult
+
+	father = bullblood_founder
+
+	800.1.1 = { birth = yes }
+	850.1.1 = { death = yes }
+}
+bullblood_founder_daughter_line = {
+	name = "Desha"
+	female = yes
+	dynasty = 500002
+	culture = reachfolk
+	religion = minotaur_cult
+
+	mother = bullblood_founder_daughter
+	father = sunderstone_nedes_12
+
+	trait = line_of_x
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+
+	840.1.1 = { birth = yes }
+	1000.1.1 = { give_nickname = nick_line_of }
+	3194.1.1 = { death = yes }
+}
+bullblood_gen_1 = {
+    name = "Alabcain" 
+    dynasty = 500002
+    religion = minotaur_cult
+    culture = reachfolk
+	mother = bullblood_founder_daughter_line
+
+    trait = greedy
+    trait = ambitious
+    trait = stubborn
+
+    3187.8.9 = { birth = yes  }
+    3211.6.2 = {
+        add_spouse = bullblood_gen_2
+    }
+    3221.11.22 = {
+        death = { death_reason = death_attacked }
+    }
+}
+bullblood_gen_2 = {
+    name = "Enngotain" 
+    female = yes
+    religion = minotaur_cult
+    culture = reachfolk
+
+    trait = calm
+    trait = compassionate
+    trait = craven
+
+    3194.8.3 = { birth = yes  }
+    3237.10.28 = {
+        death = { death_reason = death_smallpox }
+    }
+}
+bullblood_gen_3 = {
+    name = "Faorin" 
+    dynasty = 500002
+    religion = minotaur_cult
+    culture = reachfolk
+
+    father = bullblood_gen_1
+    mother = bullblood_gen_2
+
+    trait = ambitious
+    trait = gregarious
+    trait = just
+
+    3220.10.8 = { birth = yes  }
+    3243.4.28 = {
+        add_spouse = bullblood_gen_4
+    }
+    3268.1.27 = {
+        death = { death_reason = death_battle }
+    }
+}
+bullblood_gen_4 = {
+    name = "Foale" 
+    female = yes
+    religion = minotaur_cult
+    culture = reachfolk
+
+    trait = generous
+    trait = lustful
+    trait = calm
+
+    3226.12.4 = { birth = yes  }
+    3271.6.12 = {
+        death = { death_reason = death_ritually_eaten  }
+    }
+}
+bullblood_gen_5 = {
+    name = "Hila" 
+	female = yes
+    dynasty = 500002
+    religion = minotaur_cult
+    culture = reachfolk
+
+    father = bullblood_gen_3
+    mother = bullblood_gen_4
+
+    trait = honest
+    trait = lustful
+    trait = gluttonous
+
+    3257.5.28 = { birth = yes  }
+    3279.9.11 = {
+        add_matrilineal_spouse = bullblood_gen_6
+    }
+    3311.5.11 = {
+        death = { death_reason = death_torture  }
+    }
+}
+bullblood_gen_6 = {
+    name = "Agrlan" 
+    religion = minotaur_cult
+    culture = reachfolk
+
+    trait = craven
+    trait = calm
+    trait = paranoid
+
+    3262.4.10 = { birth = yes  }
+    3329.8.11 = { death = { death_reason = death_natural_causes }}
+}
+bullblood_gen_7 = {
+    name = "Bretull" 
+    dynasty = 500002
+    religion = minotaur_cult
+    culture = reachfolk
+
+    mother = bullblood_gen_5
+    father = bullblood_gen_6
+
+    trait = just
+    trait = lustful
+    trait = sadistic
+
+    3292.10.8 = { birth = yes  }
+    3314.3.22 = {
+        add_spouse = bullblood_gen_8
+    }
+    3343.7.3 = { death = { death_reason = death_natural_causes }}
+}
+bullblood_gen_8 = {
+    name = "Cuhlea" 
+    female = yes
+    religion = minotaur_cult
+    culture = reachfolk
+
+	trait = education_intrigue_4
+    trait = calm
+    trait = cynical
+    trait = arrogant
+	trait = sign_apprentice
+
+    3297.7.24 = { birth = yes  }
+    3367.11.12 = { death = { death_reason = death_natural_causes }}
+}
+bullblood_gen_11 = {
+    name = "Alix" 
+    dynasty = 500002
+    religion = minotaur_cult
+    culture = reachfolk
+
+    father = bullblood_gen_7
+    mother = bullblood_gen_8
+
+	trait = education_martial_4
+    trait = cynical
+    trait = diligent
+    trait = shy
+	trait = sign_ritual
+
+    3328.1.7 = { birth = yes  }
+    3351.8.17 = {
+        add_spouse = bullblood_gen_12
+    }
+    3382.4.8 = {
+        death = { death_reason = death_strangled_with_own_intestines }
+    }
+}
+bullblood_gen_12 = {
+    name = "Pecua" 
+    female = yes
+    religion = minotaur_cult
+    culture = reachfolk
+
+	trait = education_learning_1
+    trait = greedy
+    trait = sadistic
+    trait = ambitious
+	trait = sign_lady
+
+    3334.9.2 = { birth = yes  }
+    3401.11.26 = { death = { death_reason = death_natural_causes }}
+}
+bullblood_gen_11_child = {
+	name = "Cianan"
+	dynasty = 500002
+    religion = minotaur_cult
+    culture = reachfolk
+	father = bullblood_gen_11
+	mother = bullblood_gen_12
+
+	trait = sickly
+	trait = sign_steed
+
+	3364.6.3 = { birth = yes }
+	3366.1.1 = { death = { death_reason = death_sickly } }
+}
+bullblood_gen_13 = {
+    name = "Gherig" 
+    dynasty = 500002
+    religion = minotaur_cult
+    culture = reachfolk
+
+    father = bullblood_gen_7
+    mother = bullblood_gen_8
+
+	trait = education_stewardship_2
+    trait = greedy
+    trait = arrogant
+    trait = compassionate
+	trait = sign_apprentice
+
+    3330.7.2 = { birth = yes  }
+    3360.8.23 = {
+        add_spouse = bullblood_gen_14
+    }
+    3370.4.16 = {
+        death = { death_reason = death_typhus }
+    }
+}
+bullblood_gen_14 = {
+    name = "Mairrna" 
+    female = yes
+    religion = minotaur_cult
+    culture = reachfolk
+
+    trait = cynical
+    trait = lustful
+    trait = arbitrary
+
+    3343.8.27 = { birth = yes  }
+    3422.2.19 = { death = { death_reason = death_natural_causes }}
+}
+bullblood_gen_13_child = {
+	name = "Ferra"
+	female = yes
+	dynasty = 500002
+    religion = minotaur_cult
+    culture = reachfolk
+	father = bullblood_gen_13
+	mother = bullblood_gen_14
+
+	trait = sign_warrior
+
+	3365.8.25 = { birth = yes }
+	3422.1.1 = { death = { death_reason = death_natural_causes } }
+}
+bullblood_gen_15 = {
+    name = "Foae" 
+	dynasty = 500002
+    female = yes
+    religion = minotaur_cult
+    culture = reachfolk
+
+    mother = bullblood_gen_5
+    father = bullblood_gen_6
+
+	trait = education_learning_3
+	trait = education_magic_1
+	trait = devoted
+    trait = honest
+    trait = just
+    trait = patient
+	trait = sign_lady
+
+    3295.9.22 = { birth = yes  }
+    3375.3.21 = { death = { death_reason = death_natural_causes }}
+}
+bullblood_gen_17 = {
+    name = "Denfira"
+	female = yes
+    dynasty = 500002
+    religion = minotaur_cult
+    culture = reachfolk
+
+    father = bullblood_gen_1
+    mother = bullblood_gen_2
+
+    trait = gregarious
+    trait = stubborn
+    trait = temperate
+
+    3218.12.14 = { birth = yes  }
+    3251.10.11 = {
+        add_spouse = bullblood_gen_18
+    }
+    3288.5.15 = { death = { death_reason = death_natural_causes }}
+}
+bullblood_gen_18 = {
+    name = "Angair" 
+    religion = minotaur_cult
+    culture = reachfolk
+
+    trait = deceitful
+    trait = chaste
+    trait = lazy
+
+    3234.8.7 = { birth = yes  }
+    3301.11.28 = { death = { death_reason = death_natural_causes }}
+}
+bullblood_gen_19 = {
+    name = "Duraeg" 
+    dynasty = 500002
+    religion = minotaur_cult
+    culture = reachfolk
+
+    mother = bullblood_gen_17
+    father = bullblood_gen_18
+
+    trait = forgiving
+    trait = callous
+    trait = arrogant
+
+    3262.7.25 = { birth = yes  }
+    3288.6.9 = {
+        add_spouse = bullblood_gen_20
+    }
+    3327.6.5 = { death = { death_reason = death_natural_causes }}
+}
+bullblood_gen_20 = {
+    name = "Kaia" 
+    female = yes
+    religion = minotaur_cult
+    culture = reachfolk
+
+    trait = impatient
+    trait = zealous
+    trait = wrathful
+
+    3271.4.18 = { birth = yes  }
+    3351.2.7 = { death = { death_reason = death_natural_causes }}
+}
+bullblood_gen_21 = {
+    name = "Weylin" 
+    dynasty = 500002
+    religion = minotaur_cult
+    culture = reachfolk
+
+    father = bullblood_gen_19
+    mother = bullblood_gen_20
+
+	trait = education_diplomacy_2
+    trait = chaste
+    trait = trusting
+    trait = ambitious
+	trait = sign_apprentice
+
+    3299.7.6 = { birth = yes  }
+    3323.2.24 = {
+        add_spouse = bullblood_gen_22
+    }
+    3385.5.13 = { death = { death_reason = death_natural_causes }}
+}
+bullblood_gen_22 = {
+    name = "Kiensoife" 
+    female = yes
+    religion = minotaur_cult
+    culture = reachfolk
+
+	trait = education_martial_3
+    trait = stubborn
+    trait = honest
+    trait = patient
+	trait = sign_mage
+
+    3306.4.23 = { birth = yes  }
+    3394.4.4 = { death = { death_reason = death_natural_causes }}
+}
+bullblood_gen_23 = {
+    name = "Ovcallas" 
+    dynasty = 500002
+    religion = minotaur_cult
+    culture = reachfolk
+
+    father = bullblood_gen_21
+    mother = bullblood_gen_22
+
+	trait = education_martial_3
+	trait = education_martial_prowess_1
+    trait = honest
+    trait = wrathful
+    trait = greedy
+	trait = sign_tower
+
+    3331.10.8 = { birth = yes  }
+    3352.1.27 = {
+        add_spouse = bullblood_gen_24
+    }
+    3365.1.15 = { death = { death_reason = death_duel killer = shardbrok_1001 }}
+}
+bullblood_gen_24 = {
+    name = "Tynie" 
+    female = yes
+    religion = minotaur_cult
+    culture = reachfolk
+
+	trait = education_intrigue_2
+    trait = arrogant
+    trait = zealous
+    trait = lustful
+	trait = sign_shadow
+
+    3331.5.12 = { birth = yes  }
+    3416.2.13 = { death = { death_reason = death_natural_causes }}
+}
+bullblood_gen_23_son = {
+    name = "Braic" 
+    dynasty = 500002
+    religion = minotaur_cult
+    culture = reachfolk
+
+    father = bullblood_gen_23
+    mother = bullblood_gen_24
+
+	trait = sign_tower
+
+    3353.10.8 = { birth = yes  }
+	3373.1.1 = { add_spouse = bullblood_gen_23_son_wife }
+    3407.1.15 = { death = { death_reason = death_archery_accident } } # Temp
+}
+bullblood_gen_23_son_wife = {
+    name = "Drisbellairn" 
+    religion = minotaur_cult
+    culture = reachfolk
+	female = yes
+
+	trait = sign_atronach
+
+    3352.11.2 = { birth = yes  }
+    3394.7.6 = { death = { death_reason = death_battle} }
+}
+bullblood_gen_23_son_daughter = { # Marries skjoralmor_102
+    name = "Foatra"
+    dynasty = 500002
+    religion = minotaur_cult
+    culture = reachfolk
+	female = yes
+
+    father = bullblood_gen_23_son
+    mother = bullblood_gen_23_son_wife
+
+	trait = sign_shadow
+
+    3373.5.22 = { birth = yes  }
+    3427.1.15 = { death = { death_reason = death_old_age } }
+}
+bullblood_gen_25 = {
+    name = "Shilia"
+	dynasty = 500002
+    female = yes
+    religion = minotaur_cult
+    culture = reachfolk
+
+    father = bullblood_gen_21
+    mother = bullblood_gen_22
+
+	trait = education_stewardship_1
+    trait = content
+    trait = gluttonous
+    trait = wrathful
+	trait = sign_lover
+
+    3336.2.28 = { birth = yes  }
+    3387.6.4 = {
+        death = { death_reason = death_hunting_accident  }
+    }
+}
+bullblood_gen_26 = {
+    name = "Morrilka" 
+	dynasty = 500002
+    female = yes
+    religion = minotaur_cult
+    culture = reachfolk
+
+    father = bullblood_gen_21
+    mother = bullblood_gen_22
+
+	trait = education_martial_1
+    trait = lustful
+    trait = forgiving
+    trait = arrogant
+	trait = sign_shadow
+
+    3338.5.11 = { birth = yes  }
+    3424.5.21 = { death = { death_reason = death_natural_causes }}
+}
+
+bullblood_1000 = {
+	name = "Alaric" #Count of Sungard & Breakwind ( Warlords & Interregnum )
+	dynasty = 500002
+	religion = minotaur_cult
+	culture = reachfolk
+	sexuality = bisexual
+
+	father = bullblood_gen_7
+    mother = bullblood_gen_8
+
+	trait = education_martial_3
+	trait = ambitious
+	trait = sadistic
+	trait = brave
+	trait = sign_steed
+	
+	3312.6.30 = { birth = yes }
+	3329.1.1 = { add_spouse = cinderheart_gen_111 }
+	3379.1.1 = { 
+		death = { 
+			death_reason = death_sacrificed_to_gods 
+			killer = bullblood_1003
+		}
+	}
+}
+bullblood_1001 = {
+	name = "Karadog"
+	dynasty = 500002
+	religion = minotaur_cult
+	culture = reachfolk
+	father = bullblood_1000
+	mother = cinderheart_gen_111
+
+	trait = education_martial_1
+	trait = cynical
+	trait = diligent
+	trait = craven
+	trait = sign_thief
+	
+	3329.12.5 = { birth = yes }
+	3356.1.1 = { add_spouse = bullblood_gen_25 }
+	3371.1.1 = { 
+		death = { 
+			death_reason = death_sacrificed_to_gods 
+			killer = bullblood_1000
+		}
+	}
+}
+bullblood_1002 = {
+	name = "Vardan" 
+	dynasty = 500002
+	religion = minotaur_cult
+	culture = reachfolk
+	father = bullblood_1000
+	mother = cinderheart_gen_111
+
+	trait = education_intrigue_2
+	trait = ambitious
+	trait = diligent
+	trait = zealous
+	trait = sign_lady
+	
+	3338.9.19 = { birth = yes }
+	3367.1.1 = {
+		employer = hillhunter_100
+		religion = old_gods
+	} #Goes to Dragontooth
+	3379.1.1 = {
+		employer = bullblood_1003
+	}
+	3390.1.1 = { death = yes }
+}
+
+bullblood_1003 = {
+	name = "Braic" #Count of Sungard & Breakwind
+	dynasty = 500002
+	religion = minotaur_cult
+	culture = reachfolk
+	father = bullblood_1001
+	mother = bullblood_gen_25
+	
+	3361.1.1 = { birth = yes }
+	3379.1.1 = {
+		religion = old_gods # influenced by uncle, becomes old_gods
+	}
+	3430.1.1 = { 
+		death = { 
+			death_reason = death_sacrificed_to_gods 
+			killer = bullblood_1005
+		}
+	}
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=female_hair_rtt_02
+			custom_clothes=f_clothes_sec_northern_war_nob_01_lo
+			custom_cloaks = female_furs_secular_fp1_nobility_02
+			custom_legwear=female_legwear_secular_mena_war_nobility_01
+		}
+	}
+}
+bullblood_1004 = {
+	name = "Adramelech" #Count of Sungard
+	dynasty = 500002
+	religion = old_gods
+	culture = reachfolk
+	father = bullblood_1003
+	
+	3390.1.1 = { birth = yes }
+	3442.1.1 = { 
+		death = { 
+			death_reason = death_sacrificed_to_gods 
+			killer = bullblood_1005
+		}
+	}
+}
+bullblood_1005 = {
+	name = "Leovic" #Count of Sungard
+	dynasty = 500002
+	religion = old_gods
+	culture = reachfolk
+	father = bullblood_1003
+	
+	3412.1.1 = { birth = yes }
+	3457.1.1 = { 
+		death = { 
+			death_reason = death_sacrificed_to_gods 
+			# HistoryToDo add killer other than son
+		}
+	}
+}
+#Dreadhorn Clan
+bullblood_1006 = {
+	name = "Gherig" #Duke of Sungard & Sunderstone ( Alliance War )
+	dynasty_house = bullblood_dreadhorn
+	religion = minotaur_cult
+	culture = reachfolk
+	father = bullblood_1003
+	
+	3452.1.1 = { birth = yes }
+	3503.1.1 = { 
+		death = { 
+			death_reason = death_battle #Killed by Vestige
+		}
+	}
+}
+bullblood_1007 = {
+	name = "Morrigh"
+	female = yes
+	dynasty_house = bullblood_dreadhorn
+	religion = minotaur_cult
+	culture = reachfolk
+	father = bullblood_1003
+	
+	3454.1.1 = { birth = yes }
+	3503.1.1 = { 
+		death = { 
+			death_reason = death_battle #Killed by Vestige
+		}
+	}
+}
+bullblood_1008 = {
+	name = "Erbogar" #Necromancer trio
+	dynasty_house = bullblood_dreadhorn
+	religion = minotaur_cult
+	culture = reachfolk
+	father = bullblood_1006
+	
+	3476.1.1 = { birth = yes }
+	3503.1.1 = { 
+		death = { 
+			death_reason = death_battle #Killed by Vestige
+		}
+	}
+}
+bullblood_1009 = {
+	name = "Mochveda" #Necromancer trio
+	female = yes
+	dynasty_house = bullblood_dreadhorn
+	religion = minotaur_cult
+	culture = reachfolk
+	father = bullblood_1006
+	
+	3478.1.1 = { birth = yes }
+	3503.1.1 = { 
+		death = { 
+			death_reason = death_battle #Killed by Vestige
+		}
+	}
+}
+bullblood_1010 = {
+	name = "Tuecille" #Necromancer trio
+	female = yes
+	dynasty_house = bullblood_dreadhorn
+	religion = minotaur_cult
+	culture = reachfolk
+	father = bullblood_1006
+	
+	3480.1.1 = { birth = yes }
+	3503.1.1 = { 
+		death = { 
+			death_reason = death_battle #Killed by Vestige
+		}
+	}
+}
+
+##Cinder-Heart Dynasty
+
+#House Cinder-Heart
+cinderheart_gen_100 = {
+    name = "Leovic" 
+    dynasty = 500006
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = bisexual
+
+	trait = education_martial_3
+    trait = shy
+    trait = sadistic
+    trait = deceitful
+	trait = sign_thief
+
+    3178.12.10 = { birth = yes  }
+    3207.5.28 = {
+        add_spouse = cinderheart_gen_101
+    }
+    3258.9.14 = { death = { death_reason = death_natural_causes } }
+}
+
+cinderheart_gen_101 = {
+    name = "Kaira" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = bisexual
+
+	trait = education_stewardship_2
+    trait = honest
+    trait = arrogant
+    trait = compassionate
+
+    3190.10.8 = { birth = yes  }
+    3254.10.14 = { death = { death_reason = death_vanished } }
+}
+
+cinderheart_gen_102 = {
+    name = "Eoline"
+	dynasty = 500006 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    father = cinderheart_gen_100
+    mother = cinderheart_gen_101
+
+    sexuality = heterosexual
+
+    trait = lustful
+    trait = generous
+    trait = deceitful
+
+    3219.5.26 = { birth = yes  }
+    3303.6.3 = { death = { death_reason = death_natural_causes } }
+}
+
+cinderheart_gen_103 = {
+    name = "Malug" 
+    dynasty = 500006
+    religion = old_gods
+    culture = reachfolk
+
+    father = cinderheart_gen_100
+    mother = cinderheart_gen_101
+
+    sexuality = heterosexual
+
+	trait = education_intrigue_3
+    trait = sadistic
+    trait = calm
+    trait = fickle
+	trait = sign_lady
+
+    3223.9.10 = { birth = yes  }
+    3250.5.7 = {
+        add_spouse = cinderheart_gen_104
+    }
+    3310.5.11 = { death = { death_reason = death_natural_causes } }
+}
+
+cinderheart_gen_104 = {
+    name = "Lydi" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = heterosexual
+
+    trait = humble
+    trait = stubborn
+    trait = cynical
+
+    3233.3.1 = { birth = yes  }
+    3311.6.3 = { death = { death_reason = death_natural_causes } }
+}
+
+cinderheart_gen_105 = {
+    name = "Corboar" 
+    dynasty = 500006
+    religion = old_gods
+    culture = reachfolk
+
+    father = cinderheart_gen_103
+    mother = cinderheart_gen_104
+
+    sexuality = heterosexual
+
+    trait = sadistic
+    trait = lustful
+    trait = calm
+
+    3258.6.2 = { birth = yes  }
+    3282.6.10 = {
+        add_spouse = cinderheart_gen_106
+    }
+    3340.11.25 = { death = { death_reason = death_natural_causes } }
+}
+
+cinderheart_gen_106 = {
+    name = "Gellhueil" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = asexual
+
+    trait = forgiving
+    trait = arbitrary
+    trait = gluttonous
+
+    3265.4.7 = { birth = yes  }
+    3318.2.12 = {
+        death = { death_reason = death_ritually_eaten  }
+    }
+}
+
+cinderheart_gen_107 = {
+    name = "Melka" 
+	dynasty = 500006
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    father = cinderheart_gen_105
+    mother = cinderheart_gen_106
+
+    sexuality = heterosexual
+	trait = education_diplomacy_2
+    trait = content
+    trait = arrogant
+    trait = cynical
+	trait = sign_lover
+	trait = p_ob_molag
+    3292.2.1 = { birth = yes  }
+	3316.1.1 = { add_matrilineal_spouse = cinderheart_gen_107_spouse }
+    3368.6.25 = { death = { death_reason = death_natural_causes } }
+}
+cinderheart_gen_107_spouse = {
+	name = "Pryner"
+	religion = old_gods
+    culture = reachfolk
+
+	trait = sign_mage
+	3294.4.12 = { birth = yes}
+	3367.1.1 = { death = { death_reason = death_natural_causes } }
+}
+
+cinderheart_gen_108 = {
+    name = "Malug" 
+    dynasty = 500006
+    religion = old_gods
+    culture = reachfolk
+
+    father = cinderheart_gen_103
+    mother = cinderheart_gen_104
+
+    sexuality = heterosexual
+
+    trait = arbitrary
+    trait = callous
+    trait = brave
+
+    3264.5.9 = { birth = yes  }
+    3294.10.23 = {
+        add_spouse = cinderheart_gen_109
+    }
+    3353.2.3 = { death = { death_reason = death_natural_causes } }
+}
+
+cinderheart_gen_109 = {
+    name = "Aydsil" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = heterosexual
+
+    trait = fickle
+    trait = humble
+    trait = trusting
+
+    3277.5.17 = { birth = yes  }
+    3341.9.12 = { death = { death_reason = death_natural_causes } }
+}
+
+cinderheart_gen_110 = {
+    name = "Taerma"
+	dynasty = 500006
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    father = cinderheart_gen_108
+    mother = cinderheart_gen_109
+
+    sexuality = asexual
+	trait = education_diplomacy_1
+    trait = generous
+    trait = shy
+    trait = impatient
+	trait = sign_lover
+
+    3307.2.10 = { birth = yes  }
+	3360.1.1 = { add_trait = cancer }
+    3360.8.5 = {
+        death = { death_reason = death_cancer }
+    }
+}
+
+cinderheart_gen_111 = {
+    name = "Earcnait" 
+	dynasty = 500006
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    father = cinderheart_gen_108
+    mother = cinderheart_gen_109
+
+    sexuality = heterosexual
+
+	trait = education_intrigue_1
+    trait = generous
+    trait = humble
+    trait = temperate
+	trait = sign_lover
+
+    3311.2.16 = { birth = yes  }
+	# 3329 marries bullblood_1000
+    3377.7.22 = { death = { death_reason = death_natural_causes } }
+}
+
+cinderheart_gen_112 = {
+    name = "Strastnoc" 
+    dynasty = 500006
+    religion = old_gods
+    culture = reachfolk
+
+    father = cinderheart_gen_100
+    mother = cinderheart_gen_101
+
+    sexuality = homosexual
+
+    trait = generous
+    trait = gluttonous
+    trait = impatient
+
+    3225.11.3 = { birth = yes  }
+    3254.6.9 = {
+        add_spouse = cinderheart_gen_113
+    }
+    3293.5.26 = { death = { death_reason = death_natural_causes } }
+}
+
+cinderheart_gen_113 = {
+    name = "Enngotain" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = bisexual
+
+    trait = content
+    trait = gluttonous
+    trait = calm
+
+    3237.12.11 = { birth = yes  }
+    3315.1.27 = { death = { death_reason = death_natural_causes } }
+}
+
+cinderheart_gen_114 = {
+    name = "Shorrin" 
+	dynasty = 500006
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    father = cinderheart_gen_112
+    mother = cinderheart_gen_113
+
+    3265.9.13 = { birth = yes  }
+	# 3298 marries thornroot_998
+    3338.12.11 = { death = { death_reason = death_natural_causes } }
+}
+
+cinderheart_gen_115 = {
+    name = "Eionneirg" 
+	dynasty = 500006
+    religion = old_gods
+    culture = reachfolk
+
+    father = cinderheart_gen_112
+    mother = cinderheart_gen_113
+
+    sexuality = bisexual
+
+    3266.2.13 = { birth = yes  }
+	# 3301 marries croweye_98
+    3331.3.15 = { death = { death_reason = death_natural_causes } }
+}
+
+
+cinderheart_100 = {
+	name = "Foalka" #Count of Hroldan ( Warlords )
+	female = yes
+	dynasty = 500006
+	culture = reachfolk
+	religion = old_gods
+	mother = cinderheart_gen_107
+	father = cinderheart_gen_107_spouse
+
+	trait = education_diplomacy_2
+	trait = brave
+	trait = lustful
+	trait = cynical
+	trait = wounded_1
+	trait = sign_atronach
+	trait = p_ob_molag
+	sexuality = heterosexual
+
+	3317.11.3 = { birth = yes }
+	3333.1.1 = { add_matrilineal_spouse = reachhusband_1000 }
+	3337.1.1 = { effect = { make_concubine = character:cinderheart_100_concubine } }
+	3359.1.1 = { #to prevent doubling up of patron traits
+		give_nickname = nick_the_bold
+	}	
+	3369.1.1 = { death = yes }
+}
+reachhusband_1000 = {
+	name = "Stral"
+	culture = reachfolk
+	religion = molag_cult
+
+	trait = education_learning_2
+	trait = just
+	trait = generous
+	trait = callous
+	trait = sign_warrior
+	
+	3316.8.14 = { birth = yes }
+	3369.1.1 = { death = yes }
+}
+cinderheart_100_concubine = {
+	name = "Gallnellan"
+	culture = reachfolk
+	religion = hircine_coven
+
+	trait = vengeful
+	trait = shy
+	trait = arrogant
+	trait = education_martial_1
+	trait = sign_apprentice
+
+	3319.7.25 = { birth = yes }
+	3374.1.1 = { death = yes }
+}
+cinderheart_100_concubine_son = {
+	name = "Gallnellan"
+	culture = reachfolk
+	religion = old_gods
+	father = cinderheart_100_concubine
+	mother = cinderheart_100
+
+	trait = sign_mage
+
+	3358.4.3 = { birth = yes }
+	3397.1.1 = { death = yes }
+}
+cinderheart_101 = {
+	name = "Madka" #Count of Hroldan ( Interregnum )
+	female = yes
+	dynasty = 500006
+	culture = reachfolk
+	religion = old_gods
+	father = reachhusband_1000
+	mother = cinderheart_100
+
+	trait = brave
+	trait = temperate
+	trait = impatient
+	trait = education_diplomacy_2
+	trait = sign_shadow
+	sexuality = bisexual
+
+	3342.5.28 = { birth = yes }
+	3360.1.1 = { add_matrilineal_spouse = sanuarach_101c }
+	3396.1.1 = { death = yes }
+}
+cinderheart_102 = {
+	name = "Alastyr" #Count of Hroldan
+	dynasty = 500006
+	culture = reachfolk
+	religion = old_gods
+	father = sanuarach_101c
+	mother = cinderheart_101
+
+	trait = sign_thief
+
+	3361.12.10 = { birth = yes }
+	3439.1.1 = { death = yes }
+}
+cinderheart_103 = {
+	name = "Madlan"
+	dynasty = 500006
+	culture = reachfolk
+	religion = old_gods	
+	father = sanuarach_101c
+	mother = cinderheart_101
+
+	3365.1.1 = { birth = yes }
+	3446.1.1 = { death = yes }
+}
+cinderheart_104 = {
+	name = "Ulrych"
+	dynasty = 500006
+	culture = reachfolk
+	religion = old_gods	
+	father = cinderheart_103
+
+	3390.1.1 = { birth = yes }
+	3462.1.1 = { death = yes }
+}
+cinderheart_105 = {
+	name = "Alach" #Count of Hroldan
+	dynasty = 500006
+	culture = reachfolk
+	religion = old_gods
+	father = cinderheart_102
+	
+	3400.1.1 = { birth = yes }
+	3478.1.1 = { death = yes }
+}
+cinderheart_106 = {
+	name = "Agrnach" #Count of Hroldan | Loses it to River-Elk Clan
+	dynasty = 500006
+	culture = reachfolk
+	religion = old_gods
+	father = cinderheart_105
+
+	3420.1.1 = { birth = yes }
+	3489.1.1 = { death = yes }
+}
+cinderheart_107 = {
+	name = "Mornach"
+	dynasty = 500006
+	culture = reachfolk
+	religion = old_gods
+	father = cinderheart_104
+
+	3442.1.1 = { birth = yes }
+	3508.1.1 = { death = yes }
+}
+cinderheart_108 = {
+	name = "Teodcen"
+	dynasty = 500006
+	culture = reachfolk
+	religion = old_gods
+	father = cinderheart_107
+
+	3486.1.1 = { birth = yes }
+	3560.1.1 = { death = yes }
+}
+cinderheart_109 = {
+	name = "Adramelech" #Count of Soljund ( Alliance War )
+	dynasty = 500006
+	culture = reachfolk
+	religion = old_gods
+	father = cinderheart_106
+
+	3466.1.1 = { birth = yes }
+	3539.1.1 = { death = yes }
+}
+cinderheart_110 = {
+	name = "Aldraig" #Count of Soljund
+	dynasty = 500006
+	culture = reachfolk
+	religion = old_gods
+	father = cinderheart_109
+
+	3486.1.1 = { birth = yes }
+	3559.1.1 = { death = yes }
+}
+
+##River-Elk Clan (500066)
+river_elk_gen_1 = {
+    name = "Paidi"
+	female = yes 
+    dynasty = 500066
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = heterosexual
+
+    trait = vengeful
+    trait = trusting
+    trait = lazy
+
+    3204.6.1 = { birth = yes }
+    3228.11.1 = {
+        add_matrilineal_spouse = river_elk_gen_2
+    }
+    3265.6.11 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_2 = {
+    name = "Mogen" 
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = heterosexual
+
+    trait = paranoid
+    trait = greedy
+    trait = ambitious
+
+    3211.9.26 = { birth = yes }
+    3289.9.19 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_3 = {
+    name = "Cosnach" 
+    dynasty = 500066
+    religion = old_gods
+    culture = reachfolk
+
+    mother = river_elk_gen_1
+    father = river_elk_gen_2
+
+    sexuality = heterosexual
+
+    trait = sadistic
+    trait = zealous
+    trait = honest
+
+    3238.12.11 = { birth = yes }
+    3263.4.6 = {
+        add_spouse = river_elk_gen_4
+    }
+    3322.6.28 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_4 = {
+    name = "Uaika" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = heterosexual
+
+    trait = lustful
+    trait = just
+    trait = arrogant
+
+    3246.7.12 = { birth = yes }
+    3334.3.15 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_5 = {
+    name = "Avelra"
+	female = yes
+    dynasty = 500066
+    religion = old_gods
+    culture = reachfolk
+
+    father = river_elk_gen_3
+    mother = river_elk_gen_4
+
+    sexuality = heterosexual
+
+    trait = shy
+    trait = craven
+    trait = vengeful
+
+    3279.6.22 = { birth = yes }
+    3307.12.10 = {
+        add_matrilineal_spouse = river_elk_gen_6
+    }
+    3355.11.1 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_6 = {
+    name = "Congorn" 
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = heterosexual
+
+    trait = callous
+    trait = brave
+    trait = just
+
+    3290.8.23 = { birth = yes }
+    3352.11.25 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_7 = {
+    name = "Bedven" 
+    dynasty = 500066
+    religion = old_gods
+    culture = reachfolk
+
+    mother = river_elk_gen_5
+    father = river_elk_gen_6
+
+    sexuality = heterosexual
+	trait = education_stewardship_4
+    trait = impatient
+    trait = fickle
+    trait = calm
+	trait = sign_lord
+    3316.3.3 = { birth = yes }
+    3345.11.19 = {
+        add_spouse = river_elk_gen_8
+    }
+    3402.3.22 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_8 = {
+    name = "Foale" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = heterosexual
+	trait = education_stewardship_2
+    trait = stubborn
+    trait = forgiving
+    trait = diligent
+	trait = sign_apprentice
+    3328.7.8 = { birth = yes }
+    3399.7.21 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_9 = {
+    name = "Vardan" 
+    dynasty = 500066
+    religion = old_gods
+    culture = reachfolk
+
+    father = river_elk_gen_7
+    mother = river_elk_gen_8
+	
+    trait = humble
+	trait = bossy
+	trait = sign_tower
+	disallow_random_traits = yes
+
+    3353.10.12 = { birth = yes }
+	3369.10.12 = {
+		sexuality = heterosexual
+		trait = education_diplomacy_3
+		trait = patient
+    	trait = compassionate
+		remove_trait = bossy
+	}
+    3383.7.2 = {
+        add_spouse = river_elk_gen_10
+    }
+    3443.2.24 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_10 = {
+    name = "Beirma" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = bisexual
+
+    trait = generous
+    trait = just
+    trait = shy
+
+    3366.12.4 = { birth = yes }
+    3411.5.22 = {
+        death = { death_reason = death_ritually_eaten  }
+    }
+}
+river_elk_gen_11 = {
+    name = "Daighre" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    father = river_elk_gen_7
+    mother = river_elk_gen_8
+    
+    trait = arbitrary
+	trait = rowdy
+	trait = sign_apprentice
+	disallow_random_traits = yes
+
+    3355.7.10 = { birth = yes }
+	3369.1.1 = {
+		sexuality = heterosexual
+		trait = wrathful
+		trait = humble
+	}
+	3371.7.10 = {
+		trait = education_intrigue_1
+		remove_trait = rowdy
+	}
+    3418.4.27 = {
+        death = { death_reason = death_ritually_eaten  }
+    }
+}
+river_elk_gen_12 = {
+    name = "Verrik" 
+    dynasty = 500066
+    religion = old_gods
+    culture = reachfolk
+
+    father = river_elk_gen_7
+    mother = river_elk_gen_8
+
+	trait = sign_shadow
+	trait = pensive
+    disallow_random_traits = yes
+    
+    3358.5.25 = { birth = yes }
+	3369.1.1 = {
+		trait = greedy
+	}
+	3374.5.25 = {
+		sexuality = bisexual
+		trait = education_intrigue_2
+		trait = calm
+    	trait = shy
+		remove_trait = pensive
+	}
+	3419.7.14 = { death = { death_reason = death_natural_causes } }
+    3384.9.1 = {
+        add_spouse = river_elk_gen_13
+    }
+    3419.7.14 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_13 = {
+    name = "Arana" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = heterosexual
+
+    trait = generous
+    trait = chaste
+    trait = stubborn
+
+    3367.7.6 = { birth = yes }
+    3446.8.16 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_14 = {
+    name = "Fascune" 
+    dynasty = 500066
+    religion = old_gods
+    culture = reachfolk
+
+    father = river_elk_gen_7
+    mother = river_elk_gen_8
+
+    sexuality = heterosexual
+
+    trait = generous
+    trait = gregarious
+    trait = calm
+
+    3361.2.5 = { birth = yes }
+    3390.10.15 = {
+        add_spouse = river_elk_gen_15
+    }
+    3443.4.8 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_15 = {
+    name = "Bodfira" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = heterosexual
+
+    trait = callous
+    trait = lazy
+    trait = content
+
+    3373.2.14 = { birth = yes }
+    3457.10.3 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_16 = {
+    name = "Isolen"
+	female = yes
+    dynasty = 500066
+    religion = old_gods
+    culture = reachfolk
+
+    mother = river_elk_gen_5
+    father = river_elk_gen_6
+
+    sexuality = heterosexual
+	trait = education_stewardship_1
+    trait = vengeful
+    trait = lazy
+    trait = calm
+	trait = sign_warrior
+
+    3320.8.1 = { birth = yes }
+    3344.6.24 = {
+        add_matrilineal_spouse = river_elk_gen_17
+    }
+    3394.4.24 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_17 = {
+    name = "Keltorgan" 
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = heterosexual
+	trait = education_learning_3
+    trait = deceitful
+    trait = zealous
+    trait = generous
+	trait = sign_thief
+
+    3327.12.1 = { birth = yes }
+    3390.12.4 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_18 = {
+    name = "Cantillikh"
+	female = yes
+    dynasty = 500066
+    religion = old_gods
+    culture = reachfolk
+
+    mother = river_elk_gen_16
+    father = river_elk_gen_17
+
+	trait = bossy
+	trait = sign_ritual
+	disallow_random_traits = yes
+
+    3355.1.20 = { birth = yes }
+	3369.1.1 = {
+		sexuality = homosexual
+		trait = wrathful
+    	trait = lustful
+    	trait = temperate
+	}
+    3384.5.9 = {
+        add_same_sex_spouse = river_elk_gen_19
+    }
+    3432.9.3 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_19 = {
+    name = "Nelldena" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+	trait = sign_warrior
+
+    3367.8.18 = { birth = yes }
+	3380.1.1 = { sexuality = bisexual }
+    3428.11.6 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_20 = {
+    name = "Kevinne" 
+    dynasty = 500066
+    religion = old_gods
+    culture = reachfolk
+
+    mother = river_elk_gen_16
+    father = river_elk_gen_17
+
+	  trait = sign_lover
+	  trait = bossy
+	  disallow_random_traits = yes
+
+    3358.2.5 = { birth = yes }
+	  3369.1.1 = {
+		  trait = honest
+   		trait = calm
+	}
+	3374.2.5 = {
+		sexuality = asexual
+		trait = education_learning_2
+		trait = arrogant
+		remove_trait = bossy
+	}
+    3387.7.28 = {
+        add_spouse = river_elk_gen_21
+    }
+    3435.6.11 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_21 = {
+    name = "Bani" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+	trait = sign_thief
+
+    3370.12.14 = { birth = yes }
+    3444.8.9 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_22 = {
+    name = "Aydsil" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    mother = river_elk_gen_16
+    father = river_elk_gen_17
+
+    trait = sign_steed
+	disallow_random_traits = yes
+
+    3360.6.22 = { birth = yes }
+	3369.1.1 = {
+		trait = pensive
+	}
+    3450.4.24 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_23 = {
+    name = "Kradore" 
+    dynasty = 500066
+    religion = old_gods
+    culture = reachfolk
+
+    mother = river_elk_gen_5
+    father = river_elk_gen_6
+
+    sexuality = heterosexual
+
+	trait = education_intrigue_4
+    trait = gluttonous
+    trait = compassionate
+    trait = fickle
+	trait = sign_warrior
+
+    3322.8.16 = { birth = yes }
+    3353.5.12 = {
+        add_spouse = river_elk_gen_24
+    }
+    3363.2.15 = {
+        death = { death_reason = death_typhus }
+    }
+}
+river_elk_gen_24 = {
+    name = "Ciana"
+	dynasty = 500014
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+	father = sarkarain_100
+	mother = sarkarain_100_lover
+	# 'bastard'
+	trait = wild_oat
+    sexuality = heterosexual
+	trait = education_intrigue_2
+    trait = generous
+    trait = forgiving
+    trait = stubborn
+	trait = sign_warrior
+
+    3327.8.22 = { birth = yes }
+    3371.7.6 = {
+        death = { death_reason = death_ritually_eaten  }
+    }
+}
+river_elk_gen_25 = {
+    name = "Karadog" 
+    dynasty = 500066
+    religion = old_gods
+    culture = reachfolk
+
+    father = river_elk_gen_23
+    mother = river_elk_gen_24
+
+	trait = sign_apprentice
+	disallow_random_traits = yes
+
+    3360.7.23 = { birth = yes }
+	3369.1.1 = {
+		trait = bossy
+	}
+    3386.7.23 = {
+        add_spouse = river_elk_gen_26
+    }
+    3450.5.2 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_26 = {
+    name = "Malvina" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+	trait = sign_shadow
+	disallow_random_traits = yes
+
+    3369.5.16 = { birth = yes }
+    3440.12.13 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_27 = {
+    name = "Braile"
+	female = yes
+    dynasty = 500066
+    religion = old_gods
+    culture = reachfolk
+
+    mother = river_elk_gen_5
+    father = river_elk_gen_6
+
+    sexuality = heterosexual
+
+	trait = education_martial_3
+    trait = arrogant
+    trait = deceitful
+    trait = gregarious
+	trait = sign_ritual
+
+    3324.1.25 = { birth = yes }
+    3347.7.25 = {
+        add_matrilineal_spouse = river_elk_gen_28
+    }
+    3408.9.18 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_28 = {
+    name = "Dremar" 
+    religion = old_gods
+    culture = reachfolk
+
+    sexuality = bisexual
+	trait = education_learning_2
+    trait = calm
+    trait = lustful
+    trait = craven
+	trait = sign_steed
+
+    3330.6.3 = { birth = yes }
+    3417.8.27 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_29 = {
+    name = "Senan" 
+    dynasty = 500066
+    religion = old_gods
+    culture = reachfolk
+
+    mother = river_elk_gen_27
+    father = river_elk_gen_28
+
+	trait = sign_apprentice
+	trait = charming
+	disallow_random_traits = yes
+
+    3355.7.3 = { birth = yes }
+	3369.1.1 = {
+		sexuality = heterosexual
+		trait = forgiving
+		trait = cynical
+		trait = gregarious
+	}
+	3371.7.3 = {
+        remove_trait = charming
+    }
+    3380.8.16 = {
+        add_spouse = river_elk_gen_30
+    }
+    3420.3.28 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_30 = {
+    name = "Desevaen" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+	trait = sign_lady
+
+    3363.9.10 = { birth = yes }
+    3393.8.28 = {
+        death = { death_reason = death_ritually_eaten  }
+    }
+}
+river_elk_gen_31 = {
+    name = "Cuhlecain" 
+    dynasty = 500066
+    religion = old_gods
+    culture = reachfolk
+
+    mother = river_elk_gen_27
+    father = river_elk_gen_28
+
+	trait = sign_thief
+	trait = bossy
+	disallow_random_traits = yes
+
+    3357.12.16 = { birth = yes }
+	3369.1.1 = {
+		trait = arbitrary
+    trait = callous
+	}
+	3373.12.16 = {
+		remove_trait = bossy
+	}
+    3384.9.24 = {
+        add_spouse = river_elk_gen_32
+    }
+    3447.11.17 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_32 = {
+    name = "Delait" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+	trait = sign_mage
+
+    3367.4.6 = { birth = yes }
+    3427.12.17 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_33 = {
+    name = "Teodven" 
+    dynasty = 500066
+    religion = old_gods
+    culture = reachfolk
+
+    mother = river_elk_gen_27
+    father = river_elk_gen_28
+
+	trait = sign_lady
+	trait = curious
+	disallow_random_traits = yes
+
+    3359.9.10 = { birth = yes }
+	3369.9.10 = {
+		trait = compassionate
+		trait = deceitful
+	}
+	3375.9.10 = {
+		remove_trait = curious
+	}
+    3381.9.4 = {
+        add_spouse = river_elk_gen_34
+    }
+    3439.9.7 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_34 = {
+    name = "Ferrenna" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+	trait = sign_ritual
+
+    3364.1.12 = { birth = yes }
+    3426.1.10 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_35 = {
+    name = "Kaitra" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    mother = river_elk_gen_27
+    father = river_elk_gen_28
+
+	trait = sign_lady
+
+    3361.9.28 = { birth = yes }
+    3432.10.28 = { death = { death_reason = death_natural_causes } }
+}
+river_elk_gen_36 = {
+    name = "Bedene" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    mother = river_elk_gen_1
+    father = river_elk_gen_2
+
+    sexuality = heterosexual
+
+    trait = calm
+    trait = trusting
+    trait = patient
+
+    3242.9.25 = { birth = yes }
+    3296.8.22 = {
+        death = { death_reason = death_ritually_eaten  }
+    }
+}
+river_elk_gen_37 = {
+    name = "Rhiada" 
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+
+    mother = river_elk_gen_1
+    father = river_elk_gen_2
+
+    sexuality = homosexual
+
+    trait = sadistic
+    trait = lazy
+    trait = gregarious
+
+    3245.2.18 = { birth = yes }
+    3327.12.7 = { death = { death_reason = death_natural_causes } }
+}
+
+
+
+##Crow-Eye Dynasty
+
+#House Crow-Eye
+croweye_97 = {
+	name = "Eggeln"
+	female = yes
+	dynasty = 500012
+	culture = reachfolk
+	religion = old_gods
+
+	trait = education_diplomacy_3
+	trait = calm
+	trait = sadistic
+	trait = lazy
+
+	3271.1.1 = { birth = yes }
+	3301.1.1 = { add_matrilineal_spouse = cinderheart_gen_115 }
+	3331.1.1 = { death = yes }
+}
+croweye_98 = {
+	name = "Cuhletra"
+	female = yes
+	dynasty = 500012
+	culture = reachfolk
+	religion = old_gods
+	mother = croweye_97
+	father = cinderheart_gen_115
+
+	trait = education_intrigue_2
+	trait = just
+	trait = fickle
+	trait = cynical
+
+	3303.3.12 = { birth = yes }
+	3337.1.1 = { add_matrilineal_spouse = croweye_98_husband }
+	3339.1.1 = { death = { death_reason = death_childbirth } }
+}
+croweye_98_husband = {
+	name = "Cuhleric"
+	culture = reachfolk
+	religion = old_gods
+
+	trait = education_diplomacy_1
+	trait = shy
+	trait = craven
+	trait = chaste
+	trait = sign_apprentice
+
+	3308.7.9 = { birth = yes }
+	3361.1.1 = { death = yes }
+}
+croweye_98_brother = {
+	name = "Dremar"
+	dynasty = 500012
+	culture = reachfolk
+	religion = old_gods
+	mother = croweye_97
+	father = cinderheart_gen_115
+
+	trait = education_intrigue_3
+	trait = impatient
+	trait = brave
+	trait = zealous
+	trait = sign_mage
+
+	3305.4.21 = { birth = yes }
+	# 3334 marries froststone_999
+	3367.9.16 = { death = yes }
+}
+croweye_98_sister = {
+	name = "Glynnetal"
+	female = yes
+	dynasty = 500012
+	culture = reachfolk
+	religion = old_gods
+	mother = croweye_97
+	father = cinderheart_gen_115
+
+	trait = education_diplomacy_2
+	trait = chaste
+	trait = fickle
+	trait = calm
+	trait = sign_steed
+
+	3312.6.27 = { birth = yes }
+	3366.12.3 = { death = yes }
+}
+croweye_98_sister_son = {
+	name = "Cullearn"
+	dynasty = 500012
+	culture = reachfolk
+	religion = old_gods
+	mother = croweye_98_sister
+
+	trait = education_diplomacy_1
+	trait = calm
+	trait = vengeful
+	trait = deceitful
+	trait = wild_oat
+	trait = sign_tower
+
+	3337.10.9 = { birth = yes }
+	3397.1.1 = { death = yes }
+}
+croweye_99 = {
+	name = "Andlan" #Duke of Karthwasten ( Warlords & Interregnum )
+	dynasty = 500012
+	culture = reachfolk
+	religion = old_gods
+	mother = croweye_98
+	father = croweye_98_husband
+
+	trait = education_diplomacy_1
+	trait = chaste
+	trait = forgiving
+	trait = paranoid
+	trait = sign_ritual
+	
+	3339.1.9 = { birth = yes }
+	3351.1.1 = { add_spouse = croweye_99_wife  }
+	3351.5.5 = { effect = { learn_language = language_nordic } } #Learned wife's language, how sweet of him
+	3359.1.1 = {
+		effect = {
+			if = {
+				limit = { character:reachbreaker_101 = { is_alive = yes } }
+				add_opinion = {
+					modifier = threatened_opinion
+					target = character:reachbreaker_101
+				}
+			}
+		}
+	}
+	3359.6.1 = {
+		effect = {
+			if = {
+				limit = { character:reachbreaker_101 = { is_alive = yes } }
+				add_opinion = {
+					modifier = forgot_name_opinion
+					target = character:reachbreaker_101
+					opinion = -15
+				}
+			}
+		}
+	}
+	3407.1.1 = { death = yes }
+}
+croweye_99_wife = {
+	name = "Elle"
+	dynasty = dyn_bolger
+	female = yes
+	culture = westmarcher
+	religion = old_gods
+	father = bolger_105
+
+	trait = education_intrigue_2
+	trait = forgiving
+	trait = calm
+	trait = honest
+	trait = sign_lord
+
+	3335.3.1 = { birth = yes }
+	3340.1.1 = { effect = { learn_language = language_bretic } }
+	3381.1.1 = { death = yes }
+}
+croweye_100 = {
+	name = "Strastnoc" #Duke of Karthwasten
+	dynasty = 500012
+	culture = reachfolk
+	religion = old_gods
+	father = croweye_99
+	mother = croweye_99_wife
+
+	trait = charming
+	trait = sign_warrior
+	disallow_random_traits = yes
+	
+	3354.8.5 = { birth = yes }
+	3430.1.1 = { death = yes }
+}
+croweye_101 = {
+	name = "Alix"
+	female = yes
+	dynasty = 500012
+	culture = reachfolk
+	religion = old_gods
+	father = croweye_99
+	mother = croweye_99_wife
+
+	trait = sign_atronach
+	
+	3359.11.14 = { birth = yes }
+	3439.1.1 = { death = yes }
+}
+croweye_101_sister = {
+	name = "Evone"
+	female = yes
+	dynasty = 500012
+	culture = reachfolk
+	religion = old_gods
+	father = croweye_99
+	mother = croweye_99_wife
+
+	trait = sign_steed
+	
+	3365.6.4 = { birth = yes }
+	3452.1.1 = { death = yes }
+}
+croweye_102 = {
+	name = "Kyrtos" #Duke of Karthwasten
+	dynasty = 500012
+	culture = reachfolk
+	religion = old_gods
+	father = croweye_100
+	
+	3391.1.1 = { birth = yes }
+	3467.1.1 = { death = yes }
+}
+croweye_103 = {
+	name = "Cuhleric" #Duke of Karthwasten ( alliance war )
+	dynasty = 500012
+	culture = reachfolk
+	religion = old_gods
+	father = croweye_102
+	
+	3459.1.1 = { birth = yes }
+	3531.1.1 = { death = yes }
+}
+croweye_104 = {
+	name = "Mordastyr" #Heir to Karthwasten
+	dynasty = 500012
+	culture = reachfolk
+	religion = old_gods
+	father = croweye_102
+	
+	3486.1.1 = { birth = yes }
+	3549.1.1 = { death = yes }
+}
+croweye_105 = {
+	name = "Mya"
+	female = yes
+	dynasty = 500012
+	culture = reachfolk
+	religion = old_gods
+	father = croweye_102
+	
+	3488.1.1 = { birth = yes }
+	3553.1.1 = { death = yes }
+}
+
+## Red-Crow Dynasty
+
+#House Red-Crow
+redcrow_100 = {
+	name = "Morven" #Count of Ragnvald & Leylan
+	dynasty = 500011
+	culture = reachfolk
+	religion = old_gods
+	father = reachbreaker_105
+	
+	3362.1.1 = { birth = yes }
+	3424.1.1 = { death = yes }
+}
+redcrow_101 = {
+	name = "Teodcen" #Count of Ragnvald & Leylan
+	dynasty = 500011
+	culture = reachfolk
+	religion = old_gods
+	father = redcrow_100
+	
+	3392.1.1 = { birth = yes }
+	3474.1.1 = { death = yes }
+}
+redcrow_102 = {
+	name = "Tynan" #Count of Ragnvald & Leylan
+	dynasty = 500011
+	culture = reachfolk
+	religion = old_gods
+	father = redcrow_100
+	
+	3460.1.1 = { birth = yes }
+	3528.1.1 = { death = yes }
+}
+
+## Bloodcaller Dynasty (500019)
+
+#House Bloodcaller
+
+bloodcaller_1000 = {
+	name = "Grivier" #ESO
+	dynasty = 500019
+	culture = reachfolk
+	religion = molag_cult
+	
+	3456.1.1 = { birth = yes }
+	3503.1.1 = { death = yes }
+}
+
+##Lowborns, Wives, Husbands etc.
+
+reachwife_1000 = {
+	name = "Petua"
+	dna = reachwife_petua_dna_entry
+	dynasty_house = aoife_aelfgifu
+	culture = reachfolk
+	religion = old_gods
+	female = yes
+
+	mother = reachwife_1000_mom #In 00_nedes.txt
+	father = reachwife_1000_dad #In 00_nedes.txt
+
+	trait = content
+	trait = stubborn
+	trait = impatient
+	trait = family_first
+	
+	3300.1.1 = { birth = yes }
+	3315.1.1 = { effect = { learn_language = language_nordic } }
+	3361.1.1 = { death = yes }
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=female_hair_northern_01
+			custom_beards=female_empty
+		}
+	}
+}
+
+## Froststone Dynasty (froststone)
+#House Froststone
+
+froststone_999_father = {
+	name = "Ulrych"
+	culture = reachfolk
+	religion = hircine_coven
+
+	3269.1.1 = { birth = yes }
+	3329.1.1 = { death = yes }
+}
+froststone_999_mother = {
+	name = "Bevela"
+	female = yes
+	culture = reachfolk
+	religion = old_gods
+
+	3283.1.1 = { birth = yes }
+	3347.1.1 = { death = yes }
+}
+froststone_999 = {
+	name = "Madna"
+	female = yes
+	dynasty = froststone
+	culture = reachfolk
+	religion = old_gods
+	father = froststone_999_father
+	mother = froststone_999_mother
+
+	trait = education_martial_2
+	trait = wrathful
+	trait = ambitious
+	trait = patient
+	trait = sign_shadow
+
+	3301.5.26 = { birth = yes }
+	3334.1.1 = { add_spouse = croweye_98_brother }
+	3356.1.1 = { death = yes }
+}
+froststone_1000 = {
+	name = "Braich"
+	dynasty = froststone
+	culture = reachfolk
+	religion = old_gods
+	mother = froststone_999
+	father = croweye_98_brother
+
+	trait = education_diplomacy_2
+	trait = wrathful
+	trait = humble
+	trait = temperate
+	trait = sign_warrior
+	
+	3339.8.11 = { birth = yes }
+	3355.2.9 = { add_spouse = froststone_1000_wife }
+	3362.1.1 = { religion = hircine_coven }
+	3399.9.3 = { death = yes }
+}
+frststone_1000_sister = {
+	name = "Kienola"
+	female = yes
+	dynasty = froststone
+	culture = reachfolk
+	religion = old_gods
+	mother = froststone_999
+	father = croweye_98_brother
+
+	trait = education_martial_2
+	trait = wrathful
+	trait = ambitious
+	trait = patient
+	trait = sign_lord
+
+	3342.3.21 = { birth = yes }
+	3401.9.5 = { death = yes }
+}
+froststone_1000_wife = {
+	name = "Morrika"
+	female = yes
+	culture = reachfolk
+	religion = hircine_coven
+
+	trait = education_diplomacy_2
+	trait = humble
+	trait = compassionate
+	trait = paranoid
+	trait = sign_tower
+	
+	3338.10.21 = { birth = yes }
+	3399.1.1 = { death = yes }
+}
+froststone_1001 = {
+	name = "Edwastyr"
+	dynasty = froststone
+	culture = reachfolk
+	religion = hircine_coven
+
+	trait = charming
+	trait = sign_lover
+	disallow_random_traits = yes
+
+	father = froststone_1000
+	mother = froststone_1000_wife
+	
+	3356.3.18 = { birth = yes }
+	3369.3.18 = {
+		remove_trait = charming
+		trait = calm
+		trait = arrogant
+		trait = fickle
+	}
+	3427.10.6 = { death = yes }
+}
+
+## Seablood Dynasty (dynn_seablood)
+seablood_1000 = {
+	name = "Kailka"
+	female = yes
+	dynasty = dynn_seablood
+	culture = reachfolk
+	religion = old_gods
+
+	trait = education_intrigue_4
+	trait = sign_lord
+
+	3271.3.12 = { birth = yes }
+	3351.5.17 = { death = {
+		death_reason = death_battle
+		killer = thricepierced_104
+		}
+	}
+}
+seablood_1001 = {
+    name = "Zozubeth"
+	dynasty = dynn_seablood
+    female = yes
+    religion = old_gods
+    culture = reachfolk
+	mother = seablood_1000
+
+    sexuality = bisexual
+    trait = trusting
+    trait = humble
+    trait = sadistic
+	trait = education_martial_2
+	trait = sign_thief
+	trait = wild_oat
+
+    3287.12.14 = {
+        birth = yes
+		effect = { give_lycan_secret_or_trait_effect = yes }
+    }
+    3349.2.17 = { death = { death_reason = death_natural_causes } }
+}
+## Icereach clan
+icereach_witch_1 = {
+	name = "Uraka"
+	female = yes
+	dynasty = dynn_icereach
+	culture = reachfolk
+	religion = old_gods
+	trait = witch
+	trait = education_magic_3
+	trait = education_intrigue_2
+
+	intrigue = 9
+
+	2897.1.1 = { birth = yes }
+	2960.1.1 = { death = yes }
+}
+icereach_witch_2 = {
+	name = "Ambre"
+	female = yes
+	dynasty = dynn_icereach
+	culture = reachfolk
+	religion = old_gods
+	trait = witch
+	trait = education_magic_1
+	trait = physique_bad_2
+	trait = wild_oat
+
+	father = icesail_1001
+	mother = icereach_witch_2_mom
+
+	2901.1.1 = { birth = yes }
+	3034.1.1 = { death = yes }
+}
+icereach_witch_2_mom = {
+	name = "Cuandala"
+	female = yes
+	culture = reachfolk
+	religion = old_gods
+	trait = witch
+
+	2870.1.1 = { birth = yes }
+	2921.1.1 = { death = yes }
+}
+icereach_witch_3 = {
+	name = "Melgan"
+	female = yes
+	dynasty = dynn_icereach
+	culture = reachfolk
+	religion = old_gods
+	trait = witch
+	trait = education_magic_2
+
+	3002.1.1 = { birth = yes }
+	3089.1.1 = { death = yes }
+}
+icereach_witch_4 = {
+	name = "Shilia"
+	female = yes
+	dynasty = dynn_icereach
+	culture = reachfolk
+	religion = old_gods
+	trait = witch
+	trait = education_magic_4
+
+	3042.1.1 = { birth = yes }
+	3172.1.1 = { death = yes }
+}
+icereach_witch_5 = {
+	name = "Gwerina"
+	female = yes
+	dynasty = dynn_icereach
+	culture = reachfolk
+	religion = old_gods
+	trait = witch
+	trait = education_magic_1
+
+	3152.1.1 = { birth = yes }
+	3198.1.1 = {
+		death = {
+			death_reason = death_burned
+			killer = gray_wave_1001
+		}
+	}
+}
+icereach_witch_6 = {
+	name = "Cuhleka"
+	female = yes
+	dynasty = dynn_icereach
+	culture = reachfolk
+	religion = old_gods
+	trait = witch
+	trait = education_magic_3
+
+	3159.1.1 = { birth = yes }
+	3261.1.1 = { death = yes }
+}
+
+#Hagravens
+pecua = {
+	name = "Pecua"
+	female = yes
+	religion = old_gods
+	culture = reachfolk
+
+	trait = education_magic_4
+	trait = necromancer
+	trait = witch
+	trait = callous
+
+	learning = 12
+
+	3000.1.1 = { birth = yes }
+	3064.1.1 = {
+		trait = hagraven
+		effect = { set_immortal_age = 64 }
+		add_character_flag = hraggen_hagraven_flag # to generate a new Hagraven upon her death
+	}
+	3672.1.1 = { death = yes }
+}
+pecua_gellsoane = {
+	name = "Gellsoane"
+	female = yes
+	religion = old_gods
+	culture = reachfolk
+
+	trait = education_martial_4
+	trait = craven
+	trait = generous
+	trait = gluttonous
+	trait = dwarf
+	trait = sign_serpent
+
+	3335.9.27 = { birth = yes }
+	3349.1.1 = { employer = pecua }
+	3397.1.1 = { death = yes }
+}
+morrigan = {
+	name = "Morrigan"
+	female = yes
+	religion = old_gods
+	culture = reachfolk
+
+	trait = education_magic_3
+	trait = witch
+	learning = 9
+	3600.1.1 = { birth = yes }
+	3650.1.1 = { 
+		trait = hagraven
+		effect = { set_immortal_age = 50 }
+		add_character_flag = hraggen_hagraven_flag # to generate a new Hagraven upon her death
+	}
+	3893.1.1 = { death = yes }
+}
+made = {
+	name = "Made"
+	female = yes
+	religion = old_gods
+	culture = reachfolk
+
+	trait = education_magic_2
+	trait = witch
+
+	learning = 11
+	3810.1.1 = { birth = yes }
+	3850.1.1 = { 
+		trait = hagraven
+		effect = { set_immortal_age = 40 }
+	}
+	4009.1.1 = { death = yes }
+}
+moika = {
+	name = "Moika"
+	female = yes
+	religion = old_gods
+	culture = reachfolk
+	trait = education_magic_3
+	trait = witch
+
+	learning = 11
+	3930.1.1 = { birth = yes }
+	3964.1.1 = { 
+		trait = hagraven
+		effect = { set_immortal_age = 34 }
+	}
+	4338.1.1 = { death = yes }
+}
+melka = {
+	name = "Melka"
+	female = yes
+	religion = old_gods
+	culture = reachfolk
+	trait = education_magic_2
+	trait = witch
+
+	learning = 12
+	4193.1.1 = { birth = yes }
+	4249.1.1 = { 
+		trait = hagraven
+		effect = { set_immortal_age = 56 }
+	}
+	5000.1.1 = { death = yes }
+}
+petra = {
+	name = "Petra"
+	female = yes
+	religion = old_gods
+	culture = reachfolk
+	trait = education_magic_4
+	trait = witch
+
+	learning = 15
+	4206.1.1 = { birth = yes }
+	4239.1.1 = { 
+		trait = hagraven
+		effect = { set_immortal_age = 33 }
+	}
+	4461.1.1 = { death = yes }
+}
+marian = {
+	name = "Marian"
+	female = yes
+	religion = sanguine_cult
+	culture = reachfolk
+
+	trait = education_diplomacy_4
+	
+	3497.1.1 = { birth = yes }
+	3574.1.1 = { death = yes }
+}
+
+####################
+### Adventurers  ###
+####################
+
+#Reachfolk in Skyrim
+
+#Reachfolk in High Rock
+
+# alaric_100 = { wip adventurer
+# 	name = "Alaric"
+# 	culture = reachfolk
+# 	religion = malacath_cult
+	
+# 	3318.1.1 = { birth = yes }
+# 	3372.1.1 = { death = yes }
+# }
+
+### FAOLAN, FIRST AND ONLY TRUE KING OF THE REACH
+faolan = {
+	name = "Faolan"
+	dynasty = dyn_faolan
+	culture = reachfolk
+	religion = old_gods
+	trait = education_martial_4
+
+	sexuality = bisexual
+	prowess = 19
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=male_hair_western_05
+			#custom_beards=male_hair_northern_01 this isnt a beard
+		}
+	}	
+
+	1001.1.1 = { birth = yes }
+	#1019.1.1 = { add_spouse = 300033 }
+	1031.1.1 = {
+		trait = briarheart
+		give_nickname = nick_red_eagle
+		#remove_spouse = 300033
+		#add_spouse = 300034
+		#EK TODO ESO made him into an Ansei also, this is cool lore, so we gotta add it whenever we add the trait :> - Theyn
+		trait = holy_warrior
+		trait = ambitious
+		trait = zealous
+		trait = wrathful
+	}
+	1034.1.1 = { death = { death_reason = death_battle } }
+}

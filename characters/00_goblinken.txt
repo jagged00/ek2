@@ -1,0 +1,2266 @@
+﻿##Rimesnap Dynasty
+
+#House Rimesnap
+
+rimesnap_98 = {
+	name = "Hrshga"
+	dynasty = dyn_rimesnap
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+	
+	3299.3.9 = { birth = yes }
+	3326.7.30 = { add_matrilineal_spouse = rimesnap_98_husband }
+	3329.4.7 = {
+		death = {
+			death_reason = death_duel
+			killer = heartfang_1000
+		}
+	}
+}
+
+rimesnap_98_husband = {
+	name = "Svgsk"
+	culture = riekling
+	religion = goblin_shamanism
+	
+	3298.2.14 = { birth = yes }
+	3329.4.7 = {
+		death = {
+			death_reason = death_duel
+			killer = heartfang_1000
+		}
+	}
+}
+
+rimesnap_99 = {
+	name = "Tharz" #Riekling Shaman/Mage
+	dynasty = dyn_rimesnap
+	culture = riekling
+	religion = goblin_shamanism
+
+	father = rimesnap_98_husband
+	mother = rimesnap_98
+	
+	3328.1.1 = { birth = yes }
+	3349.7.30 = { add_spouse = rimesnap_99_wife }
+	3383.1.1 = { death = yes }
+}
+
+rimesnap_99_wife = {
+	name = "Agrsh"
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+	
+	3327.6.31 = { birth = yes }
+	3367.4.17 = { employer = ghorak_100 }
+	3389.2.12 = { death = yes }
+}
+
+rimesnap_100 = {
+	name = "Koggr" #Riekling Warrior
+	dynasty = dyn_rimesnap
+	culture = riekling
+	religion = goblin_shamanism
+
+	father = rimesnap_99
+	mother = rimesnap_99_wife
+	
+	3349.1.1 = { birth = yes }
+	3365.1.1 = { trait = education_martial_4 }
+	3397.1.1 = { death = yes }
+}
+
+rimesnap_101 = {
+	name = "Kemma" #Riekling Shaman
+	female = yes
+	dynasty = dyn_rimesnap
+	culture = riekling
+	religion = goblin_shamanism
+
+	father = rimesnap_99
+	mother = rimesnap_99_wife
+
+	3352.1.1 = { birth = yes }
+	3397.1.1 = { death = yes }
+}
+
+#Rockhand Dynasty (dyn_rockhand)
+rockhand_1 = {
+	name = "Mahgzoor" #Lore
+	dna = rockhand_mahgzoor_dna_entry
+	dynasty = dyn_rockhand
+	culture = goblin
+	religion = goblin_shamanism
+
+	trait = giant
+	
+	922.1.1 = { birth = yes }
+	950.1.1 = {
+		death = {
+			death_reason = death_duel
+			killer = hallin_2
+		}
+	}
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_beards=male_empty
+			custom_hair=male_hair_fp1_09
+		}
+	}
+}
+rockhand_line = {
+	name = "Mahgzoor"
+	dynasty = dyn_rockhand
+	culture = goblin
+	religion = goblin_shamanism
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	
+	father = rockhand_1
+
+	949.1.1 = { birth = yes }
+	1000.1.1 = { give_nickname = nick_line_of }
+	3322.1.1 = { death = yes }	
+}
+rockhand_98 = {
+	name = "Kemma"
+	dynasty = dyn_rockhand
+	culture = goblin
+	religion = goblin_shamanism
+	female = yes
+	
+	father = rockhand_line
+
+	trait = giant
+
+	3300.1.1 = { birth = yes }
+	3344.1.1 = { death = yes }
+}
+rockhand_99 = {
+	name = "Togga"
+	dynasty = dyn_rockhand
+	culture = goblin
+	religion = goblin_shamanism
+	
+	mother = rockhand_98
+
+	trait = giant
+
+	3321.1.1 = { birth = yes }
+	3350.1.1 = { death = yes }	
+}
+rockhand_100 = {
+	name = "Zekk"
+	dna = rockhand_zekk_dna_entry
+	dynasty = dyn_rockhand
+	culture = goblin
+	religion = goblin_shamanism
+	
+	father = rockhand_99
+
+	trait = education_martial_3
+	trait = brave
+	trait = vengeful
+	trait = giant
+	trait = sign_thief
+
+	3339.12.1= { birth = yes }
+	3376.9.3 = { death = { death_reason = death_battle killer = manaz_100 } }
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_beards=male_empty
+			custom_hair=male_hair_mena_02
+		}
+	}
+}
+rockhand_101 = {
+	name = "Glab"
+	dynasty = dyn_rockhand
+	culture = goblin
+	religion = goblin_shamanism
+	female = yes
+	
+	father = rockhand_100
+
+	trait = giant
+
+	3359.1.1 = { birth = yes }
+	3392.1.1 = { death = yes }	
+}
+
+##Stonefriend Dynasty (dyn_stonefriend)
+
+stonefriend_1000 = {
+	name = "Mebs"
+	dynasty = dyn_stonefriend
+	culture = goblin
+	religion = goblin_shamanism
+
+	3327.1.1 = { birth = yes }
+	3362.3.16 = { add_trait = wounded_3 }
+	3372.6.26 = { death = { death_reason = death_wounds } }
+}
+
+stonefriend_1001 = {
+	name = "Kerks"
+	dynasty = dyn_stonefriend
+	culture = goblin
+	religion = goblin_shamanism
+	
+	father = stonefriend_1000
+
+	prowess = 8
+
+	3345.1.1 = { birth = yes }
+	3391.1.1 = { death = yes }	
+}
+
+stonefriend_1001b = {
+	name = "Byz"
+	dynasty = dyn_stonefriend
+	culture = goblin
+	religion = goblin_shamanism
+	
+	father = stonefriend_1000
+
+	3349.1.1 = { birth = yes }
+	3396.1.1 = { death = yes }	
+}
+
+##Sandtusken Dynasty (dyn_sandtusken)
+
+sandtusken_100 = {
+	name = "Tusk"
+	dynasty = dyn_sandtusken
+	culture = goblin
+	religion = goblin_shamanism
+
+	3335.1.1 = { birth = yes }
+	3372.1.1 = { death = yes }	
+}
+
+## Iceclaw Dynasty 
+
+iceclaw_1000 = {
+	name = "Ogg"
+	dynasty = dyn_iceclaw
+	culture = riekling
+	religion = goblin_shamanism
+
+	trait = arrogant
+	trait = wrathful
+	trait = gluttonous
+
+	3315.1.1 = { birth = yes }
+	3335.11.26 = { add_spouse = woodbiter_999_sister }
+	3335.11.27 = { 
+		effect = {
+			if = {
+				limit = { character:woodbiter_999_sister = { is_alive = yes } }
+				set_relation_lover = { reason = lover_history target = character:woodbiter_999_sister } 
+			}
+		} 
+	}
+	3368.2.19 = {
+		add_trait = depressed_1
+	}
+	3371.1.1 = {
+		death = {
+			death_reason = death_duel
+			killer = iceclaw_1001
+		}
+	}
+}
+
+
+iceclaw_1001_brother = {
+	name = "Krak"
+	dynasty = dyn_iceclaw
+	culture = riekling
+	religion = goblin_shamanism
+
+	trait = diligent
+	trait = ambitious
+	trait = arrogant
+
+	father = iceclaw_1000
+	mother = woodbiter_999_sister
+
+	3338.6.19 = { birth = yes }
+	3354.3.28 = { add_spouse = wolftongue_1000_sister }
+	3364.6.13 = { death = { death_reason = death_battle } }
+}
+
+iceclaw_1001_sister = {
+	name = "Mizzix"
+	dynasty = dyn_iceclaw
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+
+	father = iceclaw_1000
+	mother = woodbiter_999_sister
+
+	3337.2.12 = { birth = yes }
+	3353.3.28 = { add_spouse = iceclaw_1001_sister_husband }
+	3354.5.14 = { death = yes
+	death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+
+iceclaw_1001_sister_husband = {
+	name = "Torak"
+	culture = riekling
+	religion = goblin_shamanism
+
+	3335.3.19 = { birth = yes }
+	3364.6.13 = { death = { death_reason = death_battle } }
+}
+
+iceclaw_1001 = {
+	name = "Hirza"
+	dynasty = dyn_iceclaw
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+
+	father = iceclaw_1000
+	mother = woodbiter_999_sister
+
+	trait = chaste #Why she only has one son
+	trait = wrathful
+	trait = callous
+
+	3336.12.28 = { birth = yes }
+	3352.12.17 = { add_matrilineal_spouse = iceclaw_1001_husband }
+	3381.6.13 = { death = yes }
+}
+
+iceclaw_1001_husband = {
+	name = "Rekr"
+	culture = riekling
+	religion = goblin_shamanism
+
+	trait = greedy
+	trait = impatient
+	trait = arbitrary
+	
+	3337.3.15 = { birth = yes }
+	3378.11.25 = { death = yes }
+}
+
+iceclaw_1002 = {
+	name = "Koggr"
+	dynasty = dyn_iceclaw
+	culture = riekling
+	religion = goblin_shamanism
+
+	father = iceclaw_1001_husband
+	mother = iceclaw_1001
+
+	3353.8.9 = { birth = yes }
+	3367.8.25 = { add_spouse = iceclaw_1002_wife }
+	3395.3.11 = {
+		death = {
+			death_reason = death_duel
+			killer = iceclaw_1003
+		}
+	}
+}
+
+iceclaw_1002_wife = {
+	name = "Akm"
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+	
+	3353.3.7 = { birth = yes }
+	3393.10.11 = { death = yes }
+}
+
+iceclaw_1003 = {
+	name = "Kreem"
+	dynasty = dyn_iceclaw
+	culture = riekling
+	religion = goblin_shamanism
+
+	father = iceclaw_1002
+	mother = iceclaw_1002_wife
+
+	3368.3.19 = { birth = yes }
+	3386.6.16 = { add_spouse = iceclaw_1003_wife }
+	3407.10.8 = {
+		death = {
+			death_reason = death_duel
+			killer = iceclaw_1004
+		}
+	}
+}
+
+iceclaw_1003_wife = {
+	name = "Shbr"
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+	
+	3369.6.3 = { birth = yes }
+	3411.12.9 = { death = yes }
+}
+
+iceclaw_1004 = {
+	name = "Broggr"
+	dynasty = dyn_iceclaw
+	culture = riekling
+	religion = goblin_shamanism
+
+	father = iceclaw_1003
+	mother = iceclaw_1003_wife
+
+	3389.5.13 = { birth = yes }
+	3407.2.12 = { add_spouse = iceclaw_1004_wife }
+	3432.11.13 = {
+		death = {
+			death_reason = death_duel
+			killer = iceclaw_1005
+		}
+	}
+}
+
+iceclaw_1004_wife = {
+	name = "Grska"
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+	
+	3387.3.18 = { birth = yes }
+	3437.9.26 = { death = yes }
+}
+
+iceclaw_1005 = { #Alliance War
+	name = "Grsk" #Masculine version of mom's name
+	dynasty = dyn_iceclaw
+	culture = riekling
+	religion = goblin_shamanism
+
+	father = iceclaw_1004
+	mother = iceclaw_1004_wife
+
+	3412.2.19 = { birth = yes }
+	3430.10.26 = { add_spouse = iceclaw_1005_wife }
+	3458.7.13 = { death = yes } #Eventually slain by child
+}
+
+iceclaw_1005_wife = {
+	name = "Hrkela"
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+	
+	3413.7.5 = { birth = yes }
+	3463.4.18 = { death = yes }
+}
+
+iceclaw_1003_brother = { #Matri marries woodbiter_1002
+	name = "Grmr"
+	dynasty = dyn_iceclaw
+	culture = riekling
+	religion = goblin_shamanism
+
+	father = iceclaw_1002
+	mother = iceclaw_1002_wife
+
+	3371.5.17 = { birth = yes }
+	#3389.7.19 Matri marries woodbiter_1002
+	3409.4.17 = { death = yes }
+}
+
+iceclaw_2000 = { #iceclaw_1001_brother line eventually become Coldsnap tribe from ESO during migration with icelaw_3000
+	name = "Korza"
+	dynasty = dyn_iceclaw
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+
+	father = iceclaw_1001_brother
+	mother = wolftongue_1000_sister
+
+	3355.1.15 = { birth = yes }
+	3374.1.17 = { add_matrilineal_spouse = woodbiter_999_husband_son }
+	3389.6.18 = { death = yes }
+}
+
+iceclaw_2000_brother = { #iceclaw_1001_brother line eventually become Coldsnap tribe (cadet branch) from ESO during migration with icelaw_3000
+	name = "Grozan"
+	dynasty = dyn_iceclaw
+	culture = riekling
+	religion = goblin_shamanism
+
+	father = iceclaw_1001_brother
+	mother = wolftongue_1000_sister
+
+	3356.3.19 = { birth = yes }
+	3372.11.24 = { add_spouse = iceclaw_2000_brother_wife }
+	3393.2.2 = { death = yes }
+}
+
+iceclaw_2000_brother_wife = {
+	name = "Hrgni"
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+	
+	3355.2.12 = { birth = yes }
+	3399.5.11 = { death = yes }
+}
+
+iceclaw_3000 = { #iceclaw_1001_sister line eventually become Iceclaw tribe from ESO on mainland
+	name = "Zich"
+	dynasty = dyn_iceclaw
+	culture = riekling
+	religion = goblin_shamanism
+
+	father = iceclaw_1001_sister_husband
+	mother = iceclaw_1001_sister
+
+	3354.5.14 = { birth = yes }
+	3372.6.18 = { add_spouse = iceclaw_3000_wife }
+	3389.6.18 = { death = yes }
+}
+
+iceclaw_3000_wife = {
+	name = "Avlsh"
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+	
+	3355.2.12 = { birth = yes }
+	3399.5.11 = { death = yes }
+}
+
+## Wolftongue Dynasty
+
+
+wolftongue_999 = {
+	name = "Lkrsh"
+	dynasty = dyn_wolftongue
+	culture = riekling
+	religion = hircine_cult
+
+	3314.1.1 = { birth = yes }
+	3334.3.19 = { add_spouse = wolftongue_999_wife }
+	3359.1.1 = {
+		death = {
+			death_reason = death_duel
+			killer = wolftongue_1000
+		}
+	}
+}
+
+wolftongue_999_wife = {
+	name = "Kntga"
+	culture = riekling
+	religion = hircine_cult
+	female = yes
+	
+	3313.7.17 = { birth = yes }
+	3362.8.13 = { death = yes }
+}
+
+wolftongue_1000_sister = {
+	name = "Kemma"
+	dynasty = dyn_wolftongue
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+
+	father = wolftongue_999
+	mother = wolftongue_999_wife
+
+	trait = craven
+	trait = content
+	trait = forgiving
+	
+	3336.4.16 = { birth = yes }
+	#Marries iceclaw_1001_brother
+	3364.6.13 = { death = { death_reason = death_battle } }
+}
+
+wolftongue_1000 = {
+	name = "Torak"
+	dynasty = dyn_wolftongue
+	culture = riekling
+	religion = hircine_cult
+
+	father = wolftongue_999
+	mother = wolftongue_999_wife
+
+	trait = diligent
+	trait = arbitrary
+	trait = greedy
+
+	3335.1.1 = { birth = yes }
+	3353.3.19 = { add_spouse = wolftongue_1000_wife }
+	3375.1.1 = {
+		death = {
+			death_reason = death_duel
+			killer = wolftongue_1001
+		}
+	}
+}
+
+wolftongue_1000_wife = {
+	name = "Zoz"
+	culture = riekling
+	religion = hircine_cult
+	female = yes
+	
+	3336.3.6 = { birth = yes }
+	3373.11.19 = { death = yes }
+}
+
+wolftongue_1001 = {
+	name = "Fin"
+	dynasty = dyn_wolftongue
+	culture = riekling
+	religion = hircine_cult
+	female = yes
+
+	father = wolftongue_1000
+	mother = wolftongue_1000_wife
+
+	3354.5.17 = { birth = yes }
+	3375.7.23 = { add_matrilineal_spouse = woodbiter_1001_brother }
+	3392.8.16 = {
+		death = {
+			death_reason = death_duel
+			killer = wolftongue_1002
+		}
+	}
+}
+
+wolftongue_1002 = {
+	name = "Dulk"
+	dynasty = dyn_wolftongue
+	culture = riekling
+	religion = hircine_cult
+
+	father = woodbiter_1001_brother
+	mother = wolftongue_1001
+
+	3377.2.1 = { birth = yes }
+	3398.2.17 = { add_spouse = wolftongue_1002_wife }
+	3428.5.7 = {
+		death = {
+			death_reason = death_duel
+			killer = wolftongue_1003
+		}
+	}
+}
+
+wolftongue_1002_wife = {
+	name = "Gezzala"
+	culture = riekling
+	religion = hircine_cult
+	female = yes
+	
+	3379.6.17 = { birth = yes }
+	3435.3.4 = { death = yes }
+}
+
+wolftongue_1003 = {
+	name = "Nugg"
+	dynasty = dyn_wolftongue
+	culture = riekling
+	religion = hircine_cult
+
+	father = wolftongue_1002
+	mother = wolftongue_1002_wife
+
+	3403.7.19 = { birth = yes }
+	3424.4.12 = { add_spouse = wolftongue_1003_wife }
+	3449.2.11 = {
+		death = {
+			death_reason = death_duel
+			killer = wolftongue_1004
+		}
+	}
+}
+
+wolftongue_1003_wife = {
+	name = "Zarra"
+	culture = riekling
+	religion = hircine_cult
+	female = yes
+	
+	3392.8.13 = { birth = yes }
+	3438.11.18 = { death = yes }
+}
+
+wolftongue_1004 = {
+	name = "Vaxx"
+	dynasty = dyn_wolftongue
+	culture = riekling
+	religion = hircine_cult
+	female = yes
+
+	father = wolftongue_1003
+	mother = wolftongue_1003_wife
+
+	3427.3.12 = { birth = yes }
+	3452.11.23 = { add_matrilineal_spouse = wolftongue_1004_husband }
+	3470.2.11 = {
+		death = {
+			death_reason = death_duel
+			killer = wolftongue_1005
+		}
+	}
+}
+
+wolftongue_1004_husband = {
+	name = "Kog"
+	culture = riekling
+	religion = hircine_cult
+	
+	3324.2.26 = { birth = yes }
+	3468.8.28 = { death = yes }
+}
+
+wolftongue_1005 = { #Alliance War
+	name = "Herk"
+	dynasty = dyn_wolftongue
+	culture = riekling
+	religion = hircine_cult
+	female = yes
+
+	father = wolftongue_1004_husband
+	mother = wolftongue_1004
+
+	3454.11.16 = { birth = yes }
+	3476.4.9 = { add_matrilineal_spouse = wolftongue_1005_husband }
+	3506.2.11 = { death = yes } #Eventually slain by child
+}
+
+wolftongue_1005_husband = {
+	name = "Ekhm"
+	culture = riekling
+	religion = hircine_cult
+	
+	3454.8.11 = { birth = yes }
+	3516.11.7 = { death = yes }
+}
+
+## Woodbiter Dynasty 
+
+woodbiter_998 = {
+	name = "Agrsk"
+	dynasty = dyn_woodbiter
+	culture = riekling
+	religion = goblin_shamanism
+
+	3293.12.26 = { birth = yes }
+	3319.1.9 = { add_spouse = woodbiter_998_wife }
+	3337.1.1 = {
+		death = {
+			death_reason = death_duel
+			killer = woodbiter_999
+		}
+	}
+}
+
+woodbiter_998_wife = {
+	name = "Frsk"
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+	
+	3293.7.26 = { birth = yes }
+	3343.9.3 = { death = yes }
+}
+
+woodbiter_999_sister = { #Marries iceclaw_1000
+	name = "Fnri"
+	dynasty = dyn_woodbiter
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+
+	trait = beauty_good_1
+	trait = sadistic
+	trait = honest
+	trait = just
+
+	mother = woodbiter_998_wife
+	father = woodbiter_998
+
+	3314.8.9 = { birth = yes }
+	3368.2.19 = { death = yes }
+}
+
+woodbiter_999 = {
+	name = "Trisk"
+	dynasty = dyn_woodbiter
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+
+	mother = woodbiter_998_wife
+	father = woodbiter_998
+
+	trait = ill
+	trait = honest
+	trait = brave
+	trait = vengeful
+
+	3309.5.7 = { birth = yes }
+	3338.12.12 = { add_spouse = woodbiter_999_husband }
+	3355.12.7 = { 
+		death = { death_reason = death_ill }
+	}
+}
+
+woodbiter_999_husband = {
+	name = "Krsk"
+	dynasty = dyn_rimesnap #Rimesnap
+	culture = riekling
+	religion = goblin_shamanism
+
+	mother = rimesnap_98
+	father = rimesnap_98_husband
+
+	trait = gregarious
+	trait = generous
+	trait = lustful
+	
+	3319.11.19 = { birth = yes }
+	3356.4.9 = { effect = { set_relation_lover = { reason = lover_history target = character:woodbiter_999_husband_lover } } }
+	3357.1.13 = { #When she learned she was pregnant she came out with who the father was
+		effect = {
+			random_secret = {
+				type = secret_lover
+				expose_secret = character:woodbiter_999_husband_lover
+			}
+		}
+	}
+	3361.2.27 = { add_spouse = woodbiter_999_husband_lover }
+	3364.12.16 = { death = yes }
+}
+
+woodbiter_999_husband_lover = {
+	name = "Frds"
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+
+	trait = craven
+	trait = forgiving
+	trait = calm
+	
+	3321.1.7 = { birth = yes }
+	3367.9.24 = { death = yes }
+}
+
+woodbiter_999_husband_son = {
+	name = "Strn"
+	dynasty = dyn_rimesnap #Rimesnap
+	culture = riekling
+	religion = goblin_shamanism
+
+	father = woodbiter_999_husband
+	mother = woodbiter_999_husband_lover
+
+	trait = bastard
+	
+	3357.9.29 = { birth = yes }
+	3361.2.27 = {
+		remove_trait = bastard
+		add_trait = legitimized_bastard
+	}
+	#3361.2.27 = matri married off to iceclaw_2000
+	3371.3.12 = { death = yes }
+}
+
+woodbiter_1000 = {
+	name = "Grutbug"
+	dynasty = dyn_woodbiter
+	culture = riekling
+	religion = goblin_shamanism
+
+	father = woodbiter_999_husband
+	mother = woodbiter_999
+
+	trait = physique_good_1
+	trait = brave
+	trait = calm
+	trait = impatient #Acting hastily while hunting bristlebacks doesn't go well
+
+	3340.1.1 = { birth = yes }
+	3356.3.19 = { add_spouse = woodbiter_1000_wife }
+	3372.1.1 = {
+		death = {
+			death_reason = death_duel
+			killer = woodbiter_1001
+		}
+	}
+}
+
+woodbiter_1000_wife = {
+	name = "Arruluk"
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+
+	3339.2.23 = { birth = yes }
+	3359.11.19 = { death = yes
+	death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+
+woodbiter_1000_sister = {
+	name = "Trisk" #After mom
+	dynasty = dyn_woodbiter
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+
+	father = woodbiter_999_husband
+	mother = woodbiter_999
+
+	3341.5.7 = { birth = yes }
+	3357.5.9 = { add_matrilineal_spouse = woodbiter_1000_sister_husband }
+	3393.6.16 = { death = yes }
+}
+
+woodbiter_1000_sister_husband = {
+	name = "Ekhm"
+	culture = riekling
+	religion = goblin_shamanism
+	
+	3339.6.12 = { birth = yes }
+	3394.12.14 = { death = yes }
+}
+
+woodbiter_1001 = {
+	name = "Burr"
+	dynasty = dyn_woodbiter
+	culture = riekling
+	religion = goblin_shamanism
+
+	father = woodbiter_1000
+	mother = woodbiter_1000_wife
+
+	trait = physique_good_1
+
+	3356.12.28 = { birth = yes }
+	3370.4.16 = { add_spouse = woodbiter_1001_wife }
+	3389.7.19 = {
+		death = {
+			death_reason = death_duel
+			killer = wildblood_1001
+		}
+	}
+}
+
+woodbiter_1001_wife = {
+	name = "Zakka"
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+	
+	3355.4.5 = { birth = yes }
+	3393.12.16 = { death = yes }
+}
+
+woodbiter_1001_brother = {
+	name = "Iziku"
+	dynasty = dyn_woodbiter
+	culture = riekling
+	religion = goblin_shamanism
+
+	father = woodbiter_1000
+	mother = woodbiter_1000_wife
+
+	3357.7.17 = { birth = yes }
+	#Marries wolftongue_1001
+	3386.8.14 = { death = { death_reason = death_battle } }
+}
+
+woodbiter_1001_sister = {
+	name = "Nokka"
+	dynasty = dyn_woodbiter
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+
+	father = woodbiter_1000
+	mother = woodbiter_1000_wife
+
+	3358.4.28 = { birth = yes }
+	#Marries
+	3406.3.5 = { death = yes }
+}
+
+woodbiter_1001_sister_2 = {
+	name = "Korza"
+	dynasty = dyn_woodbiter
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+
+	trait = sickly
+	trait = giant
+
+	father = woodbiter_1000
+	mother = woodbiter_1000_wife
+
+	3359.11.17 = { birth = yes }
+	3359.11.19 = {
+		death = {
+			death_reason = death_sickly
+		}
+	}
+}
+
+woodbiter_1002 = {
+	name = "Ekka"
+	dynasty = dyn_woodbiter
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+
+	father = woodbiter_1001
+	mother = woodbiter_1001_wife
+
+	3371.6.17 = { birth = yes }
+	3387.7.12 = { effect = { set_relation_soulmate = { reason = lover_history target = character:iceclaw_1003_brother } } }
+	3389.7.19 = { add_matrilineal_spouse = iceclaw_1003_brother }
+	3412.11.17 = {
+		death = {
+			death_reason = death_duel
+			killer = woodbiter_1003
+		}
+	}
+}
+
+woodbiter_1003 = {
+	name = "Vokk"
+	dynasty = dyn_woodbiter
+	culture = riekling
+	religion = goblin_shamanism
+
+	trait = legitimized_bastard
+
+	father = iceclaw_1003_brother
+	mother = woodbiter_1002
+
+	3388.5.16 = { birth = yes }
+	3408.7.19 = { add_spouse = woodbiter_1003_wife }
+	3437.8.15 = {
+		death = {
+			death_reason = death_duel
+			killer = woodbiter_1004
+		}
+	}
+}
+
+woodbiter_1003_wife = {
+	name = "Zoz"
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+	
+	3386.12.17 = { birth = yes }
+	3438.8.13 = { death = yes }
+}
+
+woodbiter_1004 = {
+	name = "Krish"
+	dynasty = dyn_woodbiter
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+
+	father = woodbiter_1003
+	mother = woodbiter_1003_wife
+
+	3411.3.14 = { birth = yes }
+	3434.6.18 = { add_spouse = woodbiter_1004_husband }
+	3456.9.7 = {
+		death = {
+			death_reason = death_duel
+			killer = woodbiter_1005
+		}
+	}
+}
+
+woodbiter_1004_husband = {
+	name = "Gis"
+	culture = riekling
+	religion = goblin_shamanism
+	
+	3408.4.23 = { birth = yes }
+	3453.6.26 = { death = yes }
+}
+
+woodbiter_1005 = {
+	name = "Kragk"
+	dynasty = dyn_woodbiter
+	culture = riekling
+	religion = goblin_shamanism
+
+	father = woodbiter_1004_husband
+	mother = woodbiter_1004
+
+	3436.8.17 = { birth = yes }
+	3457.1.27 = { add_spouse = woodbiter_1005_wife }
+	3483.10.19 = {
+		death = {
+			death_reason = death_duel
+			killer = woodbiter_1006
+		}
+	}
+}
+
+woodbiter_1005_wife = {
+	name = "Zyra"
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+	
+	3436.2.17 = { birth = yes }
+	3487.6.16 = { death = yes }
+}
+
+woodbiter_1006 = { #Alliance War
+	name = "Grutbug" #After the 'Half-Nord'
+	dynasty = dyn_woodbiter
+	culture = riekling
+	religion = goblin_shamanism
+
+	father = woodbiter_1005
+	mother = woodbiter_1005_wife
+
+	3467.3.2 = { birth = yes }
+	3489.8.23 = { add_spouse = woodbiter_1006_wife }
+	3518.11.11 = { death = yes } #Eventually slain by child
+}
+
+woodbiter_1006_wife = {
+	name = "Bazzam"
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+	
+	3465.8.27 = { birth = yes }
+	3525.3.19 = { death = yes }
+}
+
+woodbiter_3000 = { #woodbiter_1000_sister line
+	name = "Kreer"
+	dynasty = dyn_woodbiter
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+
+	father = woodbiter_1000_sister_husband
+	mother = woodbiter_1000_sister
+
+	3358.2.5 = { birth = yes }
+	3404.9.7 = { death = yes }
+}
+
+woodbiter_3000_sister = { #woodbiter_1000_sister line
+	name = "Krragsh"
+	dynasty = dyn_woodbiter
+	culture = riekling
+	religion = goblin_shamanism
+	female = yes
+
+	father = woodbiter_1000_sister_husband
+	mother = woodbiter_1000_sister
+
+	3359.8.14 = { birth = yes }
+	3407.10.19 = { death = yes }
+}
+
+##Bendcrag Dynasty (dyn_bendcrag)
+bendcrag_99 = {
+	name = "Grinak"
+	dynasty = dyn_bendcrag
+	culture = goblin
+	religion = goblin_shamanism
+
+	3305.1.1 = { birth = yes }
+	3352.1.1 = { death = { death_reason = death_battle } }
+}
+bendcrag_99_wife = {
+	name = "Blax"
+	culture = goblin
+	religion = goblin_shamanism
+	female = yes
+
+	3302.1.1 = { birth = yes }
+	3377.1.1 = { death = yes }
+}
+bendcrag_100 = {
+	name = "Molg"
+	dynasty = dyn_bendcrag
+	culture = goblin
+	religion = goblin_shamanism
+
+	father = bendcrag_99
+	mother = bendcrag_99_wife
+
+	trait = sign_shadow
+
+	3332.5.2 = { birth = yes }
+	3393.1.1 = { death = yes }	
+}
+bendcrag_100b = {
+	name = "Golthog"
+	dynasty = dyn_bendcrag
+	culture = goblin
+	religion = goblin_shamanism
+
+	father = bendcrag_99
+	mother = bendcrag_99_wife
+
+	3335.1.1 = { birth = yes }
+	3392.1.1 = { death = yes }	
+}
+
+##Bonecrack Dynasty (dyn_bonecrack)
+
+bonecrack_1000 = {
+	name = "Bappak"
+	dynasty = dyn_bonecrack
+	culture = riekr
+	religion = goblin_shamanism
+
+	trait = education_martial_4
+	trait = wrathful
+	trait = diligent
+	trait = forgiving
+	trait = sign_warrior
+
+	3333.8.29 = { birth = yes }
+	3350.1.1 = { add_spouse = bonecrack_1000_wife }
+	3377.1.1 = { death = yes }	
+}
+bonecrack_1000_wife = {
+	name = "Glab"
+	female = yes
+	culture = riekr
+	religion = goblin_shamanism
+
+	trait = education_stewardship_2
+	trait = forgiving
+	trait = patient
+	trait = stubborn
+	trait = sign_lord
+
+	3330.3.6 = { birth = yes }
+	3375.1.1 = { death = yes }
+}
+bonecrack_1001 = {
+	name = "Zag"
+	female = yes
+	dynasty = dyn_bonecrack
+	culture = riekr
+	religion = goblin_shamanism
+
+	trait = sign_lord
+
+	father = bonecrack_1000
+	mother = bonecrack_1000_wife
+
+	3354.3.4 = { birth = yes }
+	3399.1.1 = { death = yes }
+}
+bonecrack_1002 = {
+	name = "Dryg"
+	dynasty = dyn_bonecrack
+	culture = riekr
+	religion = goblin_shamanism
+
+	trait = sign_warrior
+
+	father = bonecrack_1000
+	mother = bonecrack_1000_wife
+
+	3362.8.7 = { birth = yes }
+	3399.1.1 = { death = yes }
+}
+
+## Stonebreaker Dynasty (dyn_stonebreaker)
+stonebreaker_100 = {
+	name = "Kopek"
+	dynasty = dyn_stonebreaker
+	culture = goblin
+	religion = goblin_shamanism
+
+	3333.1.1 = { birth = yes }
+	3377.1.1 = { death = yes }	
+}
+
+
+##Rock-Thrower Dynasty (dyn_rock_thrower)
+rock_thrower_100 = {
+	name = "Ryzez"
+	dynasty = dyn_rock_thrower
+	culture = goblin
+	religion = goblin_shamanism
+
+	3333.1.1 = { birth = yes }
+	3377.1.1 = { death = yes }		
+}
+
+##Dustspitter Dynasty (dyn_dustspitter)
+
+dustspitter_1000 = {
+	name = "Merg"
+	dynasty = dyn_dustspitter
+	culture = goblin
+	religion = goblin_shamanism
+
+	3319.1.1 = { birth = yes }
+	3373.1.1 = { death = yes }	
+}
+
+##Seadrinker Dynasty (dyn_seadrinker)
+
+seadrinker_1000 = {
+	name = "Zicha"
+	dynasty = dyn_seadrinker
+	culture = goblin
+	religion = goblin_shamanism
+	female = yes
+
+	3337.1.1 = { birth = yes }
+	3399.1.1 = { death = yes }	
+}
+
+##Darkmuck Dynasty (dyn_darkmuck)
+darkmuck_100 = {
+	name = "Gabralla"
+	dynasty = dyn_darkmuck
+	culture = goblin
+	religion = goblin_shamanism
+	female = yes
+
+	prowess = 5
+
+	trait = education_martial_2
+	trait = vengeful
+	trait = patient
+
+	3337.1.1 = { birth = yes }
+	3399.1.1 = { death = yes }	
+}
+
+##Bonefriend Dynasty (bonefriend)
+bonefriend_1000 = {
+	name = "Dryg"
+	dynasty = bonefriend
+	culture = goblin
+	religion = goblin_shamanism
+
+	trait = education_intrigue_3
+	trait = sign_tower
+	trait = wrathful
+	trait = lustful
+	trait = zealous
+
+	3335.10.17 = { birth = yes }
+	3359.11.18 = {
+		effect = {
+			add_secret = {
+				type = secret_murder
+				target = character:mothril_99_wife
+			}
+			add_secret = {
+				type = secret_murder
+				target = character:mothril_99
+			}
+		}
+	}
+	3379.7.30 = { death = { death_reason = death_battle killer = coralsplitter_1001 } }
+}
+bonefriend_1000_wife = {
+	name = "Khalzammaza"
+	culture = goblin
+	religion = goblin_shamanism
+	female = yes
+
+	3335.1.1 = { birth = yes }
+	3351.1.1 = { add_spouse = bonefriend_1000 }
+	3387.1.1 = { death = yes }
+}
+bonefriend_1001 = {
+	name = "Byz"
+	dynasty = bonefriend
+	culture = goblin
+	religion = goblin_shamanism
+
+	father = bonefriend_1000
+	mother = bonefriend_1000_wife
+
+	trait = sign_lover
+	trait = rowdy
+	trait = stubborn
+	trait = shy
+
+	disallow_random_traits = yes
+
+	3353.2.3 = { birth = yes }
+	3370.2.3 = {
+		trait = education_martial_3
+		trait = lustful
+		remove_trait = rowdy
+	}
+	3421.1.1 = { death = yes }
+}
+
+#Bonedweller Dynasty
+bonedweller_1000 = {
+	name = "Morg"
+	dynasty = dynn_bonedweller
+	culture = goblin
+	religion = goblin_shamanism
+
+	trait = education_martial_2
+	trait = ambitious
+	trait = paranoid
+	trait = stubborn
+	trait = wounded_3
+
+	3303.1.1 = { birth = yes }
+	3359.8.6 = { death = { death_reason = death_wounded_3 } }	#Morg dies from his wounds shortly after the betrayal of the Valestalker clan
+}
+bonedweller_1001 = {
+	name = "Yzarka"
+	female = yes
+	dynasty = dynn_bonedweller
+	culture = goblin
+	religion = goblin_shamanism
+	father = bonedweller_1000
+
+	3321.1.1 = { birth = yes }
+	3370.11.2 = { death = yes }
+}
+
+#Valestalker Dynasty
+valestalker_1000 = {
+	name = "Togga"
+	dynasty = dynn_valestalker
+	culture = goblin
+	religion = goblin_shamanism
+
+	trait = education_diplomacy_2
+
+	3298.1.1 = { birth = yes }
+	3359.1.1 = { death = yes }
+}
+valestalker_1001 = {
+	name = "Zich"
+	dynasty = dynn_valestalker
+	culture = goblin
+	religion = goblin_shamanism
+	father = valestalker_1000
+
+	trait = education_diplomacy_2
+	trait = sign_tower
+	trait = trusting
+	trait = fickle
+	trait = humble
+
+	3320.10.22 = { birth = yes }
+	3345.1.1 = { add_spouse = bonedweller_1001 }
+	3359.7.16 = { death = { death_reason = death_battle killer = calcract_1000 } }	#Zyg's first taste of vengeance
+}
+valestalker_1002 = {
+	name = "Drek"
+	dynasty = dynn_valestalker
+	culture = goblin
+	religion = goblin_shamanism
+	father = valestalker_1000
+
+	trait = education_intrigue_3
+	trait = sign_shadow
+	trait = deceitful
+	trait = greedy
+	trait = ambitious
+
+	3323.5.2 = { birth = yes }
+	3359.7.16 = { effect = { add_unpressed_claim = title:c_caelcalen } }
+	3359.7.17 = { add_spouse = bonedweller_1001 }
+	3359.7.17 = { employer = ancmirar_99 }	#Drek's first attempt at seeking refuge sees him journey to the court of Cloudrest, whose promises incited the Valestalker's rebellion
+	3369.1.1 = { employer = ukmiar_1000 }	#Tales of the upstart Valnurion's reign in Karndar inspire Drek to find an unlikely ally against Zyg
+	3370.11.7 = { death = { death_reason = death_battle killer = ukmiar_1000 } }	#Unfortunately for Drek, Valnurion had other plans for the Goblins of Caelcalen
+}
+valestalker_1003 = {
+	name = "Gogh"
+	dynasty = dynn_valestalker
+	culture = goblin
+	religion = goblin_shamanism
+	father = valestalker_1002
+	mother = bonedweller_1001
+
+	trait = sign_tower
+
+	3345.10.7 = { birth = yes }
+	3405.1.1 = { death = yes }
+}
+
+#Toothmaul Dynasty
+toothmaul_1000 = {	#ESO chief of Toothmaul Gully
+	name = "Koth"
+	dynasty = dynn_toothmaul
+	culture = goblin
+	religion = goblin_shamanism
+
+	trait = education_intrigue_3
+	trait = former_slave
+	trait = brave
+	trait = impatient
+	trait = cynical
+
+	3468.1.1 = { birth = yes }
+	3502.10.1 = { death = yes }
+}
+
+#Calcract Dynasty
+calcract_1000 = {
+	name = "Zyg"
+	dna = zyg_dna_entry
+	dynasty = calcract
+	culture = goblin
+	religion = goblin_shamanism
+
+	trait = education_martial_3
+	trait = sign_steed
+	trait = ambitious
+	trait = wrathful
+	trait = patient
+	trait = lunatic_1
+	trait = former_slave
+
+	3324.6.6 = { birth = yes }
+	3339.1.1 = { add_spouse = calcract_1000_wife }
+	3359.7.16 = { 
+		effect = {
+			if = { #Zyg wants revenge on the one who got away
+				limit = { character:valestalker_1002 = { is_alive = yes } }
+				set_relation_rival = { reason = rival_historical target = character:valestalker_1002 }
+			}
+			if = { #And the one who planned it all
+				limit = { character:ancmirar_99 = { is_alive = yes } }
+				set_relation_rival = { reason = rival_historical target = character:ancmirar_99 } 
+			}
+		}
+	}
+	3370.11.1 = { death = { death_reason = death_battle killer = valestalker_1002 } }
+}
+calcract_1000_wife = {
+	name = "Zrakka"
+	female = yes
+	dynasty = dynn_bonedweller
+	culture = goblin
+	religion = goblin_shamanism
+	father = bonedweller_1000
+
+	trait = former_slave
+	trait = sign_tower
+
+	3323.10.30 = { birth = yes }
+	3370.11.7 = { death = { death_reason = death_battle killer = ukmiar_1000 } }
+}
+calcract_1001 = {
+	name = "Sok"
+	female = yes
+	dynasty = calcract
+	culture = goblin
+	religion = goblin_shamanism
+
+	trait = former_slave
+	trait = sign_thief
+
+	father = calcract_1000
+	mother = calcract_1000_wife
+
+	3351.12.5 = { birth = yes }
+	3407.11.1 = { death = yes }
+}
+
+#Coralsplitter Dynasty, ancient goblins of King's Haven pass
+coralsplitter_993 = {
+	name = "Khohruk"
+	dynasty = coralsplitter
+	culture = goblin
+	religion = goblin_shamanism
+
+	2630.1.1 = { birth = yes }
+	2700.9.12 = { death = yes }
+}
+coralsplitter_994 = {
+	name = "Gralnok"
+	dynasty = coralsplitter
+	culture = goblin
+	religion = goblin_shamanism
+	father = coralsplitter_993
+
+	2682.1.1 = { birth = yes }
+	2711.10.12 = { death = { death_reason = death_battle killer = mothril_95 } }
+}
+coralsplitter_995 = {
+	name = "Zurbok"
+	dynasty = coralsplitter
+	culture = goblin
+	religion = goblin_shamanism
+	father = coralsplitter_993
+
+	2690.1.1 = { birth = yes }
+	2711.10.12 = { death = { death_reason = death_battle killer = mothril_95 } }
+}
+coralsplitter_996 = {
+	name = "Drogath"
+	dynasty = coralsplitter
+	culture = goblin
+	religion = goblin_shamanism
+	father = coralsplitter_993
+
+	2698.1.1 = { birth = yes }
+	2751.1.1 = { death = yes }
+}
+coralsplitter_997 = {
+	name = "Drogath"
+	dynasty = coralsplitter
+	culture = goblin
+	religion = goblin_shamanism
+	father = coralsplitter_996
+
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+
+	2750.1.1 = { birth = yes }
+	2800.1.1 = { give_nickname = nick_line_of }
+	3263.1.1 = { death = yes }
+}
+coralsplitter_998 = {
+	name = "Grinak"
+	dynasty = coralsplitter
+	culture = goblin
+	religion = goblin_shamanism
+	father = coralsplitter_997
+
+	3262.1.1 = { birth = yes }
+	3313.1.1 = { death = yes }
+}
+coralsplitter_999 = {
+	name = "Gruzzil"
+	female = yes
+	dynasty = coralsplitter
+	culture = goblin
+	religion = goblin_shamanism
+	father = coralsplitter_998
+
+	3300.1.1 = { birth = yes }
+	3330.1.1 = { add_matrilineal_spouse = coralsplitter_999_spouse }
+	3340.1.1 = { death = yes }
+}
+coralsplitter_999_spouse = {
+	name = "Takad"
+	culture = goblin
+	religion = goblin_shamanism
+
+	3300.1.1 = { birth = yes }
+	3343.1.1 = { death = yes }
+}
+coralsplitter_1000 = {
+	name = "Gozzak"
+	dynasty = coralsplitter
+	culture = goblin
+	religion = goblin_shamanism
+	mother = coralsplitter_999
+	father = coralsplitter_999_spouse
+
+	trait = sign_lord
+	trait = education_diplomacy_2
+	trait = calm
+	trait = forgiving
+	trait = trusting
+
+	3335.3.17 = { birth = yes }
+	3355.1.1 = { add_spouse = coralsplitter_1000_wife }
+	3373.7.1 = { 
+		death = {
+			death_reason = death_battle
+			killer = fiora_1002b
+		} 
+	}
+}
+coralsplitter_1000_wife = {
+	name = "Zilt"
+	female = yes
+	culture = goblin
+	religion = goblin_shamanism
+
+	3334.1.1 = { birth = yes }
+	3373.7.1 = { 
+		death = {
+			death_reason = death_battle
+			killer = fiora_1002b
+		} 
+	}
+}
+coralsplitter_1001 = {
+	name = "Zoma"
+	female = yes
+	dynasty = coralsplitter
+	culture = goblin
+	religion = goblin_shamanism
+
+	father = coralsplitter_1000
+	mother = coralsplitter_1000_wife
+
+	trait = sign_warrior
+	trait = rowdy
+	trait = brave
+
+	disallow_random_traits = yes
+
+	3357.8.2 = { birth = yes }
+	3368.1.1 = {
+		trait = cynical
+		trait = calm
+	}
+	3373.8.2 = {
+		trait = education_martial_4
+		trait = just
+		trait = strong
+		remove_trait = calm
+		remove_trait = rowdy
+	}
+	3379.7.30 = {			#following the death of her parents Zoma leads the Coralsplitters back to their ancient homeland and finds only more conflict between goblins and Altmer. Recognizing her clan's potential to sway the war in either direction, she decides to aid the Altmer, much to the chagrin of her own clan's veterans.
+		trait = one_legged	#wounded in battle against the Bonefriend goblins. Zoma considers it a fair price to pay to ensure a new peace between her clansfolk and the Altmer.
+	}
+	3380.1.1 = { add_matrilineal_spouse = coralsplitter_1001_husband }
+	3403.5.4 = { death = yes }
+}
+coralsplitter_1001_husband = {
+	name = "Rakhmarth"
+	culture = goblin
+	religion = goblin_shamanism
+
+	3360.1.1 = { birth = yes }
+	3423.1.1 = { death = yes }
+}
+coralsplitter_1002 = {
+	name = "Durgoc"
+	dynasty = coralsplitter
+	culture = goblin
+	religion = goblin_shamanism
+	father = coralsplitter_1001_husband
+	mother = coralsplitter_1001
+
+	trait = sign_lover
+	trait = beauty_bad_2
+	trait = strong
+	trait = education_diplomacy_2
+	trait = fickle
+	trait = humble
+	trait = diligent
+
+	3392.2.23 = { birth = yes }
+	3420.1.1 = { add_spouse = coralsplitter_1002_wife }
+	3456.11.5 = { death = yes }
+}
+coralsplitter_1002_wife = {
+	name = "Gralluz"
+	female = yes
+	culture = goblin
+	religion = goblin_shamanism
+
+	3360.1.1 = { birth = yes }
+	3423.1.1 = { death = yes }
+}
+coralsplitter_1003 = {
+	name = "Demog"
+	dynasty = coralsplitter
+	culture = goblin
+	religion = goblin_shamanism
+	father = coralsplitter_1002
+	mother = coralsplitter_1002_wife
+
+	trait = sign_ritual
+	trait = beauty_bad_1
+	trait = education_stewardship_2
+
+	3420.1.5 = { birth = yes }
+	3485.1.1 = { add_trait = bubonic_plague }
+	3486.5.2 = { death = { death_reason = death_bubonic_plague } }
+}
+coralsplitter_1004 = {
+	name = "Vorna"
+	female = yes
+	dynasty = coralsplitter
+	culture = goblin
+	religion = goblin_shamanism
+	father = coralsplitter_1003
+
+	trait = sign_warrior
+	trait = legitimized_bastard
+	trait = education_martial_4
+
+	3453.8.17 = { birth = yes }
+	3473.1.1 = { add_matrilineal_spouse = coralsplitter_1004_spouse }
+	3512.1.1 = { death = yes }
+}
+coralsplitter_1004_spouse = {
+	name = "Torak"
+	culture = goblin
+	religion = goblin_shamanism
+
+	3462.1.1 = { birth = yes }
+	3512.1.1 = { death = yes }
+}
+coralsplitter_1005 = {
+	name = "Brugor"
+	dynasty = coralsplitter
+	culture = goblin
+	religion = goblin_shamanism
+	father = coralsplitter_1004_spouse
+	mother = coralsplitter_1004
+
+	trait = sign_apprentice
+	trait = education_stewardship_3
+	trait = diligent
+
+	3474.7.19 = { birth = yes }
+	3530.1.1 = { death = yes }
+}
+coralsplitter_1006 = {
+	name = "Zonnu"
+	female = yes
+	dynasty = coralsplitter
+	culture = goblin
+	religion = goblin_shamanism
+	father = coralsplitter_1004_spouse
+	mother = coralsplitter_1004
+
+	trait = sign_steed
+	trait = education_martial_2
+	trait = brave
+	trait = impatient
+
+	3477.6.30 = { birth = yes }
+	3530.1.1 = { death = yes }
+}
+
+#Tinistegil Goblin
+tinistegil_1000 = {
+	name = "Brugor"
+	culture = goblin
+	religion = goblin_shamanism
+
+	trait = education_martial_3
+	trait = peasant_leader
+
+	3404.1.1 = { birth = yes }
+	3441.2.6 = { 
+		death = {
+			death_reason = death_electricity_magic_killer
+			killer = arethil_101
+		}
+	}
+}
+
+#Marvl'afl Dynasty
+marvlafl_997 = {
+	name = "Zokrog"
+	dynasty = marvlafl
+	culture = goblin
+	religion = goblin_shamanism
+
+	3256.1.1 = { birth = yes }
+	3291.11.17 = { 
+		death = {
+			death_reason = death_battle
+			killer = tyegar_999b
+		}
+	}
+}
+marvlafl_998 = {
+	name = "Zogor"
+	dynasty = marvlafl
+	culture = goblin
+	religion = goblin_shamanism
+	father = marvlafl_997
+
+	3278.1.1 = { birth = yes }
+	3330.1.1 = { add_spouse = marvlafl_998_spouse }
+	3351.5.29 = { death = yes }
+}
+marvlafl_998_spouse = {
+	name = "Grumba"
+	female = yes
+	culture = goblin
+	religion = goblin_shamanism
+
+	3276.1.1 = { birth = yes }
+	3353.1.1 = { death = yes }
+}
+marvlafl_999 = {
+	name = "Grimmstal"
+	dynasty = marvlafl
+	culture = goblin
+	religion = goblin_shamanism
+	father = marvlafl_998
+	mother = marvlafl_998_spouse
+
+	3330.1.1 = { birth = yes }
+	3359.7.12 = { 
+		death = {
+			death_reason = death_battle
+			killer = celcerar_100
+		}
+	}
+}
+marvlafl_1000 = {
+	name = "Ivgrizt"
+	dynasty = marvlafl
+	culture = goblin
+	religion = goblin_shamanism
+	father = marvlafl_998
+	mother = marvlafl_998_spouse
+
+	trait = sign_shadow
+	trait = education_diplomacy_1
+	trait = trusting
+	trait = generous
+	trait = shy
+
+	3342.5.12 = { birth = yes }
+	3359.1.1 = { add_spouse = marvlafl_1000_spouse }
+	3370.7.1 = {
+		death = {
+			death_reason = death_battle
+			killer = celcerar_100
+		}
+	}
+}
+marvlafl_1000_spouse = {
+	name = "Arruluk"
+	female = yes
+	culture = goblin
+	religion = goblin_shamanism
+
+	trait = albino
+
+	3340.1.1 = { birth = yes }
+	3390.1.1 = { death = yes }
+}
+marvlafl_1001 = {
+	name = "Dzeizik"
+	dynasty = marvlafl
+	culture = goblin
+	religion = goblin_shamanism
+	father = marvlafl_1000
+	mother = marvlafl_1000_spouse
+
+	trait = albino
+	trait = sign_steed
+
+	3359.6.6 = { birth = yes }
+	3421.7.6 = { death = yes }
+}
+marvlafl_1002 = {
+	name = "Droggur"
+	female = yes
+	dynasty = marvlafl
+	culture = goblin
+	religion = goblin_shamanism
+	father = marvlafl_1000
+	mother = marvlafl_1000_spouse
+
+	trait = sign_lord
+
+	3367.3.28 = { birth = yes }
+	3420.1.1 = { death = yes }
+}
+marvlafl_1003 = {
+	name = "Dragga"
+	female = yes
+	dynasty = marvlafl
+	culture = goblin
+	religion = goblin_shamanism
+	father = marvlafl_1001
+
+	trait = sign_shadow
+	trait = craven
+	trait = cynical
+	trait = arbitrary
+
+	3389.5.26 = { birth = yes }
+	3425.1.1 = { religion = aedric }
+	3440.5.17 = { death = yes }
+}
+marvlafl_1004 = {
+	name = "Mebs"
+	dynasty = marvlafl
+	culture = goblin
+	religion = aedric
+	mother = marvlafl_1003
+
+	trait = albino
+	trait = sign_warrior
+
+	3412.8.18 = { birth = yes }
+	3460.1.1 = { death = yes }
+}
+
+#Gobo Dynasty :>
+gobo_1000 = {
+	name = "Gob"
+	dynasty = dynn_Gobo
+	culture = goblin
+	religion = goblin_shamanism
+
+	diplomacy = 6 #clever Gobo knows how to survive, by leaving outsiders pass through his turf
+	martial = 3
+	stewardship = 4
+	intrigue = 9
+	learning = 9
+	trait = education_diplomacy_2
+	trait = calm
+	trait = content
+	trait = forgiving
+	trait = sign_steed
+
+	3316.6.17 = { birth = yes }
+	3335.1.1 = { add_spouse = gobo_1000_wife }
+	3350.1.1 = { give_nickname = nick_the_peaceful }
+	3378.1.1 = { death = yes }
+}
+gobo_1000_wife = {
+	name = "Lur"
+	female = yes
+	culture = goblin
+	religion = goblin_shamanism
+
+	trait = education_stewardship_1
+	trait = patient
+	trait = gregarious
+	trait = temperate
+	trait = sign_tower
+
+	3317.10.10 = { birth = yes }
+	3361.1.1 = { death = yes }
+}
+gobo_1001 = {
+	name = "Sok"
+	female = yes
+	culture = goblin
+	religion = goblin_shamanism
+
+	father = gobo_1000
+	mother = gobo_1000_wife
+
+	trait = education_diplomacy_1
+	trait = patient
+	trait = calm
+	trait = brave
+
+	3341.1.1 = { birth = yes }
+	3387.1.1 = { death = yes }
+}
+
+cragkin_001 = {
+	name = "Zrakka"
+	dynasty = dynn_cragkin
+	culture = goblin
+	religion = goblin_shamanism
+	female = yes
+
+	trait = education_martial_2
+	trait = stubborn
+	trait = brave
+	trait = vengeful
+
+	3338.5.8 = { birth = yes }
+	3372.7.2 = { death = { death_reason = death_battle } }
+}
+
+cragkin_002 = { #Bridging gap between 450 and eso, subject to change
+	name = "Gozzak"
+	dynasty = dynn_cragkin
+	culture = goblin
+	religion = goblin_shamanism
+	mother = cragkin_001
+
+	3360.1.1 = { birth = yes }
+	3399.3.3 = { death = yes }
+}
+
+cragkin_003 = { #Bridging gap between 450 and eso, subject to change
+	name = "Kerks"
+	dynasty = dynn_cragkin
+	culture = goblin
+	religion = goblin_shamanism
+	father = cragkin_002
+
+	3380.1.1 = { birth = yes }
+	3420.3.3 = { death = yes }
+}
+
+cragkin_004 = { #Bridging gap between 450 and eso, subject to change
+	name = "Zrakka"
+	dynasty = dynn_cragkin
+	culture = goblin
+	religion = goblin_shamanism
+	father = cragkin_003
+	female = yes
+
+	3399.5.5 = { birth = yes }
+	3440.6.8 = { death = yes }
+}
+
+cragkin_005 = { #Bridging gap between 450 and eso, subject to change
+	name = "Zoma"
+	dynasty = dynn_cragkin
+	culture = goblin
+	religion = goblin_shamanism
+	mother = cragkin_004
+	female = yes
+
+	3419.5.5 = { birth = yes }
+	3456.2.3 = { death = yes }
+}
+
+cragkin_006 = { #Bridging gap between 450 and eso, subject to change
+	name = "Gozzak"
+	dynasty = dynn_cragkin
+	culture = goblin
+	religion = goblin_shamanism
+	mother = cragkin_005
+
+	3441.1.1 = { birth = yes }
+	3485.1.1 = { death = yes }
+}
+
+cragkin_007 = { #Goblin during ESO
+	name = "Zrakka"
+	dynasty = dynn_cragkin
+	culture = goblin
+	religion = goblin_shamanism
+	female = yes 
+	father = cragkin_006
+
+	3466.1.1 = { birth = yes }
+	3506.1.1 = { death = yes }
+}
+
+stonechewer_001 = {
+	name = "Kerks"
+	dynasty = dynn_stonechewer
+	culture = goblin
+	religion = goblin_shamanism
+
+	trait = sign_mage
+
+	3335.4.1 = { birth = yes }
+	3370.5.15 = { death = yes }
+}
+
+stonechewer_002 = { #Bridging gap between 450 and eso, subject to change
+	name = "Kerks"
+	dynasty = dynn_stonechewer
+	culture = goblin
+	religion = goblin_shamanism
+
+	father = stonechewer_001
+
+	3365.1.1 = { birth = yes }
+	3415.1.1 = { death = yes }
+}
+
+stonechewer_003 = { #Bridging gap between 450 and eso, subject to change
+	name = "Kerks"
+	dynasty = dynn_stonechewer
+	culture = goblin
+	religion = goblin_shamanism
+	female = yes 
+
+	father = stonechewer_002
+
+	3380.1.1 = { birth = yes }
+	3425.1.1 = { death = yes }
+}
+
+stonechewer_004 = { #Bridging gap between 450 and eso, subject to change
+	name = "Kerks"
+	dynasty = dynn_stonechewer
+	culture = goblin
+	religion = goblin_shamanism
+	female = yes 
+
+	mother = stonechewer_003
+
+	3405.1.1 = { birth = yes }
+	3440.1.1 = { death = yes }
+}
+
+stonechewer_005 = { #Bridging gap between 450 and eso, subject to change
+	name = "Kerks"
+	dynasty = dynn_stonechewer
+	culture = goblin
+	religion = goblin_shamanism
+	female = yes 
+
+	mother = stonechewer_004
+	trait = education_martial_4 #Manages to hold out against orcrest
+	trait = stubborn
+	trait = unyielding_defender
+
+	3431.1.1 = { birth = yes }
+	3491.1.1 = { death = { death_reason = death_bubonic_plague } } #Dies from flu
+}
+
+#Rotblood tribe, actually in Dune in eso, but there's no place in ek2 there, so instead part of the tribe went to ruins of Orcrest
+rotblood_100 = {
+	name = "Zyra"
+	dynasty = dyn_rotblood
+	culture = goblin
+	religion = peryite_cult
+	female = yes
+
+	3458.1.1 = { birth = yes }
+	3524.1.1 = { death = yes }
+}
+
+toadtongue_1000 = {
+	name = "Togga"
+	dynasty = dynn_toadtongue
+	culture = goblin
+	religion = goblin_shamanism
+
+	3284.1.1 = { birth = yes }
+	3323.2.27 = { death = { death_reason = death_duel killer = levena_999 } }
+}

@@ -1,0 +1,560 @@
+﻿##Tharumee
+tharumee_96 = {
+	name = "Thar_Jaa"
+	dynasty = dyn_tharumee
+	religion = hist
+	culture = hapsleet
+
+	trait = education_martial_4
+	
+	3231.1.1 = { birth = yes }
+	3269.1.1 = { give_nickname = nick_the_great }
+	3303.7.3 = { death = yes }
+}
+tharumee_97 = {
+	name = "Gulum_La"
+	dynasty = dyn_tharumee
+	religion = hist
+	culture = hapsleet
+
+	father = tharumee_96
+	
+	3256.1.1 = { birth = yes }
+	3319.2.16 = { death = yes }
+}
+tharumee_98 = {
+	name = "Teekeeus"
+	dynasty = dyn_tharumee
+	religion = hist
+	culture = hapsleet
+
+	father = tharumee_97
+	
+	3280.1.1 = { birth = yes }
+	3342.12.11 = { death = yes }
+}
+tharumee_99 = {
+	name = "Dreekius"
+	dynasty = dyn_tharumee
+	religion = hist
+	culture = hapsleet
+
+	father = tharumee_98
+	
+	3307.1.1 = { birth = yes }
+	3325.1.1 = { add_spouse = oligazawmee_100b }
+	3355.7.25 =  { death = { death_reason = death_battle killer = shuluni_100 } }
+}
+tharumee_100 = {
+	name = "Milos"
+	dynasty = dyn_tharumee
+	religion = hist
+	culture = hapsleet
+	dna = tharumee_105_dna_entry
+
+	father = tharumee_99
+	mother = oligazawmee_100b
+
+	trait = education_martial_2
+	trait = vengeful
+	trait = stubborn
+	trait = arrogant
+	
+	3331.1.1 = { birth = yes }
+	#Actually betrothed in 3344
+	3354.1.1 = { add_spouse = cozca_101b }
+	3398.1.1 = { death = yes }
+}
+tharumee_100b = {
+	name = "Amussa"
+	dynasty = dyn_tharumee
+	religion = hist
+	culture = hapsleet
+	female = yes
+
+	father = tharumee_99
+	mother = oligazawmee_100b
+	
+	trait = education_stewardship_3	
+	trait = brave
+	trait = zealous
+	trait = patient
+	
+	3333.1.1 = { birth = yes }
+	3407.1.1 = { death = yes }
+}
+tharumee_101 = {
+	name = "Dreeleiez"
+	dynasty = dyn_tharumee
+	religion = hist
+	culture = hapsleet
+	female = yes
+
+	father = tharumee_100
+	mother = cozca_101b
+
+	3358.1.1 = { birth = yes }
+	3417.1.1 = { death = yes }
+}
+tharumee_102 = {
+	name = "Wuja_Chath"
+	dynasty = dyn_tharumee
+	religion = hist
+	culture = hapsleet
+
+	mother = tharumee_101
+
+	3388.1.1 = { birth = yes }
+	3440.1.1 = { death = yes }
+}
+tharumee_102b = {
+	name = "Reeh_La"
+	dynasty = dyn_tharumee
+	religion = hist
+	culture = hapsleet
+
+	mother = tharumee_101
+
+	3392.1.1 = { birth = yes }
+	3436.1.1 = { death = yes }
+}
+tharumee_103 = {
+	name = "Dajaheel"
+	dynasty = dyn_tharumee
+	religion = hist
+	culture = hapsleet
+	female = yes
+
+	father = tharumee_102b
+
+	3417.1.1 = { birth = yes }
+	#EK TODO: maybe dies with no heirs and second branch inherits?
+	3476.1.1 = { death = yes }
+}
+
+#Second branch
+tharumee1_99 = {
+	name = "Ulos"
+	dynasty = dyn_tharumee
+	religion = hist
+	culture = hapsleet
+
+	father = tharumee_98
+	
+	3313.1.1 = { birth = yes }
+	3358.6.5 = { death = { death_reason = death_battle } }
+}
+tharumee1_100 = {
+	name = "Jram_Sa"
+	dynasty = dyn_tharumee
+	religion = hist
+	culture = hapsleet
+
+	father = tharumee1_99
+	
+	trait = education_stewardship_2	
+	
+	3341.1.1 = { birth = yes }
+	3409.1.1 = { death = yes }
+}
+
+##Oligazawmee
+oligazawmee_98 = {
+	name = "Ah_Ra"
+	dynasty = dyn_oligazawmee
+	religion = hist
+	culture = hapsleet
+	
+	3260.1.1 = { birth = yes }
+	3312.7.12 = { death = yes }
+}
+oligazawmee_99 = {
+	name = "Tun_Zeeus"
+	dynasty = dyn_oligazawmee
+	religion = hist
+	culture = hapsleet
+
+	father = oligazawmee_98
+	
+	3282.1.1 = { birth = yes }
+	3340.4.14 = { death = yes }
+}
+oligazawmee_100 = {
+	name = "Ajum_Kajin"
+	dynasty = dyn_oligazawmee
+	religion = hist
+	culture = hapsleet
+
+	father = oligazawmee_99
+	
+	3308.1.1 = { birth = yes }
+	3375.1.1 = { death = yes }
+}
+oligazawmee_100b = { #Married to tharumee_99
+	name = "Jun_Jassa"
+	religion = hist
+	dynasty = dyn_oligazawmee
+	culture = hapsleet
+	female = yes
+
+	father = oligazawmee_99
+	
+	3313.1.1 = { birth = yes }
+	3384.1.1 = { death = yes }
+}
+
+#Cozca
+cozca_99 = {
+	name = "Chath_Jaa"
+	dynasty = dyn_cozca
+	religion = hist
+	culture = hapsleet
+
+	3277.1.1 = { birth = yes }
+	3331.1.1 = { death = yes }
+}
+cozca_100 = {
+	name = "Shaleez"
+	dynasty = dyn_cozca
+	religion = hist
+	culture = hapsleet
+	female = yes
+
+	father = cozca_99
+
+	3311.1.1 = { birth = yes }
+	3379.1.1 = { death = yes }
+}
+cozca_101 = {
+	name = "Xozuka"
+	dynasty = dyn_cozca
+	religion = hist
+	culture = hapsleet
+
+	mother = cozca_100
+
+	3334.1.1 = { birth = yes }
+	3409.1.1 = { death = yes }
+}
+cozca_101b = {
+	name = "Bikusotl"
+	dynasty = dyn_cozca
+	religion = hist
+	culture = hapsleet
+	female = yes
+
+	mother = cozca_100
+	
+	3337.1.1 = { birth = yes }
+	3402.1.1 = { death = yes }
+}
+
+#Moss-Skin tribe, see Online:Moss-Skin Tribe for list of members for ESO bookmark
+mossskin_100 = {
+	name = "Tsojei"
+	dynasty = dyn_moss_skin
+	religion = hist
+	culture = hapsleet
+	
+	3327.1.1 = { birth = yes }
+	3401.1.1 = { death = yes }
+}
+
+#Black-Tongue tribe - shadowscales according to eso, see Online:Black-Tongue Tribe for list of members for ESO bookmark
+blacktongue_100 = {
+	name = "Deer_Xol"
+	dynasty = dyn_blacktongue
+	religion = hist
+	culture = hapsleet
+	
+	trait = education_intrigue_3
+	
+	3305.1.1 = { birth = yes }
+	3320.1.1 = { add_spouse = blacktongue_100_wife }
+	3368.1.1 = { death = yes }
+}
+blacktongue_100_wife = {
+	name = "Wujeeta"
+	religion = hist
+	culture = hapsleet
+	female = yes	
+		
+	trait = education_stewardship_1
+	trait = deceitful
+	
+	3302.1.1 = { birth = yes }
+	3374.1.1 = { death = yes }
+}
+blacktongue_101 = {
+	name = "Luwolsalus"
+	dynasty = dyn_blacktongue
+	religion = hist
+	culture = hapsleet
+
+	father = blacktongue_100
+	mother = blacktongue_100_wife
+	
+	trait = education_martial_1
+	trait = deceitful
+	
+	3325.1.1 = { birth = yes }
+	3350.1.1 = { add_spouse = blacktongue_101_wife }
+	3393.1.1 = { death = yes }
+}
+blacktongue_101_wife = {
+	name = "Dakee_Kia"
+	religion = hist
+	culture = hapsleet
+	female = yes
+	
+	3328.1.1 = { birth = yes }
+	3410.1.1 = { death = yes }
+}
+blacktongue_101b = {
+	name = "Jram_Hei"
+	dynasty = dyn_blacktongue
+	religion = hist
+	culture = hapsleet
+
+	father = blacktongue_100
+	mother = blacktongue_100_wife
+	
+	trait = education_intrigue_3
+	trait = deceitful
+	
+	3329.1.1 = { birth = yes }
+	3410.1.1 = { death = yes }
+}
+blacktongue_101c = {
+	name = "Veemarz"
+	dynasty = dyn_blacktongue
+	religion = hist
+	culture = hapsleet
+	female = yes
+
+	father = blacktongue_100
+	mother = blacktongue_100_wife
+	
+	3330.1.1 = { birth = yes }
+	3410.1.1 = { death = yes }
+}
+
+#Root-House tribe, see Online:Root-House Tribe for list of members for ESO bookmark
+roothouse_100 = {
+	name = "Dramukkath"
+	dynasty = dyn_tumtaleel
+	religion = hist
+	culture = hapsleet
+
+	trait = education_martial_4
+	trait = strong
+	
+	3336.1.1 = { birth = yes }
+	3378.1.1 = { death = yes }	
+}
+
+#Bright-Throat tribe, also featured in ESO
+brightthroat_100 = {
+	name = "Mopazish"
+	dynasty = dyn_bright_throat
+	religion = hist
+	culture = hapsleet
+	
+	trait = education_learning_2
+
+	3320.1.1 = { birth = yes }
+	3396.1.1 = { death = yes }	
+}
+
+#Lich-Queen of Norg-Tzel
+priest_queen_keerasa  = {
+	name = "Keerasa"
+	dynasty = dyn_norg_tzel
+	culture = hapsleet
+	religion = ghostpeople
+	female = yes
+	dna = priest_queen_keerasa_dna_entry
+
+	trait = education_learning_4
+	trait = education_magic_4
+	trait = ambitious
+	trait = sadistic
+	trait = zealous
+	trait = shrewd
+	trait = ghost_scale_3
+	trait = necromancer
+	trait = lich_character
+	
+	2930.7.2 = { birth = yes }
+	3000.5.1 = { give_nickname = nick_the_white_queen }
+	3300.1.1 = {
+		effect = {
+			set_predetermined_decay_effect = { DECAY = 0.4 } 
+			add_necromancy_perk_effect = { LEVEL = 5 }
+			add_arcana_skill = { VALUE = 5 }			
+		}
+	}
+	3351.1.1 = { # Raises herself an undead army
+		effect = {
+			spawn_army = {
+				levies = {
+                    value = 500
+                }
+                inheritable = no
+				uses_supply = no
+                name = "undead_horde"
+				location = province:5104
+				origin = province:5104
+			}
+		}
+	}	
+	3500.1.1 = { death = yes }
+}
+
+#Seetul
+seetul_99 = {
+	name = "Ashgar"
+	dynasty = dyn_seetul
+	culture = hapsleet
+	religion = ghostpeople
+
+	3291.1.1 = { birth = yes }
+	3314.1.1 = { add_spouse = seetul_99_wife }
+	3346.12.9 = { death = yes }
+}
+seetul_99_wife = {
+	name = "On_Wazei"
+	culture = hapsleet
+	religion = ghostpeople
+	female = yes
+
+	3289.1.1 = { birth = yes }
+	3353.1.1 = { death = yes }
+}
+seetul_100  = {
+	name = "Lotaeel"
+	dynasty = dyn_seetul
+	culture = hapsleet
+	religion = ghostpeople
+
+	father = seetul_99
+	mother = seetul_99_wife
+
+	trait = greedy
+
+	3317.1.1 = { birth = yes }
+	3365.11.7 = { death = { death_reason = death_murder } }
+}
+seetul_100b  = {
+	name = "Heetzasi"
+	dynasty = dyn_seetul
+	culture = hapsleet
+	religion = ghostpeople
+
+	father = seetul_99
+	mother = seetul_99_wife
+
+	trait = greedy
+
+	3324.1.1 = { birth = yes }
+	#Want their brother's land
+	3346.12.9 = { set_relation_rival = { reason = rival_historical target = character:seetul_100 } }
+	#After taking their brother's land they start hating each other
+	3365.11.7 = { set_relation_rival = { reason = rival_historical target = character:seetul_100c } }
+	3378.1.1 = { death = yes }
+}
+seetul_100c  = {
+	name = "Nesh_Deeka"
+	dynasty = dyn_seetul
+	culture = hapsleet
+	religion = ghostpeople
+
+	father = seetul_99
+	mother = seetul_99_wife
+
+	trait = greedy
+
+	3328.1.1 = { birth = yes }
+	#Want their brother's land
+	3346.12.9 = { set_relation_rival = { reason = rival_historical target = character:seetul_100 } }
+	3401.1.1 = { death = yes }
+}
+
+#Cuanaca, vassals of Seetul
+cuanaca_100 = {
+	name = "Chunkeesei"
+	dynasty = dyn_cuanaca
+	religion = hist
+	culture = hapsleet
+	female = yes
+
+	3330.1.1 = { birth = yes }
+	3386.1.1 = { death = yes }
+}
+cuanaca_101 = {
+	name = "Meeleeh_Een"
+	dynasty = dyn_cuanaca
+	religion = hist
+	culture = hapsleet
+
+	mother = cuanaca_100
+
+	3359.1.1 = { birth = yes }
+	3427.1.1 = { death = yes }
+}
+
+#Lowborns
+#Random argonian who takes Archon after Thrassian plague
+archon_argonian_1 = {
+	name = "Tsutvaeem"
+	religion = hist
+	culture = hapsleet
+
+	2252.1.1 = { birth = yes }
+	2319.1.1 = { death = yes }
+}
+
+argonian_unlanded_0014 = {
+	name = "Kamax_Ei"
+	culture = hapsleet
+	religion = hist
+
+	trait = sign_shadow
+	trait = shadowscale
+	trait = cynical
+	trait = paranoid
+	trait = arbitrary
+	trait = education_intrigue_2
+
+	3339.1.1 = { birth = yes }
+	3410.1.1 = { death = yes }
+}
+
+argonian_unlanded_0015 = {
+	name = "Kud_Nakal"
+	culture = hapsleet
+	religion = hist
+	female = yes
+
+	trait = lifestyle_herbalist #EK TODO: upgrade to alchemist when added
+
+	3320.1.1 = { birth = yes }
+	3410.1.1 = { death = yes }
+}
+
+argonian_unlanded_0016 = {
+	name = "Shuchei"
+	culture = hapsleet
+	religion = sunhist
+	female = yes
+
+	trait = sign_apprentice
+	trait = ambitious
+	trait = stubborn
+	trait = diligent
+	trait = sun_blessed_1
+	trait = arcana_good_1
+
+	3334.07.04 = { birth = yes }
+	3410.1.1 = { death = yes }
+}

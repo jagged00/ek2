@@ -1,0 +1,3272 @@
+﻿##BARSAEBIC
+
+##Myfrandi Dynasty (dyn_myfrandi)
+#House Myfrandi (dyn_myfrandi)
+myfrandi_1 = { #Aedraphile Queen of Wendelbek during Narfinsel Schism
+	name = "Creluna"
+	dynasty = dyn_myfrandi
+	religion = malada
+	culture = ayleid
+	female = yes
+
+	trait = lifespan_magic_4
+	trait = zealous
+	trait = stubborn
+	trait = honest
+	trait = education_martial_2
+
+	-46.1.1 = { birth = yes }
+	198.1.1 = { death = { death_reason = death_execution killer = atatar_001 } } #Executed by Daedraphile King
+}
+myfrandi_2 = { #Aedraphile King of Twyllbek (Gideon)
+	name = "Angoromir"
+	dynasty = dyn_myfrandi
+	religion = malada
+	culture = ayleid
+
+	#mother = myfrandi_1 #Handled in ek_on_game_start_fix_history_parents due to mother being born in negative year
+
+	trait = lifespan_magic_4
+	trait = vengeful #Refused to help Daedraphiles against Alessia
+	trait = stubborn
+	trait = zealous
+
+	96.1.1 = { birth = yes }
+	336.2.5 = { death = yes }
+}
+myfrandi_2b = { #Ayleid from ESO Murkmire, wanted to enslave Argonians and Hist, subjugated Murkmire for a time
+	name = "Myndhal"
+	dynasty = dyn_myfrandi
+	religion = malada
+	culture = ayleid
+
+	#mother = myfrandi_1 #Handled in ek_on_game_start_fix_history_parents due to mother being born in negative year
+
+	trait = undead_character #Turned into undead
+	trait = stubborn
+	trait = arrogant
+	trait = sadistic
+	trait = arcana_good_2
+	trait = education_magic_3
+	trait = necromancer
+
+	109.1.1 = { birth = yes }
+	280.1.1 = { death = { death_reason = death_vanished } } #Disappeared in his portal thing
+}
+myfrandi_3 = {
+	name = "Creluna"
+	dynasty = dyn_myfrandi
+	religion = malada
+	culture = ayleid
+	female = yes
+
+	father = myfrandi_2
+
+	trait = lifespan_3
+
+	198.1.1 = { birth = yes }
+	402.11.4 = { death = yes }
+}
+myfrandi_4 = { #Last king of Twyllbek
+	name = "Myndhal"
+	dynasty = dyn_myfrandi
+	religion = malada
+	culture = ayleid
+
+	mother = myfrandi_3
+
+	trait = lifespan_3
+
+	292.1.1 = { birth = yes }
+	471.7.18 = { death = yes } #Survives his kingdom's fall
+}
+myfrandi_5 = {
+	name = "Gharomir"
+	dynasty = dyn_myfrandi
+	religion = malada
+	culture = ayleid
+
+	father = myfrandi_4
+
+	trait = lifespan_3
+
+	366.1.1 = { birth = yes }
+	559.1.1 = { death = yes }
+}
+myfrandi_line = {
+	name = "Gharomir"
+	dynasty = dyn_myfrandi
+	religion = malada
+	culture = ayleid
+	father = myfrandi_5
+	trait = line_of_x
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+	559.1.1 = { birth = yes }
+	610.1.1 = { give_nickname = nick_line_of }
+	3015.9.12 = { death = yes }
+}
+myfrandi_98 = {
+	name = "Lenethelel" #Count of Silent Hall
+	dynasty = dyn_myfrandi
+	religion = malada
+	culture = barsaebic
+
+	father = myfrandi_line
+
+	trait = lifespan_3
+	trait = education_magic_4
+	
+	3015.9.12 = { birth = yes }
+	3199.1.6 = { death = { death_reason = death_malnourishment } }
+	
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_headgear=male_headgear_secular_ayleid_crown_02
+			custom_cloaks=male_clothes_ayleid_moonstone_01
+		}
+	}
+}
+
+myfrandi_99 = {
+	name = "Ashane"
+	dynasty = dyn_myfrandi
+	religion = malada
+	culture = barsaebic
+	
+	father = myfrandi_98
+	
+	trait = lifespan_3
+	trait = education_martial_3
+	
+	3106.7.9 = { birth = yes }
+	3314.4.2 = { death = { death_reason = death_natural_causes } }
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_headgear=male_headgear_secular_ayleid_crown_02
+			custom_cloaks=male_clothes_ayleid_moonstone_01
+		}
+	}
+}
+myfrandi_100 = {
+	name = "Ceyran" #Count of Silent Hall
+	dynasty = dyn_myfrandi
+	religion = malada
+	culture = barsaebic
+
+	father = myfrandi_99
+
+	trait = lifespan_3
+	trait = education_magic_3
+	trait = education_stewardship_2
+	trait = brave
+	trait = wrathful
+	trait = stubborn
+	trait = sign_shadow
+
+	diplomacy = 4
+	martial = 3
+	stewardship = 6
+	intrigue = 3
+	learning = 7
+	
+	3203.5.15 = { birth = yes }
+	3369.5.7 = { death = { death_reason = death_battle } }
+}
+myfrandi_100b = {
+	name = "Amarie"
+	dynasty = dyn_myfrandi
+	religion = malada
+	culture = barsaebic
+	female = yes
+
+	father = myfrandi_99
+
+	trait = lifespan_3
+	trait = sign_apprentice
+	
+	3211.7.9 = { birth = yes }
+	3412.9.5 = { death = { death_reason = death_natural_causes } }
+}
+myfrandi_101 = {
+	name = "Uuril"
+	dynasty = dyn_myfrandi
+	religion = malada
+	culture = barsaebic
+
+	mother = myfrandi_100b
+
+	trait = lifespan_3
+	trait = education_magic_2
+	trait = arcana_good_2
+	trait = craven
+	trait = calm
+	trait = shy
+	trait = sign_steed
+	
+	3298.6.10 = { birth = yes }
+	3490.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+
+##Silyanorn Dynasty
+#House Silyanorn
+#Ruled Bruma in ancient days, then Stormhold after, not ruling anything now
+silyanorn_1 = {
+	name = "Nihanre"
+	dynasty = dyn_silyanorn
+	religion = malada
+	culture = ayleid
+
+	trait = lifespan_magic_5
+
+	-442.1.1 = { birth = yes }
+	176.1.1 = { death = { death_reason = death_battle } }
+}
+silyanorn_2 = {
+	name = "Inalada"
+	dynasty = dyn_silyanorn
+	religion = malada
+	culture = ayleid
+	female = yes
+
+	#father = silyanorn_1 #Handled in ek_on_game_start_fix_history_parents due to father being born in negative year
+
+	trait = lifespan_magic_4
+
+	42.1.1 = { birth = yes }
+	198.1.1 = { death = { death_reason = death_murder } }
+}
+silyanorn_3 = {
+	name = "Emparsilaya"
+	dynasty = dyn_silyanorn
+	religion = malada
+	culture = ayleid
+	female = yes
+	
+	mother = silyanorn_2
+
+	trait = lifespan_magic_4
+
+	137.1.1 = { birth = yes }
+	242.1.1 = { add_spouse = vindasel_2 }
+	470.1.1 = { death = yes }
+}
+silyanorn_line = {
+	name = "Emparsilaya"
+	dynasty = dyn_silyanorn
+	religion = malada
+	culture = ayleid
+	female = yes
+	mother = silyanorn_3
+	father = vindasel_2
+	trait = line_of_x
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+	470.1.1 = { birth = yes }
+	410.1.1 = { give_nickname = nick_line_of }
+	2801.1.1 = { death = yes }
+}
+silyanorn_95 = {
+	name = "Quaronaldil"
+	dynasty = dyn_silyanorn
+	religion = malada
+	culture = ayleid
+
+	mother = silyanorn_line
+
+	trait = lifespan_3
+
+	2801.1.1 = { birth = yes }
+	3007.1.1 = { death = yes }
+}
+silyanorn_96 = {
+	name = "Istrimaya"
+	dynasty = dyn_silyanorn
+	religion = malada
+	culture = ayleid
+	female = yes
+
+	father = silyanorn_95
+
+	trait = lifespan_3
+
+	2874.1.1 = { birth = yes }
+	3092.1.1 = { death = yes }
+}
+silyanorn_96b = { #Married to Loriasel
+	name = "Amarie"
+	dynasty = dyn_silyanorn
+	religion = malada
+	culture = ayleid
+	female = yes
+
+	father = silyanorn_95
+
+	trait = lifespan_3
+
+	2925.1.1 = { birth = yes }
+	3210.1.1 = { death = yes }
+}
+silyanorn_97 = {
+	name = "Sutaril"
+	dynasty = dyn_silyanorn
+	religion = malada
+	culture = ayleid
+
+	mother = silyanorn_96
+
+	trait = lifespan_3
+
+	2999.1.1 = { birth = yes }
+	3112.1.1 = { death = yes }
+}
+silyanorn_97b = {
+	name = "Xolomir"
+	dynasty = dyn_silyanorn
+	religion = malada
+	culture = ayleid
+
+	mother = silyanorn_96
+
+	trait = lifespan_3
+
+	3006.1.1 = { birth = yes }
+	3207.1.1 = { death = yes }
+}
+silyanorn_98 = {
+	name = "Dynichi"
+	dynasty = dyn_silyanorn
+	religion = malada
+	culture = ayleid
+
+	father = silyanorn_97b
+
+	trait = lifespan_3
+
+	3091.1.1 = { birth = yes }
+	3303.1.1 = { death = yes }
+}
+silyanorn_99 = {
+	name = "Sunnatwyll" #Duke of Stormhold
+	dynasty = dyn_silyanorn
+	religion = malada
+	culture = barsaebic
+
+	father = silyanorn_98
+
+	trait = lifespan_3
+	
+	3184.1.1 = { birth = yes }
+	3368.7.12 = { death = { death_reason = death_battle killer = melur_100 } }
+	
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_headgear=male_headgear_secular_ayleid_crown_02
+			custom_cloaks=male_clothes_ayleid_moonstone_01
+		}
+	}
+}
+silyanorn_100 = {
+	name = "Sunnabe" #exiled son of the above; took refuge in the Carandol court
+	dynasty = dyn_silyanorn
+	religion = malada
+	culture = barsaebic
+	
+	father = silyanorn_99
+	
+	trait = lifespan_3
+	trait = arcana_good_2
+	trait = sign_lady
+	
+	3296.9.18 = { birth = yes }
+	3369.1.1 = { employer = carandol_100 }
+	3375.1.1 = { add_spouse = carandol1_101b }
+	3460.1.1 = { death = { death_reason = death_murder } }
+}
+
+##Carandol Dynasty
+#House Carandol - rulers of Loriasel, ruled Cheydinhal in ancient times, left during Narfinsel Schism
+carandol_1 = {
+	name = "Bokaur"
+	dynasty = dyn_carandol
+	religion = malada
+	culture = ayleid
+
+	trait = lifespan_magic_4
+
+	-39.1.1 = { birth = yes }
+	200.1.1 = { death = { death_reason = death_battle } }
+}
+carandol_2 = {
+	name = "Cetdaya"
+	dynasty = dyn_carandol
+	religion = malada
+	culture = ayleid
+	female = yes
+
+	#father = carandol_1 #Handled in ek_on_game_start_fix_history_parents due to mother being born in negative year
+
+	trait = lifespan_magic_4
+
+	101.1.1 = { birth = yes }
+	431.1.1 = { death = yes }
+}
+carandol_line = {
+	name = "Cetdaya"
+	dynasty = dyn_carandol
+	religion = malada
+	culture = ayleid
+	mother = carandol_2
+	female = yes
+	trait = line_of_x
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+	450.1.1 = { birth = yes }
+	460.1.1 = { give_nickname = nick_line_of }
+	2487.1.1 = { death = yes }
+}
+carandol_96 = {
+	name = "Enthelel"
+	dynasty = dyn_carandol
+	religion = malada
+	culture = barsaebic
+
+	mother = carandol_line
+
+	2487.1.1 = { birth = yes }
+	2682.1.1 = { death = yes }
+}
+carandol_97 = {
+	name = "Elanwe"
+	dynasty = dyn_carandol
+	religion = malada
+	culture = barsaebic
+	female = yes
+
+	father = carandol_96
+
+	trait = lifespan_3
+
+	2599.1.1 = { birth = yes }
+	2731.1.1 = { death = yes }
+}
+carandol_98 = {
+	name = "Henomir" #Count of Loriasel
+	dynasty = dyn_carandol
+	religion = malada
+	culture = barsaebic
+
+	mother = carandol_97
+
+	trait = lifespan_magic_5
+	trait = education_martial_3
+	trait = education_magic_4
+	trait = arcana_good_3
+	trait = ambitious
+	trait = vengeful
+	trait = diligent
+
+	2677.1.1 = { birth = yes }
+	2740.1.1 = { give_nickname = nick_the_oppressor }
+	2990.1.1 = { add_spouse = silyanorn_96b }	
+	3201.1.1 = { death = { death_reason = death_mysterious } }
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_headgear=male_headgear_secular_ayleid_crown_02
+			custom_cloaks=male_clothes_ayleid_moonstone_01
+		}
+	}
+}
+carandol_99 = {
+	name = "Ormomir"
+	dynasty = dyn_carandol
+	religion = malada
+	culture = barsaebic
+
+	father = carandol_98
+	mother = silyanorn_96b
+	
+	trait = lifespan_magic_4
+	trait = education_stewardship_3	
+	trait = education_magic_3
+	trait = arcana_good_3	
+	trait = stubborn
+	trait = calm 
+	trait = forgiving
+
+	3022.1.1 = { birth = yes }
+	3200.1.1 = { add_spouse = carandol1_100b }
+	3333.1.1 = { death = yes }
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_headgear=male_headgear_secular_ayleid_crown_02
+			custom_cloaks=male_clothes_ayleid_moonstone_01
+		}
+	}
+}
+carandol_99b = {
+	name = "Celethelel"
+	dynasty = dyn_carandol
+	religion = malada
+	culture = barsaebic
+
+	father = carandol_98
+	mother = silyanorn_96b
+	
+	trait = lifespan_3
+
+	3030.1.1 = { birth = yes }
+	3130.1.1 = { add_spouse = carandol_wife_99b }
+	3248.1.1 = { death = yes }
+}
+carandol_wife_99b = {
+	name = "Cowuna"
+	religion = malada
+	culture = barsaebic
+	female = yes
+
+	trait = lifespan_3
+
+	3077.1.1 = { birth = yes }
+	3299.1.1 = { death = yes }
+}
+carandol_100 = { #Countess of Loriasel in 440 and 450, her ghost appears in ESO
+	name = "Morilye" #Lore
+	dna = carandol_100_dna_entry
+	dynasty = dyn_carandol
+	religion = malada
+	culture = barsaebic
+	female = yes
+
+	father = carandol_99
+	mother = carandol1_100b
+	
+	trait = lifespan_3
+	trait = education_stewardship_3
+	trait = education_magic_3
+	trait = arcana_good_2	
+	trait = beauty_good_2
+	trait = diligent
+	trait = zealous
+	trait = ambitious
+	trait = sign_mage
+
+	3220.4.14 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_weight
+		}	
+	}
+	3350.1.1 = { 
+		effect = { 
+			set_primary_title_to = title:c_loriasel
+			make_claim_weak = title:c_cheydinhal
+			make_claim_weak = title:d_cheydinhal 
+		} 
+	}
+	3380.1.1 = {
+		effect = {
+			remove_trait = lifespan_3
+			add_trait = lifespan_magic_4
+			add_character_flag = artificial_lifespan
+			add_character_flag = natural_lifespan_3
+		}
+	}
+	3490.1.1 = { death = { death_reason = death_bubonic_plague } } #knahaten
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=female_hair_western_05
+			custom_headgear=female_headgear_secular_ayleid_crown_02
+			custom_cloaks=female_clothes_ayleid_moonstone_01
+		}
+	}
+}
+#Second branch
+carandol1_100 = {
+	name = "Cenedelin"
+	dynasty = dyn_carandol
+	religion = malada
+	culture = barsaebic
+
+	father = carandol_99b
+	mother = carandol_wife_99b
+	
+	trait = lifespan_3
+	trait = education_learning_4
+	trait = education_magic_4
+	trait = arcana_good_1
+
+	3123.1.1 = { birth = yes }
+	3293.1.1 = {
+		effect = {
+			remove_trait = lifespan_3
+			add_trait = lifespan_magic_4
+			add_character_flag = artificial_lifespan
+			add_character_flag = natural_lifespan_3
+		}
+	}
+	3456.1.1 = { death = yes }
+}
+carandol1_100b = {
+	name = "Anurraame"
+	dynasty = dyn_carandol
+	religion = malada
+	culture = barsaebic
+	female = yes
+
+	father = carandol_99b
+	mother = carandol_wife_99b
+	
+	trait = lifespan_3
+
+	3134.1.1 = { birth = yes }
+	3356.1.1 = { death = yes }
+}
+carandol1_101 = {
+	name = "Varondil"		
+	dynasty = dyn_carandol
+	religion = malada
+	culture = barsaebic
+
+	father = carandol1_100
+	
+	trait = lifespan_3
+	trait = arcana_good_1	
+
+	3282.1.1 = { birth = yes }
+	3417.1.1 = { death = yes }
+}
+carandol1_101b = {
+	name = "Iniel"
+	dynasty = dyn_carandol
+	religion = malada
+	culture = barsaebic
+	female = yes
+
+	father = carandol1_100
+	
+	trait = lifespan_3
+	trait = beauty_good_1
+	trait = arcana_good_1	
+
+	3299.1.1 = { birth = yes }
+	3490.1.1 = { death = { death_reason = death_bubonic_plague } } #knahaten
+}
+
+#################
+### MATHMELDI ###
+#################
+
+#Oiobala dynasty, ruled Talwinque near Kvatch (d_dirich)
+oiobala_1 = { #Ruled Talwinque during Alessian rebellion, died in it
+	name = "Genethelel" 
+	dynasty = dyn_oiobala
+	religion = ilpenada
+	culture = ayleid
+	
+	trait = lifespan_magic_4
+	trait = education_magic_4
+	trait = trusting
+	trait = arrogant
+	trait = sadistic
+	
+	-96.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_torn_to_pieces_by_mob } }
+}
+oiobala_2 = { #Son of 001, left for Valenwood
+	name = "Filestis" 
+	dynasty = dyn_oiobala
+	religion = ilpenada
+	culture = ayleid
+	
+	#father = oiobala_1 - #Handled in ek_on_game_start_fix_history_parents due to mother being born in negative year
+
+	trait = lifespan_magic_4
+	trait = education_magic_3
+	
+	154.1.1 = { birth = yes }
+	298.1.1 = { add_spouse = trumbe_2 }
+	498.12.1 = { death = { death_reason = death_natural_causes } }
+}
+oiobala_2b = { #Daughter of 001, married first Count of Kvatch
+	name = "Gullada" 
+	dynasty = dyn_oiobala
+	religion = eight_divines #Converted when married
+	culture = ayleid
+	female = yes
+
+	#father = oiobala_1 - #Handled in ek_on_game_start_fix_history_parents due to mother being born in negative year
+
+	trait = lifespan_3
+	
+	166.1.1 = { birth = yes }
+	368.1.1 = { death = { death_reason = death_natural_causes } }
+}
+oiobala_3 = {
+	name = "Genethelel" 
+	dynasty = dyn_oiobala
+	religion = ilpenada
+	culture = ayleid
+	
+	father = oiobala_2
+	mother = trumbe_2
+
+	trait = lifespan_magic_4
+	trait = education_magic_2
+	
+	297.1.1 = { birth = yes }
+	432.1.1 = { add_spouse = garlas_nen_2 }
+	634.8.27 = { death = { death_reason = death_natural_causes } }
+}
+oiobala_4 = {
+	name = "Semasila" 
+	dynasty = dyn_oiobala
+	religion = ilpenada
+	culture = ayleid
+	female = yes
+	
+	father = oiobala_3
+	mother = garlas_nen_2
+
+	trait = lifespan_magic_4
+	trait = education_magic_2
+	
+	433.1.1 = { birth = yes }
+	798.9.6 = { death = { death_reason = death_natural_causes } }
+}
+oiobala_5 = {
+	name = "Elanwe" 
+	dynasty = dyn_oiobala
+	religion = ilpenada
+	culture = ayleid
+	female = yes
+	
+	mother = oiobala_4
+
+	trait = lifespan_3
+	trait = education_magic_3
+	
+	558.1.1 = { birth = yes }
+	834.5.3 = { death = { death_reason = death_natural_causes } }
+}
+oiobala_6 = {
+	name = "Mabaril" 
+	dynasty = dyn_oiobala
+	religion = ilpenada
+	culture = ayleid
+	
+	mother = oiobala_5
+
+	trait = lifespan_3
+	trait = education_magic_3
+	
+	661.1.1 = { birth = yes }
+	895.1.1 = { death = { death_reason = death_natural_causes } }
+}
+oiobala_line = {
+	name = "Mabaril" 
+	dynasty = dyn_oiobala
+	religion = ilpenada
+	culture = ayleid
+	father = oiobala_6
+	trait = line_of_x
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+	895.1.1 = { birth = yes }
+	480.1.1 = { give_nickname = nick_line_of }
+	3090.1.1 = { death = yes }
+}
+oiobala_97 = {
+	name = "Thordhul"
+	dynasty = dyn_oiobala
+	religion = ilpenada
+	culture = mathmeldi
+
+	father = oiobala_line
+
+	3002.1.1 = { birth = yes }
+	3212.5.3 = { death = yes }
+}
+oiobala_98 = {
+	name = "Feluthisimir" 
+	dynasty = dyn_oiobala
+	religion = ilpenada
+	culture = mathmeldi
+
+	father = oiobala_97
+
+	trait = lifespan_3
+
+	3090.1.1 = { birth = yes }
+	3160.1.1 = { add_spouse = rulanyil_99b }
+	3298.11.22 = { death = yes }
+}
+oiobala_98b = {
+	name = "Elanwe"
+	dna = rulanyil_hergor_dna_entry
+	dynasty = dyn_oiobala
+	religion = ilpenada
+	culture = mathmeldi
+	female = yes
+
+	father = oiobala_97
+
+	trait = lifespan_3
+
+	3101.1.1 = { birth = yes }
+	3220.1.1 = { add_matrilineal_spouse = oiobala_98b_husband }
+	3230.1.1 = { death = { death_reason = death_childbirth } }
+}
+oiobala_98b_husband = {
+	name = "Varondil"
+	religion = ilpenada
+	culture = mathmeldi
+
+	trait = lifespan_3
+
+	3114.1.1 = { birth = yes }
+	3327.1.1 = { death = yes }
+}
+oiobala_98b1 = {
+	name = "Elanwe"
+	dynasty = dyn_oiobala
+	religion = ilpenada
+	culture = mathmeldi
+	female = yes
+
+	mother = oiobala_98b
+	father = oiobala_98b_husband
+
+	trait = lifespan_3
+
+	3230.1.1 = { birth = yes }
+	3355.1.1 = { death = { death_reason = death_accident } }
+}
+oiobala_99 = {
+	name = "Haromir" 
+	dynasty = dyn_oiobala
+	religion = ilpenada
+	culture = mathmeldi
+
+	father = oiobala_98
+	mother = rulanyil_99b
+	
+	trait = lifespan_3
+
+	3178.1.1 = { birth = yes }
+	3260.1.1 = { add_spouse = oiobala_98b1 }
+	3330.3.6 = { death = { death_reason = death_mysterious } }
+}
+
+oiobala_99b = { #Married to Hectaran
+	name = "Gordhaur"
+	dynasty = dyn_oiobala
+	religion = ilpenada
+	culture = mathmeldi
+
+	father = oiobala_98
+	mother = rulanyil_99b
+
+	trait = lifespan_3
+	trait = education_magic_3
+	
+	3217.1.1 = { birth = yes }
+	3440.1.6 = { death = yes }
+}
+
+oiobala_100 = { # Vivicka my beloved
+	name = "Vivicka" 
+	dynasty = dyn_oiobala
+	religion = ilpenada
+	culture = mathmeldi
+	female = yes
+	sexuality = bisexual
+
+	father = oiobala_99
+	mother = oiobala_98b1
+
+	trait = education_learning_4
+	trait = ambitious
+	trait = just
+	trait = lazy
+	trait = lifespan_3
+	
+	3290.7.9 = { birth = yes }
+	3330.1.1 = { add_matrilineal_spouse = bondolesel_19 }
+	3350.1.1 = { 
+		effect = { 
+			make_claim_weak = title:c_dagny
+			make_claim_weak= title:d_dirich 
+		} 
+	}
+	#Flees to hectaran after her lands are conquered by bosmer warlord
+	3373.1.1 = { employer = wenayalae_100 }
+	3487.1.1 = { death = yes } #Knahaten
+}
+
+oiobala_101 = {
+	name = "Vernua" 
+	dynasty = dyn_oiobala
+	religion = ilpenada
+	culture = mathmeldi
+	female = yes
+
+	mother = oiobala_100
+	father = bondolesel_19
+
+	trait = lifespan_3
+	
+	3335.1.1 = { birth = yes }
+	3530.1.6 = { death = yes }
+}
+
+#Abasel, previously ruled Bawn near Bravil
+abasel_001 = { #Killed during Alessian rebellion by his son, who wanted to escape Cyrodiil
+	name = "Amdir"
+	dynasty = dyn_abasel
+	religion = boethiah_cult
+	culture = ayleid
+	trait = lifespan_3
+	trait = brave
+	trait = vengeful
+	trait = trusting
+	40.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_murder_known killer = abasel_002 } }
+}
+abasel_002 = { #Killed his father and left for Valenwood
+	name = "Bokaur"
+	dynasty = dyn_abasel
+	religion = boethiah_cult
+	culture = ayleid
+	father = abasel_001
+	trait = lifespan_3
+	trait = kinslayer_3
+	trait = murderer
+	trait = craven
+	trait = deceitful
+	trait = callous
+	110.1.1 = { birth = yes }
+	244.1.1 = { add_spouse = niryastare_2 }
+	390.1.1 = { death = yes }
+}
+abasel_003 = {
+	name = "Bokaur"
+	dynasty = dyn_abasel
+	religion = boethiah_cult
+	culture = ayleid
+	father = abasel_002
+	mother = niryastare_2
+	trait = line_of_x
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+	390.1.1 = { birth = yes }
+	490.1.1 = { give_nickname = nick_line_of }
+	3035.1.1 = { death = yes }
+}
+abasel_004 = {
+	name = "Altrissimicka"
+	dynasty = dyn_abasel
+	religion = boethiah_cult
+	culture = mathmeldi
+	female = yes
+	father = abasel_003
+	3035.1.1 = { birth = yes }
+	3090.1.1 = { add_matrilineal_spouse = abasel_husband_004 }
+	3220.1.1 = { death = yes }
+}
+abasel_husband_004 = {
+	name = "Ashane"
+	religion = boethiah_cult
+	culture = mathmeldi
+	3070.1.1 = { birth = yes }
+	3200.1.1 = { death = yes }
+}
+abasel_005 = {
+	name = "Amarie"
+	dynasty = dyn_abasel
+	religion = boethiah_cult
+	culture = mathmeldi
+	female = yes
+	mother = abasel_004
+	father = abasel_husband_004
+	3100.1.1 = { birth = yes }
+	3200.1.1 = { add_matrilineal_spouse = endrand_99b }
+	3280.1.1 = { death = yes }
+}
+abasel_005b = {
+	name = "Boraril"
+	dynasty = dyn_abasel
+	religion = boethiah_cult
+	culture = mathmeldi
+	mother = abasel_004
+	3125.1.1 = { birth = yes }
+	3320.1.1 = { death = yes }
+}
+abasel_005c = {
+	name = "Cabinque"
+	dynasty = dyn_abasel
+	religion = boethiah_cult
+	culture = mathmeldi
+	female = yes
+	father = abasel_005b
+	3240.1.1 = { birth = yes }
+	3400.1.1 = { death = { death_reason = death_raid killer = drublog_bt_101 } } #Killed during orcish raid
+}
+abasel_006 = {
+	name = "Uuril"
+	dna = abasel_uuril_dna_entry
+	dynasty = dyn_abasel
+	religion = boethiah_cult
+	culture = mathmeldi
+
+	mother = abasel_005
+	father = endrand_99b
+
+	trait = lifespan_3
+	trait = impatient
+	trait = wrathful
+	trait = gluttonous
+	trait = education_intrigue_2
+	trait = sign_ritual
+
+	3232.1.18 = { birth = yes }
+	3280.1.1 = { add_spouse = abasel_005c } #Married to his cousin
+	3350.1.1 = { 
+		effect = { 
+			make_claim_weak = title:c_bawn
+			make_claim_weak= title:d_irony 
+		} 
+	}
+	3400.1.1 = { trait = depressed_1 }
+	3401.1.1 = { death = { death_reason = death_duel killer = drublog_bt_101 } } #Tries to avenge his family
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=male_hair_indian_01
+			custom_beards=male_empty
+		}
+	}
+}
+
+abasel_007 = { 
+	name = "Cerwil" 
+	dynasty = dyn_abasel
+	religion = boethiah_cult
+	culture = mathmeldi
+
+	father = abasel_006
+	mother = abasel_005c
+	
+	trait = lifespan_3
+	trait = brave
+	trait = ambitious
+	trait = vengeful
+	trait = physique_bad_1 
+	trait = education_martial_2
+	
+	3318.1.1 = { birth = yes }
+	3400.1.1 = { death = { death_reason = death_raid killer = drublog_bt_101 } } #Killed during orcish raid
+}
+
+#Rulanyil, ruled Vilverin near Imperial City before Alessian rebellion (d_urasek), now ruling Rulanyil fall near Woodhearth
+rulanyil_1 = {
+	name = "Bokuna"
+	dynasty = dyn_rulanyil
+	religion = molag_cult
+	culture = ayleid
+	female = yes
+
+	trait = lifespan_magic_5
+	trait = vengeful
+	trait = brave
+	trait = sadistic
+	trait = arcana_good_3
+	trait = education_magic_4
+
+	-166.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_battle } } #Dies during Alessian rebellion
+}
+
+rulanyil_2 = { #Migrates to Valenwood
+	name = "Bokaur"
+	dynasty = dyn_rulanyil
+	religion = molag_cult
+	culture = ayleid
+
+	#mother = rulanyil_1 #Handled in ek_on_game_start_fix_history_parents due to mother being born in negative year
+
+	trait = lifespan_3
+	trait = one_legged #Lost leg during Rebellion
+	trait = arcana_good_3
+	trait = education_magic_2
+
+	120.1.1 = { birth = yes }
+	289.1.1 = { add_spouse = narfinsel_2 }
+	#Deposed by son
+	334.7.10 = { death = { death_reason = death_duel killer = rulanyil_3 } }
+}
+rulanyil_3 = { #Minor warlord of the middle First Era
+	name = "Ceyran" #Lore
+	dynasty = dyn_rulanyil
+	religion = molag_cult
+	culture = mathmeldi
+
+	father = rulanyil_2
+	mother = narfinsel_2
+
+	trait = lifespan_magic_5
+	trait = zealous #Devotee of Molag Bal
+	trait = sadistic
+	trait = ambitious #Built three separate dominions during his life
+	trait = stubborn
+	trait = education_martial_2 #Not that good at conquering, since he lost these three dominions
+	trait = arcana_good_3
+	trait = education_magic_4 #Lived for a long time
+	trait = kinslayer_3
+
+	290.1.1 = { birth = yes }
+	1102.1.1 = { death = { death_reason = death_murder } } #Killed by unknown assassin
+}
+rulanyil_line = {
+	name = "Ceyran"
+	dynasty = dyn_rulanyil
+	religion = molag_cult
+	culture = ayleid
+	father = rulanyil_3
+	trait = line_of_x
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+	1102.1.1 = { birth = yes }
+	1200.1.1 = { give_nickname = nick_line_of }
+	3000.1.1 = { death = yes }
+}
+
+rulanyil_97 = {
+	name = "Ryglada"
+	dynasty = dyn_rulanyil
+	religion = molag_cult
+	culture = mathmeldi
+	female = yes
+	
+	father = rulanyil_line
+
+	trait = lifespan_3
+
+	2887.1.1 = { birth = yes }
+	3104.12.18 = { death = yes }
+}
+
+rulanyil_98 = {
+	name = "Cetdaya"
+	dynasty = dyn_rulanyil
+	religion = molag_cult
+	culture = mathmeldi
+	female = yes
+
+	mother = rulanyil_97
+
+	trait = lifespan_3
+
+	2990.2.22 = { birth = yes }
+	3197.2.3 = { death = yes }
+}
+
+rulanyil_99 = { 
+	name = "Cenedelin" 
+	dynasty = dyn_rulanyil
+	religion = molag_cult
+	culture = mathmeldi
+
+	mother = rulanyil_98
+
+	trait = lifespan_3
+	
+	3084.7.9 = { birth = yes }
+	3299.9.13 = { death = yes }
+}
+
+rulanyil_99b = { #Married to Hectaran
+	name = "Amtherisaya" 
+	dynasty = dyn_rulanyil
+	religion = molag_cult
+	culture = mathmeldi
+	female = yes
+
+	mother = rulanyil_98
+
+	trait = lifespan_3
+	
+	3093.1.1 = { birth = yes }
+	3300.1.1 = { death = yes }
+}
+
+rulanyil_100 = { 
+	name = "Varsa"
+	dna = rulanyil_varsa_dna_entry
+	dynasty = dyn_rulanyil
+	religion = molag_cult
+	culture = mathmeldi
+	female = yes
+	
+	father = rulanyil_99
+
+	trait = lifespan_3
+	trait = sign_lord
+	trait = vengeful
+	trait = wrathful
+	trait = impatient
+	trait = education_stewardship_2
+	trait = education_magic_1
+
+	3190.3.28 = { birth = yes }
+	3240.1.1 = { add_matrilineal_spouse = rulanyil_100_husband }
+	3350.1.1 = { 
+		effect = { 
+			make_claim_weak = title:c_vilverin
+			make_claim_weak= title:d_urasek 
+		} 
+	}
+	3365.1.19 = { death = { death_reason = death_hunting_accident } }
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=female_hair_northern_03
+			custom_beards=female_empty
+		}
+	}
+}
+
+rulanyil_100_husband = {
+	name = "Boraril"
+	religion = molag_cult
+	culture = mathmeldi
+	trait = lifespan_3
+	trait = sign_shadow
+	3182.5.20 = { birth = yes }
+	3342.8.22 = { death = { death_reason = death_ill } }
+}
+
+rulanyil_101 = { #Actual dude from eso who's ghost you fight
+	name = "Hergor" #Lore
+	dna = rulanyil_hergor_dna_entry
+	dynasty = dyn_rulanyil
+	religion = molag_cult
+	culture = mathmeldi
+
+	mother = rulanyil_100
+	father = rulanyil_100_husband
+	
+	trait = lifespan_3
+	trait = necromancer
+	trait = ambitious
+	trait = callous
+	trait = deceitful
+	trait = education_magic_3
+	trait = sign_apprentice
+	trait = education_intrigue_4
+	
+	3284.7.19 = { birth = yes }
+	3364.12.29 = { give_nickname = nick_the_fallen }
+	3364.12.29 = { trait = denounced } #disinherited on his mother's deathbed
+	3400.1.1 = { 
+		add_trait = lich_character
+		effect = { 
+			set_immortal_age = 54 
+			set_predetermined_decay_effect = { DECAY = 0.3 } 
+		}
+	}
+	3444.1.1 = { trait = champion_molag } #Kills his family and becomes Molag's champion
+	3450.1.1 = { death = { death_reason = death_duel killer = elyrimil_101 } }
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=male_hair_fp2_iberian_christian_03
+			custom_beards=male_empty
+		}
+	}
+}
+
+rulanyil_101b = { 
+	name = "Lyekynd" 
+	dynasty = dyn_rulanyil
+	religion = molag_cult
+	culture = mathmeldi
+
+	mother = rulanyil_100
+	father = rulanyil_100_husband
+
+	trait = lifespan_3
+	trait = trusting
+	trait = sadistic
+	trait = arrogant
+	trait = sign_warrior
+	trait = education_martial_2
+	trait = education_magic_2
+	
+	3292.8.9 = { birth = yes }
+	3350.1.1 = { 
+		effect = { 
+			make_claim_weak = title:c_vilverin
+			make_claim_weak= title:d_urasek 
+		} 
+	}
+	3369.1.1 = { add_spouse = brihil_101b }
+	3444.1.1 = { death = { death_reason = death_murder_known killer = rulanyil_101 } }
+}
+rulanyil_102 = {
+	name = "Ansisila"
+	dynasty = dyn_rulanyil
+	religion = greenpact #Originally Molag Bal, but that's outside of bookmark
+	culture = mathmeldi
+	female = yes
+
+	father = rulanyil_101b
+	mother = brihil_101b
+
+	trait = lifespan_3
+	trait = cynical
+	trait = stubborn
+	trait = vengeful
+	trait = education_intrigue_3
+
+	3384.1.1 = { birth = yes }
+	3445.1.1 = {  #Makes alliance with Oreyn
+		employer = elyrimil_101
+		#Marries son of his vassal
+		add_matrilineal_spouse = undriel_101b
+		#Still worships Molag Bal
+		effect = { make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:molag_cult } } 
+	}
+	3488.1.1 = { death = { death_reason = death_vanished } }
+}
+#Varondo dynasty, ruled Varondo near Kvatch, now ruling Cormeir new Elden Root
+varondo_001 = { #Left Cyrodiil during rebellion
+	name = "Anurraame"
+	dynasty = dyn_varondo
+	religion = malada
+	culture = ayleid
+	female = yes
+	trait = lifespan_3
+	trait = just
+	trait = honest
+	trait = calm
+	100.1.1 = { birth = yes }
+	300.1.1 = { death = yes }
+}
+varondo_002 = {
+	name = "Anurraame"
+	dynasty = dyn_varondo
+	religion = malada
+	culture = ayleid
+	mother = varondo_001
+	trait = line_of_x
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+	300.1.1 = { birth = yes }
+	400.1.1 = { give_nickname = nick_line_of }
+	3090.1.1 = { death = yes }
+}
+varondo_003 = {
+	name = "Cetdaya"
+	dynasty = dyn_varondo
+	religion = malada
+	culture = mathmeldi
+	female = yes
+	father = varondo_002
+	mother = moranda_line
+	trait = lifespan_3
+	3090.1.1 = { birth = yes }
+	3140.1.1 = { add_matrilineal_spouse = thyandri_98b }
+	3250.1.1 = { death = yes }
+}
+varondo_004 = {
+	name = "Calinden"
+	dynasty = dyn_varondo
+	religion = malada
+	culture = mathmeldi
+	
+	mother = varondo_003
+	father = thyandri_98b
+
+	trait = lifespan_3
+
+	3150.1.1 = { birth = yes }
+	3240.1.1 = { add_spouse = parikh_99b }
+	3325.1.1 = { death = yes }
+}
+varondo_005 = {
+	name = "Anyalata" 
+	dynasty = dyn_varondo
+	religion = malada
+	culture = mathmeldi
+	female = yes
+
+	father = varondo_004
+	mother = parikh_99b #Bosmer ethnically by this point
+
+	trait = lifespan_3
+	trait = sign_tower
+	trait = content
+	trait = calm
+	trait = temperate
+	trait = education_stewardship_3
+	
+	3265.10.17 = { birth = yes }
+	3325.1.1 = { add_matrilineal_spouse = camoran_grahtwood2_101b }
+	3350.1.1 = { 
+		effect = { 
+			make_claim_weak = title:c_varondo
+			make_claim_weak= title:d_ontus
+		} 
+	}
+	3420.1.6 = { death = yes }
+}
+
+varondo_006 = {
+	name = "Calinden" 
+	dynasty = dyn_varondo
+	religion = malada
+	culture = mathmeldi
+	father = camoran_grahtwood2_101b
+	mother = varondo_005
+	trait = lifespan_3
+	trait = temperate
+	trait = gregarious
+	trait = patient
+	trait = education_diplomacy_3
+	
+	3330.1.1 = { birth = yes }
+	3358.1.1 = { #Actually believes in Green Pact, but doesn't want to upset his mother 
+		effect = { make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:greenpact } }
+	}
+	3420.1.1 = { #Mother died, don't need to hide faith anymore
+		religion = greenpact
+		random_secret = {
+			type = secret_crypto_religionist
+			remove_secret = yes
+		}
+	}
+	3500.1.1 = { death = yes }
+}
+
+#Hectaran rulers, previously rulers of Anutwyll near Bravil
+wenayalae_001 = {
+	name = "Celethelel"
+	dynasty = dyn_wenayalae
+	religion = ilpenada
+	culture = ayleid
+	trait = lifespan_3
+	trait = sadistic #Classis Ayleid
+	trait = deceitful
+	trait = ambitious
+	trait = arcana_good_2
+	20.1.1 = { birth = yes }
+	100.1.1 = { add_spouse = wenayalae_wife_001 }
+	230.1.1 = { death = yes } #Dies before Alessia
+}
+
+wenayalae_wife_001 = {
+	name = "Canthismulque"
+	religion = ilpenada
+	culture = ayleid
+	female = yes
+	trait = lifespan_3
+	trait = brave
+	trait = stubborn
+	trait = sadistic
+	45.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_battle } } #Dies during rebellion
+}
+
+wenayalae_002 = { #Migrates to Valenwood
+	name = "Cowuna"
+	dynasty = dyn_wenayalae
+	religion = ilpenada
+	culture = ayleid
+	female = yes
+
+	father = wenayalae_001
+	mother = wenayalae_wife_001
+
+	trait = lifespan_3
+	trait = fickle
+	trait = gregarious
+	trait = paranoid
+	trait = arcana_good_2
+
+	120.1.1 = { birth = yes }
+	350.1.1 = { add_spouse = vanua_2 }
+	360.1.1 = { death = yes }
+}
+
+wenayalae_002b = { #Stayed in Bravil
+	name = "Celethelel"
+	dynasty = dyn_wenayalae
+	religion = ilpenada
+	culture = ayleid
+
+	father = wenayalae_001
+	mother = wenayalae_wife_001
+
+	trait = lifespan_3
+	trait = stubborn
+
+	160.1.1 = { birth = yes }
+	244.1.1 = { death = { death_reason = death_execution killer = bravillius_001 } } #Executed by order of Bravillius
+}
+
+wenayalae_line = {
+	name = "Cowuna"
+	dynasty = dyn_wenayalae
+	religion = ilpenada
+	culture = ayleid
+	mother = wenayalae_002
+	father = vanua_2
+	trait = line_of_x
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+	360.1.1 = { birth = yes }
+	480.1.1 = { give_nickname = nick_line_of }
+	2638.1.1 = { death = yes }
+}
+wenayalae_94 = {
+	name = "Cowuna"
+	dynasty = dyn_wenayalae
+	religion = ilpenada
+	culture = mathmeldi
+	female = yes
+
+	father = wenayalae_line
+
+	trait = lifespan_magic_4
+	trait = education_magic_4
+
+	2638.1.1 = { birth = yes }
+	2944.2.4 = { death = yes }
+}
+wenayalae_95 = {
+	name = "Elanwe"
+	dynasty = dyn_wenayalae
+	religion = ilpenada
+	culture = mathmeldi
+	female = yes
+
+	mother = wenayalae_94
+
+	trait = lifespan_3
+	trait = education_magic_2
+
+	2809.1.1 = { birth = yes }
+	3037.11.25 = { death = yes }
+}
+wenayalae_96 = {
+	name = "Celethelel"
+	dynasty = dyn_wenayalae
+	religion = ilpenada
+	culture = mathmeldi
+
+	mother = wenayalae_95
+
+	trait = lifespan_3
+	trait = education_magic_3
+
+	2914.1.1 = { birth = yes }
+	3179.7.16 = { death = yes }
+}
+
+wenayalae_97 = {
+	name = "Celethelel"
+	dynasty = dyn_wenayalae
+	religion = ilpenada
+	culture = mathmeldi
+	
+	father = wenayalae_96
+
+	trait = lifespan_3
+	trait = education_magic_3
+
+	3033.1.1 = { birth = yes }
+	3258.7.9 = { death = yes }
+	
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_headgear=male_headgear_secular_ayleid_crown_02
+			custom_cloaks=male_clothes_ayleid_moonstone_01
+		}
+	}
+}
+
+wenayalae_98 = {
+	name = "Myndhal"
+	dynasty = dyn_wenayalae
+	religion = ilpenada
+	culture = mathmeldi
+
+	father = wenayalae_97
+	
+	trait = lifespan_3
+	trait = education_magic_3
+
+	3101.1.1 = { birth = yes }
+	3230.1.1 = { add_spouse = wenayalae_98_wife }
+	3327.9.5 = { death = yes }
+	
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_headgear=male_headgear_secular_ayleid_crown_02
+			custom_cloaks=male_clothes_ayleid_moonstone_01
+		}
+	}
+}
+
+wenayalae_98_wife = {
+	name = "Altrissimicka"
+	religion = ilpenada
+	culture = mathmeldi
+	female = yes
+	
+	trait = lifespan_3
+	trait = zealous
+	trait = education_learning_3
+
+	3128.1.1 = { birth = yes }
+	3347.1.1 = { death = yes }
+}
+
+wenayalae_98b = { #Married to Silvenar royal family
+	name = "Creluna"
+	dynasty = dyn_wenayalae
+	religion = greenpact #converted
+	culture = mathmeldi
+	female = yes
+
+	father = wenayalae_97
+	
+	trait = education_magic_3
+	trait = vengeful
+	trait = ambitious
+	trait = lifespan_3
+
+	3155.1.1 = { birth = yes }
+	3377.1.1 = { death = yes }
+}
+
+wenayalae_99 = {
+	name = "Elanwe"
+	dynasty = dyn_wenayalae
+	religion = ilpenada
+	culture = mathmeldi
+	female = yes
+
+	father = wenayalae_98
+	mother = wenayalae_98_wife
+	
+	trait = education_magic_2
+	trait = lifespan_3
+
+	3236.1.1 = { birth = yes }
+	3330.1.1 = { add_matrilineal_spouse = oiobala_99b }
+	3345.10.24 = { death = { death_reason = death_accident } }
+	
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_headgear=male_headgear_secular_ayleid_crown_02
+			custom_cloaks=male_clothes_ayleid_moonstone_01
+		}
+	}
+}
+
+wenayalae_100 = {
+	name = "Angoromir"
+	dynasty = dyn_wenayalae
+	religion = ilpenada
+	culture = mathmeldi
+
+	mother = wenayalae_99
+	father = oiobala_99b
+
+	trait = vengeful
+	trait = calm
+	trait = just
+	trait = education_intrigue_3
+	trait = arcana_good_2
+	trait = education_magic_2
+	trait = lifespan_3
+
+	3340.11.28 = { birth = yes }
+	3350.1.1 = { 
+		effect = { 
+			make_claim_weak = title:c_bay_roan
+			make_claim_weak= title:d_bravil 
+		} 
+	}
+	3374.1.1 = { add_spouse = oiobala_101 }
+	3570.1.6 = { death = yes }
+	
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=male_hair_northern_02
+		}
+	}
+}
+
+wenayalae_100b = {
+	name = "Vernua"
+	dynasty = dyn_wenayalae
+	religion = ilpenada
+	culture = mathmeldi
+	female = yes
+
+	mother = wenayalae_99
+	father = oiobala_99b
+
+	trait = craven
+	trait = calm
+	trait = patient
+	trait = education_learning_3
+	trait = education_magic_4
+	trait = lifespan_3
+
+	3342.9.9 = { birth = yes }
+	3550.1.6 = { death = yes }
+}
+
+wenayalae_101 = {
+	name = "Cenedelin"
+	dynasty = dyn_wenayalae
+	religion = ilpenada
+	culture = mathmeldi
+
+	father = wenayalae_100
+	mother = oiobala_101
+
+	trait = bleeder #Inbreeding is catching up to Hectaran
+
+	3424.1.1 = { birth = yes }
+	3436.1.1 = { death = { death_reason = death_bleeder } }
+}
+
+wenayalae_101b = {
+	name = "Altrissimicka"
+	dynasty = dyn_wenayalae
+	religion = ilpenada
+	culture = mathmeldi
+	female = yes
+
+	father = wenayalae_100
+	mother = oiobala_101
+
+	trait = spindly
+
+	3437.1.1 = { birth = yes }
+	3446.1.1 = { death = { death_reason = death_fire_magic killer = nagon_001 } }
+}
+
+wenayalae_101b1 = {
+	name = "Celethelel"
+	dynasty = dyn_wenayalae
+	religion = ilpenada
+	culture = mathmeldi
+
+	father = wenayalae_100
+	mother = oiobala_101
+
+	3443.1.1 = { birth = yes }
+	3446.1.1 = { death = { death_reason = death_fire_magic killer = nagon_001 } }
+}
+
+##DYNARI
+
+###Dynar Dynasty, Royal House of Nenalata (dyn_dynar)
+
+#House Dynar
+dynar_999 = {
+	name = "Haromir" #Lore; Father of Laloriaran forced into vassalage to Alessia
+	dynasty = dyn_dynar
+	religion = ilpenada
+	culture = dynari
+
+	# father = EK TODO: extend the lineage
+
+	trait = lifespan_3 
+
+	trait = craven #followed imperial orders
+	trait = humble #did not revolt against humiliation
+	trait = calm #coped
+	intrigue = 4 #got blindsided numerous times by plots
+	trait = p_ob_meridia #Nenalata was a Meridian city state
+	trait = education_diplomacy_1
+	
+	42.1.1 = { birth = yes }
+	331.1.1 = { death = { death_reason = death_old_age } }
+		portrait_override={
+			portrait_modifier_overrides={
+				custom_headgear=male_headgear_secular_ayleid_crown_02
+				custom_cloaks=male_clothes_ayleid_moonstone_01
+			}
+		}
+}
+
+dynar_1000 = {
+	name = "Laloriaran" #Lore 'Last King of the Ayleids', King of Nenalata then Bisnensel
+	dynasty = dyn_dynar
+	religion = ilpenada
+	culture = dynari
+
+	father = dynar_999
+
+	trait = lifespan_4 #don't know if he is magically minded but still reasonable to achieve naturally and he's noble so...
+
+	trait = diligent
+	trait = brave #led his people on an exile halfway across the continent
+	trait = calm #did not fail under pressure
+	trait = journaller #A Life of Strife and Struggle
+	trait = architect #Bisnensel founded
+	trait = education_martial_4
+	trait = strategist #Brilliant general for the Direnni Hegemony
+	intrigue = 4 #got blindsided numerous times by plots
+	trait = p_ob_meridia #Nenalata was a Meridian city state
+	
+	104.1.1 = { birth = yes }
+	371.1.1 = {
+		give_nickname = nick_last_king_ayleids
+	}
+	484.1.1 = { death = { death_reason = death_vanished } } #Fell into Stone Fire's trap
+		portrait_override={
+			portrait_modifier_overrides={
+				custom_headgear=male_headgear_secular_ayleid_crown_02
+				custom_cloaks=male_clothes_ayleid_moonstone_01
+			}
+		}
+}
+
+dynar_1000b = { #Brother of Laloriaran, married to Dimaethor
+	name = "Amthersil"
+	dynasty = dyn_dynar
+	religion = ilpenada
+	culture = dynari
+	father = dynar_999
+	trait = lifespan_4
+	128.1.1 = { birth = yes }
+	460.1.1 = { death = yes }
+}
+
+
+uluscant_999 = {
+	name = "Veysnond"
+	religion = ilpenada #Meridia was the main god in Nenalata
+	culture = ayleid
+	trait = lifespan_3
+	trait = p_ob_meridia
+
+	21.1.1 = { birth = yes }
+	261.1.1 = { death = yes }
+}
+uluscant_1000 = {
+	name = "Uluscant" #Lore High Priest of the Primeval Seekers, King of Bisnensel
+	religion = hermaeus_cult
+	culture = dynari
+
+	father = uluscant_999
+
+	trait = lifespan_4 #don't know if he is magically minded but still reasonable to achieve naturally and he's noble so...
+
+	trait = zealous #head of a cult
+	trait = deceitful #scheming
+	trait = callous #mercilessly took over mini Bisnensel for his cult
+	trait = education_learning_3
+	trait = theologian #head of a cult
+	trait = schemer #staged a coup
+	intrigue = 8 
+	learning = 6
+	
+	99.1.1 = { birth = yes }
+	556.1.1 = { death = { death_reason = death_vanished } } #Fell into Stone Fire's trap
+}
+
+#House Dimaethor
+#Dimaethor in Cyrodiil - fought on side of Alessia along with Lalorian's dynasty, left to High Rock nefore him
+dimaethor_001 = {
+	name = "Deldaya"
+	dynasty = dyn_dimaethor
+	religion = ilpenada
+	culture = ayleid
+	female = yes
+	trait = lifespan_4
+
+	120.1.1 = { birth = yes }
+	240.1.1 = { add_matrilineal_spouse = dynar_1000b }
+	460.1.1 = { death = yes }
+}
+dimaethor_002 = {
+	name = "Denhaur"
+	dynasty = dyn_dimaethor
+	religion = ilpenada
+	culture = ayleid
+	mother = dimaethor_001
+	father = dynar_1000b
+	trait = lifespan_3
+
+	250.1.1 = { birth = yes }
+	479.1.1 = { add_spouse = mackamentain_3 }
+	500.1.1 = { death = yes }
+}
+dimaethor_003 = {
+	name = "Ashane"
+	dynasty = dyn_dimaethor
+	religion = mainland_auriel #Assimilate with Direnni
+	culture = dynari
+	father = dimaethor_002
+	mother = mackamentain_3
+	trait = lifespan_4
+	trait = arcana_good_3
+
+	480.1.1 = { birth = yes }
+	900.1.1 = { death = yes }
+}
+dimaethor_004 = {
+	name = "Belanda"
+	dynasty = dyn_dimaethor
+	religion = mainland_auriel
+	culture = dynari
+	female = yes 
+	father = dimaethor_003
+	trait = lifespan_3
+
+	850.1.1 = { birth = yes }
+	1000.1.1 = { death = yes }
+}
+dimaethor_1000 = {
+	name = "Calinden" #Lore: Ayleid Knight from "The Ivory Lord: a Hero Born"
+	dynasty = dyn_dimaethor
+	religion = mainland_auriel 
+	culture = dynari
+
+	mother = dimaethor_004
+	trait = lifespan_3
+	trait = beauty_good_1 #described as very good looking, with 'blonde hair'
+
+	trait = honest #does not waste words
+	trait = brave #charged into an Alessian patrol by himself
+	trait = calm #and collected
+	trait = loyal #extracted Erric from battle despite barely knowing him
+	trait = scarred
+
+	trait = adventurer
+	trait = education_martial_4
+	
+	950.1.1 = { birth = yes }
+	1056.1.1 = {
+		effect = { #Slew a fair amount of Alessian soldiers on his own
+			add_prestige_level = 3
+		}
+	}
+	1275.1.1 = { death = yes }
+}
+
+dimaethor_1000b = {
+	name = "Calinden"
+	dynasty = dyn_dimaethor
+	religion = breton_cult 
+	culture = glenumbran
+	father = dimaethor_1000
+	trait = line_of_x
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+	1275.1.1 = { birth = yes }
+	1300.1.1 = { give_nickname = nick_line_of }
+	3232.1.1 = { death = yes}
+}
+
+# Bondolesel Dynasty
+# Remant Ayleids of High Rock, courtiers of Balfiera (from ek1)
+bondolesel_14 = {
+	name = "Thordhul"
+	dynasty = dyn_bondolesel
+	religion = mainland_auriel 
+	culture = dynari
+	632.1.1 = { birth = yes }
+	905.1.1 = { death = yes }
+}
+bondolesel_14_line = {
+	name = "Thordhul"
+	dynasty = dyn_bondolesel
+	religion = mainland_auriel 
+	culture = dynari
+	trait = lifespan_3
+	trait = line_of_x
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+
+	father = bondolesel_14
+
+	900.1.1 = { birth = yes }
+	950.1.1 = { give_nickname = nick_line_of }
+	3050.1.1 = { death = yes}
+}
+bondolesel_15 = {
+	name = "Genethelel"
+	dynasty = dyn_bondolesel
+	religion = mainland_auriel 
+	culture = dynari
+	trait = lifespan_3
+
+	father = bondolesel_14_line
+
+	3047.1.1 = { birth = yes }
+	3121.1.1 = { add_spouse = bondolesel_15_spouse }
+	3304.1.1 = { death = yes }
+}
+
+bondolesel_15_spouse = {
+	name = "Wendenque"
+	female = yes
+	religion = mainland_auriel 
+	culture = dynari
+	trait = lifespan_3
+
+	3069.1.1 = { birth = yes }
+	3271.1.1 = { death = yes }
+}
+
+bondolesel_16 = {
+	name = "Thordhul"
+	dynasty = dyn_bondolesel
+	religion = mainland_auriel 
+	culture = dynari
+	trait = lifespan_3
+	father = bondolesel_15
+	mother = bondolesel_15_spouse
+
+	trait = education_stewardship_4
+	trait = callous
+	trait = impatient
+	trait = temperate
+	trait = sign_apprentice
+
+	3125.7.6 = { birth = yes }
+	3165.1.1 = { add_spouse = bondolesel_16_spouse }
+	3360.1.1 = {
+		effect = { learn_language = language_altmeris }
+	}
+	3365.1.1 = { employer = direnni_100 }
+	3389.1.1 = { death = yes }
+}
+
+bondolesel_16_spouse = {
+	name = "Mirnarie"
+	female = yes
+	religion = mainland_auriel
+	culture = balfiera
+	trait = lifespan_3
+
+	trait = education_stewardship_2
+	trait = wrathful
+	trait = vengeful
+	trait = diligent
+	trait = sign_serpent
+
+	3124.12.30 = { birth = yes }
+	3360.1.1 = {
+		effect = { learn_language = language_ayleidoon }
+	}
+	3365.1.1 = { employer = direnni_100 }
+	3391.1.1 = { death = yes }
+}
+
+bondolesel_17 = {
+	name = "Molthorque"
+	dynasty = dyn_bondolesel
+	female = yes
+	religion = mainland_auriel 
+	culture = dynari
+	trait = lifespan_3
+	father = bondolesel_16
+	mother = bondolesel_16_spouse
+
+	trait = education_learning_4
+	trait = lustful
+	trait = brave
+	trait = generous
+
+	3199.1.1 = { birth = yes }
+	3360.1.1 = {
+		effect = { learn_language = language_altmeris }
+	}
+	3365.1.1 = { employer = direnni_100 }
+	3404.1.1 = { death = yes }
+}
+
+bondolesel_17_spouse = {
+	name = "Untamir"
+	religion = mainland_auriel 
+	culture = balfiera
+	trait = lifespan_3
+
+	3204.1.1 = { birth = yes }
+	3232.1.1 = { add_matrilineal_spouse = bondolesel_17 }
+	3360.1.1 = {
+		effect = { learn_language = language_ayleidoon }
+	}
+	3365.1.1 = { employer = direnni_100 }
+	3400.1.1 = { death = yes }
+}
+
+bondolesel_18 = {
+	name = "Cabinque"
+	dynasty = dyn_bondolesel
+
+	female = yes
+	religion = mainland_auriel 
+	culture = dynari
+	trait = lifespan_3
+	father = bondolesel_16
+	mother = bondolesel_16_spouse
+
+	3215.1.1 = { birth = yes }
+	3360.1.1 = {
+		effect = { learn_language = language_altmeris }
+	}
+	3365.1.1 = { employer = direnni_100 }
+	3476.1.1 = { death = yes }
+}
+bondolesel_18_sister = {
+	name = "Wynaldia"
+	dynasty = dyn_bondolesel
+
+	female = yes
+	religion = mainland_auriel 
+	culture = balfiera
+	trait = lifespan_3
+	father = bondolesel_16
+	mother = bondolesel_16_spouse
+
+	trait = education_diplomacy_3
+	trait = craven
+	trait = humble
+	trait = honest
+	trait = sign_ritual
+
+	3215.1.28 = { birth = yes }
+	3360.1.1 = {
+		effect = { learn_language = language_ayleidoon }
+	}
+	# 3291 marries direnni_100
+	3476.1.1 = { death = yes }
+}
+
+bondolesel_19 = {
+	name = "Bokaur"
+	dynasty = dyn_bondolesel
+
+	religion = mainland_auriel 
+	culture = dynari
+	trait = lifespan_3
+	father = bondolesel_17_spouse
+	mother = bondolesel_17
+
+	3235.1.1 = { birth = yes }
+	# 3357 marries oiobala_100
+	3360.1.1 = {
+		effect = { learn_language = language_altmeris }
+	}
+	3365.1.1 = { employer = direnni_100 }
+	3441.1.1 = { death = yes }
+}
+
+bondolesel_20 = {
+	name = "Bokaur"
+	dynasty = dyn_bondolesel
+	religion = mainland_auriel 
+	culture = dynari
+	trait = lifespan_3
+	mother = bondolesel_18
+
+	3268.1.1 = { birth = yes }
+	3294.1.1 = { add_spouse = bondolesel_20_spouse }
+	3360.1.1 = {
+		effect = { learn_language = language_altmeris }
+	}
+	3365.1.1 = { employer = direnni_100 }
+	3495.1.1 = { death = yes }
+}
+
+bondolesel_20_spouse = {
+	name = "Sulanda"
+	female = yes
+	religion = mainland_auriel
+	culture = balfiera
+	trait = lifespan_3
+
+	3271.1.1 = { birth = yes }
+	3360.1.1 = {
+		effect = { learn_language = language_ayleidoon }
+	}
+	3365.1.1 = { employer = direnni_100 }
+	3442.1.1 = { employer = direnni_101 }
+	3482.1.1 = { death = yes }
+}
+
+bondolesel_21 = {
+	name = "Angoromir"
+	dynasty = dyn_bondolesel
+	religion = mainland_auriel 
+	culture = balfiera
+	trait = lifespan_3
+	father = bondolesel_20
+	mother = bondolesel_20_spouse
+
+	trait = education_martial_3
+	trait = brave
+	trait = forgiving
+	trait = greedy
+	trait = sign_mage
+
+	3344.4.4 = { birth = yes }
+	3360.1.1 = {
+		effect = { learn_language = language_ayleidoon }
+	}
+	3365.1.1 = {
+		employer = direnni_100
+		effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } }
+	}
+	3389.1.1 = { add_spouse = bondolesel_21_spouse }
+	3442.1.1 = { employer = direnni_101 }
+	3570.1.1 = { death = yes }
+}
+
+bondolesel_22 = {
+	name = "Wendenque"
+	dynasty = dyn_bondolesel
+
+	female = yes
+	religion = mainland_auriel 
+	culture = dynari
+	trait = lifespan_3
+	father = bondolesel_17_spouse
+	mother = bondolesel_17
+
+	3305.1.1 = { birth = yes }
+	3360.1.1 = {
+		effect = { learn_language = language_altmeris }
+	}
+	3365.1.1 = { employer = direnni_100 }
+	3375.1.1 = { add_matrilineal_spouse = bondolesel_22_spouse }
+	3442.1.1 = { employer = direnni_101 }
+	3528.1.1 = { death = yes }
+}
+
+bondolesel_22_spouse = {
+	name = "Xaphane"
+	religion = mainland_auriel
+	culture = balfiera
+	trait = lifespan_3
+
+	3300.1.1 = { birth = yes }
+	3360.1.1 = {
+		effect = { learn_language = language_ayleidoon }
+	}
+	3365.1.1 = { employer = direnni_100 }
+	3442.1.1 = { employer = direnni_101 }
+	3517.1.1 = { death = yes }
+}
+
+bondolesel_23 = {
+	name = "Piudanmil"
+	dynasty = dyn_bondolesel
+	religion = mainland_auriel 
+	culture = balfiera
+	trait = bastard
+	trait = lifespan_3
+	father = bondolesel_22_spouse
+	mother = bondolesel_22
+
+	3364.1.1 = { birth = yes }
+	3365.1.1 = {
+		effect = { learn_language = language_ayleidoon }
+	}
+	3365.1.1 = { employer = direnni_100 }
+	3375.1.1 = { add_trait = legitimized_bastard }
+	3429.1.1 = { add_spouse = bondolesel_23_spouse }
+	3442.1.1 = { employer = direnni_101 }
+	3533.1.1 = { death = yes }
+}
+
+bondolesel_23_spouse = {
+	name = "Napicka"
+	female = yes
+	religion = mainland_auriel
+	culture = balfiera
+	trait = lifespan_3
+
+	3377.1.1 = { birth = yes }
+	3377.1.1 = { employer = direnni_100 }
+	3378.1.1 = {
+		effect = { learn_language = language_ayleidoon }
+	}
+	3442.1.1 = { employer = direnni_101 }
+	3560.1.1 = { death = yes }
+}
+
+bondolesel_24 = {
+	name = "Piudanmil"
+	dynasty = dyn_bondolesel
+	religion = mainland_auriel 
+	culture = dynari
+	trait = lifespan_3
+	father = bondolesel_23
+	mother = bondolesel_23_spouse
+
+	3437.1.1 = { birth = yes }
+	3437.1.1 = { employer = direnni_100 }
+	3438.1.1 = {
+		effect = { learn_language = language_altmeris }
+	}
+	3442.1.1 = { employer = direnni_101 }
+	3670.1.1 = { death = yes }
+}
+
+bondolesel_25 = {
+	name = "Hinodaya"
+	dynasty = dyn_bondolesel
+
+	female = yes
+	religion = mainland_auriel 
+	culture = dynari
+	trait = lifespan_3
+	father = bondolesel_23
+	mother = bondolesel_23_spouse
+
+	3455.1.1 = { birth = yes }
+	3455.1.1 = { employer = direnni_100 }
+	3456.1.1 = {
+		effect = { learn_language = language_altmeris }
+	}
+	3442.1.1 = { employer = direnni_101 }
+	3678.1.1 = { death = yes }
+}
+
+bondolesel_21_spouse = {
+	name = "Losilia"
+	female = yes
+	religion = mainland_auriel
+	culture = balfiera
+	trait = lifespan_3
+
+	3343.1.1 = { birth = yes }
+	3344.1.1 = {
+		effect = { learn_language = language_ayleidoon }
+	}
+	3365.1.1 = { employer = direnni_100 }
+	3442.1.1 = { employer = direnni_101 }
+	3536.1.1 = { death = yes }
+}
+
+bondolesel_26 = {
+	name = "Angoromir"
+	dynasty = dyn_bondolesel
+
+	religion = mainland_auriel 
+	culture = dynari
+	trait = lifespan_3
+	father = bondolesel_21
+	mother = bondolesel_21_spouse
+
+	3406.1.1 = { birth = yes }
+	3406.1.1 = { employer = direnni_100 }
+	3442.1.1 = { employer = direnni_101 }
+	3615.1.1 = { death = yes }
+}
+
+#Leader of Daedraphiles during Narfinsel Schism
+atatar_001 = { #King Glinferen of Atatar, ended Narfinsel Schism
+	name = "Glinferen" #Lore
+	religion = ilpenada
+	culture = ayleid
+
+	trait = zealous
+	trait = ambitious
+	trait = sadistic
+	trait = education_martial_4
+	trait = lifespan_4
+
+	40.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_battle } } #Dies during Alessian Rebellion
+}
+
+#Abagarlas dynasty, worshippers of Molag Bal, most of family died against Meridians
+abagarlas_001 = { #King Anumaril of Abagarlas, his family died in war against Delodiil, possibly left for Valenwood later
+	name = "Anumaril" #Lore
+	religion = molag_cult
+	culture = ayleid
+	trait = zealous
+	trait = sadistic
+	trait = ambitious
+	trait = education_martial_2
+	intrigue = 2 #His city was razed, when he was marching on Delodiil
+	trait = arcana_good_3 #Impressive mage
+	trait = education_magic_4
+	trait = necromancer
+	trait = lifespan_4
+	20.1.1 = { birth = yes }
+	50.1.1 = { add_spouse = abagarlas_002 }
+	308.1.1 = { death = yes } #Possibly managed to outlive Alessian rebellion and left for Valenwood
+}
+abagarlas_002 = { #Queen Palolel, killed by Meridians
+	name = "Palolel" #Lore
+	religion = molag_cult
+	culture = ayleid
+	female = yes
+	trait = zealous
+	trait = sadistic
+	trait = arcana_good_3 #Impressive mage
+	trait = education_magic_4
+	trait = necromancer
+	trait = lifespan_4
+	20.1.1 = { birth = yes }
+	100.1.1 = { death = { death_reason = death_battle } } #Slain by Meridians
+}
+abagarlas_003 = { #Prince Malyon, killed by Meridians
+	name = "Malyon" #Lore
+	religion = molag_cult
+	culture = ayleid
+	father = abagarlas_001
+	mother = abagarlas_002
+	trait = zealous
+	trait = sadistic
+	trait = lifespan_4
+	60.1.1 = { birth = yes }
+	100.1.1 = { death = { death_reason = death_battle } } #Slain by Meridians
+}
+
+#King of Delodiil
+delodil_001 = { #King of Delodiil during war against Abagarlas
+	name = "Cenedelin" #Lore
+	religion = meridia_cult
+	culture = ayleid
+	trait = zealous
+	trait = lifespan_3
+	20.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_battle } }
+}
+
+#Victims of Pelinal
+ninendava_001 = { #Gordhaur the Shaper, ruled Ninendava before having his head smashed on altar by Pelinal
+	name = "Gordhaur" #Lore
+	religion = ilpenada
+	culture = ayleid
+	trait = lifespan_3
+	20.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_duel killer = whitestrake_100 } }
+}
+ceyatatar_001 = { #Fire King Hadhuul, slain by Pelinal
+	name = "Hadhuul" #Lore
+	religion = ilpenada
+	culture = ayleid
+	trait = lifespan_3
+	20.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_duel killer = whitestrake_100 } }
+}
+haromir_001 = { #Haromir of Copper and Tea, slain by Pelinal in a duel at Tor
+	name = "Haromir" #Lore
+	religion = ilpenada
+	culture = ayleid
+	trait = lifespan_3
+	20.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_duel killer = whitestrake_100 } }
+}
+
+celethel_001 = { #Celethelel the Singer, killed Pelinal's lover
+	name = "Celethelel" #Lore
+	religion = ilpenada
+	culture = ayleid
+	trait = lifespan_3
+	140.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_duel killer = whitestrake_100 } }
+}
+
+#Other Ayleids
+#King Narilmor of Garlas Malatar - devotee of Meridia and her Purified
+garlas_malatar_001 = {
+	name = "Narilmor" #Lore
+	religion = meridia_cult
+	culture = ayleid
+	trait = lifespan_6 #Purified
+	trait = zealous
+	trait = callous
+	trait = patient
+	trait = loyal #Very loyal to Meridia
+	30.1.1 = { birth = yes }
+	260.1.1 = { death = { death_reason = death_vanished } } #Eventually after Alessian Rebellion all contact with Garlas Malatar stops
+}
+
+#Stormwardens of Ilayas (Malabal Tor)
+ilayas_1 = { #Master Stormwarden Faranwe (ghost from ESO)
+	name = "Faranwe" #Lore
+	religion = ilpenada
+	culture = ayleid
+	female = yes
+
+	trait = arrogant
+	trait = wrathful
+	trait = vengeful
+	trait = lifespan_magic_5
+	trait = arcana_good_2
+	trait = education_magic_4
+
+	-256.1.1 = { birth = yes } #Was born and lived in Valenwood before Alessian rebellion
+	383.7.23 = { death = yes } #Died after Alessian rebellion
+}
+ilayas_2 = {
+	name = "Ashane"
+	religion = ilpenada
+	culture = ayleid
+
+	trait = lifespan_magic_4
+	trait = arcana_good_2
+	trait = education_magic_4
+
+	175.1.1 = { birth = yes }
+	540.4.26 = { death = yes }
+}
+ilayas_3 = { #Ilayas start accepting Mathmeldi
+	name = "Amtherisaya"
+	religion = greenpact
+	culture = mathmeldi
+	female = yes
+
+	trait = lifespan_magic_4
+	trait = arcana_good_2
+	trait = education_magic_4
+
+	460.1.1 = { birth = yes }
+	829.5.30 = { death = yes } #Continued in Bosmer file
+}
+
+#Filestis - possibly builder of Doomcrag and friend of Anumaril
+doomcrag_001 = {
+	name = "Filestis" #Lore (?) - leader of Ayleid migrants to Rivenspire
+	religion = molag_cult #Associated with Anumaril
+	culture = ayleid
+	60.1.1 = { birth = yes }
+	250.1.1 = { death = yes }
+}
+doomcrag_002 = {
+	name = "Anurraame" #Lore (?) - Anurraame from tale "Tears of Anyrraame"
+	religion = mephala_cult #Turned to Mephala
+	culture = ayleid
+	female = yes
+	father = doomcrag_001 #Ayleid princess
+	trait = vengeful
+	trait = wrathful
+	trait = trusting
+	150.1.1 = { birth = yes }
+	400.1.1 = { death = { death_reason = death_battle } } #Died after using her own artifact
+}
+
+#Tjurhane Fyrre - founder of University of Gwylim, one of the few remaining Ayleids in Cyrodiil
+fyrre_001 = {
+	name = "Tjurhane" #Lore
+	religion = eight_divines
+	culture = ayleid
+	dynasty = dyn_fyrre
+	trait = education_learning_4
+	trait = scholar
+	trait = whole_of_body
+	trait = lifespan_4
+
+	2790.1.1 = { birth = yes }
+	3147.1.1 = { death = yes }
+}
+
+#Historical dynasty, married into Camorans
+caeleben_001 = { #Last King of Miscarcand
+	name = "Malyon" #Lore - only that there was king in Miscarcand
+	religion = ilpenada
+	culture = ayleid
+	dynasty = dyn_caeleben
+	trait = vengeful
+	100.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_battle } }
+}
+caeleben_002 = { #Ayleid wife of king of Valenwood
+	name = "Creluna"
+	religion = greenpact
+	culture = ayleid
+	dynasty = dyn_caeleben
+	father = caeleben_001
+	female = yes
+	
+	trait = lifespan_3
+
+	200.1.1 = { birth = yes }
+	424.1.1 = { death = yes }
+}
+#Rulers of Shardrock (Hecasercen)
+galaspen_001 = {
+	name = "Islada"
+	religion = namira_cult
+	culture = ayleid
+	dynasty = dyn_galaspen
+	female = yes
+	trait = lifespan_3
+	100.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_battle } }
+}
+galaspen_002 = {
+	name = "Boraril"
+	religion = greenpact
+	culture = ayleid
+	dynasty = dyn_galaspen
+	mother = galaspen_001
+	trait = lifespan_4
+	180.1.1 = { birth = yes }
+	400.1.1 = { death = { death_reason = death_old_age } }
+}
+## Queen of Trumbe, Sutch duchy
+trumbe_1 = {
+	name = "Nisthunque"
+	religion = ilpenada
+	culture = ayleid
+	female = yes
+	trait = lifespan_3
+	40.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_battle } }
+}
+trumbe_2 = { # Married oiobala_2
+	name = "Derlata"
+	religion = ilpenada
+	culture = ayleid
+	mother = trumbe_1
+	female = yes
+	trait = lifespan_magic_4
+	190.1.1 = { birth = yes }
+	546.1.1 = { death = { death_reason = death_old_age } }
+}
+## King of Niryastare, Hastrel duchy
+niryastare_1 = {
+	name = "Genethelel"
+	religion = ilpenada
+	culture = ayleid
+	trait = lifespan_3
+	40.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_battle } }
+}
+niryastare_2 = { # Married to abasel_002
+	name = "Hroma"
+	religion = ilpenada
+	culture = ayleid
+	female = yes
+	father = niryastare_1
+	trait = lifespan_3
+	190.1.1 = { birth = yes }
+	435.1.1 = { death = { death_reason = death_old_age } }
+}
+## Sorcerer King of Garlas Agea, Anvil duchy
+garlas_agea_1 = {
+	name = "Racha" # PT character
+	religion = ilpenada
+	culture = ayleid
+	trait = education_magic_4
+	trait = arcana_good_3
+	trait = lich_character
+	-200.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_battle } }
+}
+## Queen of Narfinsel, Carmala duchy
+narfinsel_1 = {
+	name = "Kufnada"
+	religion = ilpenada
+	culture = ayleid
+	female = yes
+	trait = lifespan_3
+	40.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_battle } }
+}
+narfinsel_2 = { # Married to rulanyil_2
+	name = "Losilia"
+	religion = ilpenada
+	culture = ayleid
+	female = yes
+	mother = narfinsel_1
+	trait = lifespan_3
+	140.1.1 = { birth = yes }
+	435.1.1 = { death = { death_reason = death_old_age } }
+}
+## King of Moranda, Underpall duchy
+moranda_1 = {
+	name = "Dathomelil"
+	religion = ilpenada
+	culture = ayleid
+	trait = lifespan_3
+	2.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_battle } }
+}
+moranda_line = { # Intermarried with varondo_002
+	name = "Dathomelil"
+	religion = malada
+	culture = ayleid
+	father = moranda_1
+	female = yes
+	trait = line_of_x
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+	240.1.1 = { birth = yes }
+	3090.1.1 = { death = yes }
+}
+## King of Vanua, Magia duchy
+vanua_1 = {
+	name = "Filestis"
+	religion = ilpenada
+	culture = ayleid
+	trait = lifespan_3
+	40.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_battle } }
+}
+vanua_2 = { # Married to wenayalae_002
+	name = "Limthelel"
+	religion = ilpenada
+	culture = ayleid
+	father = vanua_1
+	trait = lifespan_3
+	140.1.1 = { birth = yes }
+	362.1.1 = { death = { death_reason = death_old_age } }
+}
+## Queen of Garlas Nen, Stirk duchy
+garlas_nen_1 = {
+	name = "Istrimaya"
+	religion = ilpenada
+	culture = ayleid
+	female = yes
+	trait = lifespan_magic_4
+	40.1.1 = { birth = yes }
+	343.1.1 = { death = { death_reason = death_duel killer = hellebor_001 } } # Held out longer because they were on an island
+}
+garlas_nen_2 = { # Married oiobala_3
+	name = "Ansisila"
+	religion = ilpenada
+	culture = ayleid
+	mother = garlas_nen_1
+	female = yes
+	trait = lifespan_magic_4
+	227.1.1 = { birth = yes }
+	571.1.1 = { death = { death_reason = death_old_age } }
+}
+## King of Fanacasecul, Weye duchy
+fanacasecul_1 = {
+	name = "Boraril"
+	religion = ilpenada
+	culture = ayleid
+	trait = lifespan_3
+	40.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_duel killer = elf_hewer_001 } }
+}
+fanacasecul_2 = { # Line flees Cyrodiil and heads to High Rock. "father" of celsanen_97
+	name = "Boraril"
+	religion = mainland_auriel
+	culture = balfiera
+	father = fanacasecul_1
+	trait = line_of_x
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+	242.1.1 = { birth = yes }
+	2971.1.1 = { death = yes }
+}
+## Queen of Vindasel, Virtue duchy. Barsaebic Ayleids and eventually flee to Black Marsh.
+vindasel_1 = {
+	name = "Gothilma"
+	religion = malada # It's more than likely Vindasel was just another Daedraphile city, but I wanted to add Aedraphiles too
+	culture = ayleid
+	female = yes
+	trait = lifespan_magic_4
+	-100.1.1 = { birth = yes }
+	198.1.1 = { death = { death_reason = death_battle } }
+}
+vindasel_2 = { # Married silyanorn_3, founds an Ayleid city in Black Marsh
+	name = "Durhane"
+	religion = malada
+	culture = ayleid
+	#mother = vindasel_1  #Handled in ek_on_game_start_fix_history_parents due to mother being born in negative year
+	trait = lifespan_4
+	100.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_battle } } # Alessian forces sacked his city in Black Marsh
+}
+## King of Sardavar Leed, Variela duchy. Where Alessia grew up as a girl
+sard_1 = {
+	name = "Dynichi"
+	religion = ilpenada
+	culture = ayleid
+	female = yes
+	trait = lifespan_3
+	40.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_battle } }
+}
+## King of Sercen, Caractacus duchy, and later Betony
+sercen_1 = {
+	name = "Gararil"
+	religion = ilpenada
+	culture = ayleid
+	trait = lifespan_3
+	40.1.1 = { birth = yes }
+	257.1.1 = { death = { death_reason = death_old_age } }
+}
+ancient_sercen_holder = {
+	name = "Icilius"
+	religion = alessian
+	culture = nibenese
+	330.1.1 = { birth = yes }
+	390.1.1 = { death = yes }
+}
+sercen_2 = {
+	name = "Dejaril"
+	religion = ilpenada
+	culture = ayleid
+	father = sercen_1
+	trait = lifespan_magic_4
+	150.1.1 = { birth = yes }
+	507.1.1 = { death = yes }
+}
+sercen_2_line = { # Ancestors to tyelile_98
+	name = "Dejaril"
+	religion = mainland_auriel
+	culture = balfiera
+	father = sercen_2
+	trait = line_of_x
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+	507.1.1 = { birth = yes }
+	3075.1.1 = { death = yes }
+}
+## Kings of Mackamentain, Caer Suvio duchy
+mackamentain_1 = {
+	name = "Ethandane"
+	religion = ilpenada
+	culture = ayleid
+	trait = lifespan_3
+	40.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_battle } }
+}
+mackamentain_2 = {
+	name = "Anghaur"
+	religion = ilpenada
+	culture = ayleid
+	father = mackamentain_1
+	trait = lifespan_3
+	220.1.1 = { birth = yes }
+	463.1.1 = { death = yes }
+}
+mackamentain_3 = { # Married to dimaethor_002
+	name = "Lamidana"
+	religion = ilpenada
+	culture = ayleid
+	female = yes
+	father = mackamentain_2
+	trait = lifespan_3
+	388.1.1 = { birth = yes }
+	623.1.1 = { death = yes }
+}
+#Soulrest people, killed by yespest rebels
+mirdan_99 = {
+	name = "Uuril"
+	dynasty = dyn_mirdan
+	religion = malada
+	culture = barsaebic
+
+	trait = education_magic_4
+	trait = lifespan_4
+
+	129.1.1 = { birth = yes }
+	487.1.1 = { death = yes }
+}
+mirdan_100 = {
+	name = "Nuralanya"
+	dynasty = dyn_mirdan
+	religion = malada
+	culture = barsaebic
+	female = yes
+
+	father = mirdan_99
+
+	trait = education_magic_3
+	trait = lifespan_4
+
+	278.1.1 = { birth = yes }
+	#Yespest rebellion
+	592.1.1 = { death = { death_reason = death_battle } }
+}
+#Note: ayleids are no longer ruling class from this point, but they didn't die completely
+
+#Ayleids who switched sides in rebellion
+random_ayleid_1 = {
+	name = "Curunvyr"
+	religion = eight_divines
+	culture = ayleid
+	trait = lifespan_3
+	223.1.1 = { birth = yes }
+	#Alessians
+	372.1.1 = { death = { death_reason = death_execution } }
+}
+random_ayleid_2 = {
+	name = "Hinaril"
+	religion = eight_divines
+	culture = ayleid
+	trait = lifespan_4
+	trait = education_magic_4
+	5.1.1 = { birth = yes }
+	374.1.1 = { death = { death_reason = death_execution } }
+}
+####################
+### Adventurers  ###
+####################
+
+#Ayleids in High Rock
+
+#Ayleids in Skyrim
+ayleid_neugrad_1 = {
+	name = "Sindarilmon"
+	culture = ayleid
+	dynasty = dynn_vorwen
+	religion = ilpenada
+	
+	trait = lifespan_3
+
+	23.1.1 = { birth = yes }
+	48.1.1 = { add_spouse = ayleid_neugrad_1_wife }
+	243.1.1 = { death = { death_reason = death_vanished } }
+}
+ayleid_neugrad_1_wife = {
+	name = "Menrilor"
+	culture = ayleid
+	religion = ilpenada
+	female = yes
+	
+	trait = lifespan_3
+
+	19.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_vanished } }
+}
+ayleid_neugrad_2 = {
+	name = "Fisahil"
+	culture = ayleid
+	dynasty = dynn_vorwen
+	religion = ilpenada
+	father = ayleid_neugrad_1
+	mother = ayleid_neugrad_1_wife
+	female = yes
+	
+	trait = lifespan_3
+	trait = disinherited
+
+	52.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_vanished } }
+}
+ayleid_neugrad_3 = {
+	name = "Lesthune"
+	culture = ayleid
+	dynasty = dynn_vorwen
+	religion = ilpenada
+	father = ayleid_neugrad_1
+	mother = ayleid_neugrad_1_wife
+	female = yes
+	
+	trait = lifespan_3
+
+	89.1.1 = { birth = yes }
+	107.1.1 = { add_spouse = ayleid_neugrad_3_husband }
+	239.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+ayleid_neugrad_3_husband = {
+	name = "Traarilmon"
+	culture = ayleid
+	religion = ilpenada
+	
+	trait = lifespan_3
+
+	91.1.1 = { birth = yes }
+	239.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+ayleid_neugrad_4 = {
+	name = "Traarilmon" #After dad
+	culture = ayleid
+	dynasty = dynn_vorwen
+	religion = ilpenada
+	father = ayleid_neugrad_3_husband
+	mother = ayleid_neugrad_3
+	
+	trait = lifespan_3
+
+	128.1.1 = { birth = yes }
+	182.1.1 = { add_spouse = ayleid_neugrad_4_wife }
+	239.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+ayleid_neugrad_4_wife = {
+	name = "Vuvalwil"
+	culture = ayleid
+	religion = ilpenada
+	female = yes
+	
+	trait = lifespan_3
+
+	123.1.1 = { birth = yes }
+	239.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+ayleid_neugrad_5 = {
+	name = "Auretha"
+	culture = ayleid
+	dynasty = dynn_vorwen
+	religion = ilpenada
+	father = ayleid_neugrad_4
+	mother = ayleid_neugrad_4_wife
+	female = yes
+	
+	trait = lifespan_3
+
+	207.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_vanished } }
+}
+#Bonechill&Ancestor Glade
+ayleid_bonechill_1 = {
+	name = "Dydhur"
+	culture = ayleid
+	dynasty = dynn_alasha
+	religion = ilpenada
+	
+	trait = lifespan_3
+	trait = sadistic
+	trait = torturer
+	trait = ambitious
+	trait = temperate
+	trait = murderer
+
+	129.1.1 = { birth = yes }
+	178.1.1 = { add_spouse = ayleid_bonechill_1_wife }
+	243.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = lakeview_nedes_1_husband
+		}
+	}
+}
+ayleid_bonechill_2 = { #Takes after Ayleid father
+	name = "Luunor"
+	culture = ayleid
+	dynasty = dynn_alasha
+	religion = ilpenada
+
+	father = ayleid_bonechill_1
+	mother = ayleid_bonechill_1_wife
+	
+	trait = lifespan_3
+
+	181.1.1 = { birth = yes }
+	219.1.1 = { add_spouse = ayleid_bonechill_2_wife }
+	243.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = sunderstone_nedes_1
+		}
+	}
+}
+ayleid_bonechill_2_sister = { #Takes after Falmer mother
+	name = "Damildi"
+	culture = falmer
+	dynasty = dynn_alasha
+	religion = chantry_auriel
+	female = yes
+
+	father = ayleid_bonechill_1
+	mother = ayleid_bonechill_1_wife
+	
+	trait = lifespan_3
+
+	181.1.1 = { birth = yes }
+	239.1.1 = { add_spouse = ayleid_bonechill_2_sister_husband }
+	243.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = sunderstone_nedes_1_wife
+		}
+	}
+}
+ayleid_bonechill_2_wife = {
+	name = "Ymmuth"
+	culture = ayleid
+	religion = ilpenada
+	female = yes
+	
+	trait = lifespan_3
+
+	183.1.1 = { birth = yes }
+	243.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = lakeview_nedes_1_husband
+		}
+	}
+}
+ayleid_bonechill_3 = {
+	name = "Duraloder"
+	culture = ayleid
+	dynasty = dynn_alasha
+	religion = ilpenada
+
+	father = ayleid_bonechill_2
+	mother = ayleid_bonechill_2_wife
+	
+	trait = lifespan_3
+
+	222.5.16 = { birth = yes }
+	242.3.8 = {
+		death = {
+			death_reason = death_battle
+			killer = neaugrad_nedes_1
+		}
+	}
+}
+#Ayleids in Cyrodiil
+
+ayleid_chronicler_100 = {
+	name = "Nuralanya"
+	religion = ilpenada
+	culture = mathmeldi
+	female = yes
+
+	trait = education_learning_4
+	trait = sign_atronach
+	trait = vengeful
+	trait = shy
+	trait = cynical
+	trait = spindly
+	trait = intellect_good_2
+	trait = celibate
+
+	3159.11.13 = { birth = yes }
+	3359.1.1 = {
+		effect = {
+			set_relation_friend = { reason = friend_generic_history target = character:ayleid_chronicler_101 }
+			set_relation_friend = { reason = friend_generic_history target = character:ayleid_chronicler_102 }
+			learn_language = language_cyrodiilic
+			learn_language = language_bosmeris
+		}
+	}
+	3397.1.1 = { death = { death_reason = death_old_age } }
+}
+
+ayleid_chronicler_101 = {
+	name = "Kindamir"
+	religion = ilpenada
+	culture = mathmeldi
+
+	trait = education_learning_3
+	trait = sign_ritual
+	trait = brave
+	trait = diligent
+	trait = impatient
+	trait = inappetetic
+
+	3280.1.14 = { birth = yes }
+	3359.1.1 = { employer = ayleid_chronicler_100 }
+	3397.1.1 = { move_to_pool = yes }
+	3635.1.1 = { death = { death_reason = death_old_age } }
+}
+
+ayleid_chronicler_102 = {
+	name = "Emparsilaya"
+	religion = ilpenada
+	culture = mathmeldi
+	female = yes
+
+	trait = education_learning_3
+	trait = education_magic_2
+	trait = sign_apprentice
+	trait = humble
+	trait = patient
+	trait = chaste
+
+	3246.7.6 = { birth = yes }
+	3359.1.1 = { employer = ayleid_chronicler_100 }
+	3397.1.1 = { move_to_pool = yes }
+	3599.1.1 = { death = { death_reason = death_old_age } }
+}

@@ -1,0 +1,3124 @@
+﻿##Rhalta Dynasty (dyn_rhalta)
+
+#House Rhalta
+rhalta_99 = {
+	name = "Ikawes"
+	female = yes
+	dynasty = dyn_rhalta
+	religion = court_dawnbeauty
+	culture = ilniviri
+
+	3301.1.1 = { birth = yes }
+	3329.1.1 = {
+		trait = tsaesci_1
+		effect = {
+			learn_language = language_tsaesci
+		}
+	}
+	3330.1.1 = { add_matrilineal_spouse = vethrakk_100b }
+	3359.1.1 = { death = yes }
+	
+}
+rhalta_100 = {
+	name = "Hyras"
+	dynasty = dyn_rhalta
+	religion = court_dawnbeauty
+	culture = ilniviri
+
+	mother = rhalta_99
+	father = vethrakk_100b
+
+	trait = education_intrigue_2
+	trait = gluttonous
+	trait = gregarious
+	trait = lazy
+	trait = sign_lady
+
+	3338.9.26 = { birth = yes }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3360.1.1 = { add_spouse = cybiak_100b }
+	3405.1.1 = { death = yes }
+}
+rhalta_100b = {
+	name = "Chouko"
+	dynasty = dyn_rhalta
+	religion = court_dawnbeauty
+	culture = ilniviri
+
+	mother = rhalta_99 
+	father = vethrakk_100b
+
+	trait = education_learning_3
+	trait = sadistic
+	trait = diligent
+	trait = stubborn
+	trait = sign_apprentice
+
+	3341.7.19 = { birth = yes }
+	3363.1.1 = {
+		trait = tsaesci_1
+		effect = {
+			learn_language = language_tsaesci
+		}
+	}
+	3439.1.1 = { death = yes }
+}
+
+rhalta_101 = {
+	name = "Devora"
+	dynasty = dyn_rhalta
+	religion = court_dawnbeauty
+	culture = ilniviri
+	female = yes
+
+	father = rhalta_100
+	mother = cybiak_100b
+
+	3365.1.1 = { birth = yes }
+	3369.1.1 = { effect = { learn_language = language_tsaesci } }
+	3392.1.1 = { add_spouse = pellus_102c }
+	3435.1.1 = { death = yes }
+}
+rhalta_102 = {
+	name = "Sidrxan"
+	dynasty = dyn_rhalta
+	religion = court_dawnbeauty
+	culture = ilniviri
+
+	mother = rhalta_101
+	father = pellus_102c
+
+	3399.1.1 = { birth = yes }
+	3470.1.1 = { death = yes }
+}
+
+##Cybiak Dynasty (dyn_cybiak)
+cybiak_99 = {
+	name = "Aiawes"
+	dynasty = dyn_cybiak
+	religion = court_dawnbeauty
+	culture = ilniviri
+	female = yes
+
+	trait = tsaesci_1
+	trait = education_stewardship_3
+	trait = cynical
+	trait = generous
+	trait = calm
+	trait = sign_warrior
+
+	3309.8.10 = { birth = yes }
+	3332.1.1 = { add_matrilineal_spouse = cybiak_99_spouse }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3392.1.1 = { death = yes }
+}
+cybiak_99_spouse = {
+	name = "Ralxan"
+	religion = court_dawnbeauty
+	culture = ilniviri
+
+	trait = education_stewardship_1
+	trait = brave
+	trait = stubborn
+	trait = content
+	trait = sign_steed
+
+	3310.6.28 = { birth = yes }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3374.1.1 = { death = yes }
+}
+
+cybiak_100 = {
+	name = "Xhaien"
+	dynasty = dyn_cybiak
+	religion = court_dawnbeauty
+	culture = ilniviri
+
+	mother = cybiak_99
+	father = cybiak_99_spouse
+
+	trait = education_martial_2
+	trait = deceitful
+	trait = arbitrary
+	trait = sadistic
+	trait = pirate
+	trait = sign_mage
+
+	3333.4.29 = { birth = yes }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3359.1.1 = { trait = viking }
+	3362.3.28 = { death = { death_reason = death_battle } }
+}
+
+cybiak_100b = {
+	name = "Kamis"
+	dynasty = dyn_cybiak
+	religion = court_dawnbeauty
+	culture = ilniviri
+	female = yes
+
+	mother = cybiak_99
+	father = cybiak_99_spouse
+
+	trait = tsaesci_1
+	trait = education_intrigue_4
+	trait = chaste
+	trait = sadistic
+	trait = diligent
+	trait = sign_shadow
+
+	3336.5.4 = { birth = yes }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3413.1.1 = { death = yes }
+}
+
+cybiak_100c = {
+	name = "Zkofien"
+	dynasty = dyn_cybiak
+	religion = court_dawnbeauty
+	culture = ilniviri
+
+	mother = cybiak_99
+	father = cybiak_99_spouse
+
+	trait = education_martial_2
+	trait = vengeful #Takes up pirating after his brother dies
+	trait = greedy
+	trait = sadistic
+	trait = sign_lord
+
+	3343.3.9 = { birth = yes }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3359.1.1 = { 
+		trait = viking 
+		trait = pirate 
+	}
+	3410.1.1 = { death = yes } #EK TODO: probably dies in battle against crowns way earlier
+}
+
+## Shouz Dynasty (dyn_shouz)
+shouz_97 = {
+	name = "Tseidue"
+	dynasty = dyn_shouz
+	culture = ilniviri
+	religion = reman_cult
+
+	3231.1.1 = { birth = yes }
+	3289.1.1 = { death = yes }
+}
+shouz_98 = {
+	name = "Demoira"
+	dynasty = dyn_shouz
+	culture = ilniviri
+	religion = reman_cult
+	female = yes
+
+	father = shouz_97
+
+	3262.1.1 = { birth = yes }
+	3288.1.1 = { add_matrilineal_spouse = shouz_98_husband }
+	3318.1.1 = { death = yes }
+}
+shouz_98_husband = {
+	name = "Qothizen"
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	3265.1.1 = { birth = yes }
+	3312.1.1 = { death = yes }
+}
+shouz_99 = {
+	name = "Savxan"
+	dynasty = dyn_shouz
+	culture = ilniviri
+	religion = reman_cult
+
+	mother = shouz_98
+	father = shouz_98_husband
+
+	3291.1.1 = { birth = yes }
+	3320.1.1 = { add_spouse = sartos_99b }
+	3357.1.1 = { death = yes }
+}
+shouz_100 = {
+	name = "Nafsidue"
+	dynasty = dyn_shouz
+	culture = ilniviri
+	religion = reman_cult
+
+	father = shouz_99
+	mother = sartos_99b
+
+	3322.1.1 = { birth = yes }
+	3350.1.1 = { add_spouse = vandacia_100b }
+	3387.1.1 = { death = yes }
+}
+shouz_100b = {
+	name = "Ciawes"
+	dynasty = dyn_shouz
+	culture = ilniviri
+	religion = reman_cult
+	female = yes
+
+	father = shouz_99
+	mother = sartos_99b
+
+	trait = education_martial_2
+	trait = greedy
+	trait = vengeful
+	trait = stubborn
+	trait = sign_atronach
+
+	3325.11.3 = { birth = yes }
+	3350.1.1 = { 
+		effect = { 
+			learn_language = language_tsaesci
+			add_trait = lifestyle_blademaster #A blade
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+                value = {
+                    integer_range = {
+                        min = medium_lifestyle_random_xp_low
+                        max = medium_lifestyle_random_xp_high
+                    }
+                }
+			}
+		} 
+	}
+	3368.6.22 = { death = { death_reason = death_battle } } #Dies trying to retake her already conquered land
+}
+shouz_101 = {
+	name = "Barwes"
+	dynasty = dyn_shouz
+	culture = ilniviri
+	religion = reman_cult
+	female = yes
+
+	father = shouz_100
+	mother = vandacia_100b
+
+	3354.1.1 = { birth = yes }
+	3406.1.1 = { death = yes }
+}
+#EK TODO: probably go nibenese by Blackdrake
+
+## Vethrakk Dynasty (dyn_vethrakk)
+
+# House Vethrakk
+vethrakk_96 = {
+	name = "Corwes"
+	dynasty = dyn_vethrakk
+	culture = tsaesci # Born in Akavir
+	religion = court_dawnbeauty
+	female = yes
+
+	trait = tsaesci_3
+	trait = sign_shadow
+
+	2677.5.14 = { birth = yes }
+	2767.1.1 = { add_spouse = vethrakk_96_husband }
+	2921.6.11 = { death = { death_reason = death_old_age } }
+}
+vethrakk_96_husband = {
+	name = "Ainieras"
+	culture = tsaesci
+	dynasty = dyn_brol
+	religion = court_dawnbeauty
+	father = brol_1
+
+	trait = tsaesci_3
+	trait = bastard # Born in Akavir
+	trait = sign_tower
+
+	2672.10.21 = { birth = yes }
+	2805.9.22 = { death = { death_reason = death_starved } } # Nords sieged Sky Haven
+}
+vethrakk_97b = { #Lore, failed to join the Dragonguard, sacked Winterhold
+	name = "Kalien"
+	dynasty = dyn_vethrakk
+	culture = ilniviri
+	religion = reman_cult
+	mother = vethrakk_96
+	father = vethrakk_96_husband
+
+	trait = tsaesci_3
+	trait = wrathful
+	trait = vengeful
+	trait = callous
+	trait = education_martial_3
+	trait = sign_serpent
+
+	2779.12.31 = { birth = yes }
+	2806.5.16 = { death = { death_reason = death_hanged_and_disemboweled_by_mob } } # Angry Nords caught up with him
+}
+vethrakk_97 = { # First ruler of Sky Haven
+	name = "Emoleira"
+	dynasty = dyn_vethrakk
+	culture = ilniviri
+	religion = reman_cult
+	mother = vethrakk_96
+	father = vethrakk_96_husband
+	female = yes
+
+	trait = tsaesci_4
+	trait = sign_lady
+
+	2768.9.18 = { birth = yes }
+	2993.1.1 = { add_spouse = sylla_95b_son }
+	3126.12.3 = { death = { death_reason = death_old_age } }
+}
+vethrakk_98 = {
+	name = "Cthizen"
+	dynasty = dyn_vethrakk
+	culture = ilniviri
+	religion = reman_cult
+	mother = vethrakk_97
+	father = sylla_95b_son
+
+	trait = tsaesci_3
+	trait = sign_mage
+
+	2994.4.2 = { birth = yes }
+	3157.1.1 = { add_spouse = vethrakk_98_wife }
+	3159.8.17 = { death = { death_reason = death_hunting_mistakenly_stabbed } }
+}
+vethrakk_98_wife = {
+	name = "Xymeira"
+	culture = ilniviri
+	religion = reman_cult
+	female = yes
+
+	trait = tsaesci_1
+	trait = sign_steed
+	trait = varangian
+
+	3072.6.13 = { birth = yes }
+	3164.12.5 = { death = { death_reason = death_old_age } }
+}
+vethrakk_99b = { # Married to ssaryz_99
+	name = "Dzothizen"
+	dynasty = dyn_vethrakk
+	culture = ilniviri
+	religion = reman_cult
+	father = vethrakk_98
+	mother = vethrakk_98_wife
+
+	trait = tsaesci_3
+	trait = sign_apprentice
+
+	3158.7.25 = { birth = yes }
+	3329.7.25 = { death = { death_reason = death_feast_accident } } # Birthday disaster
+}
+vethrakk_99 = {
+	name = "Aiata"
+	dynasty = dyn_vethrakk
+	culture = ilniviri
+	religion = reman_cult
+	female = yes
+	father = vethrakk_98
+	mother = vethrakk_98_wife
+
+	trait = tsaesci_3
+	trait = sign_ritual
+
+	3100.1.16 = { birth = yes }
+	3290.1.1 = { add_matrilineal_spouse = drassi_100b }
+	3336.5.16 = { death = { death_reason = death_old_age } }
+}
+vethrakk_100b = { # Married to rhalta_99
+	name = "Tilis"
+	dynasty = dyn_vethrakk
+	religion = reman_cult
+	culture = ilniviri
+	mother = vethrakk_99
+	father = drassi_100b
+
+	trait = education_diplomacy_1
+	trait = wrathful
+	trait = forgiving
+	trait = honest
+	trait = sign_atronach
+
+	3302.11.11 = { birth = yes }
+	3310.1.1 = { effect = { learn_language = language_tsaesci } }
+	3359.4.12 = { death = { death_reason = death_old_age } }
+}
+vethrakk_100c = {
+	name = "Asurita"
+	dynasty = dyn_vethrakk
+	culture = ilniviri
+	religion = reman_cult
+	mother = vethrakk_99
+	father = drassi_100b
+	female = yes
+
+	trait = sign_lover
+	trait = tsaesci_1
+
+	3309.2.11 = { birth = yes }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3361.2.15 = { death = { death_reason = death_raid } }
+}
+vethrakk_100 = {
+	name = "Jhovarak"
+	dynasty = dyn_vethrakk
+	culture = ilniviri
+	religion = reman_cult
+	mother = vethrakk_99
+	father = drassi_100b
+
+	trait = education_martial_1
+	trait = craven
+	trait = forgiving
+	trait = wrathful
+	trait = sign_lord
+	trait = tsaesci_1
+
+	3300.3.9 = { birth = yes
+	add_character_flag = do_not_generate_starting_family
+	}
+	3345.1.1 = { add_spouse = vethrakk_100_wife }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3359.1.1 = {
+		effect = {
+			add_trait = lifestyle_blademaster # a blades regional master better be good at blading
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+                value = {
+                    integer_range = {
+                        min = medium_lifestyle_random_xp_low
+                        max = medium_lifestyle_random_xp_high
+                    }
+                }
+			}
+			if = {
+				limit = { character:reachbreaker_101 = { is_alive = yes } }
+				add_opinion = {
+					target = character:reachbreaker_101
+					modifier = cruelty_opinion
+					opinion = -50
+				}
+			}
+		}
+	}
+	3366.6.2 = { death = { death_reason = death_battle killer = cinderheart_100 } }
+}
+vethrakk_100_wife = {
+	name = "Paxis"
+	culture = ilniviri
+	religion = reman_cult
+	female = yes
+
+	trait = tsaesci_1
+	trait = sign_thief
+
+	3302.12.30 = { birth = yes }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3366.6.2 = { death = { death_reason = death_battle killer = cinderheart_100 } }
+}
+vethrakk_101b = {
+	name = "Koniesidue"
+	dynasty = dyn_vethrakk
+	culture = ilniviri
+	religion = reman_cult
+	father = vethrakk_100
+	mother = vethrakk_100_wife
+
+	trait = sign_warrior
+
+	3347.8.11 = { birth = yes }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3366.6.2 = { death = { death_reason = death_battle killer = cinderheart_100 } }
+}
+vethrakk_101 = {
+	name = "Klia"
+	dynasty = dyn_vethrakk
+	culture = ilniviri
+	religion = reman_cult
+	female = yes
+	father = vethrakk_100
+	mother = vethrakk_100_wife
+
+	trait = sign_mage
+
+	3345.4.7 = { birth = yes }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3366.6.2 = { death = { death_reason = death_battle killer = cinderheart_100 } }
+}
+##Ssaryz Dynasty (dyn_ssaryz)
+
+#House Ssaryz
+ssaryz_99 = {
+	name = "Hariata" #Grandmaster of Cloudruler Temple before
+	dynasty = dyn_ssaryz
+	culture = ilniviri
+	religion = reman_cult
+	female = yes
+
+	trait = tsaesci_3
+	trait = arrogant
+	trait = diligent
+	trait = calm
+
+	trait = education_martial_2
+
+	3184.1.1 = { birth = yes }
+	3298.1.1 = { add_matrilineal_spouse = vethrakk_99b }
+	3323.1.1 = { death = { death_reason = death_accident } }
+}
+ssaryz_100 = {
+	name = "Bersis" #Regent of Cloudruler in 440 and 450
+	dynasty = dyn_ssaryz
+	culture = ilniviri
+	religion = reman_cult
+	female = yes
+
+	mother = ssaryz_99
+	father = vethrakk_99b
+
+	trait = tsaesci_1
+	trait = diligent
+	trait = wrathful
+	trait = humble
+	trait = twin
+
+	trait = education_martial_3
+	trait = rough_terrain_expert #taught by her mother
+	trait = aggressive_attacker #reclaiming a mountain fort takes mettle
+
+	3299.1.1 = { birth = yes }
+	3350.1.1 = {
+		effect = {
+			learn_language = language_tsaesci
+			add_trait = lifestyle_blademaster # a blades regional master better be good at blading
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+                value = {
+                    integer_range = {
+                        min = medium_lifestyle_random_xp_low
+                        max = medium_lifestyle_random_xp_high
+                    }
+                }
+			}
+		}
+	}
+	3421.1.1 = { death = { death_reason = death_battle killer = siborel_103 } }
+}
+
+ssaryz_101 = {
+	name = "Nayaras" #Retainer of Magnate Beloren, then consort of Magnate Caixta of Hakoshae
+	dynasty = dyn_ssaryz
+	culture = ilniviri
+	religion = reman_cult
+
+	mother = ssaryz_99
+	father = vethrakk_99b
+
+	trait = tsaesci_1
+	trait = cynical
+	trait = diligent
+	trait = brave
+	trait = twin
+	trait = lifestyle_blademaster
+	trait = loyal #why Beloren betrothed his daughter to his son
+	trait = education_martial_2
+	trait = rough_terrain_expert #taught by his mother
+	trait = organizer #led a refugee column
+
+	3299.1.1 = { birth = yes }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3360.1.1 = { 
+		employer = kaie_99b
+		effect = {
+			if = {
+				limit = { character:kaie_100 = { is_alive = yes } }
+				set_relation_friend = { reason = friend_generic_history target = character:kaie_100 }
+			}
+		}
+	}
+	3366.1.1 = { employer = kaie_100 }
+	3365.1.1 = {
+		culture = rimmen
+	}
+	3387.1.1 = { death = yes }
+}
+ssaryz_102 = {
+	name = "Benata"
+	dynasty = dyn_ssaryz
+	culture = ilniviri
+	religion = reman_cult
+	female = yes
+
+	father = ssaryz_101
+
+	3335.1.1 = { birth = yes }
+	3365.1.1 = {
+		culture = rimmen
+	}
+	3419.1.1 = { death = yes }
+}
+ssaryz_102b = { #Betrothed to kaie_101
+	name = "Sidien"
+	dynasty = dyn_ssaryz
+	culture = ilniviri
+	religion = reman_cult
+
+	father = ssaryz_101
+
+	3343.1.1 = { birth = yes }
+	3365.1.1 = {
+		culture = rimmen
+	}
+	3406.1.1 = { death = yes }
+}
+
+#Chorak dynasty
+chorak_96 = {
+	name = "Chorak"
+	dynasty = dyn_chorak
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	trait = tsaesci_3
+
+	2940.1.1 = { birth = yes }
+	3122.1.1 = { death = yes }
+}
+chorak_97 = {
+	name = "Akiara"
+	dynasty = dyn_chorak
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	mother = chorak_96
+
+	trait = tsaesci_2
+
+	3051.1.1 = { birth = yes }
+	3206.1.1 = { death = { death_reason = death_accident } }
+}
+chorak_98 = {
+	name = "Versidri"
+	dynasty = dyn_chorak
+	culture = heartlander
+	religion = court_dawnbeauty
+
+	mother = chorak_97
+
+	trait = tsaesci_1
+
+	3135.1.1 = { birth = yes }
+	3257.1.1 = { death = yes }
+}
+chorak_99 = {
+	name = "Eira"
+	dynasty = dyn_chorak
+	culture = heartlander
+	religion = court_dawnbeauty
+	female = yes
+
+	father = chorak_98
+
+	trait = tsaesci_1
+
+	3201.1.1 = { birth = yes }
+	3265.1.1 = { add_matrilineal_spouse = tharn_97b }
+	3312.1.1 = { death = yes }
+}
+chorak_100 = {
+	name = "Dinieras"
+	dynasty = dyn_chorak
+	culture = heartlander
+	religion = court_dawnbeauty
+
+	mother = chorak_99
+	father = tharn_97b
+
+	trait = tsaesci_1
+
+	3267.1.1 = { birth = yes }
+	3305.1.1 = { add_spouse = leztixus_99b }
+	3334.12.18 = { death = { death_reason = death_natural_causes } }
+}
+chorak_101 = { #EK2: The Last Potentate, Ruler of the Heartlands in 440
+	name = "Aixnieras"
+	dynasty = dyn_chorak
+	culture = heartlander
+	religion = court_dawnbeauty
+	dna = aixnieras_dna_entry
+	
+	father = chorak_100
+	mother = leztixus_99b
+
+	trait = education_stewardship_3
+	trait = education_magic_1
+	trait = lifestyle_poet
+	trait = ambitious
+	trait = stubborn
+	trait = trusting
+	trait = tsaesci_2
+	trait = sign_apprentice
+
+	3309.7.11 = { birth = yes }
+	3329.1.1 = {
+		effect = {
+			learn_language = language_tsaesci
+			add_character_flag = ai_will_not_convert
+		}
+	}
+	3362.12.4 = { death = { death_reason = death_battle killer = sosildor_100 } }
+	
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_beards=male_beard_steppe_01
+			custom_hair=male_hair_steppe_01
+		}
+	}
+}
+chorak_101b = {
+	name = "Beliera" #Count of Drakewatch
+	dna = chorak_beliera_dna_entry
+	dynasty = dyn_chorak
+	culture = heartlander
+	religion = court_dawnbeauty
+	female = yes
+
+	father = chorak_100
+	mother = leztixus_99b
+
+	trait = tsaesci_1
+	trait = education_learning_3
+	trait = stubborn
+	trait = zealous
+	trait = brave
+
+	3314.1.1 = { birth = yes }
+	3279.1.1 = {
+		effect = {
+			learn_language = language_tsaesci
+		}
+	}
+	3339.1.1 = { add_spouse = osician_100b }
+	3362.12.4 = { death = { death_reason = death_battle killer = sosildor_100 } }
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=female_hair_steppe_01
+		}
+	}
+}
+chorak_103 = { #Cazuras, nephew of Aixnieras, can become LAAMP
+	name = "Cazuras"
+	dna = chorak_cazuras_dna_entry
+	dynasty = dyn_chorak
+	culture = heartlander
+	religion = court_dawnbeauty
+
+	mother = chorak_101b
+	father = osician_100b
+
+	trait = tsaesci_1
+	trait = beauty_good_1
+
+	trait = education_intrigue_3
+
+	trait = callous
+	trait = patient
+	trait = ambitious
+
+
+	3340.1.1 = { birth = yes }
+	3355.1.1 = {
+		effect = {
+			learn_language = language_tsaesci
+		}
+	}
+	3357.1.1 = {
+		give_nickname = nick_the_fair
+		employer = chorak_101
+	}
+	3362.12.4 = { death = { death_reason = death_battle killer = sosildor_100 } }
+}
+
+#Zhenas Dynasty (dyn_zhenas)
+zhenas_98 = {
+	name = "Xelara"
+	dynasty = dyn_zhenas
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	trait = tsaesci_1
+
+	3102.1.1 = { birth = yes }
+	3231.1.1 = { death = yes }
+}
+zhenas_99 = { #Potentate's buddy, watches over his estates in Elsweyr
+	name = "Yrshue_elve"
+	dynasty = dyn_zhenas
+	culture = ilniviri
+	religion = court_dawnbeauty
+	sexuality = homosexual #Mayhaps Potentate's lover
+
+	mother = zhenas_98
+
+	trait = tsaesci_3 #Very-very high nobility due to Potentate link
+	trait = sign_apprentice
+
+	3164.7.8 = { birth = yes }
+	3196.1.1 = {
+		effect = {
+			if = {
+				limit = { character:akavir_100 = { is_alive = yes } }
+				set_relation_friend = { reason = friend_generic_history target = character:akavir_100 } 
+			}
+		}	
+	}
+	3340.1.1 = {
+		effect = {
+			learn_language = language_tsaesci
+		}
+	}	
+	3350.12.18 = { death = { death_reason = death_murder } } #Dies with Potentate
+}
+zhenas_99b = {
+	name = "Jhovarak"
+	dynasty = dyn_zhenas
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	mother = zhenas_98
+
+	trait = tsaesci_2
+
+	3175.1.1 = { birth = yes }
+	3318.1.1 = { death = yes }
+}
+zhenas_99b1 = { #Married to bartholomo_98
+	name = "Cita"
+	dynasty = dyn_zhenas
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	father = zhenas_99b
+
+	3267.1.1 = { birth = yes }
+	3341.1.1 = { death = yes }
+}
+zhenas_100 = {
+	name = "Xhanrik"
+	dynasty = dyn_zhenas
+	culture = ilniviri
+	religion = court_dawnbeauty
+	sexuality = homosexual
+
+	father = zhenas_99
+
+	trait = tsaesci_1
+	trait = sign_atronach
+
+	3341.11.12 = { birth = yes }
+	3355.1.1 = {
+		effect = {
+			learn_language = language_tsaesci
+			if = {
+				limit = { character:zhenasf_001 = { is_alive = yes } }
+				set_relation_friend = { reason = friend_generic_history target = character:zhenasf_001 }
+			}
+		}
+	}	
+	3440.10.12 = { death = yes }
+}
+
+#Heartland Tsaesci, displaced by Attrebus
+#Kssazi Dynasty (dyn_kssazi)
+kssazi_95 = {
+	name = "Ouixan"
+	dynasty = dyn_kssazi
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	trait = tsaesci_1
+
+	3162.1.1 = { birth = yes }
+	3257.1.1 = { death = yes }
+}
+kssazi_96 = {
+	name = "Ivisei"
+	dynasty = dyn_kssazi
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	father = kssazi_95
+
+	trait = tsaesci_1
+
+	3194.1.1 = { birth = yes }
+	3299.1.1 = { death = yes }
+}
+kssazi_97 = {
+	name = "Sawesi"
+	dynasty = dyn_kssazi
+	culture = heartlander
+	religion = court_dawnbeauty
+	female = yes
+
+	mother = kssazi_96
+
+	trait = tsaesci_1
+
+	3231.1.1 = { birth = yes }
+	3265.1.1 = { add_matrilineal_spouse = kssazi_97_husband }
+	3318.1.1 = { death = yes }
+}
+#History ToDo: can be a noble
+kssazi_97_husband = {
+	name = "Cassionus"
+	culture = colovian
+	religion = eight_divines
+
+	3238.1.1 = { birth = yes }
+	3301.1.1 = { death = yes }
+}
+kssazi_97b = {
+	name = "Chiyu" #marries into cuptor
+	dynasty = dyn_kssazi
+	culture = heartlander
+	religion = court_dawnbeauty
+	female = yes
+
+	mother = kssazi_96
+
+	trait = tsaesci_1
+
+	3249.1.1 = { birth = yes }
+	3341.1.1 = { death = yes }
+}
+kssazi_98 = {
+	name = "Osik"
+	dynasty = dyn_kssazi
+	culture = heartlander
+	religion = court_dawnbeauty
+
+	mother = kssazi_97
+	father = kssazi_97_husband
+
+	trait = tsaesci_1
+
+	3266.1.1 = { birth = yes }
+	3305.1.1 = { add_spouse = kssazi_98_wife }
+	3341.1.1 = { death = yes }
+}
+kssazi_98_wife = { #History ToDo: can be noble
+	name = "Iperia"
+	religion = eight_divines
+	culture = heartlander
+	female = yes
+
+	3271.1.1 = { birth = yes }
+	3348.1.1 = { death = yes }
+}
+kssazi_98b = { #Married to tharn_98
+	name = "Ivisei"
+	dynasty = dyn_kssazi
+	culture = heartlander
+	religion = court_dawnbeauty
+	female = yes
+
+	mother = kssazi_97
+	father = kssazi_97_husband
+
+	3270.1.1 = { birth = yes }
+	3331.1.1 = { death = yes }
+}
+kssazi_99 = {
+	name = "Iziz"
+	dynasty = dyn_kssazi
+	culture = heartlander
+	religion = court_dawnbeauty
+
+	father = kssazi_98
+	mother = kssazi_98_wife
+
+	trait = tsaesci_1
+
+	3307.1.1 = { birth = yes }
+	3359.1.1 = { death = { death_reason = death_mysterious } }
+}
+kssazi_100 = {
+	name = "Xiva"
+	dynasty = dyn_kssazi
+	culture = heartlander
+	religion = court_dawnbeauty
+	female = yes
+	sexuality = homosexual
+
+	father = kssazi_99
+
+	trait = craven
+	trait = just
+	trait = lustful
+	trait = education_diplomacy_2
+	trait = sign_shadow
+	disallow_random_traits = yes
+
+	3342.5.20 = { birth = yes }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3365.1.1 = { add_same_sex_spouse = kssazi_100_wife }
+	3381.1.1 = { trait = tsaesci_1 }
+	3420.1.1 = { death = yes }
+}
+kssazi_100_wife = {
+	name = "Jata"
+	culture = nibenese
+	religion = court_dawnbeauty
+	female = yes
+	sexuality = homosexual
+
+	trait = calm
+	trait = arrogant
+	trait = bossy
+	trait = sign_lord
+	disallow_random_traits = yes
+
+	3344.3.12 = { birth = yes}
+	3360.3.12 = {
+		trait = education_intrigue_2
+		trait = deceitful
+		remove_trait = bossy
+	}
+	3381.1.1 = { death = { death_reason = death_execution killer = kssazi_100 } }
+
+}
+kssazi_100b = {
+	name = "Pivaz"
+	dynasty = dyn_kssazi
+	culture = heartlander
+	religion = court_dawnbeauty
+
+	father = kssazi_99
+
+	3351.1.1 = { birth = yes }
+	3436.1.1 = { death = yes }
+}
+kssazi_101 = {
+	name = "Iziz"
+	dynasty = dyn_kssazi
+	culture = heartlander
+	religion = court_dawnbeauty
+
+	father = kssazi_100b
+
+	3369.1.1 = { birth = yes }
+	3400.1.1 = { effect = { learn_language = language_tsaesci } }
+	3451.1.1 = { death = yes }
+}
+#Leyawiin branch, still Ilniviri
+kssazi1_97 = {
+	name = "Hecarshu"
+	dynasty = dyn_kssazi
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	mother = kssazi_96
+
+	3239.1.1 = { birth = yes }
+	3298.1.1 = { death = yes }
+}
+kssazi1_98 = {
+	name = "Sesika"
+	dynasty = dyn_kssazi
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	father = kssazi1_97
+
+	trait = tsaesci_1
+
+	3275.1.1 = { birth = yes }
+	3347.1.1 = { death = yes }
+}
+kssazi1_99 = {
+	name = "Sawesi"
+	female = yes
+	dynasty = dyn_kssazi
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	mother = kssazi1_98
+
+	3313.1.1 = { birth = yes }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3387.1.1 = { death = yes }
+}
+kssazi1_100 = {
+	name = "Ivisei"
+	female = yes
+	dynasty = dyn_kssazi
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	mother = kssazi1_99
+
+	3336.1.1 = { birth = yes }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3407.1.1 = { death = yes }
+}
+
+#Leztixus Dynasty (dyn_leztixus)
+leztixus_98 = {
+	name = "Xelara"
+	dynasty = dyn_leztixus
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+	
+	trait = tsaesci_1
+
+	3231.1.1 = { birth = yes }
+	3265.1.1 = { add_matrilineal_spouse = leztixus_98_husband }
+	3325.1.1 = { death = yes }
+}
+leztixus_98_husband = {
+	name = "Quznieras"
+	culture = ilniviri
+	religion = court_dawnbeauty
+	
+	trait = tsaesci_1
+
+	3236.1.1 = { birth = yes }
+	3312.1.1 = { death = yes }
+}
+leztixus_99 = {
+	name = "Veyzho"
+	dynasty = dyn_leztixus
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	mother = leztixus_98
+	father = leztixus_98_husband
+	
+	trait = tsaesci_1
+
+	3269.1.1 = { birth = yes }
+	3352.10.9 = { death = yes }
+}
+leztixus_99b = {
+	name = "Qvata"
+	dynasty = dyn_leztixus
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	mother = leztixus_98
+	father = leztixus_98_husband
+	
+	trait = tsaesci_1
+
+	3274.1.1 = { birth = yes }
+	3367.1.1 = { death = yes }
+}
+leztixus_100 = { #Aixnieras's Grand Marshal
+	name = "Varuitz"
+	dynasty = dyn_leztixus
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	father = leztixus_99
+
+	trait = education_martial_3
+	trait = brave
+	trait = zealous
+	trait = arrogant
+	trait = loyal #To Aix
+	trait = tsaesci_1
+
+	3321.1.1 = { birth = yes }
+	3356.1.1 = {
+		effect = {
+			liege = {
+				appoint_court_position = {
+					recipient = root
+					court_position = akolouthos_court_position
+				}
+			}
+		}
+	}
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3361.12.4 = { death = { death_reason = death_battle } } #Deis during the war
+}
+
+#Tsavizus Dynasty (dyn_tsavizus)
+tsavizus_97 = {
+	name = "Tilis"
+	dynasty = dyn_tsavizus
+	culture = ilniviri
+	religion = eight_divines
+	female = yes
+	3230.1.1 = { birth = yes }
+	3308.1.1 = { death = yes }
+}
+tsavizus_98 = {
+	name = "Versirix"
+	dynasty = dyn_tsavizus
+	culture = heartlander
+	religion = eight_divines
+
+	mother = tsavizus_97
+
+	3261.1.1 = { birth = yes }
+	3285.1.1 = { add_spouse = tsavizus_98_wife }
+	3331.1.1 = { death = yes }
+}
+tsavizus_98_wife = {
+	name = "Safia"
+	religion = eight_divines
+	culture = heartlander
+	female = yes
+
+	3260.1.1 = { birth = yes }
+	3335.1.1 = { death = yes }
+}
+tsavizus_98b = {
+	name = "Tseiferi"
+	dynasty = dyn_tsavizus
+	culture = heartlander
+	religion = eight_divines
+	mother = tsavizus_97
+
+	trait = bastard
+
+	3272.1.1 = { birth = yes }
+	3323.1.1 = { death = yes }
+}
+tsavizus_99 = {
+	name = "Faiwes"
+	dynasty = dyn_tsavizus
+	culture = heartlander
+	religion = eight_divines
+	female = yes
+
+	father = tsavizus_98
+	mother = tsavizus_98_wife
+
+	3287.1.1 = { birth = yes }
+	3315.1.1 = { add_matrilineal_spouse = tsavizus_99_husband }
+	3341.1.1 = { death = yes }
+}
+tsavizus_99_husband = {
+	name = "Chalinus"
+	religion = eight_divines
+	culture = heartlander
+
+	3295.1.1 = { birth = yes }
+	3353.1.1 = { death = yes }
+}
+tsavizus_100 = {
+	name = "Zivizus"
+	dynasty = dyn_tsavizus
+	culture = heartlander
+	religion = eight_divines
+
+	mother = tsavizus_99
+	father = tsavizus_99_husband
+
+	3318.1.1 = { birth = yes }
+	3332.1.1 = { add_spouse = tsavizus_100_wife }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3362.12.21 = { death = { death_reason = death_battle } } #Attrebus war
+}
+tsavizus_100_wife = {
+	name = "Rtia"
+	culture = heartlander
+	religion = eight_divines
+	female = yes
+
+	3319.1.1 = { birth = yes }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3365.1.1 = { #Joins rim men
+		employer = kaie_100
+		culture = rimmen
+	}
+	3379.1.16 = { death = yes }
+}
+tsavizus_101 = {
+	name = "Cora"
+	dynasty = dyn_tsavizus
+	culture = heartlander
+	religion = eight_divines
+	female = yes
+
+	father = tsavizus_100
+	mother = tsavizus_100_wife
+
+	3340.1.1 = { birth = yes }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3365.1.1 = { #Joins rim men
+		employer = kaie_100
+		culture = rimmen
+	}
+	3408.5.16 = { death = yes }
+}
+
+#Szivi Dynasty (dyn_szivi)
+szivi_97 = {
+	name = "Dvora"
+	dynasty = dyn_szivi
+	culture = ilniviri
+	religion = reman_cult
+	female = yes
+
+	trait = tsaesci_1
+
+	3219.1.1 = { birth = yes }
+	3246.1.1 = { add_matrilineal_spouse = szivi_97_husband }
+	3261.1.1 = { add_matrilineal_spouse = szivi_97_husband1 }
+	3292.1.1 = { death = yes }
+}
+szivi_97_husband = {
+	name = "Syrilus"
+	culture = heartlander
+	religion = eight_divines
+
+	3224.1.1 = { birth = yes }
+	3257.1.1 = { death = yes }
+}
+szivi_97_husband1 = {
+	name = "Kalasidue"
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	3232.1.1 = { birth = yes }
+	3299.1.1 = { death = yes }
+}
+szivi_98 = { 
+	name = "Beliera"
+	dynasty = dyn_szivi
+	culture = ilniviri
+	religion = reman_cult
+	female = yes
+
+	mother = szivi_97
+	father = szivi_97_husband
+
+	trait = tsaesci_1
+
+	3248.1.1 = { birth = yes }
+	3275.1.1 = { add_spouse = szivi_98_husband }
+	3319.1.1 = { death = yes }
+}
+szivi_98_husband = {
+	name = "Rotus"
+	religion = eight_divines
+	culture = heartlander
+
+	3246.1.1 = { birth = yes }
+	3311.1.1 = { death = yes }
+}
+szivi_98b = { #Married to dor_99
+	name = "Qvata"
+	dynasty = dyn_szivi
+	culture = ilniviri
+	religion = reman_cult
+	female = yes
+
+	mother = szivi_97
+	father = szivi_97_husband1
+
+	trait = tsaesci_1
+
+	3263.1.1 = { birth = yes }
+	3348.1.1 = { death = yes }
+}
+szivi_99 = {
+	name = "Qkzarien"
+	dynasty = dyn_szivi
+	culture = heartlander
+	religion = reman_cult
+
+	mother = szivi_98
+	father = szivi_98_husband
+
+	trait = tsaesci_1
+
+	3277.1.1 = { birth = yes }
+	3309.1.1 = { add_spouse = galenus_98b }
+	3356.1.1 = { death = { death_reason = death_hunting_mistakenly_stabbed } }
+}
+szivi_100 = {
+	name = "Qkzarius"
+	dynasty = dyn_szivi
+	culture = heartlander
+	religion = reman_cult
+
+	father = szivi_99
+	mother = galenus_98b
+
+	3311.1.1 = { birth = yes }
+	3337.1.1 = { add_spouse = fleccian_100c }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3365.1.1 = { #Joins rim men
+		employer = kaie_100
+		culture = rimmen
+	}
+	3378.1.1 = { death = yes }
+}
+szivi_100b = {
+	name = "Rvata"
+	dynasty = dyn_szivi
+	culture = heartlander
+	religion = reman_cult
+	female = yes
+
+	father = szivi_99
+	mother = galenus_98b
+
+	3314.1.1 = { birth = yes }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3365.1.1 = { #Joins rim men
+		employer = kaie_100
+		culture = rimmen
+	}
+	3391.1.1 = { death = yes }
+}
+szivi_101 = {
+	name = "Qayira"
+	dynasty = dyn_szivi
+	culture = heartlander
+	religion = reman_cult
+	female = yes
+
+	father = szivi_100
+	mother = fleccian_100c
+
+	3338.1.1 = { birth = yes }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3365.1.1 = { #Joins rim men
+		employer = kaie_100
+		culture = rimmen
+	}
+	3401.1.1 = { death = yes }
+}
+szivi_101b = {
+	name = "Qinierius"
+	dynasty = dyn_szivi
+	culture = heartlander
+	religion = reman_cult
+
+	father = szivi_100
+	mother = fleccian_100c
+
+	3346.1.1 = { birth = yes }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3365.1.1 = { #Joins rim men
+		employer = kaie_100
+		culture = rimmen
+	}
+	3409.1.1 = { death = yes }
+}
+szivi_102 = {
+	name = "Flara"
+	dynasty = dyn_szivi
+	culture = rimmen
+	religion = reman_cult
+	female = yes
+
+	mother = szivi_101
+
+	3369.1.1 = { birth = yes }
+	3435.1.1 = { death = yes }
+}
+szivi_103 = {
+	name = "Rayofien"
+	dynasty = dyn_szivi
+	culture = rimmen
+	religion = reman_cult
+
+	mother = szivi_102
+
+	3395.1.1 = { birth = yes }
+	3468.1.1 = { death = yes }
+}
+
+#Tideholm holders
+nivae_100 = {
+	name = "Xhevara"
+	dna = tideholm_xhevara_dna_entry
+	dynasty = dyn_nivae
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	trait = tsaesci_2
+
+	3284.1.1 = { birth = yes }
+	3215.1.1 = {
+		effect = {
+			learn_language = language_tsaesci
+			add_trait = lifestyle_blademaster # a blades regional master better be good at blading
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+                value = {
+                    integer_range = {
+                        min = medium_lifestyle_random_xp_low
+                        max = medium_lifestyle_random_xp_high
+                    }
+                }
+			}
+		}
+	}
+	3320.1.1 = { add_spouse = nivae_100_wife }
+	3411.1.1 = { death = yes }
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_beards=male_beard_steppe_01
+			custom_hair=male_hair_fp1_02
+		}
+	}
+}
+nivae_100_wife = {
+	name = "Seira"
+	dna = tideholm_xhevara_wife_dna_entry
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	trait = tsaesci_1
+
+	3301.1.1 = { birth = yes }
+	3320.1.1 = {
+		effect = {
+			learn_language = language_tsaesci
+		}
+	}
+	3379.1.1 = {death = { death_reason = death_battle } }
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_beards=female_empty
+			custom_hair=female_hair_western_05
+		}
+	}
+}
+nivae_101 = {
+	name = "Jina"
+	dynasty = dyn_nivae
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	father = nivae_100
+	mother = nivae_100_wife
+
+	3335.1.1 = { birth = yes }
+	3355.1.1 = {
+		effect = {
+			learn_language = language_tsaesci
+		}
+	}
+	3379.1.1 = { death = {death_reason = death_battle} }
+}
+
+#Legion Academy Legates
+legionary_001 = {
+	name = "Vryshai"
+	dynasty = dyn_nivae
+	culture = ilniviri
+	religion = reman_cult
+
+	father = nivae_100
+	mother = nivae_100_wife
+	
+	trait = disinherited
+
+	3328.1.1 = { birth = yes }
+	3355.1.1 = {
+		effect = {
+			learn_language = language_tsaesci
+		}
+	}
+	3387.10.8 = {death = { death_reason = death_ill } }
+}
+
+legionary_002 = { #Last Akaviri leader of Topal Academy
+	name = "Qhovzamis" 
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	3342.1.1 = { birth = yes }
+	3365.1.1 = {
+		effect = {
+			learn_language = language_tsaesci
+		}
+		employer = legionary_001
+	}
+	3400.8.14 = {death = {death_reason = death_archery_accident } }
+}
+
+#Kaie dynasty, lead migration to Elsweyr, were nobles in Cyordiil before
+kaie_96 = {
+	name = "Faiwes"
+	dynasty = dyn_kaie
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	trait = tsaesci_1
+
+	3133.1.1 = { birth = yes }
+	3218.1.1 = { death = yes }
+}
+kaie_97 = {
+	name = "Khalarn"
+	dynasty = dyn_kaie
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	mother = kaie_96
+	
+	trait = tsaesci_2
+
+	3189.1.1 = { birth = yes }
+	3294.1.1 = { death = yes }
+}
+kaie_98 = {
+	name = "Hecarshu"
+	dynasty = dyn_kaie
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	father = kaie_97
+
+	trait = tsaesci_1
+
+	3238.1.1 = { birth = yes }
+	3274.1.1 = { add_spouse = kaie_98_wife }
+	3317.1.1 = { death = yes }
+}
+kaie_98_wife = {
+	name = "Lepida"
+	religion = court_dawnbeauty
+	culture = heartlander
+	female = yes
+	
+	3250.1.1 = { birth = yes }
+	3311.1.1 = { death = yes }
+}
+kaie_99 = {
+	name = "Tviata"
+	dynasty = dyn_kaie
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	father = kaie_98
+	mother = kaie_98_wife
+
+	trait = brave
+
+	3276.1.1 = { birth = yes }
+	3307.1.1 = { add_matrilineal_spouse = kaie_99_husband }
+	3312.1.1 = { death = { death_reason = death_contest_duel_accident } }
+}
+kaie_99_husband = {
+	name = "Sanctius"
+	religion = court_dawnbeauty
+	culture = heartlander
+	
+	3281.1.1 = { birth = yes }
+	3346.1.1 = { death = yes }
+}
+kaie_99b = { #Head of family instead of Beloren because Beloren was too young when his mother died
+	name = "Miterix"
+	dynasty = dyn_kaie
+	culture = ilniviri
+	religion = court_dawnbeauty
+	
+	father = kaie_98
+	mother = kaie_98_wife
+
+	trait = tsaesci_1
+
+	3287.1.1 = { birth = yes }
+	#Stays in Cyrodiil and is a bit vocal in opposition of Attrebus
+	3363.1.1 = { death = { death_reason = death_execution killer = sosildor_100 } }
+}
+#EK NOTE: Beloren-Kaie does not align 1:1 with eso, because he doesn't work well with "all heirs of Potentate were killed"
+kaie_100 = {
+	name = "Beloren" #Lore - the name and leader of refugees, relation to Potentate ignored
+	dynasty = dyn_kaie
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	mother = kaie_99
+	father = kaie_99_husband
+
+	trait = greedy
+	trait = brave
+	trait = ambitious
+	trait = education_martial_2
+	trait = tsaesci_1
+
+	3309.1.1 = { birth = yes }
+	3350.1.1 = {
+		add_spouse = brol_100b
+		effect = {
+			learn_language = language_tsaesci
+		}
+	}
+	3364.1.1 = {
+		effect = {
+			add_gold = 200 #Akaviri elites pool their remaining riches in the hand of their leader
+		}
+	}
+	3365.1.1 = {
+		if = {
+			limit = { character:pardus_102 = { is_alive = yes } }
+			set_relation_friend = { reason = friend_generic_history target = character:pardus_102 }
+		}
+		culture = rimmen #becomes influenced by the newfound traditions of this land
+	}
+	3368.1.1 = {
+		add_pressed_claim = title:c_scar_edge #Petitions the right to settle these lands
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = religious_rights
+				level = 1
+			}
+			vassal_contract_set_obligation_level = {
+				type = cultural_rights
+				level = 1
+			}
+		}
+	}
+	3391.1.1 = { death = yes }
+}
+kaie_101 = {
+	name = "Caixta"
+	dynasty = dyn_kaie
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	father = kaie_100
+	mother = brol_100b
+
+	3351.1.1 = { birth = yes }
+	3357.1.1 = { effect = { learn_language = language_tsaesci } }
+	3358.1.1 = { 
+		effect = {
+			if = {
+				limit = { is_married = no }
+				create_betrothal_matrilineal = character:ssaryz_102b
+			}
+		}
+	}
+	3365.1.1 = {
+		culture = rimmen
+	}
+	3367.1.1 = {
+		trait = deceitful
+		trait = cynical
+		trait = humble
+		trait = education_stewardship_2
+	}
+	3368.1.1 = { add_matrilineal_spouse = ssaryz_102b }
+	3438.1.1 = { death = yes }
+}
+kaie_102 = {
+	name = "Velaxtas"
+	dynasty = dyn_kaie
+	culture = rimmen
+	religion = court_dawnbeauty
+
+	trait = education_stewardship_1
+
+	mother = kaie_101
+	father = ssaryz_102b
+
+	3384.1.1 = { birth = yes }
+	3451.1.1 = { death = yes } #2E 552
+}
+kaie_103 = {
+	name = "Dafara"
+	dynasty = dyn_kaie
+	culture = rimmen
+	religion = court_dawnbeauty
+	female = yes
+
+	father = kaie_102
+
+	trait = education_diplomacy_1
+
+	3409.1.1 = { birth = yes }
+	3488.1.1 = { death = yes } #2E 568
+}
+kaie_103b = { #Married to abitarnian_103
+	name = "Beloren"
+	dynasty = dyn_kaie
+	culture = rimmen
+	religion = court_dawnbeauty
+	
+	father = kaie_102
+
+	3412.1.1 = { birth = yes }
+	3464.1.1 = { death = yes }
+}
+kaie_104 = {
+	name = "Trevixas"
+	dynasty = dyn_kaie
+	culture = rimmen
+	religion = court_dawnbeauty
+
+	trait = education_intrigue_2
+
+	mother = kaie_103
+
+	3431.1.1 = { birth = yes }
+	3499.1.1 = { death = yes } #2E 579
+}
+kaie_105 = { #Leader of Hakoshae in ESO (Alliance War)
+	name = "Feina_Darak" #Lore
+	female = yes
+	dynasty = dyn_kaie
+	culture = rimmen
+	religion = court_dawnbeauty
+
+	father = kaie_104
+
+	trait = education_stewardship_3
+
+	3474.1.1 = { birth = yes }
+	3545.1.1 = { death = yes } #2E 625
+}
+#Children of kaie_99b
+kaie1_100 = {
+	name = "Versidri"
+	dynasty = dyn_kaie
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	father = kaie_99b
+
+	3331.1.1 = { birth = yes }
+	#Executed along with his father
+	3363.1.1 = { death = { death_reason = death_execution killer = sosildor_100 } }
+}
+kaie1_100b = {
+	name = "Hara"
+	dynasty = dyn_kaie
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	father = kaie_99b
+
+	3337.1.1 = { birth = yes }
+	#Executed along with her father
+	3363.1.1 = { death = { death_reason = death_execution killer = sosildor_100 } }
+}
+
+#History ToDo: unused
+dov_vhal_001 = {
+	name = "Rhiall"
+	culture = ilniviri
+	religion = reman_cult
+
+	trait = education_martial_prowess_3
+
+	3298.1.1 = { birth = yes }
+	3398.1.1 = { death = yes }
+}
+
+
+#Ro-jodirr counts (Zafun dynasty)
+zafun_100 = { #Peasant leading Akaviri refugees into Rimmen
+	name = "Imata"
+	dynasty = dyn_zafun
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	trait = peasant_leader
+	trait = brave
+	trait = stubborn
+	trait = impatient
+	trait = education_martial_3
+
+	3323.1.1 = { birth = yes }
+	3356.1.1 = { add_matrilineal_spouse = zafun_100_husband }
+	3368.1.1 = {
+		culture = rimmen
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = religious_rights
+				level = 1
+			}
+			vassal_contract_set_obligation_level = {
+				type = cultural_rights
+				level = 1
+			}
+		}
+	}
+	3382.1.1 = { death = yes }
+}
+zafun_100_husband = { #Local Rimmenese
+	name = "Branimerus"
+	culture = rimmenese
+	religion = eight_divines
+	3326.1.1 = { birth = yes }
+	3394.1.1 = { death = yes }
+}
+zafun_101 = {
+	name = "Movarien"
+	culture = ilniviri
+	religion = court_dawnbeauty
+	dynasty = dyn_zafun
+
+	mother = zafun_100
+	father = zafun_100_husband
+
+	3359.1.1 = { birth = yes }
+	3365.1.1 = {
+		culture = rimmen	
+	}
+	3413.1.1 = { death = yes }
+}
+zafun_102 = {
+	name = "Veyzho"
+	culture = rimmen
+	religion = court_dawnbeauty
+	dynasty = dyn_zafun
+
+	father = zafun_101
+	
+	3386.1.1 = { birth = yes }
+	3445.1.1 = { death = yes }
+}
+zafun_102b = {
+	name = "Imata"
+	culture = rimmen
+	religion = court_dawnbeauty
+	dynasty = dyn_zafun
+	female = yes
+
+	father = zafun_101
+	
+	3391.1.1 = { birth = yes }
+	3458.1.1 = { death = yes }
+}
+zafun_103 = {
+	name = "Tseixan"
+	culture = rimmen
+	religion = court_dawnbeauty
+	dynasty = dyn_zafun
+
+	father = zafun_102
+	
+	3413.1.1 = { birth = yes }
+	3478.1.1 = { death = yes }
+}
+
+
+#Former vassals of the South Argonia Development Committee 
+zidakye_101_wife = {
+	name = "Rhaell_Kyrek"
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+	
+	trait = tsaesci_1
+	
+	3260.1.1 = { birth = yes }
+	3270.1.1 = {
+		effect = {
+			learn_language = language_tsaesci
+		}
+	}
+	3350.1.1 = { death = yes }
+}
+
+zidakye_101 = {
+	name = "Xhirak"
+	culture = ilniviri
+	dynasty = dyn_zidakye
+	religion = court_dawnbeauty
+	
+	trait = tsaesci_2
+	
+	3200.1.1 = { birth = yes }
+	3220.1.1 = {
+		effect = {
+			learn_language = language_tsaesci
+		}
+	}
+	3314.1.1 = { add_spouse = zidakye_101_wife }
+	3349.1.1 = { death = yes }
+}
+
+zidakye_103_wife = {
+	name = "Gianna"
+	culture = nibenu
+	religion = eight_divines
+	female = yes
+	
+	trait = beauty_good_1
+	3319.1.1 = { birth = yes }
+	3400.1.1 = { death = yes }
+}
+
+zidakye_103 = {
+	name = "Zizyxe"
+	culture = ilniviri
+	dynasty = dyn_zidakye
+	religion = eight_divines
+	
+	trait = education_diplomacy_1
+	
+	father = zidakye_101
+	mother = zidakye_101_wife
+	trait = adulterer
+
+	3315.1.1 = { birth = yes }
+	3320.1.1 = {
+		effect = {
+			learn_language = language_tsaesci
+		}
+	}
+	3336.1.1 = { add_spouse = zidakye_103_wife }
+	3392.1.1 = { death = yes }
+}
+
+zidakye_104 = {
+	name = "Mishaxhi"
+	culture = ilniviri
+	dynasty = dyn_zidakye
+	religion = eight_divines
+	
+	father = zidakye_103
+	mother = zidakye_103_wife
+	
+	3338.1.1 = { birth = yes }
+	3359.1.1 = { add_spouse = zidakye_104_wife }
+	3369.6.7 = {
+        death = { death_reason = death_raid }
+    }
+}
+zidakye_104_wife = {
+	name = "Czaris"
+	culture = ilniviri
+	religion = eight_divines
+	female = yes
+
+	trait = sign_lover
+
+	3338.2.4 = { birth = yes }
+	3366.8.13 = { death = { death_reason = death_childbirth } }
+}
+
+zidakye_105 = {
+	name = "Perwa"
+	culture = ilniviri
+	dynasty = dyn_zidakye
+	religion = eight_divines
+	female = yes
+	
+	father = zidakye_103
+	mother = zidakye_103_wife
+	
+	3349.1.1 = { birth = yes }
+	3400.1.1 = { death = yes }
+}
+
+zidakye_106 = {
+	name = "Gianna"
+	dynasty = dyn_zidakye
+	culture = ilniviri
+	religion = eight_divines
+	female = yes
+
+	father = zidakye_103
+	mother = zidakye_103_wife
+	
+	3350.1.1 = { birth = yes }
+	3440.1.1 = { death = yes }
+}
+zidakye_107 = { # children of Mishaxhi/zidakye_104
+	name = "Hesteis"
+	culture = ilniviri
+	dynasty = dyn_zidakye
+	religion = eight_divines
+	female = yes
+	father = zidakye_104
+	mother = zidakye_104_wife
+
+	trait = sign_ritual
+
+	3359.1.23 = { birth = yes }
+	3377.12.14 = {
+        death = { death_reason = death_raid }
+    }
+}
+zidakye_107b = { # children of Mishaxhi/zidakye_104
+	name = "Obelix"
+	culture = ilniviri
+	dynasty = dyn_zidakye
+	religion = eight_divines
+	father = zidakye_104
+	mother = zidakye_104_wife
+
+	trait = sign_warrior
+
+	3366.8.13 = { birth = yes }
+	3377.12.14 = {
+        death = { death_reason = death_raid }
+    }
+}
+
+#Sylla Dynasty (dyn_sylla)
+#House Sylla, Magistrates of Shaie's Creek
+sylla_1 = {
+	name = "Auznieras"
+	dna = bhalarix_dna_entry #For shared genes
+	dynasty = dyn_sylla
+	culture = tsaesci # Born in Akavir
+	religion = court_dawnbeauty
+
+	trait = sign_shadow
+	trait = tsaesci_2
+
+	2668.5.16 = { birth = yes }
+	2711.1.1 = { add_spouse = sylla_1_wife }
+	2820.7.11 = { death = { death_reason = death_natural_causes } }
+}
+sylla_1_wife = {
+	name = "Caywes"
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	trait = sign_mage
+	trait = tsaesci_2
+
+	2682.4.22 = { birth = yes }
+	2801.5.4 = { death = { death_reason = death_natural_causes } } 
+}
+sylla_95 = {
+	name = "Auznieras"
+	dynasty = dyn_sylla
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	father = potentate_2
+
+	trait = tsaesci_2
+
+	2778.1.1 = { birth = yes }
+	2920.12.6 = { death = { death_reason = death_execution killer = akavir_99 } } # Family purge
+}
+sylla_95b = {
+	name = "Aleiwes"
+	dynasty = dyn_sylla
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	father = potentate_2
+
+	trait = sign_lord
+	trait = tsaesci_2
+
+	2791.3.16 = { birth = yes }
+	2859.1.1 = { add_spouse = sylla_95b_husband }
+	2920.12.6 = { death = { death_reason = death_execution killer = akavir_99 } } # Family purge
+}
+sylla_95b_husband = {
+	name = "Hersien"
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	trait = sign_shadow
+	trait = tsaesci_2
+
+	2827.5.6 = { birth = yes }
+	2920.12.6 = { death = { death_reason = death_execution killer = akavir_99 } } # Family purge
+}
+sylla_95b_son = { # Goes to Skyrim in exile, marries vethrakk_97
+	name = "Quznieras"
+	dynasty = dyn_sylla
+	culture = ilniviri
+	religion = court_dawnbeauty
+	mother = sylla_95b
+	father = sylla_95b_husband
+
+	trait = sign_lord
+	trait = adventurer
+	trait = tsaesci_2
+
+	2861.3.16 = { birth = yes }
+	3021.12.6 = { death = { death_reason = death_accident } }
+}
+sylla_95c = {
+	name = "Khodreri"
+	dynasty = dyn_sylla
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	father = potentate_2
+
+	trait = sign_steed
+	trait = tsaesci_2
+
+	2795.6.27 = { birth = yes }
+	2920.12.6 = { death = { death_reason = death_execution killer = akavir_99 } } # Family purge
+}
+sylla_96 = { # first one sent into exile
+	name = "Nayaxhi"
+	dynasty = dyn_sylla
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	father = sylla_95
+
+	trait = tsaesci_3
+
+	2874.1.1 = { birth = yes }
+	3059.1.1 = { death = yes }
+}
+sylla_97 = {
+	name = "Hokia"
+	dynasty = dyn_sylla
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+	
+	father = sylla_96
+
+	trait = sign_ritual
+	trait = tsaesci_3
+
+	2978.1.6 = { birth = yes }
+	2893.1.1 = { add_spouse = sylla_97_husband }
+	3207.1.8 = { death = { death_reason = death_old_age } }
+}
+sylla_97_husband = {
+	name = "Dzothizen"
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	trait = sign_serpent
+	trait = tsaesci_2
+
+	2997.12.31 = { birth = yes }
+	3149.2.6 = { death = { death_reason = death_old_age } }
+}
+sylla_98 = {
+	name = "Ekais"
+	dynasty = dyn_sylla
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	mother = sylla_97
+	father = sylla_97_husband
+
+	trait = sign_lady
+	trait = tsaesci_3
+
+	3104.9.24 = { birth = yes }
+	3179.1.1 = { add_spouse = sylla_98_husband }
+	3291.5.26 = { death = { death_reason = death_old_age } }
+}
+sylla_98_husband = {
+	name = "Deshferi"
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	trait = sign_apprentice
+	trait = tsaesci_1
+
+	3117.7.16 = { birth = yes }
+	3238.7.12 = { death = { death_reason = death_old_age } }
+}
+sylla_99 = {
+	name = "Nayaxhi"
+	dynasty = dyn_sylla
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	mother = sylla_98
+	father = sylla_98_husband
+
+	trait = sign_lady
+	trait = tsaesci_2
+
+	3179.9.18 = { birth = yes }
+	3310.1.1 = { add_spouse = sylla_99_wife }
+	3338.2.6 = { death = { death_reason = death_battle } }
+}
+sylla_99_wife = {
+	name = "Demoira"
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	trait = sign_lover
+	trait = tsaesci_1
+
+	3272.2.11 = { birth = yes }
+	3338.2.6 = { death = { death_reason = death_battle } }
+}
+sylla_100_mother = {
+	name = "Lalexis"
+	dna = bhalarix_dna_entry #For shared genes
+	dynasty = dyn_sylla
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+	father = sylla_99
+	mother = sylla_99_wife
+
+	trait = loyal
+	trait = depressed_1 #Realizes he won't come back to her. Towards the end of her life.
+	trait = patient #Legitmately thought Zizyxe would come back to her
+	trait = chaste #Would never want another man
+	trait = compassionate
+	trait = humble
+	trait = sign_warrior
+
+	3311.8.4 = { birth = yes }
+	3340.8.18 = { death = { death_reason = death_depressed } } #Bhalarix orphaned at 1, grows up blaming Zizyxe for his mother's depression from the influence of his spiteful uncle
+}
+sylla_100 = {
+	name = "Bhalarix"
+	dna = bhalarix_dna_entry
+	dynasty = dyn_sylla
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	father = zidakye_103
+	mother = sylla_100_mother
+
+	disallow_random_traits = yes
+	trait = education_stewardship_2
+	trait = legitimized_bastard
+	trait = ambitious
+	trait = brave
+	trait = arrogant
+	trait = sign_ritual
+
+	3339.1.1 = { birth = yes } # Birthday on purpose
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3340.8.18 = {
+		effect = {
+			if = {
+				limit = { character:zidakye_103 = { is_alive = yes } }
+				set_relation_grudge = character:zidakye_103
+			}
+		}
+	}
+	3440.1.1 = { death = yes }
+}
+
+sylla_150 = { # Lalexis' brother line
+	name = "Qavirlas"
+	dynasty = dyn_sylla
+	culture = ilniviri
+	religion = court_dawnbeauty
+	father = sylla_99
+	mother = sylla_99_wife
+
+	trait = sign_lady
+	trait = vengeful
+	trait = chaste
+	trait = honest
+	trait = education_martial_2
+
+	3317.9.21 = { birth = yes }
+	3339.1.1 = { add_spouse = sylla_150_wife }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3362.2.5 = {
+        death = { death_reason = death_raid }
+    }
+}
+sylla_150_wife = {
+	name = "Dezraes"
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	trait = sign_tower
+	trait = vengeful
+	trait = chaste
+	trait = honest
+	trait = education_diplomacy_3
+
+	3318.10.8 = { birth = yes }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3362.2.5 = {
+        death = { death_reason = death_raid }
+    }
+}
+sylla_151 = {
+	name = "Lalexis" # in honor of her aunt
+	dynasty = dyn_sylla
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+	father = sylla_150
+	mother = sylla_150_wife
+
+	trait = sign_atronach
+	trait = brave
+	trait = callous
+	trait = content
+	trait = education_stewardship_3
+
+	3341.11.23 = { birth = yes }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3371.8.2 = {
+        death = { death_reason = death_raid }
+    }
+}
+
+#Drassi Dynasty (dyn_drassi)
+drassi_98 = {
+	name = "Rayalarn"
+	dynasty = dyn_drassi
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	3164.1.1 = { birth = yes }
+	3233.1.1 = { death = yes }
+}
+drassi_99 = {
+	name = "Ranis"
+	dynasty = dyn_drassi
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+	father = drassi_98
+
+	trait = tsaesci_1
+
+	3198.1.1 = { birth = yes }
+	3299.1.1 = { death = yes }
+}
+drassi_100b = {
+	name = "Rallalien"
+	dynasty = dyn_drassi
+	culture = ilniviri
+	religion = court_dawnbeauty
+	mother = drassi_99
+
+	trait = tsaesci_1
+	trait = sign_apprentice
+
+	3254.7.20 = { birth = yes }
+	3356.1.8 = { death = { death_reason = death_old_age } }
+}
+drassi_100 = {
+	name = "Sien"
+	dynasty = dyn_drassi
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	mother = drassi_99
+
+	trait = education_stewardship_3
+	trait = tsaesci_1
+
+	3256.1.1 = { birth = yes }
+	3350.12.22 = { death = yes }
+}
+drassi_101 = {
+	name = "Qyen"
+	dynasty = dyn_drassi
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	father = drassi_100
+
+	trait = education_diplomacy_3
+	trait = ambitious
+	trait = diligent
+
+	3292.1.1 = { birth = yes }
+	#3319.1.1 marries fleccian_100, Aloys
+	3323.1.1 = { religion = eight_divines }
+	3351.11.7 = { #Qyen dies less than a year after she abdicates Bravil to her husband, killed by an anti-tsaescist
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+drassi_101b = { #Younger brother of Qyen, wasn't involved with Bravil at all, leads family in 440
+	name = "Dzorras"
+	dynasty = dyn_drassi
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	father = drassi_100
+
+	trait = tsaesci_1
+
+	3311.1.1 = { birth = yes }
+	3365.1.1 = { #Joins rim men
+		employer = kaie_100
+		culture = rimmen
+	}
+	3397.1.1 = { death = yes }
+}
+drassi_102 = {
+	name = "Vesras"
+	dynasty = dyn_drassi
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	father = drassi_101b
+
+	trait = tsaesci_1
+	
+	3339.1.1 = { birth = yes }
+	3365.1.1 = { #Joins rim men
+		employer = kaie_100
+		culture = rimmen
+	}
+	3423.1.1 = { death = yes }
+}
+drassi_103 = {
+	name = "Deira"
+	dynasty = dyn_drassi
+	culture = rimmen
+	religion = court_dawnbeauty
+	female = yes
+
+	father = drassi_102
+
+	3378.1.1 = { birth = yes }
+	3451.1.1 = { death = yes }
+}
+drassi_104 = {
+	name = "Raleri"
+	dynasty = dyn_drassi
+	culture = rimmen
+	religion = court_dawnbeauty
+
+	mother = drassi_103
+
+	3407.1.1 = { birth = yes }
+	3468.1.1 = { death = yes }
+}
+drassi_104b = {
+	name = "Ivara"
+	dynasty = dyn_drassi
+	culture = rimmen
+	religion = court_dawnbeauty
+	female = yes
+
+	mother = drassi_103
+
+	3410.1.1 = { birth = yes }
+	3478.1.1 = { death = yes }
+}
+drassi_105 = { #Inherits Lynmount after they die out from Knahaten
+	name = "Caixata"
+	dynasty = dyn_drassi
+	culture = rimmen
+	religion = court_dawnbeauty
+	female = yes
+
+	father = drassi_104
+
+	3433.1.1 = { birth = yes }
+	3499.1.1 = { death = yes }
+}
+drassi_106 = {
+	name = "Ferxidue"
+	dynasty = dyn_drassi
+	culture = rimmen
+	religion = court_dawnbeauty
+
+	mother = drassi_105
+
+	3461.1.1 = { birth = yes }
+	3527.1.1 = { death = yes }
+}
+
+#HISTORY TODO: reuse somewhere
+#Perwa Dynasty (dyn_perwa)
+perwa_100 = {
+	name = "Sien"
+	dynasty = dyn_perwa
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	trait = education_stewardship_2
+
+	3291.1.1 = { birth = yes }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3363.1.15 = { death = yes }
+}
+
+# Dherirrik Dynasty (dyn_dherirrik)
+dherirrik_100 = {
+	name = "Divit"
+	dynasty = dyn_dherirrik
+	culture = heartlander
+	religion = court_dawnbeauty
+
+	trait = education_learning_2
+	trait = education_magic_2
+	trait = tsaesci_1
+
+	3267.1.1 = { birth = yes }
+	3350.1.1 = { effect = { learn_language = language_tsaesci } }
+	3363.1.15 = { death = yes }
+}
+
+#Utori dynasty - were ordered to quell Khajiit tensions in Riverhold, failed
+utori_1 = {
+	name = "Sien"
+	dynasty = dyn_utori
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	trait = education_martial_3
+	trait = callous
+	trait = diligent
+	trait = loyal
+	trait = tsaesci_4
+
+	2672.1.1 = { birth = yes } #One of the OG tsaesci
+	3119.7.12 = { death = { death_reason = death_battle } }
+}
+utori_2 = {
+	name = "Caixta"
+	dynasty = dyn_utori
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	father = utori_1
+
+	trait = education_stewardship_1
+	trait = tsaesci_3
+
+	2942.1.1 = { birth = yes }
+	3124.4.3 = { death = { death_reason = death_mysterious } }
+}
+utori_2b = {
+	name = "Variyas"
+	dynasty = dyn_utori
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	father = utori_1
+
+	trait = education_diplomacy_2
+	trait = tsaesci_3
+
+	2968.1.1 = { birth = yes }
+	3133.7.2 = { death = { death_reason = death_mysterious } }
+}
+utori_3 = { #Tried to take revenge on Khajiits, didn't succeed
+	name = "Sien"
+	dynasty = dyn_utori
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	father = utori_2b
+
+	trait = education_intrigue_2
+	trait = tsaesci_2
+
+	3036.1.1 = { birth = yes }
+	3156.1.1 = { death = { death_reason = death_execution  killer = raispoor_93} }
+}
+utori_4 = { #They failed, now in exile
+	name = "Divit"
+	dynasty = dyn_utori
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	father = utori_3
+
+	trait = education_diplomacy_1
+	trait = content
+	trait = craven
+	trait = tsaesci_2
+
+	3122.1.1 = { birth = yes }
+	3258.1.1 = { death = yes }
+}
+utori_5 = {
+	name = "Sien"
+	dynasty = dyn_utori
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	father = utori_4
+
+	trait = education_diplomacy_3
+	trait = content
+	trait = tsaesci_2
+
+	3199.1.1 = { birth = yes }
+	3333.1.1 = { death = yes }
+}
+utori_6 = { #World boss from ESO, near Riverhold
+	name = "Vhysradue" #Lore
+	dynasty = dyn_utori
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+	father = utori_5
+
+	trait = sign_lord
+	trait = patient
+	trait = education_martial_2
+	trait = education_martial_prowess_4
+	trait = tsaesci_3
+	trait = stubborn
+	trait = sadistic
+	prowess = 16
+
+	3283.3.1 = { birth = yes }
+	3359.1.1 = { employer = hopeful_100 }
+	3505.1.1 = { death = yes }
+}
+
+#Brol dynasty, governors in Nibenay, married to Tharns
+brol_1 = { #First Brol on Tamriel
+	name = "Kavrshu"
+	dynasty = dyn_brol
+	culture = tsaesci
+	religion = court_dawnbeauty
+
+	trait = tsaesci_2
+
+	2613.1.1 = { birth = yes }
+	2782.1.1 = { death = yes }
+}
+
+brol_2 = {
+	name = "Kais"
+	dynasty = dyn_brol
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	father = brol_1
+
+	trait = tsaesci_1
+	trait = education_magic_3 #Quickly adopts nibenese customs
+
+	2739.1.1 = { birth = yes }
+	2846.1.1 = { death = yes }
+}
+
+brol_2b = { #Married to tharn_7
+	name = "Diniesidue"
+	dynasty = dyn_brol
+	religion = eight_divines
+	culture = ilniviri
+
+	father = brol_1
+
+	trait = tsaesci_1
+
+	2746.1.1 = { birth = yes }
+	2833.1.1 = { death = yes }
+}
+
+brol_line = {
+	name = "Kais"
+	dynasty = dyn_brol
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+	mother = brol_2
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	2846.1.1 = { birth = yes }
+	3000.1.1 = { give_nickname = nick_line_of }
+	3100.1.1 = { death = yes }
+}
+
+brol_97 = {
+	name = "Veyzho"
+	dynasty = dyn_brol
+	culture = nibenese
+	religion = court_dawnbeauty
+
+	mother = brol_line
+
+	trait = tsaesci_1
+
+	3100.1.1 = { birth = yes }
+	3212.1.1 = { death = yes }
+}
+brol_98 = {
+	name = "Kalidue"
+	dynasty = dyn_brol
+	culture = nibenese
+	religion = court_dawnbeauty
+
+	father = brol_97
+
+	trait = tsaesci_2
+
+	3158.1.1 = { birth = yes }
+	3230.1.1 = { add_spouse = brol_98_wife }
+	3296.1.1 = { death = yes }
+}
+brol_98_wife = {
+	name = "Flacassia"
+	culture = nibenese
+	religion = niben_cult
+	female = yes
+
+	3201.1.1 = { birth = yes }
+	3281.1.1 = { death = yes }
+}
+brol_99 = {
+	name = "Astara"
+	dynasty = dyn_brol
+	culture = nibenese
+	religion = court_dawnbeauty
+	female = yes
+
+	father = brol_98
+	mother = brol_98_wife
+
+	trait = tsaesci_1
+
+	3234.1.1 = { birth = yes }
+	3280.1.1 = { add_spouse = suviero_99b }
+	3352.1.1 = { death = { death_reason = death_disappearance } }
+}
+brol_100 = {
+	name = "Parota"
+	dynasty = dyn_brol
+	culture = nibenese
+	religion = court_dawnbeauty
+	female = yes
+
+	mother = brol_99
+	father = suviero_99b
+
+	trait = tsaesci_1
+	trait = education_magic_3
+
+	3289.1.1 = { birth = yes }
+	3363.5.15 = { death = { death_reason = death_battle killer = domian_100 } }
+}
+brol_100b = { #Married to kaie_100
+	name = "Rayafien"
+	dynasty = dyn_brol
+	culture = nibenese
+	religion = court_dawnbeauty
+	female = yes
+
+	mother = brol_99
+	father = suviero_99b
+
+	trait = tsaesci_1
+	trait = education_magic_3
+
+	3296.1.1 = { birth = yes }
+	3382.1.1 = { death = { death_reason = death_natural_causes } }
+}
+brol_101 = {
+	name = "Savirsidue"
+	dynasty = dyn_brol
+	culture = nibenese
+	religion = court_dawnbeauty
+
+	mother = brol_100
+
+	trait = education_magic_2
+
+	3325.1.1 = { birth = yes }
+	#Goes to Abnur
+	3366.1.1 = { employer = tharn_abnur }
+	3394.1.1 = { death = yes }
+}
+brol_102 = {
+	name = "Kalidue"
+	dynasty = dyn_brol
+	culture = nibenese
+	religion = court_dawnbeauty
+
+	father = brol_101
+
+	3352.1.1 = { birth = yes }
+	#Goes to Abnur
+	3366.1.1 = { employer = tharn_abnur }
+	3407.1.1 = { death = yes }
+}
+brol_103 = {
+	name = "Rayafien"
+	dynasty = dyn_brol
+	culture = nibenese
+	religion = court_dawnbeauty
+	female = yes
+
+	father = brol_102
+
+	3375.1.1 = { birth = yes }
+	3436.1.1 = { death = yes }
+}
+brol_103b = {
+	name = "Veyzho"
+	dynasty = dyn_brol
+	culture = nibenese
+	religion = court_dawnbeauty
+
+	father = brol_102
+
+	3379.1.1 = { birth = yes }
+	3444.1.1 = { death = yes }
+}
+
+#Ves, dynasty of Dinieras
+ves_97 = {
+	name = "Renita"
+	dynasty = dyn_ves
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+	
+	trait = tsaesci_2
+
+	2941.1.1 = { birth = yes }
+	3119.1.1 = { death = yes }
+}
+ves_98 = {
+	name = "Savien"
+	dynasty = dyn_ves
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	mother = ves_97
+	
+	trait = tsaesci_2
+
+	3035.1.1 = { birth = yes }
+	3192.1.1 = { death = yes }
+}
+ves_98b = { #Savirien-Chorak's wife
+	name = "Vais"
+	dynasty = dyn_ves
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	mother = ves_97
+	
+	trait = tsaesci_3
+
+	3042.1.1 = { birth = yes }
+	3258.1.1 = { death = { death_reason = death_natural_causes } }
+}
+ves_99 = {
+	name = "Verras"
+	dynasty = dyn_ves
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	father = ves_98
+	
+	trait = tsaesci_1
+
+	3132.1.1 = { birth = yes }
+	3246.1.1 = { death = yes }
+}
+ves_100 = {
+	name = "Dinieras" #Lore, Dinieras-Ves, founder of Fighter's Guild
+	dynasty = dyn_ves
+	culture = ilniviri #Fighers guild paints him as more traditional akaviri
+	religion = court_dawnbeauty
+
+	father = ves_99
+
+	trait = tsaesci_1
+	trait = education_martial_5 #Founded Fighter's Guild
+	trait = lifestyle_blademaster #Founded Fighter's Guild
+	trait = brave #Founded Fighter's Guild
+	trait = ambitious #Founded Fighter's Guild
+
+	3184.1.1 = { birth = yes }
+	3240.1.1 = { give_nickname = nick_the_iron }
+	3317.1.1 = { death = yes }
+}
+ves_101 = {
+	name = "Kalidue"
+	dynasty = dyn_ves
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	father = ves_100
+
+	3286.1.1 = { birth = yes }
+	3355.1.1 = { death = yes }
+}
+ves_102 = {
+	name = "Savirlas"
+	dynasty = dyn_ves
+	culture = ilniviri
+	religion = court_dawnbeauty
+	
+	father = ves_101
+
+	3311.1.1 = { birth = yes }
+	3374.1.1 = { death = yes }
+}
+
+#Others
+renald_99 = { #Renald's previous identity, snake-captain Vershu
+	name = "Vershu" #Lore - from Remanada
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	trait = tsaesci_4
+	trait = order_member
+
+	2700.1.1 = { birth = yes }
+	3350.12.18 = { death = yes } #"became the protector of the northern west when the black dart was hooked into Savirien-Chorak"
+}
+renald_100 = { #Chevalier Renald
+	name = "Renald" #Lore
+	culture = ilniviri
+	religion = court_dawnbeauty
+
+	father = renald_99
+
+	trait = tsaesci_4
+	trait = patient
+	trait = calm
+	trait = ambitious
+	trait = stubborn
+	trait = order_member
+
+	3320.12.18 = { birth = yes } #Sooner than 430 so that he's not a child
+	3350.1.1 = {
+		effect = {
+			learn_language = language_tsaesci			
+		}
+	}
+	3359.1.1 = { give_nickname = nick_chevalier_renald }
+	3360.1.1 = { employer = rhalta_100 } #Rhalta is northern west ig
+	3800.1.1 = { death = yes } #He lives until Tiber
+}

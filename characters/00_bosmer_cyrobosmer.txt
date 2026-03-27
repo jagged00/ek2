@@ -1,0 +1,886 @@
+﻿#Camoran Woodhearth branch
+camoran_woodhearth_85 = { #Bastard of mainline Camoran
+	name = "Cerwil"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = camoran_85b
+
+	trait = wild_oat
+	trait = lifespan_2
+
+	2068.1.1 = { birth = yes }
+	2244.1.1 = { death = yes }
+}
+camoran_woodhearth_86 = {
+	name = "Tuundir"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	mother = camoran_woodhearth_85
+
+	trait = lifespan_2
+
+	2129.1.1 = { birth = yes }
+	2305.1.1 = { death = yes }
+}
+camoran_woodhearth_87 = {
+	name = "Arathor"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_woodhearth_86
+
+	trait = lifespan_2
+
+	2206.1.1 = { birth = yes }
+	2378.1.1 = { death = yes }
+}
+camoran_woodhearth_88 = {
+	name = "Elphinia"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	father = camoran_woodhearth_87
+
+	trait = lifespan_2
+
+	2266.1.1 = { birth = yes }
+	2433.1.1 = { death = yes }
+}
+camoran_woodhearth_89 = {
+	name = "Floriele"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	mother = camoran_woodhearth_88
+
+	trait = lifespan_2
+
+	2329.1.1 = { birth = yes }
+	2502.10.4 = { death = yes }
+}
+camoran_woodhearth_90 = {
+	name = "Dailalleth"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+	female = yes
+
+	mother = camoran_woodhearth_89
+
+	trait = lifespan_2
+
+	2412.1.1 = { birth = yes }
+	2599.3.2 = { death = yes }
+}
+
+camoran_woodhearth_91 = {
+	name = "Vanirion"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	mother = camoran_woodhearth_90
+
+	trait = lifespan_2
+
+	2474.1.1 = { birth = yes }
+	2665.8.31 = { death = yes }
+}
+
+camoran_woodhearth_92 = {
+	name = "Edundor"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = etarani
+
+	father = camoran_woodhearth_91
+
+	trait = lifespan_2
+
+	2559.1.1 = { birth = yes }
+	2716.1.1 = { dynasty_house = camoran_woodhearth }
+	2752.9.20 = { death = yes }
+}
+
+camoran_woodhearth_93 = {
+	name = "Floriele"
+	dynasty_house = camoran_woodhearth
+	religion = greenpact
+	culture = cyrobosmer
+	female = yes
+
+	father = camoran_woodhearth_92
+	
+	trait = lifespan_2
+
+	2624.1.1 = { birth = yes}
+	2801.4.13 = { death = yes }
+}
+
+camoran_woodhearth_94 = {
+	name = "Marilrin"
+	dynasty_house = camoran_woodhearth
+	religion = greenpact
+	culture = cyrobosmer
+
+	mother = camoran_woodhearth_93
+
+	trait = lifespan_2
+
+	2711.1.1 = { birth = yes}
+	2894.10.5 = { death = yes }
+}
+
+camoran_woodhearth_95 = {
+	name = "Maruin"
+	dynasty_house = camoran_woodhearth
+	religion = greenpact
+	culture = cyrobosmer
+
+	father = camoran_woodhearth_94
+
+	trait = lifespan_2
+
+	2800.1.1 = { birth = yes}
+	2974.2.15 = { death = yes }
+}
+
+camoran_woodhearth_96 = {
+	name = "Vanirion"
+	dynasty_house = camoran_woodhearth
+	religion = greenpact
+	culture = cyrobosmer
+
+	father = camoran_woodhearth_95
+
+	trait = lifespan_2
+
+	2879.1.1 = { birth = yes}
+	3068.4.1 = { death = yes }
+}
+
+camoran_woodhearth_97 = {
+	name = "Gwilon"
+	dynasty_house = camoran_woodhearth
+	religion = greenpact
+	culture = cyrobosmer
+
+	father = camoran_woodhearth_96
+
+	trait = lifespan_2
+
+	2968.1.1 = { birth = yes}
+	3144.7.22 = { death = yes }
+}
+
+camoran_woodhearth_98 = {
+	name = "Breduin"
+	dynasty_house = camoran_woodhearth
+	religion = pact_exemptions #Imperial influence, stop following pact that strictly
+	culture = cyrobosmer
+
+	father = camoran_woodhearth_97
+	
+	trait = lifespan_2
+
+	3029.1.1 = { birth = yes }
+	3090.1.1 = { add_spouse = camoran_woodhearth_98_wife }
+	3212.2.11 = { death = yes }
+}
+
+camoran_woodhearth_98_wife = {
+	name = "Genboril"
+	religion = eight_divines
+	culture = cyrobosmer
+	female = yes
+	trait = lifespan_2
+	3020.1.1 = { birth = yes }
+	3198.1.1 = { death = { death_reason = death_old_age } }
+}
+
+camoran_woodhearth_99 = {
+	name = "Gwilon"
+	dynasty_house = camoran_woodhearth
+	religion = pact_exemptions
+	culture = cyrobosmer
+
+	father = camoran_woodhearth_98
+	mother = camoran_woodhearth_98_wife
+	
+	trait = lifespan_2
+
+	3110.1.1 = { birth = yes }
+	3178.1.1 = { add_spouse = camoran_woodhearth_99_wife }
+	3240.1.1 = { add_spouse = branck_99b }
+	3313.11.15 = { death = yes }
+}
+
+camoran_woodhearth_99_wife = {
+	name = "Aeranir"
+	religion = greenpact
+	culture = cyrobosmer
+	female = yes
+
+	trait = lifespan_2
+
+	3120.1.1 = { birth = yes }
+	3223.1.1 = { death = { death_reason = death_childbirth } }
+}
+
+camoran_woodhearth_100 = { # Woodhearth
+	name = "Erasmo"
+	dynasty_house = camoran_woodhearth
+	religion = pact_exemptions
+	culture = cyrobosmer
+
+	father = camoran_woodhearth_99
+	mother = camoran_woodhearth_99_wife
+
+	trait = education_intrigue_1
+	trait = reclusive
+	trait = shy
+	trait = compassionate
+	trait = temperate
+	trait = lifespan_2
+
+	3223.1.1 = { birth = yes }
+	3385.1.1 = { death = { death_reason = death_natural_causes } } 
+}
+camoran_woodhearth_100b = { #Brother of Erasmo, died in New Joy along with his kids
+	name = "Berithor"
+	dynasty_house = camoran_woodhearth
+	religion = pact_exemptions
+	culture = cyrobosmer
+
+	father = camoran_woodhearth_99
+	mother = branck_99b
+
+	trait = lifespan_2
+	
+	3244.1.1 = { birth = yes }
+	3340.1.1 = { death = { death_reason = death_new_joy } }
+}
+camoran_woodhearth_nj_1 = {
+	name = "Aerledirre"
+	dynasty_house = camoran_woodhearth
+	religion = pact_exemptions
+	culture = cyrobosmer
+	female = yes
+
+	father = camoran_woodhearth_100b
+
+	trait = lifespan_2
+	trait = wild_oat
+
+	3300.1.1 = { birth = yes }
+	3325.1.1 = { add_matrilineal_spouse = camoran_woodhearth_nj_1_husband }
+	3340.1.1 = { death = { death_reason = death_new_joy } }
+}
+camoran_woodhearth_nj_1_husband = {
+	name = "Ulvius"
+	religion = eight_divines
+	culture = cyrobosmer
+
+	trait = lifespan_2
+
+	3290.1.1 = { birth = yes }
+	3340.1.1 = { death = { death_reason = death_new_joy } }
+}
+camoran_woodhearth_nj_2 = {
+	name = "Erasmo"
+	dynasty_house = camoran_woodhearth
+	religion = pact_exemptions
+	culture = cyrobosmer
+
+	father = camoran_woodhearth_100b
+
+	trait = lifespan_2
+	trait = wild_oat
+	
+	3310.1.1 = { birth = yes }
+	3340.1.1 = { death = { death_reason = death_new_joy } }
+}
+camoran_woodhearth_nj_3 = {
+	name = "Berithor"
+	dynasty_house = camoran_woodhearth
+	religion = pact_exemptions
+	culture = cyrobosmer
+
+	father = camoran_woodhearth_nj_1_husband
+	mother = camoran_woodhearth_nj_1
+
+	trait = lifespan_2
+
+	3330.1.1 = { birth = yes }
+	3340.1.1 = { death = { death_reason = death_new_joy } }
+}
+
+#Aenrin
+aenrin_99 = {
+	name = "Erasmo"
+	dynasty = dyn_aenrin
+	religion = greenpact
+	culture = cyrobosmer
+
+	trait = lifespan_2
+
+	3230.1.1 = { birth = yes }
+	3300.1.1 = { add_spouse = aenrin_99_wife }
+	3332.1.1 = { death = { death_reason = death_ill } }
+}
+aenrin_99_wife = {
+	name = "Placidia"
+	religion = eight_divines
+	culture = cyrobosmer
+	female = yes
+
+	trait = lifespan_2
+
+	3223.1.1 = { birth = yes }
+	3338.1.1 = { death = yes }
+}
+aenrin_100 = { #Pirate who takes over Velyn in 440
+	name = "Aenedhel"
+	dynasty = dyn_aenrin
+	religion = greenpact
+	culture = cyrobosmer
+
+	mother = aenrin_99_wife
+	father = aenrin_99
+
+	trait = greedy
+	trait = ambitious
+	trait = callous
+	trait = education_martial_3
+	trait = pirate
+	trait = lifespan_2
+
+	3300.1.1 = { birth = yes }
+	3369.1.1 = { death = { death_reason = death_duel killer = varantha_100 } }
+}
+
+#Ellenwen
+elleren_97 = {
+	name = "Riadell"
+	dynasty = dyn_elleren
+	religion = greenpact
+	culture = cyrobosmer
+	
+	trait = lifespan_2
+
+	2952.1.1 = { birth = yes }
+	3136.2.10 = { death = yes }
+}
+elleren_98 = {
+	name = "Mangonas"
+	dynasty = dyn_elleren
+	religion = greenpact
+	culture = cyrobosmer
+
+	father = elleren_97
+	
+	trait = lifespan_2
+
+	3019.1.1 = { birth = yes }
+	3177.8.23 = { death = { death_reason = death_heart_attack } }
+}
+elleren_99 = {
+	name = "Elenwen"
+	dynasty = dyn_elleren
+	religion = greenpact
+	culture = cyrobosmer
+	female = yes
+
+	father = elleren_98
+
+	trait = adventurer
+	trait = lifespan_2
+
+	3100.1.1 =  { birth = yes }
+	3288.10.6 = { death = yes }
+}
+elleren_100 = {
+	name = "Benduin"
+	dynasty = dyn_elleren
+	religion = greenpact
+	culture = cyrobosmer
+
+	mother = elleren_99
+
+	trait = lifespan_2
+
+	3206.1.1 = { birth = yes }
+	3220.1.1 = { add_spouse = altansar_100c }
+	3394.11.13 = { death = { death_reason = death_natural_causes } }
+}
+elleren_101 = {
+	name = "Eslion"
+	dynasty = dyn_elleren
+	religion = greenpact
+	culture = cyrobosmer
+
+	father = elleren_100
+	mother = altansar_100c
+
+	trait = lifespan_2
+	trait = brave
+	trait = intellect_bad_1
+	trait = reckless
+	trait = education_martial_2
+
+	3277.1.1 = { birth = yes }
+	3368.5.31 = { death = { death_reason = death_drowned } }
+}
+elleren_101b = {
+	name = "Dailinthil"
+	dynasty = dyn_elleren
+	religion = greenpact
+	culture = cyrobosmer
+	female = yes
+
+	father = elleren_100
+	mother = altansar_100c
+
+	trait = lifespan_2
+
+	3291.1.1 = { birth = yes }
+	3477.1.1 = { death = { death_reason = death_natural_causes } }
+}
+
+#Glasbarrow
+vayn_100 = {
+	name = "Minglos" #Part of the Brethren of the Gold Coast, holds Belport in 450
+	dynasty = dyn_vayn
+	culture = cyrobosmer
+	religion = greenpact
+
+	trait = lifespan_2
+	trait = pirate
+
+	3299.1.1 = { birth = yes }
+	3351.1.1 = { 
+		employer = aenrin_100
+		effect = {
+			if = {
+				limit = { character:aenrin_100 = { is_alive = yes } }
+				set_relation_friend = { reason = friend_generic_history target = character:aenrin_100 }
+			}
+		}
+	}
+	3369.1.1 = {
+		effect = {
+			if = {
+				limit = { character:varantha_100 = { is_alive = yes } }
+				set_relation_grudge = character:varantha_100
+			}
+		} 
+	}
+	3396.2.26 = {
+		death = { 
+			death_reason = death_battle
+			killer = rilis_31
+		}
+	}
+}
+
+#Dornke
+dornke_98 = {
+	name = "Salgaer"
+	dynasty = dyn_dornke
+	religion = pact_exemptions
+	culture = cyrobosmer
+	
+	trait = lifespan_2
+
+	3098.1.1 = { birth = yes }
+	3165.1.1 = { add_spouse = dornke_98_wife }
+	3281.7.5 = { death = yes }
+}
+dornke_98_wife = {
+	name = "Husniya"
+	religion = eight_divines
+	culture = strident
+	female = yes
+
+	3138.1.1 = { birth = yes }
+	3199.1.1 = { death = { death_reason = death_natural_causes } }
+}
+dornke_99 = {
+	name = "Nirthongoth"
+	dynasty = dyn_dornke
+	religion = pact_exemptions
+	culture = cyrobosmer
+	
+	father = dornke_98
+	mother = dornke_98_wife
+
+	trait = lifespan_2
+	trait = gregarious
+
+	3168.1.1 = { birth = yes }
+	3325.6.26 = { death = { death_reason = death_feast_accident } }
+}
+dornke_100 = {
+	name = "Morthelos"
+	religion = pact_exemptions
+	culture = cyrobosmer
+	dynasty = dyn_dornke
+
+	father = dornke_99
+
+	trait = lifespan_2
+	trait = cynical
+	trait = honest
+	trait = impatient
+	trait = education_learning_3
+	trait = arcana_good_2
+
+	3264.1.1 = { birth = yes }
+	3369.1.1 = { religion = idealmasters }
+	3371.5.6 = { death = { death_reason = death_battle } }
+}
+
+#Undriel dynasty - courtiers of Oreyn in 440/450 and Treethane of Woodhearth in ESO
+undriel_100 = {
+	name = "Nordinor"
+	dynasty = dyn_undriel
+	religion = greenpact
+	culture = cyrobosmer
+
+	trait = zealous
+	trait = brave
+	trait = fickle
+	trait = education_martial_3
+	trait = lifespan_2
+
+	3283.1.1 = { birth = yes }
+	3465.1.1 = { death = yes }
+}
+undriel_101 = {
+	name = "Galbenel"
+	dynasty = dyn_undriel
+	religion = greenpact
+	culture = cyrobosmer
+	female = yes
+
+	father = undriel_100
+
+	trait = lifespan_2
+
+	3350.1.1 = { birth = yes }
+	3410.1.1 = { add_matrilineal_spouse = elyrimil_102b }
+	3483.1.1 = { trait = bubonic_plague }
+	3487.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+undriel_101b = {
+	name = "Calthindor"
+	dynasty = dyn_undriel
+	religion = greenpact
+	culture = cyrobosmer
+
+	father = undriel_100
+
+	trait = lifespan_2
+
+	3350.1.1 = { birth = yes }
+	#Marrying a Molag Bal believer isn't the best idea
+	3487.1.1 = { death = { death_reason = death_mysterious } }
+}
+undriel_102 = { #Treethane of Woodhearth in ESO
+	name = "Fariel" #Lore
+	religion = greenpact
+	culture = cyrobosmer
+	dynasty = dyn_undriel
+	female = yes
+
+	mother = undriel_101
+	father = elyrimil_102b
+
+	trait = lifespan_2
+	trait = patient
+	trait = content
+	trait = diligent
+	trait = education_stewardship_3
+
+	3430.1.1 = { birth = yes }
+	3470.1.1 = {
+		add_matrilineal_spouse = undriel_102_husband
+		set_relation_soulmate = { target = character:undriel_102_husband }
+	}
+	3614.1.1 = { death = yes }
+}
+undriel_102_husband = {
+	name = "Ulmion" #Lore
+	religion = greenpact
+	culture = cyrobosmer
+
+	trait = lifestyle_hunter
+	trait = education_martial_3
+	trait = wrathful
+	trait = diligent
+	trait = brave
+	trait = lifespan_2
+
+	3433.1.1 = { birth = yes }
+	3584.1.1 = { death = yes } #Placeholder
+}
+
+#Rulers of Graymire
+calobar_98 = {
+	name = "Gorendir"
+	dynasty = dyn_calobar
+	religion = pact_exemptions
+	culture = cyrobosmer
+
+	trait = lifespan_2
+
+	3104.1.1 = { birth = yes }
+	3184.1.1 = { add_spouse = calobar_98_wife }
+	3299.11.5 = { death = { death_reason = death_natural_causes } }
+}
+calobar_98_wife = {
+	name = "Guilenarth"
+	religion = pact_exemptions
+	culture = cyrobosmer
+	female = yes
+
+	trait = lifespan_2
+
+	3118.1.1 = { birth = yes }
+	3284.1.1 = { death = yes }
+}
+calobar_99 = {
+	name = "Millenith"
+	dynasty = dyn_calobar
+	religion = eight_divines
+	culture = cyrobosmer
+	female = yes
+
+	father = calobar_98
+	mother = calobar_98_wife
+
+	trait = lifespan_2
+
+	3185.1.1 = { birth = yes }
+	3250.1.1 = { add_matrilineal_spouse = camoran_haven2_100b }
+	3321.6.18 = { death = { death_reason = death_sea_storm } }
+}
+calobar_99b = {
+	name = "Grohanar"
+	dynasty = dyn_calobar
+	religion = pact_exemptions
+	culture = cyrobosmer
+
+	father = calobar_98
+	mother = calobar_98_wife
+
+	trait = lifespan_2
+
+	3201.1.1 = { birth = yes }
+	3389.1.1 = { death = yes }
+}
+calobar_100 = {
+	name = "Vanirion"
+	dynasty = dyn_calobar
+	religion = eight_divines
+	culture = cyrobosmer
+
+	mother = calobar_99
+	father = camoran_haven2_100b
+
+	trait = lifespan_2
+
+	3252.4.16 = { birth = yes }
+	3441.3.17 = { death = yes }
+}
+calobar_100b = {
+	name = "Erasmo"
+	dynasty = dyn_calobar
+	religion = eight_divines
+	culture = cyrobosmer
+
+	mother = calobar_99
+	father = camoran_haven2_100b
+
+	trait = lifespan_2
+	
+	3260.1.1 = { birth = yes }
+	3454.1.1 = { death = yes }
+}
+calobar_100c = {
+	name = "Olarion"
+	dynasty = dyn_calobar
+	religion = eight_divines
+	culture = cyrobosmer
+
+	mother = calobar_99
+	father = camoran_haven2_100b
+
+	trait = lifespan_2
+	
+	3264.1.1 = { birth = yes }
+	3321.6.18 = { death = { death_reason = death_sea_storm } }
+}
+calobar_100d = {
+	name = "Faniriel"
+	dynasty = dyn_calobar
+	religion = eight_divines
+	culture = cyrobosmer
+	female = yes
+
+	mother = calobar_99
+	father = camoran_haven2_100b
+
+	trait = lifespan_2
+	
+	3271.1.1 = { birth = yes }
+	3463.1.1 = { death = yes }
+}
+calobar_101 = {
+	name = "Arnora"
+	dynasty = dyn_calobar
+	religion = eight_divines
+	culture = cyrobosmer
+	female = yes
+
+	father = calobar_100
+
+	trait = lifespan_2
+	
+	3331.1.1 = { birth = yes }
+	3529.1.1 = { death = yes }
+}
+calobar_101b = {
+	name = "Filenarth"
+	dynasty = dyn_calobar
+	religion = eight_divines
+	culture = cyrobosmer
+	female = yes
+
+	father = calobar_100
+
+	trait = lustful
+	trait = inappetetic
+	trait = lifespan_2
+	
+	3342.1.1 = { birth = yes }
+	3485.1.1 = { death = { death_reason = death_malnourishment } }	
+}
+
+#Elayria - unlanded until Knahaten
+elayria_100 = {
+	name = "Amrael"
+	dynasty = dyn_elayria
+	religion = greenpact
+	culture = cyrobosmer
+	female = yes
+
+	trait = lifespan_2
+
+	3231.1.1 = { birth = yes }
+	3290.1.1 = { add_matrilineal_spouse = elayria_100_husband }
+	3423.1.1 = { death = { death_reason = death_natural_causes } }
+}
+elayria_100_husband = {
+	name = "Malinor"
+	religion = eight_divines
+	culture = cyrobosmer
+
+	trait = lifespan_2
+
+	3211.1.1 = { birth = yes }
+	3393.1.1 = { death = { death_reason = death_old_age } }
+}
+elayria_101 = {
+	name = "Findredil"
+	dynasty = dyn_elayria
+	religion = greenpact
+	culture = cyrobosmer
+	female = yes
+
+	mother = elayria_100
+	father = elayria_100_husband
+
+	trait = lifespan_2
+
+	3292.1.1 = { birth = yes }
+	3475.1.1 = { death = { death_reason = death_accident } }
+}
+elayria_101b = { #Married to side-branch of Camoran-Havens
+	name = "Bragor"
+	dynasty = dyn_elayria
+	religion = greenpact
+	culture = cyrobosmer
+
+	mother = elayria_100
+	father = elayria_100_husband
+
+	trait = lifespan_2
+
+	3297.1.1 = { birth = yes }
+	3477.1.1 = { death = yes }
+}
+elayria_102 = {
+	name = "Malvir"
+	dynasty = dyn_elayria
+	religion = greenpact
+	culture = cyrobosmer
+
+	mother = elayria_101
+
+	trait = lifespan_2
+
+	3376.1.1 = { birth = yes }
+	3562.1.1 = { death = { death_reason = death_natural_causes } }	
+}
+
+#Varaneth dynasty
+varaneth_1 = {
+	name = "Aengvir"
+	dynasty = dyn_varaneth
+	religion = greenpact
+	culture = cyrobosmer
+
+	trait = lifespan_2
+
+	2830.1.1 = { birth = yes }
+	3024.1.1 = { death = yes }
+}
+varaneth_2 = { #Maried to Cormount
+	name = "Doneth"
+	dynasty = dyn_varaneth
+	religion = greenpact
+	culture = cyrobosmer
+	female = yes
+
+	father = varaneth_1
+	
+	trait = lifespan_2
+
+	2904.1.1 = { birth = yes }
+	3070.5.14 = { death = { death_reason = death_pilgrimage_bandit_attack } }
+}
+varaneth_2b = { #Married to Cormount Camorans, inherits Cormount
+	name = "Dirwendel"
+	dynasty = dyn_varaneth
+	religion = greenpact
+	culture = cyrobosmer
+	female = yes
+
+	father = varaneth_1
+	
+	trait = lifespan_2
+	
+	2914.1.1 = { birth = yes }
+	3108.6.12 = { death = yes }
+}

@@ -1,0 +1,951 @@
+﻿#Snow Elves
+############# Honnith Falmer
+falmer_1000 = {
+	name = "Thalorien"
+	culture = falmer
+	dynasty = dynn_irentirmo
+	religion = chantry_auriel
+	
+	trait = lifespan_3
+	trait = temperate #Takes only what he needs
+	trait = craven #Just wanted to live in peace but was forced into battle by the Nords
+	trait = zealous #True believer of Auri-El
+
+	-98.1.1 = { birth = yes }
+	-37.1.1 = { add_spouse = falmer_1000_wife }
+	141.1.1 = { 
+		death = {
+			death_reason = death_viciously_dismembered
+		}
+	}
+}
+
+falmer_1000_wife = {
+	name = "Gwenwen" #I imagine her as a Catelyn Stark type of character
+	culture = falmer
+	religion = chantry_auriel
+	female = yes
+	
+	trait = lifespan_3
+	trait = impatient
+	trait = family_first #I just want my children to survive
+	trait = gregarious
+	trait = wrathful
+
+	-97.1.1 = { birth = yes }
+	141.1.1 = { 
+		death = {
+			death_reason = death_viciously_dismembered
+		}
+	}
+}
+
+falmer_1000_son1 = {
+	name = "Fariath"
+	culture = falmer
+	dynasty = dynn_irentirmo
+	religion = chantry_auriel
+	#father = falmer_1000 # handled in ek_on_game_start_fix_history_parents
+	#mother = falmer_1000_wife # handled in ek_on_game_start_fix_history_parents
+	
+	trait = lifespan_3
+	trait = education_martial_prowess_4 #Many Falmer believed he would win the battle as he did in the past
+	trait = education_martial_4 #Many Falmer believed he would win the battle as he did in the past
+	trait = beauty_good_1 #Because why not
+	trait = physique_good_1
+	trait = unyielding_defender #Didn't work out very well in the end
+	trait = brave #Led the defense
+	trait = just
+	trait = ambitious #Saw himself as the second Snow Prince
+
+	-29.1.1 = { birth = yes }
+	141.1.1 = { 
+		death = {
+			death_reason = death_viciously_dismembered #All that might and grace, and still fell
+		}
+	}
+}
+
+falmer_1000_son2 = {
+	name = "Edhelfiath"
+	culture = falmer
+	dynasty = dynn_irentirmo
+	religion = chantry_auriel
+	#father = falmer_1000 # handled in ek_on_game_start_fix_history_parents
+	#mother = falmer_1000_wife # handled in ek_on_game_start_fix_history_parents
+	
+	trait = lifespan_3
+	trait = generous
+	trait = calm
+	trait = maimed
+	trait = compassionate
+
+	-6.1.1 = { birth = yes }
+	141.1.1 = { 
+		death = {
+			death_reason = death_viciously_dismembered
+		}
+	}
+}
+
+#############Chantry builder
+falmer_1001 = {
+	name = "Varfaris"
+	culture = falmer
+	dynasty = dynn_hectaloria
+	religion = chantry_auriel
+	
+	trait = lifespan_3
+	trait = temperate #Takes only what he needs
+	trait = humble #Has lived a long life
+	trait = scarred #Battles with the Nords
+	trait = architect #He's the main architect behind the Chantry
+	trait = zealous #He's the main architect behind the Chantry
+
+	2.1.1 = { birth = yes } #Probably older but can't put age before the First Era
+	18.1.1 = { add_spouse = falmer_1001_wife }
+	123.1.1 = { death = { death_reason = death_vanished } } #Moved into the Vale permanently
+}
+
+falmer_1001_wife = {
+	name = "Bireyis"
+	culture = falmer
+	religion = chantry_auriel
+	female = yes
+	
+	trait = lifespan_3
+	trait = calm #Mostly for the sake of her children and grandchild
+	trait = craven #Scared of the Nords finding her and her family
+	trait = zealous #Believes in Auri-El' protecting them.
+
+	2.1.1 = { birth = yes } #Probably older but can't put age before the First Era
+	123.1.1 = { death = { death_reason = death_vanished } } #Moved into the Vale permanently
+}
+
+falmer_1001_son = {
+	name = "Mirpiroth"
+	culture = falmer
+	dynasty = dynn_hectaloria
+	religion = chantry_auriel
+	father = falmer_1001
+	mother = falmer_1001_wife
+	
+	trait = lifespan_3
+	trait = vengeful #Would rather fight than go to the Vale
+	trait = just
+	trait = scarred #Battles with the Nords
+	trait = cynical #Why has Auri-El forsaken us?
+
+	19.1.1 = { birth = yes } #Probably older but can't put age before the First Era and I wanted semi realistic birth years
+	39.1.1 = { add_spouse = falmer_1001_son_wife }
+	123.1.1 = { death = { death_reason = death_vanished } } #Moved into the Vale permanently
+}
+
+falmer_1001_son_wife = {
+	name = "Gwenyis"
+	culture = falmer
+	religion = chantry_auriel
+	female = yes
+	
+	trait = lifespan_3
+	trait = vengeful #Wants revenge
+	trait = content #But also just wants to consoldiate and hold
+	trait = zealous #Auri-El would never forsake us
+
+	18.1.1 = { birth = yes } #Probably older but can't put age before the First Era and I wanted semi realistic birth years
+	123.1.1 = { death = { death_reason = death_vanished } } #Moved into the Vale permanently
+}
+
+falmer_1001_son_son = {
+	name = "Celekaris"
+	culture = falmer
+	dynasty = dynn_hectaloria
+	religion = chantry_auriel
+	father = falmer_1001_son
+	mother = falmer_1001_son_wife
+	
+	trait = lifespan_3
+	trait = diligent
+	trait = generous
+	trait = trusting
+
+	41.1.1 = { birth = yes }
+	79.1.1 = { add_spouse = falmer_1001_son_son_wife }
+	123.1.1 = { death = { death_reason = death_vanished } } #Moved into the Vale permanently
+}
+
+falmer_1001_son_son_wife = {
+	name = "Cendhora"
+	culture = falmer
+	religion = chantry_auriel
+	female = yes
+	
+	trait = lifespan_3
+
+	28.1.1 = { birth = yes } #Probably older but can't put age before the First Era and I wanted semi realistic birth years
+	123.1.1 = { death = { death_reason = death_vanished } } #Moved into the Vale permanently
+}
+
+falmer_1001_son_son_son = {
+	name = "Udhelmhor"
+	culture = falmer
+	dynasty = dynn_hectaloria
+	religion = chantry_auriel
+	father = falmer_1001_son_son
+	mother = falmer_1001_son_son_wife
+	
+	trait = lifespan_3
+
+	113.1.1 = { birth = yes }
+	123.1.1 = { death = { death_reason = death_vanished } } #Moved into the Vale permanently
+}
+
+falmer_1001_daughter = {
+	name = "Haervena"
+	culture = falmer
+	dynasty = dynn_hectaloria
+	religion = chantry_auriel
+	female = yes
+	father = falmer_1001
+	mother = falmer_1001_wife
+	
+	trait = lifespan_3
+	trait = forgiving #Why can't the Nords just forgive us for the Night of Tears?
+	trait = compassionate #Helped save a Nordic warrior with magic
+	trait = zealous #Just because my brother believes we are abandoned does not make it so!
+	trait = arcana_good_2
+	trait = education_magic_3
+
+	21.1.1 = { birth = yes } #Probably older but can't put age before the First Era and I wanted semi realistic birth years
+	42.1.1 = { add_spouse = falmer_1001_daughter_husband }
+	123.1.1 = { death = { death_reason = death_vanished } } #Moved into the Vale permanently
+}
+
+falmer_1001_daughter_husband = {
+	name = "Parerilor"
+	culture = falmer
+	religion = chantry_auriel
+	
+	trait = lifespan_3
+	trait = honest #
+	trait = temperate #
+	trait = zealous #
+
+	19.1.1 = { birth = yes } #Probably older but can't put age before the First Era and I wanted semi realistic birth years
+	123.1.1 = { death = { death_reason = death_vanished } } #Moved into the Vale permanently
+}
+falmer_1001_daughter_daughter = {
+	name = "Kirmeril"
+	culture = falmer
+	dynasty = dynn_hectaloria
+	religion = chantry_auriel
+	female = yes
+	father = falmer_1001_daughter_husband
+	mother = falmer_1001_daughter
+	
+	trait = lifespan_3
+	trait = craven
+	trait = paranoid #The Nords are going to get me!
+	trait = chaste
+
+	43.1.1 = { birth = yes }
+	78.1.1 = { add_spouse = falmer_1001_daughter_husbandb }
+	123.1.1 = { death = { death_reason = death_vanished } } #Moved into the Vale permanently
+}
+
+falmer_1001_daughter_son = {
+	name = "Rynwith"
+	culture = falmer
+	dynasty = dynn_hectaloria
+	religion = chantry_auriel
+	father = falmer_1001_daughter_husband
+	mother = falmer_1001_daughter
+	
+	trait = lifespan_3
+	trait = brave #
+	trait = just #
+	trait = vengeful #Uncle is right, we need to fight the Nords! Not Cower!
+
+	46.1.1 = { birth = yes }
+	123.1.1 = { death = { death_reason = death_vanished } } #Moved into the Vale permanently
+}
+falmer_1001_daughter_husbandb = {
+	name = "Rynsebir"
+	culture = falmer
+	religion = chantry_auriel
+	
+	trait = lifespan_3
+	trait = honest #
+	trait = temperate #
+	trait = zealous #
+
+	42.1.1 = { birth = yes } #Probably older but can't put age before the First Era and I wanted semi realistic birth years
+	123.1.1 = { death = { death_reason = death_vanished } } #Moved into the Vale permanently
+}
+falmer_1001_daughter_granddaughter = {
+	name = "Helemeril"
+	culture = falmer
+	dynasty = dynn_hectaloria
+	religion = chantry_auriel
+	female = yes
+	father = falmer_1001_daughter_husbandb
+	mother = falmer_1001_daughter_daughter
+	
+	trait = lifespan_3
+	trait = compassionate
+	trait = charming
+
+	111.1.1 = { birth = yes }
+	123.1.1 = { death = { death_reason = death_vanished } } #Moved into the Vale permanently
+}
+###################Greenwall ruins
+falmer_1002_father = { #Inspired by Wulfric and the Snow Elf
+	name = "Nemmen"
+	culture = falmer
+	dynasty = dynn_vranrenoth
+	religion = chantry_auriel
+	
+	trait = lifespan_3
+	trait = stubborn
+	trait = cynical
+	trait = deceitful
+	trait = intellect_good_1
+
+	2.2.7 = { birth = yes }
+	24.1.1 = { add_spouse = falmer_1002_father_wife }
+	103.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+falmer_1002_father_wife = { #Inspired by Wulfric and the Snow Elf
+	name = "Eldriel"
+	culture = falmer
+	religion = chantry_auriel
+	female = yes
+	
+	trait = lifespan_3
+
+	2.6.16 = { birth = yes }
+	28.12.29 = { death = { death_reason = death_childbirth } }
+}
+
+falmer_1002 = {
+	name = "Lethrani"
+	culture = falmer
+	dynasty = dynn_vranrenoth
+	religion = chantry_auriel
+	female = yes
+
+	father = falmer_1002_father
+	mother = falmer_1002_father_wife
+	
+	trait = lifespan_3
+	trait = compassionate
+	trait = calm
+	trait = zealous
+	trait = architect
+
+	27.1.1 = { birth = yes }
+	81.1.1 = { add_spouse = falmer_1002_husband }
+	103.1.1 = {
+        death = { death_reason = death_crushed  }
+    } #Ruins collapsed and created the underground ruins we see in ESO
+}
+falmer_1002_husband = {
+	name = "Zidayor"
+	culture = falmer
+	religion = chantry_auriel
+	
+	trait = lifespan_3
+
+	23.1.1 = { birth = yes }
+	103.1.1 = {
+        death = { death_reason = death_crushed  }
+    } #Ruins collapsed and created the underground ruins we see in ESO
+}
+falmer_1002_daughter_1 = {
+	name = "Vengreah"
+	culture = falmer
+	dynasty = dynn_vranrenoth
+	religion = chantry_auriel
+	female = yes
+	father = falmer_1002_husband
+	mother = falmer_1002
+	
+	trait = lifespan_3
+
+	89.1.1 = { birth = yes }
+	103.1.1 = {
+        death = { death_reason = death_crushed  }
+    } #Ruins collapsed and created the underground ruins we see in ESO
+}
+falmer_1002_daughter_2 = {
+	name = "Rinelenor"
+	culture = falmer
+	dynasty = dynn_vranrenoth
+	religion = chantry_auriel
+	female = yes
+	father = falmer_1002_husband
+	mother = falmer_1002
+	
+	trait = lifespan_3
+
+	91.1.1 = { birth = yes }
+	103.1.1 = {
+        death = { death_reason = death_crushed  }
+    } #Ruins collapsed and created the underground ruins we see in ESO
+}
+####################Hiding in mountains between Falkreath, the Rift, and Cyrodiil
+falmer_1003 = {
+	name = "Balkaris"
+	culture = falmer
+	dynasty = dynn_erenaris
+	religion = chantry_auriel
+	
+	trait = lifespan_3
+	trait = callous
+	trait = calm
+	trait = brave
+	trait = unyielding_defender
+
+	29.1.1 = { birth = yes }
+	55.1.1 = { add_spouse = falmer_1003_wife }
+	231.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+falmer_1003_wife = {
+	name = "Vyrlenor"
+	culture = falmer
+	religion = chantry_auriel
+	female = yes
+	
+	trait = lifespan_3
+	trait = sadistic
+	trait = vengeful
+	trait = temperate
+
+	26.1.1 = { birth = yes }
+	231.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+falmer_1004 = {
+	name = "Idhedanyis"
+	culture = falmer
+	dynasty = dynn_erenaris
+	religion = chantry_auriel
+	father = falmer_1003
+	mother = falmer_1003_wife
+	
+	trait = lifespan_3
+
+	57.1.1 = { birth = yes }
+	95.1.1 = { add_spouse = falmer_helgen_3 }
+	243.1.1 = { death = { death_reason = death_vanished } }
+}
+falmer_1005 = {
+	name = "Pryslenor" #Named after grandma
+	culture = falmer
+	dynasty = dynn_erenaris
+	religion = chantry_auriel
+	father = falmer_1004
+	mother = falmer_helgen_3
+	female = yes
+	
+	trait = lifespan_3
+
+	99.1.1 = { birth = yes }
+	127.1.1 = { add_spouse = falmer_1005_husband }
+	243.1.1 = { death = { death_reason = death_vanished } }
+}
+falmer_1005_husband = {
+	name = "Udhelzhor"
+	culture = falmer
+	religion = chantry_auriel
+	
+	trait = lifespan_3
+
+	101.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_vanished } }
+}
+falmer_1006 = {
+	name = "Iterndil"
+	culture = falmer
+	dynasty = dynn_erenaris
+	religion = chantry_auriel
+	father = falmer_1005_husband
+	mother = falmer_1005
+	
+	trait = lifespan_3
+	trait = twin
+
+	131.1.1 = { birth = yes }
+	161.1.1 = { add_spouse = falmer_1006_wife }
+	239.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+falmer_1006_wife = {
+	name = "Tuirae"
+	culture = falmer
+	religion = chantry_auriel
+	female = yes
+	
+	trait = lifespan_3
+
+	137.1.1 = { birth = yes }
+	239.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+falmer_1007 = {
+	name = "Hessaire"
+	culture = falmer
+	dynasty = dynn_erenaris
+	religion = chantry_auriel
+	father = falmer_1006
+	mother = falmer_1006_wife
+	female = yes
+	
+	trait = lifespan_3
+
+	179.1.1 = { birth = yes }
+	202.1.1 = { add_spouse = falmer_1007_husband }
+	239.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+falmer_1007_husband = {
+	name = "Tuirae"
+	culture = falmer
+	religion = chantry_auriel
+	
+	trait = lifespan_3
+
+	184.1.1 = { birth = yes }
+	239.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+falmer_1008 = {
+	name = "Mankllon"
+	culture = falmer
+	dynasty = dynn_erenaris
+	religion = chantry_auriel
+	father = falmer_1007_husband
+	mother = falmer_1007
+	
+	trait = lifespan_3
+
+	212.1.1 = { birth = yes }
+	239.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+falmer_1006_twin_sister = { #Married off to Neugrad
+	name = "Glendanyis"
+	culture = falmer
+	dynasty = dynn_erenaris
+	religion = chantry_auriel
+	female = yes
+	father = falmer_1005_husband
+	mother = falmer_1005
+	
+	trait = lifespan_3
+	trait = twin
+
+	131.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_vanished } }
+}
+##########Helgen vassal
+falmer_helgen_1 = {
+	name = "Pryslenor"
+	culture = falmer
+	dynasty = dynn_masrandil
+	religion = chantry_auriel
+	female = yes
+	
+	trait = lifespan_3
+
+	28.1.1 = { birth = yes }
+	57.1.1 = { add_spouse = falmer_helgen_1_husband }
+	243.1.1 = { death = { death_reason = death_vanished } }
+}
+falmer_helgen_1_husband = {
+	name = "Cenbys"
+	culture = falmer
+	religion = chantry_auriel
+	
+	trait = lifespan_3
+
+	39.1.1 = { birth = yes }
+	243.1.1 = { death = { death_reason = death_vanished } }
+}
+falmer_helgen_2 = {
+	name = "Karlor"
+	culture = falmer
+	dynasty = dynn_masrandil
+	religion = chantry_auriel
+	father = falmer_helgen_1_husband
+	mother = falmer_helgen_1
+	
+	trait = lifespan_3
+
+	57.1.1 = { birth = yes }
+	79.1.1 = { add_spouse = ayleid_neugrad_2 }
+	243.1.1 = { death = { death_reason = death_vanished } }
+}
+falmer_helgen_3 = { #married off to duke
+	name = "Idhedanyis"
+	culture = falmer
+	dynasty = dynn_masrandil
+	religion = chantry_auriel
+	father = falmer_helgen_1_husband
+	mother = falmer_helgen_1
+	female = yes
+	
+	trait = lifespan_3
+
+	59.1.1 = { birth = yes }
+	237.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+falmer_helgen_4 = {
+	name = "Edhelmhor"
+	culture = falmer
+	dynasty = dynn_masrandil
+	religion = chantry_auriel
+	father = falmer_helgen_2
+	mother = ayleid_neugrad_2
+	
+	trait = lifespan_3
+
+	85.1.1 = { birth = yes }
+	106.1.1 = { add_spouse = falmer_helgen_4_wife }
+	243.1.1 = { death = { death_reason = death_vanished } }
+}
+falmer_helgen_4_wife = {
+	name = "Estoie"
+	culture = falmer
+	religion = chantry_auriel
+	female = yes
+	
+	trait = lifespan_3
+
+	85.1.1 = { birth = yes }
+	#79.1.1 = { add_spouse = falmer_helgen_4_wife }
+	243.1.1 = { death = { death_reason = death_vanished } }
+}
+falmer_helgen_5 = {
+	name = "Nenydith"
+	culture = falmer
+	dynasty = dynn_masrandil
+	religion = chantry_auriel
+	father = falmer_helgen_4
+	mother = falmer_helgen_4_wife
+	female = yes
+	
+	trait = lifespan_3
+
+	119.1.1 = { birth = yes }
+	168.1.1 = { add_spouse = falmer_helgen_5_husband }
+	243.1.1 = { death = { death_reason = death_vanished } }
+}
+falmer_helgen_5_sister = {
+	name = "Tanlinwae"
+	culture = falmer
+	dynasty = dynn_masrandil
+	religion = chantry_auriel
+	father = falmer_helgen_4
+	mother = falmer_helgen_4_wife
+	female = yes
+	
+	trait = lifespan_3
+
+	127.1.1 = { birth = yes }
+	128.1.1 = { death = { death_reason = death_sickly }}
+}
+falmer_helgen_5_husband = {
+	name = "Faeerion"
+	culture = falmer
+	religion = chantry_auriel
+	
+	trait = lifespan_3
+
+	120.1.1 = { birth = yes }
+	238.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+#####Clearspring Tarn
+falmer_clearspring_1 = {
+	name = "Meryellor"
+	culture = falmer
+	dynasty = dynn_binrenoth
+	religion = chantry_auriel
+	
+	trait = lifespan_3
+
+	-123.1.1 = { birth = yes }
+	-40.1.1 = { add_spouse = falmer_clearspring_1_wife }
+	83.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+falmer_clearspring_1_wife = {
+	name = "Elanginia"
+	culture = falmer
+	religion = chantry_auriel
+	female = yes
+	
+	trait = lifespan_3
+
+	-118.1.1 = { birth = yes }
+	83.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+falmer_clearspring_2 = {
+	name = "Nerndilin"
+	culture = falmer
+	dynasty = dynn_binrenoth
+	religion = chantry_auriel
+	# father = falmer_clearspring_1 # handled in ek_on_game_start_fix_history_parents
+	# mother = falmer_clearspring_1_wife # handled in ek_on_game_start_fix_history_parents
+	
+	trait = lifespan_3
+
+	-39.1.1 = { birth = yes }
+	30.1.1 = { add_spouse = falmer_clearspring_2_wife }
+	117.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+falmer_clearspring_2_brother = {
+	name = "Andiorron"
+	culture = falmer
+	dynasty = dynn_binrenoth
+	religion = chantry_auriel
+	sexuality = homosexual
+	#father = falmer_clearspring_1 # handled in ek_on_game_start_fix_history_parents
+	#mother = falmer_clearspring_1_wife # handled in ek_on_game_start_fix_history_parents
+	
+	trait = lifespan_3
+
+	-34.1.1 = { birth = yes }
+	87.1.1 = { add_same_sex_spouse = falmer_clearspring_2_brother_husband }
+	117.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+falmer_clearspring_2_brother_husband = {
+	name = "Calcmilrmerel"
+	culture = falmer
+	religion = chantry_auriel
+	sexuality = homosexual
+	
+	trait = lifespan_3
+
+	-56.1.1 = { birth = yes }
+	117.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+falmer_clearspring_2_wife = {
+	name = "Nerndilin"
+	culture = falmer
+	religion = chantry_auriel
+	female = yes
+
+	trait = lifespan_3
+
+	-47.1.1 = { birth = yes }
+	117.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+falmer_clearspring_3 = {
+	name = "Niraya"
+	culture = falmer
+	dynasty = dynn_binrenoth
+	religion = chantry_auriel
+	# father = falmer_clearspring_2 # handled in ek_on_game_start_fix_history_parents
+	# mother = falmer_clearspring_2_wife # handled in ek_on_game_start_fix_history_parents
+	female = yes
+	
+	trait = lifespan_3
+
+	32.1.1 = { birth = yes }
+	117.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+falmer_clearspring_4 = {
+	name = "Faiiel"
+	culture = falmer
+	dynasty = dynn_binrenoth
+	religion = chantry_auriel
+	#father = falmer_clearspring_2 # handled in ek_on_game_start_fix_history_parents
+	#mother = falmer_clearspring_2_wife # handled in ek_on_game_start_fix_history_parents
+	
+	trait = lifespan_3
+
+	38.1.1 = { birth = yes }
+	117.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+###Amuriel family
+falmer_aumriel = { #The Pale Lady
+	name = "Aumriel"
+	culture = falmer
+	dynasty = dynn_irensanme
+	religion = chantry_auriel
+	female = yes
+	
+	trait = lifespan_magic_5
+	trait = depressed_1 #Lost husband and daughter
+	trait = vengeful
+	trait = sadistic #It's not very kind to kidnap and (presumably) murder children
+	trait = wrathful
+	trait = paranoid
+	trait = lunatic_1 #Went insane after loss of husband and daughter
+	trait = arcana_good_3
+	trait = education_magic_4
+
+	-410.1.1 = { birth = yes }
+	-210.1.1 = { add_spouse = falmer_aumriel_husband }
+	119.1.1 = {
+		death = {
+			death_reason = death_vanished # Sealed away
+		}
+	}
+}
+falmer_aumriel_husband = {
+	name = "Athring"
+	culture = falmer
+	religion = chantry_auriel
+	
+	trait = lifespan_magic_4
+	trait = temperate
+	trait = compassionate
+	trait = calm
+
+	-405.1.1 = { birth = yes }
+	-106.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+falmer_aumriel_daughter = {
+	name = "Faire"
+	culture = falmer
+	dynasty = dynn_irensanme
+	religion = chantry_auriel
+	female = yes
+	# mother = falmer_aumriel # handled in ek_on_game_start_fix_history_parents
+	# father = falmer_aumriel_husband # handled in ek_on_game_start_fix_history_parents
+	
+	trait = lifespan_3
+	trait = confider #Told mama everything
+	trait = temperate
+	trait = compassionate
+	trait = charming
+
+	-209.1.1 = { birth = yes }
+	-200.1.1 = { death = { death_reason = death_vanished } } #Drowned in the swamps and never seen again
+}
+ayleid_bonechill_1_wife = {
+	name = "Faithune"
+	culture = falmer
+	religion = chantry_auriel
+	female = yes
+	
+	trait = lifespan_3
+	trait = callous
+	trait = greedy
+	trait = calm
+
+	101.1.1 = { birth = yes }
+	243.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = lakeview_nedes_1
+		}
+	}
+}
+ayleid_bonechill_2_sister_husband = {
+	name = "Zharwihn"
+	culture = falmer
+	religion = chantry_auriel
+	
+	trait = lifespan_3
+
+	116.1.1 = { birth = yes }
+	243.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = lakeview_nedes_1
+		}
+	}
+}
+ayleid_bonechill_2_sister_daughter = {
+	name = "Nozynlevath"
+	culture = falmer
+	dynasty = dynn_alasha
+	religion = chantry_auriel
+	female = yes
+
+	father = ayleid_bonechill_2_sister_husband
+	mother = ayleid_bonechill_2_sister
+	
+	trait = lifespan_3
+
+	242.1.1 = { birth = yes }
+	243.1.1 = {
+		death = { #Cruel vengeance
+			death_reason = death_murder_known
+			killer = neaugrad_nedes_1_wife
+		}
+	}
+}

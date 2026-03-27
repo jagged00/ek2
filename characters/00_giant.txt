@@ -1,0 +1,314 @@
+﻿##############################
+# Stonehill   ### c_stonechill
+##############################
+stonehill_99 = {
+	name = "Dolweppa"
+	female = yes
+	dynasty = dyn_stonehill
+	culture = tundrastrider 
+	religion = mammoth_path 
+	trait = lifespan_2
+	
+	3176.1.1 = { birth = yes }
+	3254.1.1 = { add_matrilineal_spouse = stonehill_99_husband }
+	3356.1.1 = { death = yes }
+} 
+stonehill_99_husband = {
+	name = "Jarmungdrung"
+	culture = tundrastrider 
+	religion = mammoth_path 
+	trait = lifespan_2
+	
+	3180.1.1 = { birth = yes }
+	3340.1.1 = { death = yes }
+} 
+stonehill_100 = {
+	name = "Tmejir"
+	dynasty = dyn_stonehill
+	culture = tundrastrider 
+	religion = mammoth_path 
+
+	trait = education_stewardship_2
+	trait = stubborn
+	trait = lifespan_2
+
+	father = stonehill_99_husband
+	mother = stonehill_99
+	
+	3272.1.1 = { birth = yes }
+	3300.1.1 = { add_spouse = talkingstone_101 }
+	3359.1.1 = { 	
+		create_maa_regiment = {
+			type = herd_mammoth
+			check_can_recruit = no
+			size = 2
+		}
+	}
+	3428.1.1 = { death = yes }
+}
+stonehill_101 = {
+	name = "Alduga"
+	female = yes
+	dynasty = dyn_stonehill
+	culture = tundrastrider 
+	religion = mammoth_path 
+	trait = lifespan_2
+	trait = twin
+
+	father = stonehill_100
+	mother = talkingstone_101
+
+	3301.1.1 = { birth = yes }
+	3442.1.1 = { death = yes }
+}
+stonehill_102 = {
+	name = "Chemua"
+	female = yes
+	dynasty = dyn_stonehill
+	culture = tundrastrider 
+	religion = mammoth_path 
+	trait = lifespan_2
+	trait = twin
+
+	father = stonehill_100
+	mother = talkingstone_101
+
+	3301.1.1 = { birth = yes }
+	3442.1.1 = { death = yes }
+}
+stonehill_100_bro = {
+	name = "Mjtujjor"
+	dynasty = dyn_stonehill
+	culture = tundrastrider 
+	religion = mammoth_path 
+
+	trait = strong
+	trait = lifespan_2
+
+	father = stonehill_99_husband
+	mother = stonehill_99
+	
+	3280.1.1 = { birth = yes }
+	3442.1.1 = { death = yes }
+} 
+
+####################################
+# Talkingstone   ### c_talking_stone
+####################################
+
+talkingstone_99 = {
+	name = "Gulga"
+	dynasty = dyn_talkingstone
+	culture = tundrastrider 
+	religion = mammoth_path 
+	female = yes
+
+	3135.1.1 = { birth = yes }
+	3185.1.1 = { add_matrilineal_spouse = talkingstone_99_husband }
+	3290.1.1 = { death = yes }	
+}
+talkingstone_99_husband = {
+	name = "Maewyn"
+	culture = tundrastrider 
+	religion = mammoth_path
+
+	3135.1.1 = { birth = yes }
+	3281.1.1 = { death = yes }	
+}
+talkingstone_100 = {
+	name = "Toell"
+	dynasty = dyn_talkingstone
+	culture = tundrastrider 
+	religion = mammoth_path 
+
+	trait = physique_good_3
+	trait = one_eyed
+	trait = content
+	trait = lifespan_2
+
+	mother = talkingstone_99
+	father = talkingstone_99_husband
+	
+	3211.1.1 = { birth = yes }
+	3245.1.1 = { add_spouse = talkingstone_100_wife }
+	3359.1.1 = { 	
+		create_maa_regiment = {
+			type = herd_mammoth
+			check_can_recruit = no
+			size = 1
+		}
+	}
+	3365.1.1 = { death = yes }	
+}
+talkingstone_100_wife = {
+	name = "Piret"
+	female = yes
+	culture = tundrastrider 
+	religion = mammoth_path
+	trait = lifespan_2
+	
+	3200.1.1 = { birth = yes }
+	3358.1.1 = { death = yes }	
+}
+talkingstone_101 = {
+	name = "Jora"
+	female = yes
+	dynasty = dyn_talkingstone
+	culture = tundrastrider 
+	religion = mammoth_path
+	trait = lifespan_2
+
+	trait = ambitious
+
+	father = talkingstone_100
+	mother = talkingstone_100_wife
+	
+	3246.11.11 = { birth = yes }
+	3369.1.1 = { 	
+		create_maa_regiment = {
+			type = herd_mammoth
+			check_can_recruit = no
+			size = 1
+		}
+	}
+	3452.1.1 = { death = yes }
+}
+talkingstone_102 = {
+	name = "Horldrung"
+	dynasty = dyn_talkingstone
+	culture = tundrastrider 
+	religion = mammoth_path
+	trait = lifespan_2
+
+	father = talkingstone_100
+	mother = talkingstone_100_wife
+
+	3254.1.1 = { birth = yes }
+	3402.1.1 = { death = yes }
+}
+
+#######################################
+# Wind-Roarer   ### c_north_brittleshin
+#######################################
+wind_roarer_100 = {
+	name = "Thunduma"
+	female = yes
+	dynasty = dyn_wind_roarer
+	culture = tundrastrider 
+	religion = mammoth_path
+	trait = lifespan_2
+
+	trait = vengeful
+	
+	3275.1.1 = { birth = yes }
+	3299.1.1 = { add_matrilineal_spouse = wind_roarer_100_husband }
+	3359.1.1 = { 	
+		create_maa_regiment = {
+			type = herd_mammoth
+			check_can_recruit = no
+			size = 1
+		}
+	}
+	3464.1.1 = { 	
+		create_maa_regiment = {
+			type = herd_mammoth
+			check_can_recruit = no
+			size = 1
+		}
+	}
+	3479.1.1 = { death = yes }
+}
+wind_roarer_100_husband = {
+	name = "Olwep"
+	culture = tundrastrider 
+	religion = mammoth_path 
+	trait = lifespan_2
+
+	trait = compassionate
+	trait = humble
+	
+	3278.1.1 = { birth = yes }
+	3464.1.1 = { 
+		death = { 
+			death_reason = death_duel 
+			killer = graymane_98 
+		} 
+	}
+}
+wind_roarer_101 = {
+	name = "Hguelg"
+	dynasty = dyn_wind_roarer
+	culture = tundrastrider 
+	religion = mammoth_path 
+	trait = lifespan_2
+
+	father = wind_roarer_100_husband
+	mother = wind_roarer_100
+	
+	3316.1.1 = { birth = yes }
+	3466.1.1 = { death = yes }
+}
+wind_roarer_102 = {
+	name = "Thumm"
+	dynasty = dyn_wind_roarer
+	culture = tundrastrider 
+	religion = mammoth_path 
+	trait = lifespan_2
+
+	father = wind_roarer_100_husband
+	mother = wind_roarer_100
+	
+	3351.1.1 = { birth = yes }
+	3501.1.1 = { death = yes }
+}
+
+###############################
+# Trollsbane   ### c_wittestadr
+###############################
+trollsbane_100 = {
+	name = "Mogra"
+	female = yes
+	dynasty = dyn_trollsbane
+	culture = tundrastrider 
+	religion = mammoth_path 
+	trait = lifespan_2
+
+	trait = rough_terrain_expert
+	trait = stubborn
+	trait = intellect_good_2
+
+	3252.1.1 = { birth = yes }
+	3300.1.1 = { add_matrilineal_spouse = trollsbane_100_husband }
+	3359.1.1 = { 	
+		create_maa_regiment = {
+			type = herd_mammoth
+			check_can_recruit = no
+			size = 1
+		}
+	}
+	3368.1.1 = { death = yes }
+}
+trollsbane_100_husband = {
+	name = "Jeek"
+	culture = tundrastrider 
+	religion = mammoth_path 
+	trait = lifespan_2
+
+	3252.1.1 = { birth = yes }
+	3368.1.1 = { death = yes }
+}
+trollsbane_101 = {
+	name = "Tstunal"
+	dynasty = dyn_trollsbane
+	culture = tundrastrider 
+	religion = mammoth_path 
+	trait = lifespan_2
+
+	mother = trollsbane_100
+	father = trollsbane_100_husband
+
+	trait = intellect_good_2
+
+	3294.1.1 = { birth = yes }
+	3480.1.1 = { death = yes }
+}

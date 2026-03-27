@@ -1,0 +1,1655 @@
+﻿#Camoran Silvenar branch
+camoran_silvenar_1 = { #Bastard, progenitor of Silvenar branch of Camorans
+	name = "Galdilin"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = silvenari
+
+	father = camoran_5
+
+	trait = wild_oat
+	trait = lifespan_2
+
+	770.1.1 = { birth = yes }
+	965.4.6 = { death = yes }
+}
+
+camoran_silvenar_2 = {
+	name = "Ciindil"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	father = camoran_silvenar_1
+
+	trait = lifespan_2
+
+	859.1.1 = { birth = yes }
+	990.1.1 = { give_nickname = nick_the_conqueror } #Conquers Arenthia
+	1040.7.2 = { death = { death_reason = death_battle } }
+}
+
+camoran_silvenar_3 = {
+	name = "Bellulor"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = silvenari
+
+	mother = camoran_silvenar_2
+
+	trait = lifespan_2
+
+	918.1.1 = { birth = yes }
+	1103.8.23 = { death = yes }
+}
+
+camoran_silvenar_4 = {
+	name = "Elsenia"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	father = camoran_silvenar_3
+
+	trait = lifespan_2
+
+	993.1.1 = { birth = yes }
+	1198.1.1 = { death = yes }
+}
+
+camoran_silvenar_4b = { #Inherits Arenthia, gets killed by khajiit mob
+	name = "Fordan"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = silvenari
+
+	father = camoran_silvenar_3
+
+	trait = lifespan_2
+
+	1002.1.1 = { birth = yes }
+	1126.6.1 = { death = { death_reason = death_torn_to_pieces_by_mob } }
+}
+
+camoran_silvenar_line = {
+	name = "Elsenia"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = silvenari
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+
+	mother = camoran_silvenar_4
+
+	1208.1.1 = { birth = yes }
+	500.1.1 = { give_nickname = nick_line_of }
+	2415.1.1 = { death = yes }
+}
+
+camoran_silvenar_89 = {
+	name = "Elsenia"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = silvenari
+	female = yes
+	
+	father = camoran_silvenar_line
+
+	trait = lifespan_2
+
+	2415.1.1 = { birth = yes }
+	2607.6.10 = { death = yes }
+}
+
+camoran_silvenar_90 = {
+	name = "Harin"
+	dynasty = dyn_camoran
+	religion = greenpact
+	culture = silvenari
+
+	mother = camoran_silvenar_89
+
+	trait = lifespan_2
+
+	2489.1.1 = { birth = yes }
+	2675.10.22 = { death = yes }
+}
+
+camoran_silvenar_91 = {
+	name = "Galdilin"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+
+	father = camoran_silvenar_90
+
+	trait = lifespan_2
+
+	2567.1.1 = { birth = yes }
+	2753.11.4 = { death = yes }
+}
+
+camoran_silvenar_92 = {
+	name = "Laerinir"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	father = camoran_silvenar_91
+
+	trait = lifespan_2
+
+	2646.1.1 = { birth = yes }
+	2832.9.18 = { death = yes }
+}
+
+camoran_silvenar_92b = { #Married to rayn_93
+	name = "Minedhel"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+
+	father = camoran_silvenar_91
+
+	trait = lifespan_2
+
+	2654.1.1 = { birth = yes }
+	2849.3.23 = { death = yes }
+}
+
+camoran_silvenar_93 = {
+	name = "Elsenia"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	mother = camoran_silvenar_92
+
+	trait = lifespan_2
+
+	2730.1.1 = { birth = yes }
+	2919.9.11 = { death = yes }
+}
+
+camoran_silvenar_94 = {
+	name = "Endoriell"
+	dynasty_house = camoran_silvenar 
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	mother = camoran_silvenar_93
+
+	trait = lifespan_2
+
+	2802.1.1 = { birth = yes }
+	3001.11.2 = { death = yes }
+}
+
+camoran_silvenar_95 = {
+	name = "Erengor"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+
+	mother = camoran_silvenar_94
+
+	trait = lifespan_2
+
+	2894.1.1 = { birth = yes }
+	3086.3.29 = { death = yes }
+}
+
+camoran_silvenar_96 = {
+	name = "Galdilin"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+
+	father = camoran_silvenar_95
+
+	trait = lifespan_2
+
+	2966.1.1 = { birth = yes }
+	3157.11.9 = { death = yes }
+}
+
+camoran_silvenar_97 = {
+	name = "Nivenia"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	father = camoran_silvenar_96
+	
+	trait = lifespan_2
+
+	3054.1.1 = { birth = yes }
+	3239.2.2 = { death = yes }
+}
+
+camoran_silvenar_98 = {
+	name = "Silnor"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+
+	mother = camoran_silvenar_97
+	
+	trait = lifespan_2
+
+	3120.1.1 = { birth = yes }
+	3175.1.1 = { add_spouse = wenayalae_98b }
+	3298.3.12 = { death = yes }
+}
+
+camoran_silvenar_98b = {
+	name = "Milwalin"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+
+	mother = camoran_silvenar_97
+	
+	trait = lifespan_2
+
+	3133.1.1 = { birth = yes }
+	3330.1.1 = { death = yes }
+}
+
+camoran_silvenar_99 = {
+	name = "Aralas"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+
+	father = camoran_silvenar_98
+	mother = wenayalae_98b
+	
+	trait = lifespan_2
+
+	3211.1.1 = { birth = yes }
+	3290.1.1 = { add_spouse = anno_100b }
+	3354.8.10 = { death = { death_reason = death_heart_attack } }
+}
+
+camoran_silvenar_99b = {
+	name = "Tarhiel"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+
+	father = camoran_silvenar_98
+	mother = wenayalae_98b
+
+	trait = lifespan_2
+
+	3229.1.1 = { birth = yes }
+	3341.1.1 = { trait = depressed_1 } #Family disappeared in Falinesti
+	#Hates pirate who took his lands
+	3342.1.1 = { set_relation_rival = { reason = rival_historical target = character:aenrin_100 } }
+	3368.4.25 = { death = { death_reason = death_battle } } #Dies trying to fight pirate
+}
+
+camoran_silvenar_99b1 = {
+	name = "Mandolion"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+
+	father = camoran_silvenar_99b
+	
+	trait = lifespan_2
+
+	3292.1.1 = { birth = yes }
+	3340.7.2 = { death = { death_reason = death_falinesti } }
+}
+camoran_silvenar_99b2 = { #Wasn't in Falinesti when it vanished
+	name = "Amrael" #Married to Varantha
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	father = camoran_silvenar_99b
+	
+	trait = lifespan_2
+
+	3303.1.1 = { birth = yes }
+	3485.1.1 = { trait = bubonic_plague }
+	3486.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+camoran_silvenar_99b3 = {
+	name = "Amrael"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	father = camoran_silvenar_99b
+	
+	trait = lifespan_2
+
+	3307.1.1 = { birth = yes }
+	3340.7.2 = { death = { death_reason = death_falinesti } }
+}
+camoran_silvenar_100 = {
+	name = "Phylandra"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	dna = camoran_silvenar_100_dna_entry
+
+	father = camoran_silvenar_99
+	mother = anno_100b
+	
+	trait = education_diplomacy_3
+	trait = arrogant
+	trait = patient
+	trait = generous
+	trait = lifespan_2
+	trait = sign_lady
+
+	3304.9.7 = { birth = yes }
+	3364.1.1 = {
+		#Rivals with guy who started rebellion against her
+		set_relation_rival = { reason = rival_historical target = character:boldonor_100 }
+	}
+	3375.1.1 = { add_spouse = parikh_101b }
+	3478.7.30 = { death = { death_reason = death_natural_causes } }
+	
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=female_hair_mena_02
+		}
+	}
+}
+camoran_silvenar_100b = { #Older brother of Phylandra, disappeared with Falinesti
+	name = "Silnor"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+
+	father = camoran_silvenar_99
+	mother = anno_100b
+
+	trait = education_diplomacy_1
+	trait = arrogant
+	trait = stubborn
+	trait = greedy
+	trait = lifespan_2
+
+	3296.1.1 = { birth = yes }
+	3340.7.2 = { death = { death_reason = death_falinesti } }
+}
+camoran_silvenar_101 = {
+	name = "Silnor"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+
+	mother = camoran_silvenar_100
+	father = parikh_101b
+
+	trait = lifespan_2
+
+	3391.1.1 = { birth = yes }
+	3432.1.1 = { add_spouse = boldonor_101b }
+	3560.1.1 = { death = yes }
+}
+camoran_silvenar_101b = {
+	name = "Aralas"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+
+	mother = camoran_silvenar_100
+	father = parikh_101b
+
+	trait = lifespan_2
+
+	3404.1.1 = { birth = yes }
+	3445.1.1 = { death = { death_reason = death_murder } }
+}
+camoran_silvenar_102 = {
+	name = "Galdilin"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+
+	father = camoran_silvenar_101
+	mother = boldonor_101b
+
+	trait = lifespan_2
+
+	3456.1.1 = { birth = yes }
+	3575.1.1 = { death = { death_reason = death_murder } }
+}
+
+camoran_silvenar_102b = {
+	name = "Phylandra"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	father = camoran_silvenar_101
+	mother = boldonor_101b
+
+	trait = lifespan_2
+
+	3463.1.1 = { birth = yes }
+	3628.1.1 = { death = yes }
+}
+
+#Branch starting from camoran_silvenar_94
+camoran_silvenar1_96 = {
+	name = "Elsenia"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	mother = camoran_silvenar_94
+
+	trait = lifespan_2
+
+	2903.1.1 = { birth = yes }
+	3099.9.19 = { death = yes }
+}
+camoran_silvenar1_97 = {
+	name = "Erengor"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+
+	mother = camoran_silvenar1_96
+
+	trait = lifespan_2
+
+	2989.1.1 = { birth = yes }
+	3174.6.8 = { death = yes }
+}
+camoran_silvenar1_98 = {
+	name = "Gorchalas"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+
+	father = camoran_silvenar1_97
+
+	trait = lifespan_2
+
+	3072.1.1 = { birth = yes }
+	3155.1.1 = { add_spouse = camoran_silvenar1_98_wife }
+	3258.10.23 = { death = yes }
+}
+camoran_silvenar1_98_wife = {
+	name = "Firathil"
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	trait = lifespan_2
+
+	3075.1.1 = { birth = yes }
+	3266.1.1 = { death = yes }
+}
+camoran_silvenar1_99 = {
+	name = "Elsenia"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	father = camoran_silvenar1_98
+	mother = camoran_silvenar1_98_wife
+
+	trait = lifespan_2
+
+	3159.1.1 = { birth = yes }
+	3220.1.1 = { add_matrilineal_spouse = camoran_silvenar1_99_husband }
+	3341.7.2 = { death = yes }
+}
+camoran_silvenar1_99_husband = {
+	name = "Orchenas"
+	religion = greenpact
+	culture = silvenari
+
+	trait = lifespan_2
+
+	3154.1.1 = { birth = yes }
+	3326.1.1 = { death = yes }
+}
+camoran_silvenar1_100 = {
+	name = "Adanrel"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	mother = camoran_silvenar1_99
+	father = camoran_silvenar1_99_husband
+
+	trait = education_learning_3
+	trait = lifespan_2
+
+	3221.1.1 = { birth = yes }
+	3414.1.1 = { death = yes }
+}
+camoran_silvenar1_100b = {
+	name = "Berisse"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	mother = camoran_silvenar1_99
+	father = camoran_silvenar1_99_husband
+
+	trait = lifespan_2
+
+	3230.1.1 = { birth = yes }
+	3412.1.1 = { death = yes }
+}
+camoran_silvenar1_101 = {
+	name = "Menorfin"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+
+	mother = camoran_silvenar1_100
+
+	trait = lifespan_2
+
+	3299.1.1 = { birth = yes }
+	3478.1.1 = { death = yes }
+}
+camoran_silvenar1_101b = {
+	name = "Olarion"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+
+	mother = camoran_silvenar1_100
+	
+	trait = lifespan_2
+
+	3306.1.1 = { birth = yes }
+	3462.1.1 = { death = yes }
+}
+camoran_silvenar1_101c = {
+	name = "Firathil"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	mother = camoran_silvenar1_100
+	
+	trait = lifespan_2
+
+	3317.1.1 = { birth = yes }
+	3505.1.1 = { death = yes }
+}
+camoran_silvenar1_102 = { #Hengekeeper Lara from ESO
+	name = "Lara" #Lore
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	trait = lifespan_2
+	trait = zealous
+	trait = humble
+	trait = brave
+	trait = education_learning_4
+
+	3378.1.1 = { birth = yes }
+	3550.1.1 = { death = yes }
+}
+
+#Branch starting from camoran_silvenar_96
+camoran_silvenar2_98 = {
+	name = "Natesse"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	father = camoran_silvenar_96
+	
+	trait = lifespan_2
+
+	3084.1.1 = { birth = yes }
+	3140.1.1 = { add_matrilineal_spouse = rayn_98c }
+	3266.9.17 = { death = yes }
+}
+
+camoran_silvenar2_99 = {
+	name = "Elegnan"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	mother = camoran_silvenar2_98
+	father = rayn_98c
+	
+	trait = lifespan_2
+
+	3145.1.1 = { birth = yes }
+	3331.7.30 = { death = yes }
+}
+
+camoran_silvenar2_100 = {
+	name = "Galereth"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	mother = camoran_silvenar2_99
+	
+	trait = lifespan_2
+	trait = brave
+	trait = paranoid
+	trait = arbitrary
+	trait = education_martial_1
+
+	3234.1.1 = { birth = yes }
+	3290.1.1 = { add_matrilineal_spouse = camoran_silvenar2_100_husband }
+	#Dies against rebels
+	3363.3.24 = { death = { death_reason = death_battle } }
+}
+camoran_silvenar2_100_husband = {
+	name = "Hartmin"
+	religion = greenpact
+	culture = silvenari
+	
+	trait = lifespan_2
+	trait = irritable
+
+	3242.1.1 = { birth = yes }
+	3332.1.1 = { death = { death_reason = death_apoplexy } }
+}
+camoran_silvenar2_100b = {
+	name = "Basthelidir"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	mother = camoran_silvenar2_99
+	
+	trait = lifespan_2
+
+	3242.9.1 = { birth = yes }
+	3431.1.1 = { death = yes }
+}
+camoran_silvenar2_100c = {
+	name = "Uungor"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+
+	mother = camoran_silvenar2_99
+	
+	trait = lifespan_2
+
+	3250.1.1 = { birth = yes }
+	3437.1.1 = { death = yes }
+}
+camoran_silvenar2_101 = {
+	name = "Pegebor"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+
+	mother = camoran_silvenar2_100
+	father = camoran_silvenar2_100_husband
+	
+	trait = lifespan_2
+	trait = zealous
+	trait = temperate
+	trait = stubborn
+	trait = education_learning_2
+
+	3302.1.1 = { birth = yes }
+	3366.1.1 = {
+		#Friends with another vassal who fought with his mother 
+		set_relation_friend = { reason = friend_generic_history target = character:anno_100 }
+		#Rivals with person who started a rebellion, which lead to his mother dying
+		set_relation_rival = { reason = rival_historical target = character:boldonor_100 }
+	}
+	3400.1.1 = {
+		#Radicalized by his friend, converts to blacksap
+		religion = blacksapmovement
+	}
+	3449.1.1 = { death = { death_reason = death_execution killer = camoran_grahtwood_101 } }
+}
+camoran_silvenar2_101b = {
+	name = "Ardell"
+	dynasty_house = camoran_silvenar
+	religion = greenpact
+	culture = silvenari
+
+	mother = camoran_silvenar2_100
+	father = camoran_silvenar2_100_husband
+	
+	trait = lifespan_2
+
+	3311.1.1 = { birth = yes }
+	3496.1.1 = { death = yes }
+}
+
+#Anno dynasty
+anno_98 = {
+	name = "Behelir"
+	dynasty = dyn_anno
+	religion = greenpact
+	culture = silvenari
+
+	trait = lifespan_2
+
+	3071.1.1 = { birth = yes }
+	3130.1.1 = { add_spouse = rayn_98b }
+	3267.9.3 = { death = yes }
+}
+anno_99 = {
+	name = "Adagwen"
+	dynasty = dyn_anno
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	father = anno_98
+	mother = rayn_98b
+
+	trait = lifespan_2
+
+	3148.1.1 = { birth = yes }
+	3200.1.1 = { add_spouse = anno_99_husband }
+	3326.8.16 = { death = yes }
+}
+anno_99_husband = {
+	name = "Finvir"
+	religion = greenpact
+	culture = silvenari
+
+	trait = lifespan_2
+
+	3150.1.1 = { birth = yes }
+	3316.1.1 = { death = yes }
+}
+anno_100 = {
+	name = "Liman"
+	dynasty = dyn_anno
+	religion = blacksapmovement
+	culture = silvenari
+
+	mother = anno_99
+	father = anno_99_husband
+
+	trait = zealous
+	trait = callous
+	trait = wrathful
+	trait = education_learning_3
+	trait = lifespan_2
+
+	3211.1.1 = { birth = yes }
+	3300.1.1 = { add_spouse = anno_100_wife }
+	3399.11.30 = { death = yes }
+}
+anno_100_wife = {
+	name = "Emanir"
+	religion = blacksapmovement
+	culture = silvenari
+	female = yes
+
+	trait = lifespan_2
+
+	3232.1.1 = { birth = yes }
+	3427.1.1 = { death = yes }
+}
+anno_100b = {
+	name = "Laerinir"
+	dynasty = dyn_anno
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	mother = anno_99
+	father = anno_99_husband
+
+	trait = depressed_1 #Son disappeared with Falinesti
+	trait = lifespan_2
+
+	3219.1.1 = { birth = yes }
+	3397.1.1 = { death = yes }
+}
+anno_101 = {
+	name = "Adagwen"
+	dynasty = dyn_anno
+	religion = blacksapmovement
+	culture = silvenari
+	female = yes
+	sexuality = bisexual
+
+	father = anno_100
+	mother = anno_100_wife
+
+	trait = cynical #Doesn't believe in Blacksap
+	trait = compassionate
+	trait = fickle
+	trait = journaller
+	trait = education_learning_2
+	trait = lifespan_2
+
+	3305.1.1 = { birth = yes }
+	3365.1.1 = {
+		#Declares that she doesn't follow Blacksap
+		religion = greenpact
+		trait = disinherited #Gets disinherited
+	}
+	3368.1.1 = { add_same_sex_spouse = ulthran_101b }
+	3516.10.19 = { death = { death_reason = death_old_age } }
+}
+anno_101b = {
+	name = "Erengor"
+	dynasty = dyn_anno
+	religion = blacksapmovement
+	culture = silvenari
+
+	father = anno_100
+	mother = anno_100_wife
+
+	trait = wrathful
+	trait = education_intrigue_3
+	trait = lifespan_2
+
+	3310.1.1 = { birth = yes }
+	#Dies after Elden Root takes Silvenar (he holds out for a few years)
+	3452.8.21 = { death = { death_reason = death_battle } }
+}
+anno_102 = {
+	name = "Behelir"
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_anno
+
+	mother = anno_101
+	
+	trait = disputed_heritage #Adopted
+	trait = lifespan_2
+
+	3382.1.1 = { birth = yes }
+	3566.1.1 = { death = yes }
+}
+
+#Amirriath dynasty
+amirriath_99 = {
+	name = "Ellewelle"
+	dynasty = dyn_amirriath
+	religion = greenpact
+	culture = silvenari
+	female = yes
+	
+	trait = lifespan_2
+
+	3231.7.9 = { birth = yes }
+	3415.1.6 = { death = yes }
+}
+amirriath_99_husband = {
+	name = "Leonicus"
+	religion = hero_cult
+	culture = colovian
+
+	3295.7.9 = { birth = yes }
+	3350.1.6 = { death = yes }
+}
+amirriath_100 = {
+	name = "Elanir"
+	dynasty = dyn_amirriath
+	religion = hircine_cult
+	culture = silvenari
+
+	mother = amirriath_99
+	father = amirriath_99_husband
+	
+	trait = wild_oat
+	trait = callous
+	trait = diligent
+	trait = arbitrary
+	trait = lifestyle_hunter
+	trait = education_intrigue_3
+	trait = lifespan_2
+
+	3328.7.9 = { birth = yes }
+	3490.1.1 = { death = yes }
+}
+
+#Ulthran dynasty
+ulthran_98 = {
+	name = "Basth"
+	dynasty = dyn_ulthran
+	religion = greenpact
+	culture = silvenari
+
+	trait = lifespan_2
+	trait = lustful
+	trait = adulterer
+
+	3090.1.1 = { birth = yes }
+	3200.1.1 = { add_spouse = ulthran_98_wife }
+	3274.1.1 = { death = yes }
+}
+ulthran_98_lover = { #Akaviri lover of 001
+	name = "Dvora"
+	culture = ilniviri
+	religion = court_dawnbeauty
+	female = yes
+
+	3120.1.1 = { birth = yes }
+	3197.1.1 = { death = yes }
+}
+ulthran_98_wife = { #Bosmer wife of 001
+	name = "Elruin"
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	trait = lifespan_2
+
+	3099.1.1 = { birth = yes }
+	3279.1.1 = { death = yes }
+}
+ulthran_99 = {
+	name = "Seira"
+	dynasty = dyn_ulthran
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	father = ulthran_98
+	mother = ulthran_98_lover
+
+	trait = wild_oat
+	trait = lifespan_2
+
+	3170.1.1 = { birth = yes }
+	3200.1.1 = { add_matrilineal_spouse = ulthran_99_husband }
+	3358.1.1 = { death = yes }
+}
+ulthran_99_husband = {
+	name = "Hegaer"
+	religion = greenpact
+	culture = cyrobosmer
+
+	trait = lifespan_2
+
+	3168.1.1 = { birth = yes }
+	3334.1.1 = { death = yes }
+}
+ulthran_99b = {
+	name = "Hednor"
+	dynasty = dyn_ulthran
+	religion = greenpact
+	culture = silvenari
+
+	father = ulthran_98
+	mother = ulthran_98_wife
+
+	trait = lifespan_2
+
+	3162.1.1 = { birth = yes }
+	#Lamia Invasion
+	3345.1.1 = { death = { death_reason = death_lamia } }
+}
+ulthran_99b1 = {
+	name = "Modradil"
+	dynasty = dyn_ulthran
+	religion = greenpact
+	culture = silvenari
+
+	father = ulthran_99b
+
+	trait = lifespan_2
+
+	3231.1.1 = { birth = yes }
+	#Lamia Invasion
+	3345.1.1 = { death = { death_reason = death_lamia } }
+}
+ulthran_99b2 = {
+	name = "Garniel"
+	dynasty = dyn_ulthran
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	father = ulthran_99b
+
+	trait = lifespan_2
+
+	3240.1.1 = { birth = yes }
+	#Lamia Invasion
+	3345.1.1 = { death = { death_reason = death_lamia } }	
+}
+ulthran_100 = {
+	name = "Anaris"
+	dynasty = dyn_ulthran
+	religion = greenpact
+	culture = silvenari
+
+	mother = ulthran_99
+	father = ulthran_99_husband
+
+	trait = lifespan_2
+	trait = chaste
+	trait = compassionate
+	trait = humble
+	trait = education_martial_2
+	trait = sign_warrior
+
+	3240.8.18 = { birth = yes }
+	3270.1.1 = { add_spouse = ulthran_100_wife }
+	3427.1.1 = { death = { death_reason = death_old_age } }
+}
+ulthran_100_wife = {
+	name = "Miruin"
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	trait = lifespan_2
+
+	3244.1.16 = { birth = yes }
+	3431.1.1 = { death = { death_reason = death_old_age } }
+}
+ulthran_101 = {
+	name = "Nongiruin"
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_ulthran
+
+	father = ulthran_100
+	mother = ulthran_100_wife
+
+	trait = lifespan_2
+
+	3317.1.1 = { birth = yes }
+	3483.1.1 = { trait = bubonic_plague }
+	3484.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+ulthran_101b = {
+	name = "Gloraneth"
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_ulthran
+	female = yes
+	sexuality = homosexual
+
+	father = ulthran_100
+	mother = ulthran_100_wife
+
+	trait = lifespan_2
+
+	3320.1.1 = { birth = yes }
+	3520.1.1 = { death = yes }
+}
+ulthran_102 = {
+	name = "Mingalion"
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_ulthran
+
+	father = ulthran_101
+
+	trait = lifespan_2
+
+	3395.1.1 = { birth = yes }
+	3483.1.1 = { trait = bubonic_plague }
+	3484.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+ulthran_103 = {
+	name = "Iingail"
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_ulthran
+	female = yes
+	
+	father = ulthran_102
+
+	trait = lifespan_2
+
+	3461.1.1 = { birth = yes }
+	3485.1.1 = { trait = depressed_1 }
+	3638.1.1 = { death = yes }
+}
+
+#Boldonor dynasty
+boldonor_98 = {
+	name = "Ganniel"
+	dynasty = dyn_boldonor
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	trait = lifespan_2
+
+	3118.1.1 = { birth = yes }
+	3302.6.19 = { death = yes }
+}
+boldonor_99 = {
+	name = "Dennilwen"
+	dynasty = dyn_boldonor
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	mother = boldonor_98
+
+	trait = lifespan_2
+
+	3192.1.1 = { birth = yes }
+	3250.1.1 = { add_matrilineal_spouse = irillyth_99c }
+	3290.1.1 = { add_matrilineal_spouse = boldonor_99_husband }
+	3340.7.2 = { death = { death_reason = death_falinesti } } #Was visiting Falinesti
+}
+boldonor_99_husband = {
+	name = "Eralorn"
+	religion = greenpact
+	culture = silvenari
+	
+	trait = lifespan_2
+
+	3206.1.1 = { birth = yes }
+	3399.1.1 = { death = yes }
+}
+boldonor_100 = {
+	name = "Virgeraurd"
+	dynasty = dyn_boldonor
+	religion = greenpact
+	culture = silvenari
+
+	mother = boldonor_99
+	father = irillyth_99c
+
+	trait = lifespan_2
+	trait = brave
+	trait = cynical
+	trait = callous
+	trait = education_martial_3
+	trait = sign_mage
+	trait = cannibal
+
+	3270.4.29 = { birth = yes }
+	3320.1.1 = { add_spouse = boldonor_100_wife }
+	#Start independence war against Silvenar
+	3359.6.1 = { add_character_flag = should_become_independent }
+	3454.11.8 = { death = { death_reason = death_natural_causes } }
+}
+boldonor_100_wife = {
+	name = "Eralorn"
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	trait = lifespan_2
+
+	3285.1.1 = { birth = yes }
+	3476.1.1 = { death = yes }
+}
+boldonor_100b = {
+	name = "Entor"
+	dynasty = dyn_boldonor
+	religion = greenpact
+	culture = morathi
+	
+	mother = boldonor_99
+	father = boldonor_99_husband
+
+	trait = lifespan_2
+	trait = craven
+	trait = content
+	trait = calm
+	trait = education_learning_3
+	trait = sign_shadow
+
+	3300.5.11 = { birth = yes }
+	3469.1.1 = { death = { death_reason = death_dysentery } }
+}
+boldonor_101 = {
+	name = "Mirchanas"
+	dynasty = dyn_boldonor
+	religion = greenpact
+	culture = silvenari
+
+	father = boldonor_100
+	mother = boldonor_100_wife
+
+	trait = lifespan_2
+	trait = sign_apprentice
+	trait = forgiving
+	trait = brave
+	trait = temperate
+	trait = education_diplomacy_3
+
+	3340.7.12 = { birth = yes }
+	3515.1.1 = { death = yes }
+}
+boldonor_102 = {
+	name = "Amragor"
+	dynasty = dyn_boldonor
+	religion = greenpact
+	culture = silvenari
+
+	father = boldonor_101
+
+	trait = lifespan_2
+
+	3399.1.1 = { birth = yes }
+	3571.1.1 = { death = yes }
+}
+boldonor_102b = { #Married to camoran_silvenar_101
+	name = "Althuviel"
+	dynasty = dyn_boldonor
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	father = boldonor_101
+
+	trait = lifespan_2
+
+	3408.1.1 = { birth = yes }
+	3582.1.1 = { death = yes }
+}
+
+#Rayn dynasty - ESO gold road lore
+rayn_91 = {
+	name = "Elayel"
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_rayn
+	female = yes
+
+	trait = lifespan_2
+
+	2522.1.1 = { birth = yes }
+	2711.6.11 = { death = yes }
+}
+
+rayn_92 = {
+	name = "Eralorn"
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_rayn
+
+	mother = rayn_91
+
+	trait = lifespan_2
+
+	2587.1.1 = { birth = yes }
+	2760.3.9 = { death = yes }
+}
+
+rayn_93 = {
+	name = "Aeranir"
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_rayn
+	female = yes
+
+	father = rayn_92
+
+	trait = lifespan_2
+
+	2649.1.1 = { birth = yes }
+	2730.1.1 = { add_matrilineal_spouse = camoran_silvenar_92b }
+	2837.5.3 = { death = yes }
+}
+
+rayn_94 = {
+	name = "Elayel"
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_rayn
+	female = yes
+
+	mother = rayn_93
+	father = camoran_silvenar_92b
+
+	trait = lifespan_2
+
+	2733.1.1 = { birth = yes }
+	2921.5.11 = { death = yes }
+}
+
+rayn_95 = {
+	name = "Bellulor"
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_rayn
+
+	mother = rayn_94
+
+	trait = lifespan_2
+
+	2815.1.1 = { birth = yes }
+	3020.7.2 = { death = yes }
+}
+
+rayn_96 = {
+	name = "Eralorn"
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_rayn
+
+	father = rayn_95
+
+	trait = lifespan_2
+
+	2904.1.1 = { birth = yes }
+	3096.9.1 = { death = yes }
+}
+
+rayn_97 = {
+	name = "Aeranir"
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_rayn
+	female = yes
+
+	father = rayn_96
+
+	trait = lifespan_2
+
+	2991.1.1 = { birth = yes }
+	3153.8.25 = { death = yes }
+}
+
+rayn_98 = {
+	name = "Elayel"
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_rayn
+	female = yes
+
+	mother = rayn_97
+
+	trait = lifespan_2
+
+	3065.1.1 = { birth = yes }
+	3120.1.1 = { add_matrilineal_spouse = rayn_98_husband }
+	3257.1.15 = { death = yes }
+}
+
+rayn_98_husband = {
+	name = "Gelephor"
+	religion = greenpact
+	culture = silvenari
+
+	trait = lifespan_2
+
+	3078.1.1 = { birth = yes }
+	3264.1.1 = { death = yes }
+}
+
+rayn_98b = { #Married to anno_98
+	name = "Aeranir"
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_rayn
+	female = yes
+
+	mother = rayn_97
+
+	trait = lifespan_2
+
+	3083.1.1 = { birth = yes }
+	3276.1.1 = { death = yes }
+}
+
+rayn_98c = { #Married to camoran_silvenar2_98
+	name = "Nirolos"
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_rayn
+
+	mother = rayn_97
+
+	trait = lifespan_2
+
+	3088.1.1 = { birth = yes }
+	3277.1.1 = { death = yes }
+}
+
+rayn_98d = { #Married to camoran_grahtwood_98
+	name = "Brelondith"
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_rayn
+	female = yes
+	
+	mother = rayn_97
+
+	trait = lifespan_2
+
+	3097.1.1 = { birth = yes }
+	3284.1.1 = { death = yes }
+}
+
+rayn_99 = {
+	name = "Aeranir"
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_rayn
+	female = yes
+
+	mother = rayn_98
+	father = rayn_98_husband
+
+	trait = lifespan_2
+
+	3148.1.1 = { birth = yes }
+	3190.1.1 = { add_matrilineal_spouse = irillyth_99b }
+	3329.10.30 = { death = yes }
+}
+
+rayn_100 = {
+	name = "Elayel"
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_rayn
+	female = yes
+
+	mother = rayn_99
+	father = irillyth_99b
+
+	trait = lifespan_2
+	trait = patient
+	trait = calm
+	trait = deceitful
+	trait = education_diplomacy_3
+	trait = sign_lover
+
+	3230.2.19 = { birth = yes }
+	3250.1.1 = { add_matrilineal_spouse = endrand_100b }
+	3403.7.20 = { death = { death_reason = death_bear } }
+}
+rayn_100b = {
+	name = "Olahanar"
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_rayn
+
+	mother = rayn_99
+	father = irillyth_99b
+
+	trait = lifespan_2
+
+	3234.1.1 = { birth = yes }
+	3430.1.1 = { death = { death_reason = death_natural_causes } }
+}
+rayn_101 = { #Treethane of Silvenar in ESO. Not treethane in our version, but still around in Silvenar
+	name = "Ubarion" #Lore
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_rayn
+
+	mother = rayn_100
+	father = endrand_100b
+
+	trait = lifespan_2
+	trait = content
+	trait = calm
+	trait = temperate
+	trait = education_diplomacy_3
+	trait = sign_tower
+
+	3300.10.14 = { birth = yes }
+	3488.1.17 = { death = { death_reason = death_natural_causes } }
+}
+rayn_101b = {
+	name = "Aeranir"
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_rayn
+	female = yes
+
+	mother = rayn_100
+	father = endrand_100b
+
+	trait = lifespan_2
+
+	3310.1.1 = { birth = yes }
+	3479.1.1 = { trait = bubonic_plague }
+	3480.1.1 = { death = { death_reason = death_bubonic_plague } } #Knahaten
+}
+rayn_101b1 = { #Married to king of Grahtwood
+	name = "Elayel"
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_rayn
+	female = yes
+
+	mother = rayn_101b
+
+	trait = lifespan_2
+	
+	3372.1.1 = { birth = yes }
+	3568.1.1 = { death = { death_reason = death_old_age } }
+}
+rayn_101c = {
+	name = "Laerinir"
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_rayn
+	female = yes
+
+	mother = rayn_100
+	father = endrand_100b
+
+	trait = lifespan_2
+
+	3318.1.1 = { birth = yes }
+	3520.1.1 = { death = yes }
+}
+
+rayn_102 = {
+	name = "Nantharion"
+	religion = greenpact
+	culture = silvenari
+	dynasty = dyn_rayn
+
+	father = rayn_101
+
+	trait = lifespan_2
+
+	3374.1.1 = { birth = yes }
+	3572.1.1 = { death = yes }
+}
+
+#Ilayas dynasty, keep some magocratic traditions
+ilayas_100 = {
+	name = "Nanthenas"
+	dynasty = dyn_ilayas
+	religion = greenpact
+	culture = silvenari
+
+	trait = lifespan_2
+	trait = arcana_good_1
+	trait = education_magic_3
+	trait = arrogant
+	trait = trusting
+	trait = diligent
+	trait = education_diplomacy_3
+
+	3181.1.1 = { birth = yes }
+	3290.1.1 = { 
+		effect = {
+			remove_trait = lifespan_2
+			add_trait = lifespan_magic_4
+			add_character_flag = artificial_lifespan
+			add_character_flag = natural_lifespan_2
+		}
+	}
+	3485.7.13 = { death = yes }
+}
+ilayas_101 = { #Stormwarden by ESO
+	name = "Cirnean" #Lore
+	dynasty = dyn_ilayas
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	father = ilayas_100
+
+	trait = lifespan_2
+	trait = arcana_good_1
+	trait = education_magic_2
+	trait = education_learning_3
+	trait = zealous
+	trait = stubborn
+	trait = vengeful
+
+	3341.1.1 = { birth = yes }
+	3440.1.1 = { 
+		effect = {
+			remove_trait = lifespan_2
+			add_trait = lifespan_magic_4
+			add_character_flag = artificial_lifespan
+			add_character_flag = natural_lifespan_2
+		}
+	}
+	3660.1.1 = { death = yes }
+}
+
+ilayas_4 = { #First Bosmer Stormwarden of Ilayas
+	name = "Gerethel"
+	religion = greenpact
+	culture = silvenari
+	female = yes
+
+	trait = lifespan_magic_4
+	trait = arcana_good_2
+	trait = education_magic_4
+
+	602.1.1 = { birth = yes }
+	976.8.14 = { death = yes }
+}
+

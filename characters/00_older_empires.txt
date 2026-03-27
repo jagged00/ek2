@@ -1,0 +1,2186 @@
+﻿##Ysgramoor dynasty (dyn_ysgramoor)
+
+#House Ysgramoor
+ysgramoor_1 = {
+	name = "Ysgramoor"
+	DNA = ysgramor_dna_entry
+	dynasty = dyn_ysgramoor #Ysgramoor
+	culture = atmoran
+	religion = totemism
+	trait = conqueror
+	trait = vengeful
+	trait = callous # Mass murder of Falmer
+	trait = brave
+	trait = education_martial_5
+
+	-300.1.1 = { birth = yes }
+	-265.1.1 = { give_nickname = nick_ysgramor_the_returned }
+	-220.1.1 = { death = yes }
+}
+ysgramoor_2b = {
+	name = "Yngol"
+	dynasty = dyn_ysgramoor #Ysgramoor
+	culture = atmoran
+	religion = totemism
+	#father = ysgramoor_1 # handled in ek_on_game_start_fix_history_parents
+	trait = diligent # Best blacksmith in Atmora per legends
+	trait = brave
+	trait = vengeful
+	trait = strategist # Called a brave strategist
+
+	-288.1.1 = { birth = yes }
+	-266.1.1 = { death = { death_reason = death_sea_storm } } # Lost in a storm before landing in Mereth
+}
+ysgramoor_2 = {
+	name = "Ylgar"
+	dynasty = dyn_ysgramoor #Ysgramoor
+	culture = atmoran
+	religion = totemism
+	#father = ysgramoor_1 # handled in ek_on_game_start_fix_history_parents
+	trait = vengeful
+	trait = diplomat # Brought many Nords together after the death of his father
+	trait = education_martial_4 # But still renown for war and prowess
+
+	-286.1.1 = { birth = yes }
+	-195.1.1 = { death = yes }
+}
+ysgramoor_ancestors = {
+	name = "Ylgar"
+	dynasty = dyn_ysgramoor #Ysgramoor
+	culture = atmoran
+	religion = totemism
+	#father = ysgramoor_2 # handled in ek_on_game_start_fix_history_parents
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	-195.1.1 = { birth = yes }
+	2.1.1 = { give_nickname = nick_line_of }
+	113.1.1 = { death = yes }
+}
+ysgramoor_100 = { #First King of Skyrim in 1E143
+	name = "Harald" #Lore
+	dynasty = dyn_ysgramoor #Ysgramoor
+	dna = ysgramor_dna_entry
+	religion = nord_cult
+	culture = eastmarcher
+	# father = ysgramoor_ancestors # handled in ek_on_game_start_fix_history_parents
+
+	113.1.1 = { birth = yes }
+	129.1.1 = {
+		trait = education_martial_4
+		trait = organizer
+		trait = overseer
+		trait = content
+		trait = diligent
+		trait = humble
+		trait = p_at_fox # implied to be Harrald Hairy-Breeks, avatar of Shor
+	}
+	143.1.1 = { give_nickname = nick_hand_free }
+	221.1.1 = { death = yes }
+}
+ysgramoor_101 = { #First surviving son of Harald, reigned for a year
+	name = "Hjalmer" #Lore 
+	dynasty = dyn_ysgramoor #Ysgramoor
+	religion = nord_cult
+	culture = eastmarcher
+	father = ysgramoor_100
+
+	134.1.1 = { birth = yes }
+	222.1.1 = { death = yes }
+}
+ysgramoor_102 = { #Second surviving son of Harald, conquered High Rock, Morrowind, and the Nibenay
+	name = "Vrage" #Lore
+	dynasty = dyn_ysgramoor #Ysgramoor
+	religion = nord_cult
+	culture = eastmarcher
+	father = ysgramoor_100
+
+	164.1.1 = { birth = yes }
+	180.1.1 = {
+		trait = education_martial_4
+		trait = aggressive_attacker
+		trait = gallant
+		trait = ambitious
+		trait = vengeful
+		trait = diligent
+	}
+	222.1.1 = { 
+		give_nickname = nick_the_gifted
+		trait = conqueror 
+	}
+	243.1.1 = { death = yes }
+}
+ysgramoor_103 = { #Bastard son of Harald, fought and was buried in Morrowind
+	name = "Olmgerd" #Lore 
+	dynasty = dyn_ysgramoor #Ysgramoor
+	religion = nord_cult
+	culture = eastmarcher
+	father = ysgramoor_100
+	trait = legitimized_bastard
+
+	165.1.1 = { birth = yes }
+	181.1.1 = {
+		trait = education_martial_3
+		trait = adventurer
+		give_nickname = nick_the_outlaw
+	}
+	230.1.1 = { death = { death_reason = death_battle } }
+}
+ysgramoor_line = {
+	name = "Vrage" 
+	dynasty = dyn_ysgramoor #Ysgramoor
+	culture = eastmarcher
+	religion = nord_cult
+	father = ysgramoor_102
+
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+
+	210.1.1 = { 
+		birth = yes
+		give_nickname = nick_line_of
+	}
+	301.1.1 = { death = yes }
+}
+high_wall_100 = {
+	name = "Erling" #Lore
+	religion = nord_cult
+	culture = westmarcher
+	dynasty = dyn_ysgramoor #Ysgramoor
+	father = ysgramoor_line
+
+	trait = diligent
+	trait = ambitious
+	trait = zealous
+	trait = education_stewardship_4
+	trait = architect
+
+	225.1.1 = { birth = yes }
+	298.1.1 = { death = yes }
+}
+ysgramoor_110 = { #Last of the Ysgamoor line and High King who wore the Jagged Crown. Followed the teachings of Alessia
+	name = "Borgas" #Lore
+	dynasty = dyn_ysgramoor #Ysgramoor
+	religion = nord_cult
+	culture = eastmarcher
+	father = ysgramoor_line
+
+	301.1.1 = { birth = yes }
+	317.1.1 = {
+		trait = education_martial_4
+		trait = holy_warrior
+		trait = impatient
+		trait = zealous
+		trait = stubborn
+	}
+	361.1.1 = { religion = alessian }
+	369.1.1 = { death = { death_reason = death_battle } }
+}
+
+## Ardvar Dynasty (dyn_ardvar)
+
+# House Ardvar
+
+ardvar_100 = { #Jarl of Winterhold, more capable than Borgas, in line for High King
+	name = "Hanse" #Lore 
+	dynasty = dyn_ardvar
+	religion = nord_cult
+	culture = eastmarcher
+
+	330.1.1 = { birth = yes }
+	348.1.1 = {
+		trait = education_stewardship_4
+		trait = patient
+		trait = diligent
+		trait = deceitful
+		trait = shrewd
+		trait = p_at_fox # implied to be Hans the Fox, an avatar of Shor
+		give_nickname = nick_the_fox
+	}
+	438.1.1 = { death = { death_reason = death_vanished } } # built his kingdom only to walk away
+}
+
+## Numinex Dynasty (dyn_numinex)
+
+# House Numinex
+
+numinex_100 = { #Jarl of Whiterun -> High King of Skyrim post-Succession War
+	name = "Olaf" #Lore 
+	dna = olaf_one_eye_dna_entry
+	dynasty = dyn_numinex # Numinex
+	religion = alessian
+	culture = westmarcher
+	trait = one_eyed
+
+	392.1.1 = { birth = yes }
+	408.1.1 = {
+		trait = education_martial_4
+		trait = organizer
+		trait = arbitrary
+		trait = deceitful
+		trait = brave
+	}
+	420.1.1 = { give_nickname = nick_one_eye }
+	452.1.1 = { death = yes }
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=male_hair_fp1_04
+			custom_beards=male_beard_fp2_iberian_christian_04
+		}
+	}
+}
+
+
+## Ice-Breaker (dyn_ice_breaker) #Dynasty moved to 00_nord.txt
+ice_breaker_asum = { #Was rejected by crown of verity and then killed by Kjoric
+	name = "Asurn" #Lore
+	dynasty = dyn_ice_breaker
+	religion = alessian
+	culture = eastmarcher
+
+	trait = sign_warrior
+
+	312.8.17 = { birth = yes }
+	352.1.1 = { death = { death_reason = death_duel killer = kjoric_100 } }
+}
+ice_breaker_asum_line = {
+	name = "Asurn"
+	dynasty = dyn_ice_breaker
+	religion = totemism
+	culture = eastmarcher
+	father = ice_breaker_asum
+
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+
+	344.1.1 = { birth = yes }
+	950.1.1 = { give_nickname = nick_line_of }
+	3223.1.1 = { death = yes }
+}
+
+## of Kjoric Dynasty (dyn_kjoric)
+
+# House of Kjoric
+
+kjoric_100 = {  #High King of Skyrim
+	name = "Kjoric" #Lore
+	dynasty = dyn_kjoric # of Kjoric
+	religion = alessian
+	culture = westmarcher
+
+	father = skjoralmor_3_bastard
+	mother = kjoric_100_mom
+
+	381.1.1 = { birth = yes }
+	446.1.1 = {
+		trait = education_martial_3
+		trait = calm
+		trait = shy
+		trait = just
+	}
+	452.1.1 = { give_nickname = nick_the_white_kjoric }
+	478.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = alessian_105
+		}
+	}
+}
+
+kjoric_101 = { #High King of Skyrim - died at battle of Glenumbra Moors
+	name = "Hoag" #Lore
+	dynasty = dyn_kjoric # of Kjoric
+	religion = alessian
+	culture = westmarcher
+	father = kjoric_100
+	mother = skjoralmor_5_sister
+
+	trait = education_martial_4
+	trait = necromancer # reported to have resurrected his troops with unknown techniques
+	trait = callous
+	trait = brave
+	trait = zealous
+	trait = sign_serpent
+
+	400.1.1 = { birth = yes }
+	478.1.1 = { give_nickname = nick_merkiller }
+	482.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = direnni_3b1
+		}
+	}
+}
+
+## of Atmora Dynasty (dyn_atmora)
+
+# House of Atmora
+
+wulfharth_100 = { #High King of Skyrim
+	name = "Wulfharth" #Lore 
+	dna = wulfharth_dna_entry
+	dynasty = dyn_atmora # of Atmora
+	religion = nord_cult
+	culture = atmoran
+	trait = education_martial_4
+	trait = holy_warrior
+	trait = zealous
+	trait = wrathful
+	trait = vengeful
+	trait = strong
+	trait = p_at_fox
+	# trait = thuum_3
+	# HistoryTodo: give him Thu'um trait
+	#History ToDo: maybe give Ysmir patron if we do that
+
+	425.1.1 = { birth = yes }
+	482.1.1 = { give_nickname = nick_the_dragon_of_the_north } #Shor's Tongue
+	533.1.1 = { death = { death_reason = death_old_age } } # Old Knocker :(
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_beards=male_beard_rtt_01
+			custom_hair=male_hair_northern_01
+		}
+	}
+}
+wulfharth_101 = { #Ash-King
+	name = "Wulfharth" #Lore 
+	dna = wulfharth_dna_entry
+	dynasty = dyn_atmora # of Atmora
+	religion = nord_cult
+	culture = atmoran
+
+	trait = education_martial_4
+	trait = holy_warrior
+	trait = zealous
+	trait = wrathful
+	trait = vengeful
+	trait = strong
+	trait = p_at_fox
+
+	600.1.1 = { birth = yes } #So that he looks old, really was summoned and died in a year
+	699.1.1 = { 
+		give_nickname = nick_ash_king
+	}
+	700.1.1 = { death = { death_reason = death_red_mountain } }
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_beards=male_beard_rtt_01
+			custom_hair=male_hair_northern_01
+			custom_headgear=male_empty
+		}
+	}
+}
+
+## King Gellir
+
+dwarfbane_100 = {
+	name = "Gellir" #Lore
+	dynasty = dyn_atmora # of Atmora
+	religion = nord_cult
+	culture = eastmarcher
+
+	father = wulfharth_100
+
+	trait = ambitious
+	trait = strategist
+	trait = brave
+	trait = zealous
+	trait = sign_lord
+
+	507.3.22 = { birth = yes } #Dates make no sense for Gellir in both lore and here. He conquered Arkngthamz but that wasn't set up until the Kragen left in the 420s
+	594.9.27 = { death = { death_reason = death_old_age } } # but he was said to rule 'decades after' Harald, which would make him part of the Ysgramor line but make it impossible to conquer the Dwarven cities
+}
+
+## Hale the Pious
+
+hale_the_pious_100 = {
+	name = "Hale" #Lore 
+	dynasty = dyn_grey_eye
+	religion = nord_cult
+	culture = eastmarcher
+
+	trait = zealous
+	trait = theologian
+	trait = sign_mage
+
+	1200.4.12 = { birth = yes }
+	1226.1.1 = { give_nickname = nick_the_pious }
+	1268.8.16 = { death = { death_reason = death_old_age } }
+}
+
+##Head-Rolling Dynasty (dyn_head_rolling)
+
+#House Head-Rolling
+
+head_rolling_100 = {
+	name = "Roleke" #Lore
+	religion= nord_cult
+	culture = westmarcher
+	dynasty = dyn_head_rolling
+	female = yes
+
+	trait = sadistic
+	trait = lustful #I felt like it implied she killed them to remarry
+	trait = paranoid
+	trait = murderer
+	trait = kinslayer_3
+	trait = education_martial_3
+
+	2500.1.1 = { birth = yes }
+	2520.2.3 = { add_spouse = roleke_husband_1 }
+	2521.8.25 = { add_spouse = roleke_husband_2 }
+	2526.7.13 = { add_spouse = roleke_husband_3 }
+	2528.2.3 = { add_spouse = roleke_husband_4 }
+	2531.5.17 = { add_spouse = roleke_husband_5 }
+	2534.3.18 = { add_spouse = roleke_husband_6 }
+	2545.1.1 = {
+		death = { 
+			death_reason = death_duel
+			killer = roleke_son_2 #In lore she was slain by her children, not Irthvyd
+		}
+	}
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=female_hair_fp1_04
+			custom_beards=female_empty
+		}
+	}
+}
+
+roleke_husband_1 = {
+	name = "Ragnar"
+	culture = westmarcher
+	religion = nord_cult
+
+	2497.6.18 = { birth = yes }
+	2523.7.14 = {
+		death = {
+			death_reason = death_execution
+			killer = head_rolling_100
+		}
+	}
+}
+
+roleke_husband_2 = {
+	name = "Ivar"
+	culture = westmarcher
+	religion = nord_cult
+
+	2497.11.12 = { birth = yes }
+	2525.3.19 = {
+        death = { death_reason = death_plotting  }
+    }
+}
+
+roleke_husband_3 = {
+	name = "Stengborn"
+	culture = westmarcher
+	religion = nord_cult
+
+	2497.2.29 = { birth = yes }
+	2527.8.21 = {
+        death = { death_reason = death_plotting  }
+    }
+}
+
+roleke_husband_4 = {
+	name = "Vidar"
+	culture = westmarcher
+	religion = nord_cult
+
+	2498.5.11 = { birth = yes }
+	2529.3.12 = {
+        death = { death_reason = death_plotting  }
+    }
+}
+
+roleke_husband_5 = {
+	name = "Gjur"
+	culture = eastmarcher
+	religion = nord_cult
+
+	2512.7.28 = { birth = yes }
+	2533.9.16 = {
+        death = { death_reason = death_plotting  }
+    }
+}
+
+roleke_husband_6 = {
+	name = "Mikael"
+	culture = eastmarcher
+	religion = nord_cult
+
+	2502.4.21 = { birth = yes }
+	2538.7.26 = {
+        death = { death_reason = death_plotting  }
+    }
+}
+
+roleke_son_1 = {
+	name = "Gjol"
+	dynasty = dyn_head_rolling
+	culture = eastmarcher
+	religion = nord_cult
+
+	father = roleke_husband_1
+	mother = head_rolling_100
+
+	trait = twin
+
+	2521.3.26 = { birth = yes }
+	2545.1.1 = {
+		death = { 
+			death_reason = death_duel
+			killer = head_rolling_100
+		}
+	}
+}
+
+roleke_son_2 = {
+	name = "Einar"
+	dynasty = dyn_head_rolling
+	culture = eastmarcher
+	religion = nord_cult
+
+	father = roleke_husband_1
+	mother = head_rolling_100
+
+	trait = twin
+
+	2521.3.26 = { birth = yes }
+	2545.1.1 = {
+		death = { 
+			death_reason = death_duel
+			killer = head_rolling_100
+		}
+	}
+}
+
+roleke_son_3 = {
+	name = "Henrik"
+	dynasty = dyn_head_rolling
+	culture = eastmarcher
+	religion = nord_cult
+
+	father = roleke_husband_2
+	mother = head_rolling_100
+
+	2524.7.9 = { birth = yes }
+	2545.1.1 = {
+		death = { 
+			death_reason = death_duel
+			killer = head_rolling_100
+		}
+	}
+}
+
+roleke_son_4 = {
+	name = "Ulf"
+	dynasty = dyn_head_rolling
+	culture = eastmarcher
+	religion = nord_cult
+
+	father = roleke_husband_3
+	mother = head_rolling_100
+
+	2527.10.25 = { birth = yes } #After dad mysteriously died
+	2545.1.1 = {
+		death = { 
+			death_reason = death_duel
+			killer = head_rolling_100
+		}
+	}
+}
+
+roleke_son_5 = {
+	name = "Ovid"
+	dynasty = dyn_head_rolling
+	culture = eastmarcher
+	religion = nord_cult
+
+	father = roleke_husband_6
+	mother = head_rolling_100
+
+	2535.10.25 = { birth = yes }
+	2545.1.1 = {
+		death = { 
+			death_reason = death_murder_known
+			killer = head_rolling_100
+		}
+	}
+}
+
+roleke_daughter_1 = {
+	name = "Friglith"
+	dynasty = dyn_head_rolling
+	culture = eastmarcher
+	religion = nord_cult
+	female = yes
+
+	father = roleke_husband_1
+	mother = head_rolling_100
+
+	2522.5.14 = { birth = yes }
+	2545.1.1 = {
+		death = { 
+			death_reason = death_duel
+			killer = head_rolling_100
+		}
+	}
+}
+
+roleke_daughter_2 = {
+	name = "Ingeborg"
+	dynasty = dyn_head_rolling
+	culture = eastmarcher
+	religion = nord_cult
+	female = yes
+
+	father = roleke_husband_2
+	mother = head_rolling_100
+
+	2525.6.12 = { birth = yes } #After dad mysteriously died 
+	2545.1.1 = {
+		death = { 
+			death_reason = death_duel
+			killer = head_rolling_100
+		}
+	}
+}
+
+roleke_daughter_3 = {
+	name = "Ragierdh"
+	dynasty = dyn_head_rolling
+	culture = eastmarcher
+	religion = nord_cult
+	female = yes
+
+	father = roleke_husband_4
+	mother = head_rolling_100
+
+	2528.12.27 = { birth = yes }
+	2545.1.1 = {
+		death = { 
+			death_reason = death_duel
+			killer = head_rolling_100
+		}
+	}
+}
+
+roleke_daughter_4 = {
+	name = "Ragierdh"
+	dynasty = dyn_head_rolling
+	culture = eastmarcher
+	religion = nord_cult
+	female = yes
+
+	father = roleke_husband_5
+	mother = head_rolling_100
+
+	2532.4.11 = { birth = yes }
+	2545.1.1 = {
+		death = { 
+			death_reason = death_murder_known
+			killer = head_rolling_100
+		}
+	}
+}
+
+##Kyne-Favored Dynasty (dyn_kyne_favored)
+
+#House Kyne-Favored
+
+kyne_favored_100 = {
+	name = "Irthvyd" #Lore
+	religion= nord_cult
+	culture = westmarcher
+	dynasty = dyn_kyne_favored
+
+	trait = zealous
+	trait = just
+	trait = stubborn
+	
+	2515.1.1 = { birth = yes }
+	2545.1.1 = { give_nickname = nick_the_impassive }
+	2570.1.1 = { death = yes }
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=male_hair_fp1_01
+			custom_beards=male_beard_fp2_iberian_christian_01
+		}
+	}
+}
+
+##Fine-Sword Dynasty (dyn_fine_sword)
+
+#House Fine-Sword
+
+fine_sword_100 = {
+	name = "Temylda" #Lore
+	religion= nord_cult
+	culture = westmarcher
+	dynasty = dyn_fine_sword
+	female = yes
+
+	trait = brave
+	trait = gregarious
+	trait = trusting
+	trait = education_martial_3
+
+	2530.1.1 = { birth = yes }
+	2580.1.1 = { death = yes }
+}
+
+fine_sword_101 = {
+	name = "Vilhelm"
+	religion= nord_cult
+	culture = westmarcher
+	dynasty = dyn_fine_sword
+
+	mother = fine_sword_100
+
+	trait = brave
+	trait = impatient
+	trait = callous
+	trait = sign_steed
+
+	2567.6.19 = { birth = yes }
+	2620.3.23 = { death = { death_reason = death_old_age } }
+}
+
+fine_sword_102 = {
+	name = "Viktor"
+	religion= nord_cult
+	culture = westmarcher
+	dynasty = dyn_fine_sword
+
+	father = fine_sword_101
+
+	trait = physique_bad_1
+	trait = craven
+	trait = charming
+	trait = compassionate
+	trait = sign_lover
+	
+	2612.2.26 = { birth = yes }
+	2620.8.4 = {
+		death = {
+			death_reason = death_murder_known
+			killer = freiretta_100
+		}
+	}
+}
+
+##Freiretta Dynasty (dyn_freiretta)
+
+#House Freiretta
+
+freiretta_100 = {
+	name = "Alldimar" #Lore
+	religion = nord_cult
+	culture = westmarcher
+	dynasty = dyn_freiretta
+
+	trait = sadistic
+	trait = brave
+	trait = paranoid
+	trait = possessed_1
+	trait = lunatic_1
+	trait = administrator
+	trait = diplomat
+	trait = schemer
+	trait = arcana_good_2
+	trait = murderer
+	trait = education_intrigue_3
+	trait = sign_serpent
+
+	disallow_random_traits = yes
+
+	2589.12.31 = { birth = yes }
+	2644.1.1 = { give_nickname = nick_the_ghostmaker }
+	2645.1.1 = { death = yes }
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=male_hair_fp1_02
+			custom_beards=male_beard_fp2_iberian_muslim_03
+		}
+	}
+}
+
+## Whitestrake Dynasty (6)
+# House of Whitestrake
+whitestrake_100 = {  # "Nibenay Warlord"
+	name = "Pelinal" #Lore
+	dna = pelinal_dna_entry
+	dynasty = dyn_whitestrake
+	culture = nibenu
+	religion = reman_cult # a name that no one knew yet!
+	sexuality = homosexual
+
+	trait = education_martial_4
+	trait = lifestyle_blademaster
+	trait = reckless
+	trait = impatient
+	trait = callous
+	trait = zealous
+	trait = strong
+	trait = possessed_genetic
+	trait = p_dv_shezarr
+
+	diplomacy = 0
+	martial = 15
+	prowess = 30
+	learning = 15
+
+	1.1.1 = { birth = yes }
+	10.1.1 = {
+		trait = lifespan_6
+		effect = { set_immortal_age = 30 } 
+	}
+	220.1.1 = { add_same_sex_spouse = whitestrake_101 } #Huna, weren't married, but it's hard to see him otherwise
+	242.1.1 = { give_nickname = nick_the_star_made_knight }
+	243.1.1 = {
+		death = {
+			death_reason = death_pelinal
+			killer = adonai_100
+		}
+	}
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_headgear=m_headgear_sec_ep2_western_war_nob_01_lo
+			custom_hair=male_hair_fp2_iberian_muslim_03
+			custom_clothes=m_clothes_sec_crusades_western_war_nob_01_common
+		}		
+	}	
+}
+
+whitestrake_101 = { #Lover of Pelinal
+	name = "Huna" #Lore
+	culture = gemha
+	religion = eight_divines
+	sexuality = homosexual
+	trait = education_martial_2
+	200.1.1 = { birth =yes }
+	243.1.1 = { death = { death_reason = death_battle killer = celethel_001 } }
+}
+
+##Adonai Dynasty
+#House Adonai
+
+adonai_100 = {
+	name = "Umaril" #Lore
+	dna = umaril_dna_entry
+	dynasty = dyn_adonai
+	culture = ayleid
+	religion = meridia_cult #he was specifically a champion of Meridia
+
+	trait = education_martial_4
+	trait = lifestyle_blademaster
+	trait = cautious_leader
+	trait = patient # preferred "ruin-from-afar"
+	trait = sadistic
+	trait = zealous
+	trait = physique_good_3
+	trait = beauty_good_3
+	trait = pure_blooded
+	trait = lifespan_6
+
+	martial = 15
+	prowess = 15
+	
+	-800.1.1 = { birth = yes } #Ayleids were in golden age around this time
+	100.1.1 = { give_nickname = nick_the_unfeathered }
+	243.1.1 = {
+		death = {
+			death_reason = death_duel
+			killer = whitestrake_100
+		}
+	}
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_headgear=male_headgear_secular_ayleid_crown_02
+			custom_cloaks=male_clothes_ayleid_moonstone_01
+		}
+	}
+}
+
+##Alessian Dynasty
+alessian_100 = {
+	name = "Al_Esh" #Lore
+	dna = alessia_dna_entry
+	religion = eight_divines
+	culture = gemha
+	dynasty = dyn_aleshut
+	female = yes
+	trait = education_learning_4
+	trait = intellect_good_3
+	trait = zealous
+	trait = brave
+	trait = diligent
+	trait = dragonborn
+	trait = former_slave
+	trait = sign_thief
+	
+	217.12.1 = { birth = yes }
+	242.1.1 = { add_matrilineal_spouse = alessian_101 }
+	243.1.1 = {
+		trait = crusader_king
+		give_nickname = nick_the_paravant
+	}
+	266.2.14 = {
+		trait = saint
+		death = { death_reason = death_alessia }
+	}
+		portrait_override={
+			portrait_modifier_overrides={
+				custom_cloaks =female_empty
+				custom_headgear=f_headgear_sec_fp3_iranian_imp_01
+				custom_clothes=female_clothes_secular_mena_nobility_01_high
+				custom_hair=female_hair_mena_01
+				facepaint_colour=facepaint_colour_5
+				facepaint=facepaint_nibenese_06
+			}
+		}
+}
+
+alessian_101 = {
+	name = "Morihaus" #Lore
+	religion = eight_divines
+	culture = cyro_nord
+	trait = giant
+	trait = strong
+	trait = education_martial_3
+	trait = arrogant
+	trait = wrathful
+	trait = vengeful
+	trait = sign_lord
+	
+	200.3.1 = { birth = yes }
+	240.1.1 = { give_nickname = nick_breath_of_kyne }
+	300.1.1 = { death = yes }
+
+		portrait_override={
+			portrait_modifier_overrides={
+				custom_headgear=male_empty
+				custom_cloaks =male_empty
+			}
+		}
+}
+
+alessian_103 = {
+	name = "Belharza" #Lore
+	dynasty = dyn_aleshut
+	religion = eight_divines
+	culture = gemha
+	
+	father = alessian_101 #Morihaus
+	mother = alessian_100 #Alessia
+	
+	243.1.1 = {	birth = yes }
+	243.1.1 = { give_nickname = nick_the_man_bull }
+	290.1.1 = { add_spouse = alessian_103_wife }
+	322.1.1 = { death = yes }
+}
+
+#History ToDo: add minos from pt Ami-El book
+
+alessian_103_wife = {
+	name = "Llesa" #PT
+	religion = eight_divines
+	culture = gemha
+	female = yes
+	270.1.1 = { birth =yes }
+	300.1.1 = { death = { death_reason = death_childbirth } }
+}
+
+alessian_104 = { #History ToDo: should have one horn
+	name = "Amet" #Lore - Ami-El, PT - Amet
+	dynasty = dyn_aleshut
+	religion = alessian
+	culture = nibenese #Nibenese identity definitely existed by the time of her death
+	female = yes
+
+	father = alessian_103
+	mother = alessian_103_wife
+
+	trait = education_martial_4
+	trait = holy_warrior
+	trait = arbitrary
+	trait = callous
+	trait = zealous
+	trait = shrewd
+	
+	300.1.1 = {	birth = yes }
+	322.1.1 = { give_nickname = nick_ami_el }
+	461.1.1 = { death = yes }
+}
+
+alessian_105 = {
+	name = "Gorieus" #Lore
+	dynasty = dyn_aleshut
+	religion = alessian
+	culture = nibenese
+	
+	mother = alessian_104
+	trait = education_martial_3
+	trait = wrathful
+	trait = zealous
+	trait = temperate
+	
+	424.1.1 = {	birth = yes }
+	1020.1.1 = { death = { death_reason = death_disappearance } }
+}
+
+alessian_107 = {
+	name = "Hestra" #Lore
+	dynasty = dyn_aleshut
+	religion = alessian
+	culture = nibenese
+	female = yes
+	
+	father = alessian_105
+
+	trait = education_martial_4
+	trait = conqueror
+	trait = strategist
+	trait = ambitious
+	trait = impatient
+	trait = diligent
+	trait = diplomat
+	
+	999.1.1 = {	birth = yes }
+	1047.1.1 = { death = yes }
+}
+
+alessian_108 = {
+	name = "Hestra"
+	dynasty = dyn_aleshut
+	religion = alessian
+	culture = nibenese
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	
+	mother = alessian_107
+	
+	1046.1.1 = {birth = yes }
+	1046.1.1 = { give_nickname = nick_line_of }
+	2292.1.1 = { death = yes }
+}
+
+alessian_109 = {
+	name = "Shor_El" #Lore - only the name, date of reign unknown
+	dynasty = dyn_aleshut
+	religion = alessian
+	culture = nibenese
+	
+	father = alessian_108
+	
+	2292.1.1 = {birth = yes }
+	2331.1.1 = { death = yes }
+}
+
+##of Cyrodiil Dynasty (dyn_reman)
+#House of Cyrodiil
+reman_98 = {
+	name = "Hrol" #Reman I's father, according to the Remanada
+	dynasty = dyn_hrol
+	religion = hero_cult
+	culture = colovian
+
+	father = hrol_1
+
+	trait = education_martial_3
+
+	2650.1.1 = { birth = yes }
+	2681.1.1 = { add_spouse = reman_99 }
+	2681.5.16 = { death = yes }
+}
+reman_99 = { #Put under Reman cause its the wife of Hrol
+	name = "Sed_Yenna" #Shepardess who raised and acclaimed Reman in the Remanada, I've theorized she might be his biological mother
+	female = yes
+	religion = eight_divines
+	culture = nibenese
+
+	trait = p_dv_dibella
+
+	mother = reman_99c
+
+	2650.1.1 = { birth = yes }
+	2680.8.16 = {
+		culture = colovian
+	}
+	2749.5.16 = { death = { death_reason = death_accident } }
+}
+reman_99b = { # Sister of Sed-Yenna
+	name = "Shonni_Et"
+	female = yes
+	religion = eight_divines
+	culture = nibenese
+
+	trait = p_dv_dibella
+	trait = seducer
+	trait = lustful
+	trait = gregarious
+	trait = zealous
+
+	mother = reman_99c
+
+	2664.1.1 = { birth = yes }
+	2680.8.16 = {
+		culture = colovian
+	}
+	2699.7.5 = {
+		effect = {
+			set_relation_lover = { reason = lover_history target = character:reman_100 }
+		}
+	}
+	#Die after "failed conquest of the Underworld" - PGE2
+	2749.5.16 = { death = { death_reason = death_accident } }
+}
+reman_99c = {
+	name = "Mater"
+	female = yes
+	religion = eight_divines
+	culture = nibenese
+
+	2625.8.1 = { birth = yes }
+	2661.1.7 = { death = yes }
+}
+reman_100 = { #Reman
+	name = "Reman" #Lore
+	dynasty = dyn_reman 
+	religion = eight_divines
+	culture = colovian
+	dna = reman_dna_entry
+
+	father = reman_98
+	mother = reman_99
+
+	trait = education_martial_5
+	trait = ambitious
+	trait = brave
+	trait = diligent
+	trait = strategist
+	trait = august
+	trait = flexible_leader
+	trait = organizer
+	trait = lifestyle_reveler #Sanguine stuff
+	trait = fecund #The you-know-what vaults on the moon
+	trait = dragonborn
+	trait = conqueror
+
+	2681.5.16 = { birth = yes }
+	2699.7.5 = {
+		effect = {
+			if = {
+				limit = { character:reman_99b = { is_alive = yes } }
+				set_relation_lover = { reason = lover_history target = character:reman_99b }
+			}
+		}
+	}
+	2762.6.6 = { death = { death_reason = death_ascended } }
+}
+reman_101 = { #Kastav the Warden
+	name = "Kastav" #Lore
+	dynasty = dyn_reman 
+	religion = eight_divines
+	culture = colovian
+
+	father = reman_100
+
+	trait = education_stewardship_2
+	trait = arrogant
+	trait = vengeful #Retaliated against Dragonguard when they didn't help him
+	trait = arbitrary
+	trait = irritable
+	trait = dragonborn
+
+	2731.9.1 = { birth = yes }
+	2804.1.11 = { give_nickname = nick_the_warden } #given as a mockery, the 'warden' of his own prison
+	2812.1.11 = { death = { death_reason = death_natural_causes } }
+}
+reman_101b = { #Father of Reman II, makes Reman II into nephew of Kastav instead of son
+	name = "Juilek"
+	dynasty = dyn_reman 
+	religion = eight_divines
+	culture = colovian
+
+	father = reman_100
+
+	2746.1.1 = { birth = yes }
+	2785.1.1 = { add_spouse = reman_101b_wife }
+	2791.1.1 = { death = yes }
+}
+
+#Forum post by Kurt Kuhlmann:
+#"However, in the one contemporary account we have of his accession to power he is more prosaically described as follows: 
+#'in coloring and stature he takes after his mother's people, but in all other respects recalls his grandfather'." 
+#The mosaic pavements ... depict him as tall and blonde-haired, suggesting that his mother's people are more likely to be Nords...
+reman_101b_wife = {
+	name = "Ingifinna"
+	culture = eastmarcher
+	religion = nord_cult
+	female = yes
+
+	2752.1.1 = { birth = yes }
+	2824.1.1 = { death = yes }
+}
+reman_102 = { #Reman II.
+	name = "Reman" #Lore
+	dynasty = dyn_reman 
+	religion = eight_divines
+	culture = heartlander #First Heartlander Reman
+
+	father = reman_101b
+	mother = reman_101b_wife
+
+	#Diplomacy instead of martial due to him being famous for ending rebellion and him dying 5 years into the actual war
+	trait = education_diplomacy_4
+	trait = august
+	trait = diplomat
+	trait = shrewd
+	trait = ambitious #Started Four-Score War and finished conquest of Argonia
+	trait = gregarious #Made peace with Nord rebels
+	trait = diligent #Wanted to finish conquest of Tamriel
+	trait = dragonborn
+
+	#Reconciliated Oblivon tomb and The Dragonguard Annals. 
+	#Lived for 57 years and ruled for 39 years, but came to power in 2804 instead of 2812
+	#"a reign of thirty-nine years and eight months wanting a day"
+	2788.2.28 = { birth = yes } #57 years
+	#Killed in battle by the Morag Tong, specifically the ancestors of Dram
+	2845.8.10 = { death = { death_reason = death_battle killer = ornavel_95 } }
+}
+reman_103_mother = {
+	name = "Irinia" #Lore
+	dynasty = dyn_dor
+	religion = eight_divines
+	culture = colovian
+	female = yes
+	2798.1.1 = { birth = yes }
+	2855.1.1 = { death = yes }
+}
+reman_103 = { #Brazollus Dor
+	name = "Brazollus" #Lore
+	dynasty = dyn_reman 
+	religion = eight_divines
+	culture = heartlander
+
+	father = reman_102 # Reman II
+	mother = reman_103_mother
+
+	trait = education_stewardship_1 #Didn't do anything, delegated everything to Potentate
+	trait = lifestyle_reveler #Partied all the time
+	trait = lifestyle_hunter #Liked hunting
+	trait = profligate #Partied all the time
+	trait = gluttonous #Partied all the time
+	trait = content #Delegated everything to Potentate
+	trait = humble #Delegated everything to Potentate
+	trait = physique_good_1
+	trait = legitimized_bastard
+	trait = dragonborn
+
+	2816.1.27 = { birth = yes }
+	2850.1.1 = { give_nickname = nick_dor }
+	#"Died on his estate following a particularly intense set of debaucheries"
+	2877.2.12 = { death = { death_reason = death_feast_accident } }
+}
+reman_103b = { #Expunged Reman
+	name = "Reman" #PT
+	dynasty = dyn_reman 
+	religion = eight_divines
+	culture = heartlander
+	father = reman_102 # Reman II
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	disallow_random_traits = yes
+	trait = disinherited
+	2822.1.1 = { birth = yes }
+	2841.1.1 = { give_nickname = nick_the_expunged }
+	2865.1.1 = { death = yes }
+}
+reman_104 = { #Reman III
+	name = "Reman" #Lore
+	dynasty = dyn_reman 
+	religion = eight_divines
+	culture = heartlander
+
+	father = reman_103b #Expunged Reman
+
+	trait = education_intrigue_1
+	trait = paranoid
+	trait = lustful # seriously, this guy took too many mistresses
+	trait = vengeful
+	trait = dragonborn
+
+	2863.10.4 = { birth = yes }
+	2886.1.1 = { add_spouse = reman_104_wife }
+	2915.1.1 = { effect = { set_relation_lover = { reason = lover_history target = character:reman_104_mistress_1 } } }
+	2920.7.4 = { trait = one_eyed }
+	2920.10.12 = { effect = { set_relation_lover = { reason = lover_history target = character:reman_104_mistress_2 } } }
+	2920.12.6 = {
+		death = {
+			death_reason = death_murder_known
+			killer = reman_104_mistress_2 
+		}
+	}
+}
+reman_104_wife = {
+	name = "Tavia" #Lore
+	religion = eight_divines
+	culture = colovian #Has allies in Colovia
+	#dynasty= History ToDo - Very wealthy and has allies in Colovia
+	female = yes
+	2869.1.1 = { birth = yes }
+	2921.9.5 = { death = { death_reason = death_suicide }}
+}
+reman_104_mistress_mother = {
+	name = "Elusa"
+	female = yes
+	religion = walkabout
+	culture = crown_culture
+
+	2861.1.1 = { birth = yes }
+	2916.1.1 = { death = yes }
+}
+reman_104_mistress_1 = {
+	name = "Rijja"
+	female = yes
+	religion = walkabout
+	culture = crown_culture
+
+	trait = beauty_good_2
+
+	mother = reman_104_mistress_mother
+
+	2892.1.1 = { birth = yes }
+	2920.9.11 = {
+		death = {
+			death_reason = death_execution
+			killer = reman_104
+		}
+	}
+}
+reman_104_mistress_2 = {
+	name = "Corda"
+	female = yes
+	religion = walkabout
+	culture = crown_culture
+
+	trait = education_intrigue_4 #Morag Tong Assassin
+	trait = beauty_good_1
+	trait = p_yp_morwha
+
+	mother = reman_104_mistress_mother
+
+	2900.1.1 = { birth = yes }
+	2920.12.7 = {
+		death = {
+			death_reason = death_vanished #Retired to Vounoura, the 'retirement resort' of the Morag Tong
+		}
+	}
+}
+reman_juilek_1 = { #His death ended the Reman Empire
+	name = "Juilek" #Lore
+	dynasty = dyn_reman 
+	religion = eight_divines
+	culture = heartlander
+
+	father = reman_104
+	mother = reman_104_wife
+
+	trait = education_martial_4 #Was good against Morrowind
+	trait = honest
+	trait = brave
+	trait = just
+	trait = diplomat #Negotiated peace with Vivec
+	trait = dragonborn
+
+	2890.10.4 = { birth = yes }
+	2920.8.31 = {
+		death = {
+			death_reason = death_murder_known
+			killer = miramor_001
+		}
+	}
+}
+miramor_001 = {
+	name = "Miramor"
+	religion = eight_divines
+	culture = colovian
+	trait = varangian
+	2876.1.1 = { birth = yes }
+	2920.6.11 = { death = { death_reason = death_murder }}
+}
+
+
+#Potentates before Versidue, not related to Versidue or Savirien
+potentate_1 = { #First Potentate, from Reman son of Reman. Potentate under Reman II
+	name  = "Tsamien_Varyel" #Lore - Temple Zero forums
+	religion = court_dawnbeauty
+	culture = ilniviri
+
+	trait = deceitful
+	trait = ambitious
+	trait = diligent
+	trait = shrewd
+	trait = education_diplomacy_4
+	trait = tsaesci_3
+
+	2654.1.1 = { birth = yes }
+	2853.11.2 = { death = { death_reason = death_natural_causes } }
+}
+
+potentate_2 = { #Tsaesci Potentate of Brazollus Dor
+	name = "Sidri_Ashak" #Lore
+	dynasty = dyn_sylla
+	religion = court_dawnbeauty
+	culture = ilniviri
+
+	father = sylla_1
+	mother = sylla_1_wife
+
+	trait = education_stewardship_4
+	trait = shrewd
+	trait = tsaesci_3
+	trait = humble
+	trait = diligent
+	trait = honest
+	trait = journaller
+	trait = sign_ritual
+
+	2725.1.3 = { birth = yes } #Few years after defeat by Reman
+	2881.5.16 = { death = { death_reason = death_natural_causes } }
+}
+
+##of Akavir Dynasty (dyn_akavir)
+#House of Akavir
+akavir_99 = {
+	name = "Versidue_Shaie" #Lore
+	dynasty = dyn_akavir 
+	religion = court_dawnbeauty
+	culture = ilniviri
+
+	trait = education_martial_4
+	trait = intellect_good_1
+	trait = tsaesci_4
+	trait = humble
+	trait = callous
+	trait = ambitious
+	trait = sign_ritual
+
+	2747.1.25 = { birth = yes }
+	2920.12.6 = { give_nickname = nick_the_coiled_king_queen }
+	3244.2.24 = { death = { death_reason = death_morag_tong } }
+}
+akavir_100 = {
+	name = "Savirien_Chorak" #Lore
+	dynasty = dyn_akavir 
+	religion = court_dawnbeauty
+	culture = ilniviri
+	
+	father = akavir_99
+
+	trait = education_diplomacy_2 #Wasn't great, wasn't awful, kept Potentate alive for a century
+	trait = tsaesci_4
+	trait = fickle
+	trait = gregarious
+	trait = callous
+	trait = sign_steed
+
+	2881.6.17 = { birth = yes }
+	3095.1.1 = { add_spouse = ves_98b }
+	2936.1.1 = { effect = { set_relation_friend = { reason = friend_generic_history target = character:zhenas_99 } } }
+	# Savirien-Chorak is assassinated along his heirs by the Morag Tong
+	3350.12.18 = { death = { death_reason = death_morag_tong } }
+}
+akavir_101 = { # Fictional Potentate Child
+	name = "Savirsidue"
+	dynasty = dyn_akavir 
+	religion = court_dawnbeauty
+	culture = ilniviri
+
+	father = akavir_100
+	mother = ves_98b
+
+	trait = education_intrigue_3
+	trait = tsaesci_4
+	trait = deceitful
+	trait = arrogant
+	trait = chaste
+	trait = sign_apprentice
+
+	3108.7.7 = { birth = yes }
+	# Savirien-Chorak is assassinated along his heirs by the Morag Tong
+	3350.12.18 = { death = { death_reason = death_morag_tong } } 
+}
+akavir_101b = { # Fictional Potentate Grandchild
+	name = "Omiera"
+	dynasty = dyn_akavir 
+	religion = court_dawnbeauty
+	culture = ilniviri
+	female = yes
+
+	father = akavir_100
+	mother = ves_98b
+
+	trait = education_martial_3
+	trait = tsaesci_4
+	trait = sign_mage
+
+	3123.4.9 = { birth = yes }
+	# Savirien-Chorak is assassinated along his heirs by the Morag Tong
+	3350.12.18 = { death = { death_reason = death_morag_tong } } 
+}
+akavir_102 = { # Fictional Potentate Grandchild
+	name = "Sidreri"
+	dynasty = dyn_akavir 
+	religion = court_dawnbeauty
+	culture = ilniviri
+
+	father = akavir_101
+
+	trait = education_intrigue_1
+	trait = tsaesci_3
+	trait = callous
+	trait = patient
+	trait = fickle
+	trait = sign_mage
+
+	3297.4.21 = { birth = yes }
+	# Savirien-Chorak is assassinated along his heirs by the Morag Tong
+	3350.12.18 = { death = { death_reason = death_morag_tong } } 
+}
+akavir_102b = { # Fictional Potentate Grandchild
+	name = "Versirix"
+	dynasty = dyn_akavir 
+	religion = court_dawnbeauty
+	culture = ilniviri
+
+	father = akavir_101
+
+	trait = education_learning_2
+	trait = content
+	trait = patient
+	trait = deceitful
+	trait = sign_mage
+	trait = tsaesci_3
+
+	3314.4.9 = { birth = yes }
+	# Savirien-Chorak is assassinated along his heirs by the Morag Tong
+	3350.12.18 = { death = { death_reason = death_morag_tong } } 
+}
+akavir_103 = { # Fictional Potentate Child
+	name = "Imata" 
+	dynasty = dyn_akavir 
+	religion = court_dawnbeauty
+	culture = ilniviri
+	female = yes
+
+	mother = akavir_101b
+
+	trait = education_diplomacy_3
+	trait = tsaesci_3
+	trait = sign_shadow
+
+	3279.5.14 = { birth = yes }
+	# Savirien-Chorak is assassinated along his heirs by the Morag Tong
+	3350.12.18 = { death = { death_reason = death_morag_tong } } 
+}
+
+#Tribunal & Friends (:
+vehk_100 = {
+	name = "Vehk" # Pre-Ascension Vivec
+	dna = vivec_dna_entry
+	culture = chimer
+	religion = high_velothi
+	dynasty = dyn_vehk
+
+	330.1.1 = { birth = yes }	# if you change his birth date, please also update it in ek_god_characters_at_the_door.txt
+	346.1.1 = {
+		trait = education_intrigue_5
+		trait = ambitious
+		trait = deceitful
+		trait = lustful
+		trait = just
+		trait = lifestyle_poet
+		trait = p_ob_mephala
+		trait = lifespan_6
+		trait = sign_serpent
+		effect = { set_immortal_age = 30 }
+	}
+	699.1.1 = {
+		give_nickname = nick_the_poet_vivec
+	}
+	700.1.1 = {
+		religion = tribunal_temple
+		death = { death_reason = death_ascended }
+	}
+}
+vehk_101_male = {
+	name = "Vehk" # Post-Ascension Vivec, for dna copying purposes
+	dna = vivec_male_dna_entry
+	culture = chimer
+	religion = tribunal_temple
+
+	330.1.1 = { birth = yes }	# if you change his birth date, please also update it in ek_god_characters_at_the_door.txt
+	346.1.1 = {
+		trait = education_intrigue_5
+		trait = ambitious
+		trait = deceitful
+		trait = lustful
+		trait = just
+		trait = lifestyle_poet
+		trait = p_ob_mephala
+		trait = lifespan_6
+		effect = { set_immortal_age = 30 }
+	}
+	700.1.1 = {
+		death = { death_reason = death_ascended }
+	}
+}
+vehk_101_female = {
+	name = "Vehk" # Post-Ascension Vivec, for dna copying purposes
+	dna = vivec_male_dna_entry
+	culture = chimer
+	religion = tribunal_temple
+	female = yes
+	
+	330.1.1 = { birth = yes }	# if you change her birth date, please also update it in ek_god_characters_at_the_door.txt
+	346.1.1 = {
+		trait = education_intrigue_5
+		trait = ambitious
+		trait = deceitful
+		trait = lustful
+		trait = just
+		trait = lifestyle_poet
+		trait = p_ob_mephala
+		trait = lifespan_6
+		effect = { set_immortal_age = 30 }
+	}
+	700.1.1 = {
+		death = { death_reason = death_ascended }
+	}
+}
+
+sotha_100 = {
+	name = "Sil" # Pre-Ascension Sotha Sil
+	dna = sotha_sil_dna_entry
+	dynasty = dyn_sotha
+	culture = chimer
+	religion = high_velothi
+	mother = sotha_98
+
+	310.1.1 = { birth = yes }
+	326.1.1 = {
+		trait = education_learning_5
+		trait = education_magic_5
+		trait = humble
+		trait = patient
+		trait = shy
+		trait = lifestyle_mystic
+		trait = reclusive
+		trait = p_ob_azura
+		trait = lifespan_6
+		effect = { set_immortal_age = 30 }
+	}
+	699.1.1 = {
+		give_nickname = nick_the_magus_sil
+	}
+	700.1.1 = {
+		religion = tribunal_temple
+		death = { death_reason = death_ascended }
+	}
+}
+
+#House Sotha
+
+sotha_99 = {
+	name = "Nall" # Sotha Sil's Sister
+	dynasty = dyn_sotha
+	culture = chimer
+	religion = high_velothi
+	female = yes
+	mother = sotha_98
+	trait = lifespan_2
+	trait = education_stewardship_3
+	trait = stubborn
+	trait = brave
+	trait = gregarious
+
+	300.1.1 = { birth = yes }
+	346.1.1 = {
+		effect = { set_immortal_age = 20 }
+	}
+	346.1.1 = { death = { death_reason = death_mehrunes } }
+}
+
+sotha_98 = {
+	name = "Sen" # Sotha Sil's Mother
+	dynasty = dyn_sotha
+	culture = chimer
+	religion = high_velothi
+	female = yes
+	father = sotha_1
+	trait = lifespan_2
+	trait = education_stewardship_4
+	trait = calm
+	trait = forgiving
+	trait = just
+
+	210.1.1 = { birth = yes }
+	210.1.1 = {
+		effect = { set_immortal_age = 40 }
+	}
+	346.1.1 = { death = { death_reason = death_mehrunes } }
+}
+
+sotha_1 = {
+	name = "Sotha" # Ancestors
+	dynasty = dyn_sotha
+	culture = chimer
+	religion = high_velothi
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+
+	5.1.1 = { birth = yes }
+	65.1.1 = { give_nickname = nick_ancestors_of_house }
+	210.1.1 = { death = { death_reason = death_mehrunes } }
+}
+
+##Dagoth Dynasty (dyn_dagoth)
+#House Dagoth
+dagoth_100 = {
+	name = "Voryn" # Voryn Dagoth
+	dna = voryn_dna_entry
+	dynasty = dyn_dagoth # Dagoth
+	culture = chimer
+	religion = high_velothi
+
+	#Personality traits attempt to represent Dagoth Ur before he became deranged zombie
+	trait = education_learning_4 #A mighty sorcerer and enchanter in life
+	trait = education_magic_4 #A mighty sorcerer and enchanter in life
+	trait = vengeful #Had to be vengeful in life to hold a grudge even after death
+	trait = honest #Surprisingly honest to Nerevarine, so maybe he was in life as well?
+	trait = arrogant #Dunmer stuff
+	trait = lifespan_6
+
+	280.1.1 = { birth = yes } #Nerevar's generation
+	296.1.1 = {
+		trait = p_ob_nocturnal # Some obscure not-even-forum lore has the Sharmat (mythic role undertaken by several people, including Voryn and Kagrenac) as a figure of Nocturnal in some Jungian sense, representing "the unconscious taking over the conscious"
+		give_nickname = nick_dagoth_ur
+		religion = sixth_house
+	}
+	700.1.1 = {
+		death = { death_reason = death_red_mountain }
+	}
+}
+
+araynys_100 = {		#TES3 Ash Vampire
+	name = "Araynys"
+	dynasty = dyn_fadathram	#TES3 Fadathram Tomb - extinct family
+	culture = chimer
+	religion = sixth_house
+
+	trait = education_learning_3
+	trait = education_magic_3
+	trait = impatient	#"I don't think we have anything to talk about, do we? Then let's get on with it."
+	trait = brave	#"I'm going to kill you. You don't believe that, or you wouldn't be here. You are the challenger, so, by House Dagoth custom, yours is the first move."
+	trait = arrogant
+	trait = lifespan_magic_3
+
+	452.1.1 = { birth = yes }
+	700.1.1 = {
+		death = { death_reason = death_disappearance }
+	}
+}
+araynys_line = {
+	name = "Araynys"
+	dynasty = dyn_fadathram
+	culture = chimer
+	religion = sixth_house
+	father = araynys_100
+
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+
+	700.1.1 = { 
+		birth = yes
+		give_nickname = nick_line_of
+	}
+	3150.1.1 = { death = { death_reason = death_old_age } }
+}
+
+endus_100 = {		#TES3 Ash Vampire
+	name = "Endus"
+	dynasty = dyn_favel	#ESO Favel Tomb has Dagoth insignia
+	culture = chimer
+	religion = sixth_house
+
+	trait = education_diplomacy_3
+	trait = education_magic_3
+	trait = gregarious	#"Yes, %PCName. Before we fight, can I offer you a little ancient Dagoth brandy?"
+	trait = honest
+	trait = just	#"You're the challenger, and I am your host. So honor demands that you deliver the first blow."
+	trait = shrewd	#Made his base in Kagrenac's Study
+	trait = lifespan_magic_3
+
+	485.1.1 = { birth = yes }
+	700.1.1 = {
+		death = { death_reason = death_disappearance }
+	}
+}
+endus_line = {
+	name = "Endus"
+	dynasty = dyn_favel
+	culture = chimer
+	religion = sixth_house
+	father = endus_100
+
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+
+	700.1.1 = { 
+		birth = yes
+		give_nickname = nick_line_of
+	}
+	3150.1.1 = { death = { death_reason = death_old_age } }
+}
+
+gilvoth_100 = {		#TES3 Ash Vampire
+	name = "Gilvoth"
+	dynasty = dyn_rethandus	#ESO Rethandus Tomb has Dagoth insignia
+	culture = chimer
+	religion = sixth_house
+
+	trait = education_martial_3
+	trait = education_magic_3
+	trait = impatient	#"I'm not here to talk. I'm here to fight."
+	trait = callous	#"Oh, just shut up, will you?"
+	trait = arrogant
+	trait = lifespan_magic_3
+
+	440.1.1 = { birth = yes }
+	700.1.1 = {
+		death = { death_reason = death_disappearance }
+	}
+}
+gilvoth_line = {
+	name = "Gilvoth"
+	dynasty = dyn_rethandus
+	culture = chimer
+	religion = sixth_house
+	father = gilvoth_100
+
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+
+	700.1.1 = { 
+		birth = yes
+		give_nickname = nick_line_of
+	}
+	3150.1.1 = { death = { death_reason = death_old_age } }
+}
+
+odros_100 = {		#TES3 Ash Vampire
+	name = "Odros"
+	dynasty = dyn_ginith	#ESO Ginith Tomb has Dagoth insignia
+	culture = chimer
+	religion = sixth_house
+
+	trait = education_diplomacy_4
+	trait = education_magic_3
+	trait = calm	#Has the most dialogue preceding his fight
+	trait = honest	#"But, yes, you might win Lord Dagoth's favor by defeating his lieutenants. No hard feelings, %PCName."
+	trait = just
+	trait = lifespan_magic_4
+
+	348.1.1 = { birth = yes }
+	700.1.1 = {
+		death = { death_reason = death_disappearance }
+	}
+}
+odros_line = {
+	name = "Odros"
+	dynasty = dyn_ginith
+	culture = chimer
+	religion = sixth_house
+	father = odros_100
+
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+
+	700.1.1 = { 
+		birth = yes
+		give_nickname = nick_line_of
+	}
+	3150.1.1 = { death = { death_reason = death_old_age } }
+}
+
+tureynul_100 = {		#TES3 Ash Vampire
+	name = "Tureynul"
+	dynasty = dyn_sandus	#TES3 Sandus Tomb - only known descendant is a bandit
+	culture = chimer
+	religion = sixth_house
+
+	trait = education_learning_3
+	trait = education_magic_3
+	trait = stubborn	#"No. I'm sorry. No flowery speeches. No subtle tricks. No formal boasts or challenges. Fight. Or leave. But don't expect me to pass the time of day with you."
+	trait = honest
+	trait = arrogant
+	trait = shrewd	#Made his base in Kagrenac's Library
+	trait = lifespan_magic_4
+
+	374.1.1 = { birth = yes }
+	700.1.1 = {
+		death = { death_reason = death_disappearance }
+	}
+}
+tureynul_line = {
+	name = "Tureynul"
+	dynasty = dyn_sandus
+	culture = chimer
+	religion = sixth_house
+	father = tureynul_100
+
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+
+	700.1.1 = { 
+		birth = yes
+		give_nickname = nick_line_of
+	}
+	3150.1.1 = { death = { death_reason = death_old_age } }
+}
+
+uthol_100 = {		#TES3 Ash Vampire
+	name = "Uthol"
+	dynasty = dyn_salvel	#TES3 Salvel Tomb - extinct family
+	culture = chimer
+	religion = sixth_house
+
+	trait = education_stewardship_3
+	trait = education_magic_3
+	trait = diligent	#"But I do my Lord's bidding. I have always done his bidding."
+	trait = just
+	trait = arrogant
+	trait = loyal
+	trait = lifespan_magic_4
+
+	398.1.1 = { birth = yes }
+	700.1.1 = {
+		death = { death_reason = death_disappearance }
+	}
+}
+uthol_line = {
+	name = "Uthol"
+	dynasty = dyn_salvel
+	culture = chimer
+	religion = sixth_house
+	father = uthol_100
+
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+
+	700.1.1 = { 
+		birth = yes
+		give_nickname = nick_line_of
+	}
+	3150.1.1 = { death = { death_reason = death_old_age } }
+}
+
+vemyn_100 = {		#TES3 Ash Vampire
+	name = "Vemyn"
+	dynasty = dyn_othrobar	#Name taken from The Importance of Where
+	culture = chimer
+	religion = sixth_house
+
+	trait = education_learning_4
+	trait = education_magic_3
+	trait = brave
+	trait = callous	#"Go ahead, windbag. Talk, talk, talk. Anything to delay your coming defeat."
+	trait = arrogant
+	trait = lifespan_magic_5	#"I'm one of the oldest things to ever have slipped from a womb"
+
+	254.1.1 = { birth = yes }
+	700.1.1 = {
+		death = { death_reason = death_disappearance }
+	}
+}
+vemyn_line = {
+	name = "Vemyn"
+	dynasty = dyn_othrobar
+	culture = chimer
+	religion = sixth_house
+	father = vemyn_100
+
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+
+	700.1.1 = { 
+		birth = yes
+		give_nickname = nick_line_of
+	}
+	3150.1.1 = { death = { death_reason = death_old_age } }
+}
+
+## Avatheled Dynasty
+# House Avatheled
+avatheled_100 = {
+	name = "Kagrenac" # High Craftlord Kagrenac
+	dna = yagrum_dna_entry # Yagrenac...
+	dynasty = dyn_avatheled # Avatheled
+	culture = amz_vtharden
+	religion = golden_tones
+	trait = intellect_good_3
+	trait = lifespan_magic_5
+
+	151.1.1 = { birth = yes }
+	533.1.1 = {
+		trait = education_learning_4
+		trait = lifestyle_mystic
+		trait = scholar
+		trait = architect
+		trait = zealous
+		trait = callous
+		trait = ambitious
+		give_nickname = nick_the_blighter
+	}
+	700.1.1 = { death = { death_reason = death_red_mountain } }
+}
+
+## Duamaka Dynasty
+# House Duamaka
+duamaka_100 = {
+	name = "Dumac" # King Dumac of Vvardenfell
+	dynasty = dyn_duamaka # Duamaka
+	culture = amz_vtharden
+	religion = golden_tones
+
+	father = duamaka_98
+	mother = duamaka_98_wife
+	trait = lifespan_magic_5
+
+	200.1.1 = { birth = yes }
+	216.1.1 = {
+		trait = education_martial_4
+		trait = unyielding_defender
+		trait = trusting
+		trait = arrogant
+		trait = just
+		give_nickname = nick_dwarf_orc
+	}
+	700.1.1 = { death = { death_reason = death_red_mountain } }
+}
+
+#Teo Bravillius Tasus - captured what would become Bravil
+bravillius_001 = {
+	name = "Teo_Bravillius"
+	dynasty = dyn_tas
+	religion = eight_divines
+	culture = gemha
+	trait = education_martial_4
+	trait = stubborn
+	200.1.1 = { birth = yes }
+	280.1.1 = { death = yes }
+}
+
+#Kragen
+kragen_100_mw = { #Leader of Clan Kragen from nord conquest to disappearance #HistoryToDo: this is somewhat of a placeholder, properly place kragen_100 in Kragenmoor, maybe integrate this guy into their family tree
+	name = "Mzulchond"
+	dynasty = dyn_kragen
+	culture = amz_vtharden
+	religion = golden_tones
+
+	trait = lifespan_magic_5
+	trait = vengeful #Doesn't care for dunmers, who are all collaborationsts to him
+	trait = diligent
+	trait = stubborn
+	trait = education_martial_4
+
+	#History ToDo: give him land in Skyrim
+	43.1.1 = { birth = yes }
+	700.1.1 = { death = yes }
+}

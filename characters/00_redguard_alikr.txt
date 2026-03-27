@@ -1,0 +1,921 @@
+﻿# Rufiz Dynasty (dyn_rufiz)
+rufiz_100 = {
+	name = "Halam"
+	dynasty = dyn_rufiz
+	religion = satakal
+	culture = alikr
+
+	3328.1.1 = { birth = yes }
+	3372.1.1 = { death = yes }	
+}
+
+# Nekor Dynasty (dyn_nekor)
+nekor_100 = {
+	name = "Rokdun"
+	dynasty = dyn_nekor
+	religion = satakal
+	culture = alikr
+
+	3333.1.1 = { birth = yes }
+	3399.1.1 = { death = yes }	
+}
+
+# Hikan Dynasty (dyn_hikan)
+hikan_100 = {
+	name = "Darezha"
+	dynasty = dyn_hikan
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	trait = education_diplomacy_1
+	trait = shy
+	trait = forgiving
+	trait = compassionate
+
+	3322.1.1 = { birth = yes }
+	3388.1.1 = { death = yes }	
+}
+
+# Kulan Dynasty (dyn_kulan)
+kulan_100 = {
+	name = "Nammokh"
+	dynasty = dyn_kulan
+	religion = satakal
+	culture = alikr
+
+	trait = education_martial_3
+	trait = cynical
+	trait = temperate
+	trait = ambitious
+
+	3315.1.1 = { birth = yes }
+	3382.1.1 = { death = yes }	
+}
+kulan_101 = {
+	name = "Mehrafar"
+	dynasty = dyn_kulan
+	religion = satakal
+	culture = alikr
+	female = yes
+	
+	father = kulan_100
+
+	trait = education_diplomacy_3
+	trait = generous
+	trait = impatient
+	trait = chaste
+
+	3336.1.1 = { birth = yes }
+	3400.1.1 = { death = yes }	
+}
+
+# Kehar Dynasty (dyn_kehar)
+kehar_99 = {
+	name = "Alusaron"
+	dynasty = dyn_kehar
+	religion = satakal
+	culture = alikr
+
+	3303.1.1 = { birth = yes }
+	3351.1.1 = { death = yes }
+}
+kehar_100 = {
+	name = "Shenk"
+	dynasty = dyn_kehar
+	religion = satakal
+	culture = alikr
+
+	father = kehar_99
+	
+	trait = vengeful
+	trait = brave
+	trait = content
+
+	3329.1.1 = { birth = yes }
+	3376.1.1 = { death = yes }
+}
+kehar_100b = {
+	name = "Sharela"
+	dynasty = dyn_kehar
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	father = kehar_99
+
+	trait = education_stewardship_2
+	trait = paranoid
+	trait = brave
+	trait = fickle
+
+	3336.1.1 = { birth = yes }
+	3376.1.1 = { death = yes }	
+}
+
+# Rhali Dynasty (dyn_rhali)
+rhali_100 = {
+	name = "Zerik"
+	dynasty = dyn_rhali
+	religion = satakal
+	culture = alikr
+
+	trait = education_diplomacy_1
+	trait = lazy
+	trait = compassionate
+	trait = gregarious
+
+	3340.1.1 = { birth = yes }
+	3407.1.1 = { death = yes }	
+}
+
+# Darin Dynasty (dyn_darin)
+darin_100 = {
+	name = "Hiwanan"
+	dynasty = dyn_darin
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	trait = education_intrigue_3
+	trait = paranoid
+	trait = gluttonous
+	trait = impatient
+
+	3341.1.1 = { birth = yes }
+	3388.1.1 = { death = yes }	
+}
+darin_101 = {
+	name = "Saissiana"
+	dynasty = dyn_darin
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	mother = darin_100
+
+	3366.1.1 = { birth = yes }
+	3409.1.1 = { death = yes }	
+}
+
+# Lohon Dynasty (dyn_lohon)
+lohon_98  ={
+	name = "Rensh"
+	dynasty = dyn_lohon
+	religion = satakal
+	culture = alikr
+
+	3271.1.1 = { birth = yes }
+	3329.1.1 = { death = yes }
+}
+lohon_99 = {
+	name = "Rodoro"
+	dynasty = dyn_lohon
+	religion = satakal
+	culture = alikr
+
+	father = lohon_98
+
+	3295.1.1 = { birth = yes }
+	3351.1.1 = { death = yes }
+}
+lohon_100 = {
+	name = "Katayoun"
+	dynasty = dyn_lohon
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	father = lohon_99
+
+	trait = education_martial_2
+	trait = aggressive_attacker
+	trait = compassionate
+	trait = humble
+	trait = vengeful
+
+	3329.1.1 = { birth = yes }
+	3367.1.1 = { death = { death_reason = death_battle } }	
+}
+lohon_101 = {
+	name = "Sartaj"
+	dynasty = dyn_lohon
+	religion = satakal
+	culture = alikr
+	
+	mother = lohon_100
+
+	trait = paranoid
+
+	3349.1.1 = { birth = yes }
+	3414.1.1 = { death = yes }	
+}
+lohon_101b = {
+	name = "Bahree"
+	dynasty = dyn_lohon
+	religion = satakal
+	culture = alikr
+	female = yes
+	
+	mother = lohon_100
+
+	3354.1.1 = { birth = yes }
+	3398.1.1 = { death = yes }
+}
+
+##Kuro Dynasty (dyn_kuro)
+kuro_100 = {
+	name = "Anireh"
+	dynasty = dyn_kuro
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	trait = education_martial_4
+	trait = reckless
+	trait = arbitrary
+	trait = temperate
+	trait = forgiving
+
+	3342.4.17 = { birth = yes }
+	3359.1.1 = { add_matrilineal_spouse = kuro_100_husband }
+	3383.1.1 = { death = yes }	
+}
+kuro_100_husband = {
+	name = "Radan"
+	religion = satakal
+	culture = alikr
+
+	trait = education_martial_2
+	trait = unyielding_defender
+	trait = compassionate
+	trait = paranoid
+
+	3341.1.1 = { birth = yes }
+	3375.1.1 = { death = yes }	
+}
+kuro_101 = {
+	name = "Azita"
+	dynasty = dyn_kuro
+	religion = satakal
+	culture = alikr
+	female = yes
+	
+	mother = kuro_100
+	father = kuro_100_husband
+
+	3365.8.11 = { birth = yes }
+	3402.1.1 = { death = yes }	
+}
+
+# Bredon Dynasty (dyn_bredon)
+bredon_99 = {
+	name = "Delmar"
+	dynasty = dyn_bredon
+	religion = satakal
+	culture = alikr
+
+	3298.1.1 = { birth = yes }
+	3356.1.1 = { death = yes }
+}
+bredon_100 = {
+	name = "Haidarah"
+	dynasty = dyn_bredon
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	father = bredon_99
+
+	trait = education_stewardship_3
+	trait = arrogant
+	trait = craven
+	trait = cynical
+
+	3339.1.1 = { birth = yes }
+	3401.1.1 = { death = yes }	
+}
+bredon_100b = {
+	name = "Hinhad"
+	dynasty = dyn_bredon
+	religion = satakal
+	culture = alikr
+
+	father = bredon_99
+
+	trait = education_stewardship_4
+	trait = temperate
+	trait = stubborn
+	trait = cynical
+
+	3342.1.1 = { birth = yes }
+	3407.1.1 = { death = yes }	
+}
+
+##Mekir Dynasty (dyn_mekir)
+mekir_99 = {
+	name = "Huhtami"
+	dynasty = dyn_mekir
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	3301.1.1 = { birth = yes }
+	3325.1.1 = { add_matrilineal_spouse = mekir_99_husband }
+	3354.3.11 = { death = yes }
+}
+mekir_99_husband = {
+	name = "Talian"
+	religion = satakal
+	culture = alikr
+
+	3306.1.1 = { birth = yes }
+	3342.1.1 = { death = { death_reason = death_battle } }
+}
+mekir_100 = {
+	name = "Thedret"
+	dynasty = dyn_mekir
+	religion = satakal
+	culture = alikr
+
+	mother = mekir_99
+	father = mekir_99_husband
+
+	trait = education_learning_2
+	trait = arcana_good_2
+	trait = callous
+	trait = cynical
+	trait = ambitious
+	trait = lifestyle_mystic
+
+	3336.1.1 = { birth = yes }
+	3352.1.1 = { add_spouse = mekir_100_wife1 }
+	3355.1.1 = {
+		add_secret = { type = secret_necromancer }
+		add_trait = experimentalist_necromancer
+	}
+	3368.1.1 = { add_spouse = mekir_100_wife2 }
+	3419.1.1 = { death = yes }	
+}
+mekir_100b = {
+	name = "Comira"
+	dynasty = dyn_mekir
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	mother = mekir_99
+	father = mekir_99_husband
+
+	3328.1.1 = { birth = yes }
+	3349.1.1 = { death = yes }	
+}
+mekir_100_wife1 = {
+	name = "Hadonia"
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	3331.1.1 = { birth = yes }
+	3378.1.1 = { death = { death_reason = death_ill } }
+}
+mekir_100_wife2 = {
+	name = "Maraya"
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	3347.1.1 = { birth = yes }
+	3414.1.1 = { death = yes }
+}
+mekir_101 = {
+	name = "Darezha"
+	dynasty = dyn_mekir
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	father = mekir_100
+	mother = mekir_100_wife1
+
+	3353.1.1 = { birth = yes }
+	3414.1.1 = { death = yes }
+}
+mekir_101b = {
+	name = "Torim"
+	dynasty = dyn_mekir
+	religion = satakal
+	culture = alikr
+
+	father = mekir_100
+	mother = mekir_100_wife1
+
+	3357.1.1 = { birth = yes }
+	3398.1.1 = { death = { death_reason = death_battle } }
+}
+mekir_101c = {
+	name = "Yeqdah"
+	dynasty = dyn_mekir
+	religion = satakal
+	culture = alikr
+
+	father = mekir_100
+	mother = mekir_100_wife2
+
+	3374.1.1 = { birth = yes }
+	3430.1.1 = { death = yes }
+}
+mekir_102 = {
+	name = "Hatmarah"
+	dynasty = dyn_mekir
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	mother = mekir_101
+
+	3378.1.1 = { birth = yes }
+	3440.1.1 = { death = yes }
+}
+mekir_103 = {
+	name = "Awata"
+	dynasty = dyn_mekir
+	religion = satakal
+	culture = alikr
+
+	mother = mekir_102
+
+	3402.1.1 = { birth = yes }
+	3459.1.1 = { death = yes }
+}
+#Second branch
+mekir1_102 = {
+	name = "Varzan"
+	dynasty = dyn_mekir
+	religion = satakal
+	culture = alikr
+
+	father = mekir_101b
+
+	3383.1.1 = { birth = yes }
+	3422.1.1 = { death = { death_reason = death_battle } }
+}
+mekir1_102b = {
+	name = "Thedret"
+	dynasty = dyn_mekir
+	religion = satakal
+	culture = alikr
+
+	father = mekir_101b
+
+	3386.1.1 = { birth = yes }
+	3441.1.1 = { death = { death_reason = death_natural_causes } }
+}
+mekir1_103 = {
+	name = "Uthmal"
+	dynasty = dyn_mekir
+	religion = satakal
+	culture = alikr
+
+	father = mekir1_102b
+
+	3413.1.1 = { birth = yes }
+	3476.1.1 = { death = yes }
+}
+
+#Third branch
+mekir2_102 = {
+	name = "Ery"
+	dynasty = dyn_mekir
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	father = mekir_101c
+
+	3401.1.1 = { birth = yes }
+	3469.1.1 = { death = yes }
+}
+
+# Zasek Dynasty (dyn_zasek)
+zasek_100 = {
+	name = "Delmar"
+	dynasty = dyn_zasek
+	religion = satakal
+	culture = alikr
+
+	3332.1.1 = { birth = yes }
+	3391.1.1 = { death = yes }	
+}
+
+##Ash'abah Dynasty (dyn_ashabah)
+ashabah_97 = {
+	name = "Sameer"
+	dynasty = dyn_ashabah
+	religion = satakal
+	culture = alikr
+	trait = line_of_x
+	disallow_random_traits = yes
+	diplomacy = 0
+	martial = 0
+	stewardship = 0
+	intrigue = 0
+	learning = 0
+	prowess = 0
+	
+	father = yathe_101b
+
+	841.1.1 = { birth = yes }
+	1300.1.1 = { give_nickname = nick_line_of }
+	3321.1.1 = { death = yes }	
+}
+
+ashabah_98 = {
+	name = "Hinhad"
+	dynasty = dyn_ashabah
+	religion = satakal
+	culture = alikr
+	
+	father = ashabah_97
+
+	3260.1.1 = { birth = yes }
+	3321.1.1 = { death = yes }	
+}
+
+ashabah_99 = {
+	name = "Kulsora"
+	dynasty = dyn_ashabah
+	religion = satakal
+	culture = alikr
+	female = yes
+	
+	father = ashabah_98
+
+	3283.1.1 = { birth = yes }
+	3341.1.1 = { death = yes }	
+}
+
+ashabah_100 = {
+	name = "Temzukar"
+	dynasty = dyn_ashabah
+	religion = satakal
+	culture = alikr
+
+	trait = education_learning_3
+	trait = calm
+	trait = gregarious
+	trait = stubborn
+	
+	mother = ashabah_99
+
+	3305.1.1 = { birth = yes }
+	3369.1.1 = { death = yes }	
+}
+
+ashabah_100b = {
+	name = "Damar"
+	dynasty = dyn_ashabah
+	religion = satakal
+	culture = alikr
+
+	trait = education_martial_3
+	trait = education_magic_2
+	trait = lifestyle_blademaster
+	trait = sign_lord
+	trait = scarred
+	trait = brave
+	trait = humble
+	trait = stubborn
+	
+	mother = ashabah_99
+
+	3313.3.13 = { birth = yes }
+	3350.1.1 = {
+		effect = {
+			add_arcana_skill = { VALUE = 6 }
+			add_restoration_perk_effect = { LEVEL = 3 }
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = 50
+			}
+		}
+	}
+	3374.1.1 = { death = { death_reason = death_undead } }
+}
+
+ashabah_101 = {
+	name = "Brenuin"
+	dynasty = dyn_ashabah
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	trait = education_diplomacy_2
+	trait = lazy
+	trait = fickle
+	trait = generous
+	
+	father = ashabah_100
+
+	3331.1.1 = { birth = yes }
+	3356.1.1 = { add_matrilineal_spouse = bredon_100b }
+	3385.1.1 = { death = yes }	
+}
+
+ashabah_101b = {
+	name = "Khabzuur"
+	dynasty = dyn_ashabah
+	religion = satakal
+	culture = alikr
+	female = yes
+	
+	father = ashabah_100
+
+	3336.1.1 = { birth = yes }
+	3394.1.1 = { death = yes }	
+}
+
+#Lowborns
+sekunder_100 = {
+	name = "Ehsan"
+	religion = satakal
+	culture = alikr
+
+	trait = education_intrigue_2
+	trait = deceitful
+	trait = arbitrary
+	trait = generous
+
+	3327.1.1 = { birth = yes }
+	3373.1.1 = { death = yes }
+}
+
+#Azvir, rule c_chasetown
+azvir_100 = {
+	name = "Khase"
+	dynasty = dyn_azvir
+	religion = satakal
+	culture = alikr
+	
+	3329.1.1 = { birth = yes }
+	3388.1.1 = { death = yes }
+}
+
+#Atet, HoonDing Watch
+atet_100 = {
+	name = "Jamer"
+	dynasty = dyn_atet
+	religion = satakal
+	culture = alikr
+
+	3322.1.1 =  { birth = yes }
+	3381.1.1 = { death = yes }
+}
+
+#Inatar
+inatar_99 = {
+	name = "Zulfan"
+	dynasty = dyn_inatar
+	religion = satakal
+	culture = alikr
+
+	3275.1.1 = { birth = yes }
+	3301.1.1 = { add_spouse = inatar_99_wife1 }
+	3310.1.1 = { add_spouse = inatar_99_wife2 }
+	3331.1.1 = { death = yes }
+}
+inatar_99_wife1 = {
+	name = "Maliyah"
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	3277.1.1 = { birth = yes }
+	3344.1.1 = { death = yes }
+}
+inatar_99_wife2 = {
+	name = "Heenarh"
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	3289.1.1 = { birth = yes }
+	3367.1.1 = { death = yes }
+}
+inatar_100 = {
+	name = "Ralti"
+	dynasty = dyn_inatar
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	father = inatar_99
+	mother = inatar_99_wife1
+
+	3303.1.1 = { birth = yes }
+	3323.1.1 = {
+		effect = {
+			add_trait = lifespan_magic_1
+			add_character_flag = artificial_lifespan
+			add_character_flag = natural_lifespan_0
+		}
+	}
+	3325.1.1 = { add_matrilineal_spouse = inatar_100_husband1 }
+	3327.1.1 = { add_matrilineal_spouse = inatar_100_husband2 }
+	3335.1.1 = { add_matrilineal_spouse = inatar_100_husband3 }
+	3339.1.1 = { add_matrilineal_spouse = inatar_100_husband4 }
+	3418.1.1 = { death = yes }
+}
+inatar_100b = {
+	name = "Othri"
+	dynasty = dyn_inatar
+	religion = satakal
+	culture = alikr
+
+	father = inatar_99
+	mother = inatar_99_wife2
+
+	3315.1.1 = { birth = yes }
+	3379.1.1 = { death = yes }
+}
+inatar_100_husband1 = {
+	name = "Ridar"
+	religion = satakal
+	culture = alikr
+
+	3297.1.1 = { birth = yes }
+	3361.1.1 = { death = yes }
+}
+inatar_100_husband2 = {
+	name = "Cama"
+	religion = satakal
+	culture = alikr
+
+	3306.1.1 = { birth = yes }
+	3366.1.1 = { death = yes }
+}
+inatar_100_husband3 = {
+	name = "Zakhal"
+	religion = satakal
+	culture = alikr
+
+	3310.1.1 = { birth = yes }
+	3379.1.1 = { death = yes }
+}
+inatar_100_husband4 = {
+	name = "Shalan"
+	religion = satakal
+	culture = alikr
+
+	3316.1.1 = { birth = yes }
+	3389.1.1 = { death = yes }
+}
+inatar_101 = {
+	name = "Ralti"
+	dynasty = dyn_inatar
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	mother = inatar_100
+	father = inatar_100_husband1
+
+	3326.1.1 = { birth = yes }
+	3392.1.1 = { death = yes }
+}
+inatar_101b = {
+	name = "Hironi"
+	dynasty = dyn_inatar
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	mother = inatar_100
+	father = inatar_100_husband2
+
+	3330.1.1 = { birth = yes }
+	3388.1.1 = { death = yes }
+}
+inatar_101c = {
+	name = "Ileh"
+	dynasty = dyn_inatar
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	mother = inatar_100
+	father = inatar_100_husband1
+
+	3333.1.1 = { birth = yes }
+	3367.1.1 = { death = yes }
+}
+inatar_101d = {
+	name = "Nesrin"
+	dynasty = dyn_inatar
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	mother = inatar_100
+	father = inatar_100_husband3
+
+	3338.1.1 = { birth = yes }
+	3422.1.1 = { death = yes }
+}
+inatar_101e = {
+	name = "Lanika"
+	dynasty = dyn_inatar
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	mother = inatar_100
+	father = inatar_100_husband4
+
+	3342.1.1 = { birth = yes }
+	3349.1.1 = { death = { death_reason = death_sickly } }
+}
+inatar_101f = {
+	name = "Hebera"
+	dynasty = dyn_inatar
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	mother = inatar_100
+	father = inatar_100_husband2
+
+	3346.1.1 = { birth = yes }
+	3367.1.1 = { death = { death_reason = death_battle } }
+}
+inatar_101g = {
+	name = "Rasna"
+	dynasty = dyn_inatar
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	mother = inatar_100
+	father = inatar_100_husband3
+
+	3352.1.1 = { birth = yes }
+	3411.1.1 = { death = yes }
+}
+inatar_101h = {
+	name = "Komira"
+	dynasty = dyn_inatar
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	mother = inatar_100
+	father = inatar_100_husband4
+
+	3358.1.1 = { birth = yes }
+	3459.1.1 = { death = yes }
+}
+
+#Hunno
+hunno_100 = {
+	name = "Lathon"
+	dynasty = dyn_hunno
+	religion = satakal
+	culture = alikr
+
+	3321.1.1 = { birth = yes }
+	3399.1.1 = { death = yes }
+}
+
+#Leyanu
+leyanu_100 = {
+	name = "Yishana"
+	dynasty = dyn_leyanu
+	religion = satakal
+	culture = alikr
+	female = yes
+
+	3336.1.1 = { birth = yes }
+	3391.1.1 = { death = yes }
+}
+
+#Suren
+suren_99 = {
+	name = "Gherneem"
+	dynasty = dyn_suren
+	religion = satakal
+	culture = alikr
+
+	3294.1.1 = { birth = yes }
+	3350.7.5 = { death = yes }
+}
+suren_100 = {
+	name = "Arfan"
+	dynasty = dyn_suren
+	religion = satakal
+	culture = alikr
+
+	father = suren_99
+
+	3319.1.1 = { birth = yes }
+	3387.1.1 = { death = yes }
+}

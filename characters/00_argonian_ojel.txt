@@ -1,0 +1,233 @@
+﻿#Nibenese ojel
+naborius_100 = { #County in Nibenay, Bulwark
+	name = "Likes_Black_Woods"
+	dynasty = dyn_naborius
+	religion = niben_cult
+	culture = ojel
+
+	3323.7.28 = { birth = yes }
+	3343.1.1 = { add_spouse = naborius_100_wife }
+	3381.6.14 = { death = yes }	
+}
+naborius_100_wife = {
+	name = "Claws_the_Ghosts"
+	religion = hist
+	culture = ojel
+	female = yes
+
+	3322.10.13 = { birth = yes }
+	3378.3.28 = { death = yes }	
+}
+naborius_101 = {
+	name = "Forest_Child"
+	dynasty = dyn_naborius
+	religion = niben_cult
+	culture = ojel
+
+	father = naborius_100
+	mother = naborius_100_wife
+
+	3341.9.13 = { birth = yes }
+	3404.10.26 = { death = yes }	
+}
+naborius_101b = {
+	name = "Chews_The_Marrow"
+	dynasty = dyn_naborius
+	religion = niben_cult
+	culture = ojel
+	female = yes
+
+	father = naborius_100
+	mother = naborius_100_wife
+
+	3351.4.19 = { birth = yes }
+	3419.7.4 = { death = yes }	
+}
+
+#Tigriandros
+tigriandros_100 = { #County in Nibenay, Artemon
+	name = "Does_Paper_Work"
+	dynasty = dyn_tigriandros
+	religion = niben_cult
+	culture = ojel
+	female = yes
+
+	3321.3.16 = { birth = yes }
+	3378.11.21 = { death = yes }	
+}
+
+#Lowborns
+argonian_unlanded_0012 = {
+	name = "Drowns_On_Land"
+	culture = ojel
+	religion = hist
+
+	trait = intellect_bad_1
+	trait = education_diplomacy_1
+
+	3330.1.1 = { birth = yes }
+	3410.1.1 = { death = yes }
+}
+
+argonian_unlanded_0013 = {
+	name = "Sleeps_Under_Roots"
+	culture = ojel
+	religion = hist
+	female = yes
+
+	trait = lazy
+	trait = lifestyle_gardener
+
+	3325.1.1 = { birth = yes }
+	3410.1.1 = { death = yes }
+}
+
+### LAAMPS
+
+##Quixoteleel Dynasty/Tribe (dyn_quixoteleel)
+
+#House Quixoteleel
+quixoteleel_100 = {
+	name = "Fights_The_Air"
+	dynasty = dyn_quixoteleel
+	culture = ojel
+	religion = hist
+
+	trait = education_martial_2
+	trait = sign_steed
+	trait = gallant
+	trait = aggressive_attacker
+	trait = reckless
+	trait = lifestyle_blademaster
+	trait = lunatic_1
+	trait = brave
+	trait = stubborn
+	trait = wrathful
+	trait = sadistic
+	trait = adventurer
+
+	3334.6.29 = { birth = yes }
+	3356.1.1 = {
+		effect = { #he's argonian pelinal
+			add_prestige_level = 3
+			add_character_flag = has_scripted_appearance
+		}
+	}
+
+	3360.1.1 = {
+		effect = {
+			if = {
+				limit = { NOT = { has_dlc_feature = roads_to_power } } #If unlanded
+				set_employer = character:deleyn_999 
+			}
+		}
+	}
+	3365.1.1 = { effect = { if = { limit = { has_dlc_feature = royal_court } create_inspiration = adventure_inspiration } } }
+	3369.1.1 = { 
+		effect = { 
+			if = { 
+				limit = { NOT = { has_dlc_feature = roads_to_power } }
+				move_to_pool = yes
+			} 
+		} 
+	}
+	3409.1.1 = { death = yes }
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=no_hair
+			custom_beards=male_empty
+			custom_headgear=male_empty
+		}
+	}
+}
+
+wayward_column_100 = {
+	name = "TTT"
+	culture = naga
+	religion = hist
+
+	trait = sign_warrior
+	trait = education_martial_4
+	trait = organizer
+	trait = callous
+	trait = vengeful
+	trait = honest
+
+	prowess = 5
+
+	3328.8.6 = { birth = yes }
+	3362.1.1 = {
+		name = "Big_Mouth"
+		culture = ojel
+		religion = niben_cult
+		dynasty = dyn_strikes_twice
+		effect = {
+			add_trait = varangian
+			set_relation_friend = { reason = friend_generic_history target = character:wayward_column_101 }
+			set_relation_friend = { reason = friend_generic_history target = character:wayward_column_102 }
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	3380.1.1 = { move_to_pool = yes }
+	3415.1.1 = { death = yes }
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=no_hair
+			custom_beards=male_empty
+			custom_headgear=male_empty
+		}
+	}
+}
+wayward_column_101 = {
+	name = "Agronak"
+	culture = mountain_orc
+	religion = code_of_malacath
+
+	trait = sign_lady
+	trait = education_martial_2
+	trait = ambitious
+	trait = stubborn
+	trait = diligent
+	trait = loyal
+
+	prowess = 7
+
+	3334.9.22 = { birth = yes }
+	3362.1.1 = {
+		effect = {
+			add_trait = varangian
+			set_relation_friend = { reason = friend_generic_history target = character:wayward_column_102 }
+			learn_language = language_cyrodiilic
+		}
+	}
+	3368.1.1 = { employer = wayward_column_100 }
+	3380.1.1 = { move_to_pool = yes }
+	3404.1.1 = { death = yes }
+}
+wayward_column_102 = {
+	name = "Kathariel"
+	culture = cyrobosmer
+	religion = pact_exemptions
+	female = yes
+
+	trait = sign_shadow
+	trait = education_intrigue_3
+	trait = gregarious
+	trait = brave
+	trait = diligent
+	trait = lifespan_2
+
+	prowess = 5
+
+	3312.5.4 = { birth = yes }
+	3362.1.1 = {
+		effect = {
+			add_trait = varangian
+		}
+	}
+	3368.1.1 = { employer = wayward_column_100 }
+	3380.1.1 = { move_to_pool = yes }
+	3480.1.1 = { death = yes }
+}

@@ -1,0 +1,78 @@
+﻿#################
+### Malapiit  ###
+#################
+forsaken_cape_mother_1000 = {
+	name = "Bezera"
+	female = yes
+	culture = malapiit
+	religion = twomoonsdance
+
+	trait = sign_apprentice
+	trait = furstock_suthay
+	trait = beauty_good_2
+
+	3308.7.8 = { birth = yes }
+	3358.1.1 = { death = yes }
+}
+forsaken_cape_1000 = {
+	name = "Drojar_Ko"
+	dynasty = dyn_rimapiiti
+	culture = malapiit
+	religion = twomoonsdance
+
+	trait = education_diplomacy_2
+	trait = bastard_founder
+	trait = arbitrary
+	trait = diligent
+	trait = generous
+	trait = furstock_cathay
+	trait = sign_lord
+
+	father = alabaster_100
+	mother = forsaken_cape_mother_1000 
+
+	3339.3.13 = { birth = yes }
+	3353.1.1 = { add_spouse = forsaken_cape_1000_wife }
+	3407.5.8 = { death = yes }
+}
+forsaken_cape_1000_wife = {
+	name = "Unjasi"
+	female = yes
+	culture = malapiit
+	religion = twomoonsdance
+
+	trait = education_martial_3
+	trait = patient
+	trait = ambitious
+	trait = furstock_pahmar
+	trait = sign_apprentice
+
+	3339.7.11 = { birth = yes }
+	3405.8.5 = { death = yes }
+}
+forsaken_cape_1001 = {
+	name = "Sena_daro"
+	female = yes
+	dynasty = dyn_rimapiiti
+	culture = malapiit
+	religion = twomoonsdance
+
+	father = forsaken_cape_1000
+	mother = forsaken_cape_1000_wife
+
+	trait = rowdy
+	trait = furstock_cathay
+	trait = sign_atronach
+
+	3354.11.05 = { birth = yes }
+	3432.3.28 = { death = yes }
+}
+
+#Other
+redmane_khajiit_001 = { #Khajiit chief during Reman I
+	name = "Hunzur_ri" #Lore
+	culture = malapiit
+	religion = manypathsdance
+	2668.1.1 = { birth = yes }
+	2707.1.1 = { death = { death_reason = death_battle } }
+}

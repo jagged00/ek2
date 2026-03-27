@@ -1,0 +1,540 @@
+﻿#Blackcaster Arch-Mages
+
+#Felix Blackcaster
+blackcaster_1000 = { #Founder of Blackcaster (Elinhir) Mages Guild
+	name = "Felix" #Lore
+	dynasty = dyn_augustus
+	culture = colovian
+	religion = eight_divines
+
+	disallow_random_traits = yes
+
+	diplomacy = 6
+	martial = 3
+	stewardship = 4
+	intrigue = 7
+	learning = 4
+
+	trait = deceitful
+	trait = gregarious
+	trait = ambitious
+	trait = education_diplomacy_3
+	trait = education_magic_3
+	trait = schemer
+	trait = sign_mage
+
+	3330.4.12 = { birth = yes }
+	3350.1.1 = { 
+		give_nickname = nick_blackcaster
+		effect = {
+			add_arcana_skill = { VALUE = 6 }
+		} 
+	}
+	3352.1.1 = { add_spouse = blackcaster_1000_wife }
+	3397.1.1 = { death = yes }
+}
+
+blackcaster_1000_wife = { #Local Crown
+	name = "Madaima"
+	culture = crown_culture
+	religion = redguard_cult
+	female = yes
+	3331.1.1 = { birth = yes }
+	3388.1.1 = { death = { death_reason = death_natural_causes } }
+}
+
+#Arch-Mage Yamanu-ko
+blackcaster_1001 = { #Arch-mage of Elinhir during ESO
+	name = "Yamanu_ko" #Lore
+	culture = pellitinian
+	religion = twomoonsdance
+	female = yes
+	trait = education_magic_3
+	trait = education_learning_3
+	trait = ambitious
+	trait = gluttonous
+	trait = calm
+
+	3450.1.1 = { birth = yes }
+	3500.1.1 = {
+		religion = scaled_court #Makes deal with Serpent and becomes corrupted
+		trait = necromancer
+		remove_trait = calm 
+		add_trait = wrathful
+		trait = torturer
+		add_trait = sadistic
+	}
+	3503.1.1 = { death = yes } #Killed by Vestige
+}
+
+blackcaster_1002 = {
+	name = "Zulfan"
+	culture = crown_culture
+	religion = walkabout
+	trait = ambitious
+	trait = greedy
+	trait = arcana_good_1
+	trait = curious
+	disallow_random_traits = yes
+
+	3350.1.1 = { birth = yes }
+	3366.1.1 = {
+		remove_trait = curious
+		trait = education_magic_3
+		trait = education_martial_3
+		trait = paranoid
+	}
+	3370.1.1 = { 
+		employer = blackcaster_1000
+		effect = { add_pressed_claim = title:d_blackcaster } #Need this for Magelord Elective
+	}
+	3416.1.1 = { death = yes }
+}
+
+blackcaster_1003 = {
+	name = "Felicia"
+	dynasty = dyn_augustus
+	culture = colovian
+	religion = eight_divines
+	female = yes
+	father = blackcaster_1000
+	mother = blackcaster_1000_wife
+	trait = curious
+	trait = arrogant
+	disallow_random_traits = yes
+	
+	3368.1.1 = { birth = yes }
+	3384.1.1 = {
+		remove_trait = curious
+		trait = compassionate
+		trait = calm
+		trait = education_learning_3
+		trait = education_magic_3
+	}
+	3397.1.1 = { employer = blackcaster_1002 }
+	3431.1.1 = { death = yes }
+}
+
+blackcaster_1004 = {
+	name = "Morganna"
+	culture = iliac
+	religion = breton_cult
+	female = yes
+	trait = education_magic_3
+	trait = education_learning_3
+	trait = ambitious
+	trait = gregarious
+	trait = impatient
+	3400.1.1 = { birth = yes }
+	3420.1.1 = { employer = blackcaster_1003 }
+	3456.1.1 = { death = yes }
+}
+
+blackcaster_1005 = {
+	name = "Zeno"
+	culture = colovian
+	religion = eight_divines
+
+	trait = education_magic_3
+	trait = education_stewardship_3
+	trait = diligent
+	trait = wrathful
+	trait = humble
+	3430.1.1 = { birth = yes }
+	3446.1.1 = {
+		employer = blackcaster_1004
+		effect = { add_pressed_claim = title:d_blackcaster } #Need this for Magelord Elective
+	}
+	3491.1.1 = { death = yes }
+}
+
+blackcaster_1006 = { #Apprentice of Archmage Yamanu-Ko in ESO
+	name = "Leta" #Lore
+	dynasty = dyn_doniticus
+	culture = heartlander
+	religion = eight_divines
+	female = yes
+	
+	trait = education_magic_2
+	trait = compassionate
+	trait = trusting
+	trait = patient
+	disallow_random_traits = yes
+
+	3470.1.1 = { birth = yes }
+	3495.1.1 = { 
+		employer = blackcaster_1001
+		effect = { add_pressed_claim = title:d_blackcaster } #Need this for Magelord Elective 
+	}
+	3500.1.1 = {
+		religion = scaled_court #Makes deal with Serpent and becomes corrupted
+		trait = necromancer
+		remove_trait = compassionate
+		remove_trait = trusting
+		remove_trait = patient
+		add_trait = wrathful
+		add_trait = sadistic
+		add_trait = paranoid
+		trait = torturer
+	}
+	3503.1.1 = { death = yes }
+}
+
+blackcaster_1007 = { #Apprentice of Archmage Yamanu-Ko in ESO, also Altmer with Dunmer name (reason unknown)
+	name = "Avys" #Lore
+	culture = auridon
+	#Areleth dynasty EK History TODO: there's already dynasty with this name, connect him to them?
+	religion = eight_divines
+	
+	trait = content
+	trait = lifespan_3
+	disallow_random_traits = yes
+
+	3440.1.1 = { birth = yes }
+	3456.1.1 = {
+		trait = education_magic_2
+		trait = education_learning_2
+		trait = calm
+		trait = cynical
+	}
+	3495.1.1 = { 
+		employer = blackcaster_1001
+		effect = { add_pressed_claim = title:d_blackcaster } #Need this for Magelord Elective 
+	}
+	3500.1.1 = {
+		religion = scaled_court #Makes deal with Serpent and becomes corrupted
+		trait = necromancer
+		remove_trait = calm
+		remove_trait = content
+		remove_trait = cynical
+		trait = torturer
+		add_trait = sadistic
+		add_trait = paranoid
+		add_trait = zealous
+	}
+	3503.1.1 = { death = yes }
+}
+
+blackcaster_1008 = { #Ex-apprentice of Archmage Yamanu-Ko, helps you kill her former guildmates
+	name = "Minerva" #Lore
+	dynasty = dyn_lauzon
+	culture = iliac
+	religion = breton_cult
+	female = yes
+
+	trait = education_magic_3
+	trait = education_learning_3
+	trait = compassionate
+	trait = stubborn
+	trait = brave
+
+	3474.1.1 = { birth = yes }
+	3495.1.1 = { 
+		employer = blackcaster_1001
+		effect = { add_pressed_claim = title:d_blackcaster } #Need this for Magelord Elective 
+	}
+	3540.1.1 = { death = yes }
+}
+
+## Dwemer
+
+#Yagrum Bagarn
+bagarn_1000 = {
+	name = "Yagrum"
+	dynasty = dyn_bagarn 
+	culture = amz_vtharden
+	religion = golden_tones
+	give_nickname = nick_last_dwemer
+	dna = yagrum_dna_entry
+	
+	trait = celibate
+	trait = chaste
+	trait = diligent
+	trait = calm
+	trait = education_learning_5
+	trait = shrewd
+	trait = adventurer
+	trait = bagarn
+	
+	portrait_override = {	# Will override the character's appearance
+		portrait_modifier_overrides={
+			#custom_beards=male_beard_dwemer_01 #Unknown portrait modifier
+			custom_hair=no_hair
+			#custom_headgear=no_headgear #Unknown portrait modifier
+		}	
+	}
+	
+	650.1.1 = { 
+		birth = yes
+		effect = {
+			add_character_flag = can_not_marry
+			add_character_flag = ai_will_not_convert
+			#can_inherit = no #Unknown effect
+			learn_language = language_chimeris
+			learn_language = language_dunmeris
+			learn_language = language_daedric
+		}
+		}
+	695.1.1 = { 
+		trait = lifespan_magic_6
+		effect = { 
+			add_character_flag = natural_lifespan_4
+			set_immortal_age = 45 
+		}
+	}
+	3359.1.1 = { move_to_pool = yes }
+	4254.1.1 = { death = yes }
+}
+
+## Dremora
+
+#Velehk Sain
+dremora_1000 = {
+	name = "Velehk"
+	dna = velehk_dna_entry
+	dynasty = 170004 
+	culture = dremora
+	religion = molag_cult
+
+	trait = sadistic
+	trait = impatient
+	trait = honest
+	trait = pirate
+	trait = education_martial_4
+
+	2345.1.1 = { birth = yes }
+	2370.1.1 = { 
+		trait = lifespan_6
+		effect = { 
+			set_immortal_age = 25
+			add_character_flag = ai_will_not_convert
+		}
+	}
+	3497.1.1 = { death = yes }
+	
+
+	portrait_override = {	# Will override the character's appearance
+		portrait_modifier_overrides={
+			custom_hair=male_hair_western_07
+		}	
+	}		
+}
+
+dremora_1001 = {
+	name = "Dias"
+	culture = dremora
+	religion = sanguine_cult
+	
+	trait = lustful
+	
+	3335.1.1 = { birth = yes }
+	3356.1.1 = { employer = delbu_100 }
+	3356.1.1 = { effect = { set_relation_lover = { reason = lover_history target = character:delbu_100 } } }
+	3600.1.1 = { death = yes }
+}
+
+dremora_1002 = {
+	name = "Seris"
+	culture = dremora
+	religion = sanguine_cult
+	
+	trait = lustful
+	
+	3335.1.1 = { birth = yes }
+	3356.1.1 = { employer = delbu_100 }
+	3356.1.1 = { effect= { set_relation_lover = { reason = lover_history target = character:delbu_100 } } }
+	3600.1.1 = { death = yes }
+}
+
+#ESO Dremora
+dremora_mati = {
+	name = "Mati"
+	culture = dremora
+	religion = mehrunes_cult
+
+	3390.1.1 = { birth = yes }
+	3502.6.10 = {
+		death = yes
+		#killed by Vestige
+	}
+}
+
+dremora_molag_kena = { #Molag Kena - Imperial City / Legion Zero
+	name = "Molag_Kena"
+	female = yes
+	dynasty = 170055 
+	culture = dremora
+	religion = molag_cult
+	
+	trait = sadistic
+	trait = impatient
+	trait = deceitful
+	trait = education_intrigue_4
+	
+	3451.1.1 = { birth = yes }
+	3476.12.12 = { 
+		trait = lifespan_6
+		effect = { set_immortal_age = 25 }
+	}
+	3502.12.12 = { death = yes }
+}
+
+#Random Stuff
+# mysterious_killer = {
+	# name = "Mysterious_Killer"
+	
+	# culture = sload
+	# religion = sithis
+
+	# trait = line_of_x
+	#disallow_random_traits = yes
+	
+	# 1.1.1 = { birth = yes }
+	# 1.1.2 = { death = { death_reason = death_vanished } }
+# }
+
+nenalata_alessian_100 = { #Random Alessian guy that takes over Nenalata after Laloriaran
+	name = "Uri-El"
+	dynasty = nibenu_cidian
+	religion = alessian
+	culture = nibenese
+
+	trait = education_martial_3
+	trait = lifestyle_blademaster
+	
+	trait = vengeful
+	trait = brave
+	trait = zealous
+	
+	340.1.1 = { birth = yes }
+	#371 #Fall of Nenalata
+	400.1.1 = { death = yes }
+}
+
+#sibyls of Dibella
+
+dibella_sibyl_1000 = {
+	name = "Marceline"
+	religion = breton_cult
+	culture = iliac
+	female = yes
+	trait = beauty_good_3
+
+	3330.1.1 = { birth = yes }
+	3350.1.1 = {
+		trait = p_dv_dibella
+		trait = sibyl
+		trait = lustful
+	}
+	3381.1.1 = { death = yes }
+}
+
+dibella_sibyl_1001 = {
+	name = "Mercedene"
+	religion = old_gods
+	culture = reachfolk
+	female = yes
+	trait = beauty_good_3
+
+	3341.1.1 = { birth = yes }
+	3350.1.1 = {
+		trait = p_dv_dibella
+		trait = sibyl
+		trait = lustful
+	}
+	3392.1.1 = { death = yes }
+}
+
+dibella_sibyl_1002 = {
+	name = "Mirkaela"
+	religion = eight_divines
+	culture = forebear
+	female = yes
+	trait = beauty_good_3
+
+	3323.1.1 = { birth = yes }
+	3350.1.1 = {
+		trait = p_dv_dibella
+		trait = sibyl
+		trait = lustful
+		trait = lifestyle_poet
+	}
+	3375.1.1 = { death = yes }
+}
+
+# Alessian Order
+
+marukh_100 = {
+	name = "Marukh" #Lore
+	dynasty = dyn_tamrugh
+	culture = imga
+	religion = alessian
+	
+	trait = education_learning_4
+	trait = lifestyle_mystic
+	trait = theologian
+	trait = zealous
+	trait = callous
+	trait = temperate
+
+	260.1.1 = { birth = yes }
+	276.1.1 = {
+		give_nickname = nick_the_prophet
+	}
+	368.1.1 = { death = yes }
+}
+
+cosmas_001 = { #Abbot from "Cleansing of the Fane"
+	name = "Cosmas" #Lore
+	religion = alessian
+	culture = nibenese
+	343.1.1 = { birth = yes }
+	418.1.1 = { death = yes }
+}
+
+zinius_001 = { #Arch-prelate during war of rigtheousness
+	name = "Zinius" #Lore
+	religion = alessian
+	culture = nibenese
+	2266.1.1 = { birth = yes }
+	2331.1.1 = { death = { death_reason = death_battle } }
+}
+
+#Battlelords LAAMP	- these guys have a really cheesy name, but I find it kinda endearing tbh
+halfhand_100 = { #Barak Halfhand, online handle of Raymond Whit Crowley, author of The Ebon Arm
+	name = "Barak"
+	dynasty = dyn_halfhand
+	culture = westmarcher
+	religion = forgotten_gods
+
+	trait = education_martial_2
+	trait = brave
+	trait = compassionate
+	trait = forgiving
+	trait = lifestyle_blademaster
+	trait = p_fg_ebonarm
+
+	3336.1.1 = { birth = yes }
+	3360.1.1 = { effect = { set_relation_friend = { target = character:reins_104 reason = friend_generic_history } } }
+	3360.1.1 = { employer = reins_104 }
+	3415.1.1 = { death = yes }
+}
+battlelord_100 = {	#Dark Elves in Arena reference the 'Black Knight'. Being in Hammerfell, I wonder if this Dark Elf wields one scimitar or two?
+	name = "Drivas"
+	culture = gah_julan
+	religion = forgotten_gods
+
+	trait = education_martial_2
+	trait = stubborn
+	trait = compassionate
+	trait = just
+	trait = lifestyle_blademaster
+	trait = adventurer
+	trait = p_fg_ebonarm
+
+	3295.1.1 = { birth = yes }
+	3360.1.1 = { effect = { set_relation_friend = { target = character:reins_104 reason = friend_generic_history } } }
+	3360.1.1 = { employer = reins_104 }
+	3400.1.1 = { move_to_pool = yes }
+	3540.1.1 = { death = yes }
+}
