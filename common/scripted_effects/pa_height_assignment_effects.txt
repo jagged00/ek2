@@ -431,19 +431,27 @@ pa_assign_height_from_parents_traits_effect = {
 
 pa_assign_height_from_parents_culture_effect = {
 	# When no explicit parent height traits exist, inherit probabilities from parent cultures.
+	# Keep trait assignment in the original character scope.
+	save_scope_as = pa_height_target
 	random_list = {
 		50 = {
 			if = {
 				limit = { exists = mother }
-				mother = { pa_assign_height_from_culture_effect = yes }
+				mother = {
+					scope:pa_height_target = { pa_assign_height_from_culture_effect = yes }
+				}
 			}
 			else_if = {
 				limit = { exists = real_father }
-				real_father = { pa_assign_height_from_culture_effect = yes }
+				real_father = {
+					scope:pa_height_target = { pa_assign_height_from_culture_effect = yes }
+				}
 			}
 			else_if = {
 				limit = { exists = father }
-				father = { pa_assign_height_from_culture_effect = yes }
+				father = {
+					scope:pa_height_target = { pa_assign_height_from_culture_effect = yes }
+				}
 			}
 			else = {
 				pa_assign_height_from_culture_effect = yes
@@ -452,15 +460,21 @@ pa_assign_height_from_parents_culture_effect = {
 		50 = {
 			if = {
 				limit = { exists = real_father }
-				real_father = { pa_assign_height_from_culture_effect = yes }
+				real_father = {
+					scope:pa_height_target = { pa_assign_height_from_culture_effect = yes }
+				}
 			}
 			else_if = {
 				limit = { exists = father }
-				father = { pa_assign_height_from_culture_effect = yes }
+				father = {
+					scope:pa_height_target = { pa_assign_height_from_culture_effect = yes }
+				}
 			}
 			else_if = {
 				limit = { exists = mother }
-				mother = { pa_assign_height_from_culture_effect = yes }
+				mother = {
+					scope:pa_height_target = { pa_assign_height_from_culture_effect = yes }
+				}
 			}
 			else = {
 				pa_assign_height_from_culture_effect = yes
