@@ -848,6 +848,7 @@ whitestrake_100 = {  # "Nibenay Warlord"
 	trait = callous
 	trait = zealous
 	trait = strong
+	trait = tall_4
 	trait = possessed_genetic
 	trait = p_dv_shezarr
 
@@ -905,6 +906,7 @@ adonai_100 = {
 	trait = sadistic
 	trait = zealous
 	trait = physique_good_3
+	trait = tall_3
 	trait = beauty_good_3
 	trait = pure_blooded
 	trait = lifespan_6
@@ -1194,6 +1196,7 @@ reman_100 = { #Reman
 	trait = august
 	trait = flexible_leader
 	trait = organizer
+	trait = tall_2
 	trait = lifestyle_reveler #Sanguine stuff
 	trait = fecund #The you-know-what vaults on the moon
 	trait = dragonborn
@@ -1271,6 +1274,7 @@ reman_102 = { #Reman II.
 	trait = shrewd
 	trait = ambitious #Started Four-Score War and finished conquest of Argonia
 	trait = gregarious #Made peace with Nord rebels
+	trait = tall_2
 	trait = diligent #Wanted to finish conquest of Tamriel
 	trait = dragonborn
 
@@ -1345,6 +1349,7 @@ reman_104 = { #Reman III
 	trait = paranoid
 	trait = lustful # seriously, this guy took too many mistresses
 	trait = vengeful
+	trait = tall_1
 	trait = dragonborn
 
 	2863.10.4 = { birth = yes }

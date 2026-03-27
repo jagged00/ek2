@@ -1,0 +1,582 @@
+pa_apply_lore_height_trait_effect = {
+	if = {
+		limit = {
+			NOT = {
+				OR = {
+					has_trait = short_1
+					has_trait = short_2
+					has_trait = short_3
+					has_trait = short_4
+					has_trait = short_5
+					has_trait = average_height
+					has_trait = tall_1
+					has_trait = tall_2
+					has_trait = tall_3
+					has_trait = tall_4
+					has_trait = tall_5
+				}
+			}
+		}
+
+		# Priority 1: inherit from real parents' existing height traits when available.
+		if = {
+			limit = {
+				OR = {
+					mother = {
+						OR = {
+							has_trait = short_1
+							has_trait = short_2
+							has_trait = short_3
+							has_trait = short_4
+							has_trait = short_5
+							has_trait = average_height
+							has_trait = tall_1
+							has_trait = tall_2
+							has_trait = tall_3
+							has_trait = tall_4
+							has_trait = tall_5
+						}
+					}
+					real_father = {
+						OR = {
+							has_trait = short_1
+							has_trait = short_2
+							has_trait = short_3
+							has_trait = short_4
+							has_trait = short_5
+							has_trait = average_height
+							has_trait = tall_1
+							has_trait = tall_2
+							has_trait = tall_3
+							has_trait = tall_4
+							has_trait = tall_5
+						}
+					}
+					father = {
+						OR = {
+							has_trait = short_1
+							has_trait = short_2
+							has_trait = short_3
+							has_trait = short_4
+							has_trait = short_5
+							has_trait = average_height
+							has_trait = tall_1
+							has_trait = tall_2
+							has_trait = tall_3
+							has_trait = tall_4
+							has_trait = tall_5
+						}
+					}
+				}
+			}
+			pa_assign_height_from_parents_traits_effect = yes
+		}
+		# Priority 2: no parent height traits, use real parents' culture heritages.
+		else_if = {
+			limit = {
+				OR = {
+					exists = mother
+					exists = real_father
+					exists = father
+				}
+			}
+			pa_assign_height_from_parents_culture_effect = yes
+		}
+		# Priority 3: no parents in scope, use character's own culture.
+		else = {
+			pa_assign_height_from_culture_effect = yes
+		}
+	}
+}
+
+pa_assign_height_from_parents_traits_effect = {
+	# Blend from mother/father traits with small variance around inherited build.
+	random_list = {
+		50 = {
+			if = {
+				limit = {
+					mother = { has_trait = short_5 }
+				}
+				random_list = {
+					85 = { add_trait = short_5 }
+					15 = { add_trait = short_4 }
+				}
+			}
+			else_if = {
+				limit = {
+					mother = { has_trait = short_4 }
+				}
+				random_list = {
+					20 = { add_trait = short_5 }
+					60 = { add_trait = short_4 }
+					20 = { add_trait = short_3 }
+				}
+			}
+			else_if = {
+				limit = {
+					mother = { has_trait = short_3 }
+				}
+				random_list = {
+					20 = { add_trait = short_4 }
+					60 = { add_trait = short_3 }
+					20 = { add_trait = short_2 }
+				}
+			}
+			else_if = {
+				limit = {
+					mother = { has_trait = short_2 }
+				}
+				random_list = {
+					20 = { add_trait = short_3 }
+					60 = { add_trait = short_2 }
+					20 = { add_trait = short_1 }
+				}
+			}
+			else_if = {
+				limit = {
+					mother = { has_trait = short_1 }
+				}
+				random_list = {
+					20 = { add_trait = short_2 }
+					60 = { add_trait = short_1 }
+					20 = { add_trait = average_height }
+				}
+			}
+			else_if = {
+				limit = {
+					mother = { has_trait = average_height }
+				}
+				random_list = {
+					20 = { add_trait = short_1 }
+					60 = { add_trait = average_height }
+					20 = { add_trait = tall_1 }
+				}
+			}
+			else_if = {
+				limit = {
+					mother = { has_trait = tall_1 }
+				}
+				random_list = {
+					20 = { add_trait = average_height }
+					60 = { add_trait = tall_1 }
+					20 = { add_trait = tall_2 }
+				}
+			}
+			else_if = {
+				limit = {
+					mother = { has_trait = tall_2 }
+				}
+				random_list = {
+					20 = { add_trait = tall_1 }
+					60 = { add_trait = tall_2 }
+					20 = { add_trait = tall_3 }
+				}
+			}
+			else_if = {
+				limit = {
+					mother = { has_trait = tall_3 }
+				}
+				random_list = {
+					20 = { add_trait = tall_2 }
+					60 = { add_trait = tall_3 }
+					20 = { add_trait = tall_4 }
+				}
+			}
+			else_if = {
+				limit = {
+					mother = { has_trait = tall_4 }
+				}
+				random_list = {
+					20 = { add_trait = tall_3 }
+					60 = { add_trait = tall_4 }
+					20 = { add_trait = tall_5 }
+				}
+			}
+			else_if = {
+				limit = {
+					mother = { has_trait = tall_5 }
+				}
+				random_list = {
+					15 = { add_trait = tall_4 }
+					85 = { add_trait = tall_5 }
+				}
+			}
+			else = {
+				pa_assign_height_from_parents_culture_effect = yes
+			}
+		}
+		50 = {
+			if = {
+				limit = {
+					real_father = { has_trait = short_5 }
+				}
+				random_list = {
+					85 = { add_trait = short_5 }
+					15 = { add_trait = short_4 }
+				}
+			}
+			else_if = {
+				limit = {
+					real_father = { has_trait = short_4 }
+				}
+				random_list = {
+					20 = { add_trait = short_5 }
+					60 = { add_trait = short_4 }
+					20 = { add_trait = short_3 }
+				}
+			}
+			else_if = {
+				limit = {
+					real_father = { has_trait = short_3 }
+				}
+				random_list = {
+					20 = { add_trait = short_4 }
+					60 = { add_trait = short_3 }
+					20 = { add_trait = short_2 }
+				}
+			}
+			else_if = {
+				limit = {
+					real_father = { has_trait = short_2 }
+				}
+				random_list = {
+					20 = { add_trait = short_3 }
+					60 = { add_trait = short_2 }
+					20 = { add_trait = short_1 }
+				}
+			}
+			else_if = {
+				limit = {
+					real_father = { has_trait = short_1 }
+				}
+				random_list = {
+					20 = { add_trait = short_2 }
+					60 = { add_trait = short_1 }
+					20 = { add_trait = average_height }
+				}
+			}
+			else_if = {
+				limit = {
+					real_father = { has_trait = average_height }
+				}
+				random_list = {
+					20 = { add_trait = short_1 }
+					60 = { add_trait = average_height }
+					20 = { add_trait = tall_1 }
+				}
+			}
+			else_if = {
+				limit = {
+					real_father = { has_trait = tall_1 }
+				}
+				random_list = {
+					20 = { add_trait = average_height }
+					60 = { add_trait = tall_1 }
+					20 = { add_trait = tall_2 }
+				}
+			}
+			else_if = {
+				limit = {
+					real_father = { has_trait = tall_2 }
+				}
+				random_list = {
+					20 = { add_trait = tall_1 }
+					60 = { add_trait = tall_2 }
+					20 = { add_trait = tall_3 }
+				}
+			}
+			else_if = {
+				limit = {
+					real_father = { has_trait = tall_3 }
+				}
+				random_list = {
+					20 = { add_trait = tall_2 }
+					60 = { add_trait = tall_3 }
+					20 = { add_trait = tall_4 }
+				}
+			}
+			else_if = {
+				limit = {
+					real_father = { has_trait = tall_4 }
+				}
+				random_list = {
+					20 = { add_trait = tall_3 }
+					60 = { add_trait = tall_4 }
+					20 = { add_trait = tall_5 }
+				}
+			}
+			else_if = {
+				limit = {
+					real_father = { has_trait = tall_5 }
+				}
+				random_list = {
+					15 = { add_trait = tall_4 }
+					85 = { add_trait = tall_5 }
+				}
+			}
+			else_if = {
+				limit = {
+					father = { has_trait = short_5 }
+				}
+				random_list = {
+					85 = { add_trait = short_5 }
+					15 = { add_trait = short_4 }
+				}
+			}
+			else_if = {
+				limit = {
+					father = { has_trait = short_4 }
+				}
+				random_list = {
+					20 = { add_trait = short_5 }
+					60 = { add_trait = short_4 }
+					20 = { add_trait = short_3 }
+				}
+			}
+			else_if = {
+				limit = {
+					father = { has_trait = short_3 }
+				}
+				random_list = {
+					20 = { add_trait = short_4 }
+					60 = { add_trait = short_3 }
+					20 = { add_trait = short_2 }
+				}
+			}
+			else_if = {
+				limit = {
+					father = { has_trait = short_2 }
+				}
+				random_list = {
+					20 = { add_trait = short_3 }
+					60 = { add_trait = short_2 }
+					20 = { add_trait = short_1 }
+				}
+			}
+			else_if = {
+				limit = {
+					father = { has_trait = short_1 }
+				}
+				random_list = {
+					20 = { add_trait = short_2 }
+					60 = { add_trait = short_1 }
+					20 = { add_trait = average_height }
+				}
+			}
+			else_if = {
+				limit = {
+					father = { has_trait = average_height }
+				}
+				random_list = {
+					20 = { add_trait = short_1 }
+					60 = { add_trait = average_height }
+					20 = { add_trait = tall_1 }
+				}
+			}
+			else_if = {
+				limit = {
+					father = { has_trait = tall_1 }
+				}
+				random_list = {
+					20 = { add_trait = average_height }
+					60 = { add_trait = tall_1 }
+					20 = { add_trait = tall_2 }
+				}
+			}
+			else_if = {
+				limit = {
+					father = { has_trait = tall_2 }
+				}
+				random_list = {
+					20 = { add_trait = tall_1 }
+					60 = { add_trait = tall_2 }
+					20 = { add_trait = tall_3 }
+				}
+			}
+			else_if = {
+				limit = {
+					father = { has_trait = tall_3 }
+				}
+				random_list = {
+					20 = { add_trait = tall_2 }
+					60 = { add_trait = tall_3 }
+					20 = { add_trait = tall_4 }
+				}
+			}
+			else_if = {
+				limit = {
+					father = { has_trait = tall_4 }
+				}
+				random_list = {
+					20 = { add_trait = tall_3 }
+					60 = { add_trait = tall_4 }
+					20 = { add_trait = tall_5 }
+				}
+			}
+			else_if = {
+				limit = {
+					father = { has_trait = tall_5 }
+				}
+				random_list = {
+					15 = { add_trait = tall_4 }
+					85 = { add_trait = tall_5 }
+				}
+			}
+			else = {
+				pa_assign_height_from_parents_culture_effect = yes
+			}
+		}
+	}
+}
+
+pa_assign_height_from_parents_culture_effect = {
+	# When no explicit parent height traits exist, inherit probabilities from parent cultures.
+	random_list = {
+		50 = {
+			if = {
+				limit = { exists = mother }
+				mother = { pa_assign_height_from_culture_effect = yes }
+			}
+			else_if = {
+				limit = { exists = real_father }
+				real_father = { pa_assign_height_from_culture_effect = yes }
+			}
+			else_if = {
+				limit = { exists = father }
+				father = { pa_assign_height_from_culture_effect = yes }
+			}
+			else = {
+				pa_assign_height_from_culture_effect = yes
+			}
+		}
+		50 = {
+			if = {
+				limit = { exists = real_father }
+				real_father = { pa_assign_height_from_culture_effect = yes }
+			}
+			else_if = {
+				limit = { exists = father }
+				father = { pa_assign_height_from_culture_effect = yes }
+			}
+			else_if = {
+				limit = { exists = mother }
+				mother = { pa_assign_height_from_culture_effect = yes }
+			}
+			else = {
+				pa_assign_height_from_culture_effect = yes
+			}
+		}
+	}
+}
+
+pa_assign_height_from_culture_effect = {
+	if = {
+		limit = {
+			culture = { has_cultural_pillar = heritage_atmoran_giant }
+		}
+		random_list = {
+			70 = { add_trait = tall_5 }
+			25 = { add_trait = tall_4 }
+			5 = { add_trait = tall_3 }
+		}
+	}
+	else_if = {
+		limit = {
+			culture = { has_cultural_pillar = heritage_atmoran }
+		}
+		random_list = {
+			10 = { add_trait = average_height }
+			35 = { add_trait = tall_1 }
+			30 = { add_trait = tall_2 }
+			20 = { add_trait = tall_3 }
+			5 = { add_trait = tall_4 }
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_orcish }
+				culture = { has_cultural_pillar = heritage_yokudan }
+			}
+		}
+		random_list = {
+			15 = { add_trait = average_height }
+			35 = { add_trait = tall_1 }
+			30 = { add_trait = tall_2 }
+			15 = { add_trait = tall_3 }
+			5 = { add_trait = short_1 }
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_aldmeri }
+				culture = { has_cultural_pillar = heritage_ayleid }
+				culture = { has_cultural_pillar = heritage_chimeri }
+				culture = { has_cultural_pillar = heritage_dunmeri }
+				culture = { has_cultural_pillar = heritage_maormeri }
+				culture = { has_cultural_pillar = heritage_falmeri }
+				culture = { has_cultural_pillar = heritage_dwemeri }
+				culture = { has_cultural_pillar = heritage_tsaesci }
+			}
+		}
+		random_list = {
+			15 = { add_trait = short_1 }
+			45 = { add_trait = average_height }
+			25 = { add_trait = tall_1 }
+			10 = { add_trait = tall_2 }
+			5 = { add_trait = short_2 }
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_bosmeri }
+				culture = { has_cultural_pillar = heritage_khajiiti }
+				culture = { has_cultural_pillar = heritage_goblinken }
+				culture = { has_cultural_pillar = heritage_lilmothiit }
+			}
+		}
+		random_list = {
+			20 = { add_trait = short_2 }
+			35 = { add_trait = short_1 }
+			30 = { add_trait = average_height }
+			10 = { add_trait = tall_1 }
+			5 = { add_trait = short_3 }
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_argonian }
+				culture = { has_cultural_pillar = heritage_kothri }
+				culture = { has_cultural_pillar = heritage_imgan }
+				culture = { has_cultural_pillar = heritage_breton }
+				culture = { has_cultural_pillar = heritage_cyrod }
+				culture = { has_cultural_pillar = heritage_cyrodiilic }
+				culture = { has_cultural_pillar = heritage_deathlander }
+			}
+		}
+		random_list = {
+			15 = { add_trait = short_1 }
+			50 = { add_trait = average_height }
+			25 = { add_trait = tall_1 }
+			7 = { add_trait = tall_2 }
+			3 = { add_trait = short_2 }
+		}
+	}
+	else_if = {
+		limit = {
+			culture = { has_cultural_pillar = heritage_dremora }
+		}
+		random_list = {
+			20 = { add_trait = average_height }
+			35 = { add_trait = tall_1 }
+			30 = { add_trait = tall_2 }
+			15 = { add_trait = tall_3 }
+		}
+	}
+	else = {
+		add_trait = average_height
+	}
+}
