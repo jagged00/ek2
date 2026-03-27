@@ -1,0 +1,23 @@
+on_game_start = {
+	effect = {
+		every_character = {
+			pa_apply_lore_height_trait_effect = yes
+		}
+	}
+}
+
+on_monthly_pulse = {
+	effect = {
+		every_living_character = {
+			pa_apply_lore_height_trait_effect = yes
+		}
+	}
+}
+
+on_birth_child = {
+	effect = {
+		scope:child = {
+			pa_apply_lore_height_trait_effect = yes
+		}
+	}
+}
