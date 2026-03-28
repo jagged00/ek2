@@ -229,22 +229,22 @@ pa_inherit_single_race_flag_effect = {
 			if = {
 				limit = { exists = mother }
 				mother = {
-					if = { limit = { has_character_flag = race_giant } add_character_flag = race_giant }
-					else_if = { limit = { has_character_flag = race_atmoran } add_character_flag = race_atmoran }
-					else_if = { limit = { has_character_flag = race_orc } add_character_flag = race_orc }
-					else_if = { limit = { has_character_flag = race_yokudan } add_character_flag = race_yokudan }
-					else_if = { limit = { has_character_flag = race_mer } add_character_flag = race_mer }
-					else_if = { limit = { has_character_flag = race_bosmer } add_character_flag = race_bosmer }
-					else_if = { limit = { has_character_flag = race_khajiit } add_character_flag = race_khajiit }
-					else_if = { limit = { has_character_flag = race_goblinken } add_character_flag = race_goblinken }
-					else_if = { limit = { has_character_flag = race_lilmothiit } add_character_flag = race_lilmothiit }
-					else_if = { limit = { has_character_flag = race_argonian } add_character_flag = race_argonian }
-					else_if = { limit = { has_character_flag = race_kothri } add_character_flag = race_kothri }
-					else_if = { limit = { has_character_flag = race_imga } add_character_flag = race_imga }
-					else_if = { limit = { has_character_flag = race_breton } add_character_flag = race_breton }
-					else_if = { limit = { has_character_flag = race_cyrod } add_character_flag = race_cyrod }
-					else_if = { limit = { has_character_flag = race_deathlander } add_character_flag = race_deathlander }
-					else_if = { limit = { has_character_flag = race_daedra } add_character_flag = race_daedra }
+					if = { limit = { has_character_flag = race_giant } PREV = { add_character_flag = race_giant } }
+					else_if = { limit = { has_character_flag = race_atmoran } PREV = { add_character_flag = race_atmoran } }
+					else_if = { limit = { has_character_flag = race_orc } PREV = { add_character_flag = race_orc } }
+					else_if = { limit = { has_character_flag = race_yokudan } PREV = { add_character_flag = race_yokudan } }
+					else_if = { limit = { has_character_flag = race_mer } PREV = { add_character_flag = race_mer } }
+					else_if = { limit = { has_character_flag = race_bosmer } PREV = { add_character_flag = race_bosmer } }
+					else_if = { limit = { has_character_flag = race_khajiit } PREV = { add_character_flag = race_khajiit } }
+					else_if = { limit = { has_character_flag = race_goblinken } PREV = { add_character_flag = race_goblinken } }
+					else_if = { limit = { has_character_flag = race_lilmothiit } PREV = { add_character_flag = race_lilmothiit } }
+					else_if = { limit = { has_character_flag = race_argonian } PREV = { add_character_flag = race_argonian } }
+					else_if = { limit = { has_character_flag = race_kothri } PREV = { add_character_flag = race_kothri } }
+					else_if = { limit = { has_character_flag = race_imga } PREV = { add_character_flag = race_imga } }
+					else_if = { limit = { has_character_flag = race_breton } PREV = { add_character_flag = race_breton } }
+					else_if = { limit = { has_character_flag = race_cyrod } PREV = { add_character_flag = race_cyrod } }
+					else_if = { limit = { has_character_flag = race_deathlander } PREV = { add_character_flag = race_deathlander } }
+					else_if = { limit = { has_character_flag = race_daedra } PREV = { add_character_flag = race_daedra } }
 				}
 			}
 		}
@@ -254,43 +254,43 @@ pa_inherit_single_race_flag_effect = {
 				if = {
 					limit = { exists = real_father }
 					real_father = {
-						if = { limit = { has_character_flag = race_giant } add_character_flag = race_giant }
-						else_if = { limit = { has_character_flag = race_atmoran } add_character_flag = race_atmoran }
-						else_if = { limit = { has_character_flag = race_orc } add_character_flag = race_orc }
-						else_if = { limit = { has_character_flag = race_yokudan } add_character_flag = race_yokudan }
-						else_if = { limit = { has_character_flag = race_mer } add_character_flag = race_mer }
-						else_if = { limit = { has_character_flag = race_bosmer } add_character_flag = race_bosmer }
-						else_if = { limit = { has_character_flag = race_khajiit } add_character_flag = race_khajiit }
-						else_if = { limit = { has_character_flag = race_goblinken } add_character_flag = race_goblinken }
-						else_if = { limit = { has_character_flag = race_lilmothiit } add_character_flag = race_lilmothiit }
-						else_if = { limit = { has_character_flag = race_argonian } add_character_flag = race_argonian }
-						else_if = { limit = { has_character_flag = race_kothri } add_character_flag = race_kothri }
-						else_if = { limit = { has_character_flag = race_imga } add_character_flag = race_imga }
-						else_if = { limit = { has_character_flag = race_breton } add_character_flag = race_breton }
-						else_if = { limit = { has_character_flag = race_cyrod } add_character_flag = race_cyrod }
-						else_if = { limit = { has_character_flag = race_deathlander } add_character_flag = race_deathlander }
-						else_if = { limit = { has_character_flag = race_daedra } add_character_flag = race_daedra }
+						if = { limit = { has_character_flag = race_giant } PREV = { add_character_flag = race_giant } }
+						else_if = { limit = { has_character_flag = race_atmoran } PREV = { add_character_flag = race_atmoran } }
+						else_if = { limit = { has_character_flag = race_orc } PREV = { add_character_flag = race_orc } }
+						else_if = { limit = { has_character_flag = race_yokudan } PREV = { add_character_flag = race_yokudan } }
+						else_if = { limit = { has_character_flag = race_mer } PREV = { add_character_flag = race_mer } }
+						else_if = { limit = { has_character_flag = race_bosmer } PREV = { add_character_flag = race_bosmer } }
+						else_if = { limit = { has_character_flag = race_khajiit } PREV = { add_character_flag = race_khajiit } }
+						else_if = { limit = { has_character_flag = race_goblinken } PREV = { add_character_flag = race_goblinken } }
+						else_if = { limit = { has_character_flag = race_lilmothiit } PREV = { add_character_flag = race_lilmothiit } }
+						else_if = { limit = { has_character_flag = race_argonian } PREV = { add_character_flag = race_argonian } }
+						else_if = { limit = { has_character_flag = race_kothri } PREV = { add_character_flag = race_kothri } }
+						else_if = { limit = { has_character_flag = race_imga } PREV = { add_character_flag = race_imga } }
+						else_if = { limit = { has_character_flag = race_breton } PREV = { add_character_flag = race_breton } }
+						else_if = { limit = { has_character_flag = race_cyrod } PREV = { add_character_flag = race_cyrod } }
+						else_if = { limit = { has_character_flag = race_deathlander } PREV = { add_character_flag = race_deathlander } }
+						else_if = { limit = { has_character_flag = race_daedra } PREV = { add_character_flag = race_daedra } }
 					}
 				}
 				else_if = {
 					limit = { exists = father }
 					father = {
-						if = { limit = { has_character_flag = race_giant } add_character_flag = race_giant }
-						else_if = { limit = { has_character_flag = race_atmoran } add_character_flag = race_atmoran }
-						else_if = { limit = { has_character_flag = race_orc } add_character_flag = race_orc }
-						else_if = { limit = { has_character_flag = race_yokudan } add_character_flag = race_yokudan }
-						else_if = { limit = { has_character_flag = race_mer } add_character_flag = race_mer }
-						else_if = { limit = { has_character_flag = race_bosmer } add_character_flag = race_bosmer }
-						else_if = { limit = { has_character_flag = race_khajiit } add_character_flag = race_khajiit }
-						else_if = { limit = { has_character_flag = race_goblinken } add_character_flag = race_goblinken }
-						else_if = { limit = { has_character_flag = race_lilmothiit } add_character_flag = race_lilmothiit }
-						else_if = { limit = { has_character_flag = race_argonian } add_character_flag = race_argonian }
-						else_if = { limit = { has_character_flag = race_kothri } add_character_flag = race_kothri }
-						else_if = { limit = { has_character_flag = race_imga } add_character_flag = race_imga }
-						else_if = { limit = { has_character_flag = race_breton } add_character_flag = race_breton }
-						else_if = { limit = { has_character_flag = race_cyrod } add_character_flag = race_cyrod }
-						else_if = { limit = { has_character_flag = race_deathlander } add_character_flag = race_deathlander }
-						else_if = { limit = { has_character_flag = race_daedra } add_character_flag = race_daedra }
+						if = { limit = { has_character_flag = race_giant } PREV = { add_character_flag = race_giant } }
+						else_if = { limit = { has_character_flag = race_atmoran } PREV = { add_character_flag = race_atmoran } }
+						else_if = { limit = { has_character_flag = race_orc } PREV = { add_character_flag = race_orc } }
+						else_if = { limit = { has_character_flag = race_yokudan } PREV = { add_character_flag = race_yokudan } }
+						else_if = { limit = { has_character_flag = race_mer } PREV = { add_character_flag = race_mer } }
+						else_if = { limit = { has_character_flag = race_bosmer } PREV = { add_character_flag = race_bosmer } }
+						else_if = { limit = { has_character_flag = race_khajiit } PREV = { add_character_flag = race_khajiit } }
+						else_if = { limit = { has_character_flag = race_goblinken } PREV = { add_character_flag = race_goblinken } }
+						else_if = { limit = { has_character_flag = race_lilmothiit } PREV = { add_character_flag = race_lilmothiit } }
+						else_if = { limit = { has_character_flag = race_argonian } PREV = { add_character_flag = race_argonian } }
+						else_if = { limit = { has_character_flag = race_kothri } PREV = { add_character_flag = race_kothri } }
+						else_if = { limit = { has_character_flag = race_imga } PREV = { add_character_flag = race_imga } }
+						else_if = { limit = { has_character_flag = race_breton } PREV = { add_character_flag = race_breton } }
+						else_if = { limit = { has_character_flag = race_cyrod } PREV = { add_character_flag = race_cyrod } }
+						else_if = { limit = { has_character_flag = race_deathlander } PREV = { add_character_flag = race_deathlander } }
+						else_if = { limit = { has_character_flag = race_daedra } PREV = { add_character_flag = race_daedra } }
 					}
 				}
 			}
