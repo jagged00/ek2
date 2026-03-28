@@ -18,6 +18,39 @@ pa_apply_lore_height_trait_effect = {
 			}
 		}
 
+		# Ensure each character has exactly one race flag before assigning height.
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+					has_character_flag = race_giant
+					has_character_flag = race_atmoran
+					has_character_flag = race_orc
+					has_character_flag = race_yokudan
+					has_character_flag = race_mer
+					has_character_flag = race_bosmer
+					has_character_flag = race_khajiit
+					has_character_flag = race_goblinken
+					has_character_flag = race_lilmothiit
+					has_character_flag = race_argonian
+					has_character_flag = race_kothri
+					has_character_flag = race_imga
+					has_character_flag = race_breton
+					has_character_flag = race_cyrod
+					has_character_flag = race_deathlander
+					has_character_flag = race_daedra
+				}
+				}
+			}
+			if = {
+				limit = { OR = { exists = mother exists = real_father exists = father } }
+				pa_inherit_single_race_flag_effect = yes
+			}
+			else = {
+				pa_assign_single_race_flag_from_culture_effect = yes
+			}
+		}
+
 		# Priority 1: inherit from real parents' existing height traits when available.
 		if = {
 			limit = {
@@ -71,7 +104,7 @@ pa_apply_lore_height_trait_effect = {
 			}
 			pa_assign_height_from_parents_traits_effect = yes
 		}
-		# Priority 2: no parent height traits, use real parents' culture heritages.
+		# Priority 2: no parent height traits, use real parents' race flags.
 		else_if = {
 			limit = {
 				OR = {
@@ -80,12 +113,213 @@ pa_apply_lore_height_trait_effect = {
 					exists = father
 				}
 			}
-			pa_assign_height_from_parents_culture_effect = yes
+			pa_assign_height_from_parents_race_effect = yes
 		}
-		# Priority 3: no parents in scope, use character's own culture.
+		# Priority 3: no parents in scope, use character's own race flag (or derive one from culture as fallback).
 		else = {
-			pa_assign_height_from_culture_effect = yes
+			pa_assign_height_from_race_effect = yes
 		}
+	}
+}
+
+
+
+pa_clear_race_flags_effect = {
+	remove_character_flag = race_giant
+	remove_character_flag = race_atmoran
+	remove_character_flag = race_orc
+	remove_character_flag = race_yokudan
+	remove_character_flag = race_mer
+	remove_character_flag = race_bosmer
+	remove_character_flag = race_khajiit
+	remove_character_flag = race_goblinken
+	remove_character_flag = race_lilmothiit
+	remove_character_flag = race_argonian
+	remove_character_flag = race_kothri
+	remove_character_flag = race_imga
+	remove_character_flag = race_breton
+	remove_character_flag = race_cyrod
+	remove_character_flag = race_deathlander
+	remove_character_flag = race_daedra
+}
+
+pa_assign_single_race_flag_from_culture_effect = {
+	pa_clear_race_flags_effect = yes
+	if = {
+		limit = { culture = { has_cultural_pillar = heritage_atmoran_giant } }
+		add_character_flag = race_giant
+	}
+	else_if = {
+		limit = { culture = { has_cultural_pillar = heritage_atmoran } }
+		add_character_flag = race_atmoran
+	}
+	else_if = {
+		limit = { culture = { has_cultural_pillar = heritage_orcish } }
+		add_character_flag = race_orc
+	}
+	else_if = {
+		limit = { culture = { has_cultural_pillar = heritage_yokudan } }
+		add_character_flag = race_yokudan
+	}
+	else_if = {
+		limit = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_aldmeri }
+				culture = { has_cultural_pillar = heritage_ayleid }
+				culture = { has_cultural_pillar = heritage_chimeri }
+				culture = { has_cultural_pillar = heritage_dunmeri }
+				culture = { has_cultural_pillar = heritage_maormeri }
+				culture = { has_cultural_pillar = heritage_falmeri }
+				culture = { has_cultural_pillar = heritage_dwemeri }
+				culture = { has_cultural_pillar = heritage_tsaesci }
+			}
+		}
+		add_character_flag = race_mer
+	}
+	else_if = {
+		limit = { culture = { has_cultural_pillar = heritage_bosmeri } }
+		add_character_flag = race_bosmer
+	}
+	else_if = {
+		limit = { culture = { has_cultural_pillar = heritage_khajiiti } }
+		add_character_flag = race_khajiit
+	}
+	else_if = {
+		limit = { culture = { has_cultural_pillar = heritage_goblinken } }
+		add_character_flag = race_goblinken
+	}
+	else_if = {
+		limit = { culture = { has_cultural_pillar = heritage_lilmothiit } }
+		add_character_flag = race_lilmothiit
+	}
+	else_if = {
+		limit = { culture = { has_cultural_pillar = heritage_argonian } }
+		add_character_flag = race_argonian
+	}
+	else_if = {
+		limit = { culture = { has_cultural_pillar = heritage_kothri } }
+		add_character_flag = race_kothri
+	}
+	else_if = {
+		limit = { culture = { has_cultural_pillar = heritage_imgan } }
+		add_character_flag = race_imga
+	}
+	else_if = {
+		limit = { culture = { has_cultural_pillar = heritage_breton } }
+		add_character_flag = race_breton
+	}
+	else_if = {
+		limit = { OR = { culture = { has_cultural_pillar = heritage_cyrod } culture = { has_cultural_pillar = heritage_cyrodiilic } } }
+		add_character_flag = race_cyrod
+	}
+	else_if = {
+		limit = { culture = { has_cultural_pillar = heritage_deathlander } }
+		add_character_flag = race_deathlander
+	}
+	else_if = {
+		limit = { culture = { has_cultural_pillar = heritage_dremora } }
+		add_character_flag = race_daedra
+	}
+}
+
+pa_inherit_single_race_flag_effect = {
+	pa_clear_race_flags_effect = yes
+	random_list = {
+		50 = {
+			if = {
+				limit = { exists = mother }
+				mother = {
+					if = { limit = { has_character_flag = race_giant } add_character_flag = race_giant }
+					else_if = { limit = { has_character_flag = race_atmoran } add_character_flag = race_atmoran }
+					else_if = { limit = { has_character_flag = race_orc } add_character_flag = race_orc }
+					else_if = { limit = { has_character_flag = race_yokudan } add_character_flag = race_yokudan }
+					else_if = { limit = { has_character_flag = race_mer } add_character_flag = race_mer }
+					else_if = { limit = { has_character_flag = race_bosmer } add_character_flag = race_bosmer }
+					else_if = { limit = { has_character_flag = race_khajiit } add_character_flag = race_khajiit }
+					else_if = { limit = { has_character_flag = race_goblinken } add_character_flag = race_goblinken }
+					else_if = { limit = { has_character_flag = race_lilmothiit } add_character_flag = race_lilmothiit }
+					else_if = { limit = { has_character_flag = race_argonian } add_character_flag = race_argonian }
+					else_if = { limit = { has_character_flag = race_kothri } add_character_flag = race_kothri }
+					else_if = { limit = { has_character_flag = race_imga } add_character_flag = race_imga }
+					else_if = { limit = { has_character_flag = race_breton } add_character_flag = race_breton }
+					else_if = { limit = { has_character_flag = race_cyrod } add_character_flag = race_cyrod }
+					else_if = { limit = { has_character_flag = race_deathlander } add_character_flag = race_deathlander }
+					else_if = { limit = { has_character_flag = race_daedra } add_character_flag = race_daedra }
+				}
+			}
+		}
+		50 = {
+			if = {
+				limit = { OR = { exists = real_father exists = father } }
+				if = {
+					limit = { exists = real_father }
+					real_father = {
+						if = { limit = { has_character_flag = race_giant } add_character_flag = race_giant }
+						else_if = { limit = { has_character_flag = race_atmoran } add_character_flag = race_atmoran }
+						else_if = { limit = { has_character_flag = race_orc } add_character_flag = race_orc }
+						else_if = { limit = { has_character_flag = race_yokudan } add_character_flag = race_yokudan }
+						else_if = { limit = { has_character_flag = race_mer } add_character_flag = race_mer }
+						else_if = { limit = { has_character_flag = race_bosmer } add_character_flag = race_bosmer }
+						else_if = { limit = { has_character_flag = race_khajiit } add_character_flag = race_khajiit }
+						else_if = { limit = { has_character_flag = race_goblinken } add_character_flag = race_goblinken }
+						else_if = { limit = { has_character_flag = race_lilmothiit } add_character_flag = race_lilmothiit }
+						else_if = { limit = { has_character_flag = race_argonian } add_character_flag = race_argonian }
+						else_if = { limit = { has_character_flag = race_kothri } add_character_flag = race_kothri }
+						else_if = { limit = { has_character_flag = race_imga } add_character_flag = race_imga }
+						else_if = { limit = { has_character_flag = race_breton } add_character_flag = race_breton }
+						else_if = { limit = { has_character_flag = race_cyrod } add_character_flag = race_cyrod }
+						else_if = { limit = { has_character_flag = race_deathlander } add_character_flag = race_deathlander }
+						else_if = { limit = { has_character_flag = race_daedra } add_character_flag = race_daedra }
+					}
+				}
+				else_if = {
+					limit = { exists = father }
+					father = {
+						if = { limit = { has_character_flag = race_giant } add_character_flag = race_giant }
+						else_if = { limit = { has_character_flag = race_atmoran } add_character_flag = race_atmoran }
+						else_if = { limit = { has_character_flag = race_orc } add_character_flag = race_orc }
+						else_if = { limit = { has_character_flag = race_yokudan } add_character_flag = race_yokudan }
+						else_if = { limit = { has_character_flag = race_mer } add_character_flag = race_mer }
+						else_if = { limit = { has_character_flag = race_bosmer } add_character_flag = race_bosmer }
+						else_if = { limit = { has_character_flag = race_khajiit } add_character_flag = race_khajiit }
+						else_if = { limit = { has_character_flag = race_goblinken } add_character_flag = race_goblinken }
+						else_if = { limit = { has_character_flag = race_lilmothiit } add_character_flag = race_lilmothiit }
+						else_if = { limit = { has_character_flag = race_argonian } add_character_flag = race_argonian }
+						else_if = { limit = { has_character_flag = race_kothri } add_character_flag = race_kothri }
+						else_if = { limit = { has_character_flag = race_imga } add_character_flag = race_imga }
+						else_if = { limit = { has_character_flag = race_breton } add_character_flag = race_breton }
+						else_if = { limit = { has_character_flag = race_cyrod } add_character_flag = race_cyrod }
+						else_if = { limit = { has_character_flag = race_deathlander } add_character_flag = race_deathlander }
+						else_if = { limit = { has_character_flag = race_daedra } add_character_flag = race_daedra }
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				OR = {
+					has_character_flag = race_giant
+					has_character_flag = race_atmoran
+					has_character_flag = race_orc
+					has_character_flag = race_yokudan
+					has_character_flag = race_mer
+					has_character_flag = race_bosmer
+					has_character_flag = race_khajiit
+					has_character_flag = race_goblinken
+					has_character_flag = race_lilmothiit
+					has_character_flag = race_argonian
+					has_character_flag = race_kothri
+					has_character_flag = race_imga
+					has_character_flag = race_breton
+					has_character_flag = race_cyrod
+					has_character_flag = race_deathlander
+					has_character_flag = race_daedra
+				}
+			}
+		}
+		pa_assign_single_race_flag_from_culture_effect = yes
 	}
 }
 
@@ -202,7 +436,7 @@ pa_assign_height_from_parents_traits_effect = {
 				}
 			}
 			else = {
-				pa_assign_height_from_parents_culture_effect = yes
+				pa_assign_height_from_parents_race_effect = yes
 			}
 		}
 		50 = {
@@ -423,57 +657,81 @@ pa_assign_height_from_parents_traits_effect = {
 				}
 			}
 			else = {
-				pa_assign_height_from_parents_culture_effect = yes
+				pa_assign_height_from_parents_race_effect = yes
 			}
 		}
 	}
 }
 
-pa_assign_height_from_parents_culture_effect = {
-	# When no explicit parent height traits exist, inherit probabilities from parent cultures.
+pa_assign_height_from_parents_race_effect = {
+	# When no explicit parent height traits exist, inherit probabilities from parent race flags.
 	random_list = {
 		50 = {
 			if = {
 				limit = { exists = mother }
-				mother = { pa_assign_height_from_culture_effect = yes }
+				mother = { pa_assign_height_from_race_effect = yes }
 			}
 			else_if = {
 				limit = { exists = real_father }
-				real_father = { pa_assign_height_from_culture_effect = yes }
+				real_father = { pa_assign_height_from_race_effect = yes }
 			}
 			else_if = {
 				limit = { exists = father }
-				father = { pa_assign_height_from_culture_effect = yes }
+				father = { pa_assign_height_from_race_effect = yes }
 			}
 			else = {
-				pa_assign_height_from_culture_effect = yes
+				pa_assign_height_from_race_effect = yes
 			}
 		}
 		50 = {
 			if = {
 				limit = { exists = real_father }
-				real_father = { pa_assign_height_from_culture_effect = yes }
+				real_father = { pa_assign_height_from_race_effect = yes }
 			}
 			else_if = {
 				limit = { exists = father }
-				father = { pa_assign_height_from_culture_effect = yes }
+				father = { pa_assign_height_from_race_effect = yes }
 			}
 			else_if = {
 				limit = { exists = mother }
-				mother = { pa_assign_height_from_culture_effect = yes }
+				mother = { pa_assign_height_from_race_effect = yes }
 			}
 			else = {
-				pa_assign_height_from_culture_effect = yes
+				pa_assign_height_from_race_effect = yes
 			}
 		}
 	}
 }
 
-pa_assign_height_from_culture_effect = {
+pa_assign_height_from_race_effect = {
 	if = {
 		limit = {
-			culture = { has_cultural_pillar = heritage_atmoran_giant }
+			NOT = {
+				OR = {
+					has_character_flag = race_giant
+					has_character_flag = race_atmoran
+					has_character_flag = race_orc
+					has_character_flag = race_yokudan
+					has_character_flag = race_mer
+					has_character_flag = race_bosmer
+					has_character_flag = race_khajiit
+					has_character_flag = race_goblinken
+					has_character_flag = race_lilmothiit
+					has_character_flag = race_argonian
+					has_character_flag = race_kothri
+					has_character_flag = race_imga
+					has_character_flag = race_breton
+					has_character_flag = race_cyrod
+					has_character_flag = race_deathlander
+					has_character_flag = race_daedra
+				}
+			}
 		}
+		pa_assign_single_race_flag_from_culture_effect = yes
+	}
+
+	if = {
+		limit = { has_character_flag = race_giant }
 		random_list = {
 			70 = { add_trait = tall_5 }
 			25 = { add_trait = tall_4 }
@@ -481,9 +739,7 @@ pa_assign_height_from_culture_effect = {
 		}
 	}
 	else_if = {
-		limit = {
-			culture = { has_cultural_pillar = heritage_atmoran }
-		}
+		limit = { has_character_flag = race_atmoran }
 		random_list = {
 			10 = { add_trait = average_height }
 			35 = { add_trait = tall_1 }
@@ -495,8 +751,8 @@ pa_assign_height_from_culture_effect = {
 	else_if = {
 		limit = {
 			OR = {
-				culture = { has_cultural_pillar = heritage_orcish }
-				culture = { has_cultural_pillar = heritage_yokudan }
+				has_character_flag = race_orc
+				has_character_flag = race_yokudan
 			}
 		}
 		random_list = {
@@ -508,18 +764,7 @@ pa_assign_height_from_culture_effect = {
 		}
 	}
 	else_if = {
-		limit = {
-			OR = {
-				culture = { has_cultural_pillar = heritage_aldmeri }
-				culture = { has_cultural_pillar = heritage_ayleid }
-				culture = { has_cultural_pillar = heritage_chimeri }
-				culture = { has_cultural_pillar = heritage_dunmeri }
-				culture = { has_cultural_pillar = heritage_maormeri }
-				culture = { has_cultural_pillar = heritage_falmeri }
-				culture = { has_cultural_pillar = heritage_dwemeri }
-				culture = { has_cultural_pillar = heritage_tsaesci }
-			}
-		}
+		limit = { has_character_flag = race_mer }
 		random_list = {
 			15 = { add_trait = short_1 }
 			45 = { add_trait = average_height }
@@ -531,10 +776,10 @@ pa_assign_height_from_culture_effect = {
 	else_if = {
 		limit = {
 			OR = {
-				culture = { has_cultural_pillar = heritage_bosmeri }
-				culture = { has_cultural_pillar = heritage_khajiiti }
-				culture = { has_cultural_pillar = heritage_goblinken }
-				culture = { has_cultural_pillar = heritage_lilmothiit }
+				has_character_flag = race_bosmer
+				has_character_flag = race_khajiit
+				has_character_flag = race_goblinken
+				has_character_flag = race_lilmothiit
 			}
 		}
 		random_list = {
@@ -548,13 +793,12 @@ pa_assign_height_from_culture_effect = {
 	else_if = {
 		limit = {
 			OR = {
-				culture = { has_cultural_pillar = heritage_argonian }
-				culture = { has_cultural_pillar = heritage_kothri }
-				culture = { has_cultural_pillar = heritage_imgan }
-				culture = { has_cultural_pillar = heritage_breton }
-				culture = { has_cultural_pillar = heritage_cyrod }
-				culture = { has_cultural_pillar = heritage_cyrodiilic }
-				culture = { has_cultural_pillar = heritage_deathlander }
+				has_character_flag = race_argonian
+				has_character_flag = race_kothri
+				has_character_flag = race_imga
+				has_character_flag = race_breton
+				has_character_flag = race_cyrod
+				has_character_flag = race_deathlander
 			}
 		}
 		random_list = {
@@ -566,9 +810,7 @@ pa_assign_height_from_culture_effect = {
 		}
 	}
 	else_if = {
-		limit = {
-			culture = { has_cultural_pillar = heritage_dremora }
-		}
+		limit = { has_character_flag = race_daedra }
 		random_list = {
 			20 = { add_trait = average_height }
 			35 = { add_trait = tall_1 }
